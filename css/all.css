@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-.header-user-avatar{width:36px;height:36px;display:inline-block;margin:-10px 4px;}
-
+.header-user-avatar{width:36px;height:36px;display:inline-block;margin:-10px 3px;}
 ::selection{background:#337ab7;color:white}
 .sider-right-btn_1{
 	background: url(../img/fragments/bgs/rcb_trailer.jpg) no-repeat top left;
@@ -28,7 +27,7 @@
 	text-align:center;
 	width:23px;
 	height:25px;
-	background:url(../img/fragments/icon/padlock_lock_22.314176245211px_1193509_easyicon.net.png) no-repeat top left;
+	/*background:url(../img/fragments/icon/padlock_lock_22.314176245211px_1193509_easyicon.net.png) no-repeat top left;*/
 }
 .locked:before{
 	content:".";
@@ -168,7 +167,6 @@ body{font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",F
 .label{font-weight:200;}
 input.form-control{border-radius:1px}
 .input-group-addon{border-radius:2px}
-ul.dropdown-menu{border-radius:2px;}
 .dropdown-menu>li{margin-bottom:3px}
 .pager li>a{border-radius:2px}
 .pager li>a:hover{background-color: #2e6da4;color:white}
@@ -186,10 +184,12 @@ textarea.form-control{border-radius:1px}
 div.alert-success{margin-top: 50px; z-index: 99; background-image: none; background-color: #c5e1ba;box-shadow: 0px -1px 5px black;color:#2d5c2d}
 .btn{border-radius:3px;background-image:none;transition:background-color 0.2s;-moz-transition: background-color 0.2s;-webkit-transition: background-color 0.2s;-o-transition: background-color 0.2s;}
 .btn-default{background-color:#f8f8f8;}
-.btn-default.active{background-color: #e6e6e6;border-color: #adadad;}
 .btn-primary{background-color:#337ab7;}
-.btn-default.active{background-color: #e6e6e6;border-color: #adadad;}
+.btn-group .btn-default.active{background-color: #e2e2e2;border-color: #adadad;}
 .roomlistlock{margin-left:5px;}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{background-image:none;background-color:#e8e8e8}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{background-image:none;background-color:#4078c0}
+.navbar-right .dropdown-menu{right:15px}
 /*ng-validate*/
 .ng-invalid{border-color:#ff2222}
 

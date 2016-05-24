@@ -65,7 +65,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div class="form-group">
                                 <label for="inputNickname" class="col-lg-3 control-label">用户名</label>
                                 <div class="col-sm-9">
-                                    <input minlength="15" required type="text" class="form-control" name="inputname" id="inputname" placeholder="请输入昵称" ng-model="UserInfoData.name">
+                                    <input required type="text" class="form-control" name="inputname" id="inputname" placeholder="请输入昵称" ng-model="UserInfoData.name">
                                 </div>
                             </div>
                             <div class="form-group">
