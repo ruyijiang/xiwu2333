@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DivSlider.htm(L)</title>
+<link href="http://cdn.amazeui.org/amazeui/2.6.1/css/amazeui.min.css" rel="stylesheet"/>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    
+    <button
+    type="button"
+    class="am-btn am-btn-primary"
+    data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}">
+    Modal
+    </button>
+    
+        <div ng-init="names=[
+            {name:'Jani',country:'Norway'},
+            {name:'Hege',country:'Sweden'},
+            {name:'Kai',country:'Denmark'}]">
+
+            <p>循环对象：</p>
+            <ul>
+            <li ng-repeat="x in names">
+                {{ x.name + ', ' + x.country }}
+            </li>
+            </ul>
+        </div>
+        <button ng-click="dialog={open: true}">打开对话框</button>
+                    <dialog ng-if="dialog.open" modal close="dialog.open=false">
+                        <div dialog-title>消息</div>
+                        <div dialog-content>hello world</div>
+                    </dialog>
+
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+        <div class="am-modal-dialog">
+            <!--<div class="am-modal-hd">Modal 标题
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+            </div>--> 
+                <div class="leftpart" style="height:100%;">
+                    <form class="leftpart-form">
+                        <input type="text" ng-show="b"/>
+                    </form>
+                    <button ng-click="a()">a()</button>
+                    <div runoob-directive ng-click="a()"></div>
+                    <input type="button" class="divslider-btn-left" value="关联相关乘客&raquo;"/>
+                    
+                    
+                    
+                    <button ng-click="dialog={open: true}">打开对话框</button>
+                    <dialog ng-if="dialog.open" close="dialog.open=false">
+                        <div dialog-title>消息</div>
+                        <div dialog-content>hello world</div>
+                    </dialog>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                <div class="rightpart" style="height:100%;">
+                    <button class="divslider-btn-right">&laquo;单项选择完毕</button>
+                    <button class="divslider-btn-right" disabled>&laquo;多项选择完毕</button>
+                </div>            
+                
+            <!--<div class="am-modal-bd">
+                Modal 内容。本 Modal 无法通过遮罩层关闭。    
+            </div>-->
+        </div>
+    </div>
+
+<script>
+    window.onload = function (){
+        $.divSlider(".am-modal-dialog",800,300);
+    }
+    
+    angular.module('examples', ['angular-popups']);
+    var app = angular.module('myApp', ['angular-popups']);
+    //封装指令
+    app.directive("runoobDirective", function() {
+        return {
+            template : "<a><br>弹出input!</a>"
+        };
+    });
+    
+    app.controller('myCtrl', function($scope) {
+        $scope.firstName = "John";
+        $scope.lastName = "Doe";
+        $scope.a = function (){
+            $scope.b = true;
+        }
+    });
+    
+    
+</script>
+<script  type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.6.1/js/amazeui.min.js" type="text/javascript"></script>
+<script src="js/angular-popups.js" type="text/javascript"></script>
+<script src="js/DivSlider.js" type="text/javascript"></script>
+</body>
+</html>

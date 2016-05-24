@@ -1,0 +1,153 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://cdn.amazeui.org/amazeui/2.6.1/css/amazeui.min.css" rel="stylesheet"></link>
+<link href="../css/normalize.css" rel="stylesheet"></link>
+<style>
+    a{cursor:pointer;}
+    .el-topbar{
+        margin-bottom: 0px;
+    }
+    .el-illu{margin:50px 0;}
+    .enterprise-container{
+        width: 1200px;
+        max-width: none;
+        margin:0 auto;
+        padding: 0px;
+    }
+    .admin-el-ents{margin-top:50px}
+    .enterprise-container ol[class]{padding-left:0px;}
+    .el-createent-btn{padding-left:93px;padding-right:93px}
+    .el-ents-search-div > div{margin-left:22px;margin-right:34px;}
+    .el-ents-search-div label{
+        font-weight: normal;
+        display: inline;
+        float: left;
+        margin: 3px;
+    }
+    .el-ents-table{
+        font-size:14px
+    }
+    .el-ents-length-reminder{margin:15px;font-size:14px}
+    .el-ents-length-pageindexation{margin-right: 15px}
+    .el-nav{background-color:#f8f8f8;}
+    .el-am-breadcrumb{margin:0 auto;width:1200px;padding-left:0px;}
+</style>
+</head>
+<body>
+    
+<!-- Header -->
+<header class="am-topbar admin-header el-topbar">
+    <div class="am-topbar-brand">
+        <strong>配置管理系统</strong><small>LOGO</small>
+    </div>
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">管理员</span></a></li>
+            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">退出</span></a></li>
+        </ul>
+    </div>
+</header>
+<!-- 面包屑 -->
+<div class="el-nav">
+    <ol class="am-breadcrumb el-am-breadcrumb">
+        <li class="am-active">填写企业信息</li>
+        <li><a href="#">设置企业审批模式</a></li>
+        <li><a href="#">企业功能权限管理</a></li>
+        <li><a href="#">公司分级模式设置</a></li>
+        <li><a href="#">创建公司</a></li>
+        <li><a href="#">创建常客</a></li>
+        <li><a href="#">企业信息创建完成</a></li>
+    </ol>
+</div>
+<!-- End of 面包屑 -->
+        
+<!-- End of Header -->
+    
+<div class="enterprise-container am-container">
+    
+    <div class="am-cf admin-main">
+        <!--开始创建新企业btn-->
+        <div class="el-illu">
+            <h5>您尚未创建过企业，可点击按钮开始创建：</h5>
+            <button class="am-btn am-btn-primary am-btn-xl createent-btn"><small>开始创建新企业</small></button>
+        </div>
+        <!-- End of 开始创建新企业btn-->
+        
+        <!-- 列表项 -->
+        <div class="admin-el-ents">
+            <h5>以下是您已创建过的企业，可进入向导模式修改：</h5>
+            <section class="am-panel am-panel-default">
+                <!-- 列表搜索框-->
+                <header class="am-panel-hd">
+                    <div class="el-ents-search-div am-cf am-form">
+                            <label for="ent-code"><small>企业编号</small></label>
+                            <div class="am-fl">
+                                <input id="ent-code" type="email" class="am-input-sm" placeholder=""/>
+                            </div>
+                            <label for="ent-name"><small>企业名称</small></label>
+                            <div class="am-fl">
+                                <input id="ent-name" type="search" class="am-input-sm" placeholder=""/>
+                            </div>                         
+                            <button class="el-ents-search-btn am-btn am-btn-sm am-btn-default">搜索</button>
+                    </div>
+                </header><!-- End of 列表搜索框-->
+                <div class="am-panel-bd">
+                    <table class="am-table am-table-striped el-ents-table">
+                        <thead>
+                            <tr><th>ID</th><th>企业编码</th><th>企业名称</th><th>操作</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Business Management</td><td>2014年9月4日 7:28:47</td><td><a>进入向导模式编辑</a></td></tr>
+                            <tr><td>2</td><td>Business Management</td><td>2014年9月4日 7:28:47</td><td><a>进入向导模式编辑</a></td></tr>
+                            <tr><td>3</td><td>Business Management</td><td>2014年9月4日 7:28:47</td><td><a>进入向导模式编辑</a></td></tr>
+                            <tr><td>4</td><td>Business Management</td><td>2014年9月4日 7:28:47</td><td><a>进入向导模式编辑</a></td></tr>
+                            <tr><td>5</td><td>Business Management</td><td>2014年9月4日 7:28:47</td><td><a>进入向导模式编辑</a></td></tr>
+                            <tr><td>6</td><td>Business Management</td><td>2014年9月4日 7:28:47</td><td><a>进入向导模式编辑</a></td></tr>
+                        </tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 企业数目提示 -->
+                <p class="el-ents-length-reminder">共&nbsp;<span id="el-ents-length"></span>&nbsp;记录</p>
+                <!-- End of 企业数目提示 -->
+                
+                <!-- 分页控件 -->
+                <!--<ul class="am-pagination am-pagination-right el-ents-length-pageindexation">
+                    <li class="am-disabled"><a href="#">&laquo;</a></li>
+                    <li class="am-active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>-->
+                <!-- End of 分页控件-->
+                
+            </section><!-- End of 列表项-->
+</div><!--End of adminContainer-->
+
+
+
+
+
+
+
+
+
+
+<script>
+    window.onload = function (){
+        //这里在调用时直接返回数量，不用js计算
+        var num = $.counttable(".el-ents-table");
+        $("#el-ents-length").html(num);
+    }
+</script>
+<script  type="text/javascript" src="../js/jquery.js"></script>
+<script src="../js/amazeui.js"></script>
+<script  type="text/javascript" src="../js/counttable.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.6.1/js/amazeui.widgets.helper.min.js"></script>    
+</body>
+</html>

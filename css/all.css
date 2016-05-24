@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+.header-user-avatar{width:36px;height:36px;display:inline-block;margin:-10px 4px;}
+
+::selection{background:#337ab7;color:white}
+.sider-right-btn_1{
+	background: url(../img/fragments/bgs/rcb_trailer.jpg) no-repeat top left;
+}
+.sider-right-btn_2{
+	background: url(../img/fragments/bgs/5201e19825bf0920045673.jpg) no-repeat top left;
+}
+.sider-right-btn_3{
+	background:url(../img/fragments/bgs/rcb_comic.jpg) no-repeat top left;
+}
+.roomlistrow >div{border-bottom:dashed 1px #c5c5c5;padding-bottom:15px}
+.room-vacancy{
+	position:absolute;
+	left:-19px;
+	top:-198px;
+	background-color:#eed5d5;
+	color:#b84442;
+	width:19px;
+	font-family:Microsoft Yahei;
+	text-align:center;
+}
+.locked{
+	display:inline-block;
+	text-align:center;
+	width:23px;
+	height:25px;
+	background:url(../img/fragments/icon/padlock_lock_22.314176245211px_1193509_easyicon.net.png) no-repeat top left;
+}
+.locked:before{
+	content:".";
+	font-size:12px;
+	margin-top:5px;
+}
+.qq-span{
+	display:inline-block;
+	text-align:center;
+	width:15px;
+	height:15px;
+	background: url(../img/fragments/icon/qq15.png) no-repeat top left;
+}
+.wechat-span{
+	display:inline-block;
+	text-align:center;
+	width:15px;
+	height:15px;
+	background:url(../img/fragments/icon/wechat15.png) no-repeat top left;
+}
+.dota2-span{
+	display:inline-block;
+	text-align:center;
+	width:15px;
+	height:15px;
+	background:url(../img/fragments/icon/dota215.png) no-repeat top left;
+}
+.steam-span{
+	display:inline-block;
+	text-align:center;
+	width:15px;
+	height:15px;
+	background:url(../img/fragments/icon/steam15.png) no-repeat top left;
+}
+.thisQR:hover{cursor:pointer}
+.thisQR .qrcodeimg{
+	display:none;
+}
+.thisQR:hover .qrcodeimg{
+	display:block;
+	position:absolute;
+	width:186px;
+	height:186px;
+	padding:1px;
+	margin-top:-93px;
+	margin-left:15px;
+	cursor:default;
+	background-color:#666;
+}
+/*boat*/
+.boat{
+	background-color:white;
+	margin: 15px;
+	margin-top:0px;
+	padding:25px 0;
+	border:solid rgb(211, 224, 233) 1px;
+	border-radius:4px
+}
+.boat .dischangable-text{
+	color:#4e1648;
+}
+
+
+
+
+footer{margin-bottom:30px;}
+.writeblog-title{margin-bottom:-152px;}
+.ueditor-main{margin-top:0px}
+.spanicon{margin-right:4px;}
+.userlist-chart{height:124px;width:164px;}
+.otherlogindiv{border-top:dashed 1px #999;margin-top:8px;padding-top:4px}
+.qqlog{display:block;background:url(../img/fragments/icon/Connect_logo_3.png) bottom left repeat;height:24px;width:120px;margin-right:8px}
+.weibolog{display:block;background:url(../img/fragments/icon/loginButton_24.png) bottom left repeat;height:24px;width:102px;margin-right:8px}
+.blogpage-i-icon{color:#265a88;font-size:20px;cursor:pointer;margin-right:2px;}
+
+
+.native > span[data-cate]{font-weight:700;}
+
+/*loading动画*/
+.loading{margin:0px}
+.loading-cont{text-align: center;}
+.loading-img{background-color:#333;margin: auto 0;}
+
+
+/*bootstrap覆盖修正*/
+a[class^="sider-right-btn"]{
+	display:block;
+	width:256px;
+	height:164px;
+	margin-bottom:25px;
+	border-bottom: solid 2px #333;
+}
+.btn{border-radius:3px}
+.badge{border-radius:1px;margin-left:4px}
+.label{border-radius:1px}
+.glyphicon{top:1px;line-height:0;margin:0 6px;font-weight:200}
+.spanicon{margin:0 6px;}
+body{font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;}
+.label{font-weight:200;}
+input.form-control{border-radius:1px}
+.input-group-addon{border-radius:2px}
+ul.dropdown-menu{border-radius:2px;}
+.dropdown-menu>li{margin-bottom:3px}
+.pager li>a{border-radius:2px}
+.pager li>a:hover{background-color: #2e6da4;color:white}
+.well{background-color:#e8e8e8;border:solid #c3c3c3 1px}
+.panel > .panel-heading{background-image:none;background-color:#e8e8e8}
+a{cursor:pointer}
+.panel-default>.panel-heading{background-image:linear-gradient(to bottom,#337ab7 0,#265a88 70%);color:white;border:#337ab7 solid 1px}
+.slider-handle{background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%);border:solid 2px #eee;}
+textarea.form-control{border-radius:1px}
+.sidebar{border-right:solid 1px #d1d1d1}
