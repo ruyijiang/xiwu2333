@@ -1,5 +1,9 @@
-app.controller('loginController',function ($scope,$http,loginqq,$location){
+app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$location){
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
+
+    $rootScope.MainPageActivity = $rootScope.SignupAcivity = $rootScope.UserListActivity = $rootScope.RoomListActivity = 0;
+    $rootScope.LoginActivity = 1;
+
 
     $scope.UserName = "";
     $scope.UserPassword = "";
@@ -31,8 +35,12 @@ app.controller('loginController',function ($scope,$http,loginqq,$location){
             method:'POST',
             data:{"email":$scope.UserName,"password":$scope.UserPassword},
             success: function (data){
+                //登陆成功后注册一个localStorage
                 if(welcomejsonstring(data)){//在utills/welcomejsonstring.js中定义
+                    localStorage.OnlineStatus = "1";
                     window.location.reload();
+                }else{
+                    alert ("不明原因登陆失败，请联系管理员");
                 }
             },
             error: function (){

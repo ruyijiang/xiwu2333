@@ -1,5 +1,4 @@
 <?php
-
 include("all.inc.php");
 /**连接数据库**/
 $db = new mysqli($DB,$DBUSER,$DBPASSWORD,$DBNAME);

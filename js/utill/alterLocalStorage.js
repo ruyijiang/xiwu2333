@@ -3,4 +3,16 @@
  */
 
 
-function alter
+function alterOnlineStatus(ToNum){
+    var timing = Math.round(new Date().getTime()/1000);
+    var Tonum = ToNum;
+    Tonum == 1?localStorage.OnlineStatus = "1":localStorage.OnlineStatus = "0";
+
+    $.ajax({
+        type:'POST',
+        url:'../../library/xwBE-0.0.1/php/closepage_updatedata.php',
+        data:{"timing":timing,"mod":ToNum},
+        success: function (data){}
+    })//End of $.ajax()
+
+}//End of alterOnlineStatus()

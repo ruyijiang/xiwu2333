@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('homepagecontroller',function ($scope,$state,$stateParams){
+app.controller('homepagecontroller',function ($scope,$rootScope,$state,$stateParams){
     console.log("接收到传递来的参数" +$stateParams.tab);
     $scope.visibleDiv = '';
     // 用来使用get传参显示

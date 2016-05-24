@@ -23,7 +23,14 @@ include("library/xwFE-0.0.1/FEM.php");
     }
     label{padding-top:10px}
 </style>
-<div class="container" ng-controller="createroomcontroller" style="margin-top:130px;">
+
+<div class="container" ng-controller="roomDetailController" style="margin-top:130px;">
+    <ol class="breadcrumb" style="background-color:white;border:solid 1px rgb(211, 224, 233)">
+        <li><a ui-sref="info_setting">个人设置</a></li>
+        <li class="active">房间设置</li>
+    </ol>
+
+
     <div class="row">
         <div class="per_s-leftpart col-lg-3 col-sm-3 col-xs-12 boat" style="padding: 0px">
             <ul class="nav nav-pills nav-stacked ">
@@ -50,33 +57,33 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label class="col-lg-3 control-label" for="room_name">房间id</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="room_name" placeholder="" autocomplete="off" disabled="disabled" value="cad27590311">
+                                <input type="text" class="form-control" id="room_name" disabled="disabled" ng-model="RoomData.rid">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 control-label" for="room_name">房间名</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="room_name" placeholder="" autocomplete="off" autofocus="autofocus">
+                                <input type="text" class="form-control" id="room_name" autocomplete="off" autofocus="autofocus" ng-model="RoomData.name">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 control-label" for="room_desc">房间说明</label>
                             <div class="btn-group col-lg-9 btn-group-sm" role="group" aria-label="...">
-                                <textarea class="form-control" rows="3" id="room_desc" placeholder="例如：中国Dota2玩家联盟群内战，接箭速来！"></textarea>
+                                <textarea class="form-control" rows="3" id="room_desc" placeholder="例如：中国Dota2玩家联盟群内战，接箭速来！" ng-model="RoomData.owner_say"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword" class="col-lg-3 control-label">开放房间</label>
                             <div class="col-sm-9">
-                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="radio" name="open_room_rule">随意进入</label></small>
-                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="radio" name="open_room_rule">设置密码</label></small>
+                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="radio" name="open_room_rule" ng-model="RoomData.pw_status" value="0">随意进入</label></small>
+                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="radio" name="open_room_rule" ng-model="RoomData.pw_status" value="0">设置密码</label></small>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 control-label" for="room_password">设置密码</label>
                             <div class="col-sm-9">
                                     <div class="input-group">
-                                        <input type="password" class="form-control">
+                                        <input type="password" class="form-control" ng-model="RoomData.password">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default" type="button" title="密码可见"><span class="glyphicon glyphicon-eye-open"></span></button>
                                         </span>
@@ -86,7 +93,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label class="col-lg-3 control-label" for="pw_reminder">密码提示</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" autocomplete="off" id="pw_reminder">
+                                <input type="text" class="form-control" autocomplete="off" id="pw_reminder" ng-model="RoomData.pw_reminder">
                             </div>
                         </div>
 
@@ -106,7 +113,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label class="col-lg-3 control-label">人数限制</label>
                             <div class="btn-group col-lg-9 btn-group-sm" role="group" aria-label="...">
-                                <input id="ex6" type="text" data-slider-min="2" data-slider-max="16" data-slider-step="1" data-slider-value="5">
+                                <input id="ex6" type="text" data-slider-min="2" data-slider-max="16" data-slider-step="1" data-slider-value="5" ng-model="RoomData.personlimit">
                                 <span id="ex6CurrentSliderValLabel" style="margin-left:10px"><small>房间最多容纳: </small><span id="ex6SliderVal" style="font-weight:bold">5</span>人</span>
                             </div>
                         </div>
@@ -114,10 +121,10 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label for="inputPassword" class="col-lg-3 control-label">允许加入条件</label>
                             <div class="col-sm-9">
-                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox">天梯分数</label></small>
-                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox">胜率</label></small>
-                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox">评分</label></small>
-                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox">黑名单</label></small>
+                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox" ng-model="RoomData.ladderscore">天梯分数</label></small>
+                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox" ng-model="RoomData.winningrate">胜率</label></small>
+                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox" ng-model="RoomData.score">评分</label></small>
+                                <small style="margin-right:15px;margin-top:15px"><label style="font-weight:normal;cursor:pointer"><input type="checkbox" ng-model="RoomData.blacklist">黑名单</label></small>
                             </div>
                         </div>
 
@@ -133,7 +140,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                                 <li><a href="#">低于</a></li>
                                             </ul>
                                         </div><!-- /btn-group -->
-                                        <input type="text" class="form-control" aria-label="..." maxlength="4">
+                                        <input type="text" class="form-control" aria-label="..." maxlength="4" ng-model="RoomData.ladderscore">
                                     </div><!-- /input-group -->
                                 </div>
                             </div>
@@ -147,7 +154,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                                 <li><a href="#">低于</a></li>
                                             </ul>
                                         </div><!-- /btn-group -->
-                                        <input type="text" class="form-control" aria-label="..." maxlength="2">
+                                        <input type="text" class="form-control" aria-label="..." maxlength="2" ng-model="RoomData.winningrate">
                                     </div><!-- /input-group -->
                                 </div>
                             </div>
@@ -161,19 +168,19 @@ include("library/xwFE-0.0.1/FEM.php");
                                                 <li><a href="#">低于</a></li>
                                             </ul>
                                         </div><!-- /btn-group -->
-                                        <input type="text" class="form-control" aria-label="..." maxlength="2">
+                                        <input type="text" class="form-control" aria-label="..." maxlength="2" ng-model="RoomData.score">
                                     </div><!-- /input-group -->
                                 </div>
                             </div>
 
                             <small><legend style="font-size:12px;font-weight:bold">黑名单<span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" data-original-title="不会告知列表里的用户"></span></legend></small>
-                            <textarea class="form-control" id="room_tags" autocomplete="off" resize="vertical"></textarea>
+                            <textarea class="form-control" id="room_tags" autocomplete="off" resize="vertical" ng-model="RoomData.blacklist"></textarea>
                         </fieldset>
 
                         <div class="form-group">
                             <label class="col-lg-3 control-label" for="room_tags">房间标签</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" id="room_tags" autocomplete="off"></textarea>
+                                <textarea class="form-control" id="room_tags" autocomplete="off" ng-model="RoomData.tags"></textarea>
                             </div>
                         </div>
 

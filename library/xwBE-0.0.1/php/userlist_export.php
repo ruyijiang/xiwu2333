@@ -8,13 +8,26 @@
 require("../connectDB.php");
 require("../all.php");
 ?>
-<?
-    $dateHeader = $_POST["timing"];//接收一个随机时间,格式必须是UNIX时间戳
-    if(!empty($dateHeader)){
-        $sql = "SELECT * FROM users WHERE openstatus = '1' ";
-        $qry = $db -> query($sql);
+<?php
+    $responsecontent = $_GET["responsecontent"];
+    $num_onepage = $_GET["num_onepage"];
+    $num_onepage = (int)$num_onepage;//每页显示数量
+    $now_page = empty($_GET['now_page'])?1:$_GET['now_page'];
+
+
+    if($responsecontent == "userlist"){
+
+        $sql = "SELECT uid FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
+        $qry = $db->query($sql);
+        $row_all = mysqli_num_rows($qry);//总条数
+        $page_num = ceil($row_all/$num_onepage);//分页数
+        $now_page = (int)$now_page;//当前页数
+        $limit_st = ($now_page-1)*$num_onepage;//起始数
+
+        $sql2 = "SELECT * FROM users WHERE openstatus = '1' AND onlinestatus = '1' LIMIT $limit_st,$num_onepage ";
+        $qry2 = $db->query($sql2);
         $user_countnum = 0;//输出的用户数量
-        while($row = mysqli_fetch_array($qry)){
+        while($row = mysqli_fetch_array($qry2)){
             $uid = $row["uid"];
             $dota2_uid = $row["dota2_uid"];
             $name = $row["name"];
@@ -28,14 +41,17 @@ require("../all.php");
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
             }
+
             $dataArr = urldecode ( json_encode ( $dataArr ) . ",");
             echo $dataArr;
             $user_countnum++;
         }
-    }else{
-        $status = 0;
-        $reminder = "请求开放组队玩家列表失败，可能的原因是没有发送请求头，请联系管理员";
-        $a = new interfaceResponse();
-        echo $a->normalrespond($status,$reminder);
-    }
+
+
+
+
+    }/*else{
+
+    }*/
+
 ?>

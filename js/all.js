@@ -40,13 +40,16 @@ socket.onerror = function(){
 /******************************************************/
 /******************************************************/
 //设置Angular app
-var app = angular.module('myApp', ["ui.router"]);
+var app = angular.module('myApp', ["ui.router","w5c.validator"]);
+
 //qq分享
 (function(){
 	var p = {url:location.href, desc:'', title:'', summary:'', pics:'', flash: '', site:'', style:'101',width:96,height:24};
 	var s = [];
 	for(var i in p){s.push(i + '=' + encodeURIComponent(p[i]||''));}
-	document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享给QQ好友</a>'].join(''));})();
+	document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享给QQ好友</a>'].join(''));}
+)();
 
-//微博分享
+
+
 

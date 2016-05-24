@@ -49,6 +49,37 @@
 	height:15px;
 	background:url(../img/fragments/icon/wechat15.png) no-repeat top left;
 }
+.douyu-span{
+	display:inline-block;
+	text-align:center;
+	width:15px;
+	height:15px;
+	padding:0;
+	margin-left:0;
+	background: url(../img/fragments/icon/douyuTv.png) no-repeat top left;
+}
+.huya-span{
+	display:inline-block;
+	text-align:center;
+	width:15px;
+	height:15px;
+	background: url(../img/fragments/icon/huyaTv.png) no-repeat top left;
+
+}
+.panda-span{
+	display:inline-block;
+	text-align:center;
+	width:39px;
+	height:15px;
+	background: url(../img/fragments/icon/xiongmaoTv.png) no-repeat top left;
+}
+.zhanqi-span{
+	display:inline-block;
+	text-align:center;
+	width:31px;
+	height:15px;
+	background: url(../img/fragments/icon/zhanqiTv.png) no-repeat top left;
+}
 .dota2-span{
 	display:inline-block;
 	text-align:center;
@@ -85,7 +116,9 @@
 	margin-top:0px;
 	padding:25px 0;
 	border:solid rgb(211, 224, 233) 1px;
-	border-radius:4px
+	border-radius:4px;
+	z-index:0;
+	position:relative;
 }
 .boat .dischangable-text{
 	color:#4e1648;
@@ -121,10 +154,15 @@ a[class^="sider-right-btn"]{
 	margin-bottom:25px;
 	border-bottom: solid 2px #333;
 }
-.btn{border-radius:3px}
-.badge{border-radius:1px;margin-left:4px}
-.label{border-radius:1px}
-.glyphicon{top:1px;line-height:0;margin:0 6px;font-weight:200}
+.badge{border-radius:2px;margin-left:4px;border-bottom:solid #333 2px}
+.label{border-radius:2px;padding-bottom:2px;}
+.label-default{border-bottom:solid #333 2px}
+.label-primary{border-bottom:solid #004886 2px}
+.label-warning{border-bottom:solid #d87f00 2px}
+.label-danger{border-bottom:solid #b8140f 2px}
+.label-warning{border-bottom:solid #d87f00 2px}
+.label-success{border-bottom:solid #089307 2px}
+.glyphicon{top:1px;line-height:0;margin:0 0px;}
 .spanicon{margin:0 6px;}
 body{font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;}
 .label{font-weight:200;}
@@ -134,10 +172,24 @@ ul.dropdown-menu{border-radius:2px;}
 .dropdown-menu>li{margin-bottom:3px}
 .pager li>a{border-radius:2px}
 .pager li>a:hover{background-color: #2e6da4;color:white}
-.well{background-color:#e8e8e8;border:solid #c3c3c3 1px}
+.well{background-color:#f5f5f5;background-image:none;border:solid #c3c3c3 1px;padding:15px}
 .panel > .panel-heading{background-image:none;background-color:#e8e8e8}
 a{cursor:pointer}
 .panel-default>.panel-heading{background-image:linear-gradient(to bottom,#337ab7 0,#265a88 70%);color:white;border:#337ab7 solid 1px}
 .slider-handle{background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%);border:solid 2px #eee;}
 textarea.form-control{border-radius:1px}
 .sidebar{border-right:solid 1px #d1d1d1}
+.xw-topbar{background-color:#272b35;background-image:none;border-bottom:solid 1px black}
+.navbar-fixed-top .dropdown-toggle{width:175px;text-overflow:ellipsis;overflow:hidden;white-space: nowrap;}
+.navbar-brand strong{color:white}
+.panel-default>.panel-heading{background-image:none;background-color:#346ea1;padding:8px 13px;}
+div.alert-success{margin-top: 50px; z-index: 99; background-image: none; background-color: #c5e1ba;box-shadow: 0px -1px 5px black;color:#2d5c2d}
+.btn{border-radius:3px;background-image:none;transition:background-color 0.2s;-moz-transition: background-color 0.2s;-webkit-transition: background-color 0.2s;-o-transition: background-color 0.2s;}
+.btn-default{background-color:#f8f8f8;}
+.btn-default.active{background-color: #e6e6e6;border-color: #adadad;}
+.btn-primary{background-color:#337ab7;}
+.btn-default.active{background-color: #e6e6e6;border-color: #adadad;}
+.roomlistlock{margin-left:5px;}
+/*ng-validate*/
+.ng-invalid{border-color:#ff2222}
+

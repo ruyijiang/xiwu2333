@@ -6,7 +6,8 @@
  * 专门用来解析interface接口传入的json字符串
  * @param data接受的json字符串
  */
-function welcomejsonstring(data){
+function welcomejsonstring(data,returndata){
+    returndata?returndata:0;
     data = eval( "(" + data + ")");
     var status = data.statuscode;
     var message = data.message;
@@ -20,7 +21,11 @@ function welcomejsonstring(data){
         alert ("错误代码：300.未知系统错误，请联系管理员");
         $status = false;
     }
-    return status;
+    if(returndata == "message"){
+        return message;
+    }else{
+        return status;
+    }
 }
 
 /**

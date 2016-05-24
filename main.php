@@ -1,0 +1,100 @@
+<?php
+require("library/xwBE-0.0.1/connectDB.php");
+require("library/xwBE-0.0.1/all.php");
+include("library/xwFE-0.0.1/FEM.php");
+?>
+<!--喜屋是milo开发的一款，游戏玩家的社区类型网页应用-->
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;user-scalable=no;"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="喜屋,dota2,开黑,坑爹,大神,排位,天梯,电子竞技" />
+<meta name="robots" content="all" />
+<meta name="author" content="shy" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="HandheldFriendly" content="true">
+<meta name="full-screen" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<!--<meta http-equiv="Pragma" content="no-cache">-->
+<title>喜屋</title>
+<!-- Bootstrap Css -->
+<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="library/normalize.css/normalize-4.0.0.css" rel="stylesheet"/>
+<link href="library/bootstrap-3.3.5-dist/css/dashboard.css" rel="stylesheet"/>
+<link href="//at.alicdn.com/t/font_1460776526_5505247.css" rel="stylesheet"/>
+<link href="library/bootstrap-3.3.5-dist/css/bootstrap-slider.min.css" rel="stylesheet"/>
+<!-- All Css -->
+<link href="css/all.css" rel="stylesheet"/>
+<!-- AngularJs -->
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<loading></loading>
+<script>
+    var SERVER_BASE = "localhost";
+    var IndexPage = "main.php";
+</script>
+<body ng-app="myApp" ng-control="xiwucontroll">
+    <?php
+        if(isset($_SESSION['loginstatus']) == 1 && !empty($_SESSION['uid'])){
+            echo $header_registered;
+        }else{
+            echo $header_unregistered;
+        }
+    ?>
+    <?php echo $openupalertdiv; ?>
+    
+    
+    <div ui-view class="ui-viewcon"></div>
+    
+    <!-- UI router -->
+    <script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <!--jQuery Js-->
+    <script  type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--Bootstrap Js-->
+    <script  type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--Echart Js-->
+    <script  type="text/javascript" src="library/Echart-3.1.4/echarts.simple.min.js"></script>
+    <!--all.js-->
+    <script  type="text/javascript" src="js/all.js"></script>
+    <!-- router-->
+    <script  type="text/javascript" src="js/router.js"></script>
+    <!-- htmlencode&htmldecode -->
+    <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
+    <!-------------------------------------------------------------------------------------->
+    <!-- Ueditor Js-->
+    <script id="ueditor-main" name="content" type="text/plain"></script>
+    <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.config.js"></script>
+    <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.all.min.js"></script>
+    <!-------------------------------------------------------------------------------------->
+    <!--services-->
+    <script type="text/javascript" src="js/service/snslogin/qq.js"></script>
+    <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
+    <!-------------------------------------------------------------------------------------->
+    <!--bootstrap-slider-->
+    <script  type="text/javascript" src="library/bootstrap-3.3.5-dist/js/bootstrap-slider.min.js"></script>
+    <!-------------------------------------------------------------------------------------->
+
+    <!--controllers-->
+    <script  type="text/javascript" src="js/controller/mainpagecontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/userlistcontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/roomlistcontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/logincontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/signupcontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/blogpagecontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/writeblogcontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/homepagecontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/personal_settingcontroller.js"></script>
+    <script  type="text/javascript" src="js/controller/createroomcontroller.js"></script>
+    <!-------------------------------------------------------------------------------------->
+    <!--direcitves-->
+
+    <!--<script  type="text/javascript" src="js/directive/MyTeam.js"></script>-->
+    <!-------------------------------------------------------------------------------------->
+</body>
+</html>

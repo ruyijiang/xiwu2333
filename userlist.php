@@ -119,7 +119,7 @@
             </div>
           </div>
 
-          <h2 class="sub-header" style="margin-top:-25px"><img class="img-rounded" width="32" height="32" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"></img>Dota2 - 开放组队的玩家列表</h2>
+          <h3 class="sub-header" style="margin-top:-25px"><img class="img-rounded" width="32" height="32" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>Dota2 - 开放组队的玩家列表</h3>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>

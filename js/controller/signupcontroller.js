@@ -1,6 +1,10 @@
 
-app.controller('signupcontroller',function ($scope,$http,$location){
+app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
+
+    $rootScope.MainPageActivity = $rootScope.LoginActivity = $rootScope.UserListActivity = $rootScope.RoomListActivity = 0;
+    $rootScope.SignupAcivity = 1;
+
 
     $scope.UserName = '';
     $scope.UserPassword = '';
@@ -41,6 +45,7 @@ app.controller('signupcontroller',function ($scope,$http,$location){
                                 data:{"email":$scope.UserName,"password":$scope.UserPassword},
                                 success: function (data){
                                     //2，跳转
+                                    localStorage.OnlineStatus = "1";
                                     $location.path("/main");
                                 },
                                 error: function (){
@@ -66,14 +71,7 @@ app.controller('signupcontroller',function ($scope,$http,$location){
         }else{
             alert ($reminder);
         }
-
     }//End of signupsubmit()
 
-    $scope.tellmemore = function (){
-        alert ($scope.UserName);
-        alert ($scope.UserPassword);
-        alert ($scope.UserPassword_Repeat);
-        alert ($scope.Gender);
-    }
 
 })

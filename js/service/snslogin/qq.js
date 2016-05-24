@@ -59,4 +59,3 @@ app.factory("loginqq",function($http, $q){
     }//End of 自定义get()
     
 })//End of factory
-console.log("loginqq service is on");

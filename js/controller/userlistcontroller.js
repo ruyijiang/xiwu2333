@@ -1,13 +1,47 @@
-app.controller('userlistController',function ($scope,$http){
+app.controller('userlistController',function ($scope,$rootScope){
 
+    /*****初始化******/
     $scope.userListDataArr = [];
     $scope.userDataArr = [];
     $scope.UserDataMostRegion = {};
     $scope.UserDataNowOnline = {};
     $scope.UserDataSexRate = {};
+    $rootScope.MainPageActivity = $rootScope.RoomListActivity = 0;
+    $rootScope.UserListActivity = 1;
+
     var timing = Math.round(new Date().getTime()/1000);
+    alterOnlineStatus(1);
+    /******************/
 
 
+    /**
+     * 点击分页按钮时执行
+     * @param num
+     */
+    /********分页组件初始化******/
+    var num_onepage = 15;//每页显示条数
+    $scope.ListActive = 1;//class为active的分页按钮位置代码
+    $scope.ListSelectedNum = null;//class为active的分页按钮位置代码
+    /*******初始化完成***********/
+    $scope.changeShowPage = function (num){
+        $.ajax({
+            url:'../../library/xwBE-0.0.1/php/userlist_export.php',
+            type:'GET',
+            async: false,
+            data:{"responsecontent":"userlist","num_onepage":num_onepage,"now_page":num},
+            success: function (data){
+                $scope.userListDataArr = welcomejsonarrstring(data);
+                $scope.ListActive = num;
+                $scope.ListSelectedNum = num;
+            },
+            error: function (data){
+                alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
+            },
+            complete: function (){
+
+            }
+        });
+    };
 
 
 
@@ -18,9 +52,9 @@ app.controller('userlistController',function ($scope,$http){
      */
      $.ajax({
         url:'../../library/xwBE-0.0.1/php/userlist_export.php',
-        type:'POST',
+        type:'GET',
          async: false,
-        data:{"timing":timing},
+        data:{"responsecontent":"userlist","num_onepage":num_onepage,"now_page":1},
         success: function (data){
             $scope.userListDataArr = welcomejsonarrstring(data);
         },
@@ -87,8 +121,7 @@ app.controller('userlistController',function ($scope,$http){
 
 
 
-
-
+    
 
     /**
      * 点击"刷新列表"后重新获取userlist用户列表
@@ -106,10 +139,10 @@ app.controller('userlistController',function ($scope,$http){
                 alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
             },
             beforeSend: function (){
-
+                $(".table-responsive-mask").show();
             },
             complete: function (){
-
+                $(".table-responsive-mask").hide();
             }
 
         })

@@ -35,7 +35,7 @@ include("library/xwFE-0.0.1/FEM.php");
               <img src="img/fragments/bgs/5201e19825bf0920045673big.jpg" class="img-responsive center-block"></img>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading">随机推荐的房间</div>
+              <div class="panel-heading">随机推荐</div>
               <div class="panel-body">
                 <img src="img/main_bg/20130428100656532.jpg" alt="烧花鸭的春夏秋冬" width="100%">
                 <div class="caption">

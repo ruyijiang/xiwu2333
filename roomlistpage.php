@@ -1,9 +1,9 @@
 <?php
-require("library/xwBE-0.0.1/all.php");
 require("library/xwBE-0.0.1/connectDB.php");
+require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 ?>
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="roomlistController">
       <div class="row" style="margin-top:80px;">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
@@ -19,17 +19,21 @@ include("library/xwFE-0.0.1/FEM.php");
             <li><a href="">电信</a></li>
             <li><a href="">联通</a></li>
           </ul>
+            <ul class="nav nav-sidebar">
+                <li class="panel-heading">按状态：</li>
+                <li><a>不需密码</a></li>
+                <li><a>即将人满</a></li>
+            </ul>
         </div>
         
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h2 class="sub-header"><img src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png" width="32" height="32" class="img-rounded" alt="Dota2ImgThumbnail32^2">Dota2 - 房间列表</h2>
+          <h2 class="sub-header"><img src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png" width="32" height="32" class="img-rounded" alt="Dota2ImgThumbnail32^2" style="margin-top:-6px;margin-right:3px">Dota2 - 房间列表</h2>
           <div class="row roomlistrow">
           	<div class="col-lg-4 col-md-6">
-            	<h3>烧花鸭的春夏秋冬<strong>(6/8)</strong><abbr title="烧鸭给群主起的中文名是什么？"><span class="glyphicon glyphicon-lock media-middle"></span></abbr></h3>
+            	<h3>烧花鸭的春夏秋冬<strong>(6/8)</strong><abbr title="烧鸭给群主起的中文名是什么？"><i class="iconfont icon-lock roomlistlock"></i></abbr></h3>
                 <small style="display:block"><strong>房主说：</strong><span>Zxc群内战，只要彩笔！欢迎加群168632417</span></small>
                 <a href="" style="position:relative;">
-                	<img style="width:100%;height:198px" src="img/room_img/5506ef197f231twomwebsitescreensho.jpg" class="img-responsive"></img>
-                    <span class="room-vacancy">差2人</span>
+                	<img style="width:100%;height:198px" src="img/room_img/5506ef197f231twomwebsitescreensho.jpg" class="img-responsive"/>
                 </a>
                 <h5 class="clearfix">
                 	<div class="pull-left">

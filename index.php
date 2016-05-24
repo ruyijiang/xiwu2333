@@ -3,11 +3,10 @@ require("library/xwBE-0.0.1/connectDB.php");
 require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 ?>
-<!--喜屋是milo开发的一款，游戏玩家的社区类型网页应用-->
+<!--喜屋是milo独自开发的一款，游戏玩家的社区类型网页应用-->
 <!Doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp" ng-controller="xiwucontroller">
 <head>
-	<meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;user-scalable=no;"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="喜屋,dota2,开黑,坑爹,大神,排位,天梯,电子竞技" />
 	<meta name="robots" content="all" />
@@ -27,19 +26,19 @@ include("library/xwFE-0.0.1/FEM.php");
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet"/>
 	<link href="library/normalize.css/normalize-4.0.0.css" rel="stylesheet"/>
 	<link href="library/bootstrap-3.3.5-dist/css/dashboard.css" rel="stylesheet"/>
-	<link href="//at.alicdn.com/t/font_1460776526_5505247.css" rel="stylesheet"/>
+	<link href="//at.alicdn.com/t/font_1464067737_5628586.css" rel="stylesheet"/>
 	<link href="library/bootstrap-3.3.5-dist/css/bootstrap-slider.min.css" rel="stylesheet"/>
 	<!-- All Css -->
 	<link href="css/all.css" rel="stylesheet"/>
 	<!-- AngularJs -->
-	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	<script src="js/angular.min.js"></script>
 </head>
 <loading></loading>
 <script>
 	var SERVER_BASE = "localhost";
 	var IndexPage = "main.php";
 </script>
-<body ng-app="myApp" ng-controller="xiwucontroller">
+<body>
 
 <?php
 //输出header头部navi_bar
@@ -54,11 +53,10 @@ if(isset($_SESSION['loginstatus']) == 1 && !empty($_SESSION['uid'])){
 echo $openupalertdiv;
 ?>
 
-
 <div ui-view class="ui-viewcon"></div>
 
 <!-- UI router -->
-<script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 <!--jQuery Js-->
 <script  type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <!--Bootstrap Js-->
@@ -69,9 +67,19 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/all.js"></script>
 <!-- router-->
 <script  type="text/javascript" src="js/router.js"></script>
+
+
+
+<!--jQuery Validation-->
+<script type="text/javascript" src="js/test/w5cValidation.js"></script>
+
+
+
 <!-- utills -->
 <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>
+<script  type="text/javascript" src="js/utill/alterLocalStorage.js"></script>
+<script  type="text/javascript" src="js/utill/unique_inarr.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!-- Ueditor Js-->
 <script id="ueditor-main" name="content" type="text/plain"></script>
@@ -80,6 +88,7 @@ echo $openupalertdiv;
 <!-------------------------------------------------------------------------------------->
 <!--services-->
 <script type="text/javascript" src="js/service/snslogin/qq.js"></script>
+<script type="text/javascript" src="js/service/PageTitle.js"></script>
 <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
 <!-------------------------------------------------------------------------------------->
 <!--bootstrap-slider-->
@@ -88,7 +97,7 @@ echo $openupalertdiv;
 
 <!--controllers-->
 <script  type="text/javascript" src="js/controller/xiwucontroller.js"></script>
-<script  type="text/javascript" src="js/controller/maincontroller.js"></script>
+<script  type="text/javascript" src="js/controller/mainpagecontroller.js"></script>
 <script  type="text/javascript" src="js/controller/userlistcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/roomlistcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/logincontroller.js"></script>
@@ -98,6 +107,9 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/homepagecontroller.js"></script>
 <script  type="text/javascript" src="js/controller/personal_settingcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/createroomcontroller.js"></script>
+<script  type="text/javascript" src="js/controller/info_SettingController.js"></script>
+<script  type="text/javascript" src="js/controller/certificationController.js"></script>
+<script  type="text/javascript" src="js/controller/m_passwordController.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!--direcitves-->
 

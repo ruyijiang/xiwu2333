@@ -12,6 +12,16 @@ $freq = 0;//记录用户注册次数
 
 ?>
 <?php
+/*整个程序的初始化设置、赋值和取值*/
+/**
+ * 检测用户开放组队状态
+ */
+//每次登陆时都取消开放组队
+
+
+
+?>
+<?php
 /***************************************************************************************************************  获取物理环境类 ***/
 class _environment{
     /*****************获取ip地址******************/
@@ -390,10 +400,10 @@ function signup($email, $password, $gender){
                 //----------------------------------------------------------------------------------------------------------------->注册出口6：同一个IP地址，在24h内注册数超过3个
             }else{
                 if($usergender == "male"){
-                    $usergender = 1;//男
+                    $usergender = 0;//男
                     $useravatarUri = "img/user_img/avatar/default/default_male.png";
                 }else{
-                    $usergender = 0;//女
+                    $usergender = 1;//女
                     $useravatarUri = "img/user_img/avatar/default/default_female.png";
                 }
                 $userpassword = md5($userpassword);
@@ -441,9 +451,11 @@ function logout(){
     session_unset("username");
     session_unset("userpassword");
     session_unset("loginstatus");
+    session_unset("openstatus");
     setcookie("uid", "", time() - 3600);//604800是7天的秒数，表示记录cookie一礼拜
     setcookie("username", "", time() - 3600);
     setcookie("userpassword", "", time() - 3600);
+    setcookie("openstatus", "", time() - 3600);
 
     $logoutCheck = isset($_SESSION["uid"]) || isset($_SESSION["username"]) || isset($_SESSION["userpassword"]) || isset($_SESSION["loginstatus"]) || empty($_COOKIE["uid"]) || empty($_COOKIE["username"]) || empty($_COOKIE["userpassword"]);
     if($logoutCheck){
@@ -478,11 +490,12 @@ function logout(){
 /****************************************************************************************************************************************开放组队 ***/
 /***************************************************************************************************************************************************/
 class queue{
-    public function searching($mod){
+    public function searching(){
         require ("connectDB.php");
         $status = $reminder = '';
         @$uid = $_SESSION["uid"];
-        $sql = "UPDATE users SET onlinestatus = '1' WHERE uid = '$uid' ";
+        $sql = "UPDATE users SET openstatus='1' WHERE uid = '$uid' ";
+        $_SESSION["openstatus"] = 1;
         $qry = $db->query($sql);
         if($qry){
             $status = 1;
@@ -505,12 +518,13 @@ class queue{
         }
     }
 
-    public function disablesearching($mod){
+    public function disablesearching(){
         require ("connectDB.php");
         $status = $reminder = '';
         @$uid = $_SESSION["uid"];
-        $sql = "UPDATE users SET onlinestatus = '0' WHERE uid = '$uid' ";
+        $sql = "UPDATE users SET openstatus = '0' WHERE uid = '$uid' ";
         $qry = $db->query($sql);
+        $_SESSION["openstatus"] = "0";
         if($qry){
             $status = 1;
             $reminder = "停止开放组队";
@@ -568,12 +582,13 @@ class UserData{
 
     public function getOnlineUsersAmount(){
         require ("connectDB.php");
-        $sql = "SELECT uid FROM users WHERE onlinestatus = '1' ";
+        $sql = "SELECT uid FROM users WHERE onlinestatus = '1' AND openstatus = '1'  ";
         $qry = $db->query($sql);
-        $row = $qry->fetch_assoc();
-        $result_uid = $row["uid"];
-        $result = intval($result_uid, 10);
-        return $result;
+        $num = 0;
+        while($row = $qry->fetch_assoc()){
+            $num++;
+        }
+        return $num;
     }
 
     public function getOnlineUsersAmountInPeriod($period,$interval){

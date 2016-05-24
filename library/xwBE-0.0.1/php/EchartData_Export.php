@@ -13,7 +13,6 @@ require("../all.php");
     $dateHeader = $_POST["timing"];
     $mod = $_POST["mod"];
     $a = new UserData();
-
     if(!empty($dateHeader)){
         if($mod == "getHighestLocation"){
             echo $a->getHighestLocation();
