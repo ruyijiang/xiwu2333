@@ -5,8 +5,8 @@
  * Date: 2016/5/25
  * Time: 9:42
  */
-require("../connectDB.php");
-require("../all.php");
+require("connectDB.php");
+require("all.php");
 ?>
 <?php
 
@@ -22,19 +22,43 @@ require("../all.php");
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
     if($qry){
-        /*用户基础数据*/
+        /**
+         * 用户基础信息******************************
+         */
+        $result_avatar = $row["avatar"];//头像
         $result_name = $row["name"];//用户名
-        $result_name = $row["name"];//用户签名
-        $result_name = $row["name"];//用户认证信息***
-        $result_name = $row["name"];//用户uid
-        $result_name = $row["name"];//地区
-        $result_name = $row["name"];//天梯
-        $result_name = $row["name"];//评分
-        $result_name = $row["name"];//服务器
-        $result_name = $row["name"];//qq
-        $result_name = $row["name"];//用户签名微信
-        $result_name = $row["name"];//房间***
-        $result_name = $row["name"];//用户签名
+        $result_gender = $row["gender"];//性别
+        $result_slogan = $row["slogan"];//签名
+        $result_calling_card_id = $row["calling_card_id"];
+        $result_calling_card = "";//认证信息
+        $sql2 = "SELECT content FROM callingcard WHERE id = '$result_calling_card_id' ";
+        $qry2 = $db->query($sql2);
+        $row2 = $qry2->fetch_assoc();
+        if($row2["content"]){
+            $result_calling_card = $row2["content"];
+        }else{
+            $result_calling_card = "";
+        }
+        $result_country = $row["country"];//国家
+        $result_province = $row["province"];//省份
+        $result_city = $row["city"];//城市
+        $result_ladderscore = $row["ladderscore"];//天梯
+        $result_score = $row["score"];//评分
+        $result_server = $row["server"];//服务器
+        $result_liveplain = $row["liveplain"];//直播平台
+        $result_qq = $row["qq"];//qq
+        $result_weixin = $row["weixin"];//微信
+        $result_weibo = $row["weibo"];//微博
+
+        $sql3 = "SELECT bg_img FROM rooms WHERE creator = '$RequestUid' ";
+        $qry3 = $db->query($sql3);
+        $row3 = $qry3->fetch_assoc();
+        $result_roomimg = $row3["bg_img"];//房间背景图
+
+
+        /**
+         * 用户特殊信息******************************
+         */
         if($RequestCate == "pulse"){
             /*用户pulse数据*/
 
@@ -55,6 +79,17 @@ require("../all.php");
         }
 
 
+        /**
+         * 输出
+         */
+        $dataArr = array ('uid'=>$RequestUid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'room_bg_img'=>$result_roomimg);
+
+        foreach ( $dataArr as $key => $value ) {
+            $dataArr[$key] = urlencode ($value);
+        }
+
+        $dataArr = urldecode ( json_encode ( $dataArr ));
+        echo $dataArr;
 
 
     }else{

@@ -53,23 +53,23 @@ app.controller('homepagecontroller',function ($scope,$rootScope){
     function _loadUserData(requestData,uid){
         //requestData:pulse/article/comment
 
-        if(!uid){
+        /*if(!uid){
             //请求的是自己的数据，也就是myhome
         }else{
             //请求的是别人的数据，也就是别的个人主页
-        }
+        }*/
+
         $.ajax({
             url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
             type:'POST',
             async: false,
-            data:{"drequest":requestData,"uid":""},
+            data:{"drequest":requestData},
             success: function (data){
-                //welcomejsonstring(data);
-                if(data !== 1){
-                    alert ("myHomePageError：数据请求失败，请联系管理员");
-                }else{
-                    $scope.UserData = data;
-                }
+                data = eval( "(" + data + ")");
+                var SArr = data.server.split(',');//SArr = [1,2,3,];
+                SArr.pop();
+                data.server = SArr;
+                $scope.UserData = data;
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
@@ -148,4 +148,5 @@ app.controller('homepagecontroller',function ($scope,$rootScope){
     //视图初始化
     $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
+    _loadUserData("pulse");
 })

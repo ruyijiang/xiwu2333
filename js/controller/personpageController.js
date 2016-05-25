@@ -1,7 +1,7 @@
 /**
  * Created by mazih on 2016/5/25.
  */
-app.controller('homepagecontroller',function ($scope,$rootScope){
+app.controller('personpagecontroller',function ($scope,$rootScope){
 
     $scope.TabShowPage = 1;//当前TabIndex值
     $scope.DataAreaMask = 0;//数据请求时的遮罩层显示指示

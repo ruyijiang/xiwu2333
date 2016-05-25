@@ -6,61 +6,81 @@ include("library/xwFE-0.0.1/FEM.php");
 <div class="container" ng-controller="homepagecontroller" style="margin-top:100px">
         <div class="row">
                 <div class="leftpart col-lg-3">
-                    <img src="img/user_img/avatar/default/default_female.png" class="img-responsive center-block" width="186"/>
-                    <h2>
-                        <strong>shy</strong>
-                        <i class="iconfont icon-nan" style="font-size:32px;color:#346ea1"></i>
-                        <i class="iconfont icon-nvhai" style="font-size:32px;color:#b76d8a"></i>
-                    </h2>
-                    <p>一个DOTA爱好者</p>
-                    <hr>
-                    <table class="id_info">
-                        <tr>
-                            <td><i class="iconfont icon-renzheng" style="font-size:28px;color:#d87f00 "></i></td>
-                            <td style="font-size:18px">喜屋网作者烧花鸭</td>
-                        </tr>
-                    </table>
-                    <hr>
+                    <div>
+                        <img ng-src="{{UserData.avatar}}" class="img-responsive center-block" width="186"/>
+                        <h2>
+                            <strong>shy</strong>
+                            <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:32px;color:#346ea1" title="男"></i>
+                            <i ng-if="UserData.gender == '1'" class="iconfont icon-nvhai" style="font-size:32px;color:#b76d8a" title="女"></i>
+                        </h2>
+                        <p>一个DOTA爱好者</p>
+                        <hr>
+                    </div>
+                    <div ng-if="callingcard_content !== ''">
+                        <table class="id_info">
+                            <tr>
+                                <td><i class="iconfont icon-renzheng" style="font-size:28px;color:#d87f00"></i></td>
+                                <td style="font-size:18px">{{UserData.callingcard_content}}</td>
+                            </tr>
+                        </table>
+                        <hr>
+                    </div>
+
                     <table class="userp_info">
                         <tr>
                             <td><i class="iconfont icon-shuziliu"></i></td>
                             <td width="25%">UID：</td>
-                            <td><span>20253012</span></td>
+                            <td><span>{{UserData.uid}}</span></td>
                         </tr>
                         <tr>
                             <td><i class="iconfont icon-dingwei"></i></td>
                             <td>地区：</td>
-                            <td><span>中国</span>，<span>天津</span>，<span>天津</span></td>
+                            <td><span>{{UserData.province}}</span>，<span>{{UserData.city}}</span></td>
                         </tr>
                         <tr>
                             <td><i class="iconfont icon-shujufenxi"></i></td>
                             <td>天梯：</td>
-                            <td><span>4500+</span></td>
+                            <td><span>{{UserData.ladderscore}}</span></td>
                         </tr>
                         <tr>
                             <td><i class="iconfont icon-score"></i></td>
                             <td>评分：</td>
                             <td>
-                                <span class="label label-success" style="font-weight:bold;font-style:italic">72.7</span>
+                                <span ng-class="{'label-success':UserData.score>=80,'label-warning':UserData.score<80&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">{{UserData.score}}</span>
                             </td>
                         </tr>
                         <tr>
                             <td><i class="iconfont icon-leibie"></i></td>
                             <td>服务器：</td>
                             <td>
-                                <span class="label label-default">电信(上海)</span>
-                                <span class="label label-default">电信(浙江)</span>
+                                <span class="label label-default" ng-repeat="xserver in UserData.server" style="margin-right:3px">{{xserver}}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="iconfont icon-leibie"></i></td>
+                            <td>直播间：</td>
+                            <td>
+                                <a ng-href="{{UserData.liveplain}}" target="_blank" class="btn btn-default btn-sm" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width:160px">{{UserData.liveplain}}</a>
                             </td>
                         </tr>
                         <tr>
                             <td><i class="iconfont icon-qq-copy"></i></td>
                             <td>QQ：</td>
-                            <td><span>1444828173</span></td>
+                            <td><span>{{UserData.qq}}</span></td>
                         </tr>
                         <tr>
                             <td><i class="iconfont icon-weixin"></i></td>
                             <td>微信：</td>
-                            <td><span><span class="glyphicon glyphicon-qrcode thisQR" style=""><img src="img/user_img/qrcode/1_1341237641.jpg" class="qrcodeimg"/></span></span></td>
+                            <td>
+                                <span class="glyphicon glyphicon-qrcode thisQR" style="">
+                                    <img src="img/user_img/qrcode/1_1341237641.jpg" class="qrcodeimg"/>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="iconfont icon-weixin"></i></td>
+                            <td>微博：</td>
+                            <td><a>马子航milo</a></td>
                         </tr>
                     </table>
                     <hr>
