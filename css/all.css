@@ -96,6 +96,8 @@
 .thisQR:hover{cursor:pointer}
 .thisQR .qrcodeimg{
 	display:none;
+	background-color:white;
+	z-index:99;
 }
 .thisQR:hover .qrcodeimg{
 	display:block;
@@ -144,6 +146,17 @@ footer{margin-bottom:30px;}
 .loading-cont{text-align: center;}
 .loading-img{background-color:#333;margin: auto 0;}
 
+/*myhome视图*/
+.userp_info td{
+	padding: 4px;
+}
+.userp_info td:nth-child(1) i{font-size:20px}
+.userp_info td:nth-child(2){
+	font-size:16px;
+	font-size:14px;
+	font-weight:bold;
+	text-align: right;
+}
 
 /*bootstrap覆盖修正*/
 a[class^="sider-right-btn"]{
@@ -161,7 +174,7 @@ a[class^="sider-right-btn"]{
 .label-danger{border-bottom:solid #b8140f 2px}
 .label-warning{border-bottom:solid #d87f00 2px}
 .label-success{border-bottom:solid #089307 2px}
-.glyphicon{top:1px;line-height:0;margin:0 0px;}
+.glyphicon{top:1px;line-height:0;margin:0 6px;font-weight:200}/*iconfont采用的是两套，这是旧的一套的样式规则*/
 .spanicon{margin:0 6px;}
 body{font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;}
 .label{font-weight:200;}

@@ -26,7 +26,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet"/>
 	<link href="library/normalize.css/normalize-4.0.0.css" rel="stylesheet"/>
 	<link href="library/bootstrap-3.3.5-dist/css/dashboard.css" rel="stylesheet"/>
-	<link href="//at.alicdn.com/t/font_1464067737_5628586.css" rel="stylesheet"/>
+	<link href="//at.alicdn.com/t/font_1464153446_4585128.css" rel="stylesheet"/>
 	<link href="library/bootstrap-3.3.5-dist/css/bootstrap-slider.min.css" rel="stylesheet"/>
 	<!-- All Css -->
 	<link href="css/all.css" rel="stylesheet"/>
@@ -110,6 +110,7 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/info_SettingController.js"></script>
 <script  type="text/javascript" src="js/controller/certificationController.js"></script>
 <script  type="text/javascript" src="js/controller/m_passwordController.js"></script>
+<script  type="text/javascript" src="js/controller/personpageController.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!--direcitves-->
 

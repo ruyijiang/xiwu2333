@@ -4,67 +4,6 @@
 app.controller('info_SettingController',function ($scope){
 
 
-    /**test**/
-    var vm = $scope.vm = {
-        htmlSource        : "",
-        showErrorType     : "1",
-        showDynamicElement: true,
-        dynamicName       : "dynamicName",
-        entity            : {}
-    };
-
-    vm.saveEntity = function ($event) {
-        //do somethings for bz
-        alert("Save Successfully!!!");
-    };
-
-    vm.customizer = function () {
-        return vm.entity.customizer > vm.entity.number;
-    };
-
-    vm.changeShowType = function () {
-        if (vm.showErrorType == 2) {
-            vm.validateOptions.showError = false;
-            vm.validateOptions.removeError = false;
-        } else {
-            vm.validateOptions.showError = true;
-            vm.validateOptions.removeError = true;
-        }
-    };
-
-    vm.types = [
-        {
-            value: 1,
-            text : "选择框"
-        },
-        {
-            value: 2,
-            text : "输入框"
-        }
-    ];
-
-
-
-
-    /**test**/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     $scope.CityNameShowStatus = null;
     $scope.ProvinceName = $scope.CityName = null;
     $scope.CityListArr = [];

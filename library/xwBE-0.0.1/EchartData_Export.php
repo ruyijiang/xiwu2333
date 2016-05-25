@@ -9,7 +9,6 @@
 require("../connectDB.php");
 require("../all.php");
 ?>
-<div style="margin-top:150px;height:20px;background-color:#e9e9e9;"></div>
 <?php
 
     $sql = "select count(1),city from users group by city order by count(1) desc limit 0,3";

@@ -69,6 +69,10 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/createroom",
             templateUrl: "roomdetail.php"
         })
+        .state("person",{
+            url: "/person",
+            templateUrl: "personpage.php"
+        })
         .state("404", {
             url: "/404",
             templateUrl: "404.html"
