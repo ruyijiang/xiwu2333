@@ -2,295 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/www.iml" afterPath="$PROJECT_DIR$/.idea/www.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/.gitignore" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/.ruby-version" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/.ruby-version" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/Gemfile" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/Gemfile.lock" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/README.md" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/_config.yml" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/composer.json" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome-ie7.css" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome-ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome.css" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/font/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/font/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/bootstrap.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/core.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/extras.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/extras.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/font-awesome-ie7.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/font-awesome-ie7.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/font-awesome.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/icons.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/mixins.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/path.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/variables.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/package.json" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_bootstrap.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_bootstrap.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_core.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_extras.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_extras.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_icons.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_mixins.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_path.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_variables.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/font-awesome-ie7.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/font-awesome-ie7.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/Makefile" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-dark-vertical.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-dark-vertical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-horizontal.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-horizontal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-vertical.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-vertical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/brand-license.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/brand-license.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/cheatsheet.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/cheatsheet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/getting-support.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/getting-support.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/project-milestones.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/project-milestones.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/reporting-bugs.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/reporting-bugs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/requesting-new-icons.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/requesting-new-icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/submitting-pull-requests.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/submitting-pull-requests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/animated-spinner.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/animated-spinner.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/bordered-pulled.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/bordered-pulled.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/bulleted-lists.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/bulleted-lists.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/button-dropdowns.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/button-dropdowns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/button-groups.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/button-groups.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/buttons.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/custom.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/custom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/form-inputs.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/form-inputs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/inline-icons.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/inline-icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/larger-icons.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/larger-icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/navigation.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/new.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/rotated-flipped.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/rotated-flipped.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/stacked.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/stacked.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/footer.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/get-started.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/get-started.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/brand.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/brand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/currency.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/currency.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/directional.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/directional.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/medical.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/medical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/new.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/text-editor.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/text-editor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/video-player.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/video-player.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/web-application.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/web-application.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/jumbotron-slider.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/jumbotron-slider.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/jumbotron.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/jumbotron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/license-code.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/license-code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/license.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/license.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/navbar.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/stripe-ad.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/stripe-ad.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/stripe-social.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/stripe-social.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tell-me-thanks.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tell-me-thanks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-anchor.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-anchor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-btn.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-btn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/stacked-inside-anchor.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/stacked-inside-anchor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/stacked.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/stacked.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/thanks-to.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/thanks-to.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/whats-new.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/whats-new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/why.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/why.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_layouts/base.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_layouts/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_layouts/icon.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_layouts/icon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_plugins/icon_page_generator.rb" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_plugins/icon_page_generator.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_plugins/site.rb" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_plugins/site.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/css/prettify.css" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/css/prettify.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/css/pygments.css" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/css/pygments.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/bootstrap.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/extras.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/extras.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome-ie7.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome-ie7.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_bootstrap.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_bootstrap.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_extras.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_extras.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome-ie7.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome-ie7.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/ZeroClipboard-1.1.7.min.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/ZeroClipboard-1.1.7.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/backbone.min.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/backbone.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/bootstrap-2.3.1.min.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/bootstrap-2.3.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/bootstrap-222.min.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/bootstrap-222.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/jquery-1.7.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/prettify.min.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/prettify.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/site.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/site.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/underscore.min.js" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/underscore.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/accordion.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/accordion.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/alerts.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/bootstrap.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/breadcrumbs.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/breadcrumbs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/button-groups.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/buttons.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/carousel.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/carousel.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/close.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/close.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/code.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/component-animations.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/component-animations.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/dropdowns.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/forms.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/grid.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/hero-unit.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/hero-unit.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/labels-badges.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/labels-badges.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/layouts.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/layouts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/media.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/media.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/mixins.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/modals.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/modals.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navbar.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navs.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pager.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pagination.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/popovers.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/popovers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/progress-bars.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/reset.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/reset.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-1200px-min.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-1200px-min.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-767px-max.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-767px-max.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-768px-979px.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-768px-979px.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-navbar.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-utilities.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/scaffolding.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/sprites.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/sprites.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tables.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/thumbnails.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tooltip.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/type.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/utilities.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/variables.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/wells.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/wells.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/lazy.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/lazy.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/mixins.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-1200px-min.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-1200px-min.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-767px-max.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-767px-max.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-768px-979px.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-768px-979px.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-navbar.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/site.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/site.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/sticky-footer.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/sticky-footer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/variables.less" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/cheatsheet.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/cheatsheet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/community.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/design.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/design.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/examples.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/examples.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/get-started.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/get-started.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/icons.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/icons.yml" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/icons.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/index.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/license.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/license.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/test.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/whats-new.html" afterPath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/whats-new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_sql/articles.sql" afterPath="$PROJECT_DIR$/db_sql/articles.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_sql/callingcard.sql" afterPath="$PROJECT_DIR$/db_sql/callingcard.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_sql/comments_person.sql" afterPath="$PROJECT_DIR$/db_sql/comments_person.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_sql/users.sql" afterPath="$PROJECT_DIR$/db_sql/users.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage.php" afterPath="$PROJECT_DIR$/homepage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/homepagecontroller.js" afterPath="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/test/messages_zh.js" afterPath="$PROJECT_DIR$/js/test/messages_zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/Echart-3.1.4/echarts.simple.min.js" afterPath="$PROJECT_DIR$/library/Echart-3.1.4/echarts.simple.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/js/npm.js" afterPath="$PROJECT_DIR$/library/bootstrap-3.3.5-dist/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/chart.config.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/chart.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/map/show.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/map/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/preview/preview.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/preview/preview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittd.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittip.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittip.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/tangram.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/tangram.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_crawler.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_crawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_list.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_upload.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/config.json" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/controller.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/css/ueditor.min.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/css/ueditor.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/SyntaxHighlighter/shCore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/codemirror/codemirror.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-blue.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-blue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-green.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-green.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/gray.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/gray.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/grid.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/skies.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/skies.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/font/vjs.svg" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/font/vjs.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.min.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.dev.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.all.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personpage.php" afterPath="$PROJECT_DIR$/personpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travelsky/css/timepicker.less" afterPath="$PROJECT_DIR$/travelsky/css/timepicker.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travelsky/js/angular-popups.js" afterPath="$PROJECT_DIR$/travelsky/js/angular-popups.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travelsky/js/bootstrap-timepicker.js" afterPath="$PROJECT_DIR$/travelsky/js/bootstrap-timepicker.js" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -321,34 +33,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="84" column="244" selection-start-line="84" selection-start-column="238" selection-end-line="84" selection-end-column="244" />
+            <state relative-caret-position="504">
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
               <folding>
-                <marker date="1464188754406" expanded="true" signature="374:417" placeholder="SELECT * FRO... users" />
-                <marker date="1464188754406" expanded="true" signature="862:930" placeholder="SELECT conte... calling_card_id" />
-                <marker date="1464188754406" expanded="true" signature="1631:1685" placeholder="SELECT bg_im... rooms" />
+                <marker date="1464224882239" expanded="true" signature="374:417" placeholder="SELECT * FRO... users" />
+                <marker date="1464224882239" expanded="true" signature="862:930" placeholder="SELECT conte... callingcard" />
+                <marker date="1464224882239" expanded="true" signature="1631:1685" placeholder="SELECT bg_im... rooms" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homepage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#1;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#td#2;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#td#2;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#2;n#tr#5;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -356,7 +60,7 @@
       <file leaf-file-name="all.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/all.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="4632">
               <caret line="193" column="106" selection-start-line="193" selection-start-column="86" selection-end-line="193" selection-end-column="106" />
               <folding />
             </state>
@@ -366,7 +70,7 @@
       <file leaf-file-name="homepagecontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/homepagecontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="1656">
               <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
               <folding />
             </state>
@@ -376,12 +80,9 @@
       <file leaf-file-name="info_settingpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info_settingpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="2448">
               <caret line="102" column="117" selection-start-line="102" selection-start-column="117" selection-end-line="102" selection-end-column="117" />
-              <folding>
-                <marker date="1464139328385" expanded="true" signature="1282:1320" placeholder="SELECT * FRO... users" />
-                <marker date="1464139328385" expanded="true" signature="8059:8111" placeholder="SELECT REGIO... region" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -389,7 +90,7 @@
       <file leaf-file-name="info_SettingController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="3504">
               <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="53" />
               <folding />
             </state>
@@ -399,11 +100,9 @@
       <file leaf-file-name="personalinfo_export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/personalinfo_export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="1008">
               <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-              <folding>
-                <marker date="1464139331235" expanded="true" signature="351:414" placeholder="SELECT * FRO... users" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -420,6 +119,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
@@ -482,10 +182,11 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -494,8 +195,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -522,6 +223,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -737,18 +450,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -775,6 +476,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1068" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="nodejs_interpreter_path" value="E:\Nodejs\node" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="C:\Users\mazih\AppData\Roaming\npm\node_modules\gulp" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
@@ -786,6 +490,18 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -797,7 +513,39 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+      <method />
+    </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <force value="false" />
+      <verbose value="false" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -882,22 +630,23 @@
       <workItem from="1464176618527" duration="1661000" />
       <workItem from="1464181821276" duration="5015000" />
       <workItem from="1464187057269" duration="3329000" />
+      <workItem from="1464224889378" duration="1933000" />
+      <workItem from="1464231657431" duration="414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265119000" />
+    <option name="totallyTimeSpent" value="267466000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21522693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21035941" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35095137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -911,6 +660,7 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21035941" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1203,7 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="135" column="54" selection-start-line="135" selection-start-column="54" selection-end-line="135" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,35 +974,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="84" column="244" selection-start-line="84" selection-start-column="238" selection-end-line="84" selection-end-column="244" />
-          <folding>
-            <marker date="1464188754406" expanded="true" signature="374:417" placeholder="SELECT * FRO... users" />
-            <marker date="1464188754406" expanded="true" signature="862:930" placeholder="SELECT conte... calling_card_id" />
-            <marker date="1464188754406" expanded="true" signature="1631:1685" placeholder="SELECT bg_im... rooms" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/personalinfo_export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="1008">
           <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding>
-            <marker date="1464139331235" expanded="true" signature="351:414" placeholder="SELECT * FRO... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="3504">
           <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="53" />
           <folding />
         </state>
@@ -1261,18 +995,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/info_settingpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="2448">
           <caret line="102" column="117" selection-start-line="102" selection-start-column="117" selection-end-line="102" selection-end-column="117" />
-          <folding>
-            <marker date="1464139328385" expanded="true" signature="1282:1320" placeholder="SELECT * FRO... users" />
-            <marker date="1464139328385" expanded="true" signature="8059:8111" placeholder="SELECT REGIO... region" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/homepagecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="1656">
           <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
           <folding />
         </state>
@@ -1280,7 +1011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="4632">
           <caret line="193" column="106" selection-start-line="193" selection-start-column="86" selection-end-line="193" selection-end-column="106" />
           <folding />
         </state>
@@ -1288,16 +1019,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homepage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="228">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#2;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#2;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#2;n#tr#5;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1464224882239" expanded="true" signature="374:417" placeholder="SELECT * FRO... users" />
+            <marker date="1464224882239" expanded="true" signature="862:930" placeholder="SELECT conte... callingcard" />
+            <marker date="1464224882239" expanded="true" signature="1631:1685" placeholder="SELECT bg_im... rooms" />
           </folding>
         </state>
       </provider>
