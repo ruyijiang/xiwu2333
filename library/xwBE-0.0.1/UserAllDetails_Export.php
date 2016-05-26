@@ -69,6 +69,16 @@ require("all.php");
             /*用户article数据*/
 
             $result_name = $row["name"];//articles
+            $sql4 = "SELECT * FROM articles WHERE uid = '$RequestUid' ";
+            $qry4 = $db->query($sql4);
+            while($row4 = $qry4->fetch_assoc()){
+                $result_title = $row4["title"];
+                $result_time = $row4["time"];
+                $restult_aid = $row4["aid"];
+                //通过aid进行文章的远程调取
+                //一方面这样做为了减轻数据库的压力，另一方面方便逐行读取，而不用一口气把所有文字全部拿下来
+
+            }
 
         }else if($RequestCate == "comment"){
             /*用户comment数据*/

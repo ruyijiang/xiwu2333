@@ -1,32 +1,29 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('homepagecontroller',function ($scope,$rootScope){
+app.controller('homepagecontroller',function ($scope,$rootScope,$location){
 
 
     $scope.TabShowPage = 1;//当前TabIndex值
     $scope.DataAreaMask = 0;//数据请求时的遮罩层显示指示
     $scope.UserDataStatus = [];//已请求回来的用户数据下标
     $scope.UserData = {};//请求回来用户数据内容对象
+    $scope.TabShowPage = 1;
 
 
     $scope.Tabshow = function (tabindex){
         switch(tabindex){
             case 1:
                 myhomeLoadData(1);
-                $scope.TabShowPage = 1;
                 break;
             case 2:
                 myhomeLoadData(2);
-                $scope.TabShowPage = 2;
                 break;
             case 3:
                 myhomeLoadData(3);
-                $scope.TabShowPage = 3;
                 break;
             default:
                 myhomeLoadData(1);
-                $scope.TabShowPage = 1;
         }
     };
     function myhomeLoadData(index){
@@ -49,27 +46,53 @@ app.controller('homepagecontroller',function ($scope,$rootScope){
 
     /**
      * 从数据库读取数据
+     * 备注：此函数所有参数均为可选，
+     * @param requestData ： 请求内容的类别，选项是：pulse/article/comment，如果为空，则默认是pulse
+     * @param uid ： 请求的用户的uid，如果为空，则会传递空值给ajax，而在对应的程序里会默认显示登陆的用户自己的
      */
     function _loadUserData(requestData,uid){
-        //requestData:pulse/article/comment
 
-        /*if(!uid){
-            //请求的是自己的数据，也就是myhome
+        //判断url里是否有tab。如果有，则请求对应tab的请求；如果没有，则请求默认的pulse数据
+        var tab = $location.search()["tab"];
+        if(tab == "pulse"){
+            $scope.TabShowPage = 1;
+        }else if(tab == "article"){
+            $scope.TabShowPage = 2;
+        }else if(tab == "comment"){
+            $scope.TabShowPage = 3;
         }else{
-            //请求的是别人的数据，也就是别的个人主页
-        }*/
+            tab = "pulse";
+            $scope.TabShowPage = 1;
+        }
+
+        if(!uid) uid = "";
+        if(!requestData) requestData = tab;
 
         $.ajax({
             url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
             type:'POST',
             async: false,
-            data:{"drequest":requestData},
+            data:{"drequest":requestData,"uid":uid},
             success: function (data){
                 data = eval( "(" + data + ")");
                 var SArr = data.server.split(',');//SArr = [1,2,3,];
                 SArr.pop();
                 data.server = SArr;
                 $scope.UserData = data;
+                switch (requestData){
+                    case "pulse":
+                        $scope.TabShowPage = 1;
+                        break;
+                    case "article":
+                        $scope.TabShowPage = 2;
+                        break;
+                    case "comment":
+                        $scope.TabShowPage = 3;
+                        break;
+                    default:
+                        $scope.TabShowPage = 1;
+                        break;
+                }
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
@@ -148,5 +171,5 @@ app.controller('homepagecontroller',function ($scope,$rootScope){
     //视图初始化
     $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
-    _loadUserData("pulse");
+    _loadUserData();
 })
