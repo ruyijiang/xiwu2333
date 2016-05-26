@@ -189,10 +189,11 @@ include("library/xwFE-0.0.1/FEM.php");
                             <small class="pull-right"><time>3min 前</time></small>
                         </div>
                     </div>
-                    
-                    
+
                     
                     
                 </div><!--rightpart-->
         </div><!--row-->
+    <hr>
+    <?php echo $footer;?>
     </div><!--container-->

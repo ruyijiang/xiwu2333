@@ -152,7 +152,7 @@ class UserRecord{
             }
         }
     }//End of function
-    /*** 创建或写入"用户记录"文件夹下的txt文件，写入内容，即记录用户浏览轨迹 | 已经通过session[uid]进行自动化，现在需要一个content参数，作为记录内容 | 自动化之前：param:$mod - 有两种数值可选:"ip"和"uid"，分别用于记录|游客|和|注册用户|的浏览信息 * ***/
+/*** 创建或写入"用户记录"文件夹下的txt文件，写入内容，即记录用户浏览轨迹 | 已经通过session[uid]进行自动化，现在需要一个content参数，作为记录内容 | 自动化之前：param:$mod - 有两种数值可选:"ip"和"uid"，分别用于记录|游客|和|注册用户|的浏览信息 * ***/
     public function recordUserVisit($content){
         //mod有"ip"和"registered"和"auto"三种模式，分别服务于未注册用户和已注册用户。
         $_En = new _environment();
