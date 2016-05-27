@@ -36,7 +36,7 @@
       <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="0">
               <caret line="7" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <marker date="1464359463853" expanded="true" signature="374:417" placeholder="SELECT * FRO... users" />
@@ -553,7 +553,7 @@
       <workItem from="1464270340361" duration="4777000" />
       <workItem from="1464275184339" duration="1249000" />
       <workItem from="1464359189013" duration="4387000" />
-      <workItem from="1464363835051" duration="152000" />
+      <workItem from="1464363835051" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -597,11 +597,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464363881264</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="今天跟包子出去吃饭了，好累。不想写太多了。整理了一下算法和数据库结构的思路，写了个小小架子。碎觉">
+      <created>1464363991254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1464363991254</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287659000" />
+    <option name="totallyTimeSpent" value="287772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -883,7 +890,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="0">
           <caret line="7" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="19" />
           <folding>
             <marker date="1464359463853" expanded="true" signature="374:417" placeholder="SELECT * FRO... users" />
@@ -958,13 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.git/description">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/homepagecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -998,6 +998,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="845">
           <caret line="112" column="12" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.git/description">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="72" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
           <folding />
         </state>
       </provider>
