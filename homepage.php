@@ -85,7 +85,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </table>
                     <hr>
                     <h5><strong>他的房间</strong></h5>
-                    <a href=""><img src="img/room_img/20130428100656532.jpg" class="img-responsive" data-toggle="tooltip" data-placement="top" data-original-title="烧花鸭的春夏秋冬"/></a>
+                    <a href=""><img ng-src="{{UserData.room_bg_img}}" class="img-responsive" data-toggle="tooltip" data-placement="top" data-original-title="{{UserData.room_name}}"/></a>
                 </div>
                 <div class="rightpart col-lg-9">
                     <ul class="nav nav-tabs" style="margin-top:20px;">

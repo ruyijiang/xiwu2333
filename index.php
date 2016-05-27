@@ -65,6 +65,8 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="library/Echart-3.1.4/echarts.simple.min.js"></script>
 <!--all.js-->
 <script  type="text/javascript" src="js/all.js"></script>
+<!-- angular-popups -->
+<script  type="text/javascript" src="js/angular-popups.js"></script>
 <!-- router-->
 <script  type="text/javascript" src="js/router.js"></script>
 <!-- utills -->
@@ -74,7 +76,7 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/utill/unique_inarr.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!-- Ueditor Js-->
-<script id="ueditor-main" name="content" type="text/plain"></script>
+<!--<script id="ueditor-main" name="content" type="text/plain"></script>-->
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.config.js"></script>
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.all.min.js"></script>
 <!-------------------------------------------------------------------------------------->

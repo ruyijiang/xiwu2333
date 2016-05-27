@@ -170,21 +170,21 @@ class UserRecord{
                         $a = $uip;
                         $tg = "user_traces/IP/";
                     }
-                }
-                $filename = $a.".txt";
-                $file = "../../../data/".$tg.$filename;
-                $filestream = fopen($file,"r");
-                /*$content = fgets($filestream);
-                $target = strpos("用户登录",$content);
-                if($target === false){//没有找到duration项目，创建项目
-                    $filestream = fopen($file,"a");
-                    fwrite($filestream,""."[".$now."]创建此文件，并浏览[".$pagename."]\r\n");
-                    fclose($filestream);
-                }else{//找到了duration项目，在其19个字符之后的位置进行书写，然后再返回文件*/
-                    $filestream = fopen($file,"a");
-                    fwrite($filestream,"[".$now."]浏览[".$pagename."]，备注内容为：【".$content."】\r\n");
-                    fclose($filestream);
-                //}
+            }
+            $filename = $a.".txt";
+            $file = "../../../data/".$tg.$filename;
+            $filestream = fopen($file,"r");
+            /*$content = fgets($filestream);
+            $target = strpos("用户登录",$content);
+            if($target === false){//没有找到duration项目，创建项目
+                $filestream = fopen($file,"a");
+                fwrite($filestream,""."[".$now."]创建此文件，并浏览[".$pagename."]\r\n");
+                fclose($filestream);
+            }else{//找到了duration项目，在其19个字符之后的位置进行书写，然后再返回文件*/
+                $filestream = fopen($file,"a");
+                fwrite($filestream,"[".$now."]浏览[".$pagename."]，备注内容为：【".$content."】\r\n");
+                fclose($filestream);
+            //}
 
     }
     /*** 创建或写入"用户记录"文件夹下的txt文件，用于记录用户搜索记录 | param:   - 没有参数 ***/

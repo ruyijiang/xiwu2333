@@ -50,10 +50,11 @@ require("all.php");
         $result_weixin = $row["weixin"];//微信
         $result_weibo = $row["weibo"];//微博
 
-        $sql3 = "SELECT bg_img FROM rooms WHERE creator = '$RequestUid' ";
+        $sql3 = "SELECT name,bg_img FROM rooms WHERE creator = $RequestUid ";
         $qry3 = $db->query($sql3);
         $row3 = $qry3->fetch_assoc();
         $result_roomimg = $row3["bg_img"];//房间背景图
+        $result_roomname = $row3["name"];//房间名称
 
 
         /**
@@ -92,7 +93,7 @@ require("all.php");
         /**
          * 输出
          */
-        $dataArr = array ('uid'=>$RequestUid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'room_bg_img'=>$result_roomimg);
+        $dataArr = array ('uid'=>$RequestUid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'room_bg_img'=>$result_roomimg,'room_name'=>$result_roomname);
 
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value);

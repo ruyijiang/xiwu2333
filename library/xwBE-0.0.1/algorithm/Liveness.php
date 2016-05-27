@@ -43,36 +43,60 @@ require("all.php");
 
         /**
          * 记录某个用户今日的liveness数值
-         * @param $uid : 用户uid
+         * @param $uid : 只能是session用户自己
+         * @param $commitname : 获得分数的操作的名称，如writearticle、login、comment etc,
+         * @param $score : 对应这个操作，所打的分数
          */
-        public function setLiveness($uid){
+        public function setLiveness($commitname,$score){
             $_En = new _environment();
             $uip = $_En->getIp();
 
+            /******创建文件夹和文件******/
             $lj = preg_split('/\/{1}/',$_SERVER["PHP_SELF"]);//PHP5.3及以后的写法
             $folder = $lj[count($lj)-5];//得到根目录文件夹
-
+            $a = "";
             if(!empty($_SESSION["uid"])){
                 $a = $_SESSION["uid"];
                 $tg = "/RegisteredUser/";
-            }else{
-                $a = $uip;
-                $tg = "/IP/";
-            }
-            $filename = $a.".txt";
-            $file = $folder."../../../data/liveness".$tg.$filename;
+                $filename = $a.".txt";
+                $file = $folder."../../../data/liveness".$tg.$filename;
 
-            if(!file_exists($file)){
-                if(!file_exists(dirname($file))){//如果目录不存在
-                    mkdir(dirname($file),0777);//则创建一个目录，并赋予0777模式权限
-                    $cf = fopen($file,"w");//则创建一个文件，并富裕可读写权限
-                    fclose($cf);
-                }else{//如果目录存在
-                    $cf = fopen($file,"w");//则创建一个文件，并富裕可读写权限
-                    fclose($cf);
+                if(!file_exists($file)){
+                    if(!file_exists(dirname($file))){//如果目录不存在
+                        mkdir(dirname($file),0777);//则创建一个目录，并赋予0777模式权限
+                        $cf = fopen($file,"w");//则创建一个文件，并富裕可读写权限
+                        fclose($cf);
+                    }else{//如果目录存在
+                        $cf = fopen($file,"w");//则创建一个文件，并富裕可读写权限
+                        fclose($cf);
+                    }
                 }
             }
-        }
+
+
+            /******记录内容******/
+            $pagename = preg_split('/\/{1}/',$_SERVER["PHP_SELF"]);
+            $pagename = $pagename[count($pagename)-1];//Source
+            $now = "20".date('y-m-d H:i:s',time());//Time
+            $commit = $commitname;//Commit
+            $sc = $score;//Score
+
+            if(!$pagename || !$now){
+                echo "时间和页面获取失败";
+            }else{
+                if(!empty($_SESSION["uid"])){
+                    $a = $_SESSION["uid"];
+                    $tg = "/RegisteredUser/";
+                    $filename = $a.".txt";
+                    $file = "../../../data/liveness".$tg.$filename;
+
+                    $filestream = fopen($file,"a");
+                    fwrite($filestream,"['Source:'".$pagename.",'Time':".$now.",'Commit:'".$commit."]{".$sc."}");
+                    fclose($filestream);
+                }
+            }
+
+        }//End of setLiveness function
 
 
 
@@ -82,10 +106,11 @@ require("all.php");
          * @param $uid : 用户uid
          * @param $timestart : 开始时间(timestamp)
          * @param $timeend : 结束时间(timestamp)
+         * p.s. 如果没有$timestart和$timeend，则获取的是今天的liveness
          */
         public function getLiveness($uid,$timestart,$timeend){
             
-        }
+        }//End of getLiveness function
 
 
 
