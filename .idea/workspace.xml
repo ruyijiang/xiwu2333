@@ -75,8 +75,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -621,7 +621,7 @@
       <workItem from="1464231657431" duration="1694000" />
       <workItem from="1464240631399" duration="6450000" />
       <workItem from="1464309190890" duration="277000" />
-      <workItem from="1464309710968" duration="4515000" />
+      <workItem from="1464309710968" duration="4555000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -665,11 +665,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464316195859</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed README.md">
+      <created>1464316316707</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1464316316707</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279988000" />
+    <option name="totallyTimeSpent" value="280028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -713,7 +720,8 @@
     <MESSAGE value="phpstorm test" />
     <MESSAGE value="给myhome视图添加了tab和requestCate对应" />
     <MESSAGE value="write some things in README.md ,and delete test folder,beacuse it is useless ever before." />
-    <option name="LAST_COMMIT_MESSAGE" value="write some things in README.md ,and delete test folder,beacuse it is useless ever before." />
+    <MESSAGE value="fixed README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1086,8 +1094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
         </state>
       </provider>
