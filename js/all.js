@@ -40,7 +40,7 @@ socket.onerror = function(){
 /******************************************************/
 /******************************************************/
 //设置Angular app
-var app = angular.module('myApp', ["ui.router","w5c.validator"]);
+var app = angular.module('myApp', ["ui.router"]);
 
 //qq分享
 (function(){

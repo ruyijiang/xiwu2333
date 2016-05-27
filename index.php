@@ -70,9 +70,6 @@ echo $openupalertdiv;
 
 
 
-<!--jQuery Validation-->
-<script type="text/javascript" src="js/test/w5cValidation.js"></script>
-
 
 
 <!-- utills -->

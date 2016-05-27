@@ -46,7 +46,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
 
     /**
      * 从数据库读取数据
-     * 备注：此函数所有参数均为可选，
+     * 备注：此函数所有参数均为可选
      * @param requestData ： 请求内容的类别，选项是：pulse/article/comment，如果为空，则默认是pulse
      * @param uid ： 请求的用户的uid，如果为空，则会传递空值给ajax，而在对应的程序里会默认显示登陆的用户自己的
      */
