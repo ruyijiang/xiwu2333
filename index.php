@@ -67,11 +67,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/all.js"></script>
 <!-- router-->
 <script  type="text/javascript" src="js/router.js"></script>
-
-
-
-
-
 <!-- utills -->
 <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>
@@ -85,7 +80,6 @@ echo $openupalertdiv;
 <!-------------------------------------------------------------------------------------->
 <!--services-->
 <script type="text/javascript" src="js/service/snslogin/qq.js"></script>
-<script type="text/javascript" src="js/service/PageTitle.js"></script>
 <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
 <!-------------------------------------------------------------------------------------->
 <!--bootstrap-slider-->
