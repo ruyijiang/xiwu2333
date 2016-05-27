@@ -101,35 +101,20 @@ require("all.php");
         /**
          * 获取并输出用户某一个时段的活跃度对象
          * @param $uid : 用户uid
-         * @param $timestart : 开始时间(timestamp)
-         * @param $timeend : 结束时间(timestamp)
+         * @param $timestart : 开始时间 ，类型：ISOtime
+         * @param $timeend : 结束时间 ，类型：ISOtime
          * p.s. 如果没有$timestart和$timeend，则获取的是今天的liveness
          */
         public function getLiveness($uid,$timestart,$timeend){
+            $timestart = strtotime($timestart);
+            $timeend = strtotime($timeend);
+
+            //sql:选择uid=$uid 且 time介于$timestart和$timeend之间的 liveness值
             
+
         }//End of getLiveness function
 
 
     }
 
-    /**
-     * @param $time : 时间
-     * @param $mod : 目标格式
-     */
-    function _altertime($time){
-        //如果没有$mod，则自动转换
-        $a = strpos($time, '-');
-        $b = strpos($time, '.');
-        if(!empty($a) || !empty($b)){
-            //有-或. 则说明是iso格式时间
-
-        }else{
-            //没有-或.则说明是timestamp
-
-        }
-
-
-        //先检测iso时间的格式分隔符。如果有，则说明当前是iso时间，否则是时间戳
-
-    }
 ?>
