@@ -22,8 +22,6 @@ require("all.php");
         private $sc_invited = 60;//成功邀请一个人加入本网。
 
 
-
-
         /**
          * 配置liveness类属性的方法
          * @param $config : 配置key/val对象
@@ -37,8 +35,6 @@ require("all.php");
             @$this->sc_inviting = $config->sc_inviting;
             @$this->sc_invited = $config->sc_invited;
         }
-
-
 
 
         /**
@@ -92,6 +88,7 @@ require("all.php");
 
                     $filestream = fopen($file,"a");
                     fwrite($filestream,"['Source:'".$pagename.",'Time':".$now.",'Commit:'".$commit."]{".$sc."}");
+                    //[Source:abcd.php,Time:2016/05/27,Commit:writearticle]{60}
                     fclose($filestream);
                 }
             }
@@ -113,14 +110,26 @@ require("all.php");
         }//End of getLiveness function
 
 
+    }
+
+    /**
+     * @param $time : 时间
+     * @param $mod : 目标格式
+     */
+    function _altertime($time){
+        //如果没有$mod，则自动转换
+        $a = strpos($time, '-');
+        $b = strpos($time, '.');
+        if(!empty($a) || !empty($b)){
+            //有-或. 则说明是iso格式时间
+
+        }else{
+            //没有-或.则说明是timestamp
+
+        }
 
 
-
-
-
-
-
-
+        //先检测iso时间的格式分隔符。如果有，则说明当前是iso时间，否则是时间戳
 
     }
 ?>
