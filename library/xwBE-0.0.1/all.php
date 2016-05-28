@@ -597,4 +597,169 @@ class UserData{
     }
 
 }
+/********************************************************************************************************************************Liveness用户活跃度 ***/
+/*****************************************************************************************************************************************************/
+class liveness{
+    /*分值*/
+    private $sc_article = 50;//写文章。
+    private $sc_openteam = 25;//开放组队。
+    private $sc_shareurl = 40;//分享本网链接。
+    private $sc_onlineduration = 35;//在线时长。
+    private $sc_commentsomeone = 18;//评价一个人。
+    private $sc_inviting = 35;//分享了本网。
+    private $sc_invited = 60;//成功邀请一个人加入本网。
+
+
+    /**
+     * 配置liveness类属性的方法 ************config()
+     * @param $config : 配置key/val对象
+     */
+    public function liveness_config($config){
+        @$this->sc_article = $config->sc_article;
+        @$this->sc_openteam = $config->sc_openteam;
+        @$this->sc_shareurl = $config->sc_shareurl;
+        @$this->sc_onlineduration = $config->sc_onlineduration;
+        @$this->sc_commentsomeone = $config->sc_commentsomeone;
+        @$this->sc_inviting = $config->sc_inviting;
+        @$this->sc_invited = $config->sc_invited;
+    }
+
+    /**
+     * 记录某个用户今日的liveness数值 ************setLiveness()
+     * @param $commitname : 获得分数的操作的名称，如writearticle、login、comment etc,
+     * @param $score : 对应这个操作，所打的分数
+     */
+    public function setLiveness($commitname,$score){
+        require("connectDB.php");
+        $_En = new _environment();
+        $uip = $_En->getIp();
+
+        /******创建文件夹和文件******/
+        $lj = preg_split('/\/{1}/',$_SERVER["PHP_SELF"]);//PHP5.3及以后的写法
+        $folder = $lj[count($lj)-5];//得到根目录文件夹
+        $a = "";
+        if(!empty($_SESSION["uid"])){
+            $a = $_SESSION["uid"];
+            $tg = "/RegisteredUser/".$a."/";
+            $filename = date('Y-m-d',time()).".txt";
+            $file = $folder."../../../data/liveness".$tg.$filename;
+
+            if(!file_exists($file)){
+                if(!file_exists(dirname($file))){//如果目录不存在
+                    mkdir(dirname($file),0777);//则创建一个目录，并赋予0777模式权限
+                    $cf = fopen($file,"w");//则创建一个文件，并富裕可读写权限
+                    fclose($cf);
+                }else{//如果目录存在
+                    $cf = fopen($file,"w");//则创建一个文件，并富裕可读写权限
+                    fclose($cf);
+                }
+            }
+        }
+        /******记录内容到txt文档******/
+        $pagename = preg_split('/\/{1}/',$_SERVER["PHP_SELF"]);
+        $pagename = $pagename[count($pagename)-1];//Source
+        $now = "20".date('y-m-d H:i:s',time());//Time
+        $commit = $commitname;//Commit
+        $sc = $score;//Score
+
+        if(!$pagename || !$now){
+            echo "时间和页面获取失败";
+        }else{
+            if(!empty($_SESSION["uid"])){
+                $a = $_SESSION["uid"];
+                $tg = "/RegisteredUser/".$a."/";
+                $filename = date('Y-m-d',time()).".txt";
+                $file = "../../../data/liveness".$tg.$filename;
+
+                $filestream = fopen($file,"a");
+                fwrite($filestream,"['Time':".$now.",'Commit:'".$commit."]{".$sc."}"."\r\n");
+                //[Source:abcd.php,Time:2016/05/27,Commit:writearticle]{60}
+                fclose($filestream);
+            }
+        }
+        /******新建或更新数据库信息******/
+        $status = $reminder = 0;
+        $uid = $_SESSION["uid"];//用户uid
+        $_today = date('Y-m-d',time());
+        $_today = strtotime($_today);//今天 - 时间戳
+
+
+        //先得到value的旧值
+        $sql = "SELECT l_value FROM liveness WHERE time = '$_today' AND uid = '$uid' ";
+        @$qry = $db->query($sql);
+        @$row = $qry->fetch_assoc();
+        var_dump($row);
+        if($row !== null){
+            //已经存在今天的记录了,则使用UPDATE SQL
+            $old_value = $row["l_value"];
+            $new_value = (float)$old_value + (float)$sc;
+            $sql2 = "UPDATE liveness SET l_value = '$new_value' WHERE time = '$_today' AND uid = '$uid'";
+            $qry2 = $db->query($sql2);
+            if($qry2){
+                $status = 1;
+                $reminder = "";
+                //----------------------------------------------------------------------------------------------------->数据更新成功
+            }else{
+                $status = 0;
+                $reminder = "活跃度更新失败，请联系管理员";
+                //----------------------------------------------------------------------------------------------------->数据更新失败
+            }
+        }else{
+            //还没有创建今天的记录,则使用INSERT SQL
+            $new_value = $sc;
+            $b = date('Y-m-d',time());
+            $sql2 = "INSERT INTO liveness(lid,uid,l_value,time,date_indeed) VALUE ('','$uid','$new_value','$_today','$b')";
+            $qry2 = $db->query($sql2);
+            if($qry2){
+                $status = 1;
+                $reminder = "";
+                //----------------------------------------------------------------------------------------------------->数据插入成功
+            }else{
+                $status = 0;
+                $reminder = "活跃度记录失败，请联系管理员";
+                //----------------------------------------------------------------------------------------------------->数据插入失败
+            }
+        }
+
+
+    }//End of setLiveness function
+
+    /**
+     * 获取并输出用户某一个时段的活跃度对象 ************getLiveness()
+     * @param $uid : 用户uid
+     * @param $timestart : 开始时间 ，类型：ISOtime
+     * @param $timeend : 结束时间 ，类型：ISOtime
+     * p.s. 如果没有$timestart和$timeend，则获取的是今天的liveness
+     */
+    public function getLiveness($uid,$timestart,$timeend){
+        require("connectDB.php");
+        $timestart = strtotime($timestart);
+        $timeend = strtotime($timeend);
+
+        //sql:选择uid=$uid 且 time介于$timestart和$timeend之间的 liveness值
+        $sql = "select time,value from liveness where time >= '$timestart' AND time <= '$timeend' AND uid='$uid' ";
+        $qry = $db->query($sql);
+
+        while($row = $qry->fetch_assoc()){
+            $liveness = $row["liveness"];//活跃度
+            $n_time = date($row["time"]);//时间
+
+            //寻找当天最高活跃度的人，并且与之相比得出活跃度
+            $sql2 = "";
+            $qry2 =
+
+            $dataArr = array ('date'=>$n_time,'liveness'=>$liveness);
+
+            foreach ( $dataArr as $key => $value ) {
+                $dataArr[$key] = urlencode ($value);
+            }
+
+            $dataArr = urldecode ( json_encode ( $dataArr ));
+            echo $dataArr;
+        }
+
+
+    }//End of getLiveness function
+
+}
 ?>

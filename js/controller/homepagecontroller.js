@@ -11,6 +11,18 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     $scope.TabShowPage = 1;
 
 
+    $scope.tellmemore = function (){
+        $.ajax({
+            url:'library/xwBE-0.0.1/php/setScore_action.php',
+            type:'POST',
+            data:{"commitname":"inviteNew"},
+            success: function (data){
+            }
+        })
+    };
+
+
+
     $scope.Tabshow = function (tabindex){
         switch(tabindex){
             case 1:
