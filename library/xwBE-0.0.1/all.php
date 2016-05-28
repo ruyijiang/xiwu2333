@@ -600,29 +600,8 @@ class UserData{
 /********************************************************************************************************************************Liveness用户活跃度 ***/
 /*****************************************************************************************************************************************************/
 class liveness{
-    /*分值*/
-    private $sc_article = 50;//写文章。
-    private $sc_openteam = 25;//开放组队。
-    private $sc_shareurl = 40;//分享本网链接。
-    private $sc_onlineduration = 35;//在线时长。
-    private $sc_commentsomeone = 18;//评价一个人。
-    private $sc_inviting = 35;//分享了本网。
-    private $sc_invited = 60;//成功邀请一个人加入本网。
 
 
-    /**
-     * 配置liveness类属性的方法 ************config()
-     * @param $config : 配置key/val对象
-     */
-    public function liveness_config($config){
-        @$this->sc_article = $config->sc_article;
-        @$this->sc_openteam = $config->sc_openteam;
-        @$this->sc_shareurl = $config->sc_shareurl;
-        @$this->sc_onlineduration = $config->sc_onlineduration;
-        @$this->sc_commentsomeone = $config->sc_commentsomeone;
-        @$this->sc_inviting = $config->sc_inviting;
-        @$this->sc_invited = $config->sc_invited;
-    }
 
     /**
      * 记录某个用户今日的liveness数值 ************setLiveness()
