@@ -28,6 +28,9 @@ function countScore($commitname){
         case "makeComment":
             return 18;
             break;
+        case "abc":
+            return 18;
+            break;
 
     }
     
