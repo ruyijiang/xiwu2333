@@ -15,7 +15,6 @@ require("../all.php");
     $qry = $db->query($sql);
     while ($row = $qry->fetch_assoc()){
         $result = $row["city"];
-        var_dump($result);
     }
     //$row = $qry->fetch_assoc();
 

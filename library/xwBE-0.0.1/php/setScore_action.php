@@ -16,22 +16,26 @@ require("../algorithm/Liveness.php");
 
     $commitname = $_POST["commitname"];
     @$score = $_POST["score"];
-    @$commitname = $_POST["duration"];
+    @$extra = $_POST["extra"];
 
     $status = $reminder = 0;
 
-
-    if($commitname){
-        if(!$score) $score = countScore($commitname);//得分
+    if($commitname == "inviteNew" || $commitname == "writeBlog" || $commitname == "Share" || $commitname == "openTeam" || $commitname == "makeComment" || $commitname == "onlineDuration"){
+        if(!$score) $score = countScore($commitname,null);//得分
 
         $a = new liveness();
         $a->setLiveness($commitname,$score);
 
-
+        $status = 1;
+        $reminder = "";
+        //缺少关键参数
     }else{
         $status = 0;
-        $reminder = "缺少关键参数";
+        $reminder = "缺少关键参数，或参数错误";
         //缺少关键参数
     }
+
+    $b = new interfaceResponse();
+    echo $b->normalrespond($status,$reminder);
 
 ?>

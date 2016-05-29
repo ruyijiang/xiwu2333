@@ -667,7 +667,6 @@ class liveness{
         $sql = "SELECT l_value FROM liveness WHERE time = '$_today' AND uid = '$uid' ";
         @$qry = $db->query($sql);
         @$row = $qry->fetch_assoc();
-        var_dump($row);
         if($row !== null){
             //已经存在今天的记录了,则使用UPDATE SQL
             $old_value = $row["l_value"];
@@ -699,8 +698,8 @@ class liveness{
                 //----------------------------------------------------------------------------------------------------->数据插入失败
             }
         }
-
-
+        $b = new interfaceResponse();
+        return $b->normalrespond($status,$reminder);
     }//End of setLiveness function
 
     /**
