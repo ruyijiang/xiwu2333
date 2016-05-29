@@ -7,7 +7,13 @@
  * 用户活跃度算法类
  */
 
-function countScore($commitname){
+function countScore($commitname,$duration){
+    if($duration){
+        //当存在$duration时，是为了给在线时间打分的
+
+    }else{
+
+    }
     switch ($commitname){
 
         case "inviteNew":
@@ -20,6 +26,11 @@ function countScore($commitname){
             return 40;
             break;
         case "onlineDuration":
+            $_time = time();
+            //根据服务器当前时间进行判断
+            if(){
+
+            }
             return 35;
             break;
         case "openTeam":

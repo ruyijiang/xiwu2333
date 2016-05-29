@@ -16,6 +16,7 @@ require("../algorithm/Liveness.php");
 
     $commitname = $_POST["commitname"];
     @$score = $_POST["score"];
+    @$commitname = $_POST["duration"];
 
     $status = $reminder = 0;
 

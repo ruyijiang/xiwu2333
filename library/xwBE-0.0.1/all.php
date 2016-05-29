@@ -724,10 +724,13 @@ class liveness{
             $n_time = date($row["time"]);//时间
 
             //寻找当天最高活跃度的人，并且与之相比得出活跃度
-            $sql2 = "";
-            $qry2 =
+            $sql2 = "SELECT l_value FROM liveness WHERE time = '$n_time' AND uid='$uid' ORDER BY l_value LIMIT 0,1";
+            $qry2 = $db->query($sql2);
+            $row2 = $qry2->fetch_assoc();
+            $result_highest = $row2["l_value"];//最高
+            $liveness_rate = $liveness/$result_highest;//活跃度输出数据
 
-            $dataArr = array ('date'=>$n_time,'liveness'=>$liveness);
+            $dataArr = array ('date'=>$n_time,'liveness_rate'=>$liveness_rate);
 
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
