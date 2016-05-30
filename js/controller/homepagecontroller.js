@@ -10,7 +10,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     $scope.UserData = {};//请求回来用户数据内容对象
     $scope.TabShowPage = 1;
 
-
     $scope.tellmemore = function (){
         $.ajax({
             url:'library/xwBE-0.0.1/php/setScore_action.php',

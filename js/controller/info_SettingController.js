@@ -34,7 +34,10 @@ app.controller('info_SettingController',function ($scope){
         UserServer_hz:0,
         UserServer_lt:0
     };
-
+    $scope.dialog={
+        open: false,
+        content : ""
+    };
 
     /**
      * 获取用户信息
@@ -187,13 +190,17 @@ app.controller('info_SettingController',function ($scope){
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/infosetting_action.php',
             type:'POST',
+            async:false,
             data: $scope.UserInfoData,
             success: function (data){
                 data = welcomejsonstring(data);//在utills/welcomejsonstring.js中定义
                 if(data == 1){
-                    alert ("修改成功");
+                    $scope.dialog={
+                        open: true,
+                        content : "保存成功"
+                    };
                 }else{
-                    alert ("修改失败");
+                    alert ("数据有误，修改失败");
                 }
                 $scope.ServerStr = [];
             },

@@ -40,7 +40,7 @@ socket.onerror = function(){
 /******************************************************/
 /******************************************************/
 //设置Angular app
-var app = angular.module('myApp', ["ui.router"]);
+var app = angular.module('myApp', ["ui.router",'angular-popups']);
 
 //qq分享
 (function(){

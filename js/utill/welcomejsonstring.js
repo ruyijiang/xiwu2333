@@ -13,13 +13,13 @@ function welcomejsonstring(data,returndata){
     var message = data.message;
     if(status == '1'){
         //alert ("success");
-        $status = true;
+        status = true;
     }else if(status == '0'){
         alert (message);
-        $status = false;
+        status = false;
     }else{
         alert ("错误代码：300.未知系统错误，请联系管理员");
-        $status = false;
+        status = false;
     }
     if(returndata == "message"){
         return message;

@@ -9,20 +9,31 @@ app.controller('m_PasswordController',function ($scope,$rootScope){
         NewPassword:'',
         RepeatedPassword:''
     };
+    $scope.dialog={
+        open: false,
+        content : ""
+    };
 
     $scope.submitData = function (){
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/m_password_action.php',
             data:$scope.PasswordData,
             type:'POST',
+            async:false,
             success: function (data){
                 data = welcomejsonstring(data);//在utills/welcomejsonstring.js中定义
                 if(data == "1"){
-                    alert ("修改成功");
+                    $scope.dialog={
+                        open: true,
+                        content : "修改成功"
+                    };
                 }
             },
             error: function (){
-                alert ("修改失败，请联系管理员");
+                $scope.dialog={
+                    open: true,
+                    content : "未知原因导致修改失败，请联系管理员"
+                };
             }
         });
     }

@@ -157,7 +157,6 @@ footer{margin-bottom:30px;}
 	font-weight:bold;
 	text-align: right;
 }
-
 /*bootstrap覆盖修正*/
 a[class^="sider-right-btn"]{
 	display:block;
@@ -205,4 +204,5 @@ div.alert-success{margin-top: 50px; z-index: 99; background-image: none; backgro
 .navbar-right .dropdown-menu{right:15px}
 /*ng-validate*/
 .ng-invalid{border-color:#ff2222}
+
 

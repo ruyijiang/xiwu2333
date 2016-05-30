@@ -87,6 +87,10 @@ include("library/xwFE-0.0.1/FEM.php");
 
         </div><!--End of leftpart-->
     </div><!--End of row-->
+    <!--ng-popup-->
+    <dialog ng-if="dialog.open" duration="700" fixed close="dialog.open=false">
+        <div dialog-content>{{dialog.content}}</div>
+    </dialog>
     <hr>
     <? echo $footer;?>
 

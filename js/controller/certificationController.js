@@ -6,6 +6,10 @@ app.controller('certificationController',function ($scope){
     $scope.IdCardEditable = 0;
     $scope.TelEditable = 0;
     $scope.EmailEditable = 0;
+    $scope.dialog={
+        open: false,
+        content : ""
+    };
 
     /**
      * 切换输入框可输入状态和按钮icon
@@ -55,7 +59,10 @@ app.controller('certificationController',function ($scope){
                     }else if(key == "email"){
                         $scope.EmailEditable = 0;
                     }
-                    alert ("修改成功");
+                    $scope.dialog={
+                        open: true,
+                        content : "保存成功"
+                    };
                 }
             },
             error: function (){
