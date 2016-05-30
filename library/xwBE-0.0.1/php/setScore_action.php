@@ -15,8 +15,8 @@ require("../algorithm/Liveness.php");
     $uid = $_SESSION["uid"];
 
     $commitname = $_POST["commitname"];
-    @$score = $_POST["score"];
     @$extra = $_POST["extra"];
+    @$score = $_POST["score"];
 
     $status = $reminder = 0;
 
@@ -24,11 +24,14 @@ require("../algorithm/Liveness.php");
         if(!$score) $score = countScore($commitname,$extra);//得分
 
         $a = new liveness();
-        $a->setLiveness($commitname,$score);
 
-        $status = 1;
-        $reminder = "";
-        //缺少关键参数
+        if($a->setLiveness($commitname,$score)){
+            $status = 1;
+            $reminder = "";
+        }else{
+            $status = 0;
+            $reminder = "数据库插入失败";
+        }
     }else{
         $status = 0;
         $reminder = "缺少关键参数，或参数错误";

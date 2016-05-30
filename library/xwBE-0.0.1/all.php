@@ -44,6 +44,10 @@ class _environment{
         return $cip;
         //输出为::1时，表示是IPV6本地回环地址，相当于IPV4的127.0...
     }
+    /*****************获取格式化服务器日期*********************/
+    public function getDate(){
+        return date('Y-m-d',time());
+    }
     /*****************获取格式化服务器时间*********************/
     public function getTime(){
         return date('Y-m-d H:i:s',time());
@@ -700,8 +704,10 @@ class liveness{
                 //----------------------------------------------------------------------------------------------------->数据插入失败
             }
         }
-        $b = new interfaceResponse();
-        return $b->normalrespond($status,$reminder);
+        /*$b = new interfaceResponse();
+        return $b->normalrespond($status,$reminder);*/
+        $status == 1?$status=true:$status=false;
+        return $status;
     }//End of setLiveness function
 
     /**

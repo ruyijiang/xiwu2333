@@ -1,7 +1,7 @@
 /**
  * Created by mazih on 2016/5/10.
  */
-app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $timeout){
+app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $timeout, liveness){
     $scope.PageTitle = null;
     $scope.PageTitle = $location.path();
     $scope.PageTitle = $scope.PageTitle.substr(1);
@@ -18,7 +18,10 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
     var timeout = null;
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     alterOnlineStatus(1);
+    liveness.countLivenessInTimer();
+
     window.onbeforeunload = function (){
+        liveness.sendLivenessOnUnload();
         /*if(timeout){
             $timeout.cancel(timeout);
         }
@@ -146,6 +149,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
         }
     }
     checkPageLocation();
+
 
 
 
