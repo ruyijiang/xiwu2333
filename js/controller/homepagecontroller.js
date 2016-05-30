@@ -22,7 +22,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     };
 
 
-
     $scope.Tabshow = function (tabindex){
         switch(tabindex){
             case 1:

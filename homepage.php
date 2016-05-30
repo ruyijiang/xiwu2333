@@ -78,7 +78,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </td>
                         </tr>
                         <tr>
-                            <td><i class="iconfont icon-weixin"></i></td>
+                            <td><i class="iconfont icon-weibo"></i></td>
                             <td>微博：</td>
                             <td><a>马子航milo</a></td>
                         </tr>

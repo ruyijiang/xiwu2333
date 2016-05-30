@@ -333,6 +333,7 @@ function login($email, $password){
 /*****************************************************************************************************************************注册函数signup() | 返回值： ***/
 function signup($email, $password, $gender){
     require ("connectDB.php");
+    require ("algorithm/randUid.php");
 
     $useremail = $email;
     $userpassword = $password;
@@ -411,7 +412,8 @@ function signup($email, $password, $gender){
                 $num = strpos($useremail,"@");
                 $randName = substr($useremail,0,$num);
                 //*改成对数据库无害的字段********************************************//2!%@$$%^@Needed
-                $importable_sql = "INSERT INTO `xiwu2333.com`.`users` (uid, email, name, password, gender, lastip,avatar, lasttime, regtime, regip, onlinestatus) VALUES ('','$useremail','$randName','$userpassword','$usergender','$userip','$useravatarUri','$timenow','$timenow','$userip',0) ";
+                $ruid = create_Uid();
+                $importable_sql = "INSERT INTO `xiwu2333.com`.`users` (id, uid, email, name, password, gender, lastip,avatar, lasttime, regtime, regip, onlinestatus) VALUES ('','$ruid','$useremail','$randName','$userpassword','$usergender','$userip','$useravatarUri','$timenow','$timenow','$userip',0) ";
                 $importable_qry = $db->query($importable_sql);
                 if(!$importable_qry){
                     $status = 0;

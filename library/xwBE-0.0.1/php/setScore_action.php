@@ -21,7 +21,7 @@ require("../algorithm/Liveness.php");
     $status = $reminder = 0;
 
     if($commitname == "inviteNew" || $commitname == "writeBlog" || $commitname == "Share" || $commitname == "openTeam" || $commitname == "makeComment" || $commitname == "onlineDuration"){
-        if(!$score) $score = countScore($commitname,null);//得分
+        if(!$score) $score = countScore($commitname,$extra);//得分
 
         $a = new liveness();
         $a->setLiveness($commitname,$score);
