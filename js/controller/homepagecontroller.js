@@ -161,14 +161,14 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
                     name: "活跃度",
                     nameLocation: "end",
                     min: 0,
-                    max: 10
+                    max: 100
                 }
             ],
             series: [
                 {
                     name: "用户活跃度",
                     type: "line",
-                    data: [7.7, 0.7, 0.6, 4.2, 0.3, 0.2, 6.5, 8, 8.2, 8.5],
+                    data: [27.7, 1.7, 68.6, 54.2, 70.3, 70.2, 76.5, 78, 78.2, 88.5],
                     smooth: true,
                     symbolSize: 5
                 }
