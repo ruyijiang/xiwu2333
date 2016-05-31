@@ -13,10 +13,31 @@ require("../algorithm/InvitationCode.php");
     $status = $reminder = "";
 
     @$uid = $_SESSION["uid"];
-    if(!empty($uid)){
-        //是登陆了的用户在使用激活码，暂时不考虑
+    $iccode = $_POST["iccode"];
+
+    $a = new interfaceResponse();
+
+    if(empty($iccode)){
+        $status = 0;
+        $reminder = "邀请码不得为空";
+        echo $a->normalrespond($status,$reminder);
+        //------------------------------------------------------------------------------------------------------------->出口1：邀请码为空
     }else{
-        //是未登陆用户在使用激活码
-        echo create_InCode();
+        $sql = "SELECT iid FROM invitationcode WHERE guid = '$iccode' AND used != 0";
+        $qry = $db->query($sql);
+        @$row = $qry->fetch_assoc();
+        @$result = $row["iid"];
+        if(empty($result)){
+            
+            $status = 1;
+            $reminder = "";
+            echo $a->normalrespond($status,$reminder);
+            //--------------------------------------------------------------------------------------------------------->出口2：邀请码可以使用
+        }else{
+            $status = 0;
+            $reminder = "邀请码不存在或已被使用";
+            echo $a->normalrespond($status,$reminder);
+            //--------------------------------------------------------------------------------------------------------->出口3：邀请码不存在或已被使用
+        }
     }
 ?>

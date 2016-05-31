@@ -5489,8 +5489,8 @@ vjs.Flash = vjs.MediaTechController.extend({
       // The goal here was to try to load the swf URL in the parent page first and hope that got around the firefox security error
       // var newObj = vjs.Flash.embed(options['swf'], placeHolder, flashVars, params, attributes);
       // (in onload)
-      //  var temp = vjs.createEl('a', { id:'asdf', innerHTML: 'asdf' } );
-      //  iDoc.body.appendChild(temp);
+      //  var useInvitationCode = vjs.createEl('a', { id:'asdf', innerHTML: 'asdf' } );
+      //  iDoc.body.appendChild(useInvitationCode);
 
       // Tried embedding the flash object through javascript in the iframe source.
       // This works in webkit but still triggers the firefox security error

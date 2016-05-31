@@ -1384,9 +1384,9 @@ var CodeMirror = (function() {
                 extra = htmlEscape(line.text.slice(ch + 1, end < 0 ? line.text.length : end + (ie ? 5 : 0)));
             }
             measure.innerHTML = "<pre>" + line.getHTML(null, null, false, tabText, ch) +
-                '<span id="CodeMirror-temp-' + tempId + '">' + htmlEscape(line.text.charAt(ch) || " ") + "</span>" +
+                '<span id="CodeMirror-useInvitationCode-' + tempId + '">' + htmlEscape(line.text.charAt(ch) || " ") + "</span>" +
                 extra + "</pre>";
-            var elt = document.getElementById("CodeMirror-temp-" + tempId);
+            var elt = document.getElementById("CodeMirror-useInvitationCode-" + tempId);
             var top = elt.offsetTop, left = elt.offsetLeft;
             // Older IEs report zero offsets for spans directly after a wrap
             if (ie && ch && top == 0 && left == 0) {

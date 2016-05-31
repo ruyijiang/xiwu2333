@@ -5,6 +5,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
     $scope.PageTitle = null;
     $scope.PageTitle = $location.path();
     $scope.PageTitle = $scope.PageTitle.substr(1);
+    $scope.iccode = "";
 
     /*$scope.$watch($scope.PageTitle,function (newValue,oldValue){
         document.title = newValue;
@@ -152,26 +153,35 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
 
 
     /**
-     * 激活邀请码
+     * 模态窗口执行的方法
      */
-    $scope.useIccode = function (){
-        $('#myModal').modal();
-        $.ajax({
-            url:'../../library/xwBE-0.0.1/php/invitationCode_action.php',
-            type:'GET',
-            success: function (data){
-                if(!data){
-                    alert ("wrong");
-                }else{
-                    data = data.slice(1,-1);
-                    alert (data);
+    $scope.SendIccode = function (){
+        $scope.disableModalBtn = true;
+        $(".index-mask").fadeIn("fast");
+
+        $timeout(function (){
+            $.ajax({
+                url:'../../library/xwBE-0.0.1/php/invitationCode_action.php',
+                type:'POST',
+                data:{'iccode':$scope.iccode},
+                async:false,
+                success: function (data){
+                    if(welcomejsonstring(data)){
+                        window.location.reload();
+                    }else{
+                        $scope.disableModalBtn = false;
+                        $(".index-mask").fadeOut("fast");
+                    }
+                },
+                error: function (){
+                    $scope.disableModalBtn = false;
+                    $(".index-mask").fadeOut("fast");
+                    alert ("未知错误导致的激活失败，请联系管理员");
                 }
-            },
-            error: function (){
-                alert ("没有链接到取消开放组队功能的接口，请联系管理员");
-            }
-        });
-    }
+            });
+
+        },1200);
+    };
 
 
 });

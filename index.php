@@ -52,8 +52,32 @@ if(isset($_SESSION['loginstatus']) == 1 && !empty($_SESSION['uid'])){
 echo $openupalertdiv;
 ?>
 <InvitationCode></InvitationCode>
-<div style="margin-top:60px;background-color:black;height:6px;width:100%"></div>
 <div ui-view class="ui-viewcon"></div>
+
+<!-- /.modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top:10%">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title" id="myModalLabel">请输入邀请码</h5>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="form-control invitationcode_ipt" placeholder="格式应是：xxxxxxxx-xxxx-xxxx-xxxx-xxxxxx" maxlength="30" autocomplete="off" spellcheck="false" ng-model="iccode" ng-readonly="disableModalBtn">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal" ng-disabled="disableModalBtn">取消</button>
+				<button type="button" class="btn btn-primary" ng-disabled="disableModalBtn" ng-click="SendIccode()">确认</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- /.loading -->
+<div class="index-mask">
+	<img src="img/fragments/loading/5375751.gif" style="margin-top:23%">
+</div>
+
 
 <!-- UI router -->
 <script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
@@ -88,7 +112,6 @@ echo $openupalertdiv;
 <!--bootstrap-slider-->
 <script  type="text/javascript" src="library/bootstrap-3.3.5-dist/js/bootstrap-slider.min.js"></script>
 <!-------------------------------------------------------------------------------------->
-
 <!--controllers-->
 <script  type="text/javascript" src="js/controller/xiwucontroller.js"></script>
 <script  type="text/javascript" src="js/controller/mainpagecontroller.js"></script>
@@ -106,8 +129,8 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/m_passwordController.js"></script>
 <script  type="text/javascript" src="js/controller/personpageController.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!--direcitves
-<script  type="text/javascript" src="js/directive/useInvitationCode.js"></script>-->
+<!--direcitves-->
+<script  type="text/javascript" src="js/directive/useInvitationCode/useInvitationCode.js"></script>
 <!--<script  type="text/javascript" src="js/directive/MyTeam.js"></script>-->
 <!-------------------------------------------------------------------------------------->
 </body>
