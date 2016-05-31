@@ -12,16 +12,13 @@ $uid = $_SESSION["uid"];
 
 function countScore($commitname,$extra){
     //再对extra进行数据包拆解
-    if($extra && $commitname == "onlineDuration"){
+    if($extra && $commitname == "onlineDuration"){//******************************************************onlineDuration
         //当存在$duration时，是为了给在线时间打分的
         $Dscore = (float)0.00;
-        //先检测extra是否符合格式
-        //extra : 20:25,21:60,22:5
 
         for ($i=0;$i<count($extra);$i++){//$xa = '20:25' | $xa = '21:60'
             $hourD = $i;//时间段的开端
             $durationHere = $extra[$i];
-            var_dump($durationHere);
             if($hourD == 11 || $hourD == 1){
                 //1.2倍得分
                 $Dscore = $Dscore + $durationHere*1.2*35;
@@ -44,25 +41,28 @@ function countScore($commitname,$extra){
                 $Dscore += $durationHere*1*35;
             }
         }//END OF foreach
-        var_dump($Dscore);
         return $Dscore;
     }
 
     switch ($commitname){
 
         case "inviteNew":
-            return 60;
+            //成功一个分数，失败一个分数
+            return 4725;
             break;
         case "writeBlog":
+            //根据字数和关键词算分
             return 50;
             break;
         case "Share":
             return 40;
             break;
         case "openTeam":
+            //递减函数
             return 25;
             break;
         case "makeComment":
+            //根据字数算分
             return 18;
             break;
     }

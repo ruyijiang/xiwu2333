@@ -138,7 +138,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
                     type: "category",
                     boundaryGap: false,
                     data: ["2016/03/20", "03/21", "03/22", "03/23", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29"],
-                    name: "最近十天",
+                    name: "最近14天",
                     nameLocation: "end",
                     min: 1,
                     max: 10,

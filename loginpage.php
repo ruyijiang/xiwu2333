@@ -11,7 +11,7 @@
                 <input type="password" id="inputPassword" class="form-control" placeholder="密码" required ng-model="UserPassword">
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="remember-me">记住密码
+                    <input type="checkbox" value="remember-me" checked="checked">记住密码
                   </label>
                   <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" data-original-title="在公共计算机上不建议勾选"></span>
                 </div>

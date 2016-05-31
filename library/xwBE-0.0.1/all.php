@@ -290,8 +290,8 @@ function login($email, $password){
                     $_SESSION["userpassword"] = $result_password;
                     $_SESSION["loginstatus"] = 1;
                     setcookie("uid", $result_uid, time()+604800);//604800是7天的秒数，表示记录cookie一礼拜
-                    setcookie("username", username, time()+604800);
-                    setcookie("userpassword", userpassword, time()+604800);
+                    setcookie("username", $result_uname, time()+604800);
+                    setcookie("userpassword", $result_password, time()+604800);
 
                     $status = 1;
                     $reminder = "登陆成功。但是状态更新失败，可能会造成一些错误";
@@ -466,7 +466,7 @@ function logout(){
     $logoutCheck = isset($_SESSION["uid"]) || isset($_SESSION["username"]) || isset($_SESSION["userpassword"]) || isset($_SESSION["loginstatus"]) || empty($_COOKIE["uid"]) || empty($_COOKIE["username"]) || empty($_COOKIE["userpassword"]);
     if($logoutCheck){
         $status = 0;
-        $reminder = "检测到数据异常，禁止退出登录，请联系管理员，或者您可以直接关闭此页";
+        $reminder = "未知异常，已为您强制退出。如有疑问，请联系管理员";
         $a = new interfaceResponse();
         echo $a->normalrespond($status,$reminder);
         //----------------------------------------------------------------------------------------------------------------->注册出口1：退出失败，数据异常。
@@ -475,7 +475,7 @@ function logout(){
         $a = new _environment();
         $tnow = $a->getTime();
         $uip = $a->getIp();
-        $sql = "UPDATE users SET lasttime = '$tnow',lastip='$uip',onlinestatus='0',openstatus='0' WHERE uid = '$useruid' ";
+        $sql = "UPDATE users SET lasttime = '$tnow',lastip='$uip',onlinestatus=0,openstatus=0 WHERE uid = '$useruid' ";
         $qry = $db->query($sql);
         if(!$qry){
             $status = 0;
@@ -491,7 +491,6 @@ function logout(){
             //--------------------------------------------------------------------------------------------------------------------------->注册出口3：用户退出成功，数据更新也成功
         }
     }
-
 }
 /****************************************************************************************************************************************开放组队 ***/
 /***************************************************************************************************************************************************/

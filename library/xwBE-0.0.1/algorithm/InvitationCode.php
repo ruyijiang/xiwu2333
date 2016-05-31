@@ -15,8 +15,8 @@
         $data = $namespace;
         $data .= $_SERVER['REQUEST_TIME'];
         $data .= $_SERVER['HTTP_USER_AGENT'];
-        $data .= $_SERVER['LOCAL_ADDR'];
-        $data .= $_SERVER['LOCAL_PORT'];
+        @$data .= $_SERVER['LOCAL_ADDR'];
+        @$data .= $_SERVER['LOCAL_PORT'];
         $data .= $_SERVER['REMOTE_ADDR'];
         $data .= $_SERVER['REMOTE_PORT'];
         $hash = strtoupper(hash('ripemd128', $uid . $guid . md5($data)));
@@ -27,9 +27,9 @@
             '-' .
             substr($hash, 12, 4) .//16
             '-' .
-            substr($hash, 16, 4) .//18
+            substr($hash, 16, 4) .//20
             '-' .
-            substr($hash, 20, 6) .//24
+            substr($hash, 20, 6) .//26
             '}';
         return $guid;
     }

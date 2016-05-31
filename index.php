@@ -33,7 +33,6 @@ include("library/xwFE-0.0.1/FEM.php");
 	<!-- AngularJs -->
 	<script src="js/angular.min.js"></script>
 </head>
-<loading></loading>
 <script>
 	var SERVER_BASE = "localhost";
 	var IndexPage = "main.php";
@@ -52,7 +51,8 @@ if(isset($_SESSION['loginstatus']) == 1 && !empty($_SESSION['uid'])){
 //输出header头部navi_bar
 echo $openupalertdiv;
 ?>
-
+<InvitationCode></InvitationCode>
+<div style="margin-top:60px;background-color:black;height:6px;width:100%"></div>
 <div ui-view class="ui-viewcon"></div>
 
 <!-- UI router -->
@@ -106,8 +106,8 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/m_passwordController.js"></script>
 <script  type="text/javascript" src="js/controller/personpageController.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!--direcitves-->
-
+<!--direcitves
+<script  type="text/javascript" src="js/directive/useInvitationCode.js"></script>-->
 <!--<script  type="text/javascript" src="js/directive/MyTeam.js"></script>-->
 <!-------------------------------------------------------------------------------------->
 </body>

@@ -151,8 +151,27 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
     checkPageLocation();
 
 
-
-
+    /**
+     * 激活邀请码
+     */
+    $scope.useIccode = function (){
+        $('#myModal').modal();
+        $.ajax({
+            url:'../../library/xwBE-0.0.1/php/invitationCode_action.php',
+            type:'GET',
+            success: function (data){
+                if(!data){
+                    alert ("wrong");
+                }else{
+                    data = data.slice(1,-1);
+                    alert (data);
+                }
+            },
+            error: function (){
+                alert ("没有链接到取消开放组队功能的接口，请联系管理员");
+            }
+        });
+    }
 
 
 });
