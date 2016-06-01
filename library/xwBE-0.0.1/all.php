@@ -52,10 +52,6 @@ class _environment{
     public function getTime(){
         return date('Y-m-d H:i:s',time());
     }
-    /*****************获取服务器时间戳***********************/
-    public function getTimeStamp(){
-        return time();
-    }
     /*****************获取地址 | params:$mod:0,根据数据库***********************/
     public function getLocation($mod,$value){
         //
@@ -718,30 +714,41 @@ class liveness{
      */
     public function getLiveness($uid,$timestart,$timeend){
         require("connectDB.php");
-        $timestart = strtotime($timestart);
-        $timeend = strtotime($timeend);
 
         //sql:选择uid=$uid 且 time介于$timestart和$timeend之间的 liveness值
-        $sql = "select time,value from liveness where time >= '$timestart' AND time <= '$timeend' AND uid='$uid' ";
+        $sql = "select time,l_value from liveness where time >= '$timestart' AND time <= '$timeend' AND uid='$uid' ORDER BY time ASC ";
         $qry = $db->query($sql);
-
         while($row = $qry->fetch_assoc()){
-            $liveness = $row["liveness"];//活跃度
-            $n_time = date($row["time"]);//时间
+            $result_highest = $result_highest_ave = $_counth = 0;
+            $liveness = $row["l_value"];//活跃度
+            $n_time = $row["time"];//时间
 
             //寻找当天最高活跃度的人，并且与之相比得出活跃度
-            $sql2 = "SELECT l_value FROM liveness WHERE time = '$n_time' AND uid='$uid' ORDER BY l_value LIMIT 0,1";
+            $sql2 = "SELECT l_value FROM liveness WHERE time = '$n_time' AND uid != '0' ORDER BY l_value DESC LIMIT 0,6 ";
             $qry2 = $db->query($sql2);
-            $row2 = $qry2->fetch_assoc();
-            $result_highest = $row2["l_value"];//最高
-            $liveness_rate = $liveness/$result_highest;//活跃度输出数据
+            while($row2 = $qry2->fetch_assoc()){
+                $result_highest += $row2["l_value"];//最高
+                $_counth++;
+            }
+            $result_highest_ave = (float)$result_highest/$_counth;
+            $liveness_rate = (float)$liveness/$result_highest_ave;//活跃度输出数据
+
+
+            //对取回的数据进行处理
+            if($liveness_rate>1)$liveness_rate=1;//如果大于1则强制等于1
+            $liveness_rate = round($liveness_rate*100,1);//将比例转化为实际分数
+            $n_time = date('Y-m-d',$n_time);
+            $n_month = ((int)substr($n_time,5,3));
+            $n_day = ((int)substr($n_time,8,2));
+            strlen($n_month)==1?$n_month="0".$n_month:$n_month;
+            strlen($n_day)==1?$n_day="0".$n_day:$n_day;
+            $n_time = $n_month."/".$n_day;//把timestamp转成date
+
 
             $dataArr = array ('date'=>$n_time,'liveness_rate'=>$liveness_rate);
-
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
             }
-
             $dataArr = urldecode ( json_encode ( $dataArr ));
             echo $dataArr;
         }

@@ -85,7 +85,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </table>
                     <hr>
                     <h5><strong>他的房间</strong></h5>
-                    <a href=""><img ng-src="{{UserData.room_bg_img}}" class="img-responsive" data-toggle="tooltip" data-placement="top" data-original-title="{{UserData.room_name}}"/></a>
+                    <a><img ng-src="{{UserData.room_bg_img}}" class="img-responsive" data-toggle="tooltip" data-placement="top" data-original-title="{{UserData.room_name}}"/></a>
                 </div>
                 <div class="rightpart col-lg-9">
                     <ul class="nav nav-tabs" style="margin-top:20px;">
@@ -111,9 +111,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
                     <div class="liveness-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
                     	<div class="panel-heading">活跃曲线</div>
-                        <div class="panel-body" id="liveness-chart-body" style="height:260px;">
-                                             	
-                        </div>
+                        <div class="panel-body" id="liveness-chart-body" style="height:260px;"></div>
                     </div>
                     <div ng-if="TabShowPage == 1">
                         <h5><strong>最新动态</strong></h5>
@@ -129,7 +127,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="input-group col-lg-5">
                                   <input type="text" class="form-control" placeholder="搜索">
                                   <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" ng-click="abcdefg()"><span class="glyphicon glyphicon-search"></span></button>
+                                    <button class="btn btn-default" type="button" ng-click="_loadUserLiveness()"><span class="glyphicon glyphicon-search"></span></button>
                                   </span>
                                 </div>
                             </div>

@@ -62,6 +62,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
      */
     function _loadUserData(requestData,uid){
 
+
         //判断url里是否有tab。如果有，则请求对应tab的请求；如果没有，则请求默认的pulse数据
         var tab = $location.search()["tab"];
         if(tab == "pulse"){
@@ -106,16 +107,33 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
-            },
-            beforeSend: function (){
-                $scope.DataAreaMask = 1;
-            },
-            complete: function (){
-                $scope.DataAreaMask = 0;
             }
         });
     }
 
+    /**
+     * 读取用户活跃度数据
+     */
+    $scope._loadUserLiveness = function(uid){
+        uid==undefined?uid=$location.search()["uid"]:uid;
+        $.ajax({
+            url:'library/xwBE-0.0.1/php/liveness_export.php',
+            type:'POST',
+            async: false,
+            data:{"uid":uid},
+            success: function (data){
+
+                data = welcomejsonarrstring(data);
+                var SArr = data.server.split(',');//SArr = [1,2,3,];
+                SArr.pop();
+                data.server = SArr;
+                $scope.UserData = data;
+            },
+            error: function (){
+                alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
+            }
+        });
+    }
 
 
     /**
@@ -182,4 +200,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     _loadUserData();
+
+
+
 })

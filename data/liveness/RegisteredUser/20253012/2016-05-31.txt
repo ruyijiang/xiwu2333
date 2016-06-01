@@ -687,3 +687,6 @@
 ['Time':2016-05-31 19:22:42,'Commit:'onlineDuration]{96306}
 ['Time':2016-05-31 19:22:46,'Commit:'onlineDuration]{96404}
 ['Time':2016-05-31 19:22:46,'Commit:'onlineDuration]{96404}
+['Time':2016-05-31 23:47:24,'Commit:'onlineDuration]{}
+['Time':2016-05-31 23:47:26,'Commit:'onlineDuration]{}
+['Time':2016-05-31 23:59:30,'Commit:'onlineDuration]{700}

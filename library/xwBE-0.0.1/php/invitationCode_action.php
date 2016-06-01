@@ -29,9 +29,7 @@ require("../algorithm/InvitationCode.php");
             @$row = $qry->fetch_assoc();
             @$result = $row["icid"];
             if(!empty($result)){
-
                 //激活码正确，执行后续操作
-                
                 $status = 1;
                 $reminder = "激活成功";
                 echo $a->normalrespond($status,$reminder);
