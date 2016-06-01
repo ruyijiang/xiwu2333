@@ -51,33 +51,13 @@ if(isset($_SESSION['loginstatus']) == 1 && !empty($_SESSION['uid'])){
 //输出header头部navi_bar
 echo $openupalertdiv;
 ?>
-<InvitationCode></InvitationCode>
 <div ui-view class="ui-viewcon"></div>
-
-<!-- /.modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top:10%">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h5 class="modal-title" id="myModalLabel">请输入邀请码</h5>
-			</div>
-			<div class="modal-body">
-				<input type="text" class="form-control invitationcode_ipt" placeholder="格式应是：xxxxxxxx-xxxx-xxxx-xxxx-xxxxxx" maxlength="30" autocomplete="off" spellcheck="false" ng-model="iccode" ng-readonly="disableModalBtn">
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal" ng-disabled="disableModalBtn">取消</button>
-				<button type="button" class="btn btn-primary" ng-disabled="disableModalBtn" ng-click="SendIccode()">确认</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- /.loading -->
+<!-- 邀请码 -->
+<invitation-code></invitation-code>
+<!-- loading -->
 <div class="index-mask">
-	<img src="img/fragments/loading/5375751.gif" style="margin-top:23%">
+    <img src="img/fragments/loading/5375751.gif" style="margin-top:23%">
 </div>
-
 
 <!-- UI router -->
 <script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>

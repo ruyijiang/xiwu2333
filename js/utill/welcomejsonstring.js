@@ -17,6 +17,8 @@ function welcomejsonstring(data,returndata){
     }else if(status == '0'){
         alert (message);
         status = false;
+    }else if(status == '3'){
+        //只在检测用户是否登陆时使用
     }else{
         alert ("错误代码：300.未知系统错误，请联系管理员");
         status = false;

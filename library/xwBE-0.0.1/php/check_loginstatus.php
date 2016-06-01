@@ -5,7 +5,6 @@
  * Date: 2016/5/10
  * Time: 16:30
  */
-require("../connectDB.php");
 require("../all.php");
 ?>
 <?
@@ -15,9 +14,9 @@ require("../all.php");
 
     if($timing){
 
-        $uid = $_SESSION["uid"];
-        $unm = $_SESSION["username"];
-        $upw = $_SESSION["userpassword"];
+        @$uid = $_SESSION["uid"];
+        @$unm = $_SESSION["username"];
+        @$upw = $_SESSION["userpassword"];
 
         if($uid && $upw && $unm){
             //登陆了
@@ -26,8 +25,8 @@ require("../all.php");
             echo $a->normalrespond($status,$reminder);
         }else{
             //没有登陆
-            $status = 0;
-            $reminder = "登陆状态异常，请联系管理员";
+            $status = 3;
+            $reminder = "";
             echo $a->normalrespond($status,$reminder);
         }
 
