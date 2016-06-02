@@ -9,7 +9,11 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     $scope.UserDataStatus = [];//已请求回来的用户数据下标
     $scope.UserData = {};//请求回来用户数据内容对象
     $scope.LivenessDataArr = [];//请求回来的对应用户的活跃度
-    $scope.TabShowPage = 1;
+    $scope.TabShowPage = 1;//Tab标签当前显示位置
+    $scope.TabPulseStatus = 0;
+    $scope.TabArticleStatus = 0;
+    $scope.TabCommentStatus = 0;
+    $scope.TabHttpRequestTimes = 0;//Tab一共发送的请求数量
 
     $scope.tellmemore = function (){
         $.ajax({
@@ -45,12 +49,15 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
         switch (index){
             case 1://请求的是TabIndex1的数据
                 _loadUserData("pulse");
+                $scope.TabShowPage = 1;
                 break;
             case 2://请求的是TabIndex2的数据
                 _loadUserData("article");
+                $scope.TabShowPage = 2;
                 break;
             case 3://请求的是TabIndex3的数据
                 _loadUserData("comment");
+                $scope.TabShowPage = 3;
                 break;
         }
     }
@@ -62,8 +69,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
      * @param uid ： 请求的用户的uid，如果为空，则会传递空值给ajax，而在对应的程序里会默认显示登陆的用户自己的
      */
     function _loadUserData(requestData,uid){
-
-
         //判断url里是否有tab。如果有，则请求对应tab的请求；如果没有，则请求默认的pulse数据
         var tab = $location.search()["tab"];
         if(tab == "pulse"){
@@ -80,36 +85,50 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
         if(!uid) uid = "";
         if(!requestData) requestData = tab;
 
-        $.ajax({
-            url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
-            type:'POST',
-            async: false,
-            data:{"drequest":requestData,"uid":uid},
-            success: function (data){
-                data = eval( "(" + data + ")");
-                var SArr = data.server.split(',');//SArr = [1,2,3,];
-                SArr.pop();
-                data.server = SArr;
-                $scope.UserData = data;
-                switch (requestData){
-                    case "pulse":
-                        $scope.TabShowPage = 1;
-                        break;
-                    case "article":
-                        $scope.TabShowPage = 2;
-                        break;
-                    case "comment":
-                        $scope.TabShowPage = 3;
-                        break;
-                    default:
-                        $scope.TabShowPage = 1;
-                        break;
+        if($scope.TabHttpRequestTimes<=3){
+            $.ajax({
+                url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
+                type:'POST',
+                async: false,
+                data:{"drequest":requestData,"uid":uid},
+                success: function (data){
+                    data = eval( "(" + data + ")");
+                    var SArr = data.server.split(',');//SArr = [1,2,3,];
+                    SArr.pop();
+                    data.server = SArr;
+                    $scope.UserData = data;
+                    switch (requestData){
+                        case "pulse":
+                            if($scope.TabPulseStatus==0){
+                                $scope.TabPulseStatus++
+                            }
+                            $scope.TabHttpRequestTimes = $scope.TabPulseStatus + $scope.TabArticleStatus +  + $scope.TabCommentStatus;
+                            break;
+                        case "article":
+                            if($scope.TabArticleStatus==0){
+                                $scope.TabPulseStatus++
+                            }
+                            $scope.TabHttpRequestTimes = $scope.TabPulseStatus + $scope.TabArticleStatus +  + $scope.TabCommentStatus;
+                            break;
+                        case "comment":
+                            if($scope.TabCommentStatus==0){
+                                $scope.TabPulseStatus++
+                            }
+                            $scope.TabHttpRequestTimes = $scope.TabPulseStatus + $scope.TabArticleStatus +  + $scope.TabCommentStatus;
+                            break;
+                        default:
+                            if($scope.TabPulseStatus==0){
+                                $scope.TabPulseStatus++
+                            }
+                            $scope.TabHttpRequestTimes = $scope.TabPulseStatus + $scope.TabArticleStatus +  + $scope.TabCommentStatus;
+                            break;
+                    }
+                },
+                error: function (){
+                    alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
                 }
-            },
-            error: function (){
-                alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
-            }
-        });
+            });
+        }
     }
 
     /**
@@ -163,8 +182,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
             DateDateArr.push($scope.LivenessDataArr[x].date);
             DateLivenessArr.push($scope.LivenessDataArr[x].liveness_rate);
         }
-        console.log(DateDateArr);
-        console.log(DateLivenessArr);
 
         /***配置echart**/
         var myChart = echarts.init(document.getElementById('liveness-chart-body'));
