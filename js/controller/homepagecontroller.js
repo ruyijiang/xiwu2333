@@ -8,6 +8,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     $scope.DataAreaMask = 0;//数据请求时的遮罩层显示指示
     $scope.UserDataStatus = [];//已请求回来的用户数据下标
     $scope.UserData = {};//请求回来用户数据内容对象
+    $scope.LivenessDataArr = [];//请求回来的对应用户的活跃度
     $scope.TabShowPage = 1;
 
     $scope.tellmemore = function (){
@@ -114,7 +115,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     /**
      * 读取用户活跃度数据
      */
-    $scope._loadUserLiveness = function(uid){
+    function _loadUserLiveness(uid){
         uid==undefined?uid=$location.search()["uid"]:uid;
         $.ajax({
             url:'library/xwBE-0.0.1/php/liveness_export.php',
@@ -122,24 +123,49 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
             async: false,
             data:{"uid":uid},
             success: function (data){
-
                 data = welcomejsonarrstring(data);
-                var SArr = data.server.split(',');//SArr = [1,2,3,];
-                SArr.pop();
-                data.server = SArr;
-                $scope.UserData = data;
+                data.pop();//SArr = [1,2,3]
+                $scope.LivenessDataArr = data;//[{'date':06-01,'liveness_rate':2125},{'date':06-02,'liveness_rate':1147}]
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
             }
         });
+    };
+
+
+    /**
+     * 重新生成数组，来确保Echarts正常输出
+     * @param 需要修改的对象
+     * @param 需要仿造的对象个数
+     * @param 期望输出的值
+     * @returns {*} 输出的新数组
+     */
+    function checkLivenessNDate(dataArr,x,OutputValue){
+        var lennum = dataArr.length;
+        var userNeedlennum = x-lennum;
+        var _rightest = dataArr[lennum-1];//最右边的日期，也就是最晚的 //06/01
+
     }
 
+    /**
+     * 把一个数组转化为Echarts组件中data属性所需要的类数组字符
+     */
 
     /**
      * Echarts
      */
     $scope.loadEchart = function (){
+
+        var DateDateArr = [];
+        var DateLivenessArr = [];
+        for(x in $scope.LivenessDataArr){
+            DateDateArr.push($scope.LivenessDataArr[x].date);
+            DateLivenessArr.push($scope.LivenessDataArr[x].liveness_rate);
+        }
+        console.log(DateDateArr);
+        console.log(DateLivenessArr);
+
         /***配置echart**/
         var myChart = echarts.init(document.getElementById('liveness-chart-body'));
         myChart.setOption({
@@ -155,11 +181,11 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
                 {
                     type: "category",
                     boundaryGap: false,
-                    data: ["2016/03/20", "03/21", "03/22", "03/23", "03/24", "03/25", "03/26", "03/27", "03/28", "03/29"],
-                    name: "最近14天",
+                    data:DateDateArr,
+                    name: "最近"+$scope.LivenessDataArr.length+"天",
                     nameLocation: "end",
                     min: 1,
-                    max: 10,
+                    max: 15,
                     axisTick: {
                         show: true,
                         interval: 0,
@@ -186,9 +212,9 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
                 {
                     name: "用户活跃度",
                     type: "line",
-                    data: [27.7, 1.7, 68.6, 54.2, 70.3, 70.2, 76.5, 78, 78.2, 88.5],
+                    data:DateLivenessArr,
                     smooth: true,
-                    symbolSize: 5
+                    symbolSize: 4
                 }
             ]
         })
@@ -197,9 +223,10 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     }
 
     //视图初始化
-    $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     _loadUserData();
+    _loadUserLiveness();
+    $scope.loadEchart();
 
 
 

@@ -743,13 +743,14 @@ class liveness{
             strlen($n_month)==1?$n_month="0".$n_month:$n_month;
             strlen($n_day)==1?$n_day="0".$n_day:$n_day;
             $n_time = $n_month."/".$n_day;//把timestamp转成date
+            
 
 
             $dataArr = array ('date'=>$n_time,'liveness_rate'=>$liveness_rate);
             foreach ( $dataArr as $key => $value ) {
-                $dataArr[$key] = urlencode ($value);
+                $dataArr[$key] = urlencode ($value) ;
             }
-            $dataArr = urldecode ( json_encode ( $dataArr ));
+            $dataArr = urldecode ( json_encode ( $dataArr )). ",";
             echo $dataArr;
         }
 

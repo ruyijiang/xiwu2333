@@ -127,7 +127,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="input-group col-lg-5">
                                   <input type="text" class="form-control" placeholder="搜索">
                                   <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" ng-click="_loadUserLiveness()"><span class="glyphicon glyphicon-search"></span></button>
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                                   </span>
                                 </div>
                             </div>
