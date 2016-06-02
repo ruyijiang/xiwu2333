@@ -1,19 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/library/xwBE-0.0.1/all.php" line="729" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/article_export.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/blog_export.php" />
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="finish liveness_rate modal in homepage.php">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/.ruby-version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/_config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/extras.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/font-awesome-ie7.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_extras.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/font-awesome-ie7.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-dark-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-horizontal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/ads/carbon-light-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/brand-license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/cheatsheet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/getting-support.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/project-milestones.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/reporting-bugs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/requesting-new-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/community/submitting-pull-requests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/animated-spinner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/bordered-pulled.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/bulleted-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/button-dropdowns.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/button-groups.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/custom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/form-inputs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/inline-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/larger-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/navigation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/rotated-flipped.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/examples/stacked.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/get-started.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/brand.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/currency.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/directional.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/medical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/text-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/video-player.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/icons/web-application.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/jumbotron-slider.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/jumbotron.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/license-code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/navbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/stripe-ad.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/stripe-social.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tell-me-thanks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-anchor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped-inside-btn.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/rotated-flipped.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/stacked-inside-anchor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/tests/stacked.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/thanks-to.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/whats-new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_includes/why.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_layouts/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_layouts/icon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_plugins/icon_page_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/_plugins/site.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/css/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/css/pygments.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/extras.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome-ie7.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_extras.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome-ie7.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/ico/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/img/contribution-sample.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/img/fort_awesome.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/img/icon-flag.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/ZeroClipboard-1.1.7.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/ZeroClipboard-1.1.7.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/backbone.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/bootstrap-2.3.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/bootstrap-222.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/prettify.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/site.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/js/underscore.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/accordion.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/hero-unit.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/labels-badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/layouts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/reset.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-1200px-min.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-767px-max.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-768px-979px.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/responsive.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/sprites.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/bootstrap-2.3.2/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/lazy.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-1200px-min.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-767px-max.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-768px-979px.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive-navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/responsive.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/site.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/sticky-footer.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/assets/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/cheatsheet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/community.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/design.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/examples.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/get-started.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/icons.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Font-Awesome-3.2.1/src/whats-new.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/blogpagecontroller.js" afterPath="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/homepagecontroller.js" afterPath="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,21 +234,31 @@
       <file leaf-file-name="homepagecontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/homepagecontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_export.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog_export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blog_export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+            <state relative-caret-position="72">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding>
-                <marker date="1464855858904" expanded="true" signature="233:274" placeholder="SELECT * FRO... articles" />
+                <marker date="1464856582427" expanded="true" signature="233:274" placeholder="SELECT * FRO... articles" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,8 +266,8 @@
       <file leaf-file-name="AbstractofArticle.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
               </folding>
@@ -81,8 +278,8 @@
       <file leaf-file-name="blogpagecontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,7 +288,7 @@
       <file leaf-file-name="blogpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blogpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="1152">
               <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
               <folding>
                 <marker date="1464224879074" expanded="true" signature="428:469" placeholder="SELECT * FRO... articles" />
@@ -126,7 +323,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/forbiddenBy_Version.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/interceptor/forbiddenBy_Version.php" />
         <option value="$PROJECT_DIR$/roomlistpage.php" />
         <option value="git.coding.net/milobluebell/xiwu2333.com.git" />
@@ -177,6 +373,7 @@
         <option value="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/blog_export.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -191,10 +388,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="191" />
+    <option name="y" value="101" />
+    <option name="width" value="976" />
+    <option name="height" value="563" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -221,6 +418,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,77 +437,8 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xwBE-0.0.1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xwBE-0.0.1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -547,6 +676,7 @@
       <workItem from="1464791972697" duration="4074000" />
       <workItem from="1464796207329" duration="3000" />
       <workItem from="1464830611346" duration="21145000" />
+      <workItem from="1464856806220" duration="468000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -650,28 +780,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438640000" />
+    <option name="totallyTimeSpent" value="439230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="191" y="101" width="976" height="563" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21156661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30104166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49788582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20718816" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -706,13 +836,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/m_password_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/certificationController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -910,10 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <marker date="1464224882436" expanded="true" signature="404:471" placeholder="SELECT uid F... users" />
-            <marker date="1464224882436" expanded="true" signature="722:804" placeholder="SELECT * FRO... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,7 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,9 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-48">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <marker date="1464224883141" expanded="true" signature="5398:5465" placeholder="SELECT uid F... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,7 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,25 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="605" column="52" selection-start-line="605" selection-start-column="52" selection-end-line="605" selection-end-column="52" />
-          <folding>
-            <marker date="1464850503139" expanded="true" signature="9197:9243" placeholder="SELECT * FRO... users" />
-            <marker date="1464850503139" expanded="true" signature="10597:10791" placeholder="UPDATE users... " />
-            <marker date="1464850503139" expanded="true" signature="14771:14825" placeholder="SELECT `uid`... users" />
-            <marker date="1464850503139" expanded="true" signature="16045:16126" placeholder="SELECT regti... users" />
-            <marker date="1464850503139" expanded="true" signature="17555:17821" placeholder="INSERT INTO `xiwu2333.com`.`users`... " />
-            <marker date="1464850503139" expanded="true" signature="20507:20607" placeholder="UPDATE users... " />
-            <marker date="1464850503139" expanded="true" signature="21831:21881" placeholder="UPDATE users... " />
-            <marker date="1464850503139" expanded="true" signature="22715:22767" placeholder="UPDATE users... " />
-            <marker date="1464850503139" expanded="true" signature="23862:23912" placeholder="SELECT COUNT... users" />
-            <marker date="1464850503139" expanded="true" signature="24203:24253" placeholder="SELECT COUNT... users" />
-            <marker date="1464850503139" expanded="true" signature="24886:24964" placeholder="select count... users" />
-            <marker date="1464850503139" expanded="true" signature="25359:25426" placeholder="SELECT uid F... users" />
-            <marker date="1464850503139" expanded="true" signature="28301:28369" placeholder="SELECT l_val... liveness" />
-            <marker date="1464850503139" expanded="true" signature="28630:28712" placeholder="UPDATE liven... " />
-            <marker date="1464850503139" expanded="true" signature="29344:29444" placeholder="INSERT INTO liveness... " />
-            <marker date="1464850503139" expanded="true" signature="30556:30672" placeholder="select time,... " />
-            <marker date="1464850503139" expanded="true" signature="30964:31062" placeholder="SELECT l_val... liveness" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,36 +1075,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="63" column="276" selection-start-line="63" selection-start-column="276" selection-end-line="63" selection-end-column="276" />
-          <folding>
-            <marker date="1464850368028" expanded="true" signature="374:417" placeholder="SELECT * FRO... users" />
-            <marker date="1464850368028" expanded="true" signature="862:930" placeholder="SELECT conte... callingcard" />
-            <marker date="1464850368028" expanded="true" signature="1631:1677" placeholder="SELECT name,... rooms" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blog_export.php.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blog_export.php.js" />
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/article_export.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <marker date="1464852530790" expanded="true" signature="249:290" placeholder="SELECT * FRO... articles" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/homepagecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1019,27 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="91" column="85" selection-start-line="91" selection-start-column="78" selection-end-line="91" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#2;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#2;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#2;n#tr#5;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#blockquote#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#blockquote#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#blockquote#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#blockquote#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,13 +1105,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1728">
           <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blogpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="1152">
           <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
           <folding>
             <marker date="1464224879074" expanded="true" signature="428:469" placeholder="SELECT * FRO... articles" />
@@ -1065,8 +1122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1075,7 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,9 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#141#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1093,27 +1146,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blog_export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding>
+            <marker date="1464856582427" expanded="true" signature="233:274" placeholder="SELECT * FRO... articles" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blog_export.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-          <folding>
-            <marker date="1464855858904" expanded="true" signature="233:274" placeholder="SELECT * FRO... articles" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
