@@ -33,7 +33,7 @@ header("Content-Type: text/html; charset=utf-8");
               <h2><? echo $result_title?></h2>
               <p><em class="blog-time"><? echo $result_time?></em></p>
               <div>
-                  <a role="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span>删除</a>
+                  <a role="button" class="btn btn-default btn-xs" ng-click="tellmemore()"><span class="glyphicon glyphicon-remove"></span>删除</a>
                   &nbsp;&nbsp;
                   <a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-edit"></span>修改</a>
                   <div style="display:inline-block;margin-left:10px">

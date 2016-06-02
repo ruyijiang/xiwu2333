@@ -1,0 +1,16 @@
+['Time':2016-06-02 20:50:00,'Commit:'onlineDuration]{3745}
+['Time':2016-06-02 20:56:26,'Commit:'onlineDuration]{280}
+['Time':2016-06-02 21:07:31,'Commit:'onlineDuration]{}
+['Time':2016-06-02 21:21:02,'Commit:'onlineDuration]{1680}
+['Time':2016-06-02 21:42:04,'Commit:'onlineDuration]{1323}
+['Time':2016-06-02 21:42:04,'Commit:'onlineDuration]{1323}
+['Time':2016-06-02 21:57:39,'Commit:'onlineDuration]{189}
+['Time':2016-06-02 21:59:47,'Commit:'onlineDuration]{63}
+['Time':2016-06-02 22:00:29,'Commit:'onlineDuration]{}
+['Time':2016-06-02 22:13:13,'Commit:'onlineDuration]{840}
+['Time':2016-06-02 22:13:41,'Commit:'onlineDuration]{}
+['Time':2016-06-02 22:22:56,'Commit:'onlineDuration]{630}
+['Time':2016-06-02 22:26:30,'Commit:'onlineDuration]{210}
+['Time':2016-06-02 22:39:10,'Commit:'onlineDuration]{840}
+['Time':2016-06-02 23:00:01,'Commit:'onlineDuration]{1400}
+['Time':2016-06-02 23:03:57,'Commit:'onlineDuration]{210}
