@@ -5,8 +5,9 @@
  * Date: 2016/6/2
  * Time: 14:52
  */
-require("connectDB.php");
-require("all.php");
+require("../connectDB.php");
+require("../all.php");
+require("../algorithm/AbstractofArticle.php");
 ?>
 <?php
     $status = $reminder = 0;

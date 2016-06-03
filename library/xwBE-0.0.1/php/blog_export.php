@@ -5,8 +5,8 @@
  * Date: 2016/6/2
  * Time: 15:30
  */
-require("connectDB.php");
-require("all.php");
+require("../connectDB.php");
+require("../all.php");
 ?>
 <?php
 $status = $reminder = 0;
