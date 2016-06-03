@@ -14,3 +14,4 @@
 ['Time':2016-06-02 22:39:10,'Commit:'onlineDuration]{840}
 ['Time':2016-06-02 23:00:01,'Commit:'onlineDuration]{1400}
 ['Time':2016-06-02 23:03:57,'Commit:'onlineDuration]{210}
+['Time':2016-06-02 23:06:36,'Commit:'onlineDuration]{}
