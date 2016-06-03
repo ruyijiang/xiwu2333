@@ -19,7 +19,16 @@ require("../algorithm/AbstractofArticle.php");
     while($row = $qry->fetch_assoc()){
         $result_title = $row["title"];
         $result_time = $row["time"];
-        $result_content = $row["content"];//这个内容需要进行修正，部分输出而不能全部输出
+        $result_content = $row["content"];
+        $result_abstract = getAbstract($result_content);
+
+
+        $dataArr = array ('title'=>$result_title,'time'=>$result_title,'abstact'=>$result_abstract);
+        foreach ( $dataArr as $key => $value ) {
+            $dataArr[$key] = urlencode ($value) ;
+        }
+        $dataArr = urldecode ( json_encode ( $dataArr )). ",";
+        echo $dataArr;
     }
 
 ?>

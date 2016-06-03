@@ -26,7 +26,7 @@ require("../all.php");
 
     }else{
         $status = 0;
-        $reminder = "请求开放组队玩家列表失败，可能的原因是没有发送请求头，请联系管理员";
+        $reminder = "请求数据失败，可能的原因是没有发送请求头，请联系管理员";
         $a = new interfaceResponse();
         echo $a->normalrespond($status,$reminder);
     }

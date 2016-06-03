@@ -68,7 +68,8 @@ echo $openupalertdiv;
 <!--Echart Js-->
 <script  type="text/javascript" src="library/Echart-3.1.4/echarts.simple.min.js"></script>
 <!--all.js-->
-<script  type="text/javascript" src="js/all.js"></script>
+<script  type="text/javascript" src="js/run.js"></script>
+<script  type="text/javascript" src="js/vendor/all.js"></script>
 <!-- angular-popups -->
 <script  type="text/javascript" src="js/angular-popups.js"></script>
 <!-- router-->
