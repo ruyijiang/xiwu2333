@@ -21,6 +21,8 @@ $Regular_Chinese = "/[\u4e00-\u9fa5]/";//匹配中文
 $Regular_Password = "/^\w{6,24}$/";//匹配密码，格式：{6-24位 | 数字、英文、下划线}
 $Regular_Htmltag = "/<(\S*?)[^>]*>.*?</>|<.*? />/";//匹配html标签
 $Regular_Duration = "/[0-2]\d:[0-6]\d/";//匹配活跃度算法所接受的在线时间的数据报
+$Regular_Html = "//";//匹配html标签
+$Regular_LetterTagWithColor = "/.*?<[span|p|font|i|] .*?href=\"(.*?)\" .*? style=\".*?\">.*?/";//匹配带颜色的文字表义html标签
 
 
 

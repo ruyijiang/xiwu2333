@@ -4,11 +4,7 @@ require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 header("Content-Type: text/html; charset=utf-8");
 ?>
-    <div class="container" ng-controller="blogpagecontroller" style="margin-top:130px;">
-
-
-
-
+    <div class="container" ng-controller="blogpagecontroller" style="margin-top:100px;">
 
       <div class="row">
         <div class="col-sm-8">
