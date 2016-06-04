@@ -9,32 +9,15 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
 
     $scope.LivenessDataArr = [];//请求回来的对应用户的活跃度
     $scope.ArticleDataArr = [];//请求回来的对应用户的文章
+    $scope.ArticlePageListInfo = [];//请求回来的对应用户的文章
 
     $scope.TabShowPage = 1;//Tab标签当前显示位置
+    $scope.maxPageNum = 0;
 
     $scope.TabPulseStatus = 0;
     $scope.TabArticleStatus = 0;
     $scope.TabCommentStatus = 0;
     $scope.TabHttpRequestTimes = 0;//Tab一共发送的请求数量
-
-    var tab = $location.search()["tab"];
-    switch(tab){
-        case "pulse":
-            $scope.TabShowPage = 1;
-            _loadUserLiveness();
-            break;
-        case "article":
-            $scope.TabShowPage = 2;
-            _loadUserArticle();
-            break;
-        case "comment":
-            $scope.TabShowPage = 3;
-            break;
-        default:
-            tab = "pulse";
-            $scope.TabShowPage = 1;
-            break;
-    }
 
 
     $scope.tellmemore = function (){
@@ -124,25 +107,67 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
             }
         });
     }
+
     /**
      * 读取用户博客数据
      */
     function _loadUserArticle(uid){
         uid==undefined?uid=$location.search()["uid"]:uid;
+        //发送请求，根据分页情况获取articles
+        $scope.changeShowPage(0,uid);
+    }
+
+    
+    /********分页组件初始化******/
+    $scope.a_num_onepage = 1;//每页显示条数
+    $scope.ListActive = 1;//class为active的分页按钮位置代码
+    $scope.ListSelectedNum = null;//class为active的分页按钮位置代码
+    /*******初始化完成***********/
+    $scope.changeShowPage = function (num,uid){
+        //先判断分页基本信息
         $.ajax({
-            url:'library/xwBE-0.0.1/php/article_export.php',
-            type:'POST',
+            url:'library/xwBE-0.0.1/Interface/pagination.php',
+            type:'GET',
             async:false,
-            data:{"uid":uid},
+            data:{
+                "responseCate":"article",
+                "num_onepage":$scope.a_num_onepage,
+                "uid":uid
+            },
             success: function (data){
-                $scope.ArticleDataArr = welcomejsonarrstring(data);
+                var obj1;
+                obj1 = eval("("+data+")");
+                for(var i=0;i<obj1.page_all;i++){
+                    $scope.ArticlePageListInfo.push(i+1);
+                }
+                $scope.maxPageNum = obj1.page_all;
                 updateTabRequestStatus('article');
             },
             error: function (){
-                alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
+                alert ("分页数据获取失败");
             }
         });
-    }
+        //根据指示调取该页的信息
+        $.ajax({
+            url:'../../library/xwBE-0.0.1/php/article_export.php',
+            type:'POST',
+            async: false,
+            data:{
+                "num_onepage":$scope.a_num_onepage,
+                "now_page":num,
+                "uid":uid
+            },
+            success: function (data){
+                $scope.ArticleDataArr = welcomejsonarrstring(data);
+                $scope.ListActive = num;
+                $scope.ListSelectedNum = num;
+            },
+            error: function (data){
+                alert ("获取[用户文章资料]异常，请联系管理员");
+            }
+        });
+    };
+
     /**
      * 读取用户评论数据
      */
@@ -150,7 +175,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
         uid==undefined?uid=$location.search()["uid"]:uid;
         updateTabRequestStatus('comment');
     }
-
 
 
 

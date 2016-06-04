@@ -149,17 +149,13 @@ include("library/xwFE-0.0.1/FEM.php");
                             <nav>
                               <ul class="pagination">
                                 <li>
-                                  <a href="#" aria-label="Previous">
+                                  <a aria-label="Previous" ng-click="changeShowPage(1,'')">
                                     <span aria-hidden="true">&laquo;</span>
                                   </a>
                                 </li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
+                                <li ng-repeat="xpag in ArticlePageListInfo" ng-class="{active:ListActive==xpag}" ng-disabled="ListActive==xpag" ng-if="xpag >= xpag - 3 && xpag <= xpag + 3"><a ng-click="changeShowPage(xpag,'')">{{xpag}}</a></li>
                                 <li>
-                                  <a href="#" aria-label="Next">
+                                  <a aria-label="Next" ng-click="changeShowPage(maxPageNum,'')">
                                     <span aria-hidden="true">&raquo;</span>
                                   </a>
                                 </li>

@@ -115,17 +115,15 @@ include("library/xwFE-0.0.1/FEM.php");
               </table>
               <hr/>
               <div class="col-lg-12 text-center" style="margin-top:-10px">
-                  <?php
-                  $sql = "SELECT uid FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
-                  $qry = $db->query($sql);
-                  $row_all = mysqli_num_rows($qry);//总条数
-                  $page_all = $row_all/15;//总页数
-                  $page_all = ceil($page_all);
-                  $page_limit = 6;//允许选择的页数限制
-                  $i = 0;
-                  ?>
                 <ul class="pagination pagination-md">
                   <?php
+                    $sql = "SELECT uid FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
+                    $qry = $db->query($sql);
+                    $row_all = mysqli_num_rows($qry);//总条数
+                    $page_all = $row_all/15;//总页数
+                    $page_all = ceil($page_all);
+                    $page_limit = 6;//允许选择的页数限制
+                    $i = 0;
 
                     $dom = '<li ng-if="ListActive !== 1"><a ng-click="changeShowPage(1)">&laquo;头页</a></li>';
                     for ($i=1;$i<=$page_all+7;$i++){
@@ -135,8 +133,6 @@ include("library/xwFE-0.0.1/FEM.php");
                     $dom .= '<li ng-if="ListActive !== '.$page_all.'"><a ng-click="changeShowPage('.$page_all.')">尾页&raquo;</a></li>';
                     echo $dom;
                   ?>
-
-
                 </ul>
                 <?php
                   echo '<input id="nowselected" type="hidden" ng-model="ListSelectedNum">';
