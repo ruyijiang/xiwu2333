@@ -11,8 +11,6 @@ require("all.php");
 <?php
 
     $status = $reminder = "";
-
-    $RequestCate = $_POST["drequest"];
     @$RequestUid = $_POST["uid"];
 
     if(!isset($RequestUid) || empty($RequestUid)){//请求的是自己

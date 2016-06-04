@@ -134,18 +134,15 @@ include("library/xwFE-0.0.1/FEM.php");
                         </form>
                         <h5 class="pull-left" style="width:75px;padding-top:2px;color:#CCC">文章列表</h5>
                         <hr>
-                        <div class="article clearfix">
-                        	<a href=""><h4><strong>我的3月23日DOTA2一日游</strong></h4></a>
-                            <blockquote><h5>2016年3月24日，一个明媚的早晨<span>...</span></h5></blockquote>
-                            <small class="pull-right"><time>3min 前</time></small>
+                        <div ng-repeat="xarticle in ArticleDataArr">
+                            <div class="article clearfix">
+                                <a href=""><h4><strong>{{xarticle.title}}</strong></h4></a>
+                                <blockquote><h5>{{xarticle.abstract}}<span>...</span></h5></blockquote>
+                                <small class="pull-right"><time>{{xarticle.time}}</time></small>
+                            </div>
+                            <hr>
                         </div>
-                        <hr>
-                        <div class="article clearfix">
-                        	<a href=""><h4><strong>我的3月24日DOTA2一日游</strong></h4></a>
-                            <blockquote><h5>2016年3月24日，一个明媚的早晨<span>...</span></h5></blockquote>
-                            <small class="pull-right"><time>昨天 16:24</time></small>
-                        </div>
-                        <hr>
+
 
 
                         <div class="col-lg-12 text-center">
