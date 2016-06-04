@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('homepagecontroller',function ($scope,$rootScope,$location){
+app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout){
 
 
     $scope.TabShowPage = 1;//当前TabIndex值
@@ -114,16 +114,17 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     function _loadUserArticle(uid){
         uid==undefined?uid=$location.search()["uid"]:uid;
         //发送请求，根据分页情况获取articles
-        $scope.changeShowPage(0,uid);
+        $scope.changeShowPage(1,uid);
     }
 
     
     /********分页组件初始化******/
-    $scope.a_num_onepage = 1;//每页显示条数
+    $scope.a_num_onepage = 5;//每页显示条数
     $scope.ListActive = 1;//class为active的分页按钮位置代码
     $scope.ListSelectedNum = null;//class为active的分页按钮位置代码
     /*******初始化完成***********/
     $scope.changeShowPage = function (num,uid){
+        $scope.a_num_onepage = $scope.UserData.page_num;
         //先判断分页基本信息
         $.ajax({
             url:'library/xwBE-0.0.1/Interface/pagination.php',
@@ -138,15 +139,19 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
                 var obj1;
                 obj1 = eval("("+data+")");
                 for(var i=0;i<obj1.page_all;i++){
-                    $scope.ArticlePageListInfo.push(i+1);
+                    if($scope.ArticlePageListInfo.length<obj1.page_all){
+                        $scope.ArticlePageListInfo.push(i+1);
+                    }
+                    unique($scope.ArticlePageListInfo);
                 }
-                $scope.maxPageNum = obj1.page_all;
+                $scope.maxPageNum = parseInt(obj1.page_all);
                 updateTabRequestStatus('article');
             },
             error: function (){
                 alert ("分页数据获取失败");
             }
         });
+
         //根据指示调取该页的信息
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/article_export.php',
@@ -199,9 +204,46 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location){
     }
 
 
+    $scope.dialog={
+        open: false,
+        content : ""
+    };
+    /**
+     * 控制每页显示数量
+     */
+    $scope.changePage_num = function(val){
+        $.ajax({
+            url:'../../library/xwBE-0.0.1/php/m_numpage.php',
+            method:'POST',
+            data:{'page_num':val},
+            async:false,
+            success:function (data){
+                data = welcomejsonstring(data);
+                if(data){
+                    $scope.a_num_onepage=val;
+                    $scope.dialog={
+                        open: true,
+                        content : "修改成功"
+                    };
+                    $timeout(function (){
+                        window.location.reload();
+                    },1101);
+                }else{
+                    $scope.dialog={
+                        open: true,
+                        content : "未知系统异常X0AB382X导致的数据更新失败，请联系管理员"
+                    };
+                }
+            },
+            error:function (){
+                $scope.dialog={
+                    open: true,
+                    content : "未知系统异常导致数据更新失败"
+                };
+            }
+        })
 
-
-
+    }
 
     /**
      * Echarts

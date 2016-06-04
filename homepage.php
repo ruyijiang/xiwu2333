@@ -91,7 +91,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <ul class="nav nav-tabs" style="margin-top:20px;">
                        <li ng-class="{active:TabShowPage === 1}"><a ng-click="Tabshow(1)">动态</a></li>
                        <li ng-class="{active:TabShowPage === 2}"><a ng-click="Tabshow(2)">文章</a></li>
-                       <li ng-class="{active:TabShowPage === 3}"><a ng-click="Tabshow(3)">获得评价</a></li>
+                       <!--<li ng-class="{active:TabShowPage === 3}"><a ng-click="Tabshow(3)">获得评价</a></li>-->
                     </ul>
 
                     <!--php
@@ -120,19 +120,36 @@ include("library/xwFE-0.0.1/FEM.php");
                         <p>评价了&nbsp;<a href=""><span class="glyphicon glyphicon-user"></span>MARTIN</a></p>
                     </div>
 
-                    <div class="article-sheet" style="margin-top:15px;" ng-show="TabShowPage == 2">
-                    	   <a class="btn btn-danger pull-left" role="button" style="margin-right:5px;" ng-click="tellmemore()"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
-                    	<form>
+                    <div class="article-sheet form-inline" style="margin-top:15px;" ng-show="TabShowPage == 2">
+                        <a class="btn btn-danger form-group" role="button" style="padding-left:35px;padding-right:45px;" ng-click="tellmemore()"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
+                    	<form class="form-group">
                         	<div class="input-group-container">
-                                <div class="input-group col-lg-5">
-                                  <input type="text" class="form-control" placeholder="搜索">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="搜索" style="width:310px">
                                   <span class="input-group-btn">
                                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                                   </span>
                                 </div>
                             </div>
                         </form>
-                        <h5 class="pull-left" style="width:75px;padding-top:2px;color:#CCC">文章列表</h5>
+                        <div class="dropdown form-group">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                每页显示
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:120px">
+                                <li role="presentation" ng-class="{active:a_num_onepage==3}">
+                                    <a role="menuitem" tabindex="-1" ng-click="changePage_num(3)">3篇</a>
+                                </li>
+                                <li role="presentation" ng-class="{active:a_num_onepage==5}">
+                                    <a role="menuitem" tabindex="-1" ng-click="changePage_num(5)">5篇</a>
+                                </li>
+                                <li role="presentation"ng-class="{active:a_num_onepage==10}">
+                                    <a role="menuitem" tabindex="-1" ng-click="changePage_num(10)">10篇</a>
+                                </li>
+                            </ul>
+                        </div>
+
                         <hr>
                         <div ng-repeat="xarticle in ArticleDataArr">
                             <div class="article clearfix">
@@ -142,19 +159,16 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                             <hr>
                         </div>
-
-
-
                         <div class="col-lg-12 text-center">
                             <nav>
                               <ul class="pagination">
-                                <li>
+                                <li ng-if="ListActive!==1">
                                   <a aria-label="Previous" ng-click="changeShowPage(1,'')">
                                     <span aria-hidden="true">&laquo;</span>
                                   </a>
                                 </li>
                                 <li ng-repeat="xpag in ArticlePageListInfo" ng-class="{active:ListActive==xpag}" ng-disabled="ListActive==xpag" ng-if="xpag >= xpag - 3 && xpag <= xpag + 3"><a ng-click="changeShowPage(xpag,'')">{{xpag}}</a></li>
-                                <li>
+                                <li ng-if="ListActive!==maxPageNum">
                                   <a aria-label="Next" ng-click="changeShowPage(maxPageNum,'')">
                                     <span aria-hidden="true">&raquo;</span>
                                   </a>
@@ -164,17 +178,18 @@ include("library/xwFE-0.0.1/FEM.php");
                         </div>
                     </div>
 
+
                     <div class="comment-sheet" style="margin-top:15px;" ng-show="TabShowPage == 3">
                         <div class="article">                        	
                             <blockquote class="clearfix">
-                            	<a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="Yado"><img src="img/user_img/avatar/622762d0f703918f331290f3523d269758eec4cc.jpg" class="img-responsive" style="height:42px;width:42px;"/></a>
+                            	<a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="Yado"><img class="img-responsive" style="height:42px;width:42px;"/></a>
                                 <h5 class="pull-left" style="margin-left:20px;">这个人好坑的...</h5>
                             </blockquote>
                             <small class="pull-right"><time>3min 前</time></small>
                         </div>
                         <div class="article">                        	
                             <blockquote class="clearfix">
-                            	<a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="shy"><img src="img/user_img/avatar/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" class="img-responsive" style="height:42px;width:42px;"></img></a>
+                            	<a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="shy"><img class="img-responsive" style="height:42px;width:42px;"></img></a>
                                 <h5 class="pull-left" style="margin-left:20px;">这个人好坑的...</h5>
                             </blockquote>
                             <small class="pull-right"><time>3min 前</time></small>
@@ -187,6 +202,9 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div><!--rightpart-->
         </div><!--row-->
 
+    <dialog ng-if="dialog.open" duration="1100" fixed close="dialog.open=false">
+        <div dialog-content>{{dialog.content}}</div>
+    </dialog>
     <hr>
     <?php echo $footer;?>
     </div><!--container-->
