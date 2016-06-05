@@ -1,15 +1,7 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('writeblogcontroller',function ($scope,$http){
-    var ueitor = UE.getEditor('ueditor-main'); //启用UEditor
-    $("[data-toggle='tooltip']").tooltip();//开启tooltip
-    $("#identifier").modal({
-        show:false,
-        backdrop:false
-    });
-
-    //开启modal
+app.controller('writeblogcontroller',function ($scope){
 
 
     /**
@@ -17,14 +9,14 @@ app.controller('writeblogcontroller',function ($scope,$http){
      * @returns {boolean}
      */
     $scope.articlesubmit = function () {
-        $(".submit_btn").button('loading');//提交时按钮disable
+        $("#submit_btn").button('loading');//提交时按钮disable
         //获取要提交的内容
         var a_title = $("input#a_title").val();//文章标题
         var a_content = ueitor.getContent();//文章内容
         a_cotent = htmldecode(a_content);
 
         if(!ueitor.hasContents()){
-            $(".submit_btn").button('reset');
+            $("#submit_btn").button('reset');
             alert ("还没有写文章正文");
             $("#identifier").modal("show");
             return false;
@@ -45,19 +37,22 @@ app.controller('writeblogcontroller',function ($scope,$http){
 
                 }else if(data.statuscode == '0'){
                     alert (data.message);
-                    $(".submit_btn").button('reset');
+                    $("#submit_btn").button('reset');
                     return false;
                 }else{
                     alert ("文章发表异常#A001，请联系管理员");
-                    $(".submit_btn").button('reset');
+                    $("#submit_btn").button('reset');
                     return false;
                 }
             },
             error: function (){
                 alert ("文章发表异常#A002，请联系管理员");
-                $(".submit_btn").button('reset');
+                $("#submit_btn").button('reset');
                 return false;
             }
         })
-    }
-})
+    };
+
+    var ueitor = UE.getEditor('ueditor-main'); //启用UEditor
+    $("[data-toggle='tooltip']").tooltip();//开启tooltip
+});

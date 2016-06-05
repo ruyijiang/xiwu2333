@@ -6,14 +6,15 @@ include("library/xwFE-0.0.1/FEM.php");
 <div class="container" ng-controller="writeblogcontroller" style="margin-top:130px">
 
 
-    <form ng-submit="articlesubmit()" style="position: relative;z-index:0"><!--method="POST" action="library/xwBE-0.0.1/php/ueserver.php"-->
+    <form ng-submit="articlesubmit()" style="position: relative;z-index:999"><!--method="POST" action="library/xwBE-0.0.1/php/ueserver.php"-->
         <div class="input-group writeblog-title">
             <span class="input-group-addon" id="basic-addon1"><strong><sup style="color:red">*</sup>文章标题</strong></span>
             <input type="text" class="form-control" id="a_title" name="title" placeholder="12个汉字以内" aria-describedby="basic-addon1" required maxlength="20" autocomplete="off" data-toggle="tooltip" data-placement="top" data-original-title="最多允许15个汉字或者30个字母">
         </div>
 
-        <!--Ueditor-->
-        <div id="ueditor-main" name="content" class="ueditor-main" type="text/plain" style="margin-top:150px;height:400px;"></div>
+        <!--<script id="ueditor-main" name="ueditor-main" type="text/plain" style="margin-top:150px;height:1500px;"></script>-->
+        <div id="ueditor-main" class="ueditor-main" style="margin-top:150px;height:400px;"></div>
+
         <!--End of Ueditor-->
 
         <div class="alert alert-info clearfix" style="margin-top:-2px;">
@@ -24,6 +25,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
 
 
+    <hr>
     <?php echo $footer;?>
 
 </div>

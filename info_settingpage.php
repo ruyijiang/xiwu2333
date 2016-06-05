@@ -25,9 +25,9 @@ include("library/xwFE-0.0.1/FEM.php");
                 <li>
                     <a ui-sref="m_password">修改密码</a>
                 </li>
-                <li>
+                <!--<li>
                     <a ui-sref="createroom">房间设置</a>
-                </li>
+                </li>-->
                 <li>
                     <a ui-sref="certification">实名验证</a>
                 </li>

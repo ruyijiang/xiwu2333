@@ -81,7 +81,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/utill/unique_inarr.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!-- Ueditor Js-->
-<!--<script id="ueditor-main" name="content" type="text/plain"></script>-->
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.config.js"></script>
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.all.min.js"></script>
 <!-------------------------------------------------------------------------------------->
@@ -100,10 +99,9 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/roomlistcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/logincontroller.js"></script>
 <script  type="text/javascript" src="js/controller/signupcontroller.js"></script>
-<script  type="text/javascript" src="js/controller/blogpagecontroller.js"></script>
 <script  type="text/javascript" src="js/controller/writeblogcontroller.js"></script>
+<script  type="text/javascript" src="js/controller/blogpagecontroller.js"></script>
 <script  type="text/javascript" src="js/controller/homepagecontroller.js"></script>
-<script  type="text/javascript" src="js/controller/personal_settingcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/createroomcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/info_SettingController.js"></script>
 <script  type="text/javascript" src="js/controller/certificationController.js"></script>

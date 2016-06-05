@@ -12,7 +12,6 @@ $status = $reminder = "";
 
 @$content = $_POST["content"];
 
-
 /**
  * 提取文章摘要
  * @param $content : 需要被提取的文章正文
@@ -68,7 +67,7 @@ function getAbstract($content,$configuration=''){
                 $d>$e?$min = $e:$min = $d;
                 $abstract .= substr($tempContent,0,$min);
             }else{
-                $abstract = substr($tempContent,0,$d);
+                $abstract .= substr($tempContent,0,$d);
                 $abstract .= substr($tempContent,0,$e);
             }
             return $abstract;

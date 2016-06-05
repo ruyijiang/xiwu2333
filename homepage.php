@@ -189,7 +189,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </div>
                         <div class="article">                        	
                             <blockquote class="clearfix">
-                            	<a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="shy"><img class="img-responsive" style="height:42px;width:42px;"></img></a>
+                            	<a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="shy"><img class="img-responsive" style="height:42px;width:42px;"/></a>
                                 <h5 class="pull-left" style="margin-left:20px;">这个人好坑的...</h5>
                             </blockquote>
                             <small class="pull-right"><time>3min 前</time></small>
