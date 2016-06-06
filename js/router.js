@@ -73,11 +73,15 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/person",
             templateUrl: "personpage.php"
         })
+        .state("search",{
+            url: "/search",
+            templateUrl: "search.php"
+        })
         .state("404", {
             url: "/404",
             templateUrl: "404.html"
-        });
-        $urlRouterProvider.otherwise('/main');
-        //remove # 
+        })
+        $urlRouterProvider.otherwise('/404');
+        //remove #
         //$locationProvider.html5Mode(true);
 });

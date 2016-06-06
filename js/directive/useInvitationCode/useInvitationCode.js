@@ -3,8 +3,7 @@
  */
 
 
-app
-    .directive("invitationCode",function(){
+app.directive("invitationCode",function(){
         return {
             templateUrl: 'js/directive/useInvitationCode/InvitationCode.html',
             restrict : 'E',

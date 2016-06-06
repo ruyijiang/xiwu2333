@@ -32,7 +32,7 @@ app.factory("liveness",['$http','$interval',function($http,$interval){
                 var ClientHour = ClientDatetime.getHours();//小时数0-23
                 var ClientMin = ClientDatetime.getMinutes();
 
-                if(ClientHour == 23 && (ClientMin == 58 || ClientMin == 59)){
+                if(ClientHour == 23 && ClientMin == 59){
                     this.sendLivenessOnUnload();
                     LivenessScoreArr = [];
                 }else{

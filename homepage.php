@@ -125,9 +125,9 @@ include("library/xwFE-0.0.1/FEM.php");
                     	<form class="form-group">
                         	<div class="input-group-container">
                                 <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="搜索" style="width:310px">
+                                  <input type="text" class="form-control" placeholder="搜索文章" style="z-index:0;width:260px">
                                   <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                    <button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
                                   </span>
                                 </div>
                             </div>

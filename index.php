@@ -110,7 +110,7 @@ echo $openupalertdiv;
 <!-------------------------------------------------------------------------------------->
 <!--direcitves-->
 <script  type="text/javascript" src="js/directive/useInvitationCode/useInvitationCode.js"></script>
-<!--<script  type="text/javascript" src="js/directive/MyTeam.js"></script>-->
+<script  type="text/javascript" src="js/directive/customSearch/customSearch.js"></script>
 <!-------------------------------------------------------------------------------------->
 </body>
 </html>

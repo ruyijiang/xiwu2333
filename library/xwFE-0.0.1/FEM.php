@@ -52,7 +52,7 @@ $header_unregistered = '<nav class="navbar navbar-inverse navbar-fixed-top xw-to
 //里面还有几个和用户相关的变量,该变量需要获取用户信息之后才能填写
 //也就是说，必须先获取用户信息，$header_registered才能正常使用//
 @$header_registered = '<nav class="navbar navbar-inverse navbar-fixed-top xw-topbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" ui-sref="main"><strong>喜屋</strong></a></div><div id="navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li ng-class="{active:MainPageActivity==1}"><a ui-sref="main">首页</a></li><li ng-class="{active:UserListActivity==1}"><a href="userlist.php" ui-sref="userlist">玩家列表</a></li><!--<li ng-class="{active:RoomListActivity==1}"><a ui-sref="roomlist">房间列表</a></li>--></ul><ul class="navbar-right nav navbar-nav">
-  <form class="navbar-form navbar-left" role="search" style="margin-top:11px">
+<form class="navbar-form navbar-left" role="search" style="margin-top:11px">
 	  <div class="form-group">
 		<input type="text" class="form-control input-sm" placeholder="热门搜索：pis" style="font-size:13px;width:240px;border-radius:3px;">
 	  </div>
