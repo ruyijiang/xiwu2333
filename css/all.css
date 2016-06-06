@@ -176,6 +176,18 @@ footer{margin-bottom:30px;}
 	font-weight:bold;
 	text-align: right;
 }
+/*search视图*/
+.search_content-toppart{margin-bottom:10px}
+.cultivation a{margin-left:16px}
+.cultivation a:hover{text-decoration: none}
+.cultivation i{margin-right:2px}
+.per_s-leftpart li .badge{border:none}
+.search_content-botpart .author{font-weight:600}
+
+
+
+
+
 /*bootstrap覆盖修正*/
 a[class^="sider-right-btn"]{
 	display:block;

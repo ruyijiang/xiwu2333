@@ -11,7 +11,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <h2>
                             <strong>shy</strong>
                             <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:32px;color:#346ea1" title="男"></i>
-                            <i ng-if="UserData.gender == '1'" class="iconfont icon-nvhai" style="font-size:32px;color:#b76d8a" title="女"></i>
+                            <i ng-if="UserData.gender == '1'" class="iconfont icon-nvhai" style="font-size:32px;color:#FF6699" title="女"></i>
                         </h2>
                         <p>一个DOTA爱好者</p>
                         <hr>
