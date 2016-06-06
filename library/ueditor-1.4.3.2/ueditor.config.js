@@ -37,12 +37,11 @@
             'fullscreen', 'undo', 'redo', '|',
             'fontfamily', 'fontsize','forecolor', 'backcolor','|',
             'bold', 'italic', 'underline', 'strikethrough', 'blockquote', '|', 'insertorderedlist', 'insertunorderedlist','|',
-            'directionalityltr', 'directionalityrtl', 'indent', '|',
             'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|',
             'link','|',
             'simpleupload', 'insertvideo', 'music', 'template', '|',
             'horizontal', 'spechars', '|',
-            'inserttable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|', 'searchreplace', //'drafts'
+            'inserttable','mergecells', 'insertparagraphbeforetable', 'insertrow', 'deleterow','deletecol', 'insertcol', '|', 'searchreplace', //'drafts'
         ]]
         //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
         //,labelMap:{

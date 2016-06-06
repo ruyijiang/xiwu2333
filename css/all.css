@@ -148,7 +148,8 @@
 
 footer{margin-bottom:30px;}
 .writeblog-title{margin-bottom:-152px;}
-.ueditor-main{margin-top:0px}
+.edui-editor-toolbarboxinner{background-image:none;background-color:#f1f1f1}
+#edui1_toolbarboxouter{border-bottom:1px solid #d4d4d4}
 .spanicon{margin-right:4px;}
 .userlist-chart{height:124px;width:164px;}
 .otherlogindiv{border-top:dashed 1px #999;margin-top:8px;padding-top:4px}
