@@ -25,10 +25,10 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
                 <div class="col-lg-6">
                     <div class="col-lg-12">
-                        <form class="form-group">
+                        <form class="form-group" ng-submit="searchInPage()">
                             <div class="input-group-container">
                                 <div class="input-group">
-                                    <input type="text" class="form-control input" placeholder="" style="z-index:0;">
+                                    <input type="text" class="form-control input" placeholder="" style="z-index:0;" ng-model="content">
                                   <span class="input-group-btn">
                                     <button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-search"></span></button>
                                   </span>
@@ -43,14 +43,14 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="col-lg-3 col-sm-3 col-xs-12 text-center">
                     <div class="per_s-leftpart  boat" style="padding: 0px">
                         <ul class="nav nav-pills nav-stacked">
-                            <li class="active">
-                                <a>玩家<span class="badge">3</span></a>
+                            <li ng-class="{active:leftNavIndex == 1}">
+                                <a ng-click="alertPri('user')">玩家<span class="badge">3</span></a>
                             </li>
-                            <li>
-                                <a>比赛<span class="badge">4</span></a>
+                            <li ng-class="{active:leftNavIndex == 2}">
+                                <a ng-click="alertPri('competition')">比赛<span class="badge">4</span></a>
                             </li>
-                            <li>
-                                <a>文章<span class="badge">0</span></a>
+                            <li ng-class="{active:leftNavIndex == 3}">
+                                <a ng-click="alertPri('article')">文章<span class="badge">0</span></a>
                             </li>
                         </ul>
                     </div><!--End of leftpart-->

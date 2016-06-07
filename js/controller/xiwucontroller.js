@@ -1,17 +1,15 @@
 /**
  * Created by mazih on 2016/5/10.
  */
-app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $timeout, liveness){
+app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $timeout, liveness, search){
     $scope.PageTitle = null;
     $scope.PageTitle = $location.path();
     $scope.PageTitle = $scope.PageTitle.substr(1);
     $scope.iccode = "";
 
-    /*$scope.$watch($scope.PageTitle,function (newValue,oldValue){
-        document.title = newValue;
-        alert (newValue);
-        alert (oldValue);
-    });*/
+    $scope.gosearch = function (val,ext){
+        search.skipToSearch(val,ext);
+    };
     /**
      * 初始化
      */
@@ -23,12 +21,6 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
 
     window.onbeforeunload = function (){
         liveness.sendLivenessOnUnload();
-        /*if(timeout){
-            $timeout.cancel(timeout);
-        }
-        timeout = $timeout(function (){
-            alert ("timeout is on");
-        },5000);*/
         if(localStorage.OnlineStatus == '1'){
             alterOnlineStatus(0);
         }
@@ -150,8 +142,5 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
         }
     }
     checkPageLocation();
-
-
-
 
 });

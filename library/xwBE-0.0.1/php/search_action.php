@@ -11,8 +11,11 @@ require("../all.php");
 <?php
 //流程:
     $uid = $_SESSION["uid"];
-    $val = $_GET["searcparam"];
-    echo $val;
+    $con = $_GET["content"];
+    $pri = $_GET["priority"];
+    if($pri!=='user'||$pri!=='competition'||$pri!=='article') $pri='user';//当priority不是三者之一的时候，默认为user
+
+
 /*
     $sql = "UPDATE users SET onlinestatus = '1' WHERE uid = '$uid' ";
     $qry = $db->query($sql);

@@ -86,8 +86,8 @@ echo $openupalertdiv;
 <!-------------------------------------------------------------------------------------->
 <!--services-->
 <script src="js/service/snslogin/qq.js" type="text/javascript"></script>
-<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
-<script src="js/service/countLiveness.js" widget="shareqq" charset="utf-8"></script>
+<script src="js/service/countLiveness.js" type="text/javascript"></script>
+<script src="js/service/search.js" type="text/javascript"></script>
 <!-------------------------------------------------------------------------------------->
 <!--bootstrap-slider-->
 <script  type="text/javascript" src="library/bootstrap-3.3.5-dist/js/bootstrap-slider.min.js"></script>
