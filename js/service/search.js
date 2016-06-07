@@ -18,7 +18,7 @@ app.factory("search",['$http','$window',function($http,$window){
      */
     function skipToSearch(value,priority){
         !priority?priority="user":priority;
-        $window.location.href = "/#/search?content=" + value + "&priority=" + priority;
+        $window.location.href = "/#/search?priority=" + priority+ "&content=" + value ;
         window.location.reload();
     }
 
@@ -32,7 +32,7 @@ app.factory("search",['$http','$window',function($http,$window){
         $http({
             method: 'GET',
             url: 'library/xwBE-0.0.1/php/search_action.php',
-            params:{'content':value,'priority':priority}
+            params:{'priority':priority,'content':value}
         }).success(function (data){
             data = welcomejsonarrstring(data);
             _dataArr = data;

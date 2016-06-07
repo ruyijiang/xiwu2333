@@ -56,7 +56,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div><!--End of leftpart-->
                 </div>
 
-                <div class="col-lg-9" style="font-size:16px;">
+                <div style="display: none" class="col-lg-9 col-md-9 col-xs-12" style="font-size:16px;">
                     <div class="col-lg-11">
                         <div class="search_content-toppart">
                             <a>隐私声明</a>
@@ -137,7 +137,44 @@ include("library/xwFE-0.0.1/FEM.php");
                         </nav>
                     </div>
 
+                </div><!--Article-->
+                <div class="col-lg-8 col-md-8 col-xs-12" style="font-size:16px;">
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px;">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999">喜屋网作者milo</h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999">喜屋网作者milo</h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
 
