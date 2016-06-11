@@ -243,8 +243,7 @@ require("../all.php");
             }
         }else if($pri == "competition"){
             //查询比赛
-
-
+            //暂时没有
         }
     }else{
         $status = 0;
