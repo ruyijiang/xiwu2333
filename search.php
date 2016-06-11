@@ -15,6 +15,9 @@ include("library/xwFE-0.0.1/FEM.php");
 ?>
 <style>
     body{background-color:#f5f8fa}
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
 </style>
 <div class="container" ng-controller="searchController" style="margin-top:130px;">
     <div class="row">
@@ -55,6 +58,169 @@ include("library/xwFE-0.0.1/FEM.php");
                         </ul>
                     </div><!--End of leftpart-->
                 </div>
+
+
+                <div style="display:none" class="col-lg-8 col-md-8 col-xs-12" style="font-size:16px;">
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px;">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999">喜屋网作者milo</h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV1-->
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999">喜屋网作者milo</h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nvhai"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV2-->
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999"></h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV3-->
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999"></h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV4-->
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999"></h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV5-->
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999"></h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV6-->
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999"></h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV7-->
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
+                            <div class="search_content-toppart">
+                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <h6 style="color:#999"></h6>
+                            </div>
+                            <div class="search_content-botpart">
+                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
+                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
+                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            </div>
+                        </div>
+                    </div><!--END OF DIV8-->
+
+                    <div class="row text-center">
+                        <nav>
+                            <ul class="pagination">
+                                <li>
+                                    <a aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="active"><a ng-click="changeShowPage(xpag,'')">1</a></li>
+                                <li><a ng-click="changeShowPage(xpag,'')">2</a></li>
+                                <li><a ng-click="changeShowPage(xpag,'')">3</a></li>
+                                <li><a ng-click="changeShowPage(xpag,'')">4</a></li>
+                                <li><a ng-click="changeShowPage(xpag,'')">5</a></li>
+                                <li><a ng-click="changeShowPage(xpag,'')">6</a></li>
+                                <li>
+                                    <a aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!--End of pagination-->
+                </div><!--User-->
 
                 <div style="display: none" class="col-lg-9 col-md-9 col-xs-12" style="font-size:16px;">
                     <div class="col-lg-11">
@@ -138,42 +304,123 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div>
 
                 </div><!--Article-->
-                <div class="col-lg-8 col-md-8 col-xs-12" style="font-size:16px;">
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px;">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+
+                <div style="display: block" class="col-lg-8 col-md-8 col-xs-12"><!--Competiton-->
+                    <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
+                        <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
+                            <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>
                         </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999">喜屋网作者milo</h6>
+                        <div class="search_content-rightpart pull-left">
+                            <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
+                                <small><i class="iconfont icon-shuziliu"></i><font>数字id:</font><a>25255608123</a></small> |
+                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
+                                <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>72分钟</span></small> |
+                                <small><i class="iconfont icon-server"></i><font>服务器:</font><span>电信(华中)</span></small>
                             </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            <div class="search_content-botpart" style="margin-left:10px;">
+                                <div class="pull-left" style="margin-right:10px;">
+                                    <span class="radient">
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                    </span>
+                                    <i class="iconfont icon-vs"></i>
+                                    <span class="diet">
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                    </span>
+                                </div>
+                                <div class="pull-left">
+                                    <i class="iconfont icon-star" style="font-size:22px"></i>
+                                </div>
+                                <div class="pull-left" style="margin-left:0px">
+                                    <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                    </div><!--End of DIV1-->
+                    <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
+                        <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
+                            <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>
                         </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999">喜屋网作者milo</h6>
+                        <div class="search_content-rightpart pull-left">
+                            <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
+                                <small><i class="iconfont icon-shuziliu"></i><font>数字id:</font><a>25255608123</a></small> |
+                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
+                                <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>72分钟</span></small> |
+                                <small><i class="iconfont icon-server"></i><font>服务器:</font><span>电信(华中)</span></small>
                             </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                            <div class="search_content-botpart" style="margin-left:10px;">
+                                <div class="pull-left" style="margin-right:10px;">
+                                    <span class="radient">
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                    </span>
+                                    <i class="iconfont icon-vs"></i>
+                                    <span class="diet">
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                    </span>
+                                </div>
+                                <div class="pull-left">
+                                    <i class="iconfont icon-star" style="font-size:22px"></i>
+                                </div>
+                                <div class="pull-left" style="margin-left:0px">
+                                    <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div><!--End of DIV1-->
+                    <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
+                        <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
+                            <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>
+                        </div>
+                        <div class="search_content-rightpart pull-left">
+                            <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
+                                <small><i class="iconfont icon-shuziliu"></i><font>数字id:</font><a>25255608123</a></small> |
+                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
+                                <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>72分钟</span></small> |
+                                <small><i class="iconfont icon-server"></i><font>服务器:</font><span>电信(华中)</span></small>
+                            </div>
+                            <div class="search_content-botpart" style="margin-left:10px;">
+                                <div class="pull-left" style="margin-right:10px;">
+                                    <span class="radient">
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                    </span>
+                                    <i class="iconfont icon-vs"></i>
+                                    <span class="diet">
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                    </span>
+                                </div>
+                                <div class="pull-left">
+                                    <i class="iconfont icon-star" style="font-size:22px"></i>
+                                </div>
+                                <div class="pull-left" style="margin-left:0px">
+                                    <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End of DIV2-->
+                </div><!--Competition-->
 
             </div>
 

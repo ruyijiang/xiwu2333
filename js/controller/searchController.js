@@ -5,7 +5,10 @@ app.controller('searchController',function ($scope, $location, search){
     var priority = $location.search()["priority"];//从url获取的查询类别
     $scope.content = $location.search()["content"];//从url获取查询正文
 
+
     if($scope.content){
+        search.sendSearch($scope.content,priority);//每次进入此页时就搜索
+
         $scope.alertPri = function (pri){
             search.skipToSearch($scope.content,pri);
         };
