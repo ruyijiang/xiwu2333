@@ -7,7 +7,6 @@ app.factory("search",['$http','$window',function($http,$window){
     return {
         skipToSearch: skipToSearch,
         sendSearch:sendSearch,
-        changePriority:changePriority,
         ConsequenceData:_dataArr
     };
 
@@ -28,26 +27,17 @@ app.factory("search",['$http','$window',function($http,$window){
      * @param priority ： 优先查询的分类，如：article、user等等
      */
     function sendSearch(value,priority){
-        !priority?priority="user":priority;
-        $http({
+            !priority?priority="user":priority;
+            $http({
             method: 'GET',
             url: 'library/xwBE-0.0.1/php/search_action.php',
             params:{'priority':priority,'content':value}
         }).success(function (data){
-
             //data = welcomejsonarrstring(data);
             _dataArr = data;
         }).error(function (){
             alert ("不明原因导致的查询失败，请联系管理员");
         })
-    }
-
-    /**
-     * 修改搜索优先类别
-     * @param priority : 类别名
-     */
-    function changePriority(priority){
-
     }
 
 }]);

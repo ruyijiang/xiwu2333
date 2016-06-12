@@ -86,7 +86,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </div><!--End of basicinfo-->
 
                         <div class="per_s_content-avatar col-lg-6">
-                            <img  ng-src="{{UserInfoData.avatar}}" class="img-circle center-block" width="198" style="border:dashed #999 1px;cursor: pointer;"/>
+                            <img ng-src="{{UserInfoData.avatar}}" class="img-circle center-block" width="198" style="border:dashed #999 1px;cursor: pointer;" ng-click="uploadAvatarDialog={open: true}"/>
                         </div><!--End of avatar-->
                     </div><!--End of a boat-->
 
@@ -225,10 +225,49 @@ include("library/xwFE-0.0.1/FEM.php");
 
         </div><!--End of leftpart-->
     </div><!--End of row-->
+
     <!--ng-popup-->
     <dialog ng-if="dialog.open" duration="700" fixed close="dialog.open=false">
         <div dialog-content>{{dialog.content}}</div>
     </dialog>
+
+    <!--上传头像-->
+    <dialog ng-if="uploadAvatarDialog.open" modal close="uploadAvatarDialog.open=false">
+        <div dialog-title>修改头像</div>
+        <div dialog-content>
+            <small>头像的三种尺寸：</small>
+            <form>
+                <table style="text-align: center;">
+                    <tr>
+                        <td style="padding:10px">
+                            <img ng-src="{{UserInfoData.avatar}}" class="img-circle" width="198" height="198"/>
+                            <div style="font-weight:600;font-size:12px;margin-top:15px">198x198圆型</div>
+                        </td>
+                        <td style="padding:10px" colspan="2">
+                            <div style="margin-bottom:15px">
+                                <img ng-src="{{UserInfoData.avatar}}" class="img-rounded" width="36" height="36"/>
+                                <div style="font-weight:600;font-size:12px;margin-top:15px">36x36方形</div>
+                            </div>
+                            <div>
+                                <img ng-src="{{UserInfoData.avatar}}" class="img-circle" width="36" height="36"/>
+                                <div style="font-weight:600;font-size:12px;margin-top:15px">36x36圆形</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <hr><input type="file"/>
+                        </td>
+                        <td>
+                            <hr><input type="submit" class="btn btn-primary"/>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </dialog>
+
     <hr>
     <? echo $footer;?>
 

@@ -102,7 +102,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
      * 动态控制头部nav导航的样式效果
      * @param str
      */
-    $scope.navactivitify = function (str){
+    $rootScope.navactivitify = function (str){
         $rootScope.MainPageActivity = $rootScope.RoomListActivity = $rootScope.UserListActivity = $rootScope.MyHomeActivity = $rootScope.MyRoomActivity = $rootScope.BlogActivity = $rootScope.SettingActivity = 0;
 
         switch (str){

@@ -38,6 +38,10 @@ app.controller('info_SettingController',function ($scope){
         open: false,
         content : ""
     };
+    $scope.uploadAvatarDialog={
+        open: false,
+        content : ""
+    };
 
     /**
      * 获取用户信息

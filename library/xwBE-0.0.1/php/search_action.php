@@ -182,7 +182,7 @@ require("../all.php");
                     echo $dataArr;
                 }
             }else{
-                $sql = "SELECT * FROM articles WHERE title = '%$con%' ";
+                $sql = "SELECT * FROM articles WHERE title LIKE '%$con%' ";
                 $qry = $db->query($sql);
                 @$row_all = mysqli_num_rows($qry);//总条数
                 if($row_all>0){
@@ -208,7 +208,7 @@ require("../all.php");
                         echo $dataArr;
                     }
                 }else{
-                    $sql = "SELECT * FROM articles WHERE content = '%$con%' ";
+                    $sql = "SELECT * FROM articles WHERE content LIKE '%$con%' ";
                     $qry = $db->query($sql);
                     @$row_all = mysqli_num_rows($qry);//总条数
                     if($row_all>0){
@@ -223,7 +223,7 @@ require("../all.php");
                             $qry2 = $db->query($sql2);
                             $row2 = $qry2->fetch_assoc();
                             $aauthor = $row2["name"];//作者用户名
-                            //------------------------------------------------------------------------------------------------->出口9：搜索的是文章内容，模糊搜索
+                            //----------------------------------------------------------------------------------------->出口9：搜索的是文章内容，模糊搜索
                             $dataArr = array ('aid'=>$aid,'time'=>$atime,'name'=>$aauthor,'title'=>$title);
 
                             foreach ( $dataArr as $key => $value ) {
@@ -237,7 +237,7 @@ require("../all.php");
                         $status = 0;
                         $reminder = "没有结果article";
                         echo $a->normalrespond($status,$reminder);
-                        //------------------------------------------------------------------------------------------------->出口10：在article里搜索，没有搜到任何相关结果
+                        //--------------------------------------------------------------------------------------------->出口10：在article里搜索，没有搜到任何相关结果
                     }
                 }
             }
