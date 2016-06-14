@@ -84,7 +84,7 @@ header("Content-Type: text/html; charset=utf-8");
         ?>
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="user-avatar">
-          	<a href=""><img src="<? echo $result2_avatar;?>" class="img-responsive" style="width:"/></a>
+          	<a href=""><img src="<? echo $result2_avatar;?>" class="img-responsive img-rounded" width="198" height="198"/></a>
           </div>
           <div class="sidebar-module sidebar-module-inset">
             <h2><? echo $result2_name?></h2>

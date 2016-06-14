@@ -1,7 +1,8 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('writeblogcontroller',function ($scope){
+app.controller('writeblogcontroller',function ($scope, $location){
+    var ueitor = UE.getEditor('ueditor-main'); //启用UEditor
 
 
     /**
@@ -29,16 +30,16 @@ app.controller('writeblogcontroller',function ($scope){
             dataType: 'json',
             data:{"title":a_title,"content":a_content},
             success: function (data){
-                if(data.statuscode == '1'){
-                    alert ("发表成功");
-                    return true;
-                    //提交成功，跳转到文章blog
-
-
-                }else if(data.statuscode == '0'){
+                if(data.statuscode == '0'){
                     alert (data.message);
                     $("#submit_btn").button('reset');
                     return false;
+                }else if(data.statuscode !== '0'){
+                    alert ("发表成功");
+                    alert (data.statuscode);
+                    $location.path("/#/blog?aid="+data.statuscode);
+                    return true;
+                    //提交成功，跳转到文章blog
                 }else{
                     alert ("文章发表异常#A001，请联系管理员");
                     $("#submit_btn").button('reset');
@@ -53,6 +54,5 @@ app.controller('writeblogcontroller',function ($scope){
         })
     };
 
-    var ueitor = UE.getEditor('ueditor-main'); //启用UEditor
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 });

@@ -121,7 +121,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div>
 
                     <div class="article-sheet form-inline" style="margin-top:15px;" ng-show="TabShowPage == 2">
-                        <a class="btn btn-danger form-group" role="button" style="padding-left:35px;padding-right:45px;" ng-click="tellmemore()"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
+                        <a class="btn btn-danger form-group" role="button" style="padding-left:35px;padding-right:45px;" ui-sref="writeblog"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
                     	<form class="form-group">
                         	<div class="input-group-container">
                                 <div class="input-group">

@@ -1,6 +1,7 @@
 <?php
 require("../connectDB.php");
 require("../all.php");
+require("../algorithm/RandAid.php");
 
     //echo "<h2><div id='ue_title'>".$_POST["title"]."</h2></div>"."<br>";
     //echo $_POST["content"];
@@ -44,8 +45,6 @@ require("../all.php");
             return false;
             //----------------------------------------------------------------------------------------------------------------->登陆出口2：没有填写内容或标题
         }else{
-            $status = 1;
-            $reminder = "";
             $a = $_SESSION["uid"];
             $filename = $a_title.".txt";
             //建立或者读取目录//
@@ -82,7 +81,8 @@ require("../all.php");
             }else{
                 //将文章放入数据库.article表
                 $uid = $_SESSION["uid"];
-                $sql = "INSERT INTO articles(aid,uid,time,title,content,txt_url) VALUES ('','$uid','$tnow','$a_title','$a_content','$file') ";
+                $abc = create_Aid();
+                $sql = "INSERT INTO articles(aid,uid,time,title,content,txt_url) VALUES ('$abc','$uid','$tnow','$a_title','$a_content','$file') ";
                 $qry = $db->query($sql);
                 if(!$qry){
                     $status = 0;
@@ -92,7 +92,7 @@ require("../all.php");
                     echo $b->normalrespond($status,$reminder);
                     //----------------------------------------------------------------------------------------------------------------->登陆出口6：入库失败
                 }else{
-                    $status = 1;
+                    $status = $abc;
                     $reminder = "发表成功";
                     //----------------------------------------------------------------------------------------------------------------->登陆出口4：发表成功
                     $c->createUserRecordFile();

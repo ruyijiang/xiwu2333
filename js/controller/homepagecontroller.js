@@ -19,7 +19,9 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     $scope.TabCommentStatus = 0;
     $scope.TabHttpRequestTimes = 0;//Tab一共发送的请求数量
 
-
+    /**TEST
+     * 模拟邀请好友的加分，2016/06/14 mzh把这个功能从页面里拿出来了，后续再改
+     */
     $scope.tellmemore = function (){
         $.ajax({
             url:'library/xwBE-0.0.1/php/setScore_action.php',
@@ -29,6 +31,10 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             }
         })
     };
+
+
+
+    
 
     /**
      * 切换tab时触发的事件
