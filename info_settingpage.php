@@ -53,7 +53,7 @@ include("library/xwFE-0.0.1/FEM.php");
         ?>
 
         <div class="per_s-rightpart col-lg-9 col-sm-9 col-xs-12 row" style="min-height:300px;border-radius:4px;">
-                <form class="form-horizontal" role="form" id="info_setting_form" name="info_setting_form" ng-submit="submitData()">
+                <form class="form-horizontal" role="form" id="info_setting_form" name="info_setting_form" enctype='multipart/form-data' ng-submit="submitData()">
                     <div class="row boat">
                         <div class="per_s_content-basicinfo col-lg-6">
                             <div class="form-group">
@@ -86,7 +86,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </div><!--End of basicinfo-->
 
                         <div class="per_s_content-avatar col-lg-6">
-                            <img ng-src="{{UserInfoData.avatar}}" class="img-circle center-block" width="198" style="border:dashed #999 1px;cursor: pointer;" ng-click="uploadAvatarDialog={open: true}"/>
+                            <img title="点击修改头像" ng-src="{{UserInfoData.avatar}}" class="img-circle center-block" width="198" height="198" style="border:dashed #999 1px;cursor: pointer;" ng-click="uploadAvatarDialog={open: true}"/>
                         </div><!--End of avatar-->
                     </div><!--End of a boat-->
 
@@ -208,11 +208,6 @@ include("library/xwFE-0.0.1/FEM.php");
                                     </div>
                                 </div>
                             </div><!--End of extrarow-x-->
-
-
-
-
-
                         </div><!--End of extrainfo-->
 
                     </div><!--End of a boat-->
@@ -235,39 +230,40 @@ include("library/xwFE-0.0.1/FEM.php");
     <dialog ng-if="uploadAvatarDialog.open" modal close="uploadAvatarDialog.open=false">
         <div dialog-title>修改头像</div>
         <div dialog-content>
-            <small>头像的三种尺寸：</small>
-            <form>
+            <small>三种尺寸的预览：</small>
+            <form id="submit_form" method="POST" ng-submit="checkBtnStatus()" action="library/xwBE-0.0.1/php/uploadavatar_action.php" target="uploadAvatar" enctype="multipart/form-data">
                 <table style="text-align: center;">
                     <tr>
                         <td style="padding:10px">
-                            <img ng-src="{{UserInfoData.avatar}}" class="img-circle" width="198" height="198"/>
-                            <div style="font-weight:600;font-size:12px;margin-top:15px">198x198圆型</div>
+                            <div class="apreview_container">
+                                <img id="newavatar_198c" ng-src="{{UserInfoData.avatar}}" class="img-circle newavatar_198 apreview_img" width="198" height="198"/>
+                                <div style="font-weight:600;font-size:12px;margin-top:15px">198x198 圆型</div>
+                            </div>
                         </td>
                         <td style="padding:10px" colspan="2">
-                            <div style="margin-bottom:15px">
-                                <img ng-src="{{UserInfoData.avatar}}" class="img-rounded" width="36" height="36"/>
-                                <div style="font-weight:600;font-size:12px;margin-top:15px">36x36方形</div>
+                            <div style="margin-bottom:15px" class="apreview_container">
+                                <img id="newavatar_36r" ng-src="{{UserInfoData.avatar}}" class="img-circle newavatar_36r apreview_img" width="36" height="36"/>
+                                <div style="font-weight:600;font-size:12px;margin-top:15px">36x36 圆型</div>
                             </div>
-                            <div>
-                                <img ng-src="{{UserInfoData.avatar}}" class="img-circle" width="36" height="36"/>
-                                <div style="font-weight:600;font-size:12px;margin-top:15px">36x36圆形</div>
+                            <div class="apreview_container">
+                                <img id="newavatar_36c" ng-src="{{UserInfoData.avatar}}" class="img-rounded newavatar_36c apreview_img" width="54" height="54"/>
+                                <div style="font-weight:600;font-size:12px;margin-top:15px">54x54 方型</div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td rowspan="2">
-                            <hr><input type="file"/>
+                        <td colspan="3">
+                            <hr><input name="avatar" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('.apreview_container'),$('.apreview_img'));" type="file" id="uploadbtn"/>
                         </td>
                         <td>
-                            <hr><input type="submit" class="btn btn-primary"/>
+                            <hr><input disabled="disabled" id="uploadavatarbtn" type="submit" class="btn btn-primary" value="{{UploadBtnContent}}"/>
                         </td>
                     </tr>
                 </table>
-
             </form>
         </div>
     </dialog>
-
+    <iframe id="uploadAvatar" name="uploadAvatar" style="display:none" src="library/xwBE-0.0.1/php/uploadavatar_action.php"></iframe>
     <hr>
     <? echo $footer;?>
 

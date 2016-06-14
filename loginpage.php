@@ -9,12 +9,12 @@
                 <input type="text" id="inputEmail" class="form-control" placeholder="请输入邮箱" required autofocus autocomplete="off" ng-model="UserName">
                 <label for="inputPassword" class="sr-only">密码：</label>
                 <input type="password" id="inputPassword" class="form-control" placeholder="密码" required ng-model="UserPassword">
-                <div class="checkbox">
+                <!--<div class="checkbox">
                   <label>
                     <input type="checkbox" value="remember-me" checked="checked">记住密码
                   </label>
                   <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" data-original-title="在公共计算机上不建议勾选"></span>
-                </div>
+                </div>-->
                 <div class="btn-group">
                   <button type="button" class="btn btn-default" ui-sref="signup"><small>还没有账号?</small></button>
                   <input type="submit" class="btn btn-primary" value="登陆&raquo;" />

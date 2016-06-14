@@ -7,6 +7,9 @@ app.controller('info_SettingController',function ($scope){
     $scope.CityNameShowStatus = null;
     $scope.ProvinceName = $scope.CityName = null;
     $scope.CityListArr = [];
+    $scope.uploadAvatarStatusDialog = {
+        open:false
+    };
     timing = Math.round(new Date().getTime()/1000);
 
 
@@ -213,5 +216,12 @@ app.controller('info_SettingController',function ($scope){
             }
         });
     };
+
+    $scope.UploadBtnContent = '提交';
+    $scope.checkBtnStatus = function (){
+        $scope.UploadBtnContent = '修改成功';
+        $("#uploadavatarbtn").attr("disabled","disabled");
+        window.location.reload();
+    }
 
 });

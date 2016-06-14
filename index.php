@@ -92,6 +92,7 @@ echo $openupalertdiv;
 <!--bootstrap-slider-->
 <script  type="text/javascript" src="library/bootstrap-3.3.5-dist/js/bootstrap-slider.min.js"></script>
 <!-------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------->
 <!--controllers-->
 <script  type="text/javascript" src="js/controller/xiwucontroller.js"></script>
 <script  type="text/javascript" src="js/controller/mainpagecontroller.js"></script>

@@ -143,4 +143,5 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
     }
     checkPageLocation();
 
+
 });
