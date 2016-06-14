@@ -6,7 +6,7 @@ include("library/xwFE-0.0.1/FEM.php");
 <div class="container" ng-controller="homepagecontroller" style="margin-top:100px">
     <div class="row">
         <div class="leftpart col-lg-3">
-            <img src="img/user_img/avatar/default/default_female.png" class="img-responsive center-block" width="186"/>
+            <img src="img/user_img/avatar/default/default_female.png" class="img-responsive center-block" width="198" height="198"/>
             <h2>
                 <strong>shy</strong>
                 <i class="iconfont icon-nan" style="font-size:32px;color:#346ea1"></i>

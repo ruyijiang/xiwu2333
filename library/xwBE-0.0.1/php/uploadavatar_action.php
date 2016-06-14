@@ -38,7 +38,6 @@ require("../all.php");
                     $status = 1;
                     $reminder = "上传成功";
                     $a->normalrespond($status,$reminder);
-                    echo "<script language='text/javascript'>window.parent.location.reload();</script>";
                     //----------------------------------------------------------------------------------------------------->出口5，上传成功
 
             }else{

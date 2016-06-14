@@ -221,6 +221,7 @@ app.controller('info_SettingController',function ($scope){
     $scope.checkBtnStatus = function (){
         $scope.UploadBtnContent = '修改成功';
         $("#uploadavatarbtn").attr("disabled","disabled");
+        alert ("头像修改成功");
         window.location.reload();
     }
 
