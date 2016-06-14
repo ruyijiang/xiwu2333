@@ -3,8 +3,7 @@ require("../connectDB.php");
 require("../all.php");
 require("../algorithm/RandAid.php");
 
-    //echo "<h2><div id='ue_title'>".$_POST["title"]."</h2></div>"."<br>";
-    //echo $_POST["content"];
+
     @$a_content = $_POST["content"];
     @$a_title = $_POST["title"];
 

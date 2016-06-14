@@ -24,7 +24,7 @@ app.controller('writeblogcontroller',function ($scope, $location){
         }
         //根据标题和内容，发送请求
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/ueserver.php',
+            url:'../../library/xwBE-0.0.1/php/writeblog_action.php',
             method:'POST',
             async: false,
             dataType: 'json',
@@ -36,8 +36,7 @@ app.controller('writeblogcontroller',function ($scope, $location){
                     return false;
                 }else if(data.statuscode !== '0'){
                     alert ("发表成功");
-                    alert (data.statuscode);
-                    $location.path("/#/blog?aid="+data.statuscode);
+                    $location.url("/blog?aid="+data.statuscode).replace();
                     return true;
                     //提交成功，跳转到文章blog
                 }else{
