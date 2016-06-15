@@ -26,9 +26,9 @@ header("Content-Type: text/html; charset=utf-8");
         ?>
 
           <div class="blog-post a_content_container" style="overflow: hidden; word-wrap: break-word;">
-              <h2><? echo $result_title?></h2>
-              <p><em class="blog-time"><? echo $result_time?></em></p>
-              <div>
+              <h2>{{BlogExport.title}}</h2>
+              <p><em class="blog-time">{{BlogExport.time}}</em></p>
+              <div ng-if="BlogExport.permisstion == true">
                   <a role="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span>删除</a>
                   <!--<a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-print"></span>打印</a>-->
                   <a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-edit"></span>修改</a>
@@ -61,23 +61,14 @@ header("Content-Type: text/html; charset=utf-8");
           </nav>
 
         </div><!-- /.blog-main -->
-        <?php
-            $uid = $_SESSION["uid"];
-            $sql2 = "SELECT * FROM users WHERE uid = '$uid' ";
-            $qry2 = $db->query($sql2);
-            $row2 = $qry2->fetch_assoc();
-            $result2_avatar = $row2["avatar"];//用户头像路径
-            $result2_name = "shy";//用户昵称
-            $result2_slogan = "这个家伙很懒，连个P都没留下";//用户个人签名
-        ?>
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-4 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-4 blog-sidebar">
           <div class="user-avatar">
               <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
-          	<a href=""><img src="<? echo $result2_avatar;?>" class="img-responsive img-rounded" width="198" height="198"/></a>
+          	<a href=""><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
           </div>
           <div class="sidebar-module sidebar-module-inset">
-            <h2><? echo $result2_name?></h2>
-            <p><? echo $result2_slogan?></p>
+            <h3>{{BlogExport.name}}</h3>
+            <p>{{BlogExport.slogan}}</p>
           </div>
           <hr>
           <div class="sidebar-module">
@@ -110,8 +101,9 @@ header("Content-Type: text/html; charset=utf-8");
           <div class="sidebar-module">
             <h4><span class="glyphicon glyphicon-link"></span>其它平台</h4>
             <ol class="list-unstyled" style="margin-left:30px">
-              <li><a href="#">新浪微博</a></li>
-              <li><a href="#">斗鱼直播</a></li>
+              <li ng-if="BlogExport.weibo_status == 1"><a ng-href="{{BlogExport.weibo}}" target="_blank">新浪微博</a></li>
+              <li ng-if="BlogExport.liveplain_status == 1"><a ng-href="{{BlogExport.liveplain}}" target="_blank">斗鱼直播</a></li>
+              <li ng-if="BlogExport.weibo_status == 0&&BlogExport.liveplain_status == 0"><small>暂无</small></li>
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->
