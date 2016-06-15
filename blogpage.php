@@ -28,7 +28,7 @@ header("Content-Type: text/html; charset=utf-8");
           <div class="blog-post a_content_container" style="overflow: hidden; word-wrap: break-word;">
               <h2>{{BlogExport.title}}</h2>
               <p><em class="blog-time">{{BlogExport.time}}</em></p>
-              <div ng-if="BlogExport.permisstion == true">
+              <div ng-if="BlogExport.permission == true">
                   <a role="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span>删除</a>
                   <!--<a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-print"></span>打印</a>-->
                   <a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-edit"></span>修改</a>
@@ -45,17 +45,14 @@ header("Content-Type: text/html; charset=utf-8");
               <hr>
 
               <div class="a1_content_container" style="font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;letter-spacing:1px;">
-              关于您的个人信息<code>Hello World</code>
-              　　豆瓣严格保护您个人信息的安全。我们使用各种安全技术和程序来保护您的个人信息不被未经授权的访问、使用或泄露。
-              　　豆瓣会在法律要求或符合豆瓣的相关服务条款、软件许可使用协议约定的情况下透露您的个人信息，或者有充分理由相信必须这样做才能：(a) 满足法律或行政法规的明文规定，或者符合豆瓣网站适用的法律程序；（b）符合豆瓣相关服务条款、软件许可使用协议的约定；(c) 保护豆瓣的权利或财产，以及 (d) 在紧急情况下保护豆瓣员工、豆瓣产品或服务的用户或大众的个人安全。
-              　　豆瓣不会未经您的允许将这些信息与第三方共享，本声明已经列出的上述情况除外。
+              {{BlogExport.content}}
               </div><!--End of a_content_container-->
           </div><!-- /.blog-post -->
 
 
           <nav>
             <ul class="pager">
-              <li><a href="#">&laquo;&nbsp;前一篇</a></li>
+              <li><a ng-href="/#/main?aid=1234">&laquo;&nbsp;前一篇</a></li>
               <li><a href="#">后一篇&nbsp;&raquo;</a></li>
             </ul>
           </nav>
@@ -64,10 +61,10 @@ header("Content-Type: text/html; charset=utf-8");
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-4 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-4 blog-sidebar">
           <div class="user-avatar">
               <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
-          	<a href=""><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
+          	<a><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
           </div>
           <div class="sidebar-module sidebar-module-inset">
-            <h3>{{BlogExport.name}}</h3>
+            <h4>{{BlogExport.name}}</h4>
             <p>{{BlogExport.slogan}}</p>
           </div>
           <hr>

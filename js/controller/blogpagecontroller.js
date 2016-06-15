@@ -40,7 +40,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
                 //data = welcomejsonarrstring(data);
                 return data;
             }).error(function (){
-                alert ("不明原因导致的查询失败，请联系管理员");
+                alert ("系统检测参数失败，请联系管理员");
             })
 
         }else{//有关键参数，则返回boolean
