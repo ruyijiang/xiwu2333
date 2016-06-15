@@ -50,7 +50,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </td>
                         </tr>
                         <tr>
-                            <td><i class="iconfont icon-leibie"></i></td>
+                            <td><i class="iconfont icon-live"></i></td>
                             <td>服务器：</td>
                             <td>
                                 <span class="label label-default" ng-repeat="xserver in UserData.server" style="margin-right:3px">{{xserver}}</span>
@@ -64,12 +64,12 @@ include("library/xwFE-0.0.1/FEM.php");
                             </td>
                         </tr>
                         <tr>
-                            <td><i class="iconfont icon-qq-copy"></i></td>
+                            <td><i class="iconfont icon-qq2"></i></td>
                             <td>QQ：</td>
                             <td><span>{{UserData.qq}}</span></td>
                         </tr>
                         <tr>
-                            <td><i class="iconfont icon-weixin"></i></td>
+                            <td><i class="iconfont icon-weixin2"></i></td>
                             <td>微信：</td>
                             <td>
                                 <span class="glyphicon glyphicon-qrcode thisQR" style="">
@@ -78,7 +78,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </td>
                         </tr>
                         <tr>
-                            <td><i class="iconfont icon-weibo"></i></td>
+                            <td><i class="iconfont icon-weibo2"></i></td>
                             <td>微博：</td>
                             <td><a>马子航milo</a></td>
                         </tr>

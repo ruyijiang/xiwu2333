@@ -7,7 +7,7 @@ header("Content-Type: text/html; charset=utf-8");
     <div class="container" ng-controller="blogpagecontroller" style="margin-top:100px;">
 
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12" >
         <?php
             @$aid = $_POST["aid"];//文章id
             $aid = 4;
@@ -29,38 +29,26 @@ header("Content-Type: text/html; charset=utf-8");
               <h2><? echo $result_title?></h2>
               <p><em class="blog-time"><? echo $result_time?></em></p>
               <div>
-                  <a role="button" class="btn btn-default btn-xs" ng-click="tellmemore()"><span class="glyphicon glyphicon-remove"></span>删除</a>
-                  &nbsp;&nbsp;
+                  <a role="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span>删除</a>
+                  <!--<a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-print"></span>打印</a>-->
                   <a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-edit"></span>修改</a>
-                  <div style="display:inline-block;margin-left:10px">
-                    <i class="icon-weibo iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到微博"></i>
-                    <i class="icon-weixin1 iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到微信"></i>
-                    <i class="icon-qq iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到qq"></i>
-                  </div>
+
+                  <!--<div style="display:inline-block;margin-left:10px;">
+                      <div class="share_hiddendiv">
+                          <i class="icon-weibo2 iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到微博"></i>
+                          <i class="icon-weixin2 iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到微信"></i>
+                          <i class="icon-qq2 iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到qq"></i>
+                      </div>
+                  </div>-->
               </div>
             
               <hr>
 
-              <div class="a1_content_container">
-                  <?php
-                  if(empty($result_content) || !$row["content"]){
-                      //如果存在uri（即数据库出错了），则通过uri打开txt文件，然后读取、输出
-                      //否则直接拿取表中content字段输出，不过这可能会导致一些不明错误
-                      //读取存档txt文件
-                      $prefix = "";
-                      $folder = $prefix."product/articles/".$_SESSION["uid"]."/";
-                      $file = $folder.$result_title.".txt";
-                      @$a = fopen($file,"r");
-                      if(!$a){
-                          echo "<span style='color:darkred'>抱歉，获取文章存档失败，请联系管理员或客服。</span>";
-                      }
-                      @readfile($file);
-                  }else{
-                      //正常情况下，则通过表里content字段直接输出文章正文
-                      $a_content = $result_content;
-                      echo $a_content;
-                  }
-                  ?>
+              <div class="a1_content_container" style="font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;letter-spacing:1px;">
+              关于您的个人信息<code>Hello World</code>
+              　　豆瓣严格保护您个人信息的安全。我们使用各种安全技术和程序来保护您的个人信息不被未经授权的访问、使用或泄露。
+              　　豆瓣会在法律要求或符合豆瓣的相关服务条款、软件许可使用协议约定的情况下透露您的个人信息，或者有充分理由相信必须这样做才能：(a) 满足法律或行政法规的明文规定，或者符合豆瓣网站适用的法律程序；（b）符合豆瓣相关服务条款、软件许可使用协议的约定；(c) 保护豆瓣的权利或财产，以及 (d) 在紧急情况下保护豆瓣员工、豆瓣产品或服务的用户或大众的个人安全。
+              　　豆瓣不会未经您的允许将这些信息与第三方共享，本声明已经列出的上述情况除外。
               </div><!--End of a_content_container-->
           </div><!-- /.blog-post -->
 
@@ -82,8 +70,9 @@ header("Content-Type: text/html; charset=utf-8");
             $result2_name = "shy";//用户昵称
             $result2_slogan = "这个家伙很懒，连个P都没留下";//用户个人签名
         ?>
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-4 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-4 blog-sidebar">
           <div class="user-avatar">
+              <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
           	<a href=""><img src="<? echo $result2_avatar;?>" class="img-responsive img-rounded" width="198" height="198"/></a>
           </div>
           <div class="sidebar-module sidebar-module-inset">
@@ -93,7 +82,7 @@ header("Content-Type: text/html; charset=utf-8");
           <hr>
           <div class="sidebar-module">
             <h4><span class="glyphicon glyphicon-fire"></span>热门</h4>
-            <ol class="list-unstyled">
+            <ol class="list-unstyled" style="margin-left:5px">
               <li><a href="#"><span class="glyphicon glyphicon-file"></span>我的电子竞技之路</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-file"></span>喜屋[公开征集]网站LOGO</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-file"></span>当我在做喜屋时，我到底在做什么？</a></li>
@@ -120,7 +109,7 @@ header("Content-Type: text/html; charset=utf-8");
           <hr>-->
           <div class="sidebar-module">
             <h4><span class="glyphicon glyphicon-link"></span>其它平台</h4>
-            <ol class="list-unstyled">
+            <ol class="list-unstyled" style="margin-left:30px">
               <li><a href="#">新浪微博</a></li>
               <li><a href="#">斗鱼直播</a></li>
             </ol>
