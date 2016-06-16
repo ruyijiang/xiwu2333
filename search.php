@@ -60,11 +60,11 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
 
-                <div style="display:block;margin:0 15px;" class="col-lg-8 col-md-9 col-xs-12" style="font-size:16px;">
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px;">
+                <div style="display:block;" class="col-lg-8 col-md-9 col-xs-12 search_user_container" style="font-size:16px;">
+                    <div class="col-lg-12 clearfix user_conse">
                         没有搜索到与 “ {{thisContent}} ” 相关的结果。
                     </div><!--END OF NoConsequence-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px;">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -81,7 +81,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div><!--END OF DIV1-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -98,7 +98,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div><!--END OF DIV2-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -115,7 +115,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div><!--END OF DIV3-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -132,7 +132,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div><!--END OF DIV4-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -149,7 +149,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div><!--END OF DIV5-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -166,7 +166,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div><!--END OF DIV6-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -183,7 +183,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div><!--END OF DIV7-->
-                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px">
+                    <div class="col-lg-12 clearfix user_conse">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
