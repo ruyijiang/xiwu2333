@@ -3,7 +3,7 @@
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
         .state("/", {
-            url: "/main",
+            url: "/",
             templateUrl: "mainpage.php"
         })
         .state("main", {

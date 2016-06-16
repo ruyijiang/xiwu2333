@@ -90,7 +90,7 @@ $FileCount = count($getDirFile);//得出一共有多少张图
 $random_n = rand(0,$FileCount - 1);//随机生成一个数字
 $MainBgImgName = $getDirFile[$random_n];//根据随机数随机抽取数组中存储的图片名称
 $main_bg = '<style>.main-jumbotron{overflow:hidden;z-index:0;position:relative;background-color:#000;color:white;}.main-jumbotron-background-img{	position:absolute;	top:0px;	left:0px;	z-index:1;	opacity:0.35;	animation:main-jumbotron-backgroundposition 8.65s  forwards;	-webkit-animation:main-jumbotron-backgroundposition 8.65s  forwards;	animation-timing-function:ease-out;}@-webkit-keyframes main-jumbotron-backgroundposition{from {	width:917px;	height:353px;	opacity:0.35;}to {	width:1067px;	height:410px;	opacity:1;}}@keyframes main-jumbotron-backgroundposition{from {	width:917px;	height:353px;	opacity:0.35;}to {	width:1067px;	height:410px;	opacity:1;}}</style>';//最终生成前段模块的CSS部分
-$main_bg .= '<div class="jumbotron main-jumbotron"><img src="img/main_bg/'.$MainBgImgName.'" class="main-jumbotron-background-img center-block"/><h1 style="z-index:3;position:inherit;">你好!</h1><p style="z-index:3;position:inherit;"><strong>喜屋是一个帮助你寻找开黑好友的网站。</strong></p></div>';//最终生成前段模块的HTML部分
+$main_bg .= '<div class="jumbotron main-jumbotron"><img src="img/main_bg/'.$MainBgImgName.'" class="main-jumbotron-background-img center-block"/><h1 style="z-index:3;position:inherit;">你好!</h1><p style="z-index:3;position:inherit;"><strong>喜屋是电竞玩家们，自己的社区。</strong></p></div>';//最终生成前段模块的HTML部分
 
 
 /**main页面的随机推荐的房间**/

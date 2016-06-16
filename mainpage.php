@@ -20,7 +20,7 @@ include("library/xwFE-0.0.1/FEM.php");
             <div class="col-xs-6 col-lg-4">
               <h2>房间列表<span class="badge">4</span></h2>
               <p>加入或者创建一个房间，那里便是你们的私密世界。</p>
-              <p><a ui-sref="roomlist" class="btn btn-primary" role="button">去看看 &raquo;</a></p>
+              <p><a ng-click="dialog.open=true" class="btn btn-primary" role="button">去看看 &raquo;</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
               <h2></h2>
@@ -52,6 +52,9 @@ include("library/xwFE-0.0.1/FEM.php");
       </div><!--/row-->
 
       <hr>
+  <dialog ng-if="dialog.open" duration="1800" modal fixed close="dialog.open=false">
+    <div dialog-content>{{dialog.content}}</div>
+  </dialog>
 
 
 <?php echo $footer;?>

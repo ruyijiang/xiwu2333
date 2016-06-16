@@ -324,6 +324,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     _loadUserData();
     _loadUserLiveness();
     $scope.loadEchart();
+    $rootScope.navactivitify(1);
 
 
 })

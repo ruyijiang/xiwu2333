@@ -6,8 +6,6 @@ app.controller('userlistController',function ($scope,$rootScope){
     $scope.UserDataMostRegion = {};
     $scope.UserDataNowOnline = {};
     $scope.UserDataSexRate = {};
-    $rootScope.MainPageActivity = $rootScope.RoomListActivity = 0;
-    $rootScope.UserListActivity = 1;
 
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);
@@ -246,4 +244,5 @@ app.controller('userlistController',function ($scope,$rootScope){
 
     $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
+    $rootScope.navactivitify(5);
 });

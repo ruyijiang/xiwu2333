@@ -106,6 +106,9 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
         $rootScope.MainPageActivity = $rootScope.RoomListActivity = $rootScope.UserListActivity = $rootScope.MyHomeActivity = $rootScope.MyRoomActivity = $rootScope.BlogActivity = $rootScope.SettingActivity = 0;
 
         switch (str){
+            case 0:
+                $rootScope.MainPageActivity = 1;
+                break;
             case 1:
                 $rootScope.MyHomeActivity = 1;
                 break;
@@ -117,6 +120,9 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
                 break;
             case 4:
                 $rootScope.SettingActivity = 1;
+                break;
+            case 5:
+                $rootScope.UserListActivity = 1;
                 break;
         }
     };

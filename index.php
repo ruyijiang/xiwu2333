@@ -95,7 +95,7 @@ echo $openupalertdiv;
 <!-------------------------------------------------------------------------------------->
 <!--controllers-->
 <script  type="text/javascript" src="js/controller/xiwucontroller.js"></script>
-<script  type="text/javascript" src="js/controller/mainpagecontroller.js"></script>
+<script  type="text/javascript" src="js/controller/maincontroller.js"></script>
 <script  type="text/javascript" src="js/controller/userlistcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/roomlistcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/logincontroller.js"></script>
