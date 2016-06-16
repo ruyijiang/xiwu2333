@@ -64,13 +64,14 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="col-lg-12 clearfix user_conse">
                         没有搜索到与 “ {{thisContent}} ” 相关的结果。
                     </div><!--END OF NoConsequence-->
-                    <div class="col-lg-12 clearfix user_conse">
+
+                    <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in ConsequenceData">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
                         <div class="search_content-rightpart pull-left" style="margin-left:10px">
                             <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
+                                <a style="font-size:13px;font-weight:600">{{xu.name}}</a>
                                 <h6 style="color:#999">喜屋网作者milo</h6>
                             </div>
                             <div class="search_content-botpart">
