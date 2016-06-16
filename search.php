@@ -23,10 +23,10 @@ include("library/xwFE-0.0.1/FEM.php");
     <div class="row">
         <div class="boat clear-fix">
             <div class="row">
-                <div class="col-lg-3" style="margin-left:25px">
+                <div class="col-lg-3 col-md-3" style="margin-left:25px">
                     <img class="center-block" width="162px" height="54px"/>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="col-lg-12">
                         <form class="form-group" ng-submit="searchInPage()">
                             <div class="input-group-container">
@@ -43,7 +43,7 @@ include("library/xwFE-0.0.1/FEM.php");
             </div>
             <hr>
             <div class="row">
-                <div class="col-lg-3 col-sm-3 col-xs-12 text-center">
+                <div class="col-lg-3 col-md-3 col-sm-12 text-center">
                     <div class="per_s-leftpart  boat" style="padding: 0px">
                         <ul class="nav nav-pills nav-stacked">
                             <li ng-class="{active:leftNavIndex == 1}">
@@ -60,7 +60,10 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
 
-                <div style="display:none" class="col-lg-8 col-md-8 col-xs-12" style="font-size:16px;">
+                <div style="display:block;margin:0 15px;" class="col-lg-8 col-md-9 col-xs-12" style="font-size:16px;">
+                    <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px;">
+                        没有搜索到与 “ {{thisContent}} ” 相关的结果。
+                    </div><!--END OF NoConsequence-->
                     <div class="col-lg-12 clearfix" style="padding:15px 0px;border-bottom:solid #f1f1f1 1px;">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
@@ -305,7 +308,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
                 </div><!--Article-->
 
-                <div style="display: block" class="col-lg-8 col-md-8 col-xs-12"><!--Competiton-->
+                <div style="display: none" class="col-lg-8 col-md-9 col-xs-12"><!--Competiton-->
                     <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
                         <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
                             <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>

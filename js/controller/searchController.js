@@ -4,9 +4,12 @@
 app.controller('searchController',function ($scope, $location, search){
     var priority = $location.search()["priority"];//从url获取的查询类别
     $scope.content = $location.search()["content"];//从url获取查询正文
-
+    $scope.thisContent = $scope.content;//用于没有找到内容时显示
+    $scope.ConsequenceData = search.ConsequenceData;
+    console.log($scope.ConsequenceData);
 
     if($scope.content){
+        if(priority!=='article'&&priority!=='competition') priority='user';
         search.sendSearch($scope.content,priority);//每次进入此页时就搜索
 
         $scope.alertPri = function (pri){

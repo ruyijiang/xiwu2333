@@ -91,7 +91,7 @@ require("../all.php");
                                 $dataArr[$key] = urlencode ($value);
                             }
 
-                            $dataArr = urldecode ( json_encode ( $dataArr ));
+                            $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
                         }
                         //--------------------------------------------------------------------------------------------->出口3：是在通过name搜索用户名，但是模糊搜索

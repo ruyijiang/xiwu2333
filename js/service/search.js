@@ -27,13 +27,15 @@ app.factory("search",['$http','$window',function($http,$window){
      * @param priority ： 优先查询的分类，如：article、user等等
      */
     function sendSearch(value,priority){
-            !priority?priority="user":priority;
-            $http({
-            method: 'GET',
-            url: 'library/xwBE-0.0.1/php/search_action.php',
-            params:{'priority':priority,'content':value}
+        !priority?priority="user":priority;
+        $http({
+
+        method: 'GET',
+        url: 'library/xwBE-0.0.1/php/search_action.php',
+        params:{'priority':priority,'content':value}
         }).success(function (data){
-            //data = welcomejsonarrstring(data);
+            data = welcomejsonarrstring(data);
+            console.log(data);
             _dataArr = data;
         }).error(function (){
             alert ("不明原因导致的查询失败，请联系管理员");
