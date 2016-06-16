@@ -65,7 +65,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         没有搜索到与 “ {{thisContent}} ” 相关的结果。
                     </div><!--END OF NoConsequence-->
 
-                    <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in ConsequenceData">
+                    <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in SearchContentReq">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -75,132 +75,14 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <h6 style="color:#999">喜屋网作者milo</h6>
                             </div>
                             <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
+                                <span class="sexuality" ng-if="xu.gender==0"><i class="iconfont icon-nan"></i> |</span>
+                                <span class="sexuality" ng-if="xu.gender==1"><i class="iconfont icon-nvhai"></i> |</span>
+                                <span class="position"><i class="iconfont icon-dingwei"></i>{{xu.province}}，{{xu.city}} |</span>
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>{{xu.uid}} |</span>
+                                <span class="score"><i class="iconfont icon-score"></i>{{xu.score}}</span>
                             </div>
                         </div>
-                    </div><!--END OF DIV1-->
-                    <div class="col-lg-12 clearfix user_conse">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999">喜屋网作者milo</h6>
-                            </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nvhai"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
-                            </div>
-                        </div>
-                    </div><!--END OF DIV2-->
-                    <div class="col-lg-12 clearfix user_conse">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999"></h6>
-                            </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
-                            </div>
-                        </div>
-                    </div><!--END OF DIV3-->
-                    <div class="col-lg-12 clearfix user_conse">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999"></h6>
-                            </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
-                            </div>
-                        </div>
-                    </div><!--END OF DIV4-->
-                    <div class="col-lg-12 clearfix user_conse">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999"></h6>
-                            </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
-                            </div>
-                        </div>
-                    </div><!--END OF DIV5-->
-                    <div class="col-lg-12 clearfix user_conse">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999"></h6>
-                            </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
-                            </div>
-                        </div>
-                    </div><!--END OF DIV6-->
-                    <div class="col-lg-12 clearfix user_conse">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999"></h6>
-                            </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
-                            </div>
-                        </div>
-                    </div><!--END OF DIV7-->
-                    <div class="col-lg-12 clearfix user_conse">
-                        <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left" style="margin-left:10px">
-                            <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">攻略写手 - shy</a>
-                                <h6 style="color:#999"></h6>
-                            </div>
-                            <div class="search_content-botpart">
-                                <span class="sexuality"><i class="iconfont icon-nan"></i></span> |
-                                <span class="position"><i class="iconfont icon-dingwei"></i>广东省，广州市</span> |
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>252556081</span> |
-                                <span class="score"><i class="iconfont icon-score"></i>92</span>
-                            </div>
-                        </div>
-                    </div><!--END OF DIV8-->
+                    </div><!--END OF DIV-->
 
                     <div class="row text-center">
                         <nav>
