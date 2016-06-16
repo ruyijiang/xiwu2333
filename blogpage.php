@@ -29,9 +29,9 @@ header("Content-Type: text/html; charset=utf-8");
               <h2>{{BlogExport.title}}</h2>
               <p><em class="blog-time">{{BlogExport.time}}</em></p>
               <div ng-if="BlogExport.permission == true">
-                  <a role="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span>删除</a>
+                  <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
                   <!--<a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-print"></span>打印</a>-->
-                  <a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-edit"></span>修改</a>
+                  <a role="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-edit"></span>修改</a>
 
                   <!--<div style="display:inline-block;margin-left:10px;">
                       <div class="share_hiddendiv">
@@ -44,8 +44,7 @@ header("Content-Type: text/html; charset=utf-8");
             
               <hr>
 
-              <div class="a1_content_container" style="font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;letter-spacing:1px;">
-              {{BlogExport.content}}
+              <div class="a1_content_container" style="font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;letter-spacing:1px;" ng-bind-html="BlogExport.content|to_trusted">
               </div><!--End of a_content_container-->
           </div><!-- /.blog-post -->
 
@@ -58,7 +57,7 @@ header("Content-Type: text/html; charset=utf-8");
           </nav>
 
         </div><!-- /.blog-main -->
-        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-4 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-4 blog-sidebar">
+        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-3 blog-sidebar">
           <div class="user-avatar">
               <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
           	<a><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
@@ -106,6 +105,10 @@ header("Content-Type: text/html; charset=utf-8");
         </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->
+        <dialog ng-if="dialog_confirmdelete.open" modal align="bottom" close="dialog_confirmdelete.open=false">
+            <div dialog-content>{{dialog_confirmdelete.content}}</div>
+            <div dialog-buttons><button autofocus>确定</button><button ng-click="$close()">取消</button></div>
+        </dialog>
       <hr>
 
       <?php echo $footer;?>

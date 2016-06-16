@@ -60,6 +60,7 @@ require("../algorithm/RandAid.php");
                 $uid = $_SESSION["uid"];
                 $abc = create_Aid();
                 $a_content = addslashes($a_content);
+                //$a_content = htmlspecialchars($a_content);
                 $sql = "INSERT INTO articles(id,aid,uid,time,title,content,txt_url) VALUES ('','$abc','$uid','$tnow','$a_title','$a_content','$file') ";
                 $qry = $db->query($sql);
                 if(!$qry){

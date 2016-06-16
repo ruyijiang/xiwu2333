@@ -16,7 +16,12 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
             }).success(function (data){
                 $scope.BlogExport = data;
                 $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
-                console.log($scope.BlogExport);
+
+                $scope.dialog_confirmdelete = {
+                    open:false,
+                    content:"确认删除《"+$scope.BlogExport.title+"》吗？"
+                }
+
             }).error(function (){
                 alert ("不明原因导致的查询失败，请联系管理员");
             });
@@ -50,8 +55,17 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
     }
 
 
+
+
     loadBlog(A_aid);
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
 
-});
+
+}).filter(
+    'to_trusted', ['$sce', function ($sce) {
+        return function (text) {
+            return $sce.trustAsHtml(text);
+        }
+    }]
+);

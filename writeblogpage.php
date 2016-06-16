@@ -19,7 +19,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
         <div class="alert alert-info clearfix" style="margin-top:-2px;">
             <small>如果文本编辑器显示异常，请刷新页面。</small>
-            <button type="submit" id="submit_btn" data-loading-text="提交中..." class="btn btn-primary pull-right submit_btn" autocomplete="off">发表</button>
+            <button type="submit" id="submit_btn" data-loading-text="提交中..." class="btn btn-primary pull-right submit_btn" autocomplete="off"><span class="glyphicon glyphicon-send"></span>发表</button>
         </div>
     </form>
 
