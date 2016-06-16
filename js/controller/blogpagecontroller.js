@@ -15,6 +15,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
                 params:{'aid':aid}
             }).success(function (data){
                 $scope.BlogExport = data;
+                $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
                 console.log($scope.BlogExport);
             }).error(function (){
                 alert ("不明原因导致的查询失败，请联系管理员");

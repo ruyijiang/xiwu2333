@@ -14,7 +14,7 @@ app.controller('writeblogcontroller',function ($scope, $location){
         //获取要提交的内容
         var a_title = $("input#a_title").val();//文章标题
         var a_content = ueitor.getContent();//文章内容
-        a_cotent = htmldecode(a_content);
+        a_cotent = htmlencode(a_content);
 
         if(!ueitor.hasContents()){
             $("#submit_btn").button('reset');

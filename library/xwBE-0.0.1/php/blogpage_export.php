@@ -44,7 +44,7 @@ require("../all.php");
 
 
 
-    $dataArr = array ('title'=>$result_title,'content'=>$result_content,'time'=>$result_time,'uid'=>$result_uid,'permission'=>$result_permission,'name'=>$result_author_name,'slogan'=>$result_author_slogan,'avatar'=>$result_author_avatar,'weibo_status'=>$weibo_status,'weibo'=>$result_author_weibo,'liveplain_status'=>$liveplain_status,'liveplain'=>$result_author_liveplain);
+    $dataArr = array ('title'=>$result_title,'content'=>htmlspecialchars($result_content),'time'=>$result_time,'uid'=>$result_uid,'permission'=>$result_permission,'name'=>$result_author_name,'slogan'=>$result_author_slogan,'avatar'=>$result_author_avatar,'weibo_status'=>$weibo_status,'weibo'=>$result_author_weibo,'liveplain_status'=>$liveplain_status,'liveplain'=>$result_author_liveplain);
     foreach ( $dataArr as $key => $value ) {
         $dataArr[$key] = urlencode ($value) ;
     }

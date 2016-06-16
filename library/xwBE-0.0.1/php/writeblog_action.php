@@ -11,6 +11,7 @@ require("../algorithm/RandAid.php");
 ?>
 <?php
     @$a_content = $_POST["content"];
+
     @$a_title = $_POST["title"];
 
 
@@ -58,6 +59,7 @@ require("../algorithm/RandAid.php");
                 //***将文章放入数据库.article表****//
                 $uid = $_SESSION["uid"];
                 $abc = create_Aid();
+                $a_content = addslashes($a_content);
                 $sql = "INSERT INTO articles(id,aid,uid,time,title,content,txt_url) VALUES ('','$abc','$uid','$tnow','$a_title','$a_content','$file') ";
                 $qry = $db->query($sql);
                 if(!$qry){
