@@ -22,7 +22,7 @@ require("../algorithm/AbstractofArticle.php");
 
     $now_page - 1<0?$now_page=1:$now_page;
     $num_start = ($now_page - 1)*$num_onepage;
-    $sql = "SELECT title,time,content FROM articles WHERE uid = '$uid' LIMIT $num_start,$num_onepage ";
+    $sql = "SELECT title,time,content,aid FROM articles WHERE uid = '$uid' LIMIT $num_start,$num_onepage ";
     $qry = $db->query($sql);
     while($row = $qry->fetch_assoc()){
         $result_title = $row["title"];
@@ -46,10 +46,11 @@ require("../algorithm/AbstractofArticle.php");
         }
 
         $result_content = $row["content"];
+        $result_aid = $row["aid"];
         $result_abstract = getAbstract($result_content);
 
 
-        $dataArr = array ('title'=>$result_title,'time'=>$result_time,'abstract'=>$result_abstract);
+        $dataArr = array ('title'=>$result_title,'aid'=>$result_aid,'time'=>$result_time,'abstract'=>$result_abstract);
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value) ;
         }

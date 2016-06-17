@@ -13,10 +13,10 @@ include("library/xwFE-0.0.1/FEM.php");
                             <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:32px;color:#346ea1" title="男"></i>
                             <i ng-if="UserData.gender == '1'" class="iconfont icon-nvhai" style="font-size:32px;color:#FF6699" title="女"></i>
                         </h2>
-                        <p>一个DOTA爱好者</p>
+                        <p>{{UserData.slogan}}</p>
                         <hr>
                     </div>
-                    <div ng-if="callingcard_content !== ''">
+                    <div ng-if="UserData.callingcard_content !== ''">
                         <table class="id_info">
                             <tr>
                                 <td><i class="iconfont icon-renzheng" style="font-size:28px;color:#d87f00"></i></td>
@@ -91,34 +91,20 @@ include("library/xwFE-0.0.1/FEM.php");
                     <ul class="nav nav-tabs" style="margin-top:20px;">
                        <li ng-class="{active:TabShowPage === 1}"><a ng-click="Tabshow(1)">动态</a></li>
                        <li ng-class="{active:TabShowPage === 2}"><a ng-click="Tabshow(2)">文章</a></li>
-                       <!--<li ng-class="{active:TabShowPage === 3}"><a ng-click="Tabshow(3)">获得评价</a></li>-->
+                       <!--<li ng-class="{active:TabShowPage === 3}"><a ng-click="Tabshow(3)">评论</a></li>-->
                     </ul>
-
-                    <!--php
-
-                        @$TabContext = $_GET["tab"];
-                        if(!isset($TabContext)){$TabContext = "pulse";}
-                        if($TabContext == "pulse"){
-                            echo $HomePageView_Pulse;
-                        }else if($TabContext == "article"){
-                            echo $HomePageView_Article;
-                        }else if($TabContext == "assess"){
-                            echo $HomePageView_Assess;
-                        }
-
-                    -->
 
 
                     <div class="liveness-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
                     	<div class="panel-heading">活跃曲线</div>
                         <div class="panel-body" id="liveness-chart-body" style="height:260px;"></div>
                     </div>
-                    <div ng-if="TabShowPage == 1">
+                    <!--<div ng-if="TabShowPage == 1">
                         <h5><strong>最新动态</strong></h5>
                         <p>发表了&nbsp;<a href=""><span class="glyphicon glyphicon-file"></span>我的3月23日DOTA2一日游</a>&nbsp;一文</p><span></span>
                         <p>评价了&nbsp;<a href=""><span class="glyphicon glyphicon-user"></span>Zxc</a></p>
                         <p>评价了&nbsp;<a href=""><span class="glyphicon glyphicon-user"></span>MARTIN</a></p>
-                    </div>
+                    </div>-->
 
                     <div class="article-sheet form-inline" style="margin-top:15px;" ng-show="TabShowPage == 2">
                         <a class="btn btn-danger form-group" role="button" style="padding-left:35px;padding-right:45px;" ui-sref="writeblog"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
@@ -153,7 +139,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <hr>
                         <div ng-repeat="xarticle in ArticleDataArr">
                             <div class="article clearfix">
-                                <a href=""><h4><strong>{{xarticle.title}}</strong></h4></a>
+                                <a ng-href="/#/blog?aid={{xarticle.aid}}"><h4><strong>{{xarticle.title}}</strong></h4></a>
                                 <blockquote><h5>{{xarticle.abstract}}<span>...</span></h5></blockquote>
                                 <small class="pull-right"><time>{{xarticle.time}}</time></small>
                             </div>

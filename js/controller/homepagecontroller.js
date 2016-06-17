@@ -77,7 +77,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         uid==undefined?uid=$location.search()["uid"]:uid;
         $.ajax({
             url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
-            type:'POST',
+            type:'GET',
             async: false,
             data:{"uid":uid},
             success: function (data){

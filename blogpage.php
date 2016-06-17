@@ -63,8 +63,8 @@ header("Content-Type: text/html; charset=utf-8");
           	<a><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
           </div>
           <div class="sidebar-module sidebar-module-inset">
-            <h4>{{BlogExport.name}}</h4>
-            <p style="color:#999;font-size:13px">{{BlogExport.slogan}}</p>
+            <strong style="font-size:19px;">{{BlogExport.name}}</strong><i class="iconfont icon-renzheng" style="font-size:22px;color:#d87f00;margin-left:5px" title="1234"></i>
+            <p style="color:#999;font-size:13px;margin-top:5px">{{BlogExport.slogan}}</p>
           </div>
           <hr>
           <div class="sidebar-module">

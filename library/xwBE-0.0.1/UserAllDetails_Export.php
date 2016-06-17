@@ -11,7 +11,7 @@ require("all.php");
 <?php
 
     $status = $reminder = "";
-    @$RequestUid = $_POST["uid"];
+    @$RequestUid = $_GET["uid"];
 
     if(!isset($RequestUid) || empty($RequestUid)){//请求的是自己
         $RequestUid = $_SESSION["uid"];
@@ -29,7 +29,7 @@ require("all.php");
         $result_slogan = $row["slogan"];//签名
         $result_calling_card_id = $row["calling_card_id"];
         $result_calling_card = "";//认证信息
-        $sql2 = "SELECT content FROM callingcard WHERE id = '$result_calling_card_id' ";
+        $sql2 = "SELECT content FROM callingcard WHERE ccid = '$result_calling_card_id' ";
         $qry2 = $db->query($sql2);
         $row2 = $qry2->fetch_assoc();
         if($row2["content"]){
