@@ -191,12 +191,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         }
         $scope.TabHttpRequestTimes = $scope.TabPulseStatus + $scope.TabArticleStatus + $scope.TabCommentStatus;
     }
-
-
-    $scope.dialog={
-        open: false,
-        content : ""
-    };
     /**
      * 控制每页显示数量
      */
@@ -297,10 +291,32 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                     symbolSize: 4
                 }
             ]
-        })
+        });
 
         // 使用刚指定的配置项和数据显示图表。
-    }
+    };
+
+
+    $scope.UidEqu = false;
+
+    $scope.checkIsMeOrNot = function (){
+
+        timing = Math.round(new Date().getTime()/1000);
+
+        $.ajax({
+            url:"../../library/xwBE-0.0.1/php/checkUidEqu.php",
+            type:'GET',
+            async: false,
+            data:{"timing":timing},
+            success: function (data){
+                var qUid = $location.search()["uid"];
+                if(!qUid) qUid=$scope.UserData.uid;
+                data==$scope.UserData.uid?$scope.UidEqu = true:$scope.UidEqu = false;
+            }
+        });
+
+    };
+
 
     //视图初始化
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
@@ -308,5 +324,11 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     _loadUserLiveness();
     $scope.loadEchart();
     $rootScope.navactivitify(1);
+    $scope.checkIsMeOrNot();
+    $scope.dialog={
+        open: false,
+        content : ""
+    };
 
-})
+
+});
