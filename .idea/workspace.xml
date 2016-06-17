@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogpage2.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogpage.php" afterPath="$PROJECT_DIR$/blogpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage.php" afterPath="$PROJECT_DIR$/homepage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/homepagecontroller.js" afterPath="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/article_export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/article_export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personpage.php" afterPath="$PROJECT_DIR$/personpage.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index2.php" afterPath="$PROJECT_DIR$/orginal_index.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,18 +36,18 @@
       <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
+            <state relative-caret-position="149">
+              <caret line="298" column="13" selection-start-line="298" selection-start-column="13" selection-end-line="298" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/personpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="103" />
+            <state relative-caret-position="240">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -68,45 +59,6 @@
                 <marker date="1466151389646" expanded="false" signature="5690:5706" ph="..." />
                 <marker date="1466151389646" expanded="false" signature="5862:5875" ph="..." />
                 <marker date="1466151389646" expanded="false" signature="9958:9974" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogpage.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blogpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="65" column="170" selection-start-line="65" selection-start-column="170" selection-end-line="65" selection-end-column="170" />
-              <folding>
-                <element signature="n#style#0;n#strong#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1466151511590" expanded="true" signature="453:494" ph="SELECT * FRO... articles" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-              <folding>
-                <marker date="1466147354277" expanded="true" signature="333:376" ph="SELECT * FRO... users" />
-                <marker date="1466147354277" expanded="true" signature="821:891" ph="SELECT conte... callingcard" />
-                <marker date="1466147354277" expanded="true" signature="1641:1687" ph="SELECT name,... rooms" />
               </folding>
             </state>
           </provider>
@@ -185,8 +137,8 @@
         <option value="$PROJECT_DIR$/homepage.php" />
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
         <option value="$PROJECT_DIR$/js/router.js" />
-        <option value="$PROJECT_DIR$/personpage.php" />
         <option value="$PROJECT_DIR$/blogpage.php" />
+        <option value="$PROJECT_DIR$/personpage.php" />
       </list>
     </option>
   </component>
@@ -739,7 +691,7 @@
       <workItem from="1466072874629" duration="1334000" />
       <workItem from="1466075181218" duration="3322000" />
       <workItem from="1466083860501" duration="4320000" />
-      <workItem from="1466125719644" duration="18992000" />
+      <workItem from="1466125719644" duration="20368000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -909,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466139949534</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="about finished person.modal">
+      <created>1466151615146</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1466151615147</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="768262000" />
+    <option name="totallyTimeSpent" value="769638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -973,7 +932,8 @@
     <MESSAGE value="fixed some bugs in search.modal." />
     <MESSAGE value="fixed some bugs in search.modal i will fixed more, today afternoon." />
     <MESSAGE value="ABOUT finished search.modal,but there should be some bugs,i will fixed them ,after i complish personal.modal and home.modal,bless me quick!" />
-    <option name="LAST_COMMIT_MESSAGE" value="ABOUT finished search.modal,but there should be some bugs,i will fixed them ,after i complish personal.modal and home.modal,bless me quick!" />
+    <MESSAGE value="about finished person.modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="about finished person.modal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1359,14 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1375,10 +1327,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#strong#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1466151511590" expanded="true" signature="453:494" ph="SELECT * FRO... articles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="298" column="13" selection-start-line="298" selection-start-column="13" selection-end-line="298" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/personpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="103" />
+        <state relative-caret-position="240">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1390,19 +1363,6 @@
             <marker date="1466151389646" expanded="false" signature="5690:5706" ph="..." />
             <marker date="1466151389646" expanded="false" signature="5862:5875" ph="..." />
             <marker date="1466151389646" expanded="false" signature="9958:9974" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="65" column="170" selection-start-line="65" selection-start-column="170" selection-end-line="65" selection-end-column="170" />
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1466151511590" expanded="true" signature="453:494" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
