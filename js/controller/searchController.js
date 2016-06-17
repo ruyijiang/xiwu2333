@@ -1,8 +1,8 @@
 /**
  * Created by 马子航 on 2016/6/6.
  */
-app.controller('searchController',function ($scope, $location, $http, search){
-    var priority = $location.search()["priority"];//从url获取的查询类别
+app.controller('searchController',function ($scope, $location, $http, search, $window){
+    $scope.priority = $location.search()["priority"];//从url获取的查询类别
     $scope.content = $location.search()["content"];//从url获取查询正文
     $scope.thisContent = $scope.content;//用于没有找到内容时显示
     $scope.SearchContentReq = [];
@@ -10,21 +10,21 @@ app.controller('searchController',function ($scope, $location, $http, search){
      * 一旦进入此视图，则立即执行以下if(){}else{}
      */
     if($scope.content){
-        if(priority!=='article'&&priority!=='competition') priority='user';
+        if($scope.priority!=='article'&&$scope.priority!=='competition') $scope.priority='user';
 
-            sendSearch($scope.content,priority);//每次进入此页时就搜索
+            sendSearch($scope.content,$scope.priority);//每次进入此页时就搜索
 
             $scope.alertPri = function (pri){
                 skipToSearch($scope.content,pri);
             };
             $scope.searchInPage = function (){
-                skipToSearch($scope.content,priority);
+                skipToSearch($scope.content,$scope.priority);
             };
             //有查询content，则显示结果视图
             $scope.SearchConsequenceShow = 1;
             //控制左侧导航的样式
-            if(priority !== ""){
-                switch (priority){
+            if($scope.priority !== ""){
+                switch ($scope.priority){
                     case "user":
                         $scope.leftNavIndex = 1;
                         break;
@@ -79,6 +79,6 @@ app.controller('searchController',function ($scope, $location, $http, search){
 
     }
 
-
+    console.log($scope.SearchContentReq);
 
 });
