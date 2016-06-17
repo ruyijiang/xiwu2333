@@ -79,6 +79,4 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
 
     }
 
-    console.log($scope.SearchContentReq);
-
 });

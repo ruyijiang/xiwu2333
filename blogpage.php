@@ -64,7 +64,7 @@ header("Content-Type: text/html; charset=utf-8");
           </div>
           <div class="sidebar-module sidebar-module-inset">
             <h4>{{BlogExport.name}}</h4>
-            <p>{{BlogExport.slogan}}</p>
+            <p style="color:#999;font-size:13px">{{BlogExport.slogan}}</p>
           </div>
           <hr>
           <div class="sidebar-module">
