@@ -53,7 +53,7 @@ include("library/xwFE-0.0.1/FEM.php");
         ?>
 
         <div class="per_s-rightpart col-lg-9 col-sm-9 col-xs-12 row" style="min-height:300px;border-radius:4px;">
-                <form class="form-horizontal" role="form" id="info_setting_form" name="info_setting_form" enctype='multipart/form-data' ng-submit="submitData()">
+                <form class="form-horizontal form-horizontal demo-form w5c-form" w5c-form-validate="vm.validateOptions" novalidate role="form" id="info_setting_form" name="info_setting_form" enctype='multipart/form-data' ng-submit="submitData()">
                     <div class="row boat">
                         <div class="per_s_content-basicinfo col-lg-6">
                             <div class="form-group">
@@ -65,7 +65,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div class="form-group">
                                 <label for="inputNickname" class="col-lg-3 control-label">用户名</label>
                                 <div class="col-sm-9">
-                                    <input required type="text" class="form-control" name="inputname" id="inputname" placeholder="请输入昵称" ng-model="UserInfoData.name">
+                                    <input required="" type="text" class="form-control" name="inputname" id="inputname" placeholder="请输入昵称" ng-model="UserInfoData.name">
                                 </div>
                             </div>
                             <div class="form-group">

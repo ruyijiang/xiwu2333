@@ -22,8 +22,8 @@ include("library/xwFE-0.0.1/FEM.php");
 	<!--<meta http-equiv="Pragma" content="no-cache">-->
 	<title>喜屋</title>
 	<!-- Bootstrap Css -->
-	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
-	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet"/>
+	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="library/normalize.css/normalize-4.0.0.css" rel="stylesheet"/>
 	<link href="library/bootstrap-3.3.5-dist/css/dashboard.css" rel="stylesheet"/>
 	<link href="//at.alicdn.com/t/font_1465958999_6407464.css" rel="stylesheet"/>
@@ -60,11 +60,11 @@ echo $openupalertdiv;
 </div>
 
 <!-- UI router -->
-<script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 <!--jQuery Js-->
-<script  type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <!--Bootstrap Js-->
-<script  type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!--Echart Js-->
 <script  type="text/javascript" src="library/Echart-3.1.4/echarts.simple.min.js"></script>
 <!--all.js-->
@@ -74,6 +74,10 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/angular-popups.js"></script>
 <!-- router-->
 <script  type="text/javascript" src="js/router.js"></script>
+<!--w5c Validation-->
+<script  type="text/javascript" src="js/w5cValidation.js"></script>
+<script  type="text/javascript" src="js/w5cValidation_Config.js"></script>
+<!-------------------------------------------------------------------------------------->
 <!-- utills -->
 <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>

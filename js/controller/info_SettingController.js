@@ -1,7 +1,24 @@
 /**
  * Created by 马子航 on 2016/5/16.
  */
-app.controller('info_SettingController',function ($scope){
+app.controller('info_SettingController',function ($scope,$http){
+
+
+    var vm = $scope.vm = {
+        htmlSource        : "",
+        showErrorType     : "1",
+        showDynamicElement: true,
+        dynamicName       : "dynamicName",
+        entity            : {}
+    };
+
+
+    vm.validateOptions = {
+        blurTrig: true
+    };
+
+
+
 
 
     $scope.CityNameShowStatus = null;
@@ -206,8 +223,6 @@ app.controller('info_SettingController',function ($scope){
                         open: true,
                         content : "保存成功"
                     };
-                }else{
-                    alert ("数据有误，修改失败");
                 }
                 $scope.ServerStr = [];
             },

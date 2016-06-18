@@ -40,9 +40,6 @@ socket.onerror = function(){
 /******************************************************/
 /******************************************************/
 //设置Angular app
-var app = angular.module('myApp', ["ui.router",'angular-popups']);
-
-
-
+var app = angular.module('myApp', ["ui.router",'angular-popups','w5c.validator']);
 
 
