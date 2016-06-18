@@ -56,14 +56,14 @@ include("library/xwFE-0.0.1/FEM.php");
                     </td>
                 </tr>
                 <tr ng-if="UserData.server.length > 0">
-                    <td><i class="iconfont icon-live"></i></td>
+                    <td><i class="iconfont icon-leibie"></i></td>
                     <td>服务器：</td>
                     <td>
                         <span class="label label-default" ng-repeat="xserver in UserData.server" style="margin-right:3px">{{xserver}}</span>
                     </td>
                 </tr>
                 <tr ng-if="UserData.liveplain!==''">
-                    <td><i class="iconfont icon-leibie"></i></td>
+                    <td><i class="iconfont icon-live"></i></td>
                     <td>直播间：</td>
                     <td>
                         <a ng-href="{{UserData.liveplain}}" target="_blank" class="btn btn-default btn-sm" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width:160px">{{UserData.liveplain}}</a>
