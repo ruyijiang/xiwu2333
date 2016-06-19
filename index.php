@@ -67,6 +67,10 @@ echo $openupalertdiv;
 <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!--Echart Js-->
 <script  type="text/javascript" src="library/Echart-3.1.4/echarts.simple.min.js"></script>
+<!--angular Validation-->
+<script  type="text/javascript" src="js/angular-validation.js"></script>
+<script  type="text/javascript" src="js/angular-validation-rule.js"></script>
+<!-------------------------------------------------------------------------------------->
 <!--all.js-->
 <script  type="text/javascript" src="js/run.js"></script>
 <script  type="text/javascript" src="js/vendor/all.js"></script>
@@ -74,10 +78,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/angular-popups.js"></script>
 <!-- router-->
 <script  type="text/javascript" src="js/router.js"></script>
-<!--w5c Validation-->
-<script  type="text/javascript" src="js/w5cValidation.js"></script>
-<script  type="text/javascript" src="js/w5cValidation_Config.js"></script>
-<!-------------------------------------------------------------------------------------->
 <!-- utills -->
 <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>
