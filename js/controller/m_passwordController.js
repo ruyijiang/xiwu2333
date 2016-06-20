@@ -14,6 +14,10 @@ app.controller('m_PasswordController',function ($scope,$rootScope){
         content : ""
     };
 
+    $scope.next = function (){
+        $scope.submitData();
+    };
+
     $scope.submitData = function (){
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/m_password_action.php',
@@ -27,6 +31,9 @@ app.controller('m_PasswordController',function ($scope,$rootScope){
                         open: true,
                         content : "修改成功"
                     };
+                    $timeout(function (){
+                        window.location.reload();
+                    },700);
                 }
             },
             error: function (){

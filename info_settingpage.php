@@ -53,7 +53,7 @@ include("library/xwFE-0.0.1/FEM.php");
         ?>
 
         <div class="per_s-rightpart col-lg-9 col-sm-9 col-xs-12 row" style="min-height:300px;border-radius:4px;">
-                <form class="form-horizontal form-horizontal demo-form" novalidate role="form" id="info_setting_form" name="info_setting_form" enctype='multipart/form-data' ng-submit="submitData()">
+                <form class="form-horizontal form-horizontal demo-form" novalidate role="form" id="info_setting_form" name="info_setting_form" ng-submit="submitData()">
                     <div class="row boat">
                         <div class="per_s_content-basicinfo col-lg-6">
                             <div class="form-group">
@@ -160,7 +160,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">+86</span>
-                                            <input type="text" class="form-control" id="telnum" name="telnum" ng-model="UserInfoData.tel">
+                                            <input validator="required, telnumber" maxlength="11" type="text" class="form-control" id="telnum" name="telnum" ng-model="UserInfoData.tel">
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +170,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label" for="qqnum">QQ</label>
                                     <div class="col-sm-4">
-                                        <input type="text" required minlength="3" class="form-control" name="qqnum" id="qqnum" ng-model="UserInfoData.qq">
+                                        <input validator="required, qq" minlength="4" maxlength="11" type="text" required class="form-control" name="qqnum" id="qqnum" ng-model="UserInfoData.qq">
                                     </div>
                                     <!--<a><span class="glyphicon glyphicon-plus-sign" style="padding-top: 15px;margin-left:0"></span></a>-->
                                 </div>
@@ -191,7 +191,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="icon-weibo_origin iconfont"></i></span>
-                                            <input type="url" class="form-control" placeholder="输入您新浪微博的网址链接（URL）" id="weibo_url" ng-model="UserInfoData.weibo">
+                                            <input validator="url" type="url" class="form-control" placeholder="输入您新浪微博的网址链接（URL）" id="weibo_url" ng-model="UserInfoData.weibo">
                                         </div>
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="spanicon" style="margin:0"></span></span>
-                                            <input id="liveplain" type="url" class="form-control" placeholder="输入您直播间的网址链接（URL）" ng-model="UserInfoData.liveplain">
+                                            <input validator="url" id="liveplain" type="url" class="form-control" placeholder="输入您直播间的网址链接（URL）" ng-model="UserInfoData.liveplain">
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +213,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div><!--End of a boat-->
 
                     <div class="row boat" style="padding:0">
-                        <input type="submit" class="btn btn-lg btn-primary btn-block" value="完成提交">
+                        <input validation-submit="info_setting_form" ng-click="next()" type="submit" class="btn btn-lg btn-primary btn-block" value="完成提交">
                     </div>
                 </form>
 

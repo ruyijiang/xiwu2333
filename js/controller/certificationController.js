@@ -10,6 +10,7 @@ app.controller('certificationController',function ($scope){
         open: false,
         content : ""
     };
+    $scope.Old1234 = "12345";
 
     /**
      * 切换输入框可输入状态和按钮icon
@@ -26,6 +27,9 @@ app.controller('certificationController',function ($scope){
     };
 
 
+    $scope.next = function (){
+        $scope.submitData();
+    };
     /**
      * 提交修改信息
      * @param key：类

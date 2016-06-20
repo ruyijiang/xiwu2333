@@ -54,7 +54,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 $result_tel = $row["tel"];
                 $result_email = $row["email"];
             ?>
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" name="certification_setting">
                 <div class="row boat">
                     <div class="form-group row col-lg-8">
                         <label class="col-lg-3 control-label">身份证号码</label>

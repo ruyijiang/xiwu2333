@@ -245,6 +245,14 @@ div.alert-success{margin-top: 50px; z-index: 99; background-image: none; backgro
 .nav-pills>li.active>a{border-radius:1px}
 /*ng-validate*/
 .ng-invalid.ng-dirty{
-	border-color:#ff0009
+	border-color:#d9534f;
+}
+.ng-valid.ng-dirty{
+	border-color:#5cb85c;
+}
+.validation-invalid{
+	color:#d9534f;
+	font-size:12px;
+	font-weight:bold;
 }
 
