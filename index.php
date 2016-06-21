@@ -65,8 +65,6 @@ echo $openupalertdiv;
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <!--Bootstrap Js-->
 <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<!--拦截器-->
-<script src="js/service/interceptor/authority.js"></script>
 <!--Echart Js-->
 <script  type="text/javascript" src="library/Echart-3.1.4/echarts.simple.min.js"></script>
 <!--angular Validation-->
@@ -85,6 +83,9 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>
 <script  type="text/javascript" src="js/utill/alterLocalStorage.js"></script>
 <script  type="text/javascript" src="js/utill/unique_inarr.js"></script>
+<!-------------------------------------------------------------------------------------->
+<!--拦截器-->
+<script src="js/service/interceptor/authority.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!-- Ueditor Js-->
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.config.js"></script>
