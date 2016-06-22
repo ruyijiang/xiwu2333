@@ -36,7 +36,26 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("myhome", {
             url: "/myhome",
-            templateUrl: "personpage.php"
+            templateUrl: "personpage.php",
+            resolve:{
+                guarder: function($q,$http,$location){
+                    var allowed = false;
+                    var deferred = $q.defer();
+                    //权限判断逻辑
+                    //if(1==1) allowed = true;
+
+                    if(allowed){
+                        //允许访问时执行
+                        deferred.resolve();
+                        $location.path("/signup").replace();
+                    }else{
+                        //不允许访问时执行
+                        deferred.reject();
+                        $location.path("/blog").replace();
+                    }
+                    return deferred.promise;
+                }
+            }
         })
         .state("myhomeWithPulse",{
             params: {'tab': null},

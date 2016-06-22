@@ -84,8 +84,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/utill/alterLocalStorage.js"></script>
 <script  type="text/javascript" src="js/utill/unique_inarr.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!--拦截器-->
-<script src="js/service/interceptor/authority.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!-- Ueditor Js-->
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.config.js"></script>
@@ -95,6 +93,9 @@ echo $openupalertdiv;
 <script src="js/service/snslogin/qq.js" type="text/javascript"></script>
 <script src="js/service/countLiveness.js" type="text/javascript"></script>
 <script src="js/service/search.js" type="text/javascript"></script>
+<!--<script src="js/service/interceptor/Auth.js"></script>
+<script src="js/service/interceptor/ACCESS_LEVELS.js"></script>
+<script src="js/service/interceptor/authority.js"></script>-->
 <!-------------------------------------------------------------------------------------->
 <!--bootstrap-slider-->
 <script  type="text/javascript" src="library/bootstrap-3.3.5-dist/js/bootstrap-slider.min.js"></script>

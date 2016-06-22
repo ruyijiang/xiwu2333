@@ -2,26 +2,6 @@
 //本文件需要在主页面require之前require(all.php)，否则可能会报一些异常
 ?>
 <?php
-/**
- * 初始化设置
- */
-
-
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
 /*********************html头部输出*************************************/
 $openteam_status = $openstatus_bar_class = "";
 if(@$_SESSION['loginstatus'] == 1 && !empty($_SESSION['uid'])){
@@ -61,13 +41,6 @@ if($openteam_status == 1){
 }else{
 	$openupalertdiv = "";
 }
-
-
-
-
-
-
-
 
 //********footer***********//页脚
 $footer = '<footer><div class="clearfix"><div style="color:#999"><small>&copy; 2016 milo |</small><small>&nbsp;<span class="glyphicon glyphicon-envelope"></span> 意见反馈：<a href="mailto:#">1444828173@qq.com</a> |&nbsp;<span class="glyphicon glyphicon-book"></span> alpha - 0.1</small><small class="pull-right">若使用本网站提供的服务，则视为接受本网站<a href="">《服务条款说明》</a>中各项和<a href="">《诚信文明公约》</a>。</small></div></div></footer>';
