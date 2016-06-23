@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,guarder){
+app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout){
 
 
     $scope.TabShowPage = 1;//当前TabIndex值

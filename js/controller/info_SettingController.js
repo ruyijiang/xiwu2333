@@ -126,13 +126,19 @@ app.controller('info_SettingController',function ($scope,$http,$window,$timeout)
     $("#liveplain").blur(function (){
         checkLivePlain()
     });
-    checkLivePlain();
+    checkLivePlain();//视图加载时就要执行一遍
     function checkLivePlain(){
         var num = $scope.UserInfoData.liveplain.indexOf("www.") + 4;
         var TargetString = $scope.UserInfoData.liveplain.substr(num);
         num = TargetString.indexOf(".");
         var TargetString = TargetString.substring(0,num);
-        $("#liveplain").parent().find(".spanicon").removeClass().addClass(TargetString+"-span spanicon");
+        if(TargetString == 'douyu'||TargetString == 'huya'||TargetString == 'panda'||TargetString == 'zhanqi'){
+            //如果是4大平台的直播间，则输出对应的icon
+            $("#liveplain").parent().find(".spanicon").removeClass().addClass(TargetString+"-span spanicon");
+        }else{
+            //如果不是4大平台的直播间，则输出电视icon
+            $("#liveplain").parent().find(".spanicon").removeClass().addClass("icon-live iconfont");
+        }
     }
 
 

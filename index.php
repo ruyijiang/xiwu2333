@@ -90,6 +90,7 @@ echo $openupalertdiv;
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.all.min.js"></script>
 <!-------------------------------------------------------------------------------------->
 <!--services-->
+<script src="js/service/checkStatus.js" type="text/javascript"></script>
 <script src="js/service/snslogin/qq.js" type="text/javascript"></script>
 <script src="js/service/countLiveness.js" type="text/javascript"></script>
 <script src="js/service/search.js" type="text/javascript"></script>

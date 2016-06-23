@@ -38,22 +38,23 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/myhome",
             templateUrl: "personpage.php",
             resolve:{
-                guarder: function($q,$http,$location){
-                    var allowed = false;
-                    var deferred = $q.defer();
-                    //权限判断逻辑
-                    //if(1==1) allowed = true;
+                guarder: function($q,$location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
 
-                    if(allowed){
+                    console.log(allowed);
+
+                    if(allowed==1){
                         //允许访问时执行
-                        deferred.resolve();
-                        $location.path("/signup").replace();
+                        //$location.path("/signup").replace();
+                        //$state.go("/signup");
+                        alert ("1234");
                     }else{
                         //不允许访问时执行
-                        deferred.reject();
-                        $location.path("/blog").replace();
+                        //$location.path("/blog").replace();
+                        //$state.go("/blog");
+                        alert ("5678");
                     }
-                    return deferred.promise;
+
                 }
             }
         })

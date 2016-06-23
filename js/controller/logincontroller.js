@@ -10,21 +10,22 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
 
     /**
      * 请求接口查询是否已经登陆
-     */
     var timestamp=Math.round(new Date().getTime()/1000);
     $.ajax({
-        url:'../../library/xwBE-0.0.1/php/check_loginstatus.php',
-        type:'POST',
+        url:'../../library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php',
+        type:'GET',
         data:{timing:timestamp},
         success: function (data){
             if(welcomejsonstring(data) == true){
                 //登陆了
-                $location.path("/#/main").replace();
+                $location.path("/main").replace();
             }else{
                 //没有登陆
             }
         }
     });
+     */
+
     /**
      * 提交登陆表单
      */
@@ -47,7 +48,7 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
                 alert ("登陆错误，请联系管理员");
             }
         })
-    }
+    };
 
     //qq登陆
     $scope.loginqq = function (){

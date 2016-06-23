@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fragments/logo/xiwu.ai" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/service/interceptor/ACCESS_LEVELS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/service/interceptor/Auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/service/checkStatus.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/service/recordCommit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/w5cValidation.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/homepagecontroller.js" afterPath="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/info_SettingController.js" afterPath="$PROJECT_DIR$/js/controller/info_SettingController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/logincontroller.js" afterPath="$PROJECT_DIR$/js/controller/logincontroller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/run.js" afterPath="$PROJECT_DIR$/js/run.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/service/interceptor/authority.js" afterPath="$PROJECT_DIR$/js/service/interceptor/authority.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" afterPath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/check_loginstatus.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,52 +42,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="authority.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/service/interceptor/authority.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/run.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+            <state relative-caret-position="173">
+              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepagecontroller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/homepagecontroller.js">
+      <file leaf-file-name="countLiveness.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/service/countLiveness.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="101">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homepage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkStatus.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/service/checkStatus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,28 +87,8 @@
       <file leaf-file-name="logincontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loginpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/service/interceptor/Auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="503">
+              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -146,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php" />
-        <option value="$PROJECT_DIR$/js/controller/mainpagecontroller.js" />
-        <option value="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
         <option value="$PROJECT_DIR$/js/controller/maincontroller.js" />
         <option value="$PROJECT_DIR$/mainpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php" />
@@ -179,7 +148,6 @@
         <option value="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" />
         <option value="$PROJECT_DIR$/js/w5cValidation.js" />
         <option value="$PROJECT_DIR$/css/all.css" />
-        <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
         <option value="$PROJECT_DIR$/js/controller/m_passwordController.js" />
         <option value="$PROJECT_DIR$/js/angular-validation-rule.js" />
         <option value="$PROJECT_DIR$/m_passwordpage.php" />
@@ -192,10 +160,14 @@
         <option value="$PROJECT_DIR$/js/service/interceptor/ACCESS_LEVELS.js" />
         <option value="$PROJECT_DIR$/js/service/interceptor/authority.js" />
         <option value="$PROJECT_DIR$/js/service/interceptor/Auth.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/run.js" />
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
+        <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
         <option value="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php" />
+        <option value="$PROJECT_DIR$/js/controller/logincontroller.js" />
+        <option value="$PROJECT_DIR$/js/service/checkStatus.js" />
         <option value="$PROJECT_DIR$/js/router.js" />
       </list>
     </option>
@@ -257,6 +229,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,7 +331,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
+              <option name="myItemId" value="Interface" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -380,28 +364,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interceptor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,18 +438,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,11 +479,11 @@
       <recent name="https://git.coding.net/milobluebell/xiwu2333.com.git" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\wamp\www\library\xwBE-0.0.1\Interface\checkStatus" />
       <recent name="E:\wamp\www\js" />
       <recent name="E:\wamp\www\js\directive\myRoom" />
       <recent name="E:\wamp\www\js\directive\useInvitationCode" />
       <recent name="E:\wamp\www\library\xwBE-0.0.1\interceptor" />
-      <recent name="E:\wamp\www\library\xwBE-0.0.1" />
     </key>
   </component>
   <component name="RunManager">
@@ -798,7 +748,8 @@
       <workItem from="1466478176972" duration="151000" />
       <workItem from="1466484206160" duration="44000" />
       <workItem from="1466495701332" duration="4093000" />
-      <workItem from="1466557420581" duration="16424000" />
+      <workItem from="1466557420581" duration="16968000" />
+      <workItem from="1466644699451" duration="19093000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -996,18 +947,25 @@
       <option name="project" value="LOCAL" />
       <updated>1466500204426</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="learn how to limit user's view , and added 3 logo images">
+      <created>1466585377029</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1466585377029</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="854584000" />
+    <option name="totallyTimeSpent" value="874221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1063,7 +1021,8 @@
     <MESSAGE value="about finished person.modal" />
     <MESSAGE value="About finish most form validation,but i think there must be a few bugs." />
     <MESSAGE value="add a interceptors to xiwu2333.com" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a interceptors to xiwu2333.com" />
+    <MESSAGE value="learn how to limit user's view , and added 3 logo images" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn how to limit user's view , and added 3 logo images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1072,35 +1031,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/homepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="87" column="172" selection-start-line="87" selection-start-column="84" selection-end-line="87" selection-end-column="172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadavatar_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/messages_zh.js" />
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/xiwucontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="107" selection-start-line="3" selection-start-column="107" selection-end-line="3" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/angular-validation-rule.js" />
     <entry file="file://$PROJECT_DIR$/js/w5cValidator.js" />
     <entry file="file://$PROJECT_DIR$/js/vendor/all.js">
@@ -1140,13 +1070,6 @@
       </provider>
     </entry>
     <entry file="file://E:/Site/bet/.git/index.lock" />
-    <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="212" column="17" selection-start-line="212" selection-start-column="17" selection-end-line="215" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/m_password_action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1368">
@@ -1217,13 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/countLiveness.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/FormValidationReg.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1271,43 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <marker date="1466560312977" expanded="true" signature="279:332" ph="SELECT avata... users" />
-            <marker date="1466560312977" expanded="true" signature="751:762" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="1206:1224" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="2061:2072" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="2130:4931" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="2153:4925" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="2587:4919" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="2917:4913" ph="..." />
-            <marker date="1466560312977" expanded="false" signature="2978:2993" ph="..." />
-            <marker date="1466560312977" expanded="false" signature="3160:3248" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="5264:5296" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="5435:5445" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="7264:7325" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="7345:7406" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="9080:9096" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="9191:9204" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="9633:9649" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="9708:9725" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="10156:10193" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="11117:11133" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="11322:11345" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="11381:11398" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="11697:11720" ph="..." />
-            <marker date="1466560312977" expanded="true" signature="11756:11773" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info_settingpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-          <folding>
-            <marker date="1466471214404" expanded="true" signature="1289:1327" ph="SELECT * FRO... users" />
-            <marker date="1466471214404" expanded="true" signature="8214:8266" ph="SELECT REGIO... region" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1319,61 +1198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/interceptor/ACCESS_LEVELS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/interceptor/authority.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/interceptor/Auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/pagination.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <marker date="1465173945319" expanded="true" signature="390:431" ph="SELECT aid F... articles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1381,7 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,7 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1397,7 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
           <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,15 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1421,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,6 +1244,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info_settingpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="205" column="177" selection-start-line="205" selection-start-column="168" selection-end-line="205" selection-end-column="177" />
+          <folding>
+            <marker date="1466471214404" expanded="true" signature="1289:1327" ph="SELECT * FRO... users" />
+            <marker date="1466471214404" expanded="true" signature="8214:8266" ph="SELECT REGIO... region" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/interceptor/ACCESS_LEVELS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="3" selection-start-line="3" selection-start-column="4" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/interceptor/Auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/interceptor/authority.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/recordCommit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1441,10 +1339,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/checkStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/countLiveness.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+        <state relative-caret-position="173">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
           <folding />
         </state>
       </provider>
