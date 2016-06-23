@@ -6,8 +6,10 @@ app.factory("checkStatus",['$http','$q',function($http, $q){
 
     return {
         //获取用户登录状态
-        checkLoginStatus : checkLoginStatus
+        checkLoginStatus : checkLoginStatus,
+        LoginStatus : ""
     };
+
 
 
     /**
@@ -17,7 +19,8 @@ app.factory("checkStatus",['$http','$q',function($http, $q){
 
             var deferred = $q.defer();
             var timestamp=Math.round(new Date().getTime()/1000);
-        var Reqdata="";
+            var Reqdata="";
+
             var promise = $http({
                 method: 'GET',
                 url: '../../library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php',
@@ -27,12 +30,15 @@ app.factory("checkStatus",['$http','$q',function($http, $q){
             }).error(function (reason){
                 deferred.reject(reason);
                 alert ("登陆状态检测失败，请联系管理员");
-            }).then(function (httpCont){
-                Reqdata = httpCont;
-                console.log(Reqdata.data.statuscode);
             });
-            return Reqdata;
-        }
+
+            promise.then(function (httpCont){
+                    Reqdata = httpCont.data.statuscode;
+                    this.LoginStatus = Reqdata;
+                    console.log(Reqdata);
+                    return Reqdata;
+                });
+            }
 
 
 

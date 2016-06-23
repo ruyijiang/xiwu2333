@@ -40,9 +40,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             resolve:{
                 guarder: function($q,$location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
-
-                    console.log(allowed);
-
+                    console.log(checkStatus.LoginStatus);
                     if(allowed==1){
                         //允许访问时执行
                         //$location.path("/signup").replace();
@@ -54,7 +52,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                         //$state.go("/blog");
                         alert ("5678");
                     }
-
                 }
             }
         })
