@@ -38,7 +38,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/myhome",
             templateUrl: "personpage.php",
             resolve:{
-                guarder: function($q,$location,checkStatus,$state){
+                guarder: function($q,$location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
 
                     console.log(allowed);
