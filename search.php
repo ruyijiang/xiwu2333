@@ -23,11 +23,11 @@ include("library/xwFE-0.0.1/FEM.php");
     <div class="row">
         <div class="boat clear-fix">
             <div class="row">
-                <div class="col-lg-3 col-md-3" style="margin-left:25px">
-                    <img class="center-block" width="162px" height="54px"/>
+                <div class="col-lg-3 col-md-3" style="">
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="col-lg-12">
+                        <img src="img/fragments/logo/xiwu_circle_blue.png" class="center-block" height="54" width="54" style="float:left;margin-right:20px;margin-top:-10px"/>
                         <form class="form-group" ng-submit="searchInPage()">
                             <div class="input-group-container">
                                 <div class="input-group">
