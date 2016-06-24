@@ -45,7 +45,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("myhome", {
             url: "/myhome",
-            templateUrl: "personpage.php",
+            templateUrl: "personpage.php"
         })
         .state("myhomeWithPulse",{
             params: {'tab': null},

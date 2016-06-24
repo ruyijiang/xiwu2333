@@ -6,7 +6,9 @@ app.factory("checkStatus",['$http','$q',function($http, $q){
 
     return {
         //获取用户登录状态
-        checkLoginStatus : AccordingToLoginStatus
+        checkLoginStatus : checkLoginStatus
+        //检测当前页面所有权
+
     };
 
 
@@ -14,7 +16,7 @@ app.factory("checkStatus",['$http','$q',function($http, $q){
     /**
      * 获取用户登录状态
      */
-    function AccordingToLoginStatus(){
+    function checkLoginStatus(){
 
         var deferred = $q.defer();
         var timestamp=Math.round(new Date().getTime()/1000);
