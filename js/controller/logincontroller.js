@@ -1,6 +1,6 @@
 app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$location){
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
-
+    
     $rootScope.MainPageActivity = $rootScope.SignupAcivity = $rootScope.UserListActivity = $rootScope.RoomListActivity = 0;
     $rootScope.LoginActivity = 1;
 

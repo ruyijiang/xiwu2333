@@ -26,7 +26,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
-
                         if(allowed=="1") $state.go("main");
                     });
                 }
