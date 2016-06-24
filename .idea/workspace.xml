@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="finish interceptor demo,add hot">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/fragments/logo/xiwu.ai" afterPath="" />
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/hotSearch_Export.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/service/checkStatus.js" afterPath="$PROJECT_DIR$/js/service/checkStatus.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/HotSearch.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/hotSearch_Export.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,12 +59,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotBlog_Export.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php">
+      <file leaf-file-name="HotSearching_Export.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="243">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+              <folding>
+                <marker date="1466759407247" expanded="true" signature="309:373" ph="SELECT seari... searching" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +74,7 @@
       <file leaf-file-name="personpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/personpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="24">
               <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
               <folding />
             </state>
@@ -114,8 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
-        <option value="$PROJECT_DIR$/js/utill/htmldecode.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" />
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/writeblogpage.php" />
@@ -163,8 +162,10 @@
         <option value="$PROJECT_DIR$/js/service/checkStatus.js" />
         <option value="$PROJECT_DIR$/js/router.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/HotSearch.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearch_Export.php" />
         <option value="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearch_Export.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php" />
       </list>
     </option>
   </component>
@@ -761,7 +762,7 @@
       <workItem from="1466738847086" duration="4669000" />
       <workItem from="1466747110121" duration="4473000" />
       <workItem from="1466751626020" duration="6224000" />
-      <workItem from="1466758320117" duration="31000" />
+      <workItem from="1466758320117" duration="1112000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -987,11 +988,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466755143069</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="finish interceptor demo,add hotSearch_Export.php">
+      <created>1466758379438</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1466758379438</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="897807000" />
+    <option name="totallyTimeSpent" value="898888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1058,7 +1066,8 @@
     <MESSAGE value="checkLogin_status to limit modals,but haven't finish yet" />
     <MESSAGE value="finish frontEnd limitation.in login.modal" />
     <MESSAGE value="fuck you...." />
-    <option name="LAST_COMMIT_MESSAGE" value="fuck you...." />
+    <MESSAGE value="finish interceptor demo,add hotSearch_Export.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish interceptor demo,add hotSearch_Export.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1067,28 +1076,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/Site/bet/.git/index.lock" />
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/m_password_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="249" column="19" selection-start-line="249" selection-start-column="19" selection-end-line="249" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/m_passwordController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/m_passwordpage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -1290,6 +1277,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="46" column="189" selection-start-line="46" selection-start-column="189" selection-end-line="46" selection-end-column="189" />
+          <folding>
+            <marker date="1466151511590" expanded="true" signature="453:494" ph="SELECT * FRO... articles" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,6 +1301,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,6 +1346,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,17 +1358,53 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/HotSearching.php" />
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/EchartData_Export.php">
+    <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="72">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearch_Export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="144">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17531">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <marker date="1464856582424" expanded="true" signature="9197:9243" ph="SELECT * FRO... users" />
+            <marker date="1464856582424" expanded="true" signature="10597:10791" ph="UPDATE users... " />
+            <marker date="1464856582424" expanded="true" signature="14771:14825" ph="SELECT `uid`... users" />
+            <marker date="1464856582424" expanded="true" signature="16045:16126" ph="SELECT regti... users" />
+            <marker date="1464856582424" expanded="true" signature="17555:17821" ph="INSERT INTO `xiwu2333.com`.`users`... " />
+            <marker date="1464856582424" expanded="true" signature="20507:20607" ph="UPDATE users... " />
+            <marker date="1464856582424" expanded="true" signature="21831:21881" ph="UPDATE users... " />
+            <marker date="1464856582424" expanded="true" signature="22715:22767" ph="UPDATE users... " />
+            <marker date="1464856582424" expanded="true" signature="23862:23912" ph="SELECT COUNT... users" />
+            <marker date="1464856582424" expanded="true" signature="24203:24253" ph="SELECT COUNT... users" />
+            <marker date="1464856582424" expanded="true" signature="24886:24964" ph="select count... users" />
+            <marker date="1464856582424" expanded="true" signature="25359:25426" ph="SELECT uid F... users" />
+            <marker date="1464856582424" expanded="true" signature="28301:28369" ph="SELECT l_val... liveness" />
+            <marker date="1464856582424" expanded="true" signature="28630:28712" ph="UPDATE liven... " />
+            <marker date="1464856582424" expanded="true" signature="29344:29444" ph="INSERT INTO liveness... " />
+            <marker date="1464856582424" expanded="true" signature="30556:30672" ph="select time,... " />
+            <marker date="1464856582424" expanded="true" signature="30964:31062" ph="SELECT l_val... liveness" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1390,27 +1418,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/EchartData_Export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/liveness_export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/personalinfo_export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="46" selection-end-column="22" />
+          <folding>
+            <marker date="1464224882377" expanded="true" signature="351:414" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/personpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="24">
           <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="243">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <marker date="1466759407247" expanded="true" signature="309:373" ph="SELECT seari... searching" />
+          </folding>
         </state>
       </provider>
     </entry>
