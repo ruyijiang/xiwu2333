@@ -20,7 +20,17 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("login", {
             url: "/login",
-            templateUrl: "loginpage.php"
+            templateUrl: "loginpage.php",
+            resolve:{
+                guarder: function($q,$location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+
+                        if(allowed=="1") $state.go("main");
+                    });
+                }
+            }
         })
         .state("signup", {
             url: "/signup",
@@ -37,23 +47,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state("myhome", {
             url: "/myhome",
             templateUrl: "personpage.php",
-            resolve:{
-                guarder: function($q,$location,checkStatus){
-                    var allowed = checkStatus.checkLoginStatus();
-                    console.log(checkStatus.LoginStatus);
-                    if(allowed==1){
-                        //允许访问时执行
-                        //$location.path("/signup").replace();
-                        //$state.go("/signup");
-                        alert ("1234");
-                    }else{
-                        //不允许访问时执行
-                        //$location.path("/blog").replace();
-                        //$state.go("/blog");
-                        alert ("5678");
-                    }
-                }
-            }
         })
         .state("myhomeWithPulse",{
             params: {'tab': null},

@@ -32,12 +32,8 @@ app.factory("checkStatus",['$http','$q',function($http, $q){
                 alert ("登陆状态检测失败，请联系管理员");
             });
 
-            promise.then(function (httpCont){
-                    Reqdata = httpCont.data.statuscode;
-                    this.LoginStatus = Reqdata;
-                    console.log(Reqdata);
-                    return Reqdata;
-                });
+            promise
+            return deferred.promise;
             }
 
 
