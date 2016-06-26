@@ -10,7 +10,6 @@ require("../all.php");
 ?>
 <?php
 //流程:
-    $uid = $_SESSION["uid"];
     @$con = $_GET["content"];
     @$pri = $_GET["priority"];
 
@@ -21,6 +20,8 @@ require("../all.php");
     if($pri!=='competition'&&$pri!=='article') $pri='user';//当priority不是三者之一的时候，默认为user
 
     if($con){
+
+
         if($pri == "user"){
             //查询用户
 
@@ -49,6 +50,7 @@ require("../all.php");
 
                     $dataArr = urldecode ( json_encode ( $dataArr ));
                     echo $dataArr;
+                    insertIntoDatabase($con);
                 }
                 //----------------------------------------------------------------------------------------------------->出口1：搜索的是用户，且通过uid
             }else{
@@ -77,6 +79,7 @@ require("../all.php");
 
                         $dataArr = urldecode ( json_encode ( $dataArr ));
                         echo $dataArr;
+                        insertIntoDatabase($con);
                     }
                     //------------------------------------------------------------------------------------------------->出口2：搜索的是用户，且通过name
                 }else{
@@ -105,6 +108,7 @@ require("../all.php");
 
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
+                            insertIntoDatabase($con);
                         }
                         //--------------------------------------------------------------------------------------------->出口3：是在通过name搜索用户名，但是模糊搜索
                     }else{
@@ -133,6 +137,7 @@ require("../all.php");
 
                                 $dataArr = urldecode(json_encode($dataArr));
                                 echo $dataArr;
+                                insertIntoDatabase($con);
                             }
                             //----------------------------------------------------------------------------------------->出口4：是在通过slogan搜索用户名
                         }else{
@@ -161,6 +166,7 @@ require("../all.php");
 
                                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                                     echo $dataArr;
+                                    insertIntoDatabase($con);
                                     //--------------------------------------------------------------------------------->出口5：是在通过slogan搜索用户名，但是模糊搜索
                                 }
                             }else{
@@ -200,6 +206,7 @@ require("../all.php");
 
                     $dataArr = urldecode ( json_encode ( $dataArr ));
                     echo $dataArr;
+                    insertIntoDatabase($con);
                 }
             }else{
                 $sql = "SELECT * FROM articles WHERE title LIKE '%$con%' ";
@@ -226,6 +233,7 @@ require("../all.php");
 
                         $dataArr = urldecode ( json_encode ( $dataArr )).",";
                         echo $dataArr;
+                        insertIntoDatabase($con);
                     }
                 }else{
                     $sql = "SELECT * FROM articles WHERE content LIKE '%$con%' ";
@@ -252,6 +260,7 @@ require("../all.php");
 
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
+                            insertIntoDatabase($con);
                         }
                     }else{
                         $status = 0;
@@ -269,6 +278,49 @@ require("../all.php");
         $status = 0;
         $reminder = "没有结果competition";
         echo $a->normalrespond($status,$reminder);
+    }
+
+
+
+    /**把搜索内容写入数据库**/
+    function insertIntoDatabase($content){
+        require("../connectDB.php");
+
+        $a = new _environment();
+        $tnow = $a->getTime();
+        $b = new interfaceResponse();
+
+        /**先检测该关键词是否已经存在于数据库了**/
+        $sql = "SELECT times,searid FROM searchings WHERE content='$content'";
+        $qry = $db->query($sql);
+        $row_all = mysqli_num_rows($qry);
+        if($row_all>0){
+            //content已经在数据库里存在了 -> 执行Update
+            $row = $qry->fetch_assoc();
+            $Otimes = (int)$row["times"];
+            $Osearid = $row["searid"];
+            $Otimes += 1;
+            $sql2 = "UPDATE searchings SET times = '$Otimes' WHERE searid = '$Osearid' ";
+            $qry2 = $db->query($sql2);
+            if($qry2){
+                //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕
+                return true;
+            }else{
+                //----------------------------------------------------------------------------------------------------->出口2，更新搜索数据库失败
+                return false;
+            }
+        }else{
+            //content没在数据库里存在 -> 执行Insert
+            $sql2 = "INSERT INTO searchings(searid,content,times,regtime,remark) VALUES ('','$content','1','$tnow','none')";
+            $qry2 = $db->query($sql2);
+            if($qry2){
+                //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕
+                return true;
+            }else{
+                //----------------------------------------------------------------------------------------------------->出口2，更新搜索数据库失败
+                return false;
+            }
+        }
     }
 
 ?>
