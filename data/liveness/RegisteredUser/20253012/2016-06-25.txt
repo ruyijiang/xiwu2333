@@ -1,0 +1,11 @@
+['Time':2016-06-25 08:45:10,'Commit:'onlineDuration]{}
+['Time':2016-06-25 08:45:19,'Commit:'onlineDuration]{35}
+['Time':2016-06-25 08:54:17,'Commit:'onlineDuration]{770}
+['Time':2016-06-25 09:00:54,'Commit:'onlineDuration]{385}
+['Time':2016-06-25 12:18:52,'Commit:'onlineDuration]{318.5}
+['Time':2016-06-25 12:22:00,'Commit:'onlineDuration]{136.5}
+['Time':2016-06-25 12:33:51,'Commit:'onlineDuration]{500.5}
+['Time':2016-06-25 20:18:43,'Commit:'onlineDuration]{3269}
+['Time':2016-06-25 20:59:05,'Commit:'onlineDuration]{}
+['Time':2016-06-25 20:59:14,'Commit:'onlineDuration]{}
+['Time':2016-06-25 21:16:34,'Commit:'onlineDuration]{1071}

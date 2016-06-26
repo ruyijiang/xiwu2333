@@ -1,7 +1,7 @@
 /**
  * Created by mazih on 2016/5/10.
  */
-app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $timeout, liveness, search){
+app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $timeout, liveness, search, $q){
     $scope.PageTitle = null;
     $scope.PageTitle = $location.path();
     $scope.PageTitle = $scope.PageTitle.substr(1);
@@ -127,7 +127,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
         }
     };
 
-    function checkPageLocation(){
+    /*function checkPageLocation(){
         var pagelocation = $location.path();
         switch (pagelocation){
             case "/info_setting":
@@ -147,7 +147,27 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
                 break;
         }
     }
-    checkPageLocation();
+    checkPageLocation();*/
+
+    /**
+     * 获取热门搜索
+     */
+    function gotHotSearching(){
+        var deferred = $q.defer();
+
+        $http({
+            method: 'GET',
+            url: 'library/xwBE-0.0.1/php/HotSearching_Export.php',
+            params:{'timing':timing}
+        }).success(function (data){
+            deferred.resolve();
+        }).error(function (){
+            deferred.reject();
+        }).then(function (httpCont){
+            $scope.HotSearchingContent = httpCont.data.content
+        });
+    };
+    gotHotSearching();
 
 
 });

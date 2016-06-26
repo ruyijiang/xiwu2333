@@ -11,21 +11,21 @@ require("../all.php");
 <?php
     $timing = $_GET["timing"];
 
-    $uid = $_SESSION["uid"];
 
     $a = new interfaceResponse();
     $status = $reminder = "";
 
     if($timing){
 
-        $sql = "SELECT searid,content FROM searching ORDER BY time ASC LIMIT 0,1";
+        $sql = "SELECT searid,content,times FROM searchings ORDER BY times DESC LIMIT 0,1";
         $qry = $db->query($sql);
-        $row = $qry->fetch_assoc($qry);
+        $row = $qry->fetch_assoc();
         $result_searid = $row["searid"];
         $result_content = $row["content"];
+        $result_times = $row["times"];
 
         $status = 1;
-        $dataArr = array ('statuscode'=>$status,'searid'=>$result_searid,'content'=>$result_content);
+        $dataArr = array ('statuscode'=>$status,'searid'=>$result_searid,'content'=>$result_content,'times'=>$result_times);
 
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value);

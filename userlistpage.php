@@ -37,7 +37,7 @@ include("library/xwFE-0.0.1/FEM.php");
               </ul>
             <ul class="nav nav-sidebar">
                 <li class="panel-heading">按擅长英雄：</li>
-                <button class="btn btn-primary">选择英雄</button>
+                <button class="btn btn-primary" ng-click="tellmemore()">选择英雄</button>
             </ul>
         </div>
         <div>

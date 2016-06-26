@@ -1,4 +1,4 @@
-app.controller('userlistController',function ($scope,$rootScope){
+app.controller('userlistController',function ($scope,$rootScope,$http){
 
     /*****初始化******/
     $scope.userListDataArr = [];
@@ -10,6 +10,7 @@ app.controller('userlistController',function ($scope,$rootScope){
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);
     /******************/
+
 
 
     /**
