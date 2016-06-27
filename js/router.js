@@ -45,7 +45,18 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("myhome", {
             url: "/myhome",
-            templateUrl: "personpage.php"
+            templateUrl: "personpage.php",
+            //如果用户没有登陆，是不允许访问myhome路由的，需要跳转到person路由
+            resolve:{
+                guarder: function($location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        console.log(allowed);
+                        if(allowed!=="1") $location.url("/person?uid=random")
+                    });
+                }
+            }
         })
         .state("myhomeWithPulse",{
             params: {'tab': null},

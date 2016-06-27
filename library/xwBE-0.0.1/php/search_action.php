@@ -311,7 +311,7 @@ require("../all.php");
             }
         }else{
             //content没在数据库里存在 -> 执行Insert
-            $sql2 = "INSERT INTO searchings(searid,content,times,regtime,remark) VALUES ('','$content','1','$tnow','none')";
+            $sql2 = "INSERT INTO searchings VALUES ('','$content','1','$tnow','none')";
             $qry2 = $db->query($sql2);
             if($qry2){
                 //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕

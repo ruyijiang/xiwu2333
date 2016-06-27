@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout){
+app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http){
 
 
     $scope.TabShowPage = 1;//当前TabIndex值
@@ -58,11 +58,18 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     function _loadUserData(uid){
         //判断url里是否有tab。如果有，则请求对应tab的请求；如果没有，则请求默认的pulse数据
         uid==undefined?uid=$location.search()["uid"]:uid;
+
+        var gender = "";
+        if(uid == "random"){
+            gender = $location.search()["gender"];
+            if(gender !== "male" && gender !== "female") gender = "random";
+        }
+
         $.ajax({
             url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
             type:'GET',
             async: false,
-            data:{"uid":uid},
+            data:{"uid":uid,"gender":gender},//这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
             success: function (data){
                 data = eval( "(" + data + ")");
                 var SArr = data.server.split(',');//SArr = [1,2,3,];
@@ -296,26 +303,17 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         // 使用刚指定的配置项和数据显示图表。
     };
 
-
+    /**
+     * 检测是否是用户自己的页面
+     */
     $scope.UidEqu = false;
+    checkStatus.checkIsMeOrNot().then(function (httpCont){
+        var qUid = $location.search()["uid"];
+        if(!qUid) qUid=$scope.UserData.uid;
+        httpCont==qUid?$scope.UidEqu = true:$scope.UidEqu = false;
+    });
 
-    $scope.checkIsMeOrNot = function (){
 
-        timing = Math.round(new Date().getTime()/1000);
-
-        $.ajax({
-            url:"../../library/xwBE-0.0.1/php/checkUidEqu.php",
-            type:'GET',
-            async: false,
-            data:{"timing":timing},
-            success: function (data){
-                var qUid = $location.search()["uid"];
-                if(!qUid) qUid=$scope.UserData.uid;
-                data==$scope.UserData.uid?$scope.UidEqu = true:$scope.UidEqu = false;
-            }
-        });
-
-    };
 
 
     //视图初始化
@@ -324,7 +322,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     _loadUserLiveness();
     $scope.loadEchart();
     $rootScope.navactivitify(1);
-    $scope.checkIsMeOrNot();
     $scope.dialog={
         open: false,
         content : ""

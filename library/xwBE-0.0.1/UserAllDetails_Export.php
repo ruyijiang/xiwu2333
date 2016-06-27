@@ -12,11 +12,29 @@ require("all.php");
 
     $status = $reminder = "";
     @$RequestUid = $_GET["uid"];
+    $RequestGender = $_GET["gender"];
 
     if(!isset($RequestUid) || empty($RequestUid)){//请求的是自己
         $RequestUid = $_SESSION["uid"];
     }//否则请求的是别人
-    $sql = "SELECT * FROM users WHERE uid='$RequestUid' ";
+
+
+    if($RequestUid == "random"){//随机uid
+        //以下逻辑均在Uid = random情况下运行
+        /*$sql = "SELECT * FROM `table` AS t1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM `table`) – (SELECT MIN(id) FROM `table`)) + (SELECT MIN(id) FROM `table`)) AS id) AS t2 WHERE t1.id >= t2.id ORDER BY t1.id LIMIT 1";*/
+        if($RequestGender == "female" || $RequestGender == "woman" || $RequestGender == "women"){
+            $RequestGender = 1;
+            $sql = "SELECT * FROM users WHERE uid = '$RequestUid' AND gender = '$RequestGender' ";
+        }else if($RequestGender == "male" || $RequestGender == "man" || $RequestGender == "men"){
+            $RequestGender = 0;
+            $sql = "SELECT * FROM users WHERE uid = '$RequestUid' AND gender = '$RequestGender' ";
+        }else{
+            $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ";
+        }
+    }else{//指定uid
+        $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ";
+    }
+
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
     if($qry){

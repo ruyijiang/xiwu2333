@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/logincontroller.js" afterPath="$PROJECT_DIR$/js/controller/logincontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/signupcontroller.js" afterPath="$PROJECT_DIR$/js/controller/signupcontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/xiwucontroller.js" afterPath="$PROJECT_DIR$/js/controller/xiwucontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" afterPath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/service/checkStatus.js" afterPath="$PROJECT_DIR$/js/service/checkStatus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,74 +39,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="xiwucontroller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/xiwucontroller.js">
+      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
-              <folding>
-                <marker date="1466998022822" expanded="true" signature="2218:2261" ph="..." />
-                <marker date="1466998022822" expanded="true" signature="2327:2381" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signupcontroller.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/controller/signupcontroller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+            <state relative-caret-position="-129">
+              <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FEM.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
+      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="28" column="1527" selection-start-line="28" selection-start-column="1527" selection-end-line="28" selection-end-column="1527" />
+            <state relative-caret-position="105">
+              <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
-                <marker date="1466998252624" expanded="true" signature="279:332" ph="SELECT avata... users" />
-                <marker date="1466998252624" expanded="true" signature="751:762" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="1206:1224" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="1279:1334" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="1785:1800" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="1987:2075" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="2537:2548" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="2606:5532" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="2629:5526" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="3038:3087" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="3168:5520" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="3498:5514" ph="..." />
-                <marker date="1466998252624" expanded="false" signature="3559:3574" ph="..." />
-                <marker date="1466998252624" expanded="false" signature="3761:3849" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="5865:5897" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="6036:6046" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="7865:7926" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="7946:8007" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="9681:9697" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="9792:9805" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="10234:10250" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="10309:10326" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="10757:10794" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="11718:11734" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="11923:11946" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="11982:11999" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="12298:12321" ph="..." />
-                <marker date="1466998252624" expanded="true" signature="12357:12374" ph="..." />
+                <marker date="1467016875089" expanded="true" signature="453:662" ph="SELECT * FRO... table" />
+                <marker date="1467016875089" expanded="true" signature="487:611" ph="SELECT ROUND... " />
+                <marker date="1467016875089" expanded="true" signature="511:538" ph="SELECT MAX(i... table" />
+                <marker date="1467016875089" expanded="true" signature="576:603" ph="SELECT MIN(i... table" />
+                <marker date="1467016875089" expanded="true" signature="817:892" ph="SELECT * FRO... users" />
+                <marker date="1467016875089" expanded="true" signature="1046:1121" ph="SELECT * FRO... users" />
+                <marker date="1467016875089" expanded="true" signature="1160:1205" ph="SELECT * FRO... users" />
+                <marker date="1467016875089" expanded="true" signature="1253:1298" ph="SELECT * FRO... users" />
+                <marker date="1467016875089" expanded="true" signature="1750:1820" ph="SELECT conte... callingcard" />
+                <marker date="1467016875089" expanded="true" signature="2570:2616" ph="SELECT name,... rooms" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logincontroller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
+      <file leaf-file-name="checkStatus.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/service/checkStatus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="173">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="29" column="152" selection-start-line="29" selection-start-column="152" selection-end-line="29" selection-end-column="152" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_action.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="301" column="25" selection-start-line="301" selection-start-column="25" selection-end-line="301" selection-end-column="25" />
+              <folding>
+                <marker date="1467017841901" expanded="true" signature="457:495" ph="SELECT * FRO... users" />
+                <marker date="1467017841901" expanded="true" signature="1016:1067" ph="SELECT conte... callingcard" />
+                <marker date="1467017841901" expanded="true" signature="1922:1961" ph="SELECT * FRO... users" />
+                <marker date="1467017841901" expanded="true" signature="2525:2576" ph="SELECT conte... callingcard" />
+                <marker date="1467017841901" expanded="true" signature="3484:3528" ph="select * fro... users" />
+                <marker date="1467017841901" expanded="true" signature="4140:4190" ph="SELECT conte... callingcard" />
+                <marker date="1467017841901" expanded="true" signature="5160:5201" ph="select * fro... users" />
+                <marker date="1467017841901" expanded="true" signature="5862:5913" ph="SELECT conte... callingcard" />
+                <marker date="1467017841901" expanded="true" signature="6937:6983" ph="select * fro... users" />
+                <marker date="1467017841901" expanded="true" signature="7691:7742" ph="SELECT conte... callingcard" />
+                <marker date="1467017841901" expanded="true" signature="9285:9328" ph="SELECT * FRO... articles" />
+                <marker date="1467017841901" expanded="true" signature="9751:9796" ph="SELECT name users" />
+                <marker date="1467017841901" expanded="true" signature="10548:10596" ph="SELECT * FRO... articles" />
+                <marker date="1467017841901" expanded="true" signature="11059:11104" ph="SELECT name users" />
+                <marker date="1467017841901" expanded="true" signature="11912:11962" ph="SELECT * FRO... articles" />
+                <marker date="1467017841901" expanded="true" signature="12465:12510" ph="SELECT name users" />
+                <marker date="1467017841901" expanded="true" signature="14167:14227" ph="SELECT times... searchings" />
+                <marker date="1467017841901" expanded="true" signature="14541:14606" ph="UPDATE searc... " />
+                <marker date="1467017841901" expanded="true" signature="15110:15174" ph="INSERT INTO searchings... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +158,6 @@
         <option value="$PROJECT_DIR$/js/utill/welcomejsonstring.js" />
         <option value="$PROJECT_DIR$/js/controller/searchController.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/article_export.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" />
         <option value="$PROJECT_DIR$/homepage.php" />
         <option value="$PROJECT_DIR$/blogpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/checkUidEqu.php" />
@@ -163,14 +182,11 @@
         <option value="$PROJECT_DIR$/js/service/interceptor/authority.js" />
         <option value="$PROJECT_DIR$/js/service/interceptor/Auth.js" />
         <option value="$PROJECT_DIR$/js/run.js" />
-        <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
         <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
         <option value="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php" />
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/js/service/redirectsAccordingToStatus.js" />
-        <option value="$PROJECT_DIR$/js/service/checkStatus.js" />
-        <option value="$PROJECT_DIR$/js/router.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/HotSearch.php" />
         <option value="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php" />
@@ -178,13 +194,17 @@
         <option value="$PROJECT_DIR$/userlistpage.php" />
         <option value="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
         <option value="$PROJECT_DIR$/js/controller/certificationController.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/controller/xiwucontroller.js" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
         <option value="$PROJECT_DIR$/js/controller/logincontroller.js" />
         <option value="$PROJECT_DIR$/js/controller/signupcontroller.js" />
+        <option value="$PROJECT_DIR$/js/service/checkStatus.js" />
+        <option value="$PROJECT_DIR$/js/router.js" />
+        <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
       </list>
     </option>
   </component>
@@ -699,7 +719,7 @@
       <workItem from="1466950077593" duration="4242000" />
       <workItem from="1466988256389" duration="1377000" />
       <workItem from="1466994056024" duration="57000" />
-      <workItem from="1466996050338" duration="2190000" />
+      <workItem from="1466996050338" duration="16553000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -932,11 +952,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466758379438</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="finish navacticitify func">
+      <created>1466998362333</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1466998362333</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="918367000" />
+    <option name="totallyTimeSpent" value="932730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1004,7 +1031,8 @@
     <MESSAGE value="finish frontEnd limitation.in login.modal" />
     <MESSAGE value="fuck you...." />
     <MESSAGE value="finish interceptor demo,add hotSearch_Export.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish interceptor demo,add hotSearch_Export.php" />
+    <MESSAGE value="finish navacticitify func" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish navacticitify func" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1013,13 +1041,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/liveness/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bin/apache/apache2.4.9/conf/httpd.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1111,21 +1132,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/service/recordCommit.js" />
-    <entry file="file://$PROJECT_DIR$/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="29" column="152" selection-start-line="29" selection-start-column="152" selection-end-line="29" selection-end-column="152" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/service/countLiveness.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -1219,20 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/service/interceptor/authority.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -1251,20 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/checkStatus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1296,13 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="307" column="18" selection-start-line="307" selection-start-column="18" selection-end-line="307" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -1327,29 +1299,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/xiwucontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
-          <folding>
-            <marker date="1466998022822" expanded="true" signature="2218:2261" ph="..." />
-            <marker date="1466998022822" expanded="true" signature="2327:2381" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="1527" selection-start-line="28" selection-start-column="1527" selection-end-line="28" selection-end-column="1527" />
+        <state relative-caret-position="840">
+          <caret line="28" column="847" selection-start-line="28" selection-start-column="847" selection-end-line="28" selection-end-column="847" />
           <folding>
             <marker date="1466998252624" expanded="true" signature="279:332" ph="SELECT avata... users" />
             <marker date="1466998252624" expanded="true" signature="751:762" ph="..." />
@@ -1383,10 +1336,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/signupcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
-          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/xiwucontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+          <folding>
+            <marker date="1466998022822" expanded="true" signature="2218:2261" ph="..." />
+            <marker date="1466998022822" expanded="true" signature="2327:2381" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="29" column="152" selection-start-line="29" selection-start-column="152" selection-end-line="29" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/checkStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="301" column="25" selection-start-line="301" selection-start-column="25" selection-end-line="301" selection-end-column="25" />
+          <folding>
+            <marker date="1467017841901" expanded="true" signature="457:495" ph="SELECT * FRO... users" />
+            <marker date="1467017841901" expanded="true" signature="1016:1067" ph="SELECT conte... callingcard" />
+            <marker date="1467017841901" expanded="true" signature="1922:1961" ph="SELECT * FRO... users" />
+            <marker date="1467017841901" expanded="true" signature="2525:2576" ph="SELECT conte... callingcard" />
+            <marker date="1467017841901" expanded="true" signature="3484:3528" ph="select * fro... users" />
+            <marker date="1467017841901" expanded="true" signature="4140:4190" ph="SELECT conte... callingcard" />
+            <marker date="1467017841901" expanded="true" signature="5160:5201" ph="select * fro... users" />
+            <marker date="1467017841901" expanded="true" signature="5862:5913" ph="SELECT conte... callingcard" />
+            <marker date="1467017841901" expanded="true" signature="6937:6983" ph="select * fro... users" />
+            <marker date="1467017841901" expanded="true" signature="7691:7742" ph="SELECT conte... callingcard" />
+            <marker date="1467017841901" expanded="true" signature="9285:9328" ph="SELECT * FRO... articles" />
+            <marker date="1467017841901" expanded="true" signature="9751:9796" ph="SELECT name users" />
+            <marker date="1467017841901" expanded="true" signature="10548:10596" ph="SELECT * FRO... articles" />
+            <marker date="1467017841901" expanded="true" signature="11059:11104" ph="SELECT name users" />
+            <marker date="1467017841901" expanded="true" signature="11912:11962" ph="SELECT * FRO... articles" />
+            <marker date="1467017841901" expanded="true" signature="12465:12510" ph="SELECT name users" />
+            <marker date="1467017841901" expanded="true" signature="14167:14227" ph="SELECT times... searchings" />
+            <marker date="1467017841901" expanded="true" signature="14541:14606" ph="UPDATE searc... " />
+            <marker date="1467017841901" expanded="true" signature="15110:15174" ph="INSERT INTO searchings... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <marker date="1467016875089" expanded="true" signature="453:662" ph="SELECT * FRO... table" />
+            <marker date="1467016875089" expanded="true" signature="487:611" ph="SELECT ROUND... " />
+            <marker date="1467016875089" expanded="true" signature="511:538" ph="SELECT MAX(i... table" />
+            <marker date="1467016875089" expanded="true" signature="576:603" ph="SELECT MIN(i... table" />
+            <marker date="1467016875089" expanded="true" signature="817:892" ph="SELECT * FRO... users" />
+            <marker date="1467016875089" expanded="true" signature="1046:1121" ph="SELECT * FRO... users" />
+            <marker date="1467016875089" expanded="true" signature="1160:1205" ph="SELECT * FRO... users" />
+            <marker date="1467016875089" expanded="true" signature="1253:1298" ph="SELECT * FRO... users" />
+            <marker date="1467016875089" expanded="true" signature="1750:1820" ph="SELECT conte... callingcard" />
+            <marker date="1467016875089" expanded="true" signature="2570:2616" ph="SELECT name,... rooms" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
           <folding />
         </state>
       </provider>
