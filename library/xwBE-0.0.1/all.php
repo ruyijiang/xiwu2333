@@ -728,8 +728,8 @@ class liveness{
                 $result_highest += $row2["l_value"];//最高
                 $_counth++;
             }
-            $result_highest_ave = (float)$result_highest/$_counth;
-            $liveness_rate = (float)$liveness/$result_highest_ave;//活跃度输出数据
+            @$result_highest_ave = (float)$result_highest/$_counth;
+            @$liveness_rate = (float)$liveness/$result_highest_ave;//活跃度输出数据
 
 
             //对取回的数据进行处理

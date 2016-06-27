@@ -13,7 +13,7 @@ require("../all.php");
 
 $timing = $_POST["timing"];
 $mod = $_POST["mod"];
-$uid = $_SESSION["uid"];
+@$uid = $_SESSION["uid"];
 $a = new interfaceResponse();
 
 if($timing && isset($mod)){

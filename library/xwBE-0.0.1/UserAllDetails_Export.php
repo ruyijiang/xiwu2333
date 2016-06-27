@@ -14,12 +14,16 @@ require("all.php");
     @$RequestUid = $_GET["uid"];
     $RequestGender = $_GET["gender"];
 
+    $SessionStatus = false;
     if(!isset($RequestUid) || empty($RequestUid)){//请求的是自己
-        $RequestUid = $_SESSION["uid"];
+        if(!empty($_SESSION["uid"])){
+            $SessionStatus = true;
+            $RequestUid = $_SESSION["uid"];
+        }else $SessionStatus = false;
     }//否则请求的是别人
 
 
-    if($RequestUid == "random"){//随机uid
+    if($RequestUid == "random" || !$RequestUid){//随机uid
         //以下逻辑均在Uid = random情况下运行
         /*$sql = "SELECT * FROM `table` AS t1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM `table`) – (SELECT MIN(id) FROM `table`)) + (SELECT MIN(id) FROM `table`)) AS id) AS t2 WHERE t1.id >= t2.id ORDER BY t1.id LIMIT 1";*/
         if($RequestGender == "female" || $RequestGender == "woman" || $RequestGender == "women"){
@@ -69,7 +73,7 @@ require("all.php");
 
         $sql3 = "SELECT name,bg_img FROM rooms WHERE creator = $RequestUid ";
         $qry3 = $db->query($sql3);
-        $row3 = $qry3->fetch_assoc();
+        @$row3 = $qry3->fetch_assoc();
         $result_roomimg = $row3["bg_img"];//房间背景图
         $result_roomname = $row3["name"];//房间名称
 

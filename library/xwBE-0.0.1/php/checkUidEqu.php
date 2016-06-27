@@ -15,7 +15,8 @@ require("../all.php");
     $status = $reminder = "";
 
     if($timing){
-        echo $_SESSION["uid"];
+        @$a = $_SESSION["uid"];
+        echo $a;
     }else{
         $status = 0;
         $reminder = "缺少关键参数，查询失败";
