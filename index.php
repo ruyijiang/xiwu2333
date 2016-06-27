@@ -35,7 +35,7 @@ include("library/xwFE-0.0.1/FEM.php");
 </head>
 <script>
 	var SERVER_BASE = "localhost";
-	var IndexPage = "main.php";
+	var IndexPage = "index.php";
 </script>
 <body>
 

@@ -103,7 +103,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
      * @param str
      */
     $rootScope.navactivitify = function (str){
-        $rootScope.MainPageActivity = $rootScope.RoomListActivity = $rootScope.UserListActivity = $rootScope.MyHomeActivity = $rootScope.MyRoomActivity = $rootScope.BlogActivity = $rootScope.SettingActivity = 0;
+        $rootScope.MainPageActivity = $rootScope.RoomListActivity = $rootScope.UserListActivity = $rootScope.MyHomeActivity = $rootScope.MyRoomActivity = $rootScope.BlogActivity = $rootScope.SettingActivity = $rootScope.SignupActivity = $rootScope.LoginActivity = 0;
 
         switch (str){
             case 0:
@@ -123,6 +123,12 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
                 break;
             case 5:
                 $rootScope.UserListActivity = 1;
+                break;
+            case 6:
+                $rootScope.SignupActivity = 1;
+                break;
+            case 7:
+                $rootScope.LoginActivity = 1;
                 break;
         }
     };

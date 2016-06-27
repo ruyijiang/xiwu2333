@@ -1,6 +1,5 @@
 
 app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
-    $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
     $rootScope.MainPageActivity = $rootScope.LoginActivity = $rootScope.UserListActivity = $rootScope.RoomListActivity = 0;
     $rootScope.SignupAcivity = 1;
@@ -74,4 +73,6 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
     }//End of signupsubmit()
 
 
+    $("[data-toggle='tooltip']").tooltip();//开启tooltip
+    $rootScope.navactivitify(6);
 })
