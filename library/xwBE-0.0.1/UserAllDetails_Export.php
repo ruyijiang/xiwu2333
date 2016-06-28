@@ -11,7 +11,7 @@ require("all.php");
 <?php
 
     $status = $reminder = "";
-    @$RequestUid = $_GET["uid"];
+    $RequestUid = $_GET["uid"];
     $RequestGender = $_GET["gender"];
 
     $SessionStatus = false;
@@ -25,23 +25,24 @@ require("all.php");
 
     if($RequestUid == "random" || !$RequestUid){//随机uid
         //以下逻辑均在Uid = random情况下运行
+        //
         /*$sql = "SELECT * FROM `table` AS t1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM `table`) – (SELECT MIN(id) FROM `table`)) + (SELECT MIN(id) FROM `table`)) AS id) AS t2 WHERE t1.id >= t2.id ORDER BY t1.id LIMIT 1";*/
         if($RequestGender == "female" || $RequestGender == "woman" || $RequestGender == "women"){
             $RequestGender = 1;
-            $sql = "SELECT * FROM users WHERE uid = '$RequestUid' AND gender = '$RequestGender' ";
+            $sql = "SELECT * FROM users WHERE gender = '$RequestGender' ORDER BY rand() LIMIT 1";
         }else if($RequestGender == "male" || $RequestGender == "man" || $RequestGender == "men"){
             $RequestGender = 0;
-            $sql = "SELECT * FROM users WHERE uid = '$RequestUid' AND gender = '$RequestGender' ";
+            $sql = "SELECT * FROM users WHERE gender = '$RequestGender' ORDER BY rand() LIMIT 1";
         }else{
-            $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ";
+            $sql = "SELECT * FROM users ORDER BY rand() LIMIT 1";
         }
     }else{//指定uid
-        $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ";
+        $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ORDER BY rand() LIMIT 1 ";
     }
 
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
-    if($qry){
+    if($row){
         /**
          * 用户基础信息******************************
          */
@@ -59,6 +60,7 @@ require("all.php");
         }else{
             $result_calling_card = "";
         }
+        $result_uid = $row["uid"];//国家
         $result_country = $row["country"];//国家
         $result_province = $row["province"];//省份
         $result_city = $row["city"];//城市
@@ -71,18 +73,17 @@ require("all.php");
         $result_weibo = $row["weibo"];//微博
         $result_page_num = $row["page_num"];//微博
 
-        $sql3 = "SELECT name,bg_img FROM rooms WHERE creator = $RequestUid ";
+        /*$sql3 = "SELECT name,bg_img FROM rooms WHERE creator = $RequestUid ";
         $qry3 = $db->query($sql3);
-        @$row3 = $qry3->fetch_assoc();
+        $row3 = $qry3->fetch_assoc();
         $result_roomimg = $row3["bg_img"];//房间背景图
-        $result_roomname = $row3["name"];//房间名称
-
+        $result_roomname = $row3["name"];//房间名称*/
 
 
         /**
          * 输出
          */
-        $dataArr = array ('uid'=>$RequestUid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'room_bg_img'=>$result_roomimg,'room_name'=>$result_roomname,'page_num'=>$result_page_num);
+        $dataArr = array ('uid'=>$result_uid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'page_num'=>$result_page_num);
 
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value);
@@ -93,6 +94,7 @@ require("all.php");
 
 
     }else{
+
         //------------------------------------------------------------------------------------------------------------->出口1，查询失败
     }
 

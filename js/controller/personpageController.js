@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http){
+app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q,$state){
 
 
     $scope.TabShowPage = 1;//当前TabIndex值
@@ -47,6 +47,42 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     };
 
 
+    /**
+     * 页面加载时判断uid是否为：空、undefined或random
+     * 如果时，则重新分配内容
+     */
+    if($location.url() == "/person"){
+        var Luid = $location.search()["uid"];
+        if(Luid == "random" || Luid == undefined || !Luid){
+            checkUidAndRedirect();
+        }
+        function checkUidAndRedirect(){
+            var Gen = $location.search()["gender"];
+            var deferred = $q.defer();
+            var timing = Math.round(new Date().getTime()/1000);
+
+            //如果是这样，那么就请求一次随机用户接口
+            $http({
+                method: 'GET',
+                url: '../../library/xwBE-0.0.1/Interface/getRandomUser/getRandomUser.php',
+                params:{'timing':timing,'cate':'gender','content':Gen}
+            }).success(function (){
+                deferred.resolve();
+            }).error(function (){
+                deferred.reject();
+            }).then(function (httpCont){
+                var RandUid = 0;
+                RandUid = httpCont.data;
+                //$location.url("/person?uid=" + RandUid).replace();
+                //window.location.reload();
+            })
+        }
+    }else if($location.url() == "/myhome"){
+        var Luid = $location.search()["uid"];
+        if(Luid == "random" || Luid == undefined || !Luid){
+            alert ("1234");
+        }
+    }
 
 
 
@@ -68,8 +104,8 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         $.ajax({
             url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
             type:'GET',
-            async: false,
-            data:{"uid":uid,"gender":gender},//这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
+          async: false,
+            data:{"uid":uid,"gender":gender},//lo这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
             success: function (data){
                 data = eval( "(" + data + ")");
                 var SArr = data.server.split(',');//SArr = [1,2,3,];

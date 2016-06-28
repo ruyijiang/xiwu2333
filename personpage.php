@@ -89,11 +89,12 @@ include("library/xwFE-0.0.1/FEM.php");
                     <td><a>马子航milo</a></td>
                 </tr>
             </table>
+            <!--
             <div ng-if="UserData.room_bg_img!==''">
                 <hr>
                 <h5><strong>他的房间</strong></h5>
                 <a><img ng-src="{{UserData.room_bg_img}}" class="img-responsive" data-toggle="tooltip" data-placement="top" data-original-title="{{UserData.room_name}}"/></a>
-            </div>
+            </div>-->
         </div>
         <div class="rightpart col-lg-9">
             <ul class="nav nav-tabs" style="margin-top:20px;">
