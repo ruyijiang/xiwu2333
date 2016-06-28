@@ -37,7 +37,7 @@ require("all.php");
             $sql = "SELECT * FROM users ORDER BY rand() LIMIT 1";
         }
     }else{//指定uid
-        $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ORDER BY rand() LIMIT 1 ";
+        $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ";
     }
 
     $qry = $db->query($sql);

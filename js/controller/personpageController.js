@@ -48,45 +48,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
 
 
     /**
-     * 页面加载时判断uid是否为：空、undefined或random
-     * 如果时，则重新分配内容
-     */
-    if($location.url() == "/person"){
-        var Luid = $location.search()["uid"];
-        if(Luid == "random" || Luid == undefined || !Luid){
-            checkUidAndRedirect();
-        }
-        function checkUidAndRedirect(){
-            var Gen = $location.search()["gender"];
-            var deferred = $q.defer();
-            var timing = Math.round(new Date().getTime()/1000);
-
-            //如果是这样，那么就请求一次随机用户接口
-            $http({
-                method: 'GET',
-                url: '../../library/xwBE-0.0.1/Interface/getRandomUser/getRandomUser.php',
-                params:{'timing':timing,'cate':'gender','content':Gen}
-            }).success(function (){
-                deferred.resolve();
-            }).error(function (){
-                deferred.reject();
-            }).then(function (httpCont){
-                var RandUid = 0;
-                RandUid = httpCont.data;
-                //$location.url("/person?uid=" + RandUid).replace();
-                //window.location.reload();
-            })
-        }
-    }else if($location.url() == "/myhome"){
-        var Luid = $location.search()["uid"];
-        if(Luid == "random" || Luid == undefined || !Luid){
-            alert ("1234");
-        }
-    }
-
-
-
-    /**
      * 从数据库读取用户基础信息数据
      * 备注：此函数所有参数均为可选
      * @param uid ： 请求的用户的uid，如果为空，则会传递空值给ajax，而在对应的程序里会默认显示登陆的用户自己的
