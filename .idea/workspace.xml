@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/service/interceptor/ACCESS_LEVELS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/service/interceptor/Auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/service/interceptor/authority.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/maincontroller.js" afterPath="$PROJECT_DIR$/js/controller/maincontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainpage.php" afterPath="$PROJECT_DIR$/mainpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/IP/127.0.0.1.txt" afterPath="$PROJECT_DIR$/data/user_traces/IP/127.0.0.1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info_settingpage.php" afterPath="$PROJECT_DIR$/info_settingpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angular-validation-rule.js" afterPath="$PROJECT_DIR$/js/angular-validation-rule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/logincontroller.js" afterPath="$PROJECT_DIR$/js/controller/logincontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/run.js" afterPath="$PROJECT_DIR$/js/run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginpage.php" afterPath="$PROJECT_DIR$/loginpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,40 +44,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getRandomArticle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomArticle.php">
+      <file leaf-file-name="info_SettingController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-              <folding>
-                <marker date="1467202178733" expanded="true" signature="376:449" placeholder="SELECT * FRO... articles" />
-                <marker date="1467202178733" expanded="true" signature="499:545" placeholder="SELECT * FRO... articles" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maincontroller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/maincontroller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainpage.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mainpage.php">
+      <file leaf-file-name="info_settingpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info_settingpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            <state relative-caret-position="72">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding>
-                <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1467209149550" expanded="true" signature="1288:1326" placeholder="SELECT * FRO... users" />
+                <marker date="1467209149550" expanded="true" signature="8213:8265" placeholder="SELECT REGIO... region" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logincontroller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loginpage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-validation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/angular-validation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-validation-rule.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/angular-validation-rule.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="711">
+              <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormValidationReg.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/documents/FormValidationReg.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,18 +145,14 @@
         <option value="$PROJECT_DIR$/js/angular-validation.js" />
         <option value="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" />
         <option value="$PROJECT_DIR$/js/w5cValidation.js" />
-        <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/js/controller/m_passwordController.js" />
-        <option value="$PROJECT_DIR$/js/angular-validation-rule.js" />
         <option value="$PROJECT_DIR$/m_passwordpage.php" />
         <option value="$PROJECT_DIR$/certification_settingpage.php" />
         <option value="$PROJECT_DIR$/signuppage.php" />
-        <option value="$PROJECT_DIR$/info_settingpage.php" />
         <option value="$PROJECT_DIR$/documents/FormValidationReg.md" />
         <option value="$PROJECT_DIR$/js/service/interceptor/ACCESS_LEVELS.js" />
         <option value="$PROJECT_DIR$/js/service/interceptor/authority.js" />
         <option value="$PROJECT_DIR$/js/service/interceptor/Auth.js" />
-        <option value="$PROJECT_DIR$/js/run.js" />
         <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
         <option value="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php" />
@@ -128,7 +168,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/controller/xiwucontroller.js" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
-        <option value="$PROJECT_DIR$/js/controller/logincontroller.js" />
         <option value="$PROJECT_DIR$/js/controller/signupcontroller.js" />
         <option value="$PROJECT_DIR$/js/service/checkStatus.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
@@ -136,7 +175,6 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/closepage_updatedata.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/liveness_export.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" />
-        <option value="$PROJECT_DIR$/loginpage.php" />
         <option value="$PROJECT_DIR$/personpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandomUser/getRandomUser.php" />
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
@@ -145,9 +183,15 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomArticle.php" />
         <option value="$PROJECT_DIR$/js/vendor/all.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/controller/maincontroller.js" />
         <option value="$PROJECT_DIR$/mainpage.php" />
+        <option value="$PROJECT_DIR$/info_settingpage.php" />
+        <option value="$PROJECT_DIR$/js/run.js" />
+        <option value="$PROJECT_DIR$/css/all.css" />
+        <option value="$PROJECT_DIR$/loginpage.php" />
+        <option value="$PROJECT_DIR$/js/controller/logincontroller.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/angular-validation-rule.js" />
       </list>
     </option>
   </component>
@@ -251,6 +295,10 @@
               <option name="myItemId" value="library" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xwFE-0.0.1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -332,11 +380,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getRandom" />
+              <option name="myItemId" value="algorithm" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,14 +397,6 @@
               <option name="myItemId" value="library" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xwBE-0.0.1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -390,7 +426,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,11 +440,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="documents" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -756,7 +788,7 @@
       <workItem from="1467126689668" duration="2282000" />
       <workItem from="1467160583063" duration="5269000" />
       <workItem from="1467171440698" duration="13437000" />
-      <workItem from="1467202463833" duration="4128000" />
+      <workItem from="1467202463833" duration="9727000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1007,10 +1039,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="974550000" />
+    <option name="totallyTimeSpent" value="980149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1018,6 +1050,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38328075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49590835" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1031,7 +1064,6 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38328075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1085,72 +1117,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/service/interceptor/ACCESS_LEVELS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="3" selection-start-line="3" selection-start-column="4" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/interceptor/Auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/recordCommit.js" />
-    <entry file="file://$PROJECT_DIR$/js/service/countLiveness.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="46" column="189" selection-start-line="46" selection-start-column="189" selection-end-line="46" selection-end-column="189" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_loginstatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/InvitationCode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/HotSearching.php" />
-    <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearch_Export.php" />
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotBlog_Export.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/EchartData_Export.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -1253,20 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="731" column="13" selection-start-line="731" selection-start-column="13" selection-end-line="731" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1381,7 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/personpage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1418,14 +1369,141 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state relative-caret-position="82">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/ForbiddenStr.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info_settingpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <marker date="1467209149550" expanded="true" signature="1288:1326" placeholder="SELECT * FRO... users" />
+            <marker date="1467209149550" expanded="true" signature="8213:8265" placeholder="SELECT REGIO... region" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="249" column="19" selection-start-line="249" selection-start-column="19" selection-end-line="249" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utill/Regulars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utill/alterLocalStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utill/welcomejsonstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utill/unique_inarr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/FormValidationReg.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/logincontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular-validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular-validation-rule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

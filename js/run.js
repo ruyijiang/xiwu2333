@@ -42,18 +42,4 @@ socket.onerror = function(){
 //设置Angular app
 var app = angular.module('myApp', ["ui.router",'angular-popups','validation', 'validation.rule']);
 
-/**
- * 拦截器 —— 用户鉴权
- */
-/*app.run(function ($rootScope,$location,Auth){
-	$rootScope.$on('$routeChangeStart', function (evt, next, curr){
-		if(!Auth.isAuthorized(next.$$route.access_level)){
-			if(Auth.isLoggedIn()){
-                $location.path("/");
-            }else{
-                $location.path("/login");
-            }
-		}
-	})
-});*/
 

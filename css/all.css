@@ -244,11 +244,8 @@ div.alert-success{margin-top: 50px; z-index: 99; background-image: none; backgro
 .dropdown button.dropdown-toggle{background-color:#337ab7;color:white}
 .nav-pills>li.active>a{border-radius:1px}
 /*ng-validate*/
-.ng-invalid.ng-dirty{
+.ng-invalid{
 	border-color:#d9534f;
-}
-.ng-valid.ng-dirty{
-	border-color:#5cb85c;
 }
 .validation-invalid{
 	color:#d9534f;

@@ -2,7 +2,6 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
 
     $scope.UserName = "";
     $scope.UserPassword = "";
-
     /**
      * 提交登陆表单
      */

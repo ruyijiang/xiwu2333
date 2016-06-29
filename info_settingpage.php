@@ -2,7 +2,6 @@
 require("library/xwBE-0.0.1/connectDB.php");
 require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
-
 ?>
 <style>
     body{background-color:#f5f8fa}

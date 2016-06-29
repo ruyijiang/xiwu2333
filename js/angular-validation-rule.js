@@ -62,6 +62,7 @@
                     //success: 'Short enough!'
                 }
             };
-            $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);
+            $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);//设定表达式和校验提示
+            $validationProvider.setValidMethod('blur');//设定触发时机
         }]);
 }).call(this);

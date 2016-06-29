@@ -1,12 +1,19 @@
+<?php
+require("library/xwBE-0.0.1/connectDB.php");
+require("library/xwBE-0.0.1/all.php");
+include("library/xwFE-0.0.1/FEM.php");
+?>
 <div class="container col-lg-12 col-sm-12" style="margin-top:100px" ng-controller="loginController">
     <div class="col-lg-4 col-sm-4"></div>
         <div class="row col-lg-4 col-sm-4 clearfix center-block">
           <form class="form-signin center-block" ng-submit="loginsubmit()">
             <h2 class="form-signin-heading">请登陆</h2>
+
             <label for="inputEmail" class="sr-only">邮箱：</label>
-            <input validator="email" type="text" id="inputEmail" class="form-control" placeholder="请输入邮箱" required autocomplete="off" ng-model="UserName">
+            <input validator="email" type="text" id="inputEmail" class="form-control" placeholder="请输入邮箱" autocomplete="off" ng-model="UserName">
+
             <label for="inputPassword" class="sr-only">密码：</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="密码" required ng-model="UserPassword">
+            <input validator="Xiwupassword" type="password" id="inputPassword" class="form-control" placeholder="密码" minlength="8" ng-model="UserPassword">
             <!--<div class="checkbox">
               <label>
                 <input type="checkbox" value="remember-me" checked="checked">记住密码
