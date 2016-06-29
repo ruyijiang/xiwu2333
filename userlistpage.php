@@ -148,10 +148,6 @@ include("library/xwFE-0.0.1/FEM.php");
             <a href="http://player.youku.com/player.php/sid/XMzAyMDc3OTQw/v.swf" target="_blank"class="sider-right-btn_1"></a>
             <a href="http://player.youku.com/player.php/sid/XNjg3OTcyNjMy/v.swf" target="_blank"class="sider-right-btn_2"></a>
             <a href="http://www.dota2.com/comics/are_we_heroes_yet/" target="_blank" class="sider-right-btn_3"></a>
-            <div class="well" style="width:256px;">
-              <small>如果本网站还不错的话。不妨点击下方按钮，收藏本站。</small>
-              <button type="button" class="btn btn-primary btn-sm">收藏</button>
-            </div>
           </div>
         </div>
       </div>
