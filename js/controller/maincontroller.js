@@ -11,29 +11,34 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
     $scope.RecoUser = {};
 
     //Math.random()取值为0~1
-    if(Math.random() >= 0){
-        //随机推荐一个用户
-        var timing = Math.round(new Date().getTime());
-        var derreferd = $q.defer();
+    $scope.getRecUserData = function (){
+        if(Math.random() >= 0){
+            //随机推荐一个用户
+            var timing = Math.round(new Date().getTime());
+            var derreferd = $q.defer();
 
-        $scope.RecCate = "user";
-        $http({
-            method: 'GET',
-            url: 'library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php',
-            params:{'timing':timing}
-        }).success(function (){
-            derreferd.resolve();
-        }).error(function (){
-            derreferd.reject();
-        }).then(function (httpCont){
+            $scope.RecCate = "user";
             $http({
                 method: 'GET',
-                url: 'library/xwBE-0.0.1/UserAllDetails_Export.php',
-                params:{'uid':httpCont.data}
+                url: 'library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php',
+                params:{'timing':timing}
+            }).success(function (){
+                derreferd.resolve();
+            }).error(function (){
+                derreferd.reject();
             }).then(function (httpCont){
-                $scope.RecoUser = httpCont.data;
+                $http({
+                    method: 'GET',
+                    url: 'library/xwBE-0.0.1/UserAllDetails_Export.php',
+                    params:{'uid':httpCont.data}
+                }).then(function (httpCont){
+                    $scope.RecoUser = httpCont.data;
+                    $scope.RecoUserServerArr = httpCont.data.server.split(",");
+                })
             })
-        })
-    }
+        }
+    };
+    $scope.getRecUserData();
+
 
 });

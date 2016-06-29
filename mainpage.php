@@ -42,25 +42,33 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="panel-body" style="padding:0">
                     <div style="position: relative;">
                         <img src="img/main_bg/20130428100656532.jpg" alt="dota2" width="100%"/>
-                        <img src="img/user_img/avatar/20253012/20160614154129-QoVqHPxdzk.png" style="position:absolute;top:60%;left:35%;cursor:pointer" class="img-circle center-block" alt="攻略写手 - 烧花鸭" title="攻略写手 - 烧花鸭" width="80" height="80"/>
+                        <img ng-src="{{RecoUser.avatar}}" style="position:absolute;top:60%;left:35%;cursor:pointer" class="img-circle center-block" alt="{{RecoUser.name}}" title="{{RecoUser.name}}" width="80" height="80"/>
                     </div>
 
                     <div class="caption" style="margin-top:50px">
                         <div style="margin:10px">
-                            <a style="font-size:15px;">攻略写手 - 烧花鸭</a><i class="iconfont icon-nvhai" style="color:hotpink;margin-left:5px"></i>
+                            <a style="font-size:15px;">{{RecoUser.name}}</a>
+                            <i class="iconfont icon-nan" style="color:hotpink;margin-left:5px" ng-if="RecoUser.gender == 0""></i>
+                            <i class="iconfont icon-nvhai" style="color:hotpink;margin-left:5px" ng-if="RecoUser.gender == 1"></i>
+
                             <div style="display: block;margin-bottom:5px">
                                 <span style="font-size:15px;margin-right:5px">
                                     <small style="font-weight:bold">天梯</small>
-                                    <span class="label ng-scope label-success" style="font-weight:bold;font-style:italic;font-size:12px">92</span>
+                                    <span class="label ng-scope label-success" style="font-weight:bold;font-style:italic;font-size:12px">{{RecoUser.ladderscore}}</span>
                                 </span>
                                 <span style="font-size:15px;">
                                     <small style="font-weight:bold">评分</small>
-                                    <span class="label ng-scope label-success" style="font-weight:bold;font-style:italic;font-size:12px">92</span>
+                                    <span class="label ng-scope label-success" style="font-weight:bold;font-style:italic;font-size:12px">{{RecoUser.score}}</span>
                                 </span>
                             </div>
-                            <p><span class="label label-default">电信(上海)</span><span class="label label-default">电信(华中)</span><span class="label label-default">电信(广东)</span></p>
+                            <p>
+                                <span class="label label-default" ng-repeat="xSer in RecoUserServerArr">{{xSer}}</span>
+                                <!--<span class="label label-default">电信(上海)</span>
+                                <span class="label label-default">电信(华中)</span>
+                                <span class="label label-default">电信(广东)</span>-->
+                            </p>
                             <div style="border-top:1px dotted #e5e5e5;padding-top:5px">
-                                <a href="/#/main" class="btn btn-default btn-sm center-block" role="button">
+                                <a class="btn btn-default btn-sm center-block" role="button" ng-click="getRecUserData()">
                                     <span class="glyphicon glyphicon-refresh"></span>换一个
                                 </a>
                             </div>
