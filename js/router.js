@@ -46,32 +46,17 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state("myhome", {
             url: "/myhome",
             templateUrl: "personpage.php",
-            //如果用户没有登陆，是不允许访问myhome路由的，需要跳转到person路由
             resolve:{
                 guarder: function($location,checkStatus,$state){
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
-                        console.log(allowed);
-                        if(allowed!=="1") $location.url("/person?uid=random")
+                        if(allowed!=="1"){
+                            $location.path("/404").replace();
+                        }
                     });
                 }
             }
-        })
-        .state("myhomeWithPulse",{
-            params: {'tab': null},
-            url: "/myhome",
-            templateUrl: "homepage.php?tab=pulse"
-        })
-        .state("myhomeWithArticle",{
-            params: {'tab': null},
-            url: "/myhome",
-            templateUrl: "homepage.php?tab=article"
-        })
-        .state("myhomeWithAssess",{
-            params: {'tab': null},
-            url: "/myhome",
-            templateUrl: "homepage.php?tab=assess"
         })
         .state("info_setting", {
             url: "/info_setting",
@@ -91,7 +76,17 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("person",{
             url: "/person",
-            templateUrl: "personpage.php"
+            templateUrl: "personpage.php",
+            resolve:{
+                guarder: function($location,checkStatus){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        if(allowed!=="1" &&(!$location.search()["uid"] || $location.search()["uid"]==true)) $location.path("/404").replace();
+                    });
+                }
+
+            }
         })
         .state("search",{
             url: "/search",
