@@ -14,10 +14,34 @@ require("../all.php");
     $num_onepage = (int)$num_onepage;//每页显示数量
     $now_page = empty($_GET['now_page'])?1:$_GET['now_page'];
 
+    //userlist.modal左侧微导航需要的检索条件
+    @$gender = $_GET["gender"];
+    @$serverArr = $_GET["server"];
+    @$level = $_GET["skilllevel"];
+    $sql_add = "";
+    if($gender){
+        $sql_add .= "gender = '$gender'" . "AND ";
+        $no1 = true;
+    }
+    if($serverArr){//$serverArr = "电信（上海），电信（广东），"
+        $sql_add .= "serverDist = '$gender'";
+        @$no1==true?$sql_add.="AND "."serverDist = '$gender'":$sql_add;
+        $no2==true;
+    }
+    if($level){
+        $sql_add .= "skillDist = '$level'" . "AND ";
+        @$no1==true?$sql_add.="AND "."skillDist = '$gender'":$sql_add;
+        @$no2==true?$sql_add.="AND "."skillDist = '$gender'":$sql_add;
+    }
+    if(!$gender&&!$serverArr&&!$level){
+        $sql = "SELECT uid FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
+    }else{
+        $sql = "SELECT uid FROM users WHERE ".$sql_add;
+    }
+
 
     if($responsecontent == "userlist"){
 
-        $sql = "SELECT uid FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
         $qry = $db->query($sql);
         $row_all = mysqli_num_rows($qry);//总条数
         $page_num = ceil($row_all/$num_onepage);//分页数

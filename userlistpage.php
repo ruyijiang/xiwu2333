@@ -23,22 +23,22 @@ include("library/xwFE-0.0.1/FEM.php");
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">概览<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a>概览<span class="sr-only">(current)</span></a></li>
           </ul>
-              <ul class="nav nav-sidebar">
-                <li class="panel-heading">按性别：</li>
-                <li><a href="">男</a></li>
-                <li><a href="">女</a></li>
-              </ul>
-              <ul class="nav nav-sidebar">
-                <li class="panel-heading">按分区：</li>
-                <li><a href="">电信</a></li>
-                <li><a href="">联通</a></li>
-              </ul>
+          <ul class="nav nav-sidebar">
+            <li class="panel-heading">按性别：</li>
+            <li><a>男</a></li>
+            <li><a>女</a></li>
+          </ul><hr>
+          <ul class="nav nav-sidebar">
+            <li class="panel-heading">按分区：</li>
+            <li><a>电信</a></li>
+            <li><a>联通</a></li>
+          </ul><hr>
             <ul class="nav nav-sidebar">
-                <li class="panel-heading">按擅长英雄：</li>
-                <button class="btn btn-primary" ng-click="tellmemore()">选择英雄</button>
-            </ul>
+                <li class="panel-heading">按水平等级：</li>
+                <button class="btn btn-primary center-block" style="width:210px" ng-click="tellmemore()">选择英雄</button>
+            </ul><hr>
         </div>
         <div>
           <div class="col-lg-7 col-md-7 col-sm-12 col-lg-offset-2 col-sm-offset-2 main">
@@ -68,8 +68,8 @@ include("library/xwFE-0.0.1/FEM.php");
               <!--<a class="btn btn-primary aaaa" role="button" ng-click="loaduserlist()" style="margin-top:-6px"><span class="glyphicon glyphicon-refresh"></span>刷新列表</a>-->
             </h3>
             <div class="table-responsive" style="position:relative">
-                <div class="table-responsive-mask" style="width:100%;height:100%;background-color:black;opacity:0.4;position:absolute;top:0;left:0;z-index:1000;display: none">
-                    <div style="width:32px;margin:0 auto;margin-top:10%">
+                <div class="table-responsive-mask" style="width:100%;height:100%;background-color:black;opacity:0.7;border-radius:4px;position:absolute;top:0;left:0;z-index:1000;display: none">
+                    <div style="width:32px;top:45%;left:45%;position:absolute">
                         <img src="img/fragments/loading/5-121204193955-50.gif">
                     </div>
                 </div>
@@ -145,8 +145,8 @@ include("library/xwFE-0.0.1/FEM.php");
           </div><!--main-->
           <div class="col-lg-3 col-md-3 col-sm-12 gallery" style="margin-top:10px;padding-top:15px;">
             <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gallery" aria-expanded="true" aria-controls="navbar">-->
-            <a href="http://player.youku.com/player.php/sid/XMzAyMDc3OTQw/v.swf" target="_blank"class="sider-right-btn_1"></a>
-            <a href="http://player.youku.com/player.php/sid/XNjg3OTcyNjMy/v.swf" target="_blank"class="sider-right-btn_2"></a>
+            <a href="http://player.youku.com/player.php/sid/XMzAyMDc3OTQw/v.swf" target="_blank" class="sider-right-btn_1"></a>
+            <a href="http://player.youku.com/player.php/sid/XNjg3OTcyNjMy/v.swf" target="_blank" class="sider-right-btn_2"></a>
             <a href="http://www.dota2.com/comics/are_we_heroes_yet/" target="_blank" class="sider-right-btn_3"></a>
           </div>
         </div>

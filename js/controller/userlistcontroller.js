@@ -10,6 +10,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);
     /******************/
+    $(".table-responsive-mask").show();
 
 
 
@@ -43,27 +44,9 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
     };
 
 
-
-
     /**
-     * 视图初始化时加载userlist信息
-     * 实际上就是loaduserlist和loaduserdata各执行了一遍
+     * 获取Echarts的数据1
      */
-     $.ajax({
-        url:'../../library/xwBE-0.0.1/php/userlist_export.php',
-        type:'GET',
-         async: false,
-        data:{"responsecontent":"userlist","num_onepage":num_onepage,"now_page":1},
-        success: function (data){
-            $scope.userListDataArr = welcomejsonarrstring(data);
-        },
-        error: function (data){
-            alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
-        },
-        complete: function (){
-
-        }
-    });
     $.ajax({
         url:'../../library/xwBE-0.0.1/php/EchartData_Export.php',
         type:'POST',
@@ -84,6 +67,9 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
             alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
         }
     });
+    /**
+     * 获取Echarts的数据2
+     */
     $.ajax({
         url:'../../library/xwBE-0.0.1/php/EchartData_Export.php',
         type:'POST',
@@ -99,6 +85,9 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
             alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
         }
     });
+    /**
+     * 获取Echarts的数据3
+     */
     $.ajax({
         url:'../../library/xwBE-0.0.1/php/EchartData_Export.php',
         type:'POST',
@@ -152,7 +141,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
     /**
      * 加载userlist视图的Echarts
      */
-
     $scope.loadEchart = function (){
         var myChart_most = echarts.init(document.getElementById('user-most'));
         option1 = {
@@ -246,4 +234,5 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
     $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(5);
+    $scope.changeShowPage(1);
 });
