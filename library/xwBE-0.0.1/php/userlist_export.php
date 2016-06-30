@@ -19,6 +19,7 @@ require("../all.php");
     @$serverArr = $_GET["server"];
     @$level = $_GET["skilllevel"];
     $sql_add = "";
+    //根据$_GET值对SQL语句进行修正
     if($gender){
         $sql_add .= "gender = '$gender'" . "AND ";
         $no1 = true;
@@ -29,10 +30,11 @@ require("../all.php");
         $no2==true;
     }
     if($level){
-        $sql_add .= "skillDist = '$level'" . "AND ";
+        $sql_add .= "skillDisst = '$level'" . "AND ";
         @$no1==true?$sql_add.="AND "."skillDist = '$gender'":$sql_add;
         @$no2==true?$sql_add.="AND "."skillDist = '$gender'":$sql_add;
     }
+
     if(!$gender&&!$serverArr&&!$level){
         $sql = "SELECT uid FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
     }else{
