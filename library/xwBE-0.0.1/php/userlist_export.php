@@ -23,6 +23,7 @@ require("../all.php");
     $sql_add = "";
 
     if($gender=='0' || $gender=='1' || !empty($server) || !empty($level)){
+        $no1 = $no2 = false;
         //根据$_GET值对SQL语句进行修正
         if(isset($gender) && ($gender=='0' || $gender=='1')){
             $sql_add .= "gender = '$gender'";
