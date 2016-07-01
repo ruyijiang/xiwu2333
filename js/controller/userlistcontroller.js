@@ -1,4 +1,4 @@
-app.controller('userlistController',function ($scope,$rootScope,$http){
+app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
 
     /*****初始化******/
     $scope.userListDataArr = [];
@@ -11,6 +11,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
         server : '',
         skillLevel : ''
     };
+    $scope.maskVis = 1;
 
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);
@@ -156,31 +157,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
             alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
         }
     });
-
-    /**
-     * 点击"刷新列表"后重新获取userlist用户列表
-     */
-    $scope.loaduserlist = function (cateCont){
-        var dataArr = [];
-        $.ajax({
-            url:'../../library/xwBE-0.0.1/php/userlist_export.php',
-            type:'POST',
-            data:{"timing":timing},
-            success: function (data){
-                $scope.userListDataArr = welcomejsonarrstring(data);//data即是对象数组
-            },
-            error: function (data){
-                alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
-            },
-            beforeSend: function (){
-                $scope.maskVis = 1;
-            },
-            complete: function (){
-                $scope.maskVis = 0;
-            }
-
-        })
-    };
 
 
 

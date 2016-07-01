@@ -19,29 +19,29 @@ require("../all.php");
     @$server = $_GET["server"];
     @$level = $_GET["skilllevel"];
 
+    $sql = "";
     $sql_add = "";
-    if(!$gender&&!$server&&!$level){
-        $sql = "SELECT uid FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
-    }else{
+
+    if($gender=='0' || $gender=='1' || !empty($server) || !empty($level)){
         //根据$_GET值对SQL语句进行修正
-        if($gender && $gender!==""){
+        if(isset($gender) && ($gender=='0' || $gender=='1')){
             $sql_add .= "gender = '$gender'";
             $no1 = true;
         }
-        if($server && $server!==""){
-            @$no1==true?$sql_add.="AND "."server LIKE %$server%":$sql_add="server LIKE %$server%";//如果第一步做了，那么加个"AND"；否则什么都不干
+        if(isset($server) && !empty($server)){
+            @$no1==true?$sql_add.=" AND "."server LIKE '%$server%'":$sql_add="server LIKE '%$server%'";//如果第一步做了，那么加个"AND"；否则什么都不干
             $no2 = true;
         }
-        if($level && $level!==""){
+        if(isset($level) && !empty($level)){
             if($no1==true || $no2==true){//如果第一步或第二步做了，那么加个"AND"；否则什么都不干
-                $sql_add.="AND "."skillDist = '$gender'";
+                $sql_add.=" AND "."skilllevel = '$gender'";
             }else $sql_add = "skilllevel = '$level'";
         }
 
-        $sql = "SELECT uid FROM users WHERE ".$sql_add." AND openstatus = '1' AND onlinestatus = '1'";
+        $sql = "SELECT * FROM users WHERE ".$sql_add." AND openstatus = '1' AND onlinestatus = '1'";
+    }else{
+        $sql = "SELECT * FROM users WHERE openstatus = '1' AND onlinestatus = '1' ";
     }
-
-    var_dump($sql);
 
     if($responsecontent == "userlist"){
 
@@ -51,7 +51,7 @@ require("../all.php");
         $now_page = (int)$now_page;//当前页数
         $limit_st = ($now_page-1)*$num_onepage;//起始数
 
-        $sql2 = "SELECT * FROM users WHERE openstatus = '1' AND onlinestatus = '1' LIMIT $limit_st,$num_onepage ";
+        $sql2 = $sql." LIMIT $limit_st,$num_onepage ";
         $qry2 = $db->query($sql2);
         $user_countnum = 0;//输出的用户数量
         while($row = mysqli_fetch_array($qry2)){
