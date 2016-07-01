@@ -50,11 +50,12 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
                 break;
         }
         !cateCont?cateCont="":cateCont;
+
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/userlist_export.php',
             type:'GET',
             async: false,
-            data:{"responsecontent":"userlist","num_onepage":num_onepage,"now_page":num},
+            data:{"responsecontent":"userlist","num_onepage":num_onepage,"now_page":num},//num_onepage是控制器里的变量
             success: function (data){
                 $scope.userListDataArr = welcomejsonarrstring(data);
                 $scope.ListActive = num;
