@@ -6,11 +6,61 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
     $scope.UserDataMostRegion = {};
     $scope.UserDataNowOnline = {};
     $scope.UserDataSexRate = {};
+    $scope.UserListSearchConfig = {
+        gender : 'female',
+        server : '',
+        skillLevel : ''
+    };
 
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);
     /******************/
-    $(".table-responsive-mask").show();
+
+
+
+    /**
+     * 左侧微导航的样式驱动的功能的函数
+     */
+    $scope.MiniNav = function (cateCont){
+
+        if(!cateCont || cateCont == ""){
+            $scope.UserListSearchConfig.gender = $scope.UserListSearchConfig.serverArr = $scope.UserListSearchConfig.skillLevel = "";
+        }else{
+            switch (cateCont){
+                case "male":
+                    if ($scope.UserListSearchConfig.gender == 'male') $scope.UserListSearchConfig.gender = '';
+                    else $scope.UserListSearchConfig.gender = 'male';
+                    break;
+                case "female":
+                    if ($scope.UserListSearchConfig.gender == 'female') $scope.UserListSearchConfig.gender = '';
+                    else $scope.UserListSearchConfig.gender = 'female';
+                    break;
+                case "dianxin":
+                    if ($scope.UserListSearchConfig.server == 'dianxin') $scope.UserListSearchConfig.server = '';
+                    else $scope.UserListSearchConfig.server = 'dianxin';
+                    break;
+                case "liantong":
+                    if ($scope.UserListSearchConfig.server == 'liantong') $scope.UserListSearchConfig.server = '';
+                    else $scope.UserListSearchConfig.server = 'liantong';
+                    break;
+                case "Normal":
+                    if ($scope.UserListSearchConfig.skillLevel == 'Normal') $scope.UserListSearchConfig.skillLevel = '';
+                    else $scope.UserListSearchConfig.skillLevel = 'Normal';
+                    break;
+                case "High":
+                    if ($scope.UserListSearchConfig.skillLevel == 'High') $scope.UserListSearchConfig.skillLevel = '';
+                    else $scope.UserListSearchConfig.skillLevel = 'High';
+                    break;
+                case "Very High":
+                    if ($scope.UserListSearchConfig.skillLevel == 'Very High') $scope.UserListSearchConfig.skillLevel = '';
+                    else $scope.UserListSearchConfig.skillLevel = 'Very High';
+                    break;
+            }
+        }
+
+        $scope.changeShowPage(1);
+    };
+
 
 
 
@@ -19,43 +69,20 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
     $scope.ListActive = 1;//class为active的分页按钮位置代码
     $scope.ListSelectedNum = null;//class为active的分页按钮位置代码
 
-    $scope.UserListSearchConfig = {
-        gender : 'female',
-        serverArr : 'liantong',
-        skillLevel : 'Very High'
-    };
-
-    $scope.changeShowPage = function (num,cateCont){
-        switch (cateCont){
-            case "male":
-                $scope.UserListSearchConfig.gender = 'male';
-                break;
-            case "female":
-                $scope.UserListSearchConfig.gender = 'female';
-                break;
-            case "dianxin":
-                $scope.UserListSearchConfig.serverArr.push("dianxin");
-                break;
-            case "liantong":
-                $scope.UserListSearchConfig.serverArr.push("liantong");
-                break;
-            case "Normal":
-                $scope.UserListSearchConfig.skillLevel.push("Normal");
-                break;
-            case "High":
-                $scope.UserListSearchConfig.skillLevel.push("High");
-                break;
-            case "Very High":
-                $scope.UserListSearchConfig.skillLevel.push("Very High");
-                break;
-        }
-        !cateCont?cateCont="":cateCont;
+    $scope.changeShowPage = function (num){
 
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/userlist_export.php',
             type:'GET',
             async: false,
-            data:{"responsecontent":"userlist","num_onepage":num_onepage,"now_page":num},//num_onepage是控制器里的变量
+            data:{
+                "responsecontent":"userlist",
+                "gender":$scope.UserListSearchConfig.gender,
+                "server":$scope.UserListSearchConfig.serverArr,
+                "skilllevel":$scope.UserListSearchConfig.skillLevel,
+                "num_onepage":num_onepage,
+                "now_page":num
+            },//num_onepage是控制器里的变量
             success: function (data){
                 $scope.userListDataArr = welcomejsonarrstring(data);
                 $scope.ListActive = num;
