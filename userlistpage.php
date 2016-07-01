@@ -28,8 +28,8 @@ include("library/xwFE-0.0.1/FEM.php");
           <ul class="nav nav-sidebar">
             <li class="panel-heading">按性别：</li>
             <div class="btn-group btn-group-sm center-block" style="width:90%">
-              <button type="button" ng-class="{active:UserListSearchConfig.gender == 'male'}" ng-click="MiniNav('male')" class="btn btn-default">男</button>
-              <button type="button" ng-class="{active:UserListSearchConfig.gender == 'female'}" ng-click="MiniNav('female')" class="btn btn-default">女</button>
+              <button type="button" ng-class="{active:UserListSearchConfig.gender == '0'}" ng-click="MiniNav('male')" class="btn btn-default">男</button>
+              <button type="button" ng-class="{active:UserListSearchConfig.gender == '1'}" ng-click="MiniNav('female')" class="btn btn-default">女</button>
             </div>
           </ul><hr>
           <ul class="nav nav-sidebar">

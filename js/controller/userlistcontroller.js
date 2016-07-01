@@ -28,12 +28,12 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
         }else{
             switch (cateCont){
                 case "male":
-                    if ($scope.UserListSearchConfig.gender == 'male') $scope.UserListSearchConfig.gender = '';
-                    else $scope.UserListSearchConfig.gender = 'male';
+                    if ($scope.UserListSearchConfig.gender == '0') $scope.UserListSearchConfig.gender = '';
+                    else $scope.UserListSearchConfig.gender = '0';
                     break;
                 case "female":
-                    if ($scope.UserListSearchConfig.gender == 'female') $scope.UserListSearchConfig.gender = '';
-                    else $scope.UserListSearchConfig.gender = 'female';
+                    if ($scope.UserListSearchConfig.gender == '1') $scope.UserListSearchConfig.gender = '';
+                    else $scope.UserListSearchConfig.gender = '1';
                     break;
                 case "dianxin":
                     if ($scope.UserListSearchConfig.server == 'dianxin') $scope.UserListSearchConfig.server = '';
