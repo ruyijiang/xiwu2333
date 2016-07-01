@@ -48,13 +48,13 @@
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
-                <marker date="1467362174100" expanded="true" signature="554:621" ph="SELECT uid F... users" />
-                <marker date="1467362174100" expanded="true" signature="1235:1263" ph="SELECT uid F... users" />
-                <marker date="1467362174100" expanded="true" signature="1235:1319" ph="SELECT uid F... users" />
-                <marker date="1467362174100" expanded="true" signature="1235:1320" ph="SELECT uid F... users" />
-                <marker date="1467362174100" expanded="true" signature="1638:1720" ph="SELECT * FRO... users" />
+                <marker date="1467362242089" expanded="true" signature="554:621" ph="SELECT uid F... users" />
+                <marker date="1467362242089" expanded="true" signature="1232:1260" ph="SELECT uid F... users" />
+                <marker date="1467362242089" expanded="true" signature="1232:1316" ph="SELECT uid F... users" />
+                <marker date="1467362242089" expanded="true" signature="1232:1317" ph="SELECT uid F... users" />
+                <marker date="1467362242089" expanded="true" signature="1635:1717" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -739,7 +739,7 @@
       <workItem from="1467350949716" duration="678000" />
       <workItem from="1467352126579" duration="83000" />
       <workItem from="1467353275243" duration="1297000" />
-      <workItem from="1467354653108" duration="6164000" />
+      <workItem from="1467354653108" duration="6232000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1014,11 +1014,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467359642356</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fixed some bugs.">
+      <created>1467362183511</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1467362183511</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1008529000" />
+    <option name="totallyTimeSpent" value="1008597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1062,7 +1069,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finish liveness_rate modal in homepage.php" />
     <MESSAGE value="review something. and add a modal of upload avatar" />
     <MESSAGE value="about finish upload avatar..and there were something not good.i will fixed it ,in version 0.02" />
     <MESSAGE value="add an alert" />
@@ -1087,7 +1093,8 @@
     <MESSAGE value="about finished userlist.modal,and i would fixed it's controller ,now!" />
     <MESSAGE value="add something in userlistController.js" />
     <MESSAGE value="recode something in userlistController.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="recode something in userlistController.js" />
+    <MESSAGE value="fixed some bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some bugs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1446,6 +1453,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/userlistpage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1457,24 +1472,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding>
-            <marker date="1467362174100" expanded="true" signature="554:621" ph="SELECT uid F... users" />
-            <marker date="1467362174100" expanded="true" signature="1235:1263" ph="SELECT uid F... users" />
-            <marker date="1467362174100" expanded="true" signature="1235:1319" ph="SELECT uid F... users" />
-            <marker date="1467362174100" expanded="true" signature="1235:1320" ph="SELECT uid F... users" />
-            <marker date="1467362174100" expanded="true" signature="1638:1720" ph="SELECT * FRO... users" />
+            <marker date="1467362242089" expanded="true" signature="554:621" ph="SELECT uid F... users" />
+            <marker date="1467362242089" expanded="true" signature="1232:1260" ph="SELECT uid F... users" />
+            <marker date="1467362242089" expanded="true" signature="1232:1316" ph="SELECT uid F... users" />
+            <marker date="1467362242089" expanded="true" signature="1232:1317" ph="SELECT uid F... users" />
+            <marker date="1467362242089" expanded="true" signature="1635:1717" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>

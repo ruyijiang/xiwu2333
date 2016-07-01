@@ -28,7 +28,7 @@ require("../all.php");
             $sql_add .= "gender = '$gender'";
             $no1 = true;
         }
-        if($serverArr && $server!==""){
+        if($server && $server!==""){
             @$no1==true?$sql_add.="AND "."server LIKE %'$server'%":$sql_add="server LIKE %'$server'%";//如果第一步做了，那么加个"AND"；否则什么都不干
             $no2 = true;
         }
