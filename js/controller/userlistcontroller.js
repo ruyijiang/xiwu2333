@@ -14,16 +14,20 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
 
 
 
-    /**
-     * 点击分页按钮时执行
-     * @param num
-     */
     /********分页组件初始化******/
     var num_onepage = 15;//每页显示条数
     $scope.ListActive = 1;//class为active的分页按钮位置代码
     $scope.ListSelectedNum = null;//class为active的分页按钮位置代码
+    $scope.gender = $scope.serverArr = $scope.skillLevel = "";
     /*******初始化完成***********/
-    $scope.changeShowPage = function (num){
+
+
+
+    $scope.changeShowPage = function (num,cateCont){
+        if(cateCont=="male"||cateCont=="female"||cateCont=="dianxin"||cateCont=="liantong"){
+
+        }
+        !cateCont?cateCont="":cateCont;
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/userlist_export.php',
             type:'GET',
@@ -37,8 +41,11 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
             error: function (data){
                 alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
             },
+            beforeSend: function (){
+                $scope.maskVis = 1;
+            },
             complete: function (){
-
+                $scope.maskVis = 0;
             }
         });
     };
@@ -105,16 +112,10 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
         }
     });
 
-
-
-
-
-    
-
     /**
      * 点击"刷新列表"后重新获取userlist用户列表
      */
-    $scope.loaduserlist = function (){
+    $scope.loaduserlist = function (cateCont){
         var dataArr = [];
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/userlist_export.php',
@@ -127,10 +128,10 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
                 alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
             },
             beforeSend: function (){
-                $(".table-responsive-mask").show();
+                $scope.maskVis = 1;
             },
             complete: function (){
-                $(".table-responsive-mask").hide();
+                $scope.maskVis = 0;
             }
 
         })

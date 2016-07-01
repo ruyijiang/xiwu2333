@@ -27,17 +27,25 @@ include("library/xwFE-0.0.1/FEM.php");
           </ul>
           <ul class="nav nav-sidebar">
             <li class="panel-heading">按性别：</li>
-            <li><a>男</a></li>
-            <li><a>女</a></li>
+            <div class="btn-group btn-group-sm center-block" style="width:90%">
+              <button type="button" class="btn btn-primary active" ng-click="loaduserlist('male')">男</button>
+              <button type="button" class="btn btn-default" ng-click="loaduserlist('female')">女</button>
+            </div>
           </ul><hr>
           <ul class="nav nav-sidebar">
             <li class="panel-heading">按分区：</li>
-            <li><a>电信</a></li>
-            <li><a>联通</a></li>
+            <div class="btn-group btn-group-sm center-block" style="width:90%">
+              <button type="button" class="btn btn-primary active">电信</button>
+              <button type="button" class="btn btn-default">联通</button>
+            </div>
           </ul><hr>
             <ul class="nav nav-sidebar">
                 <li class="panel-heading">按水平等级：</li>
-                <button class="btn btn-primary center-block" style="width:210px" ng-click="tellmemore()">选择英雄</button>
+                <div class="btn-group btn-group-sm center-block" style="width:90%">
+                  <button type="button" class="btn btn-default">Normal</button>
+                  <button type="button" class="btn btn-default">High</button>
+                  <button type="button" class="btn btn-primary active">Very High</button>
+                </div>
             </ul><hr>
         </div>
         <div>
@@ -68,7 +76,7 @@ include("library/xwFE-0.0.1/FEM.php");
               <!--<a class="btn btn-primary aaaa" role="button" ng-click="loaduserlist()" style="margin-top:-6px"><span class="glyphicon glyphicon-refresh"></span>刷新列表</a>-->
             </h3>
             <div class="table-responsive" style="position:relative">
-                <div class="table-responsive-mask" style="width:100%;height:100%;background-color:black;opacity:0.7;border-radius:4px;position:absolute;top:0;left:0;z-index:1000;display: none">
+                <div ng-if="maskVis =='1'" class="table-responsive-mask" style="width:100%;height:100%;background-color:black;opacity:0.7;border-radius:4px;position:absolute;top:0;left:0;z-index:1000;display: none">
                     <div style="width:32px;top:45%;left:45%;position:absolute">
                         <img src="img/fragments/loading/5-121204193955-50.gif">
                     </div>
