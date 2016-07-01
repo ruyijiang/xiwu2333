@@ -23,28 +23,28 @@ include("library/xwFE-0.0.1/FEM.php");
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a>概览<span class="sr-only">(current)</span></a></li>
+            <li ng-class="{active:UserListSearchConfig.gender == '' && UserListSearchConfig.serverArr == '' && UserListSearchConfig.skillLevel == '' }"><a ng-click="changeShowPage(1)">概览<span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li class="panel-heading">按性别：</li>
             <div class="btn-group btn-group-sm center-block" style="width:90%">
-              <button type="button" class="btn btn-primary active" ng-click="loaduserlist('male')">男</button>
-              <button type="button" class="btn btn-default" ng-click="loaduserlist('female')">女</button>
+              <button type="button" ng-class="{active:UserListSearchConfig.gender === 'male'}" ng-click="changeShowPage(1,'male')" class="btn btn-default">男</button>
+              <button type="button" ng-class="{active:UserListSearchConfig.gender === 'female'}" ng-click="changeShowPage(1,'female')" class="btn btn-default">女</button>
             </div>
           </ul><hr>
           <ul class="nav nav-sidebar">
             <li class="panel-heading">按分区：</li>
             <div class="btn-group btn-group-sm center-block" style="width:90%">
-              <button type="button" class="btn btn-primary active">电信</button>
-              <button type="button" class="btn btn-default">联通</button>
+              <button type="button" ng-class="{active:UserListSearchConfig.serverArr === 'dianxin'}" ng-click="changeShowPage(1,'dianxin')" class="btn btn-default">电信</button>
+              <button type="button" ng-class="{active:UserListSearchConfig.serverArr === 'liantong'}" ng-click="changeShowPage(1,'liantong')" class="btn btn-default">联通</button>
             </div>
           </ul><hr>
             <ul class="nav nav-sidebar">
                 <li class="panel-heading">按水平等级：</li>
                 <div class="btn-group btn-group-sm center-block" style="width:90%">
-                  <button type="button" class="btn btn-default">Normal</button>
-                  <button type="button" class="btn btn-default">High</button>
-                  <button type="button" class="btn btn-primary active">Very High</button>
+                  <button type="button" ng-class="{active:UserListSearchConfig.skillLevel === 'Normal'}" ng-click="changeShowPage(1,'Normal')" class="btn btn-default">Normal</button>
+                  <button type="button" ng-class="{active:UserListSearchConfig.skillLevel === 'High'}" ng-click="changeShowPage(1,'High')" class="btn btn-default">High</button>
+                  <button type="button" ng-class="{active:UserListSearchConfig.skillLevel === 'Very High'}" ng-click="changeShowPage(1,'Very High')" class="btn btn-default">Very High</button>
                 </div>
             </ul><hr>
         </div>

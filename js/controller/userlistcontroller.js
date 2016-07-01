@@ -18,14 +18,36 @@ app.controller('userlistController',function ($scope,$rootScope,$http){
     var num_onepage = 15;//每页显示条数
     $scope.ListActive = 1;//class为active的分页按钮位置代码
     $scope.ListSelectedNum = null;//class为active的分页按钮位置代码
-    $scope.gender = $scope.serverArr = $scope.skillLevel = "";
-    /*******初始化完成***********/
 
-
+    $scope.UserListSearchConfig = {
+        gender : 'female',
+        serverArr : 'liantong',
+        skillLevel : 'Very High'
+    };
 
     $scope.changeShowPage = function (num,cateCont){
-        if(cateCont=="male"||cateCont=="female"||cateCont=="dianxin"||cateCont=="liantong"){
-
+        switch (cateCont){
+            case "male":
+                $scope.UserListSearchConfig.gender = 'male';
+                break;
+            case "female":
+                $scope.UserListSearchConfig.gender = 'female';
+                break;
+            case "dianxin":
+                $scope.UserListSearchConfig.serverArr.push("dianxin");
+                break;
+            case "liantong":
+                $scope.UserListSearchConfig.serverArr.push("liantong");
+                break;
+            case "Normal":
+                $scope.UserListSearchConfig.skillLevel.push("Normal");
+                break;
+            case "High":
+                $scope.UserListSearchConfig.skillLevel.push("High");
+                break;
+            case "Very High":
+                $scope.UserListSearchConfig.skillLevel.push("Very High");
+                break;
         }
         !cateCont?cateCont="":cateCont;
         $.ajax({
