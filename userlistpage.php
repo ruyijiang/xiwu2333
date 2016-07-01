@@ -23,7 +23,7 @@ include("library/xwFE-0.0.1/FEM.php");
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li ng-class="{active:UserListSearchConfig.gender == '' && UserListSearchConfig.serverArr == '' && UserListSearchConfig.skillLevel == '' }"><a ng-click="changeShowPage(1)">概览<span class="sr-only">(current)</span></a></li>
+            <li ng-class="{active:UserListSearchConfig.gender == '' && UserListSearchConfig.server == '' && UserListSearchConfig.skillLevel == '' }"><a ng-click="MiniNav('')">概览<span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li class="panel-heading">按性别：</li>
@@ -76,7 +76,7 @@ include("library/xwFE-0.0.1/FEM.php");
               <!--<a class="btn btn-primary aaaa" role="button" ng-click="loaduserlist()" style="margin-top:-6px"><span class="glyphicon glyphicon-refresh"></span>刷新列表</a>-->
             </h3>
             <div class="table-responsive" style="position:relative">
-                <div ng-if="maskVis =='1'" class="table-responsive-mask" style="width:100%;height:100%;background-color:black;opacity:0.7;border-radius:4px;position:absolute;top:0;left:0;z-index:1000;display: none">
+                <div ng-if="maskVis == '1'" class="table-responsive-mask" style="width:100%;height:100%;background-color:black;opacity:0.7;border-radius:4px;position:absolute;top:0;left:0;z-index:1000;display: none">
                     <div style="width:32px;top:45%;left:45%;position:absolute">
                         <img src="img/fragments/loading/5-121204193955-50.gif">
                     </div>

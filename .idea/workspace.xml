@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/userlistcontroller.js" afterPath="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userlistpage.php" afterPath="$PROJECT_DIR$/userlistpage.php" />
     </list>
     <ignored path="www.iws" />
@@ -34,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="userlistcontroller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userlistcontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+            <state relative-caret-position="150">
+              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -47,24 +49,24 @@
       <file leaf-file-name="userlist_export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            <state relative-caret-position="216">
+              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding>
-                <marker date="1467362282248" expanded="true" signature="554:621" ph="SELECT uid F... users" />
-                <marker date="1467362282248" expanded="true" signature="1232:1316" ph="SELECT uid F... users" />
-                <marker date="1467362282248" expanded="true" signature="1635:1717" ph="SELECT * FRO... users" />
+                <marker date="1467363769045" expanded="true" signature="551:618" ph="SELECT uid F... users" />
+                <marker date="1467363769045" expanded="true" signature="1225:1309" ph="SELECT uid F... users" />
+                <marker date="1467363769045" expanded="true" signature="1628:1710" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/userlistpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="31" column="123" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
+            <state relative-caret-position="205">
+              <caret line="25" column="98" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
               <folding>
-                <marker date="1467362557929" expanded="true" signature="6852:6919" ph="SELECT uid F... users" />
+                <marker date="1467363934177" expanded="true" signature="6844:6911" ph="SELECT uid F... users" />
               </folding>
             </state>
           </provider>
@@ -738,7 +740,7 @@
       <workItem from="1467353275243" duration="1297000" />
       <workItem from="1467354653108" duration="6260000" />
       <workItem from="1467362297179" duration="122000" />
-      <workItem from="1467362504953" duration="61000" />
+      <workItem from="1467362504953" duration="1440000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1027,11 +1029,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467362251546</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fuck yeah!! x3">
+      <created>1467362573279</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1467362573279</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1008808000" />
+    <option name="totallyTimeSpent" value="1010187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1075,7 +1084,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="about finish upload avatar..and there were something not good.i will fixed it ,in version 0.02" />
     <MESSAGE value="add an alert" />
     <MESSAGE value="add some files ,for blog.php can load successfully." />
     <MESSAGE value="fixed some bugs about navstyle and main.modal can skip to roomlist.modal." />
@@ -1100,7 +1108,8 @@
     <MESSAGE value="recode something in userlistController.js" />
     <MESSAGE value="fixed some bugs." />
     <MESSAGE value="fuck yeah!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="fuck yeah!!" />
+    <MESSAGE value="fuck yeah!! x3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuck yeah!! x3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1452,31 +1461,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="216">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
           <folding>
-            <marker date="1467362282248" expanded="true" signature="554:621" ph="SELECT uid F... users" />
-            <marker date="1467362282248" expanded="true" signature="1232:1316" ph="SELECT uid F... users" />
-            <marker date="1467362282248" expanded="true" signature="1635:1717" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userlistpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="31" column="123" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
-          <folding>
-            <marker date="1467362557929" expanded="true" signature="6852:6919" ph="SELECT uid F... users" />
+            <marker date="1467363769045" expanded="true" signature="551:618" ph="SELECT uid F... users" />
+            <marker date="1467363769045" expanded="true" signature="1225:1309" ph="SELECT uid F... users" />
+            <marker date="1467363769045" expanded="true" signature="1628:1710" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+        <state relative-caret-position="150">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlistpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="25" column="98" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
+          <folding>
+            <marker date="1467363934177" expanded="true" signature="6844:6911" ph="SELECT uid F... users" />
+          </folding>
         </state>
       </provider>
     </entry>
