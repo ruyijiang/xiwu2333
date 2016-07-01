@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/userlistcontroller.js" afterPath="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userlistpage.php" afterPath="$PROJECT_DIR$/userlistpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,27 +44,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userlist_export.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="userlist_export.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+            <state relative-caret-position="126">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
               <folding>
-                <marker date="1467357674761" expanded="true" signature="554:621" ph="SELECT uid F... users" />
-                <marker date="1467357674761" expanded="true" signature="1238:1266" ph="SELECT uid F... users" />
-                <marker date="1467357674761" expanded="true" signature="1238:1322" ph="SELECT uid F... users" />
-                <marker date="1467357674761" expanded="true" signature="1238:1323" ph="SELECT uid F... users" />
-                <marker date="1467357674761" expanded="true" signature="1641:1723" ph="SELECT * FRO... users" />
+                <marker date="1467362174100" expanded="true" signature="554:621" ph="SELECT uid F... users" />
+                <marker date="1467362174100" expanded="true" signature="1235:1263" ph="SELECT uid F... users" />
+                <marker date="1467362174100" expanded="true" signature="1235:1319" ph="SELECT uid F... users" />
+                <marker date="1467362174100" expanded="true" signature="1235:1320" ph="SELECT uid F... users" />
+                <marker date="1467362174100" expanded="true" signature="1638:1720" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userlistpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+            <state relative-caret-position="276">
+              <caret line="141" column="30" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ul#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <marker date="1467359449104" expanded="true" signature="6868:6935" ph="SELECT uid F... users" />
@@ -147,9 +145,9 @@
         <option value="$PROJECT_DIR$/js/angular-validation-rule.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/Recommendation_User.php" />
         <option value="$PROJECT_DIR$/js/controller/xiwucontroller.js" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php" />
         <option value="$PROJECT_DIR$/userlistpage.php" />
         <option value="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php" />
       </list>
     </option>
   </component>
@@ -741,7 +739,7 @@
       <workItem from="1467350949716" duration="678000" />
       <workItem from="1467352126579" duration="83000" />
       <workItem from="1467353275243" duration="1297000" />
-      <workItem from="1467354653108" duration="4895000" />
+      <workItem from="1467354653108" duration="6164000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1009,11 +1007,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467340970362</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="recode something in userlistController.js">
+      <created>1467359642356</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1467359642356</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1007260000" />
+    <option name="totallyTimeSpent" value="1008529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1022,7 +1027,7 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23289777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32533732" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4737631" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49590835" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1057,7 +1062,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create a algorithm to create 8bit random uid for every user." />
     <MESSAGE value="finish liveness_rate modal in homepage.php" />
     <MESSAGE value="review something. and add a modal of upload avatar" />
     <MESSAGE value="about finish upload avatar..and there were something not good.i will fixed it ,in version 0.02" />
@@ -1082,7 +1086,8 @@
     <MESSAGE value="improve userlist_export.php" />
     <MESSAGE value="about finished userlist.modal,and i would fixed it's controller ,now!" />
     <MESSAGE value="add something in userlistController.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add something in userlistController.js" />
+    <MESSAGE value="recode something in userlistController.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="recode something in userlistController.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1441,6 +1446,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/userlistpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="141" column="30" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ul#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1467359449104" expanded="true" signature="6868:6935" ph="SELECT uid F... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -1451,25 +1467,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        <state relative-caret-position="126">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding>
-            <marker date="1467357674761" expanded="true" signature="554:621" ph="SELECT uid F... users" />
-            <marker date="1467357674761" expanded="true" signature="1238:1266" ph="SELECT uid F... users" />
-            <marker date="1467357674761" expanded="true" signature="1238:1322" ph="SELECT uid F... users" />
-            <marker date="1467357674761" expanded="true" signature="1238:1323" ph="SELECT uid F... users" />
-            <marker date="1467357674761" expanded="true" signature="1641:1723" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userlistpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ul#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1467359449104" expanded="true" signature="6868:6935" ph="SELECT uid F... users" />
+            <marker date="1467362174100" expanded="true" signature="554:621" ph="SELECT uid F... users" />
+            <marker date="1467362174100" expanded="true" signature="1235:1263" ph="SELECT uid F... users" />
+            <marker date="1467362174100" expanded="true" signature="1235:1319" ph="SELECT uid F... users" />
+            <marker date="1467362174100" expanded="true" signature="1235:1320" ph="SELECT uid F... users" />
+            <marker date="1467362174100" expanded="true" signature="1638:1720" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
