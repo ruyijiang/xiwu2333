@@ -15,14 +15,25 @@ require("../all.php");
     $a = new interfaceResponse();
     $status = $reminder = 0;
 
-    $sql = "SELECT title,content,uid,time FROM articles WHERE aid = '$aid' ";
+    $sql = "SELECT id,title,content,uid,time FROM articles WHERE aid = '$aid' ";
 
-    $sql_prev = "SELECT aid FROM articles WHERE aid < '$aid' LIMIT 0,1 ";
-    $sql_next = "SELECT aid FROM articles WHERE aid > '$aid' LIMIT 0,1 ";
+
+
 
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
+    $result_id = $row["id"];
     $result_uid = $row["uid"];//作者uid
+
+    $sql_prev = "SELECT aid FROM articles WHERE id < '$result_id' AND uid = '$result_uid' ORDER BY id DESC LIMIT 0,1 ";
+    $qry_prev = $db->query($sql_prev);
+    $row_prev = $qry_prev->fetch_assoc();
+    $result_prev = $row_prev["aid"];//前一篇的aid
+    $sql_next = "SELECT aid FROM articles WHERE id > '$result_id' AND uid = '$result_uid' ORDER BY id ASC LIMIT 0,1 ";
+    $qry_next = $db->query($sql_next);
+    $row_next = $qry_next->fetch_assoc();
+    $result_next = $row_next["aid"];//后一篇的aid
+
     $result_uid == $uid?$result_permission=true:$result_permission=false;//用户权限
     $result_title = $row["title"];//文章标题
     $result_content = $row["content"];//文章正文
@@ -39,10 +50,11 @@ require("../all.php");
     $result_hotblog = "[".$result_hotblog."]";
 
     //根据uid获得用户相关信息
-    $sql2 = "SELECT name,slogan,avatar,weibo,liveplain FROM users WHERE uid = '$result_uid' ";
+    $sql2 = "SELECT name,gender,slogan,avatar,weibo,liveplain FROM users WHERE uid = '$result_uid' ";
     $qry2 = $db->query($sql2);
     $row2 = $qry2->fetch_assoc();
     $result_author_name = $row2["name"];//作者用户名
+    $result_gender = $row2["gender"];//作者用户名
     $result_author_slogan = $row2["slogan"];//作者签名
     $result_author_avatar = $row2["avatar"];//作者头像
     if($row2["weibo"]){
@@ -57,7 +69,7 @@ require("../all.php");
 
 
 
-    @$dataArr = array ('title'=>$result_title,'content'=>htmlspecialchars($result_content),'time'=>$result_time,'uid'=>$result_uid,'permission'=>$result_permission,'name'=>$result_author_name,'slogan'=>$result_author_slogan,'hotblog'=>$result_hotblog,'avatar'=>$result_author_avatar,'weibo_status'=>$weibo_status,'weibo'=>$result_author_weibo,'liveplain_status'=>$liveplain_status,'liveplain'=>$result_author_liveplain);
+    @$dataArr = array ('title'=>$result_title,'content'=>htmlspecialchars($result_content),'time'=>$result_time,'uid'=>$result_uid,'permission'=>$result_permission,'name'=>$result_author_name,'gender'=>$result_gender,'slogan'=>$result_author_slogan,'hotblog'=>$result_hotblog,'avatar'=>$result_author_avatar,'weibo_status'=>$weibo_status,'weibo'=>$result_author_weibo,'liveplain_status'=>$liveplain_status,'liveplain'=>$result_author_liveplain,'prev_aid'=>$result_prev,'next_aid'=>$result_next);
     foreach ( $dataArr as $key => $value ) {
         $dataArr[$key] = urlencode ($value) ;
     }

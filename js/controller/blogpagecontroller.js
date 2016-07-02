@@ -17,7 +17,9 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
                 $scope.BlogExport = data;
                 $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
                 $scope.BlogExport.hotblog = eval("("+$scope.BlogExport.hotblog+")");
-
+                $scope.BlogExportHotblogLen = $scope.BlogExport.hotblog.length;
+                console.log($scope.BlogExportHotblogLen);
+                console.log($scope.BlogExport.prev_aid);
                 $scope.dialog_confirmdelete = {
                     open:false,
                     content:"确认删除《"+$scope.BlogExport.title+"》吗？"
@@ -55,6 +57,13 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
         }
     }
 
+    /**
+     * 前一页、后一页的跳转
+     */
+    $scope.skiptoart = function (aid){
+        $location.url("/blog?aid="+aid);
+        window.location.reload();
+    };
 
 
 

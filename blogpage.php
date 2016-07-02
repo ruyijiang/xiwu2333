@@ -51,8 +51,8 @@ header("Content-Type: text/html; charset=utf-8");
 
           <nav>
             <ul class="pager">
-              <li><a ng-href="/#/main?aid=1234">&laquo;&nbsp;前一篇</a></li>
-              <li><a href="#">后一篇&nbsp;&raquo;</a></li>
+              <li ng-if="BlogExport.prev_aid!=='' "><a ng-click="skiptoart(BlogExport.prev_aid)">&laquo;&nbsp;前一篇</a></li><!--ng-href="/#/blog?aid={{BlogExport.prev_aid}}"-->
+              <li ng-if="BlogExport.next_aid!=='' "><a ng-click="skiptoart(BlogExport.next_aid)">后一篇&nbsp;&raquo;</a></li><!--ng-href="/#/blog?aid={{BlogExport.next_aid}}"-->
             </ul>
           </nav>
 
@@ -68,10 +68,11 @@ header("Content-Type: text/html; charset=utf-8");
           </div>
           <hr>
           <div class="sidebar-module">
-            <h4><span class="glyphicon glyphicon-fire"></span>热门</h4>
+            <h4><span class="glyphicon glyphicon-fire"></span><span ng-if="BlogExport.gender == '0'">他</span><span ng-if="BlogExport.gender == '1'">她</span>的热门</h4>
             <ol class="list-unstyled" style="margin-left:5px">
-              <li ng-repeat="xhota in BlogExport.hotblog"><a ng-href="/#/article?aid={{xhota.aid}}"><span class="glyphicon glyphicon-file"></span>{{xhota.title}}</a></li>
+              <li ng-repeat="xhota in BlogExport.hotblog"><a ng-click="skiptoart(xhota.aid)"><span class="glyphicon glyphicon-file"></span>{{xhota.title}}</a></li>
             </ol>
+            <small ng-if="BlogExportHotblogLen == 0">暂无其它</small>
           </div>
           <hr>
          <!-- <div class="sidebar-module">
