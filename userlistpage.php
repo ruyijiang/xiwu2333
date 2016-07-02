@@ -98,7 +98,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <tbody><!--一页15个-->
                 <tr ng-repeat="ud in userListDataArr">
                   <td>{{ud.dota2_uid}}</td>
-                  <td>{{ud.name}}</td>
+                  <td><a href="/#/person?uid={{ud.uid}}">{{ud.name}}</a></td>
                   <td>
                     <span ng-if="ud.gender == '0'">男</span>
                     <span ng-if="ud.gender == '1'">女</span>

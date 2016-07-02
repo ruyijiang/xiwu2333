@@ -4,6 +4,15 @@ require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 ?>
 <div class="container col-lg-12 col-sm-12" style="margin-top:100px" ng-controller="loginController">
+    <div class="alert alert-info text-center center-block" role="alert" style="margin-top:-35px;width:100%" ng-if="SkipStatus_ofLogedin == '0'">
+        <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">
+            &times;
+        </button>
+        <i class="iconfont icon-alert"></i>
+        无法浏览相关内容，请先登录 &nbsp;|&nbsp; <a ng-href="/#/signup">还没有账号？</a>
+    </div>
+
     <div class="col-lg-4 col-sm-4"></div>
         <div class="row col-lg-4 col-sm-4 clearfix center-block">
           <form class="form-signin center-block" ng-submit="loginsubmit()">

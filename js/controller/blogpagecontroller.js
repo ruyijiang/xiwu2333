@@ -16,6 +16,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
             }).success(function (data){
                 $scope.BlogExport = data;
                 $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
+                $scope.BlogExport.hotblog = eval("("+$scope.BlogExport.hotblog+")");
 
                 $scope.dialog_confirmdelete = {
                     open:false,

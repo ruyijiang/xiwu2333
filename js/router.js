@@ -20,6 +20,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("login", {
             url: "/login",
+            params: "",
             templateUrl: "loginpage.php",
             resolve:{
                 guarder: function($q,$location,checkStatus,$state){
@@ -60,15 +61,48 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("info_setting", {
             url: "/info_setting",
-            templateUrl: "info_settingpage.php"
+            templateUrl: "info_settingpage.php",
+            resolve:{
+                guarder: function($location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        if(allowed!=="1"){
+                            $location.path("/login").replace();
+                        }
+                    });
+                }
+            }
         })
         .state("m_password",{
             url: "/m_password",
-            templateUrl: "m_passwordpage.php"
+            templateUrl: "m_passwordpage.php",
+            resolve:{
+                guarder: function($location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        if(allowed!=="1"){
+                            $location.path("/login").replace();
+                        }
+                    });
+                }
+            }
         })
         .state("certification",{
             url: "/certification",
-            templateUrl: "certification_settingpage.php"
+            templateUrl: "certification_settingpage.php",
+            resolve:{
+                guarder: function($location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        if(allowed!=="1"){
+                            $location.path("/login").replace();
+                        }
+                    });
+                }
+            }
         })
         .state("createroom",{
             url: "/createroom",

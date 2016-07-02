@@ -38,17 +38,19 @@ include("library/xwFE-0.0.1/FEM.php");
                 <img src="img/fragments/bgs/5201e19825bf0920045673big.jpg" class="img-responsive center-block"/>
             </div>
             <div class="panel panel-default" style="box-shadow:1px 1px 2px #e3e3e3">
-                <div class="panel-heading">随机推荐</div>
+                <div class="panel-heading">推荐</div>
                 <div class="panel-body" style="padding:0">
                     <div style="position: relative;">
                         <img src="img/main_bg/20130428100656532.jpg" alt="dota2" width="100%"/>
-                        <img ng-src="{{RecoUser.avatar}}" style="position:absolute;top:60%;left:35%;cursor:pointer" class="img-circle center-block" alt="{{RecoUser.name}}" title="{{RecoUser.name}}" width="80" height="80"/>
+                        <a ng-href="/#/person?uid={{RecoUser.uid}}">
+                            <img ng-src="{{RecoUser.avatar}}" style="position:absolute;top:60%;left:35%;cursor:pointer" class="img-circle center-block" alt="{{RecoUser.name}}" title="{{RecoUser.name}}" width="80" height="80"/>
+                        </a>
                     </div>
 
                     <div class="caption" style="margin-top:50px">
                         <div style="margin:10px">
-                            <a style="font-size:15px;">{{RecoUser.name}}</a>
-                            <i class="iconfont icon-nan" style="color:hotpink;margin-left:5px" ng-if="RecoUser.gender == 0""></i>
+                            <a style="font-size:15px;" ng-href="/#/person?uid={{RecoUser.uid}}">{{RecoUser.name}}</a>
+                            <i class="iconfont icon-nan" style="color:hotpink;margin-left:5px" ng-if="RecoUser.gender == 0"></i>
                             <i class="iconfont icon-nvhai" style="color:hotpink;margin-left:5px" ng-if="RecoUser.gender == 1"></i>
 
                             <div style="display: block;margin-bottom:5px">

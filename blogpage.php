@@ -60,7 +60,7 @@ header("Content-Type: text/html; charset=utf-8");
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-3 blog-sidebar">
           <div class="user-avatar">
               <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
-          	<a><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
+          	<a ng-href="/#/person?uid={{BlogExport.uid}}"><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
           </div>
           <div class="sidebar-module sidebar-module-inset">
             <strong style="font-size:19px;">{{BlogExport.name}}</strong><i class="iconfont icon-renzheng" style="font-size:22px;color:#d87f00;margin-left:5px" title="1234"></i>
@@ -70,9 +70,7 @@ header("Content-Type: text/html; charset=utf-8");
           <div class="sidebar-module">
             <h4><span class="glyphicon glyphicon-fire"></span>热门</h4>
             <ol class="list-unstyled" style="margin-left:5px">
-              <li><a href="#"><span class="glyphicon glyphicon-file"></span>我的电子竞技之路</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-file"></span>喜屋[公开征集]网站LOGO</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-file"></span>当我在做喜屋时，我到底在做什么？</a></li>
+              <li ng-repeat="xhota in BlogExport.hotblog"><a ng-href="/#/article?aid={{xhota.aid}}"><span class="glyphicon glyphicon-file"></span>{{xhota.title}}</a></li>
             </ol>
           </div>
           <hr>
@@ -113,9 +111,7 @@ header("Content-Type: text/html; charset=utf-8");
 
       <?php echo $footer;?>
     </div><!--container-->
-    
-    
-    
+
     
 
 <MyRoom></MyRoom>
