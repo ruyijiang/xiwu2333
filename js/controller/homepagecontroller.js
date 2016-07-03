@@ -133,7 +133,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         $scope.a_num_onepage = $scope.UserData.page_num;
         //先判断分页基本信息
         $.ajax({
-            url:'library/xwBE-0.0.1/Interface/pagination.php',
+            url:'library/xwBE-0.0.1/Interface/Pagination/pagination.php',
             type:'GET',
             async:false,
             data:{

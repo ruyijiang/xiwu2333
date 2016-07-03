@@ -5,8 +5,8 @@
  * Date: 2016/6/4
  * Time: 15:49
  */
-require("../connectDB.php");
-require("../all.php");
+require("../../connectDB.php");
+require("../../all.php");
 ?>
 <?php
     $responseCate = $_GET["responseCate"];
