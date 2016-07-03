@@ -51,8 +51,8 @@ header("Content-Type: text/html; charset=utf-8");
 
           <nav>
             <ul class="pager">
-              <li ng-if="BlogExport.prev_aid!=='' "><a ng-click="skiptoart(BlogExport.prev_aid)">&laquo;&nbsp;前一篇</a></li><!--ng-href="/#/blog?aid={{BlogExport.prev_aid}}"-->
-              <li ng-if="BlogExport.next_aid!=='' "><a ng-click="skiptoart(BlogExport.next_aid)">后一篇&nbsp;&raquo;</a></li><!--ng-href="/#/blog?aid={{BlogExport.next_aid}}"-->
+              <li ng-if="BlogExport.prev_aid!=='' "><a ng-click="skiptoart(BlogExport.prev_aid)">&laquo;&nbsp;上一篇</a></li><!--ng-href="/#/blog?aid={{BlogExport.prev_aid}}"-->
+              <li ng-if="BlogExport.next_aid!=='' "><a ng-click="skiptoart(BlogExport.next_aid)">下一篇&nbsp;&raquo;</a></li><!--ng-href="/#/blog?aid={{BlogExport.next_aid}}"-->
             </ul>
           </nav>
 

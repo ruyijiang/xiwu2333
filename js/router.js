@@ -38,7 +38,13 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("blog", {
             url: "/blog",
-            templateUrl: "blogpage.php"
+            templateUrl: "blogpage.php",
+            resolve:{
+                guarder: function($location,checkStatus){
+                    if(!$location.search()["aid"] || $location.search()["aid"]==true ||  $location.search()["aid"]=="") $location.path("/404").replace();
+                }
+
+            }
         })
         .state("writeblog", {
             url: "/writeblog",

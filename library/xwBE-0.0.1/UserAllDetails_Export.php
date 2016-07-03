@@ -11,7 +11,7 @@ require("all.php");
 <?php
 
     $status = $reminder = "";
-    $RequestUid = $_GET["uid"];
+    @$RequestUid = $_GET["uid"];
 
     $SessionStatus = false;
     if(!isset($RequestUid) || empty($RequestUid)){//请求的是自己
