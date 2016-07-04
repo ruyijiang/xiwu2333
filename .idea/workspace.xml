@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/homepagecontroller.js" afterPath="$PROJECT_DIR$/js/controller/homepagecontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/pagination.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +37,7 @@
       <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="840">
               <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
                 <marker date="1467511096178" expanded="true" signature="478:523" placeholder="SELECT * FRO... users" />
@@ -52,10 +50,40 @@
       <file leaf-file-name="pagination.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="696">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding>
-                <marker date="1467544817153" expanded="true" signature="396:437" placeholder="SELECT aid F... articles" />
+                <marker date="1467647419744" expanded="true" signature="399:440" placeholder="SELECT aid F... articles" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_action.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="244" column="49" selection-start-line="244" selection-start-column="49" selection-end-line="244" selection-end-column="49" />
+              <folding>
+                <marker date="1467026202047" expanded="true" signature="457:495" placeholder="SELECT * FRO... users" />
+                <marker date="1467026202047" expanded="true" signature="1016:1067" placeholder="SELECT conte... callingcard" />
+                <marker date="1467026202047" expanded="true" signature="1922:1961" placeholder="SELECT * FRO... users" />
+                <marker date="1467026202047" expanded="true" signature="2525:2576" placeholder="SELECT conte... callingcard" />
+                <marker date="1467026202047" expanded="true" signature="3484:3528" placeholder="select * fro... users" />
+                <marker date="1467026202047" expanded="true" signature="4140:4190" placeholder="SELECT conte... callingcard" />
+                <marker date="1467026202047" expanded="true" signature="5160:5201" placeholder="select * fro... users" />
+                <marker date="1467026202047" expanded="true" signature="5862:5913" placeholder="SELECT conte... callingcard" />
+                <marker date="1467026202047" expanded="true" signature="6937:6983" placeholder="select * fro... users" />
+                <marker date="1467026202047" expanded="true" signature="7691:7742" placeholder="SELECT conte... callingcard" />
+                <marker date="1467026202047" expanded="true" signature="9285:9328" placeholder="SELECT * FRO... articles" />
+                <marker date="1467026202047" expanded="true" signature="9751:9796" placeholder="SELECT name users" />
+                <marker date="1467026202047" expanded="true" signature="10548:10596" placeholder="SELECT * FRO... articles" />
+                <marker date="1467026202047" expanded="true" signature="11059:11104" placeholder="SELECT name users" />
+                <marker date="1467026202047" expanded="true" signature="11912:11962" placeholder="SELECT * FRO... articles" />
+                <marker date="1467026202047" expanded="true" signature="12465:12510" placeholder="SELECT name users" />
+                <marker date="1467026202047" expanded="true" signature="14167:14227" placeholder="SELECT times... searchings" />
+                <marker date="1467026202047" expanded="true" signature="14541:14606" placeholder="UPDATE searc... " />
+                <marker date="1467026202047" expanded="true" signature="15110:15174" placeholder="INSERT INTO searchings... " />
               </folding>
             </state>
           </provider>
@@ -195,19 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -402,6 +417,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -766,6 +794,9 @@
       <workItem from="1467539144031" duration="1113000" />
       <workItem from="1467542345299" duration="4120000" />
       <workItem from="1467559184305" duration="90000" />
+      <workItem from="1467559660747" duration="796000" />
+      <workItem from="1467642881345" duration="191000" />
+      <workItem from="1467646058097" duration="1234000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1065,7 +1096,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1044846000" />
+    <option name="totallyTimeSpent" value="1047067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1147,13 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="731" column="13" selection-start-line="731" selection-start-column="13" selection-end-line="731" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="29" column="152" selection-start-line="29" selection-start-column="152" selection-end-line="29" selection-end-column="152" />
         </state>
       </provider>
     </entry>
@@ -1340,13 +1364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1227">
-          <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/userlist_export.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1470,7 +1487,7 @@
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination_forSearch.php" />
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="840">
           <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
             <marker date="1467511096178" expanded="true" signature="478:523" placeholder="SELECT * FRO... users" />
@@ -1479,12 +1496,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="29" column="152" selection-start-line="29" selection-start-column="152" selection-end-line="29" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="244" column="49" selection-start-line="244" selection-start-column="49" selection-end-line="244" selection-end-column="49" />
+          <folding>
+            <marker date="1467026202047" expanded="true" signature="457:495" placeholder="SELECT * FRO... users" />
+            <marker date="1467026202047" expanded="true" signature="1016:1067" placeholder="SELECT conte... callingcard" />
+            <marker date="1467026202047" expanded="true" signature="1922:1961" placeholder="SELECT * FRO... users" />
+            <marker date="1467026202047" expanded="true" signature="2525:2576" placeholder="SELECT conte... callingcard" />
+            <marker date="1467026202047" expanded="true" signature="3484:3528" placeholder="select * fro... users" />
+            <marker date="1467026202047" expanded="true" signature="4140:4190" placeholder="SELECT conte... callingcard" />
+            <marker date="1467026202047" expanded="true" signature="5160:5201" placeholder="select * fro... users" />
+            <marker date="1467026202047" expanded="true" signature="5862:5913" placeholder="SELECT conte... callingcard" />
+            <marker date="1467026202047" expanded="true" signature="6937:6983" placeholder="select * fro... users" />
+            <marker date="1467026202047" expanded="true" signature="7691:7742" placeholder="SELECT conte... callingcard" />
+            <marker date="1467026202047" expanded="true" signature="9285:9328" placeholder="SELECT * FRO... articles" />
+            <marker date="1467026202047" expanded="true" signature="9751:9796" placeholder="SELECT name users" />
+            <marker date="1467026202047" expanded="true" signature="10548:10596" placeholder="SELECT * FRO... articles" />
+            <marker date="1467026202047" expanded="true" signature="11059:11104" placeholder="SELECT name users" />
+            <marker date="1467026202047" expanded="true" signature="11912:11962" placeholder="SELECT * FRO... articles" />
+            <marker date="1467026202047" expanded="true" signature="12465:12510" placeholder="SELECT name users" />
+            <marker date="1467026202047" expanded="true" signature="14167:14227" placeholder="SELECT times... searchings" />
+            <marker date="1467026202047" expanded="true" signature="14541:14606" placeholder="UPDATE searc... " />
+            <marker date="1467026202047" expanded="true" signature="15110:15174" placeholder="INSERT INTO searchings... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="696">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding>
-            <marker date="1467544817153" expanded="true" signature="396:437" placeholder="SELECT aid F... articles" />
+            <marker date="1467647419744" expanded="true" signature="399:440" placeholder="SELECT aid F... articles" />
           </folding>
         </state>
       </provider>

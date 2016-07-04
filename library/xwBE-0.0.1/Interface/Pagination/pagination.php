@@ -16,7 +16,7 @@ require("../../all.php");
     if(!$uid) $uid=$_SESSION["uid"];
 
     if($responseCate == 'article'){
-        //-----------------请求的是文章列表
+        //-----------------请求的是文章列表的分页
         $sql = "SELECT aid FROM articles WHERE uid='$uid' ";
         $qry = $db->query($sql);
         $row_all = mysqli_num_rows($qry);//总条数
@@ -31,7 +31,8 @@ require("../../all.php");
         $dataArr = urldecode ( json_encode ( $dataArr ));
         echo $dataArr;
 
-    }else{
-
+    }else if($responseCate == 'user'){
+        //-----------------请求的是用户列表的分页
+        
     }
 ?>
