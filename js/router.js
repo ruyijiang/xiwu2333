@@ -19,8 +19,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             templateUrl: "userlistpage.php"
         })
         .state("login", {
-            url: "/login",
-            params: "",
+            url: "/login/:needLogin",
             templateUrl: "loginpage.php",
             resolve:{
                 guarder: function($q,$location,checkStatus,$state){
@@ -74,7 +73,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
                         if(allowed!=="1"){
-                            $location.path("/login").replace();
+                            $location.path("/login/needLogin").replace();
                         }
                     });
                 }
@@ -89,7 +88,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
                         if(allowed!=="1"){
-                            $location.path("/login").replace();
+                            $location.path("/login/needLogin").replace();
                         }
                     });
                 }
@@ -104,7 +103,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
                         if(allowed!=="1"){
-                            $location.path("/login").replace();
+                            $location.path("/login/needLogin").replace();
                         }
                     });
                 }
@@ -135,7 +134,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state("404", {
             url: "/404",
             templateUrl: "404.html"
-        })
+        });
         $urlRouterProvider.otherwise('/404');
         //remove #
         //$locationProvider.html5Mode(true);
