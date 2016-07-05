@@ -65,7 +65,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
                 <!--User--><div ng-if="priority=='user' && SearchContentReq[0].statuscode!=='0'" style="display:block;" class="col-lg-8 col-md-9 col-xs-12 search_user_container" style="font-size:16px;">
-                    <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in SearchContentReq">
+                    <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in SearchContentReq" ng-if="xu.name !== undefined">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
                         </div>
@@ -86,21 +86,8 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="row text-center">
                         <nav>
                             <ul class="pagination">
-                                <li>
-                                    <a aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="active"><a ng-click="changeShowPage(xpag,'')">1</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">2</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">3</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">4</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">5</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">6</a></li>
-                                <li>
-                                    <a aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
+                                <li class="active" ng-repeat="xpag in Page_ficArr">
+                                    <a ng-click="sendSearch(content,priority,xpag)">{{xpag}}</a>
                                 </li>
                             </ul>
                         </nav>
@@ -240,26 +227,6 @@ include("library/xwFE-0.0.1/FEM.php");
                         <hr>
                     </div>
                     <div class="row text-center">
-                        <nav>
-                            <ul class="pagination">
-                                <li>
-                                    <a aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="active"><a ng-click="changeShowPage(xpag,'')">1</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">2</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">3</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">4</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">5</a></li>
-                                <li><a ng-click="changeShowPage(xpag,'')">6</a></li>
-                                <li>
-                                    <a aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div><!--分页-->
 
                 </div>

@@ -12,7 +12,6 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
     if($scope.content){
         if($scope.priority!=='article'&&$scope.priority!=='competition') $scope.priority='user';
 
-            sendSearch($scope.content,$scope.priority);//每次进入此页时就搜索
 
             $scope.alertPri = function (pri){
                 skipToSearch($scope.content,pri);
@@ -51,32 +50,37 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
         window.location.reload();
     }
 
-    function sendSearch(value,priority){
+    $scope.sendSearch = function(value,priority,startpage){
         !priority?priority="user":priority;
-        /*$http({
-            method: 'GET',
-            url: 'library/xwBE-0.0.1/php/search_action.php',
-            params:{'priority':priority,'content':value}
-        }).success(function (data){
-            console.log(data);
-            $scope.SearchContentReq = welcomejsonarrstring(data);
-        }).error(function (){
-            alert ("不明原因导致的查询失败，请联系管理员");
-        });*/
+        !startpage?startpage=1:startpage;
+        var startnum = (startpage - 1) * 15;
+        console.log(startnum);
 
         $.ajax({
             type:'GET',
             async:false,
             url:'library/xwBE-0.0.1/php/search_action.php',
-            data:{"priority":priority,"content":value},
+            data:{"priority":priority,"content":value,"startnum":startnum},
             success: function (data){
                 $scope.SearchContentReq = welcomejsonarrstring(data);
+                //生成分页
+                var SearchReqContLen = $scope.SearchContentReq.length;
+                var searchResult_rows_num = $scope.SearchContentReq[SearchReqContLen - 1];
+                $scope.SearchResultPage_num = Math.ceil(searchResult_rows_num.row_num / 15);//页数
+                $scope.Page_ficArr = [];
+                for(var i=0;i<$scope.SearchResultPage_num;i++){
+                    $scope.Page_ficArr.push(i+1);
+                }
+
             },
             error: function (){
                 alert ("不明原因导致的查询失败，请联系管理员");
             }
         })
 
-    }
+    };
+
+
+    $scope.sendSearch($scope.content,$scope.priority,0);//每次进入此页时就搜索
 
 });

@@ -87,7 +87,7 @@ require("../all.php");
                     $sql = "select * from users where name like '%$con%' ";
                     $qry = $db->query($sql);
                     @$row_all = mysqli_num_rows($qry);//总条数
-                    $dataArr = "";
+                    $affected_rows_num = 0;
                     if($row_all>0){
                         while ($row = $qry->fetch_assoc()){
                             $username = $row["name"];
@@ -111,7 +111,9 @@ require("../all.php");
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
                             insertIntoDatabase($con);
+                            $affected_rows_num++;
                         }
+                        echo "{\"row_num\":".$affected_rows_num."}";
                         //--------------------------------------------------------------------------------------------->出口3：是在通过name搜索用户名，但是模糊搜索
                     }else{
                         $sql = "select * from users where slogan = '$con' ";
