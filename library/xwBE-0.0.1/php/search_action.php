@@ -29,6 +29,7 @@ require("../all.php");
             $qry = $db->query($sql_user);
             @$row_all = mysqli_num_rows($qry);//总条数
             if($row_all>0){
+
                 while ($row = $qry->fetch_assoc()){
                     $username = $row["name"];
                     $slogan = $row["slogan"];
@@ -86,6 +87,7 @@ require("../all.php");
                     $sql = "select * from users where name like '%$con%' ";
                     $qry = $db->query($sql);
                     @$row_all = mysqli_num_rows($qry);//总条数
+                    $dataArr = "";
                     if($row_all>0){
                         while ($row = $qry->fetch_assoc()){
                             $username = $row["name"];

@@ -21,7 +21,7 @@ $status = $reminder = "";
 function getAbstract($content,$configuration=''){
     $abstract = "";//目标位置
     $tempContent = "";//临时正文
-    $maxlen = 400;//摘要最长长度
+    $maxlen = 200;//摘要最长长度
 
     if($configuration){//指定了摘要信息
         //------------------------------------------------------------------------------------------------------------->出口1：硬指定摘要
@@ -75,10 +75,7 @@ function getAbstract($content,$configuration=''){
         }
     }
 }
-
-
 ?>
-
 <?php
 //抽象的重复函数
 function abc($Source,$Target,$maxlen){

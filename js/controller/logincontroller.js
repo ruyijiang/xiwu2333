@@ -1,4 +1,4 @@
-app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$location){
+app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$location,$stateParams){
 
     $scope.UserName = "";
     $scope.UserPassword = "";
@@ -7,7 +7,6 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
      */
     $scope.loginsubmit = function (){
         $.ajax({
-
             url:'../../library/xwBE-0.0.1/php/login_action.php',
             method:'POST',
             data:{"email":$scope.UserName,"password":$scope.UserPassword},
@@ -29,4 +28,5 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(7);
+    $stateParams.needLogin == 'needLogin'?$scope.showStepReminder = true:$scope.showStepReminder = false;
 });
