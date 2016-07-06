@@ -55,7 +55,6 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
         !startpage?startpage=1:startpage;
         var startnum = (startpage - 1) * 15;
         startnum<0?startnum=0:startnum;
-        console.log(startnum);
 
         $.ajax({
             type:'GET',

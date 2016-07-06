@@ -4,8 +4,6 @@
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/searchController.js" afterPath="$PROJECT_DIR$/js/controller/searchController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,21 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+            <state relative-caret-position="397">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="295">
+              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -210,9 +208,9 @@
         <option value="$PROJECT_DIR$/js/controller/logincontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
-        <option value="$PROJECT_DIR$/js/controller/searchController.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
         <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/js/controller/searchController.js" />
       </list>
     </option>
   </component>
@@ -858,7 +856,7 @@
       <workItem from="1467691920741" duration="3001000" />
       <workItem from="1467716068726" duration="1198000" />
       <workItem from="1467729211051" duration="3395000" />
-      <workItem from="1467767362116" duration="1811000" />
+      <workItem from="1467767362116" duration="1924000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1161,11 +1159,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467769464783</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="finish a model for pagaintor in search.modal &amp; search_action.php">
+      <created>1467770011779</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1467770011779</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1065748000" />
+    <option name="totallyTimeSpent" value="1065861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1209,7 +1214,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add some files ,for blog.php can load successfully." />
     <MESSAGE value="fixed some bugs about navstyle and main.modal can skip to roomlist.modal." />
     <MESSAGE value="fixed some bugs about htmldecode and htmlencode.there are still some troubles." />
     <MESSAGE value="just made blog.modal can output article normally,but it is dangerous" />
@@ -1234,7 +1238,8 @@
     <MESSAGE value="fuck yeah!!" />
     <MESSAGE value="fuck yeah!! x3" />
     <MESSAGE value="finish adjust search input in header." />
-    <option name="LAST_COMMIT_MESSAGE" value="finish adjust search input in header." />
+    <MESSAGE value="finish a model for pagaintor in search.modal &amp; search_action.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish a model for pagaintor in search.modal &amp; search_action.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1617,18 +1622,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
+    <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="397">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
+    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        <state relative-caret-position="295">
+          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
           <folding />
         </state>
       </provider>
