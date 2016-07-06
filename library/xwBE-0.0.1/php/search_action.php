@@ -98,7 +98,7 @@ require("../all.php");
                             $city = $row["city"];
                             $uid = $row["uid"];
                             $score = $row["score"];
-                            $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid' ";
+                            $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid' LIMIT $sta,15 ";
                             $qry3 = $db->query($sql3);
                             $row3 = $qry3->fetch_assoc();
                             $result_callingcard = $row3["content"];

@@ -47,13 +47,13 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="per_s-leftpart  boat" style="padding: 0px">
                         <ul class="nav nav-pills nav-stacked">
                             <li ng-class="{active:leftNavIndex == 1}">
-                                <a ng-click="alertPri('user')">玩家<span ng-if="priority=='user'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length}}</span></span></a>
+                                <a ng-click="alertPri('user')">玩家<span ng-if="priority=='user'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1}}</span></span></a>
                             </li>
                             <li ng-class="{active:leftNavIndex == 2}">
-                                <a ng-click="alertPri('competition')">比赛<span ng-if="priority=='competition'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length}}</span></span></a>
+                                <a ng-click="alertPri('competition')">比赛<span ng-if="priority=='competition'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1}}</span></span></a>
                             </li>
                             <li ng-class="{active:leftNavIndex == 3}">
-                                <a ng-click="alertPri('article')">文章<span ng-if="priority=='article'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length}}</span></span></a>
+                                <a ng-click="alertPri('article')">文章<span ng-if="priority=='article'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1}}</span></span></a>
                             </li>
                         </ul>
                     </div><!--End of leftpart-->
