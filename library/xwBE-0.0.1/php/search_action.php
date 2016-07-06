@@ -209,14 +209,14 @@ require("../all.php");
                     $title = $row["title"];
                     //$aid = $row["abstract"];摘要
                     $atime = $row["time"];
-                    $aauthor = $row["uid"];
+                    $auid = $row["uid"];
 
-                    $sql2 = "SELECT name FROM users WHERE uid = '$aauthor' ";
+                    $sql2 = "SELECT name FROM users WHERE uid = '$auid' ";
                     $qry2 = $db->query($sql2);
                     $row2 = $qry2->fetch_assoc();
                     $aauthor = $row2["name"];//作者用户名
                     //------------------------------------------------------------------------------------------------->出口7：搜索的是文章标题，精准搜索标题
-                    $dataArr = array ('aid'=>$aid,'time'=>$atime,'name'=>$aauthor,'title'=>$title);
+                    $dataArr = array ('aid'=>$aid,'uid'=>$auid,'time'=>$atime,'name'=>$aauthor,'title'=>$title);
 
                     foreach ( $dataArr as $key => $value ) {
                         $dataArr[$key] = urlencode ($value);
@@ -239,14 +239,14 @@ require("../all.php");
                         $title = $row["title"];
                         //$aid = $row["abstract"];摘要
                         $atime = $row["time"];
-                        $aauthor = $row["uid"];
+                        $auid = $row["uid"];
 
-                        $sql2 = "SELECT name FROM users WHERE uid = '$aauthor' ";
+                        $sql2 = "SELECT name FROM users WHERE uid = '$auid' ";
                         $qry2 = $db->query($sql2);
                         $row2 = $qry2->fetch_assoc();
                         $aauthor = $row2["name"];//作者用户名
                         //--------------------------------------------------------------------------------------------->出口8：搜索的是文章标题，模糊搜索标题
-                        $dataArr = array ('aid'=>$aid,'time'=>$atime,'name'=>$aauthor,'title'=>$title);
+                        $dataArr = array ('aid'=>$aid,'time'=>$atime,'uid'=>$auid,'name'=>$aauthor,'title'=>$title);
 
                         foreach ( $dataArr as $key => $value ) {
                             $dataArr[$key] = urlencode ($value);
@@ -269,14 +269,14 @@ require("../all.php");
                             $title = $row["title"];
                             //$aid = $row["abstract"];摘要
                             $atime = $row["time"];
-                            $aauthor = $row["uid"];
+                            $auid = $row["uid"];
 
-                            $sql2 = "SELECT name FROM users WHERE uid = '$aauthor' ";
+                            $sql2 = "SELECT name FROM users WHERE uid = '$auid' ";
                             $qry2 = $db->query($sql2);
                             $row2 = $qry2->fetch_assoc();
                             $aauthor = $row2["name"];//作者用户名
                             //----------------------------------------------------------------------------------------->出口9：搜索的是文章内容，模糊搜索
-                            $dataArr = array ('aid'=>$aid,'time'=>$atime,'name'=>$aauthor,'title'=>$title);
+                            $dataArr = array ('aid'=>$aid,'time'=>$atime,'uid'=>$auid,'name'=>$aauthor,'title'=>$title);
 
                             foreach ( $dataArr as $key => $value ) {
                                 $dataArr[$key] = urlencode ($value);
