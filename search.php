@@ -238,7 +238,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 </li>
                             </ul>
                         </nav>
-                    </div><!--分页-->
+                    </div><!--End of pagination-->
 
                 </div>
             </div>
