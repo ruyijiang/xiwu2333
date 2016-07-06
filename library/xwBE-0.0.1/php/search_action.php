@@ -29,6 +29,7 @@ require("../all.php");
             $sql_user = "SELECT * FROM users WHERE uid = '$con' ";
             $qry = $db->query($sql_user);
             @$row_all = mysqli_num_rows($qry);//总条数
+            $affected_rows_num = 0;
             if($row_all>0){
 
                 while ($row = $qry->fetch_assoc()){
@@ -53,12 +54,15 @@ require("../all.php");
                     $dataArr = urldecode ( json_encode ( $dataArr ));
                     echo $dataArr;
                     insertIntoDatabase($con);
+                    $affected_rows_num++;
                 }
+                echo "{\"row_num\":".$affected_rows_num."}";
                 //----------------------------------------------------------------------------------------------------->出口1：搜索的是用户，且通过uid
             }else{
                 $sql = "SELECT * FROM users WHERE name = '$con' ";
                 $qry = $db->query($sql);
                 @$row_all = mysqli_num_rows($qry);//总条数
+                $affected_rows_num = 0;
                 if($row_all>0){
                     while ($row = $qry->fetch_assoc()){
                         $username = $row["name"];
@@ -82,7 +86,9 @@ require("../all.php");
                         $dataArr = urldecode ( json_encode ( $dataArr ));
                         echo $dataArr;
                         insertIntoDatabase($con);
+                        $affected_rows_num++;
                     }
+                    echo "{\"row_num\":".$affected_rows_num."}";
                     //------------------------------------------------------------------------------------------------->出口2：搜索的是用户，且通过name
                 }else{
                     $sql = "select * from users where name like '%$con%' ";
@@ -120,6 +126,7 @@ require("../all.php");
                         $sql = "select * from users where slogan = '$con' ";
                         $qry = $db->query($sql);
                         @$row_all = mysqli_num_rows($qry);//总条数
+                        $affected_rows_num = 0;
                         if($row_all>0){
                             while ($row = $qry->fetch_assoc()) {
                                 $username = $row["name"];
@@ -143,12 +150,15 @@ require("../all.php");
                                 $dataArr = urldecode(json_encode($dataArr));
                                 echo $dataArr;
                                 insertIntoDatabase($con);
+                                $affected_rows_num++;
                             }
+                            echo "{\"row_num\":".$affected_rows_num."}";
                             //----------------------------------------------------------------------------------------->出口4：是在通过slogan搜索用户名
                         }else{
                             $sql = "select * from users where slogan like '%$con%' ";
                             $qry = $db->query($sql);
                             @$row_all = mysqli_num_rows($qry);//总条数
+                            $affected_rows_num = 0;
                             if($row_all>0){
                                 while ($row = $qry->fetch_assoc()){
                                     $username = $row["name"];
@@ -172,8 +182,10 @@ require("../all.php");
                                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                                     echo $dataArr;
                                     insertIntoDatabase($con);
-                                    //--------------------------------------------------------------------------------->出口5：是在通过slogan搜索用户名，但是模糊搜索
+                                    $affected_rows_num++;
                                 }
+                                echo "{\"row_num\":".$affected_rows_num."}";
+                                //--------------------------------------------------------------------------------->出口5：是在通过slogan搜索用户名，但是模糊搜索
                             }else{
                                 $status = 0;
                                 $reminder = "没有结果user";
