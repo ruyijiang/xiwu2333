@@ -12,6 +12,7 @@ require("../all.php");
 //流程:
     @$con = $_GET["content"];
     @$pri = $_GET["priority"];
+    @$sta = $_GET["startnum"];
 
     $status = $reminder = "";
     $a = new interfaceResponse();
