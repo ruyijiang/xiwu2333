@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/searchController.js" afterPath="$PROJECT_DIR$/js/controller/searchController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,32 +35,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="search_action.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search_action.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="99" column="51" selection-start-line="99" selection-start-column="51" selection-end-line="99" selection-end-column="51" />
+            <state relative-caret-position="312">
+              <caret line="264" column="43" selection-start-line="264" selection-start-column="43" selection-end-line="264" selection-end-column="43" />
               <folding>
-                <marker date="1467769912755" expanded="true" signature="488:526" ph="SELECT * FRO... users" />
-                <marker date="1467769912755" expanded="true" signature="1048:1099" ph="SELECT conte... callingcard" />
-                <marker date="1467769912755" expanded="true" signature="1954:1993" ph="SELECT * FRO... users" />
-                <marker date="1467769912755" expanded="true" signature="2557:2608" ph="SELECT conte... callingcard" />
-                <marker date="1467769912755" expanded="true" signature="3516:3560" ph="select * fro... users" />
-                <marker date="1467769912755" expanded="true" signature="4216:4280" ph="SELECT conte... callingcard" />
-                <marker date="1467769912755" expanded="true" signature="4277:4280" ph="SELECT conte... callingcard" />
-                <marker date="1467769912755" expanded="true" signature="5369:5410" ph="select * fro... users" />
-                <marker date="1467769912755" expanded="true" signature="6071:6122" ph="SELECT conte... callingcard" />
-                <marker date="1467769912755" expanded="true" signature="7146:7192" ph="select * fro... users" />
-                <marker date="1467769912755" expanded="true" signature="7900:7951" ph="SELECT conte... callingcard" />
-                <marker date="1467769912755" expanded="true" signature="9494:9537" ph="SELECT * FRO... articles" />
-                <marker date="1467769912755" expanded="true" signature="9960:10005" ph="SELECT name users" />
-                <marker date="1467769912755" expanded="true" signature="10757:10805" ph="SELECT * FRO... articles" />
-                <marker date="1467769912755" expanded="true" signature="11268:11313" ph="SELECT name users" />
-                <marker date="1467769912755" expanded="true" signature="12121:12171" ph="SELECT * FRO... articles" />
-                <marker date="1467769912755" expanded="true" signature="12674:12719" ph="SELECT name users" />
-                <marker date="1467769912755" expanded="true" signature="14376:14436" ph="SELECT times... searchings" />
-                <marker date="1467769912755" expanded="true" signature="14750:14815" ph="UPDATE searc... " />
-                <marker date="1467769912755" expanded="true" signature="15319:15383" ph="INSERT INTO searchings... " />
+                <marker date="1467784402766" expanded="true" signature="488:526" ph="SELECT * FRO... users" />
+                <marker date="1467784402766" expanded="true" signature="1084:1134" ph="SELECT conte... callingcard" />
+                <marker date="1467784402766" expanded="true" signature="1084:1148" ph="SELECT conte... callingcard" />
+                <marker date="1467784402766" expanded="true" signature="2110:2149" ph="SELECT * FRO... users" />
+                <marker date="1467784402766" expanded="true" signature="2753:2804" ph="SELECT conte... callingcard" />
+                <marker date="1467784402766" expanded="true" signature="2753:2818" ph="SELECT conte... callingcard" />
+                <marker date="1467784402766" expanded="true" signature="3841:3885" ph="select * fro... users" />
+                <marker date="1467784402766" expanded="true" signature="4541:4605" ph="SELECT conte... callingcard" />
+                <marker date="1467784402766" expanded="true" signature="5694:5735" ph="select * fro... users" />
+                <marker date="1467784402766" expanded="true" signature="6444:6495" ph="SELECT conte... callingcard" />
+                <marker date="1467784402766" expanded="true" signature="7650:7696" ph="select * fro... users" />
+                <marker date="1467784402766" expanded="true" signature="8456:8507" ph="SELECT conte... callingcard" />
+                <marker date="1467784402766" expanded="true" signature="10181:10224" ph="SELECT * FRO... articles" />
+                <marker date="1467784402766" expanded="true" signature="10683:10728" ph="SELECT name users" />
+                <marker date="1467784402766" expanded="true" signature="11587:11635" ph="SELECT * FRO... articles" />
+                <marker date="1467784402766" expanded="true" signature="12138:12183" ph="SELECT name users" />
+                <marker date="1467784402766" expanded="true" signature="13102:13152" ph="SELECT * FRO... articles" />
+                <marker date="1467784402766" expanded="true" signature="13699:13744" ph="SELECT name users" />
+                <marker date="1467784402766" expanded="true" signature="15520:15580" ph="SELECT times... searchings" />
+                <marker date="1467784402766" expanded="true" signature="15894:15959" ph="UPDATE searc... " />
+                <marker date="1467784402766" expanded="true" signature="16463:16527" ph="INSERT INTO searchings... " />
               </folding>
             </state>
           </provider>
@@ -68,70 +70,23 @@
       <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="342">
+              <caret line="218" column="117" selection-start-line="218" selection-start-column="117" selection-end-line="218" selection-end-column="117" />
+              <folding>
+                <element signature="n#style#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="162">
+              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pagination.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <marker date="1467767330910" expanded="true" signature="399:440" ph="SELECT aid F... articles" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FEM.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-              <folding>
-                <marker date="1467769208017" expanded="true" signature="279:332" ph="SELECT avata... users" />
-                <marker date="1467769208017" expanded="true" signature="751:762" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="1206:1224" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="1279:1334" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="1785:1800" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="1989:2077" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="2539:2550" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="2608:5536" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="2631:5530" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="3040:3089" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="3170:5524" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="3500:5518" ph="..." />
-                <marker date="1467769208017" expanded="false" signature="3561:3576" ph="..." />
-                <marker date="1467769208017" expanded="false" signature="3765:3853" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="5869:5901" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="6040:6050" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="7869:7930" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="7950:8011" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="9685:9701" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="9796:9809" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="10238:10254" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="10313:10330" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="10761:10798" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="11722:11738" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="11927:11950" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="11986:12003" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="12302:12325" ph="..." />
-                <marker date="1467769208017" expanded="true" signature="12361:12378" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -208,9 +163,9 @@
         <option value="$PROJECT_DIR$/js/controller/logincontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
-        <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/js/controller/searchController.js" />
+        <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
       </list>
     </option>
   </component>
@@ -250,7 +205,7 @@
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="false" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="2" id="Add" />
@@ -271,6 +226,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -474,18 +441,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -533,6 +488,116 @@
       <recent name="E:\wamp\www\js\directive\myRoom" />
       <recent name="E:\wamp\www\js\directive\useInvitationCode" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -856,7 +921,8 @@
       <workItem from="1467691920741" duration="3001000" />
       <workItem from="1467716068726" duration="1198000" />
       <workItem from="1467729211051" duration="3395000" />
-      <workItem from="1467767362116" duration="1924000" />
+      <workItem from="1467767362116" duration="2866000" />
+      <workItem from="1467781703954" duration="2354000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1166,22 +1232,29 @@
       <option name="project" value="LOCAL" />
       <updated>1467770011779</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="finish a thing in search.modal">
+      <created>1467770112031</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1467770112031</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1065861000" />
+    <option name="totallyTimeSpent" value="1069157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26399395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49532712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4942717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1214,8 +1287,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed some bugs about navstyle and main.modal can skip to roomlist.modal." />
-    <MESSAGE value="fixed some bugs about htmldecode and htmlencode.there are still some troubles." />
     <MESSAGE value="just made blog.modal can output article normally,but it is dangerous" />
     <MESSAGE value="fixed some bugs in search.modal." />
     <MESSAGE value="fixed some bugs in search.modal i will fixed more, today afternoon." />
@@ -1239,7 +1310,9 @@
     <MESSAGE value="fuck yeah!! x3" />
     <MESSAGE value="finish adjust search input in header." />
     <MESSAGE value="finish a model for pagaintor in search.modal &amp; search_action.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish a model for pagaintor in search.modal &amp; search_action.php" />
+    <MESSAGE value="finish a thing in search.modal" />
+    <MESSAGE value="finish pagination in search.modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish pagination in search.modal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1548,7 +1621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="960">
           <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
           <folding>
             <marker date="1467769208017" expanded="true" signature="279:332" ph="SELECT avata... users" />
@@ -1583,58 +1656,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="99" column="51" selection-start-line="99" selection-start-column="51" selection-end-line="99" selection-end-column="51" />
-          <folding>
-            <marker date="1467769912755" expanded="true" signature="488:526" ph="SELECT * FRO... users" />
-            <marker date="1467769912755" expanded="true" signature="1048:1099" ph="SELECT conte... callingcard" />
-            <marker date="1467769912755" expanded="true" signature="1954:1993" ph="SELECT * FRO... users" />
-            <marker date="1467769912755" expanded="true" signature="2557:2608" ph="SELECT conte... callingcard" />
-            <marker date="1467769912755" expanded="true" signature="3516:3560" ph="select * fro... users" />
-            <marker date="1467769912755" expanded="true" signature="4216:4280" ph="SELECT conte... callingcard" />
-            <marker date="1467769912755" expanded="true" signature="4277:4280" ph="SELECT conte... callingcard" />
-            <marker date="1467769912755" expanded="true" signature="5369:5410" ph="select * fro... users" />
-            <marker date="1467769912755" expanded="true" signature="6071:6122" ph="SELECT conte... callingcard" />
-            <marker date="1467769912755" expanded="true" signature="7146:7192" ph="select * fro... users" />
-            <marker date="1467769912755" expanded="true" signature="7900:7951" ph="SELECT conte... callingcard" />
-            <marker date="1467769912755" expanded="true" signature="9494:9537" ph="SELECT * FRO... articles" />
-            <marker date="1467769912755" expanded="true" signature="9960:10005" ph="SELECT name users" />
-            <marker date="1467769912755" expanded="true" signature="10757:10805" ph="SELECT * FRO... articles" />
-            <marker date="1467769912755" expanded="true" signature="11268:11313" ph="SELECT name users" />
-            <marker date="1467769912755" expanded="true" signature="12121:12171" ph="SELECT * FRO... articles" />
-            <marker date="1467769912755" expanded="true" signature="12674:12719" ph="SELECT name users" />
-            <marker date="1467769912755" expanded="true" signature="14376:14436" ph="SELECT times... searchings" />
-            <marker date="1467769912755" expanded="true" signature="14750:14815" ph="UPDATE searc... " />
-            <marker date="1467769912755" expanded="true" signature="15319:15383" ph="INSERT INTO searchings... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <marker date="1467767330910" expanded="true" signature="399:440" ph="SELECT aid F... articles" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
+    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        <state relative-caret-position="162">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
+    <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="342">
+          <caret line="218" column="117" selection-start-line="218" selection-start-column="117" selection-end-line="218" selection-end-column="117" />
+          <folding>
+            <element signature="n#style#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="264" column="43" selection-start-line="264" selection-start-column="43" selection-end-line="264" selection-end-column="43" />
+          <folding>
+            <marker date="1467784402766" expanded="true" signature="488:526" ph="SELECT * FRO... users" />
+            <marker date="1467784402766" expanded="true" signature="1084:1134" ph="SELECT conte... callingcard" />
+            <marker date="1467784402766" expanded="true" signature="1084:1148" ph="SELECT conte... callingcard" />
+            <marker date="1467784402766" expanded="true" signature="2110:2149" ph="SELECT * FRO... users" />
+            <marker date="1467784402766" expanded="true" signature="2753:2804" ph="SELECT conte... callingcard" />
+            <marker date="1467784402766" expanded="true" signature="2753:2818" ph="SELECT conte... callingcard" />
+            <marker date="1467784402766" expanded="true" signature="3841:3885" ph="select * fro... users" />
+            <marker date="1467784402766" expanded="true" signature="4541:4605" ph="SELECT conte... callingcard" />
+            <marker date="1467784402766" expanded="true" signature="5694:5735" ph="select * fro... users" />
+            <marker date="1467784402766" expanded="true" signature="6444:6495" ph="SELECT conte... callingcard" />
+            <marker date="1467784402766" expanded="true" signature="7650:7696" ph="select * fro... users" />
+            <marker date="1467784402766" expanded="true" signature="8456:8507" ph="SELECT conte... callingcard" />
+            <marker date="1467784402766" expanded="true" signature="10181:10224" ph="SELECT * FRO... articles" />
+            <marker date="1467784402766" expanded="true" signature="10683:10728" ph="SELECT name users" />
+            <marker date="1467784402766" expanded="true" signature="11587:11635" ph="SELECT * FRO... articles" />
+            <marker date="1467784402766" expanded="true" signature="12138:12183" ph="SELECT name users" />
+            <marker date="1467784402766" expanded="true" signature="13102:13152" ph="SELECT * FRO... articles" />
+            <marker date="1467784402766" expanded="true" signature="13699:13744" ph="SELECT name users" />
+            <marker date="1467784402766" expanded="true" signature="15520:15580" ph="SELECT times... searchings" />
+            <marker date="1467784402766" expanded="true" signature="15894:15959" ph="UPDATE searc... " />
+            <marker date="1467784402766" expanded="true" signature="16463:16527" ph="INSERT INTO searchings... " />
+          </folding>
         </state>
       </provider>
     </entry>

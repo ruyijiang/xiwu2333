@@ -47,24 +47,26 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="per_s-leftpart  boat" style="padding: 0px">
                         <ul class="nav nav-pills nav-stacked">
                             <li ng-class="{active:leftNavIndex == 1}">
-                                <a ng-click="alertPri('user')">玩家<span ng-if="priority=='user'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1}}</span></span></a>
+                                <a ng-click="alertPri('user')">玩家<span ng-if="priority=='user'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1>=0?SearchContentReq.length - 1:0}}</span></span></a>
                             </li>
                             <li ng-class="{active:leftNavIndex == 2}">
-                                <a ng-click="alertPri('competition')">比赛<span ng-if="priority=='competition'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1}}</span></span></a>
+                                <a ng-click="alertPri('competition')">比赛<span ng-if="priority=='competition'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1>=0?SearchContentReq.length - 1:0}}</span></span></a>
                             </li>
                             <li ng-class="{active:leftNavIndex == 3}">
-                                <a ng-click="alertPri('article')">文章<span ng-if="priority=='article'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1}}</span></span></a>
+                                <a ng-click="alertPri('article')">文章<span ng-if="priority=='article'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1>=0?SearchContentReq.length - 1:0}}</span></span></a>
                             </li>
                         </ul>
                     </div><!--End of leftpart-->
                 </div>
 
 
-                <!--SearchConsequence--><div class="col-lg-8 col-md-9 col-xs-12 clearfix user_conse" ng-if="SearchContentReq[0].statuscode == 0">
+                <!--SearchConsequence-->
+                <div class="col-lg-8 col-md-9 col-xs-12 clearfix user_conse" ng-if="SearchContentReq[0].statuscode == 0">
                     没有搜索到与 “ {{thisContent}} ” 相关的<span ng-if="priority=='user'">玩家</span><span ng-if="priority=='competition'">比赛</span><span ng-if="priority=='article'">文章</span>。
                 </div>
 
-                <!--User--><div ng-if="priority=='user' && SearchContentReq[0].statuscode!=='0'" style="display:block;" class="col-lg-8 col-md-9 col-xs-12 search_user_container" style="font-size:16px;">
+                <!--User-->
+                <div ng-if="priority=='user' && SearchContentReq[0].statuscode!=='0'" style="display:block;" class="col-lg-8 col-md-9 col-xs-12 search_user_container" style="font-size:16px;">
                     <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in SearchContentReq" ng-if="xu.name !== undefined">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
@@ -94,7 +96,8 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div><!--End of pagination-->
                 </div>
 
-                <!--Competition--><div ng-if="priority=='competition'" style="display: none" class="col-lg-8 col-md-9 col-xs-12"><!--Competiton-->
+                <!--Competition-->
+                <div ng-if="priority=='competition'" style="display: none" class="col-lg-8 col-md-9 col-xs-12"><!--Competiton-->
                     <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
                         <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
                             <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>
@@ -211,8 +214,9 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div><!--End of DIV2-->
                 </div>
 
-                <!--article--><div ng-if="priority=='article' && SearchContentReq[0].statuscode!=='0'" class="col-lg-9 col-md-9 col-xs-12" style="font-size:16px;">
-                    <div class="col-lg-11" style="font-size:16px;" ng-repeat="xa in SearchContentReq">
+                <!--article-->
+                <div ng-if="priority=='article' && SearchContentReq[0].statuscode!=='0'" class="col-lg-9 col-md-9 col-xs-12" style="font-size:16px;">
+                    <div class="col-lg-11" style="font-size:16px;" ng-repeat="xa in SearchContentReq" ng-if="xa.title !== undefined">
                         <div class="search_content-toppart">
                             <a ng-href="/#/blog?aid={{xa.aid}}">{{xa.title}}</a>
                             <blockquote style="margin-top:15px"><h6>{{xa.abstract}}<span>...</span></h6></blockquote>

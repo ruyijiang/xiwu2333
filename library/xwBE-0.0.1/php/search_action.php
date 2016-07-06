@@ -40,7 +40,7 @@ require("../all.php");
                     $city = $row["city"];
                     $uid = $row["uid"];
                     $score = $row["score"];
-                    $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid' ";
+                    $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid' LIMIT $sta,15 ";
                     $qry3 = $db->query($sql3);
                     $row3 = $qry3->fetch_assoc();
                     $result_callingcard = $row3["content"];
@@ -51,7 +51,7 @@ require("../all.php");
                         $dataArr[$key] = urlencode ($value);
                     }
 
-                    $dataArr = urldecode ( json_encode ( $dataArr ));
+                    $dataArr = urldecode ( json_encode ( $dataArr )).",";
                     echo $dataArr;
                     insertIntoDatabase($con);
                     $affected_rows_num++;
@@ -72,7 +72,7 @@ require("../all.php");
                         $city = $row["city"];
                         $uid = $row["uid"];
                         $score = $row["score"];
-                        $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid' ";
+                        $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid' LIMIT $sta,15 ";
                         $qry3 = $db->query($sql3);
                         $row3 = $qry3->fetch_assoc();
                         $result_callingcard = $row3["content"];
@@ -83,7 +83,7 @@ require("../all.php");
                             $dataArr[$key] = urlencode ($value);
                         }
 
-                        $dataArr = urldecode ( json_encode ( $dataArr ));
+                        $dataArr = urldecode ( json_encode ( $dataArr )).",";
                         echo $dataArr;
                         insertIntoDatabase($con);
                         $affected_rows_num++;
@@ -147,7 +147,7 @@ require("../all.php");
                                     $dataArr[$key] = urlencode($value);
                                 }
 
-                                $dataArr = urldecode(json_encode($dataArr));
+                                $dataArr = urldecode(json_encode($dataArr)).",";
                                 echo $dataArr;
                                 insertIntoDatabase($con);
                                 $affected_rows_num++;
@@ -202,6 +202,7 @@ require("../all.php");
             $sql = "SELECT * FROM articles WHERE title = '$con' ";
             $qry = $db->query($sql);
             @$row_all = mysqli_num_rows($qry);//总条数
+            $affected_rows_num = 0;
             if($row_all>0){
                 while ($row = $qry->fetch_assoc()){
                     $aid = $row["aid"];
@@ -221,14 +222,17 @@ require("../all.php");
                         $dataArr[$key] = urlencode ($value);
                     }
 
-                    $dataArr = urldecode ( json_encode ( $dataArr ));
+                    $dataArr = urldecode ( json_encode ( $dataArr )).",";
                     echo $dataArr;
                     insertIntoDatabase($con);
+                    $affected_rows_num++;
                 }
+                echo "{\"row_num\":".$affected_rows_num."}";
             }else{
                 $sql = "SELECT * FROM articles WHERE title LIKE '%$con%' ";
                 $qry = $db->query($sql);
                 @$row_all = mysqli_num_rows($qry);//总条数
+                $affected_rows_num = 0;
                 if($row_all>0){
                     while ($row = $qry->fetch_assoc()){
                         $aid = $row["aid"];
@@ -251,11 +255,14 @@ require("../all.php");
                         $dataArr = urldecode ( json_encode ( $dataArr )).",";
                         echo $dataArr;
                         insertIntoDatabase($con);
+                        $affected_rows_num++;
                     }
+                    echo "{\"row_num\":".$affected_rows_num."}";
                 }else{
                     $sql = "SELECT * FROM articles WHERE content LIKE '%$con%' ";
                     $qry = $db->query($sql);
                     @$row_all = mysqli_num_rows($qry);//总条数
+                    $affected_rows_num = 0;
                     if($row_all>0){
                         while ($row = $qry->fetch_assoc()){
                             $aid = $row["aid"];
@@ -278,7 +285,9 @@ require("../all.php");
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
                             insertIntoDatabase($con);
+                            $affected_rows_num++;
                         }
+                        echo "{\"row_num\":".$affected_rows_num."}";
                     }else{
                         $status = 0;
                         $reminder = "没有结果article";
