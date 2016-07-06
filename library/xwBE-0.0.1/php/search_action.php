@@ -26,7 +26,7 @@ require("../all.php");
         if($pri == "user"){
             //查询用户
 
-            $sql_user = "SELECT * FROM users WHERE uid = '$con' ";
+            $sql_user = "SELECT * FROM users WHERE uid = '$con' LIMIT $sta,15  ";
             $qry = $db->query($sql_user);
             @$row_all = mysqli_num_rows($qry);//总条数
             $affected_rows_num = 0;
@@ -40,7 +40,7 @@ require("../all.php");
                     $city = $row["city"];
                     $uid = $row["uid"];
                     $score = $row["score"];
-                    $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid' LIMIT $sta,15 ";
+                    $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid'";
                     $qry3 = $db->query($sql3);
                     $row3 = $qry3->fetch_assoc();
                     $result_callingcard = $row3["content"];
@@ -59,7 +59,7 @@ require("../all.php");
                 echo "{\"row_num\":".$affected_rows_num."}";
                 //----------------------------------------------------------------------------------------------------->出口1：搜索的是用户，且通过uid
             }else{
-                $sql = "SELECT * FROM users WHERE name = '$con' ";
+                $sql = "SELECT * FROM users WHERE name = '$con' LIMIT $sta,15  ";
                 $qry = $db->query($sql);
                 @$row_all = mysqli_num_rows($qry);//总条数
                 $affected_rows_num = 0;
@@ -72,7 +72,7 @@ require("../all.php");
                         $city = $row["city"];
                         $uid = $row["uid"];
                         $score = $row["score"];
-                        $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid' LIMIT $sta,15 ";
+                        $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid'";
                         $qry3 = $db->query($sql3);
                         $row3 = $qry3->fetch_assoc();
                         $result_callingcard = $row3["content"];
@@ -91,7 +91,7 @@ require("../all.php");
                     echo "{\"row_num\":".$affected_rows_num."}";
                     //------------------------------------------------------------------------------------------------->出口2：搜索的是用户，且通过name
                 }else{
-                    $sql = "select * from users where name like '%$con%' ";
+                    $sql = "select * from users where name like '%$con%' LIMIT $sta,15 ";
                     $qry = $db->query($sql);
                     @$row_all = mysqli_num_rows($qry);//总条数
                     $affected_rows_num = 0;
@@ -104,7 +104,7 @@ require("../all.php");
                             $city = $row["city"];
                             $uid = $row["uid"];
                             $score = $row["score"];
-                            $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid' LIMIT $sta,15 ";
+                            $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid'";
                             $qry3 = $db->query($sql3);
                             $row3 = $qry3->fetch_assoc();
                             $result_callingcard = $row3["content"];
@@ -123,7 +123,7 @@ require("../all.php");
                         echo "{\"row_num\":".$affected_rows_num."}";
                         //--------------------------------------------------------------------------------------------->出口3：是在通过name搜索用户名，但是模糊搜索
                     }else{
-                        $sql = "select * from users where slogan = '$con' ";
+                        $sql = "select * from users where slogan = '$con' LIMIT $sta,15 ";
                         $qry = $db->query($sql);
                         @$row_all = mysqli_num_rows($qry);//总条数
                         $affected_rows_num = 0;
@@ -136,7 +136,7 @@ require("../all.php");
                                 $city = $row["city"];
                                 $uid = $row["uid"];
                                 $score = $row["score"];
-                                $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid' ";
+                                $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid' ";
                                 $qry3 = $db->query($sql3);
                                 $row3 = $qry3->fetch_assoc();
                                 $result_callingcard = $row3["content"];
@@ -155,7 +155,7 @@ require("../all.php");
                             echo "{\"row_num\":".$affected_rows_num."}";
                             //----------------------------------------------------------------------------------------->出口4：是在通过slogan搜索用户名
                         }else{
-                            $sql = "select * from users where slogan like '%$con%' ";
+                            $sql = "select * from users where slogan like '%$con%' LIMIT $sta,15 ";
                             $qry = $db->query($sql);
                             @$row_all = mysqli_num_rows($qry);//总条数
                             $affected_rows_num = 0;
@@ -199,7 +199,7 @@ require("../all.php");
         }else if($pri == "article"){
             //查询文章
 
-            $sql = "SELECT * FROM articles WHERE title = '$con' ";
+            $sql = "SELECT * FROM articles WHERE title = '$con' LIMIT $sta,15 ";
             $qry = $db->query($sql);
             @$row_all = mysqli_num_rows($qry);//总条数
             $affected_rows_num = 0;
@@ -229,7 +229,7 @@ require("../all.php");
                 }
                 echo "{\"row_num\":".$affected_rows_num."}";
             }else{
-                $sql = "SELECT * FROM articles WHERE title LIKE '%$con%' ";
+                $sql = "SELECT * FROM articles WHERE title LIKE '%$con%' LIMIT $sta,15 ";
                 $qry = $db->query($sql);
                 @$row_all = mysqli_num_rows($qry);//总条数
                 $affected_rows_num = 0;
@@ -259,7 +259,7 @@ require("../all.php");
                     }
                     echo "{\"row_num\":".$affected_rows_num."}";
                 }else{
-                    $sql = "SELECT * FROM articles WHERE content LIKE '%$con%' ";
+                    $sql = "SELECT * FROM articles WHERE content LIKE '%$con%' LIMIT $sta,15 ";
                     $qry = $db->query($sql);
                     @$row_all = mysqli_num_rows($qry);//总条数
                     $affected_rows_num = 0;

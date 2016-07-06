@@ -69,11 +69,11 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div ng-if="priority=='user' && SearchContentReq[0].statuscode!=='0'" style="display:block;" class="col-lg-8 col-md-9 col-xs-12 search_user_container" style="font-size:16px;">
                     <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in SearchContentReq" ng-if="xu.name !== undefined">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/>
+                            <a href="#/person?uid={{xu.uid}}"><img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/></a>
                         </div>
                         <div class="search_content-rightpart pull-left" style="margin-left:10px">
                             <div class="search_content-toppart">
-                                <a style="font-size:13px;font-weight:600">{{xu.name}}</a><small ng-if="xu.callingcardname !== ''">（{{xu.callingcardname}}）</small>
+                                <a ng-href="/#/person?uid={{xu.uid}}" style="font-size:13px;font-weight:600">{{xu.name}}</a><small ng-if="xu.callingcardname !== ''">（{{xu.callingcardname}}）</small>
                                 <h6 style="color:#999">{{xu.slogan}}</h6>
                             </div>
                             <div class="search_content-botpart">
@@ -220,17 +220,24 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="search_content-toppart">
                             <a ng-href="/#/blog?aid={{xa.aid}}">{{xa.title}}</a>
                             <blockquote style="margin-top:15px"><h6>{{xa.abstract}}<span>...</span></h6></blockquote>
-                            <div class="pull-right cultivation" style="font-size:12px">
+                            <!--<div class="pull-right cultivation" style="font-size:12px">
                                 <a><i class="iconfont icon-heart"></i>2</a>
                                 <a><i class="iconfont icon-comment"></i>12</a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="search_content-botpart">
-                            <span style="font-size:13px">{{xa.time}} | <a class="author" style="font-weight:400;font-size:12px"><span class="glyphicon glyphicon-user"></span>{{xa.name}}</a></span>
+                            <span style="font-size:13px">{{xa.time}} | <a ng-href="/#/person?uid={{xa.uid}}" class="author" style="font-weight:400;font-size:12px"><span class="glyphicon glyphicon-user"></span>{{xa.name}}</a></span>
                         </div>
                         <hr>
                     </div>
                     <div class="row text-center">
+                        <nav>
+                            <ul class="pagination">
+                                <li class="active" ng-repeat="xpag in Page_ficArr">
+                                    <a ng-click="sendSearch(content,priority,xpag)">{{xpag}}</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div><!--分页-->
 
                 </div>
