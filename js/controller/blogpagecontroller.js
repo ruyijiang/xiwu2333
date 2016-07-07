@@ -82,7 +82,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
         }).then(function (httpCont){
             if(httpCont.data.statuscode == 1){
                 //删除成功则跳转到上一篇文章
-                alert ("删除成功");
                 $location.url("blog?aid="+$scope.BlogExport.prev_aid);
                 window.location.reload();
             }else{
