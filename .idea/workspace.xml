@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/IP/127.0.0.1.txt" afterPath="$PROJECT_DIR$/data/user_traces/IP/127.0.0.1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/liveness/RegisteredUser/20253012/2016-07-07.txt" afterPath="$PROJECT_DIR$/data/liveness/RegisteredUser/20253012/2016-07-07.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,49 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractofArticle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="writeblog_action.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-              <folding>
-                <marker date="1467879939034" expanded="true" signature="1279:1326" placeholder="SELECT * FRO... articles" />
-                <marker date="1467879939034" expanded="true" signature="2287:2450" placeholder="INSERT INTO articles... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="writeblogcontroller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="writeblogpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writeblogpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/service/search.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,38 +48,38 @@
       <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5280">
+            <state relative-caret-position="334">
               <caret line="220" column="69" selection-start-line="220" selection-start-column="69" selection-end-line="220" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_action.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search_action.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5784">
-              <caret line="241" column="44" selection-start-line="241" selection-start-column="44" selection-end-line="241" selection-end-column="44" />
+            <state relative-caret-position="24">
+              <caret line="282" column="29" selection-start-line="282" selection-start-column="29" selection-end-line="282" selection-end-column="29" />
               <folding>
-                <marker date="1467811703246" expanded="true" signature="488:540" placeholder="SELECT * FRO... users" />
-                <marker date="1467811703246" expanded="true" signature="1099:1149" placeholder="SELECT conte... callingcard" />
-                <marker date="1467811703246" expanded="true" signature="2110:2163" placeholder="SELECT * FRO... users" />
-                <marker date="1467811703246" expanded="true" signature="2768:2819" placeholder="SELECT conte... callingcard" />
-                <marker date="1467811703246" expanded="true" signature="3841:3899" placeholder="select * fro... users" />
-                <marker date="1467811703246" expanded="true" signature="4555:4605" placeholder="SELECT conte... callingcard" />
-                <marker date="1467811703246" expanded="true" signature="5693:5748" placeholder="select * fro... users" />
-                <marker date="1467811703246" expanded="true" signature="6457:6507" placeholder="SELECT conte... callingcard" />
-                <marker date="1467811703246" expanded="true" signature="7662:7722" placeholder="select * fro... users" />
-                <marker date="1467811703246" expanded="true" signature="8482:8533" placeholder="SELECT conte... callingcard" />
-                <marker date="1467811703246" expanded="true" signature="10207:10264" placeholder="SELECT * FRO... articles" />
-                <marker date="1467811703246" expanded="true" signature="10720:10762" placeholder="SELECT name users" />
-                <marker date="1467811703246" expanded="true" signature="11634:11696" placeholder="SELECT * FRO... articles" />
-                <marker date="1467811703246" expanded="true" signature="12196:12238" placeholder="SELECT name users" />
-                <marker date="1467811703246" expanded="true" signature="13170:13234" placeholder="SELECT * FRO... articles" />
-                <marker date="1467811703246" expanded="true" signature="13778:13820" placeholder="SELECT name users" />
-                <marker date="1467811703246" expanded="true" signature="15609:15669" placeholder="SELECT times... searchings" />
-                <marker date="1467811703246" expanded="true" signature="15983:16048" placeholder="UPDATE searc... " />
-                <marker date="1467811703246" expanded="true" signature="16552:16616" placeholder="INSERT INTO searchings... " />
+                <marker date="1467881900027" expanded="true" signature="488:540" placeholder="SELECT * FRO... users" />
+                <marker date="1467881900027" expanded="true" signature="1099:1149" placeholder="SELECT conte... callingcard" />
+                <marker date="1467881900027" expanded="true" signature="2110:2163" placeholder="SELECT * FRO... users" />
+                <marker date="1467881900027" expanded="true" signature="2768:2819" placeholder="SELECT conte... callingcard" />
+                <marker date="1467881900027" expanded="true" signature="3841:3899" placeholder="select * fro... users" />
+                <marker date="1467881900027" expanded="true" signature="4555:4605" placeholder="SELECT conte... callingcard" />
+                <marker date="1467881900027" expanded="true" signature="5693:5748" placeholder="select * fro... users" />
+                <marker date="1467881900027" expanded="true" signature="6457:6507" placeholder="SELECT conte... callingcard" />
+                <marker date="1467881900027" expanded="true" signature="7662:7722" placeholder="select * fro... users" />
+                <marker date="1467881900027" expanded="true" signature="8482:8533" placeholder="SELECT conte... callingcard" />
+                <marker date="1467881900027" expanded="true" signature="10207:10264" placeholder="SELECT * FRO... articles" />
+                <marker date="1467881900027" expanded="true" signature="10721:10763" placeholder="SELECT name users" />
+                <marker date="1467881900027" expanded="true" signature="11657:11719" placeholder="SELECT * FRO... articles" />
+                <marker date="1467881900027" expanded="true" signature="12220:12262" placeholder="SELECT name users" />
+                <marker date="1467881900027" expanded="true" signature="13216:13280" placeholder="SELECT * FRO... articles" />
+                <marker date="1467881900027" expanded="true" signature="13825:13867" placeholder="SELECT name users" />
+                <marker date="1467881900027" expanded="true" signature="15678:15738" placeholder="SELECT times... searchings" />
+                <marker date="1467881900027" expanded="true" signature="16052:16117" placeholder="UPDATE searc... " />
+                <marker date="1467881900027" expanded="true" signature="16621:16685" placeholder="INSERT INTO searchings... " />
               </folding>
             </state>
           </provider>
@@ -199,12 +154,12 @@
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
         <option value="$PROJECT_DIR$/js/controller/searchController.js" />
         <option value="$PROJECT_DIR$/search.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/Liveness.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/Recommendation_User.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
       </list>
     </option>
   </component>
@@ -880,7 +835,7 @@
       <workItem from="1467811196170" duration="1389000" />
       <workItem from="1467818713960" duration="2384000" />
       <workItem from="1467853862794" duration="9106000" />
-      <workItem from="1467872816304" duration="2943000" />
+      <workItem from="1467872816304" duration="4075000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1208,7 +1163,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1089688000" />
+    <option name="totallyTimeSpent" value="1090820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -1590,46 +1545,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5784">
-          <caret line="241" column="44" selection-start-line="241" selection-start-column="44" selection-end-line="241" selection-end-column="44" />
+        <state relative-caret-position="264">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
           <folding>
-            <marker date="1467811703246" expanded="true" signature="488:540" placeholder="SELECT * FRO... users" />
-            <marker date="1467811703246" expanded="true" signature="1099:1149" placeholder="SELECT conte... callingcard" />
-            <marker date="1467811703246" expanded="true" signature="2110:2163" placeholder="SELECT * FRO... users" />
-            <marker date="1467811703246" expanded="true" signature="2768:2819" placeholder="SELECT conte... callingcard" />
-            <marker date="1467811703246" expanded="true" signature="3841:3899" placeholder="select * fro... users" />
-            <marker date="1467811703246" expanded="true" signature="4555:4605" placeholder="SELECT conte... callingcard" />
-            <marker date="1467811703246" expanded="true" signature="5693:5748" placeholder="select * fro... users" />
-            <marker date="1467811703246" expanded="true" signature="6457:6507" placeholder="SELECT conte... callingcard" />
-            <marker date="1467811703246" expanded="true" signature="7662:7722" placeholder="select * fro... users" />
-            <marker date="1467811703246" expanded="true" signature="8482:8533" placeholder="SELECT conte... callingcard" />
-            <marker date="1467811703246" expanded="true" signature="10207:10264" placeholder="SELECT * FRO... articles" />
-            <marker date="1467811703246" expanded="true" signature="10720:10762" placeholder="SELECT name users" />
-            <marker date="1467811703246" expanded="true" signature="11634:11696" placeholder="SELECT * FRO... articles" />
-            <marker date="1467811703246" expanded="true" signature="12196:12238" placeholder="SELECT name users" />
-            <marker date="1467811703246" expanded="true" signature="13170:13234" placeholder="SELECT * FRO... articles" />
-            <marker date="1467811703246" expanded="true" signature="13778:13820" placeholder="SELECT name users" />
-            <marker date="1467811703246" expanded="true" signature="15609:15669" placeholder="SELECT times... searchings" />
-            <marker date="1467811703246" expanded="true" signature="15983:16048" placeholder="UPDATE searc... " />
-            <marker date="1467811703246" expanded="true" signature="16552:16616" placeholder="INSERT INTO searchings... " />
+            <marker date="1467879939034" expanded="true" signature="1279:1326" placeholder="SELECT * FRO... articles" />
+            <marker date="1467879939034" expanded="true" signature="2287:2450" placeholder="INSERT INTO articles... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5280">
-          <caret line="220" column="69" selection-start-line="220" selection-start-column="69" selection-end-line="220" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="532">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1642,14 +1572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1658,13 +1580,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php">
+    <entry file="file://$PROJECT_DIR$/js/service/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="220" column="69" selection-start-line="220" selection-start-column="69" selection-end-line="220" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="282" column="29" selection-start-line="282" selection-start-column="29" selection-end-line="282" selection-end-column="29" />
           <folding>
-            <marker date="1467879939034" expanded="true" signature="1279:1326" placeholder="SELECT * FRO... articles" />
-            <marker date="1467879939034" expanded="true" signature="2287:2450" placeholder="INSERT INTO articles... " />
+            <marker date="1467881900027" expanded="true" signature="488:540" placeholder="SELECT * FRO... users" />
+            <marker date="1467881900027" expanded="true" signature="1099:1149" placeholder="SELECT conte... callingcard" />
+            <marker date="1467881900027" expanded="true" signature="2110:2163" placeholder="SELECT * FRO... users" />
+            <marker date="1467881900027" expanded="true" signature="2768:2819" placeholder="SELECT conte... callingcard" />
+            <marker date="1467881900027" expanded="true" signature="3841:3899" placeholder="select * fro... users" />
+            <marker date="1467881900027" expanded="true" signature="4555:4605" placeholder="SELECT conte... callingcard" />
+            <marker date="1467881900027" expanded="true" signature="5693:5748" placeholder="select * fro... users" />
+            <marker date="1467881900027" expanded="true" signature="6457:6507" placeholder="SELECT conte... callingcard" />
+            <marker date="1467881900027" expanded="true" signature="7662:7722" placeholder="select * fro... users" />
+            <marker date="1467881900027" expanded="true" signature="8482:8533" placeholder="SELECT conte... callingcard" />
+            <marker date="1467881900027" expanded="true" signature="10207:10264" placeholder="SELECT * FRO... articles" />
+            <marker date="1467881900027" expanded="true" signature="10721:10763" placeholder="SELECT name users" />
+            <marker date="1467881900027" expanded="true" signature="11657:11719" placeholder="SELECT * FRO... articles" />
+            <marker date="1467881900027" expanded="true" signature="12220:12262" placeholder="SELECT name users" />
+            <marker date="1467881900027" expanded="true" signature="13216:13280" placeholder="SELECT * FRO... articles" />
+            <marker date="1467881900027" expanded="true" signature="13825:13867" placeholder="SELECT name users" />
+            <marker date="1467881900027" expanded="true" signature="15678:15738" placeholder="SELECT times... searchings" />
+            <marker date="1467881900027" expanded="true" signature="16052:16117" placeholder="UPDATE searc... " />
+            <marker date="1467881900027" expanded="true" signature="16621:16685" placeholder="INSERT INTO searchings... " />
           </folding>
         </state>
       </provider>
