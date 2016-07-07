@@ -7,7 +7,6 @@
  */
 ?>
 <?php
-$status = $reminder = "";
 @$uid = $_SESSION["uid"];
 
 @$content = $_POST["content"];

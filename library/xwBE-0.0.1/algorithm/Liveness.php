@@ -7,7 +7,6 @@
  */
 ?>
 <?php
-$status = $reminder = "";
 @$uid = $_SESSION["uid"];
 
 //计算活跃度分数

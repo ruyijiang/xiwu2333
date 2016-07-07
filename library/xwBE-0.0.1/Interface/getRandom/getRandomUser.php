@@ -22,13 +22,13 @@ require("../../all.php");
             //对随机用户加以限制
             if($cate == "gender"&&($CateContent=="male"||$CateContent=="female"||$CateContent=="man"||$CateContent=="woman")){
                 //限制条件是：性别
-                $sql = "SELECT * FROM users WHERE gender = '$CateContent' ORDER BY rand() LIMIT 1";
+                $sql = "SELECT * FROM users WHERE gender = '$CateContent' AND name !== '' AND score !== '0' ORDER BY rand() LIMIT 1";
             }else{
-                $sql = "SELECT * FROM users WHERE gender = '$CateContent' ORDER BY rand() LIMIT 1";
+                $sql = "SELECT * FROM users WHERE gender = '$CateContent' AND name !== '' AND score !== '0' ORDER BY rand() LIMIT 1";
             }
         }else{
             //未对随机用户加限制
-            $sql = "SELECT * FROM users ORDER BY rand() LIMIT 1";
+            $sql = "SELECT * FROM users WHERE name != '' AND score != '0' ORDER BY rand() LIMIT 1";
         }
 
         $qry = $db->query($sql);
