@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/Recommendation_User.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/AbstractofArticle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/Liveness.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/Liveness.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,12 +56,13 @@
       <file leaf-file-name="getRandomUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="504">
+              <caret line="26" column="116" selection-start-line="26" selection-start-column="116" selection-end-line="26" selection-end-column="116" />
               <folding>
-                <marker date="1467858153106" expanded="true" signature="570:677" placeholder="SELECT * FRO... users" />
-                <marker date="1467858153106" expanded="true" signature="723:830" placeholder="SELECT * FRO... users" />
-                <marker date="1467858153106" expanded="true" signature="906:983" placeholder="SELECT * FRO... users" />
+                <marker date="1467858876153" expanded="true" signature="570:694" placeholder="SELECT * FRO... users" />
+                <marker date="1467858876153" expanded="true" signature="740:864" placeholder="SELECT * FRO... users" />
+                <marker date="1467858876153" expanded="true" signature="940:1007" placeholder="SELECT * FRO... users" />
+                <marker date="1467858876153" expanded="true" signature="940:1034" placeholder="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -820,7 +817,7 @@
       <workItem from="1467809027069" duration="499000" />
       <workItem from="1467811196170" duration="1389000" />
       <workItem from="1467818713960" duration="2384000" />
-      <workItem from="1467853862794" duration="2921000" />
+      <workItem from="1467853862794" duration="3638000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm test">
       <created>1464232112649</created>
@@ -1148,10 +1145,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1080560000" />
+    <option name="totallyTimeSpent" value="1081277000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1471,6 +1468,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6336">
           <caret line="264" column="43" selection-start-line="264" selection-start-column="43" selection-end-line="264" selection-end-column="43" />
+          <folding>
+            <marker date="1467811703246" expanded="true" signature="488:540" placeholder="SELECT * FRO... users" />
+            <marker date="1467811703246" expanded="true" signature="1099:1149" placeholder="SELECT conte... callingcard" />
+            <marker date="1467811703246" expanded="true" signature="2110:2163" placeholder="SELECT * FRO... users" />
+            <marker date="1467811703246" expanded="true" signature="2768:2819" placeholder="SELECT conte... callingcard" />
+            <marker date="1467811703246" expanded="true" signature="3841:3899" placeholder="select * fro... users" />
+            <marker date="1467811703246" expanded="true" signature="4555:4605" placeholder="SELECT conte... callingcard" />
+            <marker date="1467811703246" expanded="true" signature="5693:5748" placeholder="select * fro... users" />
+            <marker date="1467811703246" expanded="true" signature="6457:6507" placeholder="SELECT conte... callingcard" />
+            <marker date="1467811703246" expanded="true" signature="7662:7722" placeholder="select * fro... users" />
+            <marker date="1467811703246" expanded="true" signature="8482:8533" placeholder="SELECT conte... callingcard" />
+            <marker date="1467811703246" expanded="true" signature="10207:10264" placeholder="SELECT * FRO... articles" />
+            <marker date="1467811703246" expanded="true" signature="10720:10762" placeholder="SELECT name users" />
+            <marker date="1467811703246" expanded="true" signature="11634:11696" placeholder="SELECT * FRO... articles" />
+            <marker date="1467811703246" expanded="true" signature="12196:12238" placeholder="SELECT name users" />
+            <marker date="1467811703246" expanded="true" signature="13170:13234" placeholder="SELECT * FRO... articles" />
+            <marker date="1467811703246" expanded="true" signature="13778:13820" placeholder="SELECT name users" />
+            <marker date="1467811703246" expanded="true" signature="15609:15669" placeholder="SELECT times... searchings" />
+            <marker date="1467811703246" expanded="true" signature="15983:16048" placeholder="UPDATE searc... " />
+            <marker date="1467811703246" expanded="true" signature="16552:16616" placeholder="INSERT INTO searchings... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1591,12 +1609,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="504">
+          <caret line="26" column="116" selection-start-line="26" selection-start-column="116" selection-end-line="26" selection-end-column="116" />
           <folding>
-            <marker date="1467858153106" expanded="true" signature="570:677" placeholder="SELECT * FRO... users" />
-            <marker date="1467858153106" expanded="true" signature="723:830" placeholder="SELECT * FRO... users" />
-            <marker date="1467858153106" expanded="true" signature="906:983" placeholder="SELECT * FRO... users" />
+            <marker date="1467858876153" expanded="true" signature="570:694" placeholder="SELECT * FRO... users" />
+            <marker date="1467858876153" expanded="true" signature="740:864" placeholder="SELECT * FRO... users" />
+            <marker date="1467858876153" expanded="true" signature="940:1007" placeholder="SELECT * FRO... users" />
+            <marker date="1467858876153" expanded="true" signature="940:1034" placeholder="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
