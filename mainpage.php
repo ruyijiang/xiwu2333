@@ -8,7 +8,7 @@ include("library/xwFE-0.0.1/FEM.php");
 </style>
 <div class="container" role="main" ng-controller="maincontroller">
 
-    <div class="row row-offcanvas row-offcanvas-right" style="margin-top:100px;">
+    <div class="row row-offcanvas row-offcanvas-right" style="margin-top:120px;">
 
         <div class="col-xs-12 col-sm-9">
             <p class="pull-right visible-xs">

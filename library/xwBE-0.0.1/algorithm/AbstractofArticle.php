@@ -70,8 +70,6 @@ function getAbstract($content,$configuration=''){
                 $abstract .= substr($tempContent,0,$d);
                 $abstract .= substr($tempContent,0,$e);
             }
-            var_dump($d);
-            var_dump($e);
 
             return $abstract;
             //--------------------------------------------------------------------------------------------------------->出口7：条件均不满足，则提取文章前$maxlen个字符

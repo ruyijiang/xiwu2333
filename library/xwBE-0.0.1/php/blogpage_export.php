@@ -15,14 +15,13 @@ require("../all.php");
     $a = new interfaceResponse();
     $status = $reminder = 0;
 
-    $sql = "SELECT id,title,content,uid,time FROM articles WHERE aid = '$aid' ";
-
-
+    $sql = "SELECT id,aid,title,content,uid,time FROM articles WHERE aid = '$aid' ";
 
 
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
     $result_id = $row["id"];
+    $result_aid = $row["aid"];//作者uid
     $result_uid = $row["uid"];//作者uid
 
     $sql_prev = "SELECT aid FROM articles WHERE id < '$result_id' AND uid = '$result_uid' ORDER BY id DESC LIMIT 0,1 ";
@@ -69,7 +68,7 @@ require("../all.php");
 
 
 
-    @$dataArr = array ('title'=>$result_title,'content'=>htmlspecialchars($result_content),'time'=>$result_time,'uid'=>$result_uid,'permission'=>$result_permission,'name'=>$result_author_name,'gender'=>$result_gender,'slogan'=>$result_author_slogan,'hotblog'=>$result_hotblog,'avatar'=>$result_author_avatar,'weibo_status'=>$weibo_status,'weibo'=>$result_author_weibo,'liveplain_status'=>$liveplain_status,'liveplain'=>$result_author_liveplain,'prev_aid'=>$result_prev,'next_aid'=>$result_next);
+    @$dataArr = array ('aid'=>$result_aid,'title'=>$result_title,'content'=>htmlspecialchars($result_content),'time'=>$result_time,'uid'=>$result_uid,'permission'=>$result_permission,'name'=>$result_author_name,'gender'=>$result_gender,'slogan'=>$result_author_slogan,'hotblog'=>$result_hotblog,'avatar'=>$result_author_avatar,'weibo_status'=>$weibo_status,'weibo'=>$result_author_weibo,'liveplain_status'=>$liveplain_status,'liveplain'=>$result_author_liveplain,'prev_aid'=>$result_prev,'next_aid'=>$result_next);
     foreach ( $dataArr as $key => $value ) {
         $dataArr[$key] = urlencode ($value) ;
     }

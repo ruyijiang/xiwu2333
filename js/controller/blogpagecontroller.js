@@ -1,4 +1,4 @@
-app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location){
+app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$location){
     var A_aid = $location.search()["aid"];//aid根
     $scope.BlogExport;
 
@@ -18,8 +18,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
                 $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
                 $scope.BlogExport.hotblog = eval("("+$scope.BlogExport.hotblog+")");
                 $scope.BlogExportHotblogLen = $scope.BlogExport.hotblog.length;
-                console.log($scope.BlogExportHotblogLen);
-                console.log($scope.BlogExport.prev_aid);
+
                 $scope.dialog_confirmdelete = {
                     open:false,
                     content:"确认删除《"+$scope.BlogExport.title+"》吗？"
@@ -46,7 +45,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
                 url: 'library/xwBE-0.0.1/php/HotBlog_Export.php',
                 params:{'timing':timing}
             }).success(function (data){
-                //data = welcomejsonarrstring(data);
                 return data;
             }).error(function (){
                 alert ("系统检测参数失败，请联系管理员");
@@ -64,6 +62,39 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$location)
         $location.url("/blog?aid="+aid);
         window.location.reload();
     };
+
+    /**
+     * 删除文章
+     */
+    $scope.confirmDel = function (aid){
+
+        var deferred = $q.defer();
+
+        $http({
+            method: 'GET',
+            url: 'library/xwBE-0.0.1/php/deleteArticle_action.php',
+            params:{'aid':aid}
+        }).success(function (data){
+            deferred.resolve();
+        }).error(function (){
+            alert ("系统检测参数失败，请联系管理员");
+            deferred.reject();
+        }).then(function (httpCont){
+            if(httpCont.data.statuscode == 1){
+                //删除成功则跳转到上一篇文章
+                alert ("删除成功");
+                $location.url("blog?aid="+$scope.BlogExport.prev_aid);
+                window.location.reload();
+            }else{
+                alert ("不明原因导致的删除失败，请联系管理员");
+            }
+        })
+
+    };
+
+
+
+
 
 
 

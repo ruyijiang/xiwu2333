@@ -106,7 +106,7 @@ header("Content-Type: text/html; charset=utf-8");
       </div><!-- /.row -->
         <dialog ng-if="dialog_confirmdelete.open" modal align="bottom" close="dialog_confirmdelete.open=false">
             <div dialog-content>{{dialog_confirmdelete.content}}</div>
-            <div dialog-buttons><button autofocus>确定</button><button ng-click="$close()">取消</button></div>
+            <div dialog-buttons><button autofocus ng-click="confirmDel(BlogExport.aid)">确定</button><button ng-click="$close()">取消</button></div>
         </dialog>
       <hr>
 
