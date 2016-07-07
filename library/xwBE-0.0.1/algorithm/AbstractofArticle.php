@@ -22,7 +22,7 @@ function getAbstract($content,$configuration=''){
     $tempContent = "";//临时正文
     $maxlen = 200;//摘要最长长度
 
-    if($configuration){//指定了摘要信息
+    if(!empty($configuration)){//指定了摘要信息
         //------------------------------------------------------------------------------------------------------------->出口1：硬指定摘要
         return $abstract = $configuration;
     }else{//没有指定，则进入算法
@@ -61,7 +61,8 @@ function getAbstract($content,$configuration=''){
             //--------------------------------------------------------------------------------------------------------->出口6：根据关键词进行提取
         }else{
             $d = strpos($tempContent,"。");
-            $e = strpos($tempContent,"\n") -4;
+            $e = strpos($tempContent,"\n");
+            $e<0?$e=2:$e;
             if($d+$e>=$maxlen){
                 $d>$e?$min = $e:$min = $d;
                 $abstract .= substr($tempContent,0,$min);
@@ -69,6 +70,9 @@ function getAbstract($content,$configuration=''){
                 $abstract .= substr($tempContent,0,$d);
                 $abstract .= substr($tempContent,0,$e);
             }
+            var_dump($d);
+            var_dump($e);
+
             return $abstract;
             //--------------------------------------------------------------------------------------------------------->出口7：条件均不满足，则提取文章前$maxlen个字符
         }
