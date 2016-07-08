@@ -93,8 +93,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
 
 
-
-
     loadBlog(A_aid);
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 

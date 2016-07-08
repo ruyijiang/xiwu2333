@@ -54,21 +54,25 @@ require("../algorithm/AbstractofArticle.php");
                 if($row_all>1){
                     $status = 0;
                     $reminder = "存在多个相同编号的文章，无法为您拉取信息，请联系管理员。";
+                    echo $b->normalrespond($status,$reminder);
                     //------------------------------------------------------------------------------------------------->出口8：存在一篇以上同名文章
                 }else if($row_all<=0){
                     $status = 0;
                     $reminder = "不存在此文章";
+                    echo $b->normalrespond($status,$reminder);
                     //------------------------------------------------------------------------------------------------->出口9：并不存在该文章s
                 }else{
-                    $sql = "UPDATE articles SET content = '$a_content' WHERE aid = '$aid' AND uid = '$uid' ";
+                    $sql = "UPDATE articles SET content = '$a_content',title = '$a_title' WHERE aid = '$aid' AND uid = '$uid' ";
                     $qry = $db->query($sql);
                     if($qry){
-                        $status = 1;
+                        $status = $aid;
                         $reminder = "文章修改成功";
+                        echo $b->normalrespond($status,$reminder);
                         //--------------------------------------------------------------------------------------------->出口10：文章更新成功
                     }else{
                         $status = 0;
                         $reminder = "文章修改时数据库插入失败，请联系管理员";
+                        echo $b->normalrespond($status,$reminder);
                         //--------------------------------------------------------------------------------------------->出口11：文章更新失败
                     }
                 }
