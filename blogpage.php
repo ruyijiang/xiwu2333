@@ -31,7 +31,7 @@ header("Content-Type: text/html; charset=utf-8");
               <div ng-if="BlogExport.permission == true">
                   <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
                   <!--<a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-print"></span>打印</a>-->
-                  <a role="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-edit"></span>修改</a>
+                  <a role="button" class="btn btn-default btn-xs" ng-href="/#/writeblog?aid=BlogExport.aid"><span class="glyphicon glyphicon-edit"></span>修改</a>
 
                   <!--<div style="display:inline-block;margin-left:10px;">
                       <div class="share_hiddendiv">
