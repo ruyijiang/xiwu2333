@@ -1,10 +1,27 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('writeblogcontroller',function ($scope, $location){
+app.controller('writeblogcontroller',function ($scope, $location, checkStatus, $http, $q){
     var ueitor = UE.getEditor('ueditor-main'); //启用UEditor
+    var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
 
-
+    if(InitArticleAid!=="" && InitArticleAid!==undefined && InitArticleAid!==true){
+        //URL参数带aid，且不为非法值
+        var deferred = $q.defer();
+        $http({
+            method: 'GET',
+            url: 'library/xwBE-0.0.1/php/blogpage_export.php',
+            params:{'aid':InitArticleAid}
+        }).success(function (){
+            deferred.resolve();
+        }).error(function (){
+            deferred.reject();
+            return false;
+        }).then(function (httpCont){
+            $scope.NeedModifiedContent = httpCont.data.content;
+            ueitor.setContent($scope.NeedModifiedContent);
+        })
+    }
     /**
      * 如果采用AJAX方式提交表单，则在form ng-submit属性上添加此函数
      * @returns {boolean}
@@ -28,7 +45,7 @@ app.controller('writeblogcontroller',function ($scope, $location){
             method:'POST',
             async: false,
             dataType: 'json',
-            data:{"title":a_title,"content":a_content},
+            data:{"title":a_title,"content":a_content,"aid":InitArticleAid},
             success: function (data){
                 if(data.statuscode == '0'){
                     alert (data.message);

@@ -47,7 +47,18 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("writeblog", {
             url: "/writeblog",
-            templateUrl: "writeblogpage.php"
+            templateUrl: "writeblogpage.php",
+            resolve:{
+                guarder: function($location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        if(allowed!=="1"){
+                            $location.path("/login/needLogin").replace();
+                        }
+                    });
+                }
+            }
         })
         .state("myhome", {
             url: "/myhome",
