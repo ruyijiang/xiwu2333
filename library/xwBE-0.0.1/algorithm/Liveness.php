@@ -12,9 +12,13 @@
 //计算活跃度分数
 function countScore($commitname,$extra){
     //再对extra进行数据包拆解
+    $FinalScore = (float)0.00;
+
     if($extra && $commitname == "onlineDuration"){//******************************************************onlineDuration
         //当存在$duration时，是为了给在线时间打分的
-        $Dscore = (float)0.00;
+        //extra在这里的内容，是时间组成的数组
+
+        $Dscore = (float)0.00;//Dscore means "Duration score"
 
         for ($i=0;$i<count($extra);$i++){//$xa = '20:25' | $xa = '21:60'
             $hourD = $i;//时间段的开端
@@ -41,7 +45,18 @@ function countScore($commitname,$extra){
                 $Dscore += $durationHere*1*35;
             }
         }//END OF foreach
+        $FinalScore += $Dscore;
         return $Dscore;
+    }
+
+    if($extra && $commitname == "writeBlog"){
+        //为了给写文章打分的
+        //extra在这里的内容，是包含一些内容的对象：
+        //Sample：
+    }
+
+    if($commitname == "openTeam"){
+
     }
 
     switch ($commitname){
@@ -50,16 +65,8 @@ function countScore($commitname,$extra){
             //成功一个分数，失败一个分数
             return 4725;
             break;
-        case "writeBlog":
-            //根据字数和关键词算分
-            return 50;
-            break;
         case "Share":
             return 40;
-            break;
-        case "openTeam":
-            //递减函数
-            return 25;
             break;
         case "makeComment":
             //根据字数算分
