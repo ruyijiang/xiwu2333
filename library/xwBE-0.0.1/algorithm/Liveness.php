@@ -70,7 +70,7 @@ function countScore($commitname,$extra){
         }else if($extra>2000){
             $Blscore += 2940;//60min * 24 + 1500创意分
         }else{
-            //文章长度在1-20，不给分。
+            $Blscore += 0;//文章长度在1-20，不给分。
         }
 
     }
@@ -79,7 +79,21 @@ function countScore($commitname,$extra){
     if($commitname == "openTeam"){
         //为了给开放组队打分的
         //这里之所以没有用到$extra，是因为这里仅有一个浮动维度，就是时间段，这里在后端取值，不需要前段发送过来。而开放组队是每次开放，都实时向数据库添加活跃度。
-        $tnow = date('h',time());
+        $tnow = date("H");
+        $tnow = (int)$tnow;
+
+
+        if($tnow){
+
+        }else if($tnow){
+
+        }else if($tnow){
+
+        }else{
+
+        }
+
+
 
         $Otscore = (float)0.00;//Otscore means "Opening team"
 
