@@ -10,7 +10,7 @@
 @$uid = $_SESSION["uid"];
 
 //计算活跃度分数
-function countScore($commitname,$extra){
+function countScore($commitname,$extra=''){
     //再对extra进行数据包拆解
     $FinalScore = (float)0.00;
 

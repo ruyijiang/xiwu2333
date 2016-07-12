@@ -11,12 +11,11 @@ require("../algorithm/Liveness.php");
 ?>
 <?php
 
-
     $uid = $_SESSION["uid"];
 
     $commitname = $_POST["commitname"];
     @$extra = $_POST["extra"];
-    @$score = $_POST["score"];
+    @$score = $_POST["score"];//手动指定得分
 
     $status = $reminder = 0;
 
