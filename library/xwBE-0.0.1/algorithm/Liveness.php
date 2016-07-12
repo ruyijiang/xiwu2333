@@ -45,8 +45,8 @@ function countScore($commitname,$extra){
                 $Dscore += $durationHere*1*35;
             }
         }//END OF foreach
+
         $FinalScore += $Dscore;
-        return $Dscore;
     }
 
 
@@ -73,48 +73,51 @@ function countScore($commitname,$extra){
             $Blscore += 0;//文章长度在1-20，不给分。
         }
 
+        $FinalScore += $Blscore;
+
     }
 
 
     if($commitname == "openTeam"){
         //为了给开放组队打分的
         //这里之所以没有用到$extra，是因为这里仅有一个浮动维度，就是时间段，这里在后端取值，不需要前段发送过来。而开放组队是每次开放，都实时向数据库添加活跃度。
+        $Otscore = (float)0.00;//Dscore means "Open team score"
+
         $tnow = date("H");
         $tnow = (int)$tnow;
 
-
-        if($tnow){
-
-        }else if($tnow){
-
-        }else if($tnow){
-
+        if($tnow>=9 && $tnow<12){
+            $Otscore += 285;
+        }else if($tnow>=14 && $tnow<17){
+            $Otscore += 265;
+        }else if($tnow>=19 && $tnow<24){
+            $Otscore += 190;
         }else{
-
+            $Otscore += 250;
         }
 
-
-
-        $Otscore = (float)0.00;//Otscore means "Opening team"
+        $FinalScore += $Otscore;
 
     }
-
 
 
     switch ($commitname){
 
         case "inviteNew":
             //成功一个分数，失败一个分数
-            return 4725;
+            $FinalScore += 4725;
             break;
         case "Share":
-            return 40;
+            $FinalScore += 40;
             break;
         case "makeComment":
             //根据字数算分
-            return 18;
+            $FinalScore += 18;
             break;
     }
+
+
+    return $FinalScore;
 
 }
 
