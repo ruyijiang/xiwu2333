@@ -7,6 +7,8 @@
  */
 require("../connectDB.php");
 require("../all.php");
+require("../algorithm/Liveness.php");
+//仅负责开放组队时计算活跃度
 ?>
 <?php
     $operation = $_POST["timing"];
@@ -24,6 +26,18 @@ require("../all.php");
             $a->searching();
             $status = 0;
             $reminder = "开放组队";
+            $b->normalrespond($status,$reminder);
+
+            //加活跃度
+            $thisScore = countScore('openTeam');
+            $c = new liveness();
+            if($c->setLiveness('openTeam',$thisScore)){
+                $status = 1;
+                $reminder = "";
+            }else{
+                $status = 0;
+                $reminder = "数据库插入失败";
+            }
             $b->normalrespond($status,$reminder);
         }
     }else{

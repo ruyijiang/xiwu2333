@@ -9,11 +9,13 @@ require("../connectDB.php");
 require("../all.php");
 require("../algorithm/RandAid.php");
 require("../algorithm/AbstractofArticle.php");
+require("../algorithm/Liveness.php");
 ?>
 <?php
     @$a_title = $_POST["title"];
     @$a_content = $_POST["content"];
     @$aid = $_POST["aid"];
+    @$ArtLength = $_POST["alength"];
 
     $uid = $_SESSION["uid"];
 
@@ -65,9 +67,19 @@ require("../algorithm/AbstractofArticle.php");
                     $sql = "UPDATE articles SET content = '$a_content',title = '$a_title' WHERE aid = '$aid' AND uid = '$uid' ";
                     $qry = $db->query($sql);
                     if($qry){
-                        $status = $aid;
-                        $reminder = "文章修改成功";
+
+                        //计算活跃度
+                        $thisScore = countScore('writeBlog',$ArtLength);
+                        $d = new liveness();
+                        if($d->setLiveness('UpdateBlog',$thisScore)){
+                            $status = $aid;
+                            $reminder = "文章修改成功";
+                        }else{
+                            $status = 0;
+                            $reminder = "文章修改失败";
+                        }
                         echo $b->normalrespond($status,$reminder);
+
                         //--------------------------------------------------------------------------------------------->出口10：文章更新成功
                     }else{
                         $status = 0;
@@ -98,7 +110,6 @@ require("../algorithm/AbstractofArticle.php");
                     $abc = create_Aid();
                     $a_DataBaseContent = addslashes($a_content);
                     $a_AbNeededContent = getAbstract(strip_tags($a_content));
-                    var_dump($a_AbNeededContent);
 
                     //$a_content = htmlspecialchars($a_content);
                     $sql = "INSERT INTO articles(id,aid,uid,time,title,content,txt_url,abstract) VALUES ('','$abc','$uid','$tnow','$a_title','$a_DataBaseContent','$file','$a_AbNeededContent') ";
@@ -111,11 +122,21 @@ require("../algorithm/AbstractofArticle.php");
                         echo $b->normalrespond($status,$reminder);
                         //------------------------------------------------------------------------------------------------->出口3：文章入库失败
                     }else{
-                        $status = $abc;//把文章的aid当作statuscode输出
-                        $reminder = "发表成功";
                         $c->createUserRecordFile();
                         $c->recordUserVisit("发表了文章：".$a_title);
+
+                        //计算活跃度
+                        $thisScore = countScore('writeBlog',$ArtLength);
+                        $d = new liveness();
+                        if($d->setLiveness('writeBlog',$thisScore)){
+                            $status = $abc;
+                            $reminder = "文章修改成功";
+                        }else{
+                            $status = 0;
+                            $reminder = "文章修改失败";
+                        }
                         echo $b->normalrespond($status,$reminder);
+
                         //------------------------------------------------------------------------------------------------->出口4：文章入库成功
 
                         //***将文章放进文件夹进行存档****//

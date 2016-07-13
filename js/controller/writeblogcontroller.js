@@ -26,6 +26,7 @@ app.controller('writeblogcontroller',function ($scope, $location, checkStatus, $
         //获取要提交的内容
         var a_title = $("input#a_title").val();//文章标题
         var a_content = ueditor.getContent();//文章内容
+        var alength = ueditor.getContentTxt().length;
         a_cotent = htmlencode(a_content);
 
         if(!ueditor.hasContents()){
@@ -40,7 +41,7 @@ app.controller('writeblogcontroller',function ($scope, $location, checkStatus, $
             method:'POST',
             async: false,
             dataType: 'json',
-            data:{"title":a_title,"content":a_content,"aid":InitArticleAid},
+            data:{"title":a_title,"content":a_content,"aid":InitArticleAid,"alength":alength},
             success: function (data){
                 if(data.statuscode == '0'){
                     alert (data.message);

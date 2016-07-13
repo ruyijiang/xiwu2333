@@ -8,6 +8,7 @@
 require("../connectDB.php");
 require("../all.php");
 require("../algorithm/Liveness.php");
+//仅负责关闭页面时计算活跃度
 ?>
 <?php
 
