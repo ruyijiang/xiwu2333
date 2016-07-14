@@ -6,7 +6,7 @@
                 <h2 class="form-signin-heading">新用户注册</h2>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope spanicon"></span>注册邮箱</span>
-                    <input validator="email" type="text" class="form-control" placeholder="常用邮箱" aria-describedby="basic-addon1" name="email" autocomplete="off" ng-model="UserName">
+                    <input validator="email" type="text" class="form-control" placeholder="常用邮箱" aria-describedby="basic-addon1" id="email" name="email" autocomplete="off" ng-model="UserName">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-option-horizontal spanicon"></span>新建密码</span>
