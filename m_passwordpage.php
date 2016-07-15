@@ -43,31 +43,31 @@ include("library/xwFE-0.0.1/FEM.php");
 
 
         <div class="per_s-rightpart col-lg-9 col-sm-9 col-xs-12 row" style="min-height:300px;border-radius:4px;">
-            <form class="form-horizontal" name="password_setting" role="form">
+            <form class="form-horizontal form-info_setting" name="password_settingForm" role="form" novalidate>
                 <div class="row boat">
                     <div class="form-group row col-lg-8">
                         <label for="oldpassword" class="col-lg-3 control-label">旧密码</label>
                         <div class="col-sm-9">
-                            <input type="password" class="form-control" id="oldpassword" placeholder="输入旧密码" ng-model="PasswordData.OldPassword" minlength="8" maxlength="24" validator="Xiwupassword">
+                            <input type="password" class="form-control" id="oldpassword" name="oldpassword" placeholder="输入旧密码" ng-model="PasswordData.OldPassword" minlength="8" maxlength="24" validator="Xiwupassword">
                         </div>
                     </div>
                     <div class="form-group col-lg-8">
                         <label for="newpassword" class="col-lg-3 control-label">新密码</label>
                         <div class="col-sm-9">
-                            <input type="password" class="form-control" id="newpassword" placeholder="输入新密码" ng-model="PasswordData.NewPassword" minlength="8" maxlength="24" validator="Xiwupassword">
+                            <input type="password" class="form-control" id="newpassword" name="newpassword" placeholder="输入新密码" ng-model="PasswordData.NewPassword" minlength="8" maxlength="24" validator="Xiwupassword">
                         </div>
                     </div>
                     <div class="form-group col-lg-8">
                         <label for="newpassword_repeat" class="col-lg-3 control-label">重复新密码</label>
                         <div class="col-sm-9">
-                            <input type="password" class="form-control" id="newpassword_repeat" placeholder="重复新密码" ng-model="PasswordData.RepeatedPassword" minlength="8" maxlength="24" validator="Xiwupassword">
+                            <input type="password" class="form-control" id="newpassword_repeat" name="newpassword_repeat" placeholder="重复新密码" ng-model="PasswordData.RepeatedPassword" minlength="8" maxlength="24" validator="Xiwupassword,required">
                         </div>
                     </div>
                 </div><!--End of a boat-->
 
 
                 <div class="row boat" style="padding:0">
-                    <input validation-submit="password_setting" ng-click="next()" type="submit" class="btn btn-lg btn-primary btn-block" value="完成提交">
+                    <input validation-submit="password_settingForm" ng-click="form.submit()" type="submit" class="btn btn-lg btn-primary btn-block" value="完成提交">
                 </div>
             </form>
 

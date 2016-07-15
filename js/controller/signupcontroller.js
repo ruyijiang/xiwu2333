@@ -74,7 +74,6 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
 
     $scope.form = {
         submit: function () {
-            // your ng-click success callback
             $scope.signupsubmit();
         }
     };

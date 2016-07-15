@@ -2,7 +2,7 @@
  * Created by mazih on 2016/5/20.
  */
 
-app.controller('m_PasswordController',function ($scope,$rootScope){
+app.controller('m_PasswordController',function ($scope,$rootScope,$timeout){
 
     $scope.PasswordData = {
         OldPassword:'',
@@ -14,8 +14,11 @@ app.controller('m_PasswordController',function ($scope,$rootScope){
         content : ""
     };
 
-    $scope.next = function (){
-        $scope.submitData();
+
+    $scope.form = {
+        submit: function () {
+            $scope.submitData();
+        }
     };
 
     $scope.submitData = function (){

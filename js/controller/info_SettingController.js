@@ -167,9 +167,10 @@ app.controller('info_SettingController',function ($scope,$http,$window,$timeout)
     }
 
 
-
-    $scope.next = function (){
-        $scope.submitData();
+    $scope.form = {
+        submit: function () {
+            $scope.submitData();
+        }
     };
     /**
      * 提交表单信息

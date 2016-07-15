@@ -52,7 +52,7 @@ include("library/xwFE-0.0.1/FEM.php");
         ?>
 
         <div class="per_s-rightpart col-lg-9 col-sm-9 col-xs-12 row" style="min-height:300px;border-radius:4px;">
-                <form class="form-horizontal form-horizontal demo-form" novalidate role="form" id="info_setting_form" name="info_setting_form" ng-submit="submitData()">
+                <form class="form-horizontal form-horizontal demo-form" novalidate role="form" id="info_setting_form" name="info_settingForm">
                     <div class="row boat">
                         <div class="per_s_content-basicinfo col-lg-6">
                             <div class="form-group">
@@ -95,7 +95,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div class="extrarow-2 row">
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">常驻服务器</label>
-                                    <div class="btn-group col-lg-9 btn-group-sm" role="group" aria-label="...">
+                                    <div class="btn-group col-lg-9 btn-group-sm" role="group">
                                         <button type="button" class="userserver btn btn-default" ng-class="{active:ServerList.UserServer_sh==1}" value="电信（上海）" ng-click="changeServer('sh')">电信（上海）</button>
                                         <button type="button" class="userserver btn btn-default" ng-class="{active:ServerList.UserServer_zj==1}" value="电信（浙江）" ng-click="changeServer('zj')">电信（浙江）</button>
                                         <button type="button" class="userserver btn btn-default" ng-class="{active:ServerList.UserServer_gd==1}" value="电信（广东）" ng-click="changeServer('gd')">电信（广东）</button>
@@ -116,7 +116,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <p class="pull-left" style="padding-top:5px;">-</p>
                                     <!--省份信息select标签-->
                                     <div class="btn-group col-lg-2 btn-group-sm" role="group" aria-label="...">
-                                        <select class="form-control" id="select_city" ng-change="onRegionSelected(UserInfoData.country,UserInfoData.province)" ng-model="UserInfoData.province">
+                                        <select class="form-control" id="select_city" name="select_city" ng-change="onRegionSelected(UserInfoData.country,UserInfoData.province)" ng-model="UserInfoData.province">
                                             <option>北京市</option>
                                             <option>上海市</option>
                                             <option>天津市</option>
@@ -159,8 +159,9 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">+86</span>
-                                            <input validator="required, telnumber" maxlength="11" type="text" class="form-control" id="telnum" name="telnum" ng-model="UserInfoData.tel">
+                                            <input validator="telnumber" maxlength="11" type="text" class="form-control" message-id="telnum_span" id="telnum" name="telnum" ng-model="UserInfoData.tel">
                                         </div>
+                                        <span id="telnum_span"></span>
                                     </div>
                                 </div>
                             </div><!--End of extrarow-x-->
@@ -169,7 +170,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label" for="qqnum">QQ</label>
                                     <div class="col-sm-4">
-                                        <input validator="required, qq" minlength="4" maxlength="11" type="text" required class="form-control" name="qqnum" id="qqnum" ng-model="UserInfoData.qq">
+                                        <input validator="qq" minlength="4" maxlength="11" type="text" class="form-control" name="qqnum" id="qqnum" ng-model="UserInfoData.qq">
                                     </div>
                                     <!--<a><span class="glyphicon glyphicon-plus-sign" style="padding-top: 15px;margin-left:0"></span></a>-->
                                 </div>
@@ -179,7 +180,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label" for="wechat_name">微信</label>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" placeholder="" id="wechat_name" ng-model="UserInfoData.weixin">
+                                        <input validator="wechat" type="text" class="form-control" id="wechat_name" name="wechat_name" ng-model="UserInfoData.weixin">
                                     </div>
                                 </div>
                             </div><!--End of extrarow-x-->
@@ -190,8 +191,9 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="icon-weibo_origin iconfont"></i></span>
-                                            <input validator="url" type="url" class="form-control" placeholder="输入您新浪微博的网址链接（URL）" id="weibo_url" ng-model="UserInfoData.weibo">
+                                            <input validator="url" type="url" class="form-control" placeholder="输入您新浪微博的网址链接（URL）" message-id="weibo_url_span" id="weibo_url" name="weibo_url" ng-model="UserInfoData.weibo">
                                         </div>
+                                        <span id="weibo_url_span"></span>
                                     </div>
                                 </div>
                             </div><!--End of extrarow-x-->
@@ -202,8 +204,9 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="spanicon" style="margin:0"></span></span>
-                                            <input validator="url" id="liveplain" type="url" class="form-control" placeholder="输入您直播间的网址链接（URL）" ng-model="UserInfoData.liveplain">
+                                            <input validator="url" message-id="liveplain_url_span" id="liveplain" name="liveplain" type="url" class="form-control" placeholder="输入您直播间的网址链接（URL）" ng-model="UserInfoData.liveplain">
                                         </div>
+                                        <span id="liveplain_url_span"></span>
                                     </div>
                                 </div>
                             </div><!--End of extrarow-x-->
@@ -212,7 +215,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div><!--End of a boat-->
 
                     <div class="row boat" style="padding:0">
-                        <input validation-submit="info_setting_form" ng-click="next()" type="submit" class="btn btn-lg btn-primary btn-block" value="完成提交">
+                        <input validation-submit="info_settingForm" ng-click="form.submit()" type="submit" class="btn btn-lg btn-primary btn-block" value="完成提交">
                     </div>
                 </form>
 

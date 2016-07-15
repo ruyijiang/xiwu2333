@@ -36,7 +36,7 @@ include("library/xwFE-0.0.1/FEM.php");
             </div>-->
 
             <div class="btn-group" style="margin-top:15px">
-              <button class="btn btn-default" ui-sref="signup"><small>还没有账号?</small></button>
+              <button type="button" class="btn btn-default" ui-sref="signup"><small>还没有账号?</small></button>
               <input type="submit" class="btn btn-primary" value="登陆&raquo;"/>
             </div>
           </form>

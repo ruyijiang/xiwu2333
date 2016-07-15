@@ -13,8 +13,9 @@
                 email: /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
                 number: /^\d+$/,
                 qq:/^\d{4,11}$/,
+                wechat:/^\w+$/,
                 Xiwupassword:/\w{8,24}/,
-                telnumber: /^[1][358][0-9]{9}$/,
+                telnumber: /[1][3578][0-9]{9}/,
                 idcard:/^\d{17}[\d|xX]$|^\d{18}$/,
                 minlength: function(value, scope, element, attrs, param) {
                     return value.length >= param;
@@ -60,6 +61,9 @@
                 maxlength: {
                     error: '位数过长',
                     //success: 'Short enough!'
+                },
+                wechat:{
+                    error: '请输入正确的微信号',
                 }
             };
             $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);//设定表达式和校验提示

@@ -9,7 +9,7 @@ include("library/xwFE-0.0.1/FEM.php");
     <form ng-submit="articlesubmit()" style="position: relative;z-index:98"><!--method="POST" action="library/xwBE-0.0.1/php/ueserver.php"-->
         <div class="input-group writeblog-title">
             <span class="input-group-addon" id="basic-addon1" style="font-weight:500"><g>文章标题</g></span>
-            <input ng-model="NeedModifiedTitle" style="font-weight:500" type="text" class="form-control" id="a_title" name="title" placeholder="请输入文章标题" aria-describedby="basic-addon1" required maxlength="20" autocomplete="off">
+            <input ng-model="NeedModifiedTitle" style="font-weight:500" type="text" class="form-control" id="a_title" name="title" placeholder="请输入文章标题" aria-describedby="basic-addon1" maxlength="20" autocomplete="off">
         </div>
 
         <script id="ueditor-main" class="ueditor-main"  style="margin-top:150px;height:450px;" ng-bind-html="NeedModifiedContent|to_trusted"></script>

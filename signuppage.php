@@ -2,7 +2,7 @@
     <div class="container center-block col-lg-12 col-sm-12" style="margin-top:100px;" ng-controller="signupcontroller">
         <div class="col-lg-4 col-sm-4"></div>
         <div class="row clearfix col-lg-4 col-sm-4">
-            <form class="form-signup center-block" name="SignupForm">
+            <form class="form-signup" name="SignupForm" role="form" novalidate>
                 <h2 class="form-signup-heading">新用户注册</h2>
 
                 <div class="input-group">
