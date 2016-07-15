@@ -245,11 +245,13 @@ div.alert-success{margin-top: 50px; z-index: 99; background-image: none; backgro
 .nav-pills>li.active>a{border-radius:1px}
 /*ng-validate*/
 .ng-invalid{
+	border-width: 1px;
 	border-color:#d9534f;
 }
 .validation-invalid{
 	color:#d9534f;
 	font-size:12px;
-	font-weight:bold;
+	font-weight:400;
+	letter-spacing: 1px;
 }
 

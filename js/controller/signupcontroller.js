@@ -72,6 +72,13 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
         }
     }//End of signupsubmit()
 
+    $scope.form = {
+        submit: function () {
+            // your ng-click success callback
+            $scope.signupsubmit();
+        }
+    };
+
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(6);

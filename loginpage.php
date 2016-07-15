@@ -15,17 +15,17 @@ include("library/xwFE-0.0.1/FEM.php");
 
     <div class="col-lg-4 col-sm-4"></div>
         <div class="row col-lg-4 col-sm-4 clearfix center-block">
-          <form class="form-signin center-block" ng-submit="loginsubmit()">
+          <form class="form-signin" name="LoginForm" ng-submit="loginsubmit()">
             <h2 class="form-signin-heading">请登陆</h2>
 
             <div>
                 <label for="inputEmail" class="sr-only">邮箱：</label>
-                <input validator="email" type="text" id="inputEmail" class="form-control" placeholder="请输入邮箱" autocomplete="off" ng-model="UserName">
+                <input type="text" id="inputEmail" class="form-control" placeholder="请输入邮箱" autocomplete="off" ng-model="UserName">
             </div>
 
             <div>
                 <label for="inputPassword" class="sr-only">密码：</label>
-                <input validator="Xiwupassword" type="password" id="inputPassword" class="form-control" placeholder="密码" minlength="8" ng-model="UserPassword">
+                <input type="password" id="inputPassword" class="form-control" placeholder="密码" minlength="8" ng-model="UserPassword">
             </div>
 
             <!--<div class="checkbox">
@@ -34,9 +34,10 @@ include("library/xwFE-0.0.1/FEM.php");
               </label>
               <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" data-original-title="在公共计算机上不建议勾选"></span>
             </div>-->
+
             <div class="btn-group" style="margin-top:15px">
-              <button type="button" class="btn btn-default" ui-sref="signup"><small>还没有账号?</small></button>
-              <input type="submit" class="btn btn-primary" value="登陆&raquo;" />
+              <button class="btn btn-default" ui-sref="signup"><small>还没有账号?</small></button>
+              <input type="submit" class="btn btn-primary" value="登陆&raquo;"/>
             </div>
           </form>
         <div class="otherlogindiv" style="margin-top:25px">

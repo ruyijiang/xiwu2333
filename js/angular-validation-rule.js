@@ -64,10 +64,7 @@
             };
             $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);//设定表达式和校验提示
             $validationProvider.setValidMethod('blur');//设定触发时机
-            $validationProvider.addMsgElement = function(element) {
-                // Insert my own Msg Element
-                $(element).parent().after('<span></span>');
-            };//设定错误提示的位置
 
-        }]);
+
+        }])
 }).call(this);
