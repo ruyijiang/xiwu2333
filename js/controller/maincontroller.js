@@ -2,6 +2,7 @@
 app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(0);
+    var timing = Math.round(new Date().getTime());
 
     $scope.dialog = {
         open:false,
@@ -14,7 +15,6 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
     $scope.getRecUserData = function (){
         if(Math.random() >= 0){
             //随机推荐一个用户
-            var timing = Math.round(new Date().getTime());
             var derreferd = $q.defer();
 
             $scope.RecCate = "user";
@@ -38,6 +38,23 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
             })
         }
     };
+
+    /**
+     * 获取当前在线玩家数
+     */
+    $http({
+        method: 'POST',
+        url: 'library/xwBE-0.0.1/php/EchartData_Export.php',
+        params:{'mod':'getOnlineUsersAmount','timing':timing}
+    }).success(function (){
+        derreferd.resolve();
+    }).error(function (){
+        derreferd.reject();
+    }).then(function (httpCont){
+        $scope.onLineUserAccount = httpCont.data;
+    });
+
+
     $scope.getRecUserData();
 
 

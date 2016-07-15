@@ -16,12 +16,12 @@ include("library/xwFE-0.0.1/FEM.php");
             <?php echo $main_bg;?>
             <div class="row">
                 <div class="col-xs-6 col-lg-4">
-                    <h2>玩家列表<span class="badge">4234</span></h2>
+                    <h2>玩家列表<span class="badge">{{onLineUserAccount}}</span></h2>
                     <p>寻找开黑队友，也可以随便找人聊聊。</p>
                     <p><a ui-sref="userlist" class="btn btn-primary" role="button">前往 &raquo;</a></p>
                 </div><!--/.col-xs-6.col-lg-4-->
                 <div class="col-xs-6 col-lg-4">
-                    <h2>社区广场<span class="badge">4</span></h2>
+                    <h2>社区广场<span class="badge"></span></h2>
                     <p>这里展示了所有与电子竞技相关的资讯与数据。</p>
                     <p><a ng-click="dialog.open=true" class="btn btn-primary" role="button">去看看 &raquo;</a></p>
                 </div><!--/.col-xs-6.col-lg-4-->
