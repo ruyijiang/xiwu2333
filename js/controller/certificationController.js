@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/5/18.
  */
-app.controller('certificationController',function ($scope){
+app.controller('certificationController',function ($scope,$timeout){
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $scope.IdCardEditable = 0;
     $scope.TelEditable = 0;
@@ -67,6 +67,9 @@ app.controller('certificationController',function ($scope){
                         open: true,
                         content : "保存成功"
                     };
+                    $timeout(function (){
+                        window.location.reload();
+                    },700);
                 }
             },
             error: function (){

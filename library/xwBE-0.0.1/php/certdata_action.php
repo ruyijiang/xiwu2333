@@ -7,6 +7,7 @@
  */
 require("../connectDB.php");
 require("../all.php");
+require("../Regulars.php");
 ?>
 <?php
     $key = $_POST["key"];
@@ -15,7 +16,7 @@ require("../all.php");
     $uid = $_SESSION["uid"];
     $password = $_SESSION["userpassword"];
 
-    $a =  new interfaceResponse();
+    $a = new interfaceResponse();
     $status = $reminder = "";
     $Repeated = 1;
 
@@ -33,6 +34,11 @@ require("../all.php");
  * 当不重复时，再执行更新数据库的操作
  */
     if(!$Repeated){
+
+        //验证用户输入内容是否合法
+
+
+
 
         $sql = "UPDATE users SET `$key` = '$value' WHERE uid = '$uid' AND password = '$password' ";
         $qry = $db->query($sql);

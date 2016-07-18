@@ -62,7 +62,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <input id="idcard_ipt" type="text" class="form-control" ng-readonly="!IdCardEditable" value="<? echo $result_idcard;?>">
                         </div>
                         <a title="修改" class="col-lg-2" style="margin-left:-15px" ng-if="!IdCardEditable" ng-click="changeEditability(1)"><span class="glyphicon glyphicon-pencil" style="padding-top: 15px;margin-left:0"></span></a>
-                        <a role="button" class="btn btn-primary col-lg-2" style="margin-left:-10px" ng-if="IdCardEditable" ng-click="submitData(1)">保存</a>
+                        <a role="button" class="btn btn-primary col-lg-2" style="margin-left:-10px" ng-if="IdCardEditable" ng-click="submitData(1)">确定</a>
                     </div>
                     <div class="form-group col-lg-8">
                         <label class="col-lg-3 control-label">绑定手机号</label>
@@ -70,7 +70,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <input id="tel_ipt" type="text" class="form-control" ng-readonly="!TelEditable" value="<? echo $result_tel;?>">
                         </div>
                         <a title="修改" class="col-lg-1" style="margin-left:-15px" ng-if="!TelEditable" ng-click="changeEditability(2)"><span class="glyphicon glyphicon-pencil" style="padding-top: 15px;margin-left:0"></span></a>
-                        <a role="button" class="btn btn-primary col-lg-2" style="margin-left:-10px" ng-if="TelEditable" ng-click="submitData(2)">保存</a>
+                        <a role="button" class="btn btn-primary col-lg-2" style="margin-left:-10px" ng-if="TelEditable" ng-click="submitData(2)">确定</a>
                     </div>
                     <div class="form-group col-lg-8">
                         <label class="col-lg-3 control-label">绑定邮箱</label>
@@ -78,7 +78,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <input id="email_ipt" type="text" class="form-control" ng-readonly="!EmailEditable" value="<? echo $result_email;?>">
                         </div>
                         <a title="修改" class="col-lg-1" style="margin-left:-15px" ng-if="!EmailEditable" ng-click="changeEditability(3)"><span class="glyphicon glyphicon-pencil" style="padding-top: 15px;margin-left:0"></span></a>
-                        <a role="button" class="btn btn-primary col-lg-2" style="margin-left:-10px" ng-if="EmailEditable" ng-click="submitData(3)">保存</a>
+                        <a role="button" class="btn btn-primary col-lg-2" style="margin-left:-10px" ng-if="EmailEditable" ng-click="submitData(3)">确定</a>
                     </div>
                 </div><!--End of a boat-->
 
