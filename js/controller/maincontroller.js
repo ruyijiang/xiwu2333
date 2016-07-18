@@ -42,16 +42,14 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
     /**
      * 获取当前在线玩家数
      */
-    $http({
-        method: 'POST',
+    $.ajax({
         url: 'library/xwBE-0.0.1/php/EchartData_Export.php',
-        params:{'mod':'getOnlineUsersAmount','timing':timing}
-    }).success(function (){
-        derreferd.resolve();
-    }).error(function (){
-        derreferd.reject();
-    }).then(function (httpCont){
-        $scope.onLineUserAccount = httpCont.data;
+        type:'POST',
+        async: false,
+        data:{'mod':'getOnlineUsersAmount','timing':timing},
+        success: function (data){
+            $scope.onLineUserAccount = data;
+        }
     });
 
 
