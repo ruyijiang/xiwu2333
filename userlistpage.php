@@ -62,12 +62,12 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="userlist-chart center-block" id="user-ratio"></div>
                 <h4><strong>男女比例</strong></h4>
                 <span class="text-muted">{{(UserDataSexRate.MaleRate.toFixed(2))*100}}% - {{(UserDataSexRate.FemaleRate.toFixed(2))*100}}%</span>
-              </div>
+              </div><!--
               <div class="col-lg-4 col-sm-6 col-xs-12 placeholder">
                 <div class="userlist-chart center-block" id="user-online" style="width:214px"></div>
                 <h4><strong>当前在线玩家</strong></h4>
                 <span class="text-muted">{{UserDataNowOnline.NowOnlineCount}}人</span>
-              </div>
+              </div>-->
             </div>
 
             <h3 class="sub-header">

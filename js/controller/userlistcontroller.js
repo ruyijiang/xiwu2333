@@ -211,8 +211,8 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
                 }
             ],
         };
-        
-        var myChart_online = echarts.init(document.getElementById('user-online'));
+
+/*var myChart_online = echarts.init(document.getElementById('user-online'));
         option3 = {
             tooltip: {
                 trigger: 'axis'
@@ -245,12 +245,12 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
                     data:[75,120, 132, 101, $scope.UserDataNowOnline.NowOnlineCount]
                 }
             ]
-        };
+        };*/
         //实例echart
         myChart_most.setOption(option1);
         myChart_ratio.setOption(option2);
-        myChart_online.setOption(option3);
-    }
+        //myChart_online.setOption(option3);
+    };
 
 
     $scope.loadEchart();
