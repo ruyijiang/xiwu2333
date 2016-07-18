@@ -35,24 +35,24 @@ require("../Regulars.php");
  */
     if(!$Repeated){
         //验证用户输入内容是否合法
-        if(!preg_match($Regular_Phone,$iccode)){
+        if(!preg_match($Regular_Phone,$value) && $key == "tel"){
             //手机号不通过验证
             $status = 0;
-            $reminder = "填写的内容已经绑定其它账号";
+            $reminder = "手机号码的格式不正确";
             echo $a->normalrespond($status,$reminder);
             //-------------------------------------------------------------------------------------------------------------->出口4：手机号不通过验证
 
-        }else if(!preg_match($Regular_Idcard,$iccode)){
+        }else if(!preg_match($Regular_Idcard,$value) && $key == "idcard"){
             //身份证号不通过验证
             $status = 0;
-            $reminder = "填写的内容已经绑定其它账号";
+            $reminder = "身份证号码的格式不正确";
             echo $a->normalrespond($status,$reminder);
             //-------------------------------------------------------------------------------------------------------------->出口5：身份证号不通过验证
 
-        }else if(!preg_match($Regular_Email,$iccode)){
+        }else if(!preg_match($Regular_Email,$value) && $key == "email"){
             //电子邮箱不通过验证
             $status = 0;
-            $reminder = "填写的内容已经绑定其它账号";
+            $reminder = "电子邮箱的格式不正确";
             echo $a->normalrespond($status,$reminder);
             //-------------------------------------------------------------------------------------------------------------->出口6：电子邮箱不通过验证
 
