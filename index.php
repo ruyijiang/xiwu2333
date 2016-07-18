@@ -32,7 +32,6 @@ include("library/xwFE-0.0.1/FEM.php");
 	<link href="css/all.css" rel="stylesheet"/>
 	<!-- AngularJs -->
 	<script src="js/angular.min.js"></script>
-	<base href="/">
 </head>
 <script>
 	var SERVER_BASE = "localhost";
