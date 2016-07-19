@@ -19,6 +19,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     $scope.TabCommentStatus = 0;
     $scope.TabHttpRequestTimes = 0;//Tab一共发送的请求数量
 
+
     /**
      * 切换tab时触发的事件
      */
@@ -323,6 +324,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         open: false,
         content : ""
     };
+    $rootScope.NowPageTitle = $scope.UserData.name;
 
 
 });

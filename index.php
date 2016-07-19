@@ -20,7 +20,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<meta http-equiv="Cache-control" content="no-cache">
 	<meta http-equiv="Cache" content="no-cache">
 	<!--<meta http-equiv="Pragma" content="no-cache">-->
-	<title>喜屋</title>
+	<title>{{NowPageTitle}}</title>
 	<!-- Bootstrap Css -->
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">

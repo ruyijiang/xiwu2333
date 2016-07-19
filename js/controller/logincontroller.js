@@ -2,6 +2,7 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
 
     $scope.UserName = "";
     $scope.UserPassword = "";
+    $rootScope.NowPageTitle = "登陆 - 喜屋";
     /**
      * 提交登陆表单
      */

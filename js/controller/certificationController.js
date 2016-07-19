@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/5/18.
  */
-app.controller('certificationController',function ($scope,$timeout){
+app.controller('certificationController',function ($scope,$rootScope,$timeout){
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $scope.IdCardEditable = 0;
     $scope.TelEditable = 0;
@@ -11,6 +11,7 @@ app.controller('certificationController',function ($scope,$timeout){
         content : ""
     };
     $scope.Old1234 = "12345";
+    $rootScope.NowPageTitle = "认证绑定 - 喜屋";
 
     /**
      * 切换输入框可输入状态和按钮icon

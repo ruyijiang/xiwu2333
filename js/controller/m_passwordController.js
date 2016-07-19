@@ -13,6 +13,7 @@ app.controller('m_PasswordController',function ($scope,$rootScope,$timeout){
         open: false,
         content : ""
     };
+    $rootScope.NowPageTitle = "修改密码 - 喜屋";
 
 
     $scope.form = {

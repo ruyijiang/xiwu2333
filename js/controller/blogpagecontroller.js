@@ -97,6 +97,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
 
+    $rootScope.NowPageTitle = $scope.BlogExport.title;
 
 }).filter(
     'to_trusted', ['$sce', function ($sce) {

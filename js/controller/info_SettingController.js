@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/5/16.
  */
-app.controller('info_SettingController',function ($scope,$http,$window,$timeout){
+app.controller('info_SettingController',function ($scope,$rootScope,$http,$window,$timeout){
 
 
     $scope.CityNameShowStatus = null;
@@ -10,6 +10,7 @@ app.controller('info_SettingController',function ($scope,$http,$window,$timeout)
     $scope.uploadAvatarStatusDialog = {
         open:false
     };
+    $rootScope.NowPageTitle = "资料设置 - 喜屋";
     timing = Math.round(new Date().getTime()/1000);
 
 
