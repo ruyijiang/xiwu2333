@@ -146,7 +146,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/404",
             templateUrl: "404.html"
         });
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('main');
         //remove #
         //$locationProvider.html5Mode(true);
 });
