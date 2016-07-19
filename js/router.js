@@ -33,7 +33,16 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state("signup", {
             url: "/signup",
-            templateUrl: "signuppage.php"
+            templateUrl: "signuppage.php",
+            resolve:{
+                guarder: function($q,$location,checkStatus,$state){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        if(allowed=="1") $state.go("main");
+                    });
+                }
+            }
         })
         .state("blog", {
             url: "/blog",
