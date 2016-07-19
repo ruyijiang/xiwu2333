@@ -10,7 +10,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="喜屋,dota2,开黑,坑爹,大神,排位,天梯,电子竞技" />
 	<meta name="robots" content="all" />
-	<meta name="author" content="shy" />
+	<meta name="author" content="milo" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="HandheldFriendly" content="true">
 	<meta name="full-screen" content="yes">
