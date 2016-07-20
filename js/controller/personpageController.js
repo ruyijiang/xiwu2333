@@ -66,7 +66,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         $.ajax({
             url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
             type:'GET',
-          async: false,
+            async: false,
             data:{"uid":uid,"gender":gender},//lo这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
             success: function (data){
                 data = eval( "(" + data + ")");
@@ -74,6 +74,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 SArr.pop();
                 data.server = SArr;
                 $scope.UserData = data;
+                console.log($scope.UserData.server.length);
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");

@@ -64,10 +64,8 @@ include("library/xwFE-0.0.1/FEM.php");
                                 </span>
                             </div>
                             <p>
-                                <span class="label label-default" ng-repeat="xSer in RecoUserServerArr">{{xSer}}</span>
-                                <!--<span class="label label-default">电信(上海)</span>
-                                <span class="label label-default">电信(华中)</span>
-                                <span class="label label-default">电信(广东)</span>-->
+                                <span class="label label-default" ng-if="RecoUserServerArr.length - 1 > 2">{{RecoUser.server_bigarea}}</span>
+                                <span class="label label-default" ng-repeat="xSer in RecoUserServerArr" ng-if="RecoUserServerArr.length - 1 <= 2">{{xSer}}</span>
                             </p>
                             <div style="border-top:1px dotted #e5e5e5;padding-top:5px">
                                 <a class="btn btn-default btn-sm center-block" role="button" ng-click="getRecUserData()">

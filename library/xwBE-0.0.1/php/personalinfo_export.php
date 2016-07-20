@@ -27,6 +27,7 @@ require("../all.php");
         $email = $row["email"];
         $gender = $row["gender"];
         $server = $row["server"];
+        $server_bigarea = $row["server_bigarea"];
         $country = $row["country"];//6
         $province = $row["province"];
         $city = $row["city"];
@@ -37,7 +38,7 @@ require("../all.php");
         $liveplain = $row["liveplain"];//13个
         $avatar = $row["avatar"];
 
-        $dataArr = array ('uid'=>$uid,'name'=>$name,'gender'=>$gender,'server'=>$server,'country'=>$country,'province'=>$province,'city'=>$city,'tel'=>$tel,'qq'=>$qq,'weixin'=>$weixin,'weibo'=>$weibo,'liveplain'=>$liveplain,'avatar'=>$avatar);
+        $dataArr = array ('uid'=>$uid,'name'=>$name,'gender'=>$gender,'server'=>$server,'server_bigarea'=>$server_bigarea,'country'=>$country,'province'=>$province,'city'=>$city,'tel'=>$tel,'qq'=>$qq,'weixin'=>$weixin,'weibo'=>$weibo,'liveplain'=>$liveplain,'avatar'=>$avatar);
 
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value);

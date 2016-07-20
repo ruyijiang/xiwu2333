@@ -50,6 +50,7 @@ require("all.php");
         $result_ladderscore = $row["ladderscore"];//天梯
         $result_score = $row["score"];//评分
         $result_server = $row["server"];//服务器
+        $result_server_bigarea = $row["server_bigarea"];
         $result_liveplain = $row["liveplain"];//直播平台
         $result_qq = $row["qq"];//qq
         $result_weixin = $row["weixin"];//微信
@@ -66,7 +67,7 @@ require("all.php");
         /**
          * 输出
          */
-        $dataArr = array ('uid'=>$result_uid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'page_num'=>$result_page_num);
+        $dataArr = array ('uid'=>$result_uid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'server_bigarea'=>$result_server_bigarea,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'page_num'=>$result_page_num);
 
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value);
