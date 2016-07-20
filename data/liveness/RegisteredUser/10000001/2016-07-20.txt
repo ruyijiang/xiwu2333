@@ -82,3 +82,8 @@
 ['Time':2016-07-20 21:35:32,'Commit:'onlineDuration]{0}
 ['Time':2016-07-20 21:35:39,'Commit:'onlineDuration]{0}
 ['Time':2016-07-20 21:35:41,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 21:41:03,'Commit:'onlineDuration]{315}
+['Time':2016-07-20 21:41:49,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 21:46:15,'Commit:'onlineDuration]{2205}
+['Time':2016-07-20 22:10:31,'Commit:'onlineDuration]{3094}
+['Time':2016-07-20 22:26:30,'Commit:'onlineDuration]{1050}

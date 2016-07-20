@@ -15,14 +15,14 @@ require("../all.php");
     $a = new interfaceResponse();
     $status = $reminder = 0;
 
-    $sql = "SELECT id,aid,title,content,uid,time FROM articles WHERE aid = '$aid' ";
-
+    $sql = "SELECT id,aid,title,content,uid,time,read_times FROM articles WHERE aid = '$aid' ";
 
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
     $result_id = $row["id"];
-    $result_aid = $row["aid"];//作者uid
+    $result_aid = $row["aid"];//文章aid
     $result_uid = $row["uid"];//作者uid
+    $result_read_times = $row["read_times"];
 
     $sql_prev = "SELECT aid FROM articles WHERE id < '$result_id' AND uid = '$result_uid' ORDER BY id DESC LIMIT 0,1 ";
     $qry_prev = $db->query($sql_prev);
@@ -74,5 +74,11 @@ require("../all.php");
     }
     $dataArr = urldecode ( json_encode ( $dataArr ));
     echo $dataArr;
+
+
+    //输出了相关数据，对数据表的状态进行更新
+    $result_read_times += 1;
+    $sql3 = "UPDATE articles SET read_times = '$result_read_times' WHERE aid = '$result_aid' ";
+    $qry3 = $db->query($sql3);
 
 ?>
