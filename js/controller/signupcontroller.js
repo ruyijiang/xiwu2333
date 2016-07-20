@@ -46,7 +46,8 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
                                 success: function (data){
                                     //2，跳转
                                     localStorage.OnlineStatus = "1";
-                                    $location.path("/main");
+                                    $location.path("/main").replace();
+                                    window.location.reload();
                                 },
                                 error: function (){
                                     alert ("注册后的自动登陆环节出现错误，请手动登录。");

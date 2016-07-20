@@ -1,0 +1,15 @@
+['Time':2016-07-20 23:13:26,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:13:28,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:13:30,'Commit:'openTeam]{190}
+['Time':2016-07-20 23:13:31,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:14:34,'Commit:'onlineDuration]{70}
+['Time':2016-07-20 23:14:39,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:14:41,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:14:42,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:14:43,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:15:29,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:15:46,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:17:18,'Commit:'onlineDuration]{70}
+['Time':2016-07-20 23:17:30,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:17:54,'Commit:'onlineDuration]{0}
+['Time':2016-07-20 23:18:19,'Commit:'onlineDuration]{0}
