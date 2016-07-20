@@ -12,6 +12,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
         skillLevel : ''
     };
     $scope.maskVis = 1;
+    $rootScope.NowPageTitle = "玩家列表 - 喜屋";
 
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);

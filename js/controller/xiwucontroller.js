@@ -10,6 +10,8 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
     $scope.gosearch = function (val,ext){
         search.skipToSearch(val,ext);
     };
+    $rootScope.NowPageTitle = "喜屋";
+
     /**
      * 初始化
      */

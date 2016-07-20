@@ -9,6 +9,7 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
     $scope.UserPassword = '';
     $scope.UserPassword_Repeat = '';
     $scope.Gender = '';
+    $rootScope.NowPageTitle = "注册 - 喜屋";
 
     /**
      * 提交注册表单

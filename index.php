@@ -10,7 +10,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="喜屋,dota2,开黑,坑爹,大神,排位,天梯,电子竞技" />
 	<meta name="robots" content="all" />
-	<meta name="author" content="shy" />
+	<meta name="author" content="milo" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="HandheldFriendly" content="true">
 	<meta name="full-screen" content="yes">
@@ -20,7 +20,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<meta http-equiv="Cache-control" content="no-cache">
 	<meta http-equiv="Cache" content="no-cache">
 	<!--<meta http-equiv="Pragma" content="no-cache">-->
-	<title>喜屋</title>
+	<title>{{NowPageTitle}}</title>
 	<!-- Bootstrap Css -->
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
