@@ -159,7 +159,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">+86</span>
-                                            <input validator="telnumber" maxlength="11" type="text" class="form-control" message-id="telnum_span" id="telnum" name="telnum" ng-model="UserInfoData.tel">
+                                            <input validator="newtelnumber" maxlength="11" type="text" class="form-control" message-id="telnum_span" id="telnum" name="telnum" ng-model="UserInfoData.tel">
                                         </div>
                                         <span id="telnum_span"></span>
                                     </div>
@@ -170,7 +170,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label" for="qqnum">QQ</label>
                                     <div class="col-sm-4">
-                                        <input validator="qq" minlength="4" maxlength="11" type="text" class="form-control" name="qqnum" id="qqnum" ng-model="UserInfoData.qq">
+                                        <input validator="newqq" minlength="4" maxlength="11" type="text" class="form-control" name="qqnum" id="qqnum" ng-model="UserInfoData.qq">
                                     </div>
                                     <!--<a><span class="glyphicon glyphicon-plus-sign" style="padding-top: 15px;margin-left:0"></span></a>-->
                                 </div>
@@ -180,7 +180,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label" for="wechat_name">微信</label>
                                     <div class="col-sm-4">
-                                        <input validator="wechat" type="text" class="form-control" id="wechat_name" name="wechat_name" ng-model="UserInfoData.weixin">
+                                        <input validator="newwechat" type="text" class="form-control" id="wechat_name" name="wechat_name" ng-model="UserInfoData.weixin">
                                     </div>
                                 </div>
                             </div><!--End of extrarow-x-->
@@ -191,7 +191,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="icon-weibo_origin iconfont"></i></span>
-                                            <input validator="url" type="url" class="form-control" placeholder="输入您新浪微博的网址链接（URL）" message-id="weibo_url_span" id="weibo_url" name="weibo_url" ng-model="UserInfoData.weibo">
+                                            <input validator="newurl" message-id="weibo_url_span" id="weibo_url" name="weibo_url" type="url" class="form-control" placeholder="输入您新浪微博的网址链接（URL）" ng-model="UserInfoData.weibo">
                                         </div>
                                         <span id="weibo_url_span"></span>
                                     </div>
@@ -204,7 +204,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="spanicon" style="margin:0"></span></span>
-                                            <input validator="url" message-id="liveplain_url_span" id="liveplain" name="liveplain" type="url" class="form-control" placeholder="输入您直播间的网址链接（URL）" ng-model="UserInfoData.liveplain">
+                                            <input validator="newurl" message-id="liveplain_url_span" id="liveplain" name="liveplain" type="url" class="form-control" placeholder="输入您直播间的网址链接（URL）" ng-model="UserInfoData.liveplain">
                                         </div>
                                         <span id="liveplain_url_span"></span>
                                     </div>
