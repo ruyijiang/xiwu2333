@@ -1,12 +1,14 @@
 app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$location){
     var A_aid = $location.search()["aid"];//aid根
-    $scope.BlogExport;
+    $scope.BlogExport = "";
 
     /**
      * 根据aid对文章进行读取，并且把文章操作的权限和功能进行输出
      */
     function loadBlog(aid) {
         var data;
+        var deferred = $q.defer();
+
         if(data = checkAidNexport(aid) === true){
 
             $http({
@@ -14,14 +16,24 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
                 url: 'library/xwBE-0.0.1/php/blogpage_export.php',
                 params:{'aid':aid}
             }).success(function (data){
-                $scope.BlogExport = data;
-                $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
-                $scope.BlogExport.hotblog = eval("("+$scope.BlogExport.hotblog+")");
-                $scope.BlogExportHotblogLen = $scope.BlogExport.hotblog.length;
+                if(data.statuscode == 0){
+                    //没有找到相对应的文章
+                    $location.url("/404").replace();
 
-                $scope.dialog_confirmdelete = {
-                    open:false,
-                    content:"确认删除《"+$scope.BlogExport.title+"》吗？"
+                }else{
+                    //找到了相对应的文章，对文章相关信息进行索取
+
+                    $scope.BlogExport = data;
+                    $rootScope.NowPageTitle = $scope.BlogExport.title;
+                    $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
+                    $scope.BlogExport.hotblog = eval("("+$scope.BlogExport.hotblog+")");
+                    $scope.BlogExportHotblogLen = $scope.BlogExport.hotblog.length;
+
+                    $scope.dialog_confirmdelete = {
+                        open:false,
+                        content:"确认删除《"+$scope.BlogExport.title+"》吗？"
+                    }
+
                 }
 
             }).error(function (){
@@ -97,7 +109,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
 
-    $rootScope.NowPageTitle = $scope.BlogExport.title;
 
 }).filter(
     'to_trusted', ['$sce', function ($sce) {

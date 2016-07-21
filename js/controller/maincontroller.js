@@ -10,7 +10,7 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
     };
 
     $scope.RecoUser = {};
-    $rootScope.NowPageTitle = "喜屋";
+    $rootScope.NowPageTitle = "首页 - 喜屋";
 
     //Math.random()取值为0~1
     $scope.getRecUserData = function (){

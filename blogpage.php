@@ -62,8 +62,8 @@ header("Content-Type: text/html; charset=utf-8");
               <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
           	<a ng-href="/#/person?uid={{BlogExport.uid}}"><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
           </div>
-          <div class="sidebar-module sidebar-module-inset">
-            <strong style="font-size:19px;">{{BlogExport.name}}</strong><i class="iconfont icon-renzheng" style="font-size:22px;color:#d87f00;margin-left:5px" title="1234"></i>
+          <div class="sidebar-module sidebar-module-inset" style="margin-top:15px">
+            <strong style="font-size:19px;">{{BlogExport.name}}</strong><i class="iconfont icon-renzheng" style="font-size:22px;color:#d87f00;margin-left:5px" title="{{BlogExport.callingcard_name}}"></i>
             <p style="color:#999;font-size:13px;margin-top:5px">{{BlogExport.slogan}}</p>
           </div>
           <hr>
