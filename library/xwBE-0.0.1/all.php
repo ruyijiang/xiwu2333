@@ -454,15 +454,15 @@ function logout(){
     session_unset("userpassword");
     session_unset("loginstatus");
     session_unset("openstatus");
-    setcookie("uid", "", time() - 3600);//604800是7天的秒数，表示记录cookie一礼拜
-    setcookie("username", "", time() - 3600);
-    setcookie("userpassword", "", time() - 3600);
-    setcookie("openstatus", "", time() - 3600);
+    setcookie("uid");//604800是7天的秒数，表示记录cookie一礼拜
+    setcookie("username");
+    setcookie("userpassword");
+    setcookie("openstatus");
 
-    $logoutCheck = isset($_SESSION["uid"]) || isset($_SESSION["username"]) || isset($_SESSION["userpassword"]) || isset($_SESSION["loginstatus"]) || empty($_COOKIE["uid"]) || empty($_COOKIE["username"]) || empty($_COOKIE["userpassword"]);
+    $logoutCheck = isset($_SESSION["uid"]) || isset($_SESSION["username"]) || isset($_SESSION["userpassword"]) || isset($_SESSION["loginstatus"]) || isset($_SESSION["openstatus"]);
     if($logoutCheck){
         $status = 0;
-        $reminder = "未知异常，已为您强制退出。如有疑问，请联系管理员";
+        $reminder = "您已登出，不过数据未完全清空。";
         $a = new interfaceResponse();
         echo $a->normalrespond($status,$reminder);
         //----------------------------------------------------------------------------------------------------------------->注册出口1：退出失败，数据异常。

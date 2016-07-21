@@ -74,7 +74,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 SArr.pop();
                 data.server = SArr;
                 $scope.UserData = data;
-                console.log($scope.UserData.server.length);
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");

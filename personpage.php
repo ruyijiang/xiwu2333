@@ -5,7 +5,7 @@ include("library/xwFE-0.0.1/FEM.php");
 ?>
 <div class="container" ng-controller="homepagecontroller" style="margin-top:100px">
     <div class="row">
-        <div class="leftpart col-lg-3">
+        <div class="leftpart col-lg-3 col-md-4 col-sm-4 col-xs-8">
             <div>
                 <img ng-src="{{UserData.avatar}}" class="img-responsive img-rounded" width="198" height="198"/>
                 <div>
@@ -97,7 +97,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <a><img ng-src="{{UserData.room_bg_img}}" class="img-responsive" data-toggle="tooltip" data-placement="top" data-original-title="{{UserData.room_name}}"/></a>
             </div>-->
         </div>
-        <div class="rightpart col-lg-9">
+        <div class="rightpart col-lg-9 col-md-8 col-sm-8 col-xs-12">
             <ul class="nav nav-tabs" style="margin-top:20px;">
                 <li ng-class="{active:TabShowPage === 1}"><a ng-click="Tabshow(1)">动态</a></li>
                 <li ng-class="{active:TabShowPage === 2}"><a ng-click="Tabshow(2)">文章</a></li>
