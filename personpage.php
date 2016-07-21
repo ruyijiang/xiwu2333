@@ -52,7 +52,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <td>评分：</td>
                     <td>
                         <span ng-if="UserData.score!=='' && UserData.score!=='0'" ng-class="{'label-success':UserData.score>=80,'label-warning':UserData.score<80&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">{{UserData.score}}</span>
-                        <span ng-if="UserData.score=='' || UserData.score=='0'" ng-class="{'label-success':UserData.score>=80,'label-warning':UserData.score<80&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">尚无数据</span>
+                        <span ng-if="UserData.score=='' || UserData.score=='0'" ng-class="{'label-success':UserData.score>=80,'label-warning':UserData.score<80&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">暂无数据</span>
                     </td>
                 </tr>
                 <tr ng-if="UserData.server.length > 0">
