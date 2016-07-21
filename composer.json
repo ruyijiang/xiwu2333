@@ -1,10 +1,5 @@
 {
   "require": {
     "kronusme/dota2-api": "2.2.1"
-  },
-
-  "repositories": [
-    {"type": "composer", "url": "http://pkg.phpcomposer.com/repo/packagist/"},
-    {"packagist": false}
-  ]
+  }
 }
