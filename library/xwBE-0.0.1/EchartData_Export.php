@@ -11,6 +11,9 @@ require("../all.php");
 ?>
 <?php
 
+
+
+
     $sql = "select count(1),city from users group by city order by count(1) desc limit 0,3";
     $qry = $db->query($sql);
     while ($row = $qry->fetch_assoc()){

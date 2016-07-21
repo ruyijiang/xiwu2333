@@ -33,3 +33,12 @@
 ['Time':2016-07-21 20:22:35,'Commit:'onlineDuration]{0}
 ['Time':2016-07-21 20:22:39,'Commit:'onlineDuration]{0}
 ['Time':2016-07-21 20:23:46,'Commit:'onlineDuration]{56}
+['Time':2016-07-21 20:38:43,'Commit:'onlineDuration]{784}
+['Time':2016-07-21 23:52:01,'Commit:'onlineDuration]{1330}
+['Time':2016-07-21 23:53:40,'Commit:'onlineDuration]{70}
+['Time':2016-07-21 23:53:55,'Commit:'onlineDuration]{0}
+['Time':2016-07-21 23:54:06,'Commit:'onlineDuration]{0}
+['Time':2016-07-21 23:54:45,'Commit:'onlineDuration]{0}
+['Time':2016-07-21 23:55:56,'Commit:'onlineDuration]{70}
+['Time':2016-07-21 23:56:18,'Commit:'onlineDuration]{0}
+['Time':2016-07-21 23:57:39,'Commit:'onlineDuration]{70}

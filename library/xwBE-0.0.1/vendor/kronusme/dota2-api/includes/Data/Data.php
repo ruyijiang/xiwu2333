@@ -99,7 +99,7 @@ abstract class Data
     public function parse($parseTo = '')
     {
         $parseTo = str_replace('.', '', $parseTo); // allow to use '6.86' and '686'
-        $p = __DIR__ . '/../../' . self::PATH . '/';
+        $p = __DIR__ . '/../../';
         $fullpath = $p . $this->_filename;
         $initData = $this->_parseJsonFile($fullpath);
         if ($parseTo) {

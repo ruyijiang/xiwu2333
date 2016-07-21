@@ -115,7 +115,7 @@ class Map
 
     public function getImage()
     {
-        $path = __DIR__ . '/../../' . $this->_folder;
+        $path = __DIR__ . '/../dota2-api/' . $this->_folder;
         $this->_canvas = imagecreatefromjpeg($path . 'dota_map.jpg');
         if ($this->_canvas === false) {
             return null;

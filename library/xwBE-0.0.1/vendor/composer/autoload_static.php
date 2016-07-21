@@ -16,7 +16,7 @@ class ComposerStaticInit7d9d462c85b5e3f3f4f030d6fa31245c
     public static $prefixDirsPsr4 = array (
         'Dota2Api\\' => 
         array (
-            0 => __DIR__ . '/..' . '/kronusme/dota2-api/includes',
+            0 => __DIR__ . '/..',
         ),
     );
 
