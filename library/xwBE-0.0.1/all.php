@@ -288,6 +288,7 @@ function login($email, $password){
                     setcookie("uid", $result_uid, time()+604800);//604800是7天的秒数，表示记录cookie一礼拜
                     setcookie("username", $result_uname, time()+604800);
                     setcookie("userpassword", $result_password, time()+604800);
+                    setcookie("loginstatus", $result_password, time()+604800);
 
                     $status = 1;
                     $reminder = "登陆成功。但是状态更新失败，可能会造成一些错误";
@@ -422,6 +423,15 @@ function signup($email, $password, $gender){
                     echo $a->normalrespond($status,$reminder);
                     //---------------------------------------------------------------------------------------------------------------->注册出口7：数据库插入失败
                 }else{
+
+                    $_SESSION["uid"] = $ruid;
+                    $_SESSION["userpassword"] = $userpassword;
+                    $_SESSION["openstatus"] = 1;
+                    $_SESSION["loginstatus"] = 1;
+                    setcookie("uid",$ruid,time() + 604800);//604800是7天的秒数，表示记录cookie一礼拜
+                    setcookie("userpassword",$userpassword,time() + 604800);
+                    setcookie("openstatus","1",time() + 604800);
+
                     $status = 1;
                     $reminder = "";
                     $a = new interfaceResponse();

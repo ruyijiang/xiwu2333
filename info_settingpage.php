@@ -109,14 +109,14 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label" for="select_city">所在地</label>
                                     <div class="btn-group col-lg-2 btn-group-sm" role="group" aria-label="...">
-                                        <select class="form-control" disabled="disabled" ng-model="UserInfoData.country">
-                                            <option>中国</option>
+                                        <select class="form-control" ng-disabled="1==1" readonly="readonly" ng-model="UserInfoData.country">
+                                            <option ng-selected="1==1">中国</option>
                                         </select>
                                     </div>
                                     <p class="pull-left" style="padding-top:5px;">-</p>
                                     <!--省份信息select标签-->
                                     <div class="btn-group col-lg-2 btn-group-sm" role="group" aria-label="...">
-                                        <select class="form-control" id="select_city" name="select_city" ng-change="onRegionSelected(UserInfoData.country,UserInfoData.province)" ng-model="UserInfoData.province">
+                                        <select class="form-control" id="select_city" name="select_city" ng-change="onRegionSelected('中国',UserInfoData.province)" ng-model="UserInfoData.province">
                                             <option>北京市</option>
                                             <option>上海市</option>
                                             <option>天津市</option>

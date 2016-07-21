@@ -16,8 +16,6 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
                 if(welcomejsonstring(data)){//在utills/welcomejsonstring.js中定义
                     localStorage.OnlineStatus = "1";
                     window.location.reload();
-                }else{
-                    alert ("不明原因登陆失败，请联系管理员");
                 }
             },
             error: function (){

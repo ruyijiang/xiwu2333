@@ -17,7 +17,8 @@ require("../algorithm/Liveness.php");
     if($operation){
         $a = new queue();
         @$c = $_SESSION["openstatus"];
-        if($c && $c == "1"){//当前已经在开放组队
+        @$d = $_SESSION["loginstatus"];
+        if($c == 1 && $d == 1){//当前已经在开放组队
             $a->disablesearching();
             $status = 0;
             $reminder = "停止开放组队";
