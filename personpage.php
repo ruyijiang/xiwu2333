@@ -60,7 +60,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <td>服务器：</td>
                     <td>
                         <span class="label label-default" ng-if="UserData.server.length > 2" style="margin-right:3px">{{UserData.server_bigarea}}</span>
-                        <span class="label label-default" ng-repeat="xserver in UserData.server" ng-if="UserData.server.length <= 2" style="margin-right:3px">{{xserver}}</span>
+                        <span class="label label-default pull-left" ng-repeat="xserver in UserData.server" ng-if="UserData.server.length <= 2" style="margin-right:3px;margin-bottom:3px">{{xserver}}</span>
                     </td>
                 </tr>
                 <tr ng-if="UserData.liveplain!==''">
