@@ -12,12 +12,13 @@ $DB = "localhost";
 $DBUSER = "user";
 $DBPASSWORD = "TmMd5Bd7GsXNxmuP";
 $DBNAME = "xiwu2333.com";
-$STEAM_APIKEY = "77E6931E10BC86B78CB6734A1C26F95";
+$Dota2Info_DB = "info_dota2";
+$STEAM_APIKEY = "77E69E31E10BC86B78CB6734A1C26F95";
 
 
 /**初始Dota2 - Api**/
 require_once("vendor/autoload.php");
 use Dota2Api\Api;
-Api::init($STEAM_APIKEY, array($DB, $DBUSER, $DBPASSWORD, $DBNAME, 'table_prefix_'));
+Api::init($STEAM_APIKEY, array($DB, $DBUSER, $DBPASSWORD, $Dota2Info_DB, 'league'));
 
 

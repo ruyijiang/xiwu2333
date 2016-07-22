@@ -10,10 +10,6 @@ require("all.php");
 ?>
 <?php
 
-    $mm = new Dota2Api\Mappers\MatchesMapperWeb(121995119);
-    $match = $mm->load();
-    var_dump($match);
-
 
 
 
