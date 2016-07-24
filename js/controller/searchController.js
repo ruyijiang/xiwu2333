@@ -43,7 +43,6 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
     }
 
 
-
     function skipToSearch(value,priority){
         !priority?priority="user":priority;
         $window.location.href = "/#/search?priority=" + priority+ "&content=" + value ;
@@ -56,27 +55,47 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
         var startnum = (startpage - 1) * 15;
         startnum<0?startnum=0:startnum;
 
-        $.ajax({
-            type:'GET',
-            async:false,
-            url:'library/xwBE-0.0.1/php/search_action.php',
-            data:{"priority":priority,"content":value,"startnum":startnum},
-            success: function (data){
-                $scope.SearchContentReq = welcomejsonarrstring(data);
-                //生成分页
-                var SearchReqContLen = $scope.SearchContentReq.length;
-                var searchResult_rows_num = $scope.SearchContentReq[SearchReqContLen - 1];
-                $scope.SearchResultPage_num = Math.ceil(searchResult_rows_num.row_num / 15);//页数
-                $scope.Page_ficArr = [];
-                for(var i=0;i<$scope.SearchResultPage_num;i++){
-                    $scope.Page_ficArr.push(i+1);
-                }
+        if(priority !== "competition"){
+            //搜索的不是比赛，则直接在search_action.php里搜素就可以
+            $.ajax({
+                type:'GET',
+                async:false,
+                url:'library/xwBE-0.0.1/php/search_action.php',
+                data:{"priority":priority,"content":value,"startnum":startnum},
+                success: function (data){
+                    $scope.SearchContentReq = welcomejsonarrstring(data);
+                    //生成分页
+                    var SearchReqContLen = $scope.SearchContentReq.length;
+                    var searchResult_rows_num = $scope.SearchContentReq[SearchReqContLen - 1];
+                    $scope.SearchResultPage_num = Math.ceil(searchResult_rows_num.row_num / 15);//页数
+                    $scope.Page_ficArr = [];
+                    for(var i=0;i<$scope.SearchResultPage_num;i++){
+                        $scope.Page_ficArr.push(i+1);
+                    }
 
-            },
-            error: function (){
-                alert ("不明原因导致的查询失败，请联系管理员");
-            }
-        })
+                },
+                error: function (){
+                    alert ("不明原因导致的查询失败，请联系管理员");
+                }
+            })
+
+        }else if(priority == "competition"){
+            //搜索的是比赛信息，则需要通过Dota2Api进行调取
+            $http({
+                method: 'GET',
+                url: 'library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php',
+                params:{"content":value,"startnum":startnum}
+            }).success(function (){
+                derreferd.resolve();
+            }).error(function (){
+                derreferd.reject();
+            }).then(function (httpCont){
+                //var a = eval("(" + httpCont + ")");
+                console.log(httpCont.data);
+
+            });
+
+        }
 
     };
 

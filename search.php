@@ -98,7 +98,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
                 <!--Competition-->
-                <div ng-if="priority=='competition'" style="display: none" class="col-lg-8 col-md-9 col-xs-12"><!--Competiton-->
+                <div ng-if="priority=='competition'" style="" class="col-lg-8 col-md-9 col-xs-12"><!--Competiton-->
                     <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
                         <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
                             <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>

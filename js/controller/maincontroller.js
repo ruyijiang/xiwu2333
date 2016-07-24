@@ -1,40 +1,6 @@
 
 app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
 
-
-
-
-    $http({
-        method: 'GET',
-        url: 'library/xwBE-0.0.1/Interface/getDota2Info/getUserInfo.php',
-        params:{}
-    }).success(function (){
-        derreferd.resolve();
-    }).error(function (){
-        derreferd.reject();
-    }).then(function (httpCont){
-        console.log(httpCont.data);
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(0);
     var timing = Math.round(new Date().getTime());

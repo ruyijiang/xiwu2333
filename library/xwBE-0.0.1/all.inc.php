@@ -19,6 +19,6 @@ $STEAM_APIKEY = "77E69E31E10BC86B78CB6734A1C26F95";
 /**初始Dota2 - Api**/
 require_once("vendor/autoload.php");
 use Dota2Api\Api;
-Api::init($STEAM_APIKEY, array($DB, $DBUSER, $DBPASSWORD, $Dota2Info_DB, 'league'));
+Api::init($STEAM_APIKEY, array($DB, $DBUSER, $DBPASSWORD, $Dota2Info_DB, 'd2i_'));
 
 
