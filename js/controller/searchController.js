@@ -107,26 +107,6 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
                 deferred.reject();
             }).then(function (httpCont){
                 $scope.MatchInfo = httpCont.data;
-
-                //翻译数据
-                $scope.MatchInfo.duration = Math.floor($scope.MatchInfo.duration/60) + "分" + $scope.MatchInfo.duration%60 + "秒";
-                switch ($scope.MatchInfo.cluster){
-                    case "223":
-                        $scope.MatchInfo.cluster = "电信（浙江）";
-                        break;
-                    case "224":
-                        $scope.MatchInfo.cluster = "电信（上海）";
-                        break;
-                    case "225":
-                        $scope.MatchInfo.cluster = "电信（广东）";
-                        break;
-                    case "227":
-                        $scope.MatchInfo.cluster = "电信（华中）";
-                        break;
-                    case "231":
-                        $scope.MatchInfo.cluster = "联通1";
-                        break;
-                }
             });
 
         }
