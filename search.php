@@ -117,9 +117,9 @@ include("library/xwFE-0.0.1/FEM.php");
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                     </span>
-                                    <span class="label label-success" style="font-size:15px;font-weight:bold;color:white">42</span>
+                                    <span class="label label-success" style="font-size:15px;font-weight:bold;color:white">{{MatchInfo.radiant_score}}</span>
                                     <i class="iconfont icon-vs"></i>
-                                    <span class="label label-danger" style="font-size:15px;font-weight:bold;color:white">33</span>
+                                    <span class="label label-danger" style="font-size:15px;font-weight:bold;color:white">{{MatchInfo.dire_score}}</span>
                                     <span class="diet">
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
