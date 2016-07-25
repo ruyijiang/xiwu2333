@@ -23,19 +23,24 @@ if(!empty($content) || !empty($startnum)){
 
     $mm = new Dota2Api\Mappers\MatchMapperWeb($content);
     $match = $mm->load();
-    /*echo $match->get('match_id');
-    echo $match->get('start_time');
-    echo $match->get('game_mode');
+    $result = $match->getDataArray();
     $slots = $match->getAllSlots();
+    $slot_info = array();
     foreach($slots as $slot) {
-        echo $slot->get('last_hits');
+        $hero_id = $slot->get("hero_id");
+        $sql = "SELECT name FROM `info_dota2`.`heros` WHERE hero_id = '$hero_id' ";
+        @$qry = $db->query($sql);
+        if(!$qry){
+            array_push($slot_info,$slot->get("hero_id"));
+        }else{
+            $row = $db->fetch_assoc($qry);
+            $hero_name = $row["name"];
+            array_push($slot_info,$hero_name);
+        }
     }
-    print_r($match->getSlot(0)->getDataArray());*/
-    echo(json_encode($match->getDataArray()));
-
-
-
-
+    //print_r($match->getSlot(0)->getDataArray());
+    $result["slot_info"] = $slot_info;
+    echo(json_encode($result));
 
 
 }else{

@@ -43,7 +43,7 @@ include("library/xwFE-0.0.1/FEM.php");
             </div>
             <hr>
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+                <div class="col-lg-3 col-md-2 col-sm-12 text-center">
                     <div class="per_s-leftpart  boat" style="padding: 0px">
                         <ul class="nav nav-pills nav-stacked">
                             <li ng-class="{active:leftNavIndex == 1}">
@@ -61,12 +61,12 @@ include("library/xwFE-0.0.1/FEM.php");
 
 
                 <!--SearchConsequence-->
-                <div class="col-lg-8 col-md-9 col-xs-12 clearfix user_conse" ng-if="SearchContentReq[0].statuscode == 0">
+                <div class="col-lg-9 col-md-10 col-xs-12 clearfix user_conse" ng-if="SearchContentReq[0].statuscode == 0">
                     没有搜索到与 “ {{thisContent}} ” 相关的<span ng-if="priority=='user'">玩家</span><span ng-if="priority=='competition'">比赛</span><span ng-if="priority=='article'">文章</span>。
                 </div>
 
                 <!--User-->
-                <div ng-if="priority=='user' && SearchContentReq[0].statuscode!=='0'" style="display:block;" class="col-lg-8 col-md-9 col-xs-12 search_user_container" style="font-size:16px;">
+                <div ng-if="priority=='user' && SearchContentReq[0].statuscode!=='0'" style="display:block;" class="col-lg-9 col-md-10 col-xs-12 search_user_container" style="font-size:16px;">
                     <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in SearchContentReq" ng-if="xu.name !== undefined">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
                             <a href="#/person?uid={{xu.uid}}"><img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/></a>
@@ -98,17 +98,15 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
                 <!--Competition-->
-                <div ng-if="priority=='competition'" style="" class="col-lg-8 col-md-9 col-xs-12"><!--Competiton-->
+                <div ng-if="priority=='competition'" style="" class="col-lg-9 col-md-10 col-xs-12"><!--Competiton-->
                     <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
-                        <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
-                            <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>
-                        </div>
                         <div class="search_content-rightpart pull-left">
                             <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
-                                <small><i class="iconfont icon-shuziliu"></i><font>数字id:</font><a>25255608123</a></small> |
+                                <small><i class="iconfont icon-shuziliu"></i><font>比赛编号:</font><a>{{MatchInfo.match_id}}</a></small> |
                                 <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
-                                <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>72分钟</span></small> |
-                                <small><i class="iconfont icon-server"></i><font>服务器:</font><span>电信(华中)</span></small>
+                                <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>{{MatchInfo.duration}}</span></small> |
+                                <small><i class="iconfont icon-loudou"></i><font>开始时间:</font><span>{{MatchInfo.start_time}}</span></small> |
+                                <small><i class="iconfont icon-server"></i><font>服务器:</font><span>{{MatchInfo.cluster}}</span></small>
                             </div>
                             <div class="search_content-botpart" style="margin-left:10px;">
                                 <div class="pull-left" style="margin-right:10px;">
@@ -119,7 +117,9 @@ include("library/xwFE-0.0.1/FEM.php");
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                     </span>
+                                    <span class="label label-success" style="font-size:15px;font-weight:bold;color:white">42</span>
                                     <i class="iconfont icon-vs"></i>
+                                    <span class="label label-danger" style="font-size:15px;font-weight:bold;color:white">33</span>
                                     <span class="diet">
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
@@ -127,92 +127,16 @@ include("library/xwFE-0.0.1/FEM.php");
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                         <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
                                     </span>
-                                </div>
+                                </div><!--
                                 <div class="pull-left">
                                     <i class="iconfont icon-star" style="font-size:22px"></i>
                                 </div>
                                 <div class="pull-left" style="margin-left:0px">
                                     <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32">
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div><!--End of DIV1-->
-                    <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
-                        <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
-                            <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left">
-                            <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
-                                <small><i class="iconfont icon-shuziliu"></i><font>数字id:</font><a>25255608123</a></small> |
-                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
-                                <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>72分钟</span></small> |
-                                <small><i class="iconfont icon-server"></i><font>服务器:</font><span>电信(华中)</span></small>
-                            </div>
-                            <div class="search_content-botpart" style="margin-left:10px;">
-                                <div class="pull-left" style="margin-right:10px;">
-                                    <span class="radient">
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                    </span>
-                                    <i class="iconfont icon-vs"></i>
-                                    <span class="diet">
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                    </span>
-                                </div>
-                                <div class="pull-left">
-                                    <i class="iconfont icon-star" style="font-size:22px"></i>
-                                </div>
-                                <div class="pull-left" style="margin-left:0px">
-                                    <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32">
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--End of DIV1-->
-                    <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
-                        <div class="search_content-leftpart pull-left" style="background-color:#e2e2e2">
-                            <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="64" height="64"/>
-                        </div>
-                        <div class="search_content-rightpart pull-left">
-                            <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
-                                <small><i class="iconfont icon-shuziliu"></i><font>数字id:</font><a>25255608123</a></small> |
-                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
-                                <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>72分钟</span></small> |
-                                <small><i class="iconfont icon-server"></i><font>服务器:</font><span>电信(华中)</span></small>
-                            </div>
-                            <div class="search_content-botpart" style="margin-left:10px;">
-                                <div class="pull-left" style="margin-right:10px;">
-                                    <span class="radient">
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                    </span>
-                                    <i class="iconfont icon-vs"></i>
-                                    <span class="diet">
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                    </span>
-                                </div>
-                                <div class="pull-left">
-                                    <i class="iconfont icon-star" style="font-size:22px"></i>
-                                </div>
-                                <div class="pull-left" style="margin-left:0px">
-                                    <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32">
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--End of DIV2-->
                 </div>
 
                 <!--article-->
