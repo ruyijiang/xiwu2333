@@ -2,7 +2,7 @@
 #### 注:本文档是针对GitHub作者kronusme的开源项目"dota2-api"中的字段进行说明。纯属milo个人为方便网友开发调用dota2Api时使用，本人在此不保证文档的精确无误。如有疑问请自行查询相关资料。当然，如果您发现本文档中的某些错误，也请联系我，我将尽快改正。
                           
 ### Dota2Api\Mappers\MatchMapperWeb($content)->load()->getDataArray() 下的字段：
-
+                          
 #### 1，barracks_status_dire    ：  夜魇兵营状态
 #### 2，barracks_status_radiant ：  天辉兵营状态
 ####  备注：以上两条应当转化为2进制才能使用。
@@ -50,6 +50,7 @@
 #### 7，game_mode   ： 游戏模式 (key-value对应如下)
         |           Game-Mode          |      Value      |
         |------------------------------|-----------------|
+        |        **Supported**         |                 |
         |  None                        | 0               |
         |  全阵营选择                    | 1               |
         |  队长模式                     | 2               |
