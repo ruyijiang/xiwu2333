@@ -7,6 +7,8 @@
  */
 require("../../connectDB.php");
 require("../../all.php");
+?><?php
+header('Content-type: application/json');
 
 /*$playersMapperWeb = new Dota2Api\Mappers\PlayersMapperWeb();
 
@@ -21,8 +23,6 @@ foreach($playersInfo as $playerInfo) {
 
 
 print_r($playersInfo);*/
-
-
 
 $mm = new Dota2Api\Mappers\MatchMapperWeb(2525733347);
 $match = $mm->load();

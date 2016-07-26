@@ -5,7 +5,6 @@
  * Date: 2016/7/23
  * Time: 15:06
  */
-
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
@@ -41,8 +40,9 @@ if(!empty($content) || !empty($startnum)){
     //print_r($match->getSlot(0)->getDataArray());
     $result["slot_info"] = $slot_info;
 
+
     /*************************
-     * 翻译数组内容：*
+     ****** 翻译数组内容：******
      ************************/
     //1，翻译所在服务器：
     switch ($result["cluster"]){
@@ -75,6 +75,7 @@ if(!empty($content) || !empty($startnum)){
     $result["duration"] = floor($result["duration"] / 60) . "分" . $result["duration"]%60 . "秒";
     /*******************End of 翻译****************/
     /*********************************************/
+
 
 
     //输出json对象

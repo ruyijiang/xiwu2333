@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/6/6.
  */
-app.controller('searchController',function ($scope, $location, $http, search, $window, $q){
+app.controller('searchController',function ($scope, $location, $http, search, $window, $q, loadAndsaveHerosInfo){
     $scope.priority = $location.search()["priority"];//从url获取的查询类别
     $scope.content = $location.search()["content"];//从url获取查询正文
     $scope.thisContent = $scope.content;//用于没有找到内容时显示
@@ -80,33 +80,28 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
                 }
             });
 
-            $http({
-                method: 'GET',
-                url: 'library/xwBE-0.0.1/Interface/getDota2Info/getUserInfo.php',
-                params:{"content":value,"startnum":startnum}
-            }).success(function (){
-                deferred.resolve();
-                $(".index-mask").hide();
-            }).error(function (){
-                deferred.reject();
-            }).then(function (httpCont){
-                $scope.MatchInfo = httpCont.data;
-            });
-
         }else if(priority == "competition"){
             //搜索的是比赛信息，则需要通过Dota2Api进行调取
             $(".index-mask").show();
+
+            loadAndsaveHerosInfo.loadAndsaveHerosInfo();
             $http({
                 method: 'GET',
                 url: 'library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php',
                 params:{"content":value,"startnum":startnum}
             }).success(function (){
-                deferred.resolve();
                 $(".index-mask").hide();
+                deferred.resolve();
             }).error(function (){
                 deferred.reject();
             }).then(function (httpCont){
                 $scope.MatchInfo = httpCont.data;
+                console.log(loadAndsaveHerosInfo.HerosInfo);
+                
+                for(var i=0;i<$scope.MatchInfo.slot_info.length;i++){
+                    console.log(loadAndsaveHerosInfo.HerosInfo);
+
+                }
             });
 
         }

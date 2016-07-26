@@ -93,10 +93,8 @@ echo $openupalertdiv;
 <script src="js/service/checkStatus.js" type="text/javascript"></script>
 <script src="js/service/snslogin/qq.js" type="text/javascript"></script>
 <script src="js/service/countLiveness.js" type="text/javascript"></script>
+<script src="js/service/loadAndsaveHerosInfo.js" type="text/javascript"></script>
 <script src="js/service/search.js" type="text/javascript"></script>
-<!--<script src="js/service/interceptor/Auth.js"></script>
-<script src="js/service/interceptor/ACCESS_LEVELS.js"></script>
-<script src="js/service/interceptor/authority.js"></script>-->
 <!-------------------------------------------------------------------------------------->
 <!--bootstrap-slider-->
 <script  type="text/javascript" src="library/bootstrap-3.3.5-dist/js/bootstrap-slider.min.js"></script>
