@@ -3,9 +3,9 @@
                           
 ### Dota2Api\Mappers\MatchMapperWeb($content)->load()->getDataArray() 下的字段：
                           
-  #### 1，barracks_status_dire    ：  夜魇兵营状态
-  #### 2，barracks_status_radiant ：  天辉兵营状态
-  ####  备注：以上两条应当转化为2进制才能使用。
+#### 1，barracks_status_dire    ：  夜魇兵营状态
+#### 2，barracks_status_radiant ：  天辉兵营状态
+####  备注：以上两条应当转化为2进制才能使用。
 
         举个例子：barracks_status_dire : '63'。翻译成中文就是，夜靥兵营状态 : '63'
         63转换成2进制是：111111，然后垂直对应到以下列表中去，就是6座兵营的存在状态。其中：0，摧毁|1，存在
