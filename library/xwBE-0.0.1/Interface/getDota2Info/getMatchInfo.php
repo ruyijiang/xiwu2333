@@ -83,7 +83,7 @@ if(!empty($content) || !empty($startnum)){
 
 
 
-    //把
+    //把搜索结果记入数据库，并添加分类
 
 }else{
     $status = 0;

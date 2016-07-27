@@ -317,7 +317,7 @@ require("../all.php");
         $b = new interfaceResponse();
 
         /**先检测该关键词是否已经存在于数据库了**/
-        $sql = "SELECT times,searid FROM searchings WHERE content='$content'";
+        $sql = "SELECT times,searid FROM searchings WHERE content='$content' AND classification = '$ClassPri'";
         $qry = $db->query($sql);
         $row_all = mysqli_num_rows($qry);
         if($row_all>0){
