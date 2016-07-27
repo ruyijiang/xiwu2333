@@ -3,10 +3,10 @@
     "id": "1",
     "name": "npc_dota_hero_antimage",
     "localizedName": "Anti-Mage",
-    "url": "Anti-Mage",
+    "url": "AntiMage",
     "abilities": [
       "5003",
-      "5004",
+      "5004",win
       "5005",
       "5006"
     ]
@@ -249,7 +249,7 @@
     "id": "21",
     "name": "npc_dota_hero_windrunner",
     "localizedName": "Windranger",
-    "url": "Windranger",
+    "url": "Windrunner",
     "abilities": [
       "5130",
       "5131",

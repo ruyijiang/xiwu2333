@@ -6,6 +6,7 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
     $scope.content = $location.search()["content"];//从url获取查询正文
     $scope.thisContent = $scope.content;//用于没有找到内容时显示
     $scope.SearchContentReq = [];
+    $scope.ShowComp = true;
     var deferred = $q.defer();
     /**
      * 一旦进入此视图，则立即执行以下if(){}else{}
@@ -95,19 +96,26 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
             }).error(function (){
                 deferred.reject();
             }).then(function (httpCont){
-                $scope.MatchInfo = httpCont.data;
-                loadAndsaveHerosInfo.loadAndsaveHerosInfo().then(function (httpCont){
-                    loadAndsaveHerosInfo.HerosInfo = httpCont;
-                    //针对json数据结构进行查询
-                    for(var i=0;i<$scope.MatchInfo.slot_info.length;i++){
-                        for(var HeroIndex in loadAndsaveHerosInfo.HerosInfo){
-                            if(loadAndsaveHerosInfo.HerosInfo[HeroIndex].id == $scope.MatchInfo.slot_info[i]){
-                                $scope.MatchInfo.slot_info[i] = loadAndsaveHerosInfo.HerosInfo[HeroIndex].url.toLowerCase();
+                if(httpCont.data.statuscode == 0){
+                    //没有找到比赛相关内容
+                    $scope.ShowComp = false;
+                }else{
+                    //找到比赛相关内容了
+                    $scope.ShowComp = true;
+                    $scope.MatchInfo = httpCont.data;
+                    loadAndsaveHerosInfo.loadAndsaveHerosInfo().then(function (httpCont){
+                        loadAndsaveHerosInfo.HerosInfo = httpCont;
+                        //针对json数据结构进行查询
+                        for(var i=0;i<$scope.MatchInfo.slot_info.length;i++){
+                            for(var HeroIndex in loadAndsaveHerosInfo.HerosInfo){
+                                if(loadAndsaveHerosInfo.HerosInfo[HeroIndex].id == $scope.MatchInfo.slot_info[i]){
+                                    $scope.MatchInfo.slot_info[i] = loadAndsaveHerosInfo.HerosInfo[HeroIndex].url.toLowerCase();
+                                }
                             }
                         }
-                    }
-                    console.log($scope.MatchInfo.slot_info);
-                });
+                        console.log($scope.MatchInfo.slot_info);
+                    });
+                }
             });
 
         }

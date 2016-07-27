@@ -61,7 +61,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
 
                 <!--SearchConsequence-->
-                <div class="col-lg-9 col-md-10 col-xs-12 clearfix user_conse" ng-if="SearchContentReq[0].statuscode == 0">
+                <div class="col-lg-9 col-md-10 col-xs-12 clearfix user_conse" ng-if="SearchContentReq[0].statuscode == 0 || !ShowComp">
                     没有搜索到与 “ {{thisContent}} ” 相关的<span ng-if="priority=='user'">玩家</span><span ng-if="priority=='competition'">比赛</span><span ng-if="priority=='article'">文章</span>。
                 </div>
 
@@ -98,7 +98,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
                 <!--Competition-->
-                <div ng-if="priority=='competition'" style="" class="col-lg-9 col-md-10 col-xs-12"><!--Competiton-->
+                <div ng-if="priority=='competition' && ShowComp" style="" class="col-lg-9 col-md-10 col-xs-12"><!--Competiton-->
                     <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
                         <div class="search_content-rightpart pull-left">
                             <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
@@ -111,11 +111,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div class="search_content-botpart" style="margin-left:10px;">
                                 <div class="pull-left" style="margin-right:10px;">
                                     <span class="radient">
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
-                                        <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32"/>
+                                        <img ng-repeat="herourl in MatchInfo.slot_info" ng-src="http://cdn.dota2.com/apps/dota2/images/heroes/{{herourl}}_sb.png" height="28"/>
                                     </span>
                                     <span class="label label-success" style="font-size:15px;font-weight:bold;color:white">{{MatchInfo.radiant_score}}</span>
                                     <i class="iconfont icon-vs"></i>

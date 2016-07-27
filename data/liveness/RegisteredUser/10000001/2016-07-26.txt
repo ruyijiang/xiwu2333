@@ -172,3 +172,9 @@
 ['Time':2016-07-26 23:43:42,'Commit:'onlineDuration]{70}
 ['Time':2016-07-26 23:44:04,'Commit:'onlineDuration]{0}
 ['Time':2016-07-26 23:48:34,'Commit:'onlineDuration]{280}
+['Time':2016-07-26 23:52:20,'Commit:'onlineDuration]{210}
+['Time':2016-07-26 23:52:22,'Commit:'onlineDuration]{0}
+['Time':2016-07-26 23:52:26,'Commit:'onlineDuration]{0}
+['Time':2016-07-26 23:52:27,'Commit:'onlineDuration]{0}
+['Time':2016-07-26 23:52:29,'Commit:'onlineDuration]{0}
+['Time':2016-07-26 23:52:31,'Commit:'onlineDuration]{0}
