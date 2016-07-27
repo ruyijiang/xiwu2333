@@ -53,7 +53,7 @@ require("../all.php");
 
                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                     echo $dataArr;
-                    insertIntoDatabase($con);
+                    insertIntoDatabase('搜索用户',$con);
                     $affected_rows_num++;
                 }
                 echo "{\"row_num\":".$affected_rows_num."}";
@@ -85,7 +85,7 @@ require("../all.php");
 
                         $dataArr = urldecode ( json_encode ( $dataArr )).",";
                         echo $dataArr;
-                        insertIntoDatabase($con);
+                        insertIntoDatabase('搜索用户',$con);
                         $affected_rows_num++;
                     }
                     echo "{\"row_num\":".$affected_rows_num."}";
@@ -117,7 +117,7 @@ require("../all.php");
 
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
-                            insertIntoDatabase($con);
+                            insertIntoDatabase('搜索用户',$con);
                             $affected_rows_num++;
                         }
                         echo "{\"row_num\":".$affected_rows_num."}";
@@ -149,7 +149,7 @@ require("../all.php");
 
                                 $dataArr = urldecode(json_encode($dataArr)).",";
                                 echo $dataArr;
-                                insertIntoDatabase($con);
+                                insertIntoDatabase('搜索用户',$con);
                                 $affected_rows_num++;
                             }
                             echo "{\"row_num\":".$affected_rows_num."}";
@@ -181,7 +181,7 @@ require("../all.php");
 
                                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                                     echo $dataArr;
-                                    insertIntoDatabase($con);
+                                    insertIntoDatabase('搜索用户',$con);
                                     $affected_rows_num++;
                                 }
                                 echo "{\"row_num\":".$affected_rows_num."}";
@@ -224,7 +224,7 @@ require("../all.php");
 
                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                     echo $dataArr;
-                    insertIntoDatabase($con);
+                    insertIntoDatabase('搜索用户',$con);
                     $affected_rows_num++;
                 }
                 echo "{\"row_num\":".$affected_rows_num."}";
@@ -254,7 +254,7 @@ require("../all.php");
 
                         $dataArr = urldecode ( json_encode ( $dataArr )).",";
                         echo $dataArr;
-                        insertIntoDatabase($con);
+                        insertIntoDatabase('搜索用户',$con);
                         $affected_rows_num++;
                     }
                     echo "{\"row_num\":".$affected_rows_num."}";
@@ -284,7 +284,7 @@ require("../all.php");
 
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
-                            insertIntoDatabase($con);
+                            insertIntoDatabase('搜索用户',$con);
                             $affected_rows_num++;
                         }
                         echo "{\"row_num\":".$affected_rows_num."}";
@@ -309,7 +309,7 @@ require("../all.php");
 
 
     /**把搜索内容写入数据库**/
-    function insertIntoDatabase($content){
+    function insertIntoDatabase($ClassPri,$content){
         require("../connectDB.php");
 
         $a = new _environment();
@@ -326,7 +326,7 @@ require("../all.php");
             $Otimes = (int)$row["times"];
             $Osearid = $row["searid"];
             $Otimes += 1;
-            $sql2 = "UPDATE searchings SET times = '$Otimes' WHERE searid = '$Osearid' ";
+            $sql2 = "UPDATE searchings SET times = '$Otimes',lasttime = '$tnow' WHERE searid = '$Osearid' ";
             $qry2 = $db->query($sql2);
             if($qry2){
                 //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕
@@ -337,7 +337,7 @@ require("../all.php");
             }
         }else{
             //content没在数据库里存在 -> 执行Insert
-            $sql2 = "INSERT INTO searchings VALUES ('','$content','1','$tnow','none')";
+            $sql2 = "INSERT INTO searchings(searid,content,times,regtime,lasttime,classification,remark) VALUES ('','$content','1','$tnow','$tnow','$ClassPri','none')";
             $qry2 = $db->query($sql2);
             if($qry2){
                 //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕
