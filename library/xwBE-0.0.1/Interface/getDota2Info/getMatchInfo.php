@@ -72,7 +72,7 @@ if(!empty($content) || !empty($startnum)){
         $result["start_time"] = "约".(round($minus / 60 * 60,1)*60)."分钟前";
     }
     //3，翻译持续时间：
-    $result["duration"] = floor($result["duration"] / 60) . "分" . $result["duration"]%60 . "秒";
+    $result["duration"] = floor($result["duration"] / 60) . "分钟";// . $result["duration"]%60 . "秒";
     /*******************End of 翻译****************/
     /*********************************************/
 

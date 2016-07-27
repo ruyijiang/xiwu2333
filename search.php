@@ -103,9 +103,9 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="search_content-rightpart pull-left">
                             <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
                                 <small><i class="iconfont icon-shuziliu"></i><font>比赛编号:</font><a>{{MatchInfo.match_id}}</a></small> |
-                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
+                                <small><i class="iconfont icon-time"></i><font>开始时间:</font><span>{{MatchInfo.start_time}}</span></small> |
                                 <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>{{MatchInfo.duration}}</span></small> |
-                                <small><i class="iconfont icon-loudou"></i><font>开始时间:</font><span>{{MatchInfo.start_time}}</span></small> |
+                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
                                 <small><i class="iconfont icon-server"></i><font>服务器:</font><span>{{MatchInfo.cluster}}</span></small>
                             </div>
                             <div class="search_content-botpart" style="margin-left:10px;">

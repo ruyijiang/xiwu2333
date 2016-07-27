@@ -84,7 +84,7 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
             //搜索的是比赛信息，则需要通过Dota2Api进行调取
             $(".index-mask").show();
 
-            loadAndsaveHerosInfo.loadAndsaveHerosInfo();
+
             $http({
                 method: 'GET',
                 url: 'library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php',
@@ -96,12 +96,18 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
                 deferred.reject();
             }).then(function (httpCont){
                 $scope.MatchInfo = httpCont.data;
-                console.log(loadAndsaveHerosInfo.HerosInfo);
-                
-                for(var i=0;i<$scope.MatchInfo.slot_info.length;i++){
-                    console.log(loadAndsaveHerosInfo.HerosInfo);
-
-                }
+                loadAndsaveHerosInfo.loadAndsaveHerosInfo().then(function (httpCont){
+                    loadAndsaveHerosInfo.HerosInfo = httpCont;
+                    //针对json数据结构进行查询
+                    for(var i=0;i<$scope.MatchInfo.slot_info.length;i++){
+                        for(var HeroIndex in loadAndsaveHerosInfo.HerosInfo){
+                            if(loadAndsaveHerosInfo.HerosInfo[HeroIndex].id == $scope.MatchInfo.slot_info[i]){
+                                $scope.MatchInfo.slot_info[i] = loadAndsaveHerosInfo.HerosInfo[HeroIndex].url.toLowerCase();
+                            }
+                        }
+                    }
+                    console.log($scope.MatchInfo.slot_info);
+                });
             });
 
         }
