@@ -3,6 +3,7 @@
     "id": "1",
     "name": "npc_dota_hero_antimage",
     "localizedName": "Anti-Mage",
+    "chnName": "敌法师",
     "url": "AntiMage",
     "abilities": [
       "5003",
@@ -15,6 +16,7 @@
     "id": "2",
     "name": "npc_dota_hero_axe",
     "localizedName": "Axe",
+    "chnName": "斧王",
     "url": "Axe",
     "abilities": [
       "5007",
@@ -27,6 +29,7 @@
     "id": "3",
     "name": "npc_dota_hero_bane",
     "localizedName": "Bane",
+    "chnName": "霍乱之源",
     "url": "Bane",
     "abilities": [
       "5012",
@@ -40,6 +43,7 @@
     "id": "4",
     "name": "npc_dota_hero_bloodseeker",
     "localizedName": "Bloodseeker",
+    "chnName": "嗜血狂魔",
     "url": "Bloodseeker",
     "abilities": [
       "5015",
@@ -52,6 +56,7 @@
     "id": "5",
     "name": "npc_dota_hero_crystal_maiden",
     "localizedName": "Crystal Maiden",
+    "chnName": "水晶室女",
     "url": "Crystal_Maiden",
     "abilities": [
       "5126",
@@ -64,6 +69,7 @@
     "id": "6",
     "name": "npc_dota_hero_drow_ranger",
     "localizedName": "Drow Ranger",
+    "chnName": "水晶室女",
     "url": "Drow_Ranger",
     "abilities": [
       "5019",
@@ -76,6 +82,7 @@
     "id": "7",
     "name": "npc_dota_hero_earthshaker",
     "localizedName": "Earthshaker",
+    "chnName": "撼地者",
     "url": "Earthshaker",
     "abilities": [
       "5023",
@@ -88,6 +95,7 @@
     "id": "8",
     "name": "npc_dota_hero_juggernaut",
     "localizedName": "Juggernaut",
+    "chnName": "主宰",
     "url": "Juggernaut",
     "abilities": [
       "5028",
@@ -100,6 +108,7 @@
     "id": "9",
     "name": "npc_dota_hero_mirana",
     "localizedName": "Mirana",
+    "chnName": "米拉娜",
     "url": "Mirana",
     "abilities": [
       "5051",
@@ -112,7 +121,8 @@
     "id": "11",
     "name": "npc_dota_hero_nevermore",
     "localizedName": "Shadow Fiend",
-    "url": "Shadow_Fiend",
+    "chnName": "影魔",
+    "url": "nevermore",
     "abilities": [
       "5059",
       "5060",
@@ -126,6 +136,7 @@
     "id": "10",
     "name": "npc_dota_hero_morphling",
     "localizedName": "Morphling",
+    "chnName": "变体精灵",
     "url": "Morphling",
     "abilities": [
       "5052",
@@ -140,6 +151,7 @@
     "id": "12",
     "name": "npc_dota_hero_phantom_lancer",
     "localizedName": "Phantom Lancer",
+    "chnName": "幻影长矛手",
     "url": "Phantom_Lancer",
     "abilities": [
       "5065",
@@ -152,6 +164,7 @@
     "id": "13",
     "name": "npc_dota_hero_puck",
     "localizedName": "Puck",
+    "chnName": "帕克",
     "url": "Puck",
     "abilities": [
       "5069",
@@ -165,6 +178,7 @@
     "id": "14",
     "name": "npc_dota_hero_pudge",
     "localizedName": "Pudge",
+    "chnName": "帕吉",
     "url": "Pudge",
     "abilities": [
       "5075",
@@ -177,6 +191,7 @@
     "id": "15",
     "name": "npc_dota_hero_razor",
     "localizedName": "Razor",
+    "chnName": "剃刀",
     "url": "Razor",
     "abilities": [
       "5082",
@@ -189,6 +204,7 @@
     "id": "16",
     "name": "npc_dota_hero_sand_king",
     "localizedName": "Sand King",
+    "chnName": "沙王",
     "url": "Sand_King",
     "abilities": [
       "5102",
@@ -201,6 +217,7 @@
     "id": "17",
     "name": "npc_dota_hero_storm_spirit",
     "localizedName": "Storm Spirit",
+    "chnName": "风暴之灵",
     "url": "Storm_Spirit",
     "abilities": [
       "5098",
@@ -213,6 +230,7 @@
     "id": "18",
     "name": "npc_dota_hero_sven",
     "localizedName": "Sven",
+    "chnName": "斯温",
     "url": "Sven",
     "abilities": [
       "5094",
@@ -225,6 +243,7 @@
     "id": "19",
     "name": "npc_dota_hero_tiny",
     "localizedName": "Tiny",
+    "chnName": "小小",
     "url": "Tiny",
     "abilities": [
       "5106",
@@ -237,7 +256,8 @@
     "id": "20",
     "name": "npc_dota_hero_vengefulspirit",
     "localizedName": "Vengeful Spirit",
-    "url": "Vengeful_Spirit",
+    "chnName": "复仇之魂",
+    "url": "VengefulSpirit",
     "abilities": [
       "5122",
       "5124",
@@ -249,6 +269,7 @@
     "id": "21",
     "name": "npc_dota_hero_windrunner",
     "localizedName": "Windranger",
+    "chnName": "风行者",
     "url": "Windrunner",
     "abilities": [
       "5130",
@@ -261,7 +282,8 @@
     "id": "22",
     "name": "npc_dota_hero_zuus",
     "localizedName": "Zeus",
-    "url": "Zeus",
+    "chnName": "宙斯",
+    "url": "zuus",
     "abilities": [
       "5110",
       "5111",
@@ -273,6 +295,7 @@
     "id": "23",
     "name": "npc_dota_hero_kunkka",
     "localizedName": "Kunkka",
+    "chnName": "昆卡",
     "url": "Kunkka",
     "abilities": [
       "5031",
@@ -286,6 +309,7 @@
     "id": "25",
     "name": "npc_dota_hero_lina",
     "localizedName": "Lina",
+    "chnName": "莉娜",
     "url": "Lina",
     "abilities": [
       "5040",
@@ -298,6 +322,7 @@
     "id": "31",
     "name": "npc_dota_hero_lich",
     "localizedName": "Lich",
+    "chnName": "巫妖",
     "url": "Lich",
     "abilities": [
       "5134",
@@ -310,6 +335,7 @@
     "id": "26",
     "name": "npc_dota_hero_lion",
     "localizedName": "Lion",
+    "chnName": "莱恩",
     "url": "Lion",
     "abilities": [
       "5044",
@@ -322,6 +348,7 @@
     "id": "27",
     "name": "npc_dota_hero_shadow_shaman",
     "localizedName": "Shadow Shaman",
+    "chnName": "暗影萨满",
     "url": "Shadow_Shaman",
     "abilities": [
       "5078",
@@ -334,6 +361,7 @@
     "id": "28",
     "name": "npc_dota_hero_slardar",
     "localizedName": "Slardar",
+    "chnName": "斯拉达",
     "url": "Slardar",
     "abilities": [
       "5114",
@@ -346,6 +374,7 @@
     "id": "29",
     "name": "npc_dota_hero_tidehunter",
     "localizedName": "Tidehunter",
+    "chnName": "潮汐猎人",
     "url": "Tidehunter",
     "abilities": [
       "5118",
@@ -358,6 +387,7 @@
     "id": "30",
     "name": "npc_dota_hero_witch_doctor",
     "localizedName": "Witch Doctor",
+    "chnName": "巫医",
     "url": "Witch_Doctor",
     "abilities": [
       "5138",
@@ -370,6 +400,7 @@
     "id": "32",
     "name": "npc_dota_hero_riki",
     "localizedName": "Riki",
+    "chnName": "力丸",
     "url": "Riki",
     "abilities": [
       "5142",
@@ -382,6 +413,7 @@
     "id": "33",
     "name": "npc_dota_hero_enigma",
     "localizedName": "Enigma",
+    "chnName": "谜团",
     "url": "Enigma",
     "abilities": [
       "5146",
@@ -394,6 +426,7 @@
     "id": "34",
     "name": "npc_dota_hero_tinker",
     "localizedName": "Tinker",
+    "chnName": "修补匠",
     "url": "Tinker",
     "abilities": [
       "5150",
@@ -406,6 +439,7 @@
     "id": "35",
     "name": "npc_dota_hero_sniper",
     "localizedName": "Sniper",
+    "chnName": "狙击手",
     "url": "Sniper",
     "abilities": [
       "5154",
@@ -418,7 +452,8 @@
     "id": "36",
     "name": "npc_dota_hero_necrolyte",
     "localizedName": "Necrophos",
-    "url": "Necrophos",
+    "chnName": "瘟疫法师",
+    "url": "necrolyte",
     "abilities": [
       "5158",
       "5159",
@@ -430,6 +465,7 @@
     "id": "37",
     "name": "npc_dota_hero_warlock",
     "localizedName": "Warlock",
+    "chnName": "术士",
     "url": "Warlock",
     "abilities": [
       "5162",
@@ -442,6 +478,7 @@
     "id": "38",
     "name": "npc_dota_hero_beastmaster",
     "localizedName": "Beastmaster",
+    "chnName": "兽王",
     "url": "Beastmaster",
     "abilities": [
       "5168",
@@ -455,7 +492,8 @@
     "id": "39",
     "name": "npc_dota_hero_queenofpain",
     "localizedName": "Queen of Pain",
-    "url": "Queen_of_Pain",
+    "chnName": "痛苦女王",
+    "url": "queenofpain",
     "abilities": [
       "5173",
       "5174",
@@ -467,6 +505,7 @@
     "id": "40",
     "name": "npc_dota_hero_venomancer",
     "localizedName": "Venomancer",
+    "chnName": "剧毒术士",
     "url": "Venomancer",
     "abilities": [
       "5178",
@@ -479,6 +518,7 @@
     "id": "41",
     "name": "npc_dota_hero_faceless_void",
     "localizedName": "Faceless Void",
+    "chnName": "虚空假面",
     "url": "Faceless_Void",
     "abilities": [
       "5182",
@@ -491,7 +531,8 @@
     "id": "42",
     "name": "npc_dota_hero_skeleton_king",
     "localizedName": "Wraith King",
-    "url": "Wraith_King",
+    "chnName": "冥魂大帝",
+    "url": "skeleton_king",
     "abilities": [
       "5086",
       "5087",
@@ -503,6 +544,7 @@
     "id": "43",
     "name": "npc_dota_hero_death_prophet",
     "localizedName": "Death Prophet",
+    "chnName": "死亡先知",
     "url": "Death_Prophet",
     "abilities": [
       "5090",
@@ -515,6 +557,7 @@
     "id": "44",
     "name": "npc_dota_hero_phantom_assassin",
     "localizedName": "Phantom Assassin",
+    "chnName": "幻影刺客",
     "url": "Phantom_Assassin",
     "abilities": [
       "5190",
@@ -527,6 +570,7 @@
     "id": "45",
     "name": "npc_dota_hero_pugna",
     "localizedName": "Pugna",
+    "chnName": "帕格纳",
     "url": "Pugna",
     "abilities": [
       "5186",
@@ -539,6 +583,7 @@
     "id": "46",
     "name": "npc_dota_hero_templar_assassin",
     "localizedName": "Templar Assassin",
+    "chnName": "圣堂刺客",
     "url": "Templar_Assassin",
     "abilities": [
       "5194",
@@ -552,6 +597,7 @@
     "id": "47",
     "name": "npc_dota_hero_viper",
     "localizedName": "Viper",
+    "chnName": "冥界亚龙",
     "url": "Viper",
     "abilities": [
       "5218",
@@ -564,6 +610,7 @@
     "id": "48",
     "name": "npc_dota_hero_luna",
     "localizedName": "Luna",
+    "chnName": "露娜",
     "url": "Luna",
     "abilities": [
       "5222",
@@ -576,6 +623,7 @@
     "id": "49",
     "name": "npc_dota_hero_dragon_knight",
     "localizedName": "Dragon Knight",
+    "chnName": "龙骑士",
     "url": "Dragon_Knight",
     "abilities": [
       "5226",
@@ -588,6 +636,7 @@
     "id": "50",
     "name": "npc_dota_hero_dazzle",
     "localizedName": "Dazzle",
+    "chnName": "戴泽",
     "url": "Dazzle",
     "abilities": [
       "5233",
@@ -600,7 +649,8 @@
     "id": "51",
     "name": "npc_dota_hero_rattletrap",
     "localizedName": "Clockwerk",
-    "url": "Clockwerk",
+    "chnName": "发条技师",
+    "url": "rattletrap",
     "abilities": [
       "5237",
       "5238",
@@ -612,6 +662,7 @@
     "id": "52",
     "name": "npc_dota_hero_leshrac",
     "localizedName": "Leshrac",
+    "chnName": "拉席克",
     "url": "Leshrac",
     "abilities": [
       "5241",
@@ -624,7 +675,8 @@
     "id": "53",
     "name": "npc_dota_hero_furion",
     "localizedName": "Nature's Prophet",
-    "url": "Natures_Prophet",
+    "chnName": "先知",
+    "url": "furion",
     "abilities": [
       "5245",
       "5246",
@@ -636,7 +688,8 @@
     "id": "54",
     "name": "npc_dota_hero_life_stealer",
     "localizedName": "Lifestealer",
-    "url": "Lifestealer",
+    "chnName": "噬魂鬼",
+    "url": "Life_Stealer",
     "abilities": [
       "5249",
       "5250",
@@ -649,6 +702,7 @@
     "id": "55",
     "name": "npc_dota_hero_dark_seer",
     "localizedName": "Dark Seer",
+    "chnName": "黑暗贤者",
     "url": "Dark_Seer",
     "abilities": [
       "5255",
@@ -661,6 +715,7 @@
     "id": "56",
     "name": "npc_dota_hero_clinkz",
     "localizedName": "Clinkz",
+    "chnName": "克林克兹",
     "url": "Clinkz",
     "abilities": [
       "5259",
@@ -673,6 +728,7 @@
     "id": "57",
     "name": "npc_dota_hero_omniknight",
     "localizedName": "Omniknight",
+    "chnName": "全能骑士",
     "url": "Omniknight",
     "abilities": [
       "5263",
@@ -685,6 +741,7 @@
     "id": "58",
     "name": "npc_dota_hero_enchantress",
     "localizedName": "Enchantress",
+    "chnName": "魅惑魔女",
     "url": "Enchantress",
     "abilities": [
       "5267",
@@ -697,6 +754,7 @@
     "id": "59",
     "name": "npc_dota_hero_huskar",
     "localizedName": "Huskar",
+    "chnName": "哈斯卡",
     "url": "Huskar",
     "abilities": [
       "5271",
@@ -709,6 +767,7 @@
     "id": "60",
     "name": "npc_dota_hero_night_stalker",
     "localizedName": "Night Stalker",
+    "chnName": "暗夜魔王",
     "url": "Night_Stalker",
     "abilities": [
       "5275",
@@ -721,6 +780,7 @@
     "id": "61",
     "name": "npc_dota_hero_broodmother",
     "localizedName": "Broodmother",
+    "chnName": "育母蜘蛛",
     "url": "Broodmother",
     "abilities": [
       "5279",
@@ -733,6 +793,7 @@
     "id": "62",
     "name": "npc_dota_hero_bounty_hunter",
     "localizedName": "Bounty Hunter",
+    "chnName": "赏金猎人",
     "url": "Bounty_Hunter",
     "abilities": [
       "5285",
@@ -745,6 +806,7 @@
     "id": "63",
     "name": "npc_dota_hero_weaver",
     "localizedName": "Weaver",
+    "chnName": "编织者",
     "url": "Weaver",
     "abilities": [
       "5289",
@@ -757,6 +819,7 @@
     "id": "64",
     "name": "npc_dota_hero_jakiro",
     "localizedName": "Jakiro",
+    "chnName": "杰奇洛",
     "url": "Jakiro",
     "abilities": [
       "5297",
@@ -769,6 +832,7 @@
     "id": "65",
     "name": "npc_dota_hero_batrider",
     "localizedName": "Batrider",
+    "chnName": "蝙蝠骑士",
     "url": "Batrider",
     "abilities": [
       "5320",
@@ -781,6 +845,7 @@
     "id": "66",
     "name": "npc_dota_hero_chen",
     "localizedName": "Chen",
+    "chnName": "陈",
     "url": "Chen",
     "abilities": [
       "5328",
@@ -794,6 +859,7 @@
     "id": "67",
     "name": "npc_dota_hero_spectre",
     "localizedName": "Spectre",
+    "chnName": "幽鬼",
     "url": "Spectre",
     "abilities": [
       "5334",
@@ -807,7 +873,8 @@
     "id": "69",
     "name": "npc_dota_hero_doom_bringer",
     "localizedName": "Doom",
-    "url": "Doom",
+    "chnName": "末日使者",
+    "url": "Doom_Bringer",
     "abilities": [
       "5339",
       "5340",
@@ -819,6 +886,7 @@
     "id": "68",
     "name": "npc_dota_hero_ancient_apparition",
     "localizedName": "Ancient Apparition",
+    "chnName": "远古冰魄",
     "url": "Ancient_Apparition",
     "abilities": [
       "5345",
@@ -832,6 +900,7 @@
     "id": "70",
     "name": "npc_dota_hero_ursa",
     "localizedName": "Ursa",
+    "chnName": "熊战士",
     "url": "Ursa",
     "abilities": [
       "5357",
@@ -844,6 +913,7 @@
     "id": "71",
     "name": "npc_dota_hero_spirit_breaker",
     "localizedName": "Spirit Breaker",
+    "chnName": "裂魂人",
     "url": "Spirit_Breaker",
     "abilities": [
       "5353",
@@ -856,6 +926,7 @@
     "id": "72",
     "name": "npc_dota_hero_gyrocopter",
     "localizedName": "Gyrocopter",
+    "chnName": "矮人直升机",
     "url": "Gyrocopter",
     "abilities": [
       "5361",
@@ -868,6 +939,7 @@
     "id": "73",
     "name": "npc_dota_hero_alchemist",
     "localizedName": "Alchemist",
+    "chnName": "炼金术士",
     "url": "Alchemist",
     "abilities": [
       "5365",
@@ -881,6 +953,7 @@
     "id": "74",
     "name": "npc_dota_hero_invoker",
     "localizedName": "Invoker",
+    "chnName": "祈求者",
     "url": "Invoker",
     "abilities": [
       "5370",
@@ -903,6 +976,7 @@
     "id": "75",
     "name": "npc_dota_hero_silencer",
     "localizedName": "Silencer",
+    "chnName": "沉默术士",
     "url": "Silencer",
     "abilities": [
       "5377",
@@ -916,6 +990,7 @@
     "name": "npc_dota_hero_obsidian_destroyer",
     "localizedName": "Outworld Devourer",
     "url": "Outworld_Devourer",
+    "chnName": "殁境神蚀者",
     "abilities": [
       "5391",
       "5392",
@@ -927,6 +1002,7 @@
     "id": "77",
     "name": "npc_dota_hero_lycan",
     "localizedName": "Lycan",
+    "chnName": "狼人",
     "url": "Lycan",
     "abilities": [
       "5395",
@@ -939,6 +1015,7 @@
     "id": "78",
     "name": "npc_dota_hero_brewmaster",
     "localizedName": "Brewmaster",
+    "chnName": "酒仙",
     "url": "Brewmaster",
     "abilities": [
       "5400",
@@ -951,6 +1028,7 @@
     "id": "79",
     "name": "npc_dota_hero_shadow_demon",
     "localizedName": "Shadow Demon",
+    "chnName": "暗影恶魔",
     "url": "Shadow_Demon",
     "abilities": [
       "5421",
@@ -964,6 +1042,7 @@
     "id": "80",
     "name": "npc_dota_hero_lone_druid",
     "localizedName": "Lone Druid",
+    "chnName": "德鲁伊",
     "url": "Lone_Druid",
     "abilities": [
       "5412",
@@ -978,6 +1057,7 @@
     "id": "81",
     "name": "npc_dota_hero_chaos_knight",
     "localizedName": "Chaos Knight",
+    "chnName": "混沌骑士",
     "url": "Chaos_Knight",
     "abilities": [
       "5426",
@@ -990,6 +1070,7 @@
     "id": "82",
     "name": "npc_dota_hero_meepo",
     "localizedName": "Meepo",
+    "chnName": "米波",
     "url": "Meepo",
     "abilities": [
       "5430",
@@ -1002,7 +1083,8 @@
     "id": "83",
     "name": "npc_dota_hero_treant",
     "localizedName": "Treant Protector",
-    "url": "Treant_Protector",
+    "chnName": "树精卫士",
+    "url": "Treant",
     "abilities": [
       "5434",
       "5435",
@@ -1014,6 +1096,7 @@
     "id": "84",
     "name": "npc_dota_hero_ogre_magi",
     "localizedName": "Ogre Magi",
+    "chnName": "食人魔魔法师",
     "url": "Ogre_Magi",
     "abilities": [
       "5438",
@@ -1027,6 +1110,7 @@
     "id": "85",
     "name": "npc_dota_hero_undying",
     "localizedName": "Undying",
+    "chnName": "不朽尸王",
     "url": "Undying",
     "abilities": [
       "5442",
@@ -1039,6 +1123,7 @@
     "id": "86",
     "name": "npc_dota_hero_rubick",
     "localizedName": "Rubick",
+    "chnName": "拉比克",
     "url": "Rubick",
     "abilities": [
       "5448",
@@ -1052,6 +1137,7 @@
     "id": "87",
     "name": "npc_dota_hero_disruptor",
     "localizedName": "Disruptor",
+    "chnName": "干扰者",
     "url": "Disruptor",
     "abilities": [
       "5458",
@@ -1064,6 +1150,7 @@
     "id": "88",
     "name": "npc_dota_hero_nyx_assassin",
     "localizedName": "Nyx Assassin",
+    "chnName": "司夜刺客",
     "url": "Nyx_Assassin",
     "abilities": [
       "5462",
@@ -1076,6 +1163,7 @@
     "id": "89",
     "name": "npc_dota_hero_naga_siren",
     "localizedName": "Naga Siren",
+    "chnName": "娜迦海妖",
     "url": "Naga_Siren",
     "abilities": [
       "5467",
@@ -1089,6 +1177,7 @@
     "id": "90",
     "name": "npc_dota_hero_keeper_of_the_light",
     "localizedName": "Keeper of the Light",
+    "chnName": "光之守卫",
     "url": "Keeper_of_the_Light",
     "abilities": [
       "5471",
@@ -1106,6 +1195,7 @@
     "id": "91",
     "name": "npc_dota_hero_wisp",
     "localizedName": "Io",
+    "chnName": "艾欧",
     "url": "Io",
     "abilities": [
       "5485",
@@ -1121,6 +1211,7 @@
     "id": "92",
     "name": "npc_dota_hero_visage",
     "localizedName": "Visage",
+    "chnName": "维萨吉",
     "url": "Visage",
     "abilities": [
       "5480",
@@ -1133,6 +1224,7 @@
     "id": "93",
     "name": "npc_dota_hero_slark",
     "localizedName": "Slark",
+    "chnName": "斯拉克",
     "url": "Slark",
     "abilities": [
       "5494",
@@ -1145,6 +1237,7 @@
     "id": "94",
     "name": "npc_dota_hero_medusa",
     "localizedName": "Medusa",
+    "chnName": "美杜莎",
     "url": "Medusa",
     "abilities": [
       "5504",
@@ -1157,6 +1250,7 @@
     "id": "95",
     "name": "npc_dota_hero_troll_warlord",
     "localizedName": "Troll Warlord",
+    "chnName": "巨魔战将",
     "url": "Troll_Warlord",
     "abilities": [
       "5508",
@@ -1170,10 +1264,8 @@
     "id": "96",
     "name": "npc_dota_hero_centaur",
     "localizedName": "Centaur Warrunner",
-    "url": [
-      "Centaur Warchief",
-      "Centaur_Warrunner"
-    ],
+    "chnName": "半人马战行者",
+    "url": "centaur",
     "abilities": [
       "5514",
       "5515",
@@ -1185,7 +1277,8 @@
     "id": "97",
     "name": "npc_dota_hero_magnataur",
     "localizedName": "Magnus",
-    "url": "Magnus",
+    "chnName": "马格纳斯",
+    "url": "magnataur",
     "abilities": [
       "5518",
       "5519",
@@ -1197,7 +1290,8 @@
     "id": "98",
     "name": "npc_dota_hero_shredder",
     "localizedName": "Timbersaw",
-    "url": "Timbersaw",
+    "chnName": "伐木机",
+    "url": "shredder",
     "abilities": [
       "5524",
       "5525",
@@ -1210,6 +1304,7 @@
     "id": "99",
     "name": "npc_dota_hero_bristleback",
     "localizedName": "Bristleback",
+    "chnName": "钢背兽",
     "url": "Bristleback",
     "abilities": [
       "5548",
@@ -1222,6 +1317,7 @@
     "id": "100",
     "name": "npc_dota_hero_tusk",
     "localizedName": "Tusk",
+    "chnName": "巨牙海民",
     "url": "Tusk",
     "abilities": [
       "5565",
@@ -1234,6 +1330,7 @@
     "id": "101",
     "name": "npc_dota_hero_skywrath_mage",
     "localizedName": "Skywrath Mage",
+    "chnName": "天怒法师",
     "url": "Skywrath_Mage",
     "abilities": [
       "5581",
@@ -1246,6 +1343,7 @@
     "id": "102",
     "name": "npc_dota_hero_abaddon",
     "localizedName": "Abaddon",
+    "chnName": "亚巴顿",
     "url": "Abaddon",
     "abilities": [
       "5585",
@@ -1258,6 +1356,7 @@
     "id": "103",
     "name": "npc_dota_hero_elder_titan",
     "localizedName": "Elder Titan",
+    "chnName": "上古巨神",
     "url": "Elder_Titan",
     "abilities": [
       "5589",
@@ -1271,6 +1370,7 @@
     "id": "104",
     "name": "npc_dota_hero_legion_commander",
     "localizedName": "Legion Commander",
+    "chnName": "军团指挥官",
     "url": "Legion_Commander",
     "abilities": [
       "5595",
@@ -1283,6 +1383,7 @@
     "id": "106",
     "name": "npc_dota_hero_ember_spirit",
     "localizedName": "Ember Spirit",
+    "chnName": "灰烬之灵",
     "url": "Ember_Spirit",
     "abilities": [
       "5603",
@@ -1296,6 +1397,7 @@
     "id": "107",
     "name": "npc_dota_hero_earth_spirit",
     "localizedName": "Earth Spirit",
+    "chnName": "大地之灵",
     "url": "Earth_Spirit",
     "abilities": [
       "5608",
@@ -1309,6 +1411,7 @@
     "id": "109",
     "name": "npc_dota_hero_terrorblade",
     "localizedName": "Terrorblade",
+    "chnName": "恐怖利刃",
     "url": "Terrorblade",
     "abilities": [
       "5619",
@@ -1321,7 +1424,26 @@
     "id": "110",
     "name": "npc_dota_hero_phoenix",
     "localizedName": "Phoenix",
+    "chnName": "凤凰",
     "url": "Phoenix",
+    "abilities": [
+      "5623",
+      "5625",
+      "5626",
+      "5629",
+      "5630",
+      "5631",
+      "5624",
+      "5627",
+      "5628"
+    ]
+  },
+  {
+    "id": "111",
+    "name": "npc_dota_hero_oracle",
+    "localizedName": "oracle",
+    "chnName": "神谕者",
+    "url": "oracle",
     "abilities": [
       "5623",
       "5625",

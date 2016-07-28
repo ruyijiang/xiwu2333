@@ -106,14 +106,26 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
                     loadAndsaveHerosInfo.loadAndsaveHerosInfo().then(function (httpCont){
                         loadAndsaveHerosInfo.HerosInfo = httpCont;
                         //针对json数据结构进行查询
+                        var tempArr_radiant = [];
+                        var tempArr_diet = [];
                         for(var i=0;i<$scope.MatchInfo.slot_info.length;i++){
-                            for(var HeroIndex in loadAndsaveHerosInfo.HerosInfo){
-                                if(loadAndsaveHerosInfo.HerosInfo[HeroIndex].id == $scope.MatchInfo.slot_info[i]){
-                                    $scope.MatchInfo.slot_info[i] = loadAndsaveHerosInfo.HerosInfo[HeroIndex].url.toLowerCase();
+                            if(i>=0 && i<=4){
+                                for(var HeroIndex in loadAndsaveHerosInfo.HerosInfo){
+                                    if(loadAndsaveHerosInfo.HerosInfo[HeroIndex].id == $scope.MatchInfo.slot_info[i]){
+                                        tempArr_radiant[i] = loadAndsaveHerosInfo.HerosInfo[HeroIndex].url.toLowerCase();
+                                    }
                                 }
+                                $scope.MatchInfo.slot_info_radiant = tempArr_radiant;
+                            }else if(i>4 && i<=9){
+                                for(var HeroIndex in loadAndsaveHerosInfo.HerosInfo){
+                                    if(loadAndsaveHerosInfo.HerosInfo[HeroIndex].id == $scope.MatchInfo.slot_info[i]){
+                                        tempArr_diet[i-5] = loadAndsaveHerosInfo.HerosInfo[HeroIndex].url.toLowerCase();
+                                    }
+                                }
+                                $scope.MatchInfo.slot_info_diet = tempArr_diet;
                             }
                         }
-                        console.log($scope.MatchInfo.slot_info);
+                        //console.log($scope.MatchInfo.slot_info);
                     });
                 }
             });

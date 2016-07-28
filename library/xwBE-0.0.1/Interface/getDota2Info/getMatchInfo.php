@@ -8,6 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
+//header('Content-type: application/json');
 
 $content = $_GET["content"];
 $startnum = $_GET["startnum"];
@@ -66,11 +67,12 @@ if(!empty($content) || !empty($startnum)){
         //2，翻译开始时间：
         $a = new _environment();
         $tnow = strtotime($a->getTime());
-        if($minus = $tnow - strtotime($result["start_time"]) <= 24*60*60 && $tnow - strtotime($result["start_time"]) >= 1*60*60){
+        if($tnow - strtotime($result["start_time"]) <= 24*60*60 && $tnow - strtotime($result["start_time"]) >= 1*60*60){
             //一天之内
-            $result["start_time"] = "约".round($minus / 60 * 60,0)."小时前";
+            $minus = $tnow - strtotime($result["start_time"]);
+            $result["start_time"] = "约".round($minus / 3600,0)."小时前";
         }else if($minus = $tnow - strtotime($result["start_time"]) < 1*60*60){
-            $result["start_time"] = "约".(round($minus / 60 * 60,1)*60)."分钟前";
+            $result["start_time"] = "约".(round($minus / 3600,1)*60)."分钟前";
         }
         //3，翻译持续时间：
         $result["duration"] = floor($result["duration"] / 60) . "分钟";// . $result["duration"]%60 . "秒";
