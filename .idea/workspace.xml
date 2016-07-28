@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="modify database of searchings.and fixed some codes to adjust this modification.">
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/searchController.js" afterPath="$PROJECT_DIR$/js/controller/searchController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,21 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heros.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="heros.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="1420" column="5" selection-start-line="1420" selection-start-column="5" selection-end-line="1420" selection-end-column="5" />
+            <state relative-caret-position="172">
+              <caret line="1439" column="4" selection-start-line="1439" selection-start-column="4" selection-end-line="1439" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="all.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/all.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="193" column="36" selection-start-line="193" selection-start-column="36" selection-end-line="193" selection-end-column="36" />
+            <state relative-caret-position="73">
+              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -859,14 +855,7 @@
       <workItem from="1469634890729" duration="363000" />
       <workItem from="1469635956176" duration="219000" />
       <workItem from="1469670604599" duration="879000" />
-      <workItem from="1469671569937" duration="9545000" />
-    </task>
-    <task id="LOCAL-00014" summary="finish liveness_rate modal in homepage.php">
-      <created>1464844460237</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1464844460237</updated>
+      <workItem from="1469671569937" duration="9827000" />
     </task>
     <task id="LOCAL-00015" summary="review something. and add a modal of upload avatar">
       <created>1465722837224</created>
@@ -1204,18 +1193,25 @@
       <option name="project" value="LOCAL" />
       <updated>1469607200773</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="almost finish searching for competition.but there were some bugs remainning , i will fixed it tonight and tomorrow morning.">
+      <created>1469685889505</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1469685889507</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1329106000" />
+    <option name="totallyTimeSpent" value="1329388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17246597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1253,7 +1249,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add something in userlistController.js" />
     <MESSAGE value="recode something in userlistController.js" />
     <MESSAGE value="fixed some bugs." />
     <MESSAGE value="fuck yeah!!" />
@@ -1278,7 +1273,8 @@
     <MESSAGE value="fixed the bug that after signup an account , once click cannot hide OpenTeamBar." />
     <MESSAGE value="analyse codes for dota2-api,almost finished." />
     <MESSAGE value="modify database of searchings.and fixed some codes to adjust this modification." />
-    <option name="LAST_COMMIT_MESSAGE" value="modify database of searchings.and fixed some codes to adjust this modification." />
+    <MESSAGE value="almost finish searching for competition.but there were some bugs remainning , i will fixed it tonight and tomorrow morning." />
+    <option name="LAST_COMMIT_MESSAGE" value="almost finish searching for competition.but there were some bugs remainning , i will fixed it tonight and tomorrow morning." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1619,14 +1615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="1420" column="5" selection-start-line="1420" selection-start-column="5" selection-end-line="1420" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -1639,8 +1627,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="193" column="36" selection-start-line="193" selection-start-column="36" selection-end-line="193" selection-end-column="36" />
+        <state relative-caret-position="73">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="1439" column="4" selection-start-line="1439" selection-start-column="4" selection-end-line="1439" selection-end-column="4" />
           <folding />
         </state>
       </provider>
