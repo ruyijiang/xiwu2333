@@ -118,12 +118,12 @@ include("library/xwFE-0.0.1/FEM.php");
 
             <div class="article-sheet form-inline" style="margin-top:15px;" ng-show="TabShowPage == 2">
                 <a ng-if="UidEqu==true" class="btn btn-danger form-group" role="button" style="padding-left:35px;padding-right:45px;" ui-sref="writeblog"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
-                <form class="form-group">
+                <form class="form-group" ng-submit="search_inarticle()">
                     <div class="input-group-container">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="搜索文章" style="z-index:0;width:260px">
+                            <input type="search" class="form-control" placeholder="搜索文章" style="z-index:0;width:260px" ng-model="search_in_blog_content">
                               <span class="input-group-btn">
-                                <button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                               </span>
                         </div>
                     </div>

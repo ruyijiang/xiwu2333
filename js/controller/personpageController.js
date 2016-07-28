@@ -19,6 +19,8 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     $scope.TabCommentStatus = 0;
     $scope.TabHttpRequestTimes = 0;//Tab一共发送的请求数量
 
+    $scope.search_in_blog_content = "";//页内的搜索的内容
+
 
     /**
      * 切换tab时触发的事件
@@ -175,8 +177,32 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         updateTabRequestStatus('comment');
     }
 
+    /**
+     * 在blog页面里的搜索
+     */
+    $scope.search_inarticle = function (){
+        var content = $scope.search_in_blog_content;
+
+        $http({
+            method: 'GET',
+            url: '../../library/xwBE-0.0.1/php/search_action.php',
+            params:{
+                'content':content,
+                'priority':'article',
+                'startnum':0
+            }
+        }).success(function (data){
+            deferred.resolve(data);
+        }).error(function (reason){
+            deferred.reject(reason);
+            alert ("搜索失败，请联系管理员");
+        }).then(function (httpCont){
+            console.log(httpCont.data);
+        });
 
 
+
+    };
 
     /**
      * 检测数据请求的允许状态
