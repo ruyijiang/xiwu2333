@@ -43,7 +43,7 @@ if($openteam_status == 1){
 }
 
 //********footer***********//页脚
-$footer = '<footer><div class="clearfix"><div style="color:#999"><small>&copy; 2016 milo |</small><small>&nbsp;<span class="glyphicon glyphicon-envelope"></span> 意见反馈：<a href="mailto:#">1444828173@qq.com</a> |&nbsp;<span class="glyphicon glyphicon-book"></span> alpha - 0.1</small><small class="pull-right">若使用本网站提供的服务，则视为接受本网站<a href="">《服务条款说明》</a>中各项和<a href="">《诚信文明公约》</a>。</small></div></div></footer>';
+$footer = '<footer><div class="clearfix"><div style="color:#999"><small>&copy; 2016 milo |</small><small>&nbsp;<span class="glyphicon glyphicon-envelope"></span> 意见反馈：<a href="mailto:#">1444828173@qq.com</a> |&nbsp;<span class="glyphicon glyphicon-book"></span> alpha - 0.2</small><small class="pull-right">若使用本网站提供的服务，则视为接受本网站<a href="">《服务条款说明》</a>中各项和<a href="">《诚信文明公约》</a>。</small></div></div></footer>';
 
 
 /**main页面的欢迎巨幕**/
