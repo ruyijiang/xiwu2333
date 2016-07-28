@@ -5,7 +5,11 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/database/heros.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/searchController.js" afterPath="$PROJECT_DIR$/js/controller/searchController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personpage.php" afterPath="$PROJECT_DIR$/personpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userlistpage.php" afterPath="$PROJECT_DIR$/userlistpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,70 +40,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FEM.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            <state relative-caret-position="257">
+              <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
               <folding>
-                <marker date="1469690039749" expanded="true" signature="279:332" ph="SELECT avata... users" />
-                <marker date="1469690039749" expanded="true" signature="751:762" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="1206:1224" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="1279:1334" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="1785:1800" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="1983:2071" ph="..." />
-                <marker date="1469690039749" expanded="false" signature="2533:2544" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="2602:5536" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="2625:5530" ph="..." />
-                <marker date="1469690039749" expanded="false" signature="3034:3083" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="3164:5524" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="3494:5518" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="3555:3570" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="3753:3841" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="5869:5901" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="6040:6050" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="7869:7930" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="7950:8011" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="9685:9701" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="9796:9809" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="10238:10254" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="10313:10330" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="10761:10798" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="11722:11738" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="11927:11950" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="11986:12003" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="12302:12325" ph="..." />
-                <marker date="1469690039749" expanded="true" signature="12361:12378" ph="..." />
+                <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/all.css">
+      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="232" column="47" selection-start-line="232" selection-start-column="47" selection-end-line="232" selection-end-column="47" />
+            <state relative-caret-position="168">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.php">
+      <file leaf-file-name="userlistcontroller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="49" column="53" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="53" />
+            <state relative-caret-position="264">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -129,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Regulars.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/certdata_action.php" />
         <option value="$PROJECT_DIR$/js/service/changePageTitle.js" />
         <option value="$PROJECT_DIR$/js/router.js" />
@@ -155,7 +131,6 @@
         <option value="$PROJECT_DIR$/js/controller/logincontroller.js" />
         <option value="$PROJECT_DIR$/info_settingpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/queue_action.php" />
-        <option value="$PROJECT_DIR$/personpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/EchartData_Export.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -170,16 +145,18 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getHerosInfo.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/service/loadAndsaveHerosInfo.js" />
-        <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/js/controller/searchController.js" />
         <option value="$PROJECT_DIR$/css/bootstrap-theme.min.css" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
+        <option value="$PROJECT_DIR$/personpage.php" />
         <option value="$PROJECT_DIR$/css/all.css" />
+        <option value="$PROJECT_DIR$/userlistpage.php" />
+        <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/js/controller/searchController.js" />
       </list>
     </option>
   </component>
@@ -852,14 +829,7 @@
       <workItem from="1469634890729" duration="363000" />
       <workItem from="1469635956176" duration="219000" />
       <workItem from="1469670604599" duration="879000" />
-      <workItem from="1469671569937" duration="13902000" />
-    </task>
-    <task id="LOCAL-00020" summary="fixed some bugs about htmldecode and htmlencode.there are still some troubles.">
-      <created>1466056000926</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1466056000926</updated>
+      <workItem from="1469671569937" duration="17715000" />
     </task>
     <task id="LOCAL-00021" summary="just made blog.modal can output article normally,but it is dangerous">
       <created>1466063246990</created>
@@ -1197,11 +1167,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469689434105</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="add some">
+      <created>1469690215645</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1469690215645</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1333463000" />
+    <option name="totallyTimeSpent" value="1337276000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1246,7 +1223,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finish adjust search input in header." />
     <MESSAGE value="finish a model for pagaintor in search.modal &amp; search_action.php" />
     <MESSAGE value="finish a thing in search.modal" />
     <MESSAGE value="finish pagination in search.modal" />
@@ -1271,7 +1247,8 @@
     <MESSAGE value="add more record method of searching model. in any case" />
     <MESSAGE value="release a new version | alpha 0.2" />
     <MESSAGE value="fixed fatal bug of that type null would be die in search.modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed fatal bug of that type null would be die in search.modal" />
+    <MESSAGE value="add some" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1280,20 +1257,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/vendor/composer/autoload_classmap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/vendor/composer/autoload_real.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/vendor/composer/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1400,13 +1363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="54" column="140" selection-start-line="54" selection-start-column="127" selection-end-line="54" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/all.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -1499,13 +1455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/service/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/angular-ui-router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1541,14 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="167" column="60" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userlistpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1643,26 +1584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap-theme.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="4" column="9545" selection-start-line="4" selection-start-column="9545" selection-end-line="4" selection-end-column="9545" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1704,10 +1629,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/personpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="122" column="49" selection-start-line="122" selection-start-column="49" selection-end-line="122" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/service/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlistpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <marker date="1469694669437" expanded="true" signature="6877:6944" ph="SELECT uid F... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="232" column="47" selection-start-line="232" selection-start-column="47" selection-end-line="232" selection-end-column="47" />
+        <state relative-caret-position="247">
+          <caret line="193" column="103" selection-start-line="193" selection-start-column="103" selection-end-line="193" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -9,7 +9,7 @@ include("library/xwFE-0.0.1/FEM.php");
             <div>
                 <img ng-src="{{UserData.avatar}}" class="img-responsive img-rounded" width="198" height="198"/>
                 <div>
-                    <strong style="font-size:19px">{{UserData.name}}</strong>
+                    <strong style="display:inline-block;font-size:18px;margin-top:15px">{{UserData.name}}</strong>
                     <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:32px;color:#346ea1" title="男"></i>
                     <i ng-if="UserData.gender == '1'" class="iconfont icon-nvhai" style="font-size:32px;color:#FF6699" title="女"></i>
                 </div>
@@ -43,7 +43,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <td><i class="iconfont icon-shujufenxi"></i></td>
                     <td>天梯：</td>
                     <td>
-                        <span ng-if="UserData.ladderscore!=='' && UserData.ladderscore!=='0'">{{UserData.ladderscore}}</span>
+                        <span ng-if="Data.ladderscore!=='' && UserData.ladderscore!=='0'">{{UserData.ladderscore}}</span>
                         <span ng-if="UserData.ladderscore=='' || UserData.ladderscore=='0'">保密</span>
                     </td>
                 </tr>
@@ -122,13 +122,13 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="input-group-container">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="搜索文章" style="z-index:0;width:260px">
-                                  <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
-                                  </span>
+                              <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
+                              </span>
                         </div>
                     </div>
                 </form>
-                <div class="dropdown form-group">
+                <div class="dropdown form-group" ng-if="UidEqu==true">
                     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                         每页显示
                         <span class="caret"></span>

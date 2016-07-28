@@ -7,6 +7,7 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
     $scope.thisContent = $scope.content;//用于没有找到内容时显示
     $scope.SearchContentReq = [];
     $scope.ShowComp = true;
+    $scope.compResultamo = 0;
     var deferred = $q.defer();
     /**
      * 一旦进入此视图，则立即执行以下if(){}else{}
@@ -103,9 +104,11 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
                 if(httpCont.data.statuscode == 0){
                     //没有找到比赛相关内容
                     $scope.ShowComp = false;
+                    $scope.compResultamo = 0;
                 }else{
                     //找到比赛相关内容了
                     $scope.ShowComp = true;
+                    $scope.compResultamo = 1;
                     $scope.MatchInfo = httpCont.data;
                     loadAndsaveHerosInfo.loadAndsaveHerosInfo().then(function (httpCont){
                         loadAndsaveHerosInfo.HerosInfo = httpCont;

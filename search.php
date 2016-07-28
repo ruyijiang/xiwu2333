@@ -50,7 +50,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <a ng-click="alertPri('user')">玩家<span ng-if="priority=='user'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1>=0?SearchContentReq.length - 1:0}}</span></span></a>
                             </li>
                             <li ng-class="{active:leftNavIndex == 2}">
-                                <a ng-click="alertPri('competition')">比赛<span ng-if="priority=='competition'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1>=0?SearchContentReq.length - 1:0}}</span></span></a>
+                                <a ng-click="alertPri('competition')">比赛<span ng-if="priority=='competition'" class="badge"><span>{{compResultamo}}</span></span></a>
                             </li>
                             <li ng-class="{active:leftNavIndex == 3}">
                                 <a ng-click="alertPri('article')">文章<span ng-if="priority=='article'" class="badge"><span ng-if="SearchContentReq[0].statuscode=='0'">0</span><span ng-if="SearchContentReq[0].statuscode!=='0'">{{SearchContentReq.length - 1>=0?SearchContentReq.length - 1:0}}</span></span></a>
@@ -111,13 +111,13 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div class="search_content-botpart" style="margin-left:10px;">
                                 <div class="pull-left" style="margin-right:10px;">
                                     <span class="radient">
-                                        <img class="heroimg_insearch" ng-repeat="herourl in MatchInfo.slot_info_radiant" alt="{{herourl}}" ng-src="http://cdn.dota2.com.cn/apps/dota2/images/heroes/{{herourl}}_sb.png" height="30"/>
+                                        <img class="heroimg_insearch" ng-repeat="herourl in MatchInfo.slot_info_radiant" alt="{{herourl}}" ng-src="http://cdn.dota2.com.cn/apps/dota2/images/heroes/{{herourl}}_sb.png" height="31"/>
                                     </span>
                                     <span class="label label-success" style="font-size:15px;font-weight:bold;color:white">{{MatchInfo.radiant_score}}</span>
                                     <i class="iconfont icon-vs"></i>
                                     <span class="label label-danger" style="font-size:15px;font-weight:bold;color:white">{{MatchInfo.dire_score}}</span>
                                     <span class="diet">
-                                        <img class="heroimg_insearch" ng-repeat="herourl in MatchInfo.slot_info_diet" alt="{{herourl}}" ng-src="http://cdn.dota2.com.cn/apps/dota2/images/heroes/{{herourl}}_sb.png" height="30"/>
+                                        <img class="heroimg_insearch" ng-repeat="herourl in MatchInfo.slot_info_diet" alt="{{herourl}}" ng-src="http://cdn.dota2.com.cn/apps/dota2/images/heroes/{{herourl}}_sb.png" height="31"/>
                                     </span>
                                 </div><!--
                                 <div class="pull-left">
