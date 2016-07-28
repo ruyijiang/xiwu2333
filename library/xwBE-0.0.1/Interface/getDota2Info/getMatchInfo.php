@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-header('Content-type: application/json');
+//header('Content-type: application/json');
 
 $content = $_GET["content"];
 $startnum = $_GET["startnum"];
@@ -20,9 +20,9 @@ if(!empty($content) || !empty($startnum)){
 
 
 
-    @$mm = new Dota2Api\Mappers\MatchMapperWeb($content);
-    @$match = $mm->load();
-    @$result = $match->getDataArray();
+    $mm = new Dota2Api\Mappers\MatchMapperWeb($content);
+    $match = $mm->load();
+    $result = $match->getDataArray();
 
     if($result["match_id"] !== null){
         $slots = $match->getAllSlots();

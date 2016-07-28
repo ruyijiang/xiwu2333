@@ -6,3 +6,7 @@
 ['Time':2016-07-28 00:15:05,'Commit:'onlineDuration]{0}
 ['Time':2016-07-28 00:15:14,'Commit:'onlineDuration]{0}
 ['Time':2016-07-28 00:16:06,'Commit:'onlineDuration]{0}
+['Time':2016-07-28 22:01:21,'Commit:'onlineDuration]{0}
+['Time':2016-07-28 22:05:04,'Commit:'onlineDuration]{210}
+['Time':2016-07-28 22:05:24,'Commit:'onlineDuration]{0}
+['Time':2016-07-28 22:09:44,'Commit:'onlineDuration]{280}

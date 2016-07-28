@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/4/15.
  */
-app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q,$state){
+app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q){
 
 
     $scope.TabShowPage = 1;//当前TabIndex值
@@ -180,6 +180,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     /**
      * 在blog页面里的搜索
      */
+    var deferred = $q.defer();
     $scope.search_inarticle = function (){
         var content = $scope.search_in_blog_content;
 
@@ -187,7 +188,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             method: 'GET',
             url: '../../library/xwBE-0.0.1/php/search_action.php',
             params:{
-                'content':content,
+                'content':$scope.search_in_blog_content,
                 'priority':'article',
                 'startnum':0
             }
@@ -197,7 +198,14 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             deferred.reject(reason);
             alert ("搜索失败，请联系管理员");
         }).then(function (httpCont){
-            console.log(httpCont.data);
+            if(httpCont.data.statuscode == 0){
+                $scope.ArticleStatus = false;
+                $scope.search_in_blog_content_showtouser = $scope.search_in_blog_content;
+            }else{
+                $scope.ArticleStatus = true;
+                $scope.search_in_blog_content_showtouser = $scope.search_in_blog_content;
+                $scope.ArticleDataArr = httpCont.data;
+            }
         });
 
 

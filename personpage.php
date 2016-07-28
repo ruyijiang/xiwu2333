@@ -155,6 +155,10 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div>
                     <hr>
                 </div>
+                <div ng-if="UserData.gender == '0' && ArticleDataArr.length < 1 && ArticleStatus==undefined">他还没有发表过文章...</div>
+                <div ng-if="UserData.gender == '1' && ArticleDataArr.length < 1 && ArticleStatus==undefined">她还没有发表过文章...</div>
+                <div ng-if="UserData.gender == '0' && ArticleStatus == false">没有找到他写的，和"{{search_in_blog_content_showtouser}}"相关的文章</div>
+                <div ng-if="UserData.gender == '1' && ArticleStatus == false">没有找到她写的，和"{{search_in_blog_content_showtouser}}"相关的文章</div>
                 <div class="col-lg-12 text-center">
                     <nav>
                         <ul class="pagination">
@@ -178,14 +182,14 @@ include("library/xwFE-0.0.1/FEM.php");
             <div class="comment-sheet" style="margin-top:15px;" ng-show="TabShowPage == 3">
                 <div class="article">
                     <blockquote class="clearfix">
-                        <a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="Yado"><img class="img-responsive" style="height:42px;width:42px;"/></a>
+                        <a class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="Yado"><img class="img-responsive" style="height:42px;width:42px;"/></a>
                         <h5 class="pull-left" style="margin-left:20px;">这个人好坑的...</h5>
                     </blockquote>
                     <small class="pull-right"><time>3min 前</time></small>
                 </div>
                 <div class="article">
                     <blockquote class="clearfix">
-                        <a href="" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="shy"><img class="img-responsive" style="height:42px;width:42px;"/></a>
+                        <a class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="shy"><img class="img-responsive" style="height:42px;width:42px;"/></a>
                         <h5 class="pull-left" style="margin-left:20px;">这个人好坑的...</h5>
                     </blockquote>
                     <small class="pull-right"><time>3min 前</time></small>
