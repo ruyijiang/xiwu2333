@@ -19,7 +19,11 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
                 skipToSearch($scope.content,pri);
             };
             $scope.searchInPage = function (){
-                skipToSearch($scope.content,$scope.priority);
+                if($scope.content){
+                    skipToSearch($scope.content,$scope.priority);
+                }else{
+                    alert ("请填写搜索内容");
+                }
             };
             //有查询content，则显示结果视图
             $scope.SearchConsequenceShow = 1;

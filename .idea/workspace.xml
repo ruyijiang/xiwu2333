@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="modify">
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/database/heros.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/searchController.js" afterPath="$PROJECT_DIR$/js/controller/searchController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" afterPath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,102 +37,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="search_action.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
+      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="349" column="5" selection-start-line="309" selection-start-column="0" selection-end-line="349" selection-end-column="5" />
-              <folding>
-                <marker date="1469687067437" expanded="true" signature="488:540" ph="SELECT * FRO... users" />
-                <marker date="1469687067437" expanded="true" signature="1099:1149" ph="SELECT conte... callingcard" />
-                <marker date="1469687067437" expanded="true" signature="2119:2172" ph="SELECT * FRO... users" />
-                <marker date="1469687067437" expanded="true" signature="2777:2828" ph="SELECT conte... callingcard" />
-                <marker date="1469687067437" expanded="true" signature="3859:3917" ph="select * fro... users" />
-                <marker date="1469687067437" expanded="true" signature="4573:4623" ph="SELECT conte... callingcard" />
-                <marker date="1469687067437" expanded="true" signature="5720:5775" ph="select * fro... users" />
-                <marker date="1469687067437" expanded="true" signature="6484:6534" ph="SELECT conte... callingcard" />
-                <marker date="1469687067437" expanded="true" signature="7698:7758" ph="select * fro... users" />
-                <marker date="1469687067437" expanded="true" signature="8518:8569" ph="SELECT conte... callingcard" />
-                <marker date="1469687067437" expanded="true" signature="10319:10376" ph="SELECT * FRO... articles" />
-                <marker date="1469687067437" expanded="true" signature="10833:10875" ph="SELECT name users" />
-                <marker date="1469687067437" expanded="true" signature="11778:11840" ph="SELECT * FRO... articles" />
-                <marker date="1469687067437" expanded="true" signature="12341:12383" ph="SELECT name users" />
-                <marker date="1469687067437" expanded="true" signature="13346:13410" ph="SELECT * FRO... articles" />
-                <marker date="1469687067437" expanded="true" signature="13955:13997" ph="SELECT name users" />
-                <marker date="1469687067437" expanded="true" signature="15875:15968" ph="SELECT times... searchings" />
-                <marker date="1469687067437" expanded="true" signature="15875:15972" ph="SELECT times... searchings" />
-                <marker date="1469687067437" expanded="true" signature="15875:15973" ph="SELECT times... searchings" />
-                <marker date="1469687067437" expanded="true" signature="15875:15986" ph="SELECT times... searchings" />
-                <marker date="1469687067437" expanded="true" signature="15875:16001" ph="SELECT times... searchings" />
-                <marker date="1469687067437" expanded="true" signature="16315:16399" ph="UPDATE searc... " />
-                <marker date="1469687067437" expanded="true" signature="16903:17075" ph="INSERT INTO searchings... " />
-              </folding>
+            <state relative-caret-position="328">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotSearching_Export.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php">
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-              <folding>
-                <marker date="1469687735652" expanded="true" signature="280:390" ph="SELECT seari... searchings" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getMatchInfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-              <folding>
-                <marker date="1469687802707" expanded="true" signature="691:755" ph="SELECT name heros" />
-                <marker date="1469687802707" expanded="true" signature="3188:3314" ph="SELECT times... searchings" />
-                <marker date="1469687802707" expanded="true" signature="3592:3676" ph="UPDATE searc... " />
-                <marker date="1469687802707" expanded="true" signature="4136:4308" ph="INSERT INTO searchings... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FEM.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-              <folding>
-                <marker date="1469688198843" expanded="true" signature="279:332" ph="SELECT avata... users" />
-                <marker date="1469688198843" expanded="true" signature="751:762" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="1206:1224" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="1279:1334" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="1785:1800" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="1983:2071" ph="..." />
-                <marker date="1469688198843" expanded="false" signature="2533:2544" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="2602:5536" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="2625:5530" ph="..." />
-                <marker date="1469688198843" expanded="false" signature="3034:3083" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="3164:5524" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="3494:5518" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="3555:3570" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="3753:3841" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="5869:5901" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="6040:6050" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="7869:7930" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="7950:8011" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="9685:9701" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="9796:9809" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="10238:10254" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="10313:10330" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="10761:10798" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="11722:11738" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="11927:11950" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="11986:12003" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="12302:12325" ph="..." />
-                <marker date="1469688198843" expanded="true" signature="12361:12378" ph="..." />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="49" column="53" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -203,7 +123,6 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getHerosInfo.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/service/loadAndsaveHerosInfo.js" />
-        <option value="$PROJECT_DIR$/js/controller/searchController.js" />
         <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" />
@@ -212,6 +131,7 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
+        <option value="$PROJECT_DIR$/js/controller/searchController.js" />
       </list>
     </option>
   </component>
@@ -884,14 +804,7 @@
       <workItem from="1469634890729" duration="363000" />
       <workItem from="1469635956176" duration="219000" />
       <workItem from="1469670604599" duration="879000" />
-      <workItem from="1469671569937" duration="11940000" />
-    </task>
-    <task id="LOCAL-00018" summary="add some files ,for blog.php can load successfully.">
-      <created>1465972285796</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1465972285797</updated>
+      <workItem from="1469671569937" duration="13095000" />
     </task>
     <task id="LOCAL-00019" summary="fixed some bugs about navstyle and main.modal can skip to roomlist.modal.">
       <created>1466043686983</created>
@@ -1229,11 +1142,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469687963104</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="release a new version | alpha 0.2">
+      <created>1469688280704</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1469688280705</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1331501000" />
+    <option name="totallyTimeSpent" value="1332656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1278,7 +1198,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fuck yeah!!" />
     <MESSAGE value="fuck yeah!! x3" />
     <MESSAGE value="finish adjust search input in header." />
     <MESSAGE value="finish a model for pagaintor in search.modal &amp; search_action.php" />
@@ -1303,7 +1222,8 @@
     <MESSAGE value="almost finish searching for competition.but there were some bugs remainning , i will fixed it tonight and tomorrow morning." />
     <MESSAGE value="why cannot upload heros.json to git??" />
     <MESSAGE value="add more record method of searching model. in any case" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more record method of searching model. in any case" />
+    <MESSAGE value="release a new version | alpha 0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="release a new version | alpha 0.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1576,28 +1496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="113" column="208" selection-start-line="113" selection-start-column="208" selection-end-line="113" selection-end-column="208" />
-          <folding>
-            <element signature="n#style#0;n#span#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/xiwucontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="167" column="60" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1650,16 +1552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <marker date="1469687735652" expanded="true" signature="280:390" ph="SELECT seari... searchings" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/vendor/kronusme/dota2-api/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1695,6 +1587,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/HotSearching_Export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1469687735652" expanded="true" signature="280:390" ph="SELECT seari... searchings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1710,8 +1612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        <state relative-caret-position="247">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <marker date="1469688198843" expanded="true" signature="279:332" ph="SELECT avata... users" />
             <marker date="1469688198843" expanded="true" signature="751:762" ph="..." />
@@ -1742,6 +1644,22 @@
             <marker date="1469688198843" expanded="true" signature="12302:12325" ph="..." />
             <marker date="1469688198843" expanded="true" signature="12361:12378" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="49" column="53" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/searchController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
