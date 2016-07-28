@@ -53,7 +53,7 @@ require("../all.php");
 
                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                     echo $dataArr;
-                    insertIntoDatabase('搜索用户',$con);
+                    insertIntoDatabase('搜索用户',$con,1);
                     $affected_rows_num++;
                 }
                 echo "{\"row_num\":".$affected_rows_num."}";
@@ -85,7 +85,7 @@ require("../all.php");
 
                         $dataArr = urldecode ( json_encode ( $dataArr )).",";
                         echo $dataArr;
-                        insertIntoDatabase('搜索用户',$con);
+                        insertIntoDatabase('搜索用户',$con,1);
                         $affected_rows_num++;
                     }
                     echo "{\"row_num\":".$affected_rows_num."}";
@@ -117,7 +117,7 @@ require("../all.php");
 
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
-                            insertIntoDatabase('搜索用户',$con);
+                            insertIntoDatabase('搜索用户',$con,1);
                             $affected_rows_num++;
                         }
                         echo "{\"row_num\":".$affected_rows_num."}";
@@ -149,7 +149,7 @@ require("../all.php");
 
                                 $dataArr = urldecode(json_encode($dataArr)).",";
                                 echo $dataArr;
-                                insertIntoDatabase('搜索用户',$con);
+                                insertIntoDatabase('搜索用户',$con,1);
                                 $affected_rows_num++;
                             }
                             echo "{\"row_num\":".$affected_rows_num."}";
@@ -181,12 +181,13 @@ require("../all.php");
 
                                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                                     echo $dataArr;
-                                    insertIntoDatabase('搜索用户',$con);
+                                    insertIntoDatabase('搜索用户',$con,1);
                                     $affected_rows_num++;
                                 }
                                 echo "{\"row_num\":".$affected_rows_num."}";
                                 //--------------------------------------------------------------------------------->出口5：是在通过slogan搜索用户名，但是模糊搜索
                             }else{
+                                insertIntoDatabase('搜索用户',$con,0);
                                 $status = 0;
                                 $reminder = "没有结果user";
                                 echo $a->normalrespond($status,$reminder);
@@ -224,7 +225,7 @@ require("../all.php");
 
                     $dataArr = urldecode ( json_encode ( $dataArr )).",";
                     echo $dataArr;
-                    insertIntoDatabase('搜索用户',$con);
+                    insertIntoDatabase('搜索文章',$con,1);
                     $affected_rows_num++;
                 }
                 echo "{\"row_num\":".$affected_rows_num."}";
@@ -254,7 +255,7 @@ require("../all.php");
 
                         $dataArr = urldecode ( json_encode ( $dataArr )).",";
                         echo $dataArr;
-                        insertIntoDatabase('搜索用户',$con);
+                        insertIntoDatabase('搜索文章',$con,1);
                         $affected_rows_num++;
                     }
                     echo "{\"row_num\":".$affected_rows_num."}";
@@ -284,11 +285,12 @@ require("../all.php");
 
                             $dataArr = urldecode ( json_encode ( $dataArr )).",";
                             echo $dataArr;
-                            insertIntoDatabase('搜索用户',$con);
+                            insertIntoDatabase('搜索文章',$con,1);
                             $affected_rows_num++;
                         }
                         echo "{\"row_num\":".$affected_rows_num."}";
                     }else{
+                        insertIntoDatabase('搜索文章',$con,0);
                         $status = 0;
                         $reminder = "没有结果article";
                         echo $a->normalrespond($status,$reminder);
@@ -296,20 +298,18 @@ require("../all.php");
                     }
                 }
             }
-        }else if($pri == "competition"){
-            //查询比赛
-            //暂时没有
         }
+        //competiton比赛的搜索，在interface/getMatchInfo.php里进行
     }else{
         $status = 0;
-        $reminder = "没有结果competition";
+        $reminder = "缺少关键参数，无法进行搜索";
         echo $a->normalrespond($status,$reminder);
     }
 
 
 
     /**把搜索内容写入数据库**/
-    function insertIntoDatabase($ClassPri,$content){
+    function insertIntoDatabase($ClassPri,$content,$isAvailable){
         require("../connectDB.php");
 
         $a = new _environment();
@@ -317,7 +317,7 @@ require("../all.php");
         $b = new interfaceResponse();
 
         /**先检测该关键词是否已经存在于数据库了**/
-        $sql = "SELECT times,searid FROM searchings WHERE content='$content' AND classification = '$ClassPri'";
+        $sql = "SELECT times,searid FROM searchings WHERE content='$content' AND classification = '$ClassPri' AND isAvailable = '$isAvailable'";
         $qry = $db->query($sql);
         $row_all = mysqli_num_rows($qry);
         if($row_all>0){
@@ -337,7 +337,7 @@ require("../all.php");
             }
         }else{
             //content没在数据库里存在 -> 执行Insert
-            $sql2 = "INSERT INTO searchings(searid,content,times,regtime,lasttime,classification,remark) VALUES ('','$content','1','$tnow','$tnow','$ClassPri','none')";
+            $sql2 = "INSERT INTO searchings(searid,content,times,regtime,lasttime,classification,isAvailable,remark) VALUES ('','$content','1','$tnow','$tnow','$ClassPri','$isAvailable','none')";
             $qry2 = $db->query($sql2);
             if($qry2){
                 //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕

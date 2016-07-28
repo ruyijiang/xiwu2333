@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-//header('Content-type: application/json');
+header('Content-type: application/json');
 
 $content = $_GET["content"];
 $startnum = $_GET["startnum"];
@@ -39,7 +39,6 @@ if(!empty($content) || !empty($startnum)){
                 array_push($slot_info,$hero_name);
             }
         }
-        //print_r($match->getSlot(0)->getDataArray());
         $result["slot_info"] = $slot_info;
 
 
@@ -80,14 +79,15 @@ if(!empty($content) || !empty($startnum)){
         /*********************************************/
 
 
-
         //输出json对象
         echo(json_encode($result));
 
 
-
         //把搜索结果记入数据库，并添加分类
+        insertIntoDatabase("搜索比赛",$content,1);
+
     }else{
+        insertIntoDatabase("搜索比赛",$content,0);
         $status = 0;
         $reminder = "没有找到以'".$content."'为编号的比赛数据";
         echo $a->normalrespond($status,$reminder);
@@ -99,4 +99,48 @@ if(!empty($content) || !empty($startnum)){
     $status = 0;
     $reminder = "缺少关键参数";
     echo $a->normalrespond($status,$reminder);
+}
+
+
+
+
+/**把搜索内容写入数据库**/
+function insertIntoDatabase($ClassPri,$content,$isAvailable){
+    require("../../connectDB.php");
+
+    $a = new _environment();
+    $tnow = $a->getTime();
+    $b = new interfaceResponse();
+
+    /**先检测该关键词是否已经存在于数据库了**/
+    $sql = "SELECT times,searid FROM searchings WHERE content='$content' AND classification = '$ClassPri' AND isAvailable = '$isAvailable'";
+    $qry = $db->query($sql);
+    $row_all = mysqli_num_rows($qry);
+    if($row_all>0){
+        //content已经在数据库里存在了 -> 执行Update
+        $row = $qry->fetch_assoc();
+        $Otimes = (int)$row["times"];
+        $Osearid = $row["searid"];
+        $Otimes += 1;
+        $sql2 = "UPDATE searchings SET times = '$Otimes',lasttime = '$tnow' WHERE searid = '$Osearid' ";
+        $qry2 = $db->query($sql2);
+        if($qry2){
+            //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕
+            return true;
+        }else{
+            //----------------------------------------------------------------------------------------------------->出口2，更新搜索数据库失败
+            return false;
+        }
+    }else{
+        //content没在数据库里存在 -> 执行Insert
+        $sql2 = "INSERT INTO searchings(searid,content,times,regtime,lasttime,classification,isAvailable,remark) VALUES ('','$content','1','$tnow','$tnow','$ClassPri','$isAvailable','none')";
+        $qry2 = $db->query($sql2);
+        if($qry2){
+            //----------------------------------------------------------------------------------------------------->出口1，更新搜索数据库完毕
+            return true;
+        }else{
+            //----------------------------------------------------------------------------------------------------->出口2，更新搜索数据库失败
+            return false;
+        }
+    }
 }

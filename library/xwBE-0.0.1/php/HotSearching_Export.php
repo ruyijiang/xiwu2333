@@ -17,11 +17,16 @@ require("../all.php");
 
     if($timing){
 
-        $sql = "SELECT searid,content,times FROM searchings ORDER BY times DESC LIMIT 0,1";
+        $sql = "SELECT searid,content,times,classification FROM searchings WHERE isAvailable = 1 ORDER BY times DESC LIMIT 0,1";
         $qry = $db->query($sql);
         $row = $qry->fetch_assoc();
         $result_searid = $row["searid"];
-        $result_content = $row["content"];
+        $result_classification = $row["classification"];
+        if($result_classification == "搜索比赛"){
+            $result_content = "比赛：".$row["content"];
+        }else{
+            $result_content = $row["content"];
+        }
         $result_times = $row["times"];
 
         $status = 1;
