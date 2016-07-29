@@ -1,13 +1,14 @@
 /**
  * Created by 马子航 on 2016/6/6.
  */
-app.controller('searchController',function ($scope, $location, $http, search, $window, $q, loadAndsaveHerosInfo){
+app.controller('searchController',function ($scope, $rootScope, $location, $http, search, $window, $q, loadAndsaveHerosInfo){
     $scope.priority = $location.search()["priority"];//从url获取的查询类别
     $scope.content = $location.search()["content"];//从url获取查询正文
     $scope.thisContent = $scope.content;//用于没有找到内容时显示
     $scope.SearchContentReq = [];
     $scope.ShowComp = true;
     $scope.compResultamo = 0;
+    $rootScope.NowPageTitle = "搜索 - 喜屋";
     var deferred = $q.defer();
     /**
      * 一旦进入此视图，则立即执行以下if(){}else{}
@@ -110,6 +111,7 @@ app.controller('searchController',function ($scope, $location, $http, search, $w
                     $scope.ShowComp = true;
                     $scope.compResultamo = 1;
                     $scope.MatchInfo = httpCont.data;
+                    $rootScope.NowPageTitle = "搜索比赛："+ $scope.MatchInfo.match_id +" - 喜屋";
                     loadAndsaveHerosInfo.loadAndsaveHerosInfo().then(function (httpCont){
                         loadAndsaveHerosInfo.HerosInfo = httpCont;
                         //针对json数据结构进行查询

@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-header('Content-type: application/json');
+//header('Content-type: application/json');
 
 $content = $_GET["content"];
 $startnum = $_GET["startnum"];
@@ -20,11 +20,14 @@ if(!empty($content) || !empty($startnum)){
 
 
 
-    $mm = new Dota2Api\Mappers\MatchMapperWeb($content);
-    $match = $mm->load();
-    $result = $match->getDataArray();
+    @$mm = new Dota2Api\Mappers\MatchMapperWeb($content);
+    @$match = $mm->load();
+    @$result = $match->getDataArray();
 
     if($result["match_id"] !== null){
+        $saver = new Dota2Api\Mappers\MatchMapperDb();
+        $saver->save($match);
+
         $slots = $match->getAllSlots();
         $slot_info = array();
         foreach($slots as $slot) {
@@ -60,7 +63,7 @@ if(!empty($content) || !empty($startnum)){
                 $result["cluster"] = "电信（华中）";
                 break;
             case "231":
-                $result["cluster"] = "联通1";
+                $result["cluster"] = "联通（一）";
                 break;
         }
         //2，翻译开始时间：

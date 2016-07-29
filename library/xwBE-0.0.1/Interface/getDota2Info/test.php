@@ -1,12 +1,14 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: mazih
- * Date: 2016/7/29
- * Time: 9:06
+ * User: 马子航
+ * Date: 2016/7/23
+ * Time: 15:06
  */
-
-$mm = new Dota2Api\Mappers\MatchMapperWeb(121995119);
+require("../../connectDB.php");
+require("../../all.php");
+?><?php
+$mm = new Dota2Api\Mappers\MatchMapperWeb(2051819680);
 $match = $mm->load();
 echo $match->get('match_id');
 echo $match->get('start_time');

@@ -20,6 +20,14 @@
                 },
                 email: /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
                 number: /^\d+$/,
+                dota2Uid:function (value, scope, element, attrs, param){
+                    var ab = element.val();
+                    if(!ab){
+                        return true;
+                    }else{
+                        return ab.match(/^\d{5,10}$/);
+                    }
+                },
                 qq:/^\d{4,11}$/,
                 newqq:function (value, scope, element, attrs, param){
                     var ab = element.val();
@@ -93,6 +101,9 @@
                 },
                 newtelnumber:{
                     error: '请输入格式正确的手机号码'
+                },
+                dota2Uid:{
+                    error: '请输入格式正确的dota2数字id'
                 },
                 minlength: {
                     error: '位数过短'

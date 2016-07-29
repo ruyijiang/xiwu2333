@@ -56,7 +56,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="row boat">
                         <div class="per_s_content-basicinfo col-lg-6">
                             <div class="form-group">
-                                <label class="col-lg-3 control-label">数字id</label>
+                                <label class="col-lg-3 control-label">用户id</label>
                                 <div class="col-sm-9">
                                     <p class="form-control-static dischangable-text"><?echo $uid;?></p>
                                 </div>
@@ -92,6 +92,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="row boat">
                         <div class="per_s_content-extrainfo">
 
+
                             <div class="extrarow-2 row">
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">常驻服务器</label>
@@ -104,6 +105,30 @@ include("library/xwFE-0.0.1/FEM.php");
                                     </div>
                                 </div>
                             </div><!--End of extrarow-x-->
+
+
+                            <div class="extrarow-6 col-lg-12 row">
+                                <div class="form-group">
+                                    <label class="col-sm-2 col-lg-2 control-label" for="dota2id">Dota2数字ID</label>
+                                    <div class="col-sm-4 col-lg-4">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="iconfont icon-dota2" style="color:#942f24;"></i></span>
+                                            <input validator="dota2Uid" minlength="5" maxlength="10" type="text" class="form-control" message-id="dota2id_span" id="dota2id" name="dota2id" ng-model="UserInfoData.dota2_uid">
+                                        </div>
+                                        <span id="dota2id_span"></span>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-6 text-left" style="padding-top:5px;margin-left:-15px">
+                                        <i class="iconfont icon-alert" style="color:#337ab7;cursor:pointer;" id="dota2uid_reminder" ng-click="showTooltips()"></i>
+                                    </div>
+
+                                    <dialog ng-if="tooltips.open" for="dota2uid_reminder" align="top" close="tooltips.open=false">
+                                        <div dialog-title>建议填写</div>
+                                        <div dialog-content>如果您不填写此项，我们将无法获取您的Dota2游戏信息。</div>
+                                    </dialog>
+
+                                </div>
+                            </div><!--End of extrarow-x-->
+
 
                             <div class="extrarow-1 col-lg-12 row">
                                 <div class="form-group">
@@ -143,11 +168,6 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="btn-group col-lg-2 btn-group-sm" role="group" aria-label="...">
                                         <select class="form-control" ng-if="UserInfoData.province !== ''" ng-model="UserInfoData.city">
                                             <option ng-repeat="city in CityListArr" ng-if="city !== '' ">{{city}}</option>
-                                            <!--<option>和平区</option>
-                                            <option>南开区</option>
-                                            <option>河北区</option>
-                                            <option>红桥区</option>
-                                            <option>河东区</option>-->
                                         </select>
                                     </div>
                                 </div>

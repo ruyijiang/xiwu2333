@@ -36,9 +36,10 @@ require("../all.php");
         $weixin = $row["weixin"];
         $weibo = $row["weibo"];
         $liveplain = $row["liveplain"];//13个
+        $dota2_uid = $row["dota2_uid"];
         $avatar = $row["avatar"];
 
-        $dataArr = array ('uid'=>$uid,'name'=>$name,'gender'=>$gender,'server'=>$server,'server_bigarea'=>$server_bigarea,'country'=>$country,'province'=>$province,'city'=>$city,'tel'=>$tel,'qq'=>$qq,'weixin'=>$weixin,'weibo'=>$weibo,'liveplain'=>$liveplain,'avatar'=>$avatar);
+        $dataArr = array ('uid'=>$uid,'name'=>$name,'gender'=>$gender,'server'=>$server,'server_bigarea'=>$server_bigarea,'country'=>$country,'province'=>$province,'city'=>$city,'tel'=>$tel,'qq'=>$qq,'weixin'=>$weixin,'weibo'=>$weibo,'liveplain'=>$liveplain,'dota2_uid'=>$dota2_uid,'avatar'=>$avatar);
 
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value);

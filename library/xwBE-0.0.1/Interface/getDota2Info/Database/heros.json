@@ -1445,15 +1445,36 @@
     "chnName": "神谕者",
     "url": "oracle",
     "abilities": [
-      "5623",
-      "5625",
-      "5626",
       "5629",
       "5630",
       "5631",
-      "5624",
-      "5627",
-      "5628"
+      "5632"
+    ]
+  },
+  {
+    "id": "112",
+    "name": "npc_dota_hero_winter_wyvern",
+    "localizedName": "winter_wyvern",
+    "chnName": "寒冬飞龙",
+    "url": "winter_wyvern",
+    "abilities": [
+      "5633",
+      "5634",
+      "5635",
+      "5636"
+    ]
+  },
+  {
+    "id": "113",
+    "name": "npc_dota_hero_arc_warden",
+    "localizedName": "Arc_Warden",
+    "chnName": "寒冬飞龙",
+    "url": "弧光守望者",
+    "abilities": [
+      "5637",
+      "5638",
+      "5639",
+      "5640"
     ]
   }
 ]

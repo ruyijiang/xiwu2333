@@ -35,11 +35,11 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/signup",
             templateUrl: "signuppage.php",
             resolve:{
-                guarder: function($q,$location,checkStatus,$state){
+                guarder: function($q,$location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
-                        if(allowed=="1") $state.go("main");
+                        if(allowed=="1") $location.path("main").replace();
                     });
                 }
             }

@@ -7,9 +7,6 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
     $scope.CityNameShowStatus = null;
     $scope.ProvinceName = $scope.CityName = null;
     $scope.CityListArr = [];
-    $scope.uploadAvatarStatusDialog = {
-        open:false
-    };
     $rootScope.NowPageTitle = "资料设置 - 喜屋";
     timing = Math.round(new Date().getTime()/1000);
 
@@ -38,6 +35,12 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
         UserServer_hz:0,
         UserServer_lt:0
     };
+    $scope.uploadAvatarStatusDialog = {
+        open:false
+    };
+    $scope.tooltips = {
+        open:false
+    };
     $scope.dialog={
         open: false,
         content : ""
@@ -45,6 +48,21 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
     $scope.uploadAvatarDialog={
         open: false,
         content : ""
+    };
+
+    /**
+     * tooltips插件弹出和隐藏
+     */
+    $scope.showTooltips = function (){
+        $timeout.cancel($scope.tooltip_timer);
+        if($scope.tooltips.open){//打开状态，则点击就关闭
+            $scope.tooltips.open = false;
+        }else{//关闭状态，则点击就打开，且定时进行关闭
+            $scope.tooltips.open = true;
+            $scope.tooltip_timer = $timeout(function (){
+                $scope.tooltips.open = false;
+            },3500);
+        }
     };
 
     /**

@@ -1,4 +1,4 @@
-app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$location){
+app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$location,$timeout){
     var A_aid = $location.search()["aid"];//aid根
     $scope.BlogExport = "";
 
@@ -72,7 +72,9 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
      */
     $scope.skiptoart = function (aid){
         $location.url("/blog?aid="+aid);
-        window.location.reload();
+        $timeout(function (){
+            window.location.reload();
+        },0);
     };
 
     /**
