@@ -46,7 +46,7 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
                                 success: function (data){
                                     //2，跳转
                                     localStorage.OnlineStatus = "1";
-                                    $location.path("/main").replace();
+                                    $location.path("/info_setting").replace();
                                     window.location.reload();
                                 },
                                 error: function (){
