@@ -19,6 +19,25 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
     /******************/
 
 
+    $.ajax({
+        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/getUserInfo.php',
+        type:'GET',
+        async: false,
+        data:{},
+        success: function (data){
+            console.log(data);
+        },
+        error: function (data){
+            alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
+        },
+        complete: function (){
+            $scope.maskVis = 0;
+        }
+    });
+
+
+
+
 
     /**
      * 左侧微导航的样式驱动的功能的函数
@@ -43,6 +62,10 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
                 case "liantong":
                     if ($scope.UserListSearchConfig.server == 'liantong') $scope.UserListSearchConfig.server = '';
                     else $scope.UserListSearchConfig.server = 'liantong';
+                    break;
+                case "quanwang":
+                    if ($scope.UserListSearchConfig.server == 'quanwang') $scope.UserListSearchConfig.server = '';
+                    else $scope.UserListSearchConfig.server = 'quanwang';
                     break;
                 case "Normal":
                     if ($scope.UserListSearchConfig.skillLevel == 'Normal') $scope.UserListSearchConfig.skillLevel = '';

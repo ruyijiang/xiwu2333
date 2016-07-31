@@ -37,6 +37,7 @@ include("library/xwFE-0.0.1/FEM.php");
             <div class="btn-group btn-group-sm center-block" style="width:90%">
               <button type="button" ng-class="{active:UserListSearchConfig.server == 'dianxin'}" ng-click="MiniNav('dianxin')" class="btn btn-default">电信</button>
               <button type="button" ng-class="{active:UserListSearchConfig.server == 'liantong'}" ng-click="MiniNav('liantong')" class="btn btn-default">联通</button>
+              <button type="button" ng-class="{active:UserListSearchConfig.server == 'quanwang'}" ng-click="MiniNav('quanwang')" class="btn btn-default">全网</button>
             </div>
           </ul><hr>
             <ul class="nav nav-sidebar">
@@ -73,6 +74,7 @@ include("library/xwFE-0.0.1/FEM.php");
             <h3 class="sub-header">
               <img class="img-rounded" width="32" height="32" style="margin-top:-6px;margin-right:-3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
               Dota2 - 开放组队的玩家
+              <i class="iconfont icon-alert" title='"场均"是指玩家近25场比赛的平均值'></i>
               <!--<a class="btn btn-primary aaaa" role="button" ng-click="loaduserlist()" style="margin-top:-6px"><span class="glyphicon glyphicon-refresh"></span>刷新列表</a>-->
             </h3>
             <div class="table-responsive" style="position:relative">
@@ -86,10 +88,9 @@ include("library/xwFE-0.0.1/FEM.php");
                 <tr class="info">
                   <th width="15%">游戏ID</th>
                   <th width="15%">用户名</th>
-                  <th width="10%">性别</th>
-                  <!--<th>组队次数</th>-->
-                  <th width="10%">最擅长位置</th>
-                  <th width="15%">最擅长英雄</th>
+                  <!--<th width="10%">性别</th>
+                  <th>组队次数</th>-->
+                  <th>场均参战率</th>
                   <th>场均伤害</th>
                   <th>场均KDA</th>
                   <th>评分</th>
@@ -98,8 +99,9 @@ include("library/xwFE-0.0.1/FEM.php");
                 <tbody><!--一页15个-->
                 <tr ng-repeat="ud in userListDataArr">
                   <td>{{ud.dota2_uid}}</td>
-                  <td><a href="/#/person?uid={{ud.uid}}">{{ud.name}}</a></td>
-                  <td>
+                  <td class="text-center"><a href="/#/person?uid={{ud.uid}}">{{ud.name}}</a></td>
+                  <th>{{ud.participation}}</th>
+                  <!--<td>
                     <span ng-if="ud.gender == '0'">男</span>
                     <span ng-if="ud.gender == '1'">女</span>
                   </td>
@@ -110,7 +112,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <span ng-if="ud.skilledposition == '4'">4号位</span>
                     <span ng-if="ud.skilledposition == '5'">5号位</span>
                   </td>
-                  <td>影魔、剑圣、蓝猫</td>
+                  <td>影魔、剑圣、蓝猫</td>-->
                   <td>{{ud.damage}}</td>
                   <td>{{ud.kda}}</td>
                   <td>
