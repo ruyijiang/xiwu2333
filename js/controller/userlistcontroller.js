@@ -20,7 +20,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
 
 
     $.ajax({
-        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/getUserInfo.php',
+        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/recordPlayer25MatchInfo.php',
         type:'GET',
         async: false,
         data:{},
