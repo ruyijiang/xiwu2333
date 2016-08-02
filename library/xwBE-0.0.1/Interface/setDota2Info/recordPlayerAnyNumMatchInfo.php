@@ -32,6 +32,7 @@ if($matchesShortInfo !== null){
         @$slots = $match->getAllSlots();
 
         foreach($slots as $slot) {
+
             if($slot->get('account_id') == $UserDota2Id){
                 //是指定玩家
                 if($slot->get('deaths')==0){
@@ -44,21 +45,23 @@ if($matchesShortInfo !== null){
 
                 $status = 1;
                 $mnum++;
-            }
-        }
 
-        if($status == 0){
-            $reminder = "没有在任何一场比赛中搜索到指定数字ID的玩家信息";
-            echo $a->normalrespond($status,$reminder);
-        }else if($status == 1){
-            echo "KDA:".$KDA."<br>";
-            echo "场index".$mnum."<br>";
-            echo number_format($KDA/$mnum,1);
+
+                if($status == 0){
+                    $reminder = "没有在任何一场比赛中搜索到指定数字ID的玩家信息";
+                    echo $a->normalrespond($status,$reminder);
+                }else if($status == 1){
+                    echo "比赛ID是：".$key."</br>";
+                    echo "本场比赛的KDA是：".($slot->get('kills')+$slot->get('assists'))/$slot->get('deaths')."</br>";
+                    echo number_format($KDA/$mnum,1);
+                }
+
+            }
+
         }
 
     }
-
-    var_dump($KDA);
+    echo number_format($KDA/$mnum,1);
 
 
 }else{
