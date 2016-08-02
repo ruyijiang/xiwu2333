@@ -20,10 +20,12 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
 
 
     $.ajax({
-        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/recordPlayer25MatchInfo.php',
-        type:'GET',
-        async: false,
-        data:{},
+        url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
+        type:'POST',
+        data:{
+            "dota2uid":"252556081",
+            "amount":"25"
+        },
         success: function (data){
             console.log(data);
         },
@@ -34,6 +36,24 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
             $scope.maskVis = 0;
         }
     });
+
+
+    /*$scope.abc = {
+        "abc":"",
+        "def":""
+    };
+
+
+    $scope.testabc.$dirty;
+
+    $scope.tellmemore2 = function (){
+        console.log($scope.abc);
+        console.log($scope.testabc.$dirty);
+        $scope.drt = $scope.testabc.$dirty;
+    };
+    $scope.$watch('drt',function (newVal,oldVal){
+
+    });*/
 
 
 

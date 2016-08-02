@@ -74,7 +74,6 @@ include("library/xwFE-0.0.1/FEM.php");
             <h3 class="sub-header">
               <img class="img-rounded" width="32" height="32" style="margin-top:-6px;margin-right:-3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
               Dota2 - 开放组队的玩家
-              <i class="iconfont icon-alert" title='"场均"是指玩家近25场比赛的平均值'></i>
               <!--<a class="btn btn-primary aaaa" role="button" ng-click="loaduserlist()" style="margin-top:-6px"><span class="glyphicon glyphicon-refresh"></span>刷新列表</a>-->
             </h3>
             <div class="table-responsive" style="position:relative">
