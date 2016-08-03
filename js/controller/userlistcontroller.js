@@ -16,58 +16,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
 
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);
-    /******************/
-    var deferred = $q.defer();
-    var promise = $http({
-        url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
-        method: 'POST',
-        dataType: 'json',
-        data:20
-    }).success(function (data){
-        $scope.maskVis = 0;
-        deferred.resolve(data);
-        console.log(data);
-    }).error(function (reason){
-        deferred.reject(reason);
-    }).then(function (httpCont){
-        console.log(httpCont);
-    });
-
-    /*$.ajax({
-        type:'POST',
-        async:true,
-        url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
-        success: function (data){
-            console.log(data);
-        },
-        error: function (data){
-            alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
-        },
-        complete: function (){
-        }
-    });*/
-
-
-    /*$scope.abc = {
-        "abc":"",
-        "def":""
-    };
-
-
-    $scope.testabc.$dirty;
-
-    $scope.tellmemore2 = function (){
-        console.log($scope.abc);
-        console.log($scope.testabc.$dirty);
-        $scope.drt = $scope.testabc.$dirty;
-    };
-    $scope.$watch('drt',function (newVal,oldVal){
-
-    });*/
-
-
-
-
 
     /**
      * 左侧微导航的样式驱动的功能的函数

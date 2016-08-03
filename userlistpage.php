@@ -73,7 +73,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
             <h3 class="sub-header">
               <img class="img-rounded" width="32" height="32" style="margin-top:-6px;margin-right:-3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
-              Dota2 - 开放组队的玩家
+              Dota2 - 当前正在开放组队的玩家
               <i class="iconfont icon-alert" title="场均是指近20场比赛的平均值"></i>
               <!--<a class="btn btn-primary aaaa" role="button" ng-click="loaduserlist()" style="margin-top:-6px"><span class="glyphicon glyphicon-refresh"></span>刷新列表</a>-->
             </h3>
@@ -101,18 +101,6 @@ include("library/xwFE-0.0.1/FEM.php");
                   <td>{{ud.dota2_uid}}</td>
                   <td class="text-center"><a href="/#/person?uid={{ud.uid}}">{{ud.name}}</a></td>
                   <th>{{ud.participation}}</th>
-                  <!--<td>
-                    <span ng-if="ud.gender == '0'">男</span>
-                    <span ng-if="ud.gender == '1'">女</span>
-                  </td>
-                  <td>
-                    <span ng-if="ud.skilledposition == '1'">1号位</span>
-                    <span ng-if="ud.skilledposition == '2'">2号位</span>
-                    <span ng-if="ud.skilledposition == '3'">3号位</span>
-                    <span ng-if="ud.skilledposition == '4'">4号位</span>
-                    <span ng-if="ud.skilledposition == '5'">5号位</span>
-                  </td>
-                  <td>影魔、剑圣、蓝猫</td>-->
                   <td>{{ud.damage}}</td>
                   <td>{{ud.kda}}</td>
                   <td>

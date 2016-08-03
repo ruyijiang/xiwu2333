@@ -133,7 +133,6 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
 
             case "lt":
                 if(lt==0) $scope.ServerList.UserServer_lt = 1;else $scope.ServerList.UserServer_lt=0;break;
-
         }
     };
 
@@ -191,6 +190,20 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
             $scope.submitData();
         }
     };
+
+    /**
+     * 监控dota2uid是否发生了改变
+     * 如果发生了改变，则在提交的时候对用户的记录进行记录
+     */
+    var OldDota2_uid = $scope.UserInfoData.dota2_uid;
+    $scope.$watch('UserInfoData.dota2_uid',function (newVal,oldVal){
+        if(newVal !== oldVal && newVal !== OldDota2_uid){
+            $scope.isDota2_uidChanged = true;
+        }else{
+            $scope.isDota2_uidChanged = false;
+        }
+    });
+
     /**
      * 提交表单信息
      */
@@ -246,6 +259,24 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
                 alert ("不明原因导致的修改失败，请联系管理员");
             }
         });
+
+        if($scope.isDota2_uidChanged == true){
+            //如果dota2_uid发生了改变，则提交的时候，需要更新用户的游戏数据
+            var deferred = $q.defer();
+            $http({
+                url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
+                method: 'POST',
+                dataType: 'json',
+                data:20
+            }).success(function (data){
+                deferred.resolve(data);
+            }).error(function (reason){
+                deferred.reject(reason);
+            }).then(function (httpCont){
+                console.log(httpCont);
+            });
+        }
+
     };
 
     $scope.UploadBtnContent = '提交';
