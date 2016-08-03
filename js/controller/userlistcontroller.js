@@ -1,4 +1,4 @@
-app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
+app.controller('userlistController',function ($scope,$rootScope,$http,$q){
 
     /*****初始化******/
     $scope.userListDataArr = [];
@@ -17,15 +17,26 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
     var timing = Math.round(new Date().getTime()/1000);
     alterOnlineStatus(1);
     /******************/
-
-
-    $.ajax({
+    var deferred = $q.defer();
+    var promise = $http({
         url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
+        method: 'POST',
+        dataType: 'json',
+        data:20
+    }).success(function (data){
+        $scope.maskVis = 0;
+        deferred.resolve(data);
+        console.log(data);
+    }).error(function (reason){
+        deferred.reject(reason);
+    }).then(function (httpCont){
+        console.log(httpCont);
+    });
+
+    /*$.ajax({
         type:'POST',
-        data:{
-            "dota2uid":"252556081",
-            "amount":"25"
-        },
+        async:true,
+        url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
         success: function (data){
             console.log(data);
         },
@@ -33,9 +44,8 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$timeout){
             alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
         },
         complete: function (){
-            $scope.maskVis = 0;
         }
-    });
+    });*/
 
 
     /*$scope.abc = {

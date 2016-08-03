@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-//header('Content-type: application/json');
+header('Content-type: application/json');
 
 $content = $_GET["content"];
 $startnum = $_GET["startnum"];

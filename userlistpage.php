@@ -74,6 +74,7 @@ include("library/xwFE-0.0.1/FEM.php");
             <h3 class="sub-header">
               <img class="img-rounded" width="32" height="32" style="margin-top:-6px;margin-right:-3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
               Dota2 - 开放组队的玩家
+              <i class="iconfont icon-alert" title="场均是指近20场比赛的平均值"></i>
               <!--<a class="btn btn-primary aaaa" role="button" ng-click="loaduserlist()" style="margin-top:-6px"><span class="glyphicon glyphicon-refresh"></span>刷新列表</a>-->
             </h3>
             <div class="table-responsive" style="position:relative">
@@ -90,7 +91,7 @@ include("library/xwFE-0.0.1/FEM.php");
                   <!--<th width="10%">性别</th>
                   <th>组队次数</th>-->
                   <th>场均参战率</th>
-                  <th>场均伤害</th>
+                  <th>场均输出<i class="iconfont icon-alert" title="输出是指造成的英雄伤害和建筑伤害之和" style="font-size:14px"></i></th>
                   <th>场均KDA</th>
                   <th>评分</th>
                 </tr>
