@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-08-03.txt" afterPath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-08-03.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/info_SettingController.js" afterPath="$PROJECT_DIR$/js/controller/info_SettingController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/userlistcontroller.js" afterPath="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personpage.php" afterPath="$PROJECT_DIR$/personpage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userlistpage.php" afterPath="$PROJECT_DIR$/userlistpage.php" />
     </list>
     <ignored path="www.iws" />
@@ -38,60 +36,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/userlistpage.php">
+      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/personpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1470234264785" expanded="true" signature="6610:6677" placeholder="SELECT uid F... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userlistcontroller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="318">
+              <caret line="142" column="25" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="infosetting_action.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php">
+      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-              <folding>
-                <marker date="1469021335885" expanded="true" signature="1523:1791" placeholder="UPDATE users... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info_SettingController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="260" column="11" selection-start-line="260" selection-start-column="11" selection-end-line="260" selection-end-column="11" />
+            <state relative-caret-position="430">
+              <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info_settingpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/info_settingpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
-              <folding>
-                <marker date="1470233553739" expanded="true" signature="1288:1326" placeholder="SELECT * FRO... users" />
-                <marker date="1470233553739" expanded="true" signature="9882:9934" placeholder="SELECT REGIO... region" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +109,6 @@
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
-        <option value="$PROJECT_DIR$/personpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/heros.json" />
         <option value="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/test.php" />
@@ -171,6 +130,7 @@
         <option value="$PROJECT_DIR$/info_settingpage.php" />
         <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
         <option value="$PROJECT_DIR$/userlistpage.php" />
+        <option value="$PROJECT_DIR$/personpage.php" />
       </list>
     </option>
   </component>
@@ -859,7 +819,7 @@
       <workItem from="1470099369862" duration="25055000" />
       <workItem from="1470142860429" duration="9536000" />
       <workItem from="1470185616079" duration="22970000" />
-      <workItem from="1470228919077" duration="3771000" />
+      <workItem from="1470228919077" duration="5127000" />
     </task>
     <task id="LOCAL-00023" summary="fixed some bugs in search.modal i will fixed more, today afternoon.">
       <created>1466134832115</created>
@@ -1208,10 +1168,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1448603000" />
+    <option name="totallyTimeSpent" value="1449959000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1287,13 +1247,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/service/checkStatus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/service/countLiveness.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -1406,24 +1359,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="129" column="26" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="274" column="55" selection-start-line="274" selection-start-column="55" selection-end-line="274" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1621,13 +1560,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info_settingpage.php">
+    <entry file="file://$PROJECT_DIR$/userlistpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
+        <state relative-caret-position="422">
+          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
           <folding>
-            <marker date="1470233553739" expanded="true" signature="1288:1326" placeholder="SELECT * FRO... users" />
-            <marker date="1470233553739" expanded="true" signature="9882:9934" placeholder="SELECT REGIO... region" />
+            <element signature="n#style#0;n#i#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1470234484974" expanded="true" signature="6363:6430" placeholder="SELECT uid F... users" />
           </folding>
         </state>
       </provider>
@@ -1637,17 +1576,6 @@
         <state relative-caret-position="96">
           <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userlistpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1470234264785" expanded="true" signature="6610:6677" placeholder="SELECT uid F... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1665,6 +1593,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="260" column="11" selection-start-line="260" selection-start-column="11" selection-end-line="260" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info_settingpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
+          <folding>
+            <marker date="1470233553739" expanded="true" signature="1288:1326" placeholder="SELECT * FRO... users" />
+            <marker date="1470233553739" expanded="true" signature="9882:9934" placeholder="SELECT REGIO... region" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/closepage_updatedata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <marker date="1468742792046" expanded="true" signature="349:406" placeholder="UPDATE users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="142" column="25" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
           <folding />
         </state>
       </provider>

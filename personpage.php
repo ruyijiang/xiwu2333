@@ -40,14 +40,6 @@ include("library/xwFE-0.0.1/FEM.php");
                     </td>
                 </tr>
                 <tr>
-                    <td><i class="iconfont icon-shujufenxi"></i></td>
-                    <td>天梯：</td>
-                    <td>
-                        <span ng-if="Data.ladderscore!=='' && UserData.ladderscore!=='0'">{{UserData.ladderscore}}</span>
-                        <span ng-if="UserData.ladderscore=='' || UserData.ladderscore=='0'">保密</span>
-                    </td>
-                </tr>
-                <tr>
                     <td><i class="iconfont icon-score"></i></td>
                     <td>评分：</td>
                     <td>
@@ -118,16 +110,6 @@ include("library/xwFE-0.0.1/FEM.php");
 
             <div class="article-sheet form-inline" style="margin-top:15px;" ng-show="TabShowPage == 2">
                 <a ng-if="UidEqu==true" class="btn btn-danger form-group" role="button" style="padding-left:35px;padding-right:45px;" ui-sref="writeblog"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
-                <!--<form class="form-group" ng-submit="search_inarticle()">
-                    <div class="input-group-container">
-                        <div class="input-group">
-                            <input type="search" class="form-control" placeholder="搜索文章" style="z-index:0;width:260px" ng-model="search_in_blog_content">
-                              <span class="input-group-btn">
-                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                              </span>
-                        </div>
-                    </div>
-                </form>-->
                 <div class="dropdown form-group" ng-if="UidEqu==true">
                     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                         每页显示
@@ -157,9 +139,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
                 <div ng-if="UserData.gender == '0' && ArticleDataArr.length < 1 && ArticleStatus==undefined">他还没有发表过文章...</div>
                 <div ng-if="UserData.gender == '1' && ArticleDataArr.length < 1 && ArticleStatus==undefined">她还没有发表过文章...</div>
-                <!--<div ng-if="UserData.gender == '0' && ArticleStatus == false">没有找到他写的，和"{{search_in_blog_content_showtouser}}"相关的文章</div>
-                <div ng-if="UserData.gender == '1' && ArticleStatus == false">没有找到她写的，和"{{search_in_blog_content_showtouser}}"相关的文章</div>-->
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center" ng-if="ArticleDataArr.length >= 1 && ArticleStatus!==undefined">
                     <nav>
                         <ul class="pagination">
                             <li ng-if="ListActive!==1">
