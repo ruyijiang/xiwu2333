@@ -250,6 +250,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
             success: function (data){
                 data = welcomejsonstring(data);
 
+
                 if(data == 1 && $scope.isDota2_uidChanged !== true){
                     //没有修改dota2数字id
                     $scope.dialog={
@@ -265,6 +266,11 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
 
                 }else if(data == 1 && $scope.isDota2_uidChanged == true){
                     //修改了dota2数字id
+                    $scope.closeThisDialog = function (){
+                        $scope.recordPlayerInfo.open = false;
+                        window.location.reload();
+                    };
+
                     $scope.recordPlayerInfoComplete = false;
                     $scope.recordPlayerInfoError = false;
 
@@ -310,7 +316,6 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
                                 $scope.recordPlayerInfoComplete = true;
                                 $scope.recordedPlayerInfo = httpCont.data;
                             },2700);
-                            window.location.reload();
                         }else{
                             $scope.recordPlayerInfo.title = "收录失败";
                             $scope.RecordProcession = 100;

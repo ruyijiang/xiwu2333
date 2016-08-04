@@ -297,7 +297,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="progress-bar" ng-class="{'progress-bar-success':recordPlayerInfoComplete,'progress-bar-danger':recordPlayerInfoError}" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: {{RecordProcession}}%;">
                 </div>
             </div>
-            <button ng-if="recordPlayerInfoError || recordPlayerInfoComplete" class="btn btn-primary center-block" role="button" ng-click="recordPlayerInfo.open = false">知道了</button>
+            <button ng-if="recordPlayerInfoError || recordPlayerInfoComplete" class="btn btn-primary center-block" role="button" ng-click="closeThisDialog()">知道了</button>
         </div>
     </dialog>
 

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info_settingpage.php" afterPath="$PROJECT_DIR$/info_settingpage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/info_SettingController.js" afterPath="$PROJECT_DIR$/js/controller/info_SettingController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +35,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="userlistcontroller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userlistpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="-262">
+              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
               <folding>
                 <marker date="1470270873589" expanded="true" signature="6363:6430" ph="SELECT uid F... users" />
               </folding>
@@ -52,13 +60,12 @@
       <file leaf-file-name="info_settingpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info_settingpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="296" column="99" selection-start-line="296" selection-start-column="99" selection-end-line="296" selection-end-column="99" />
+            <state relative-caret-position="196">
+              <caret line="293" column="58" selection-start-line="293" selection-start-column="58" selection-end-line="293" selection-end-column="58" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
-                <marker date="1470281276430" expanded="true" signature="1288:1326" ph="SELECT * FRO... users" />
-                <marker date="1470281276430" expanded="true" signature="9882:9934" ph="SELECT REGIO... region" />
+                <marker date="1470285825042" expanded="true" signature="1288:1326" ph="SELECT * FRO... users" />
+                <marker date="1470285825042" expanded="true" signature="9882:9934" ph="SELECT REGIO... region" />
               </folding>
             </state>
           </provider>
@@ -67,8 +74,8 @@
       <file leaf-file-name="info_SettingController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="311" column="36" selection-start-line="311" selection-start-column="36" selection-end-line="311" selection-end-column="36" />
+            <state relative-caret-position="240">
+              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -839,14 +846,7 @@
       <workItem from="1470142860429" duration="9536000" />
       <workItem from="1470185616079" duration="22970000" />
       <workItem from="1470228919077" duration="5127000" />
-      <workItem from="1470270911578" duration="9885000" />
-    </task>
-    <task id="LOCAL-00023" summary="fixed some bugs in search.modal i will fixed more, today afternoon.">
-      <created>1466134832115</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1466134832115</updated>
+      <workItem from="1470270911578" duration="12450000" />
     </task>
     <task id="LOCAL-00024" summary="ABOUT finished search.modal,but there should be some bugs,i will fixed them ,after i complish personal.modal and home.modal,bless me quick!">
       <created>1466139949534</created>
@@ -1184,11 +1184,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469773125612</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="about finish info_setting.php">
+      <created>1470281639067</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1470281639069</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1459844000" />
+    <option name="totallyTimeSpent" value="1462409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1233,7 +1240,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finish pagination in search.modal" />
     <MESSAGE value="finish skip in search.modal | i need to resolve pagination." />
     <MESSAGE value="About finish modifyArticle,but i think there were bugs.fixed it later." />
     <MESSAGE value="finish learning angular validation,and use it strongly." />
@@ -1258,7 +1264,8 @@
     <MESSAGE value="add some" />
     <MESSAGE value="fuck valve and fuck myself" />
     <MESSAGE value="coded some" />
-    <option name="LAST_COMMIT_MESSAGE" value="coded some" />
+    <MESSAGE value="about finish info_setting.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="about finish info_setting.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1562,14 +1569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/closepage_updatedata.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -1619,10 +1618,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/userlistpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="-262">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
           <folding>
             <marker date="1470270873589" expanded="true" signature="6363:6430" ph="SELECT uid F... users" />
           </folding>
@@ -1631,21 +1638,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/info_settingpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="296" column="99" selection-start-line="296" selection-start-column="99" selection-end-line="296" selection-end-column="99" />
+        <state relative-caret-position="196">
+          <caret line="293" column="58" selection-start-line="293" selection-start-column="58" selection-end-line="293" selection-end-column="58" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1470281276430" expanded="true" signature="1288:1326" ph="SELECT * FRO... users" />
-            <marker date="1470281276430" expanded="true" signature="9882:9934" ph="SELECT REGIO... region" />
+            <marker date="1470285825042" expanded="true" signature="1288:1326" ph="SELECT * FRO... users" />
+            <marker date="1470285825042" expanded="true" signature="9882:9934" ph="SELECT REGIO... region" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="311" column="36" selection-start-line="311" selection-start-column="36" selection-end-line="311" selection-end-column="36" />
+        <state relative-caret-position="240">
+          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
           <folding />
         </state>
       </provider>
