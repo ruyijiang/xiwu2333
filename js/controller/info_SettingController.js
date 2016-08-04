@@ -198,7 +198,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
      */
     var OldDota2_uid = $scope.UserInfoData.dota2_uid;
     $scope.$watch('UserInfoData.dota2_uid',function (newVal,oldVal){
-        if(newVal !== oldVal && newVal !== OldDota2_uid){
+        if(newVal !== oldVal && newVal !== OldDota2_uid && newVal!==""){
             $scope.isDota2_uidChanged = true;
         }else{
             $scope.isDota2_uidChanged = false;
@@ -268,7 +268,9 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
                     //修改了dota2数字id
                     $scope.closeThisDialog = function (){
                         $scope.recordPlayerInfo.open = false;
-                        window.location.reload();
+                        if($scope.recordPlayerInfoComplete){
+                            window.location.reload();
+                        }
                     };
 
                     $scope.recordPlayerInfoComplete = false;

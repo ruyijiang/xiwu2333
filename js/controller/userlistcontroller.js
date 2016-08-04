@@ -62,9 +62,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
         $scope.changeShowPage(1);
     };
 
-
-
-
     /********分页组件初始化******/
     var num_onepage = 15;//每页显示条数
     $scope.ListActive = 1;//class为active的分页按钮位置代码
@@ -171,14 +168,14 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
             tooltip : {
                 trigger: 'axis',
                 axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                    type : 'line'        // 默认为直线，可选为：'line' | 'shadow'
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
                 }
             },
             grid: {
                 left: '0%',
                 right: '0%',
                 bottom: '5%',
-                top:"15%",
+                top:"10%",
                 containLabel: true
             },
             xAxis : [
@@ -194,9 +191,10 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
             ],
             series : [
                 {
+                    name:'玩家数量',
                     type:'bar',
-                    data:[$scope.UserDataMostRegion.MostRegion_No1Count*10, $scope.UserDataMostRegion.MostRegion_No2Count*10, $scope.UserDataMostRegion.MostRegion_No3Count*10]
-                },
+                    data:[$scope.UserDataMostRegion.MostRegion_No1Count, $scope.UserDataMostRegion.MostRegion_No2Count, $scope.UserDataMostRegion.MostRegion_No3Count]
+                }
             ]
         };
         
@@ -213,45 +211,9 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
                 }
             ],
         };
-
-/*var myChart_online = echarts.init(document.getElementById('user-online'));
-        option3 = {
-            tooltip: {
-                trigger: 'axis'
-            },
-            grid: {
-                left: '1%',
-                right: '10%',
-                bottom: '5%',
-                top: '15%',
-                containLabel: true
-            },
-            toolbox: {
-                feature: {
-                    saveAsImage: {}
-                }
-            },
-            xAxis: {
-                type: 'category',
-                boundaryGap: false,
-                data: ['14:00','15:00','16:00','17:00','17:51']
-            },
-            yAxis: {
-                type: 'value'
-            },
-            series: [
-                {
-                    name:'今天',
-                    type:'line',
-                    stack: '总量',
-                    data:[75,120, 132, 101, $scope.UserDataNowOnline.NowOnlineCount]
-                }
-            ]
-        };*/
         //实例echart
         myChart_most.setOption(option1);
         myChart_ratio.setOption(option2);
-        //myChart_online.setOption(option3);
     };
 
 

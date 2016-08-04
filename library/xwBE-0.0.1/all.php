@@ -569,11 +569,11 @@ class UserData{
 
     public function getHighestLocation(){
         require ("connectDB.php");
-        $sql = "select count(1),city from users group by city order by count(1) desc limit 0,3";
+        $sql = "select count(1),province from users group by province order by count(1) desc limit 0,3";
         $qry = $db->query($sql);
         while ($row = $qry->fetch_assoc()){
             $result_count = $row["count(1)"];
-            $result_region = $row["city"];
+            $result_region = $row["province"];
             $a = new interfaceResponse();
             echo $a-> chartDataRespond(1,$result_region,$result_count);
         }

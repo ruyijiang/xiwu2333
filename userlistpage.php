@@ -40,26 +40,26 @@ include("library/xwFE-0.0.1/FEM.php");
               <button type="button" ng-class="{active:UserListSearchConfig.server == 'quanwang'}" ng-click="MiniNav('quanwang')" class="btn btn-default">全网</button>
             </div>
           </ul><hr>
-            <ul class="nav nav-sidebar">
+            <!--<ul class="nav nav-sidebar">
                 <li class="panel-heading">按水平等级：</li>
                 <div class="btn-group btn-group-sm center-block" style="width:90%">
                   <button type="button" ng-class="{active:UserListSearchConfig.skillLevel == 'Normal'}" ng-click="MiniNav('Normal')" class="btn btn-default">Normal</button>
                   <button type="button" ng-class="{active:UserListSearchConfig.skillLevel == 'High'}" ng-click="MiniNav('High')" class="btn btn-default">High</button>
                   <button type="button" ng-class="{active:UserListSearchConfig.skillLevel == 'Very High'}" ng-click="MiniNav('Very High')" class="btn btn-default">Very High</button>
                 </div>
-            </ul><hr>
+            </ul><hr>-->
         </div>
         <div>
           <div class="col-lg-7 col-md-7 col-sm-12 col-lg-offset-2 col-sm-offset-2 main">
             <h3 class="page-header">网站统计</h3>
 
             <div class="row placeholders">
-              <div class="col-lg-4 col-sm-6 col-xs-12 placeholder">
+              <div class="col-lg-6 col-sm-6 col-xs-12">
                 <div class="userlist-chart center-block" id="user-most"></div>
                 <h4><strong>玩家最多</strong></h4>
                 <span class="text-muted">{{UserDataMostRegion.MostRegion_No1}}</span>
               </div>
-              <div class="col-lg-4 col-sm-6 col-xs-12 placeholder">
+              <div class="col-lg-6 col-sm-6 col-xs-12">
                 <div class="userlist-chart center-block" id="user-ratio"></div>
                 <h4><strong>男女比例</strong></h4>
                 <span class="text-muted">{{(UserDataSexRate.MaleRate.toFixed(2))*100}}% - {{(UserDataSexRate.FemaleRate.toFixed(2))*100}}%</span>
@@ -98,12 +98,22 @@ include("library/xwFE-0.0.1/FEM.php");
                 <tr ng-repeat="ud in userListDataArr">
                   <td>{{ud.dota2_uid}}</td>
                   <td class="text-center"><a href="/#/person?uid={{ud.uid}}">{{ud.name}}</a></td>
-                  <th>{{ud.participation}}</th>
-                  <td>{{ud.damage}}</td>
-                  <td>{{ud.kda}}</td>
                   <td>
-                    <span ng-if="!ud.skilledposition">暂无</span>
-                    <span ng-if="ud.skilledposition">{{ud.score}}</span>
+                    <span ng-if="!ud.participationrate">暂无</span>
+                    <span ng-if="ud.participationrate">{{ud.participationrate}}</span>
+                  </td>
+                  <td>
+                    <span ng-if="!ud.damage">暂无</span>
+                    <span ng-if="ud.damage">{{ud.damage}}</span>
+                  </td>
+                  <td>
+                    <span ng-if="!ud.kda">暂无</span>
+                    <span ng-if="ud.kda">{{ud.kda}}</span>
+                  </td>
+                  </td>
+                  <td>
+                    <span ng-if="!ud.score">暂无</span>
+                    <span ng-if="ud.score">{{ud.score}}</span>
                   </td>
                 </tr>
                 <!--<tr><td>252556081</td><td><a href="">攻略写手-总导演</a></td><td>男</td><td>1号位</td><td>32.3%</td><td>4.2</td><td>96</td></tr>-->

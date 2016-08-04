@@ -31,7 +31,7 @@ require("../all.php");
             $no1 = true;
         }
         if(isset($server) && !empty($server)){
-            @$no1==true?$sql_add.=" AND "."server LIKE '%$server%'":$sql_add="server_bigarea LIKE '%$server%'";//如果第一步做了，那么加个"AND"；否则什么都不干
+            @$no1==true?$sql_add.=" AND "."server_bigarea = '$server'":$sql_add="server_bigarea  = '$server'";//如果第一步做了，那么加个"AND"；否则什么都不干
             $no2 = true;
         }
         if(isset($level) && !empty($level)){
@@ -61,11 +61,11 @@ require("../all.php");
             $dota2_uid = $row["dota2_uid"];
             $name = $row["name"];
             $gender = $row["gender"];
-            $skilledposition = $row["skilledposition"];
             $damage = $row["damage"];
+            $participationrate = $row["participationrate"];
             $kda = $row["kda"];
             $score = $row["score"];
-            $dataArr = array ('uid'=>$uid,'dota2_uid'=>$dota2_uid,'name'=>$name,'gender'=>$gender,'skilledposition'=>$skilledposition,'damage'=>$damage,'kda'=>$kda,'score'=>$score);
+            $dataArr = array ('uid'=>$uid,'dota2_uid'=>$dota2_uid,'name'=>$name,'gender'=>$gender,'damage'=>$damage,'kda'=>$kda,'participationrate'=>$participationrate,'score'=>$score);
 
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
