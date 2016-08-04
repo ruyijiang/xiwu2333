@@ -286,8 +286,12 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 trigger: "axis",
                 triggerOn:"mousemove",
             },
-            toolbox:{
-                show : false,
+            grid: {
+                left: '1%',
+                right: '2%',
+                bottom: '6%',
+                top:"14%",
+                containLabel: true
             },
             calculable: true,
             xAxis: [

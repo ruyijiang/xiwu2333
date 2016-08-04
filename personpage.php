@@ -139,7 +139,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
                 <div ng-if="UserData.gender == '0' && ArticleDataArr.length < 1 && ArticleStatus==undefined">他还没有发表过文章...</div>
                 <div ng-if="UserData.gender == '1' && ArticleDataArr.length < 1 && ArticleStatus==undefined">她还没有发表过文章...</div>
-                <div class="col-lg-12 text-center" ng-if="ArticleDataArr.length >= 1 && ArticleStatus!==undefined">
+                <div class="col-lg-12 text-center" ng-if="ArticleDataArr.length >= 1">
                     <nav>
                         <ul class="pagination">
                             <li ng-if="ListActive!==1">
