@@ -13,6 +13,7 @@ require("../Regulars.php");
     @$name = $_POST["name"];
     $gender = $_POST["gender"];
     $server = $_POST["server"];
+    $dota2_uid = $_POST["dota2_uid"];
     $country = $_POST["country"];
     $province = $_POST["province"];
     $city = $_POST["city"];
@@ -37,7 +38,7 @@ require("../Regulars.php");
         //------------------------------------------------------------------------------------------------------------->出口1：有未填写项
     }else{
         //这里需要做表单验证
-
+        
 
         if(1==1){
             //这里对server进行抽取和判断
@@ -56,7 +57,7 @@ require("../Regulars.php");
                 $server_bigarea = "";
             }
 
-            $sql = "UPDATE users SET name='$name',gender='$gender',server='$server',server_bigarea='$server_bigarea',country='$country',province='$province',city='$city',tel='$tel',qq='$qq',weixin='$weixin',weibo='$weibo',liveplain='$liveplain' WHERE uid = '$uid' AND password='$password' ";
+            $sql = "UPDATE users SET name='$name',gender='$gender',server='$server',dota2_uid='$dota2_uid',server_bigarea='$server_bigarea',country='$country',province='$province',city='$city',tel='$tel',qq='$qq',weixin='$weixin',weibo='$weibo',liveplain='$liveplain' WHERE uid = '$uid' AND password='$password' ";
             $qry = $db->query($sql);
             if($qry){
                 $status = 1;

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-08-03.txt" afterPath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-08-03.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personpage.php" afterPath="$PROJECT_DIR$/personpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userlistpage.php" afterPath="$PROJECT_DIR$/userlistpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info_settingpage.php" afterPath="$PROJECT_DIR$/info_settingpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/info_SettingController.js" afterPath="$PROJECT_DIR$/js/controller/info_SettingController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,21 +37,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/personpage.php">
+      <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userlistpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="142" column="25" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="362">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+              <folding>
+                <marker date="1470270873589" expanded="true" signature="6363:6430" ph="SELECT uid F... users" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <file leaf-file-name="info_settingpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info_settingpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
+            <state relative-caret-position="268">
+              <caret line="296" column="99" selection-start-line="296" selection-start-column="99" selection-end-line="296" selection-end-column="99" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
+                <marker date="1470281276430" expanded="true" signature="1288:1326" ph="SELECT * FRO... users" />
+                <marker date="1470281276430" expanded="true" signature="9882:9934" ph="SELECT REGIO... region" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info_SettingController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="311" column="36" selection-start-line="311" selection-start-column="36" selection-end-line="311" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -83,7 +101,6 @@
         <option value="$PROJECT_DIR$/certification_settingpage.php" />
         <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php" />
         <option value="$PROJECT_DIR$/mainpage.php" />
         <option value="$PROJECT_DIR$/blogpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php" />
@@ -127,17 +144,19 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/vendor/D2I_字段说明.md" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php" />
         <option value="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
-        <option value="$PROJECT_DIR$/info_settingpage.php" />
-        <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
         <option value="$PROJECT_DIR$/userlistpage.php" />
         <option value="$PROJECT_DIR$/personpage.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php" />
+        <option value="$PROJECT_DIR$/info_settingpage.php" />
+        <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -146,8 +165,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -190,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -364,7 +384,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -820,6 +839,7 @@
       <workItem from="1470142860429" duration="9536000" />
       <workItem from="1470185616079" duration="22970000" />
       <workItem from="1470228919077" duration="5127000" />
+      <workItem from="1470270911578" duration="9885000" />
     </task>
     <task id="LOCAL-00023" summary="fixed some bugs in search.modal i will fixed more, today afternoon.">
       <created>1466134832115</created>
@@ -1168,17 +1188,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1449959000" />
+    <option name="totallyTimeSpent" value="1459844000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21321961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41339868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49183005" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1192,7 +1213,6 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41339868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1247,13 +1267,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/service/countLiveness.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/vendor/kronusme/dota2-api/db_latest.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1408,13 +1421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/personalinfo_export.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -1499,7 +1505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,7 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-456">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1554,19 +1558,6 @@
           <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="false" />
-            <marker date="1470228791551" expanded="true" signature="391:437" placeholder="SELECT dota2... users" />
-            <marker date="1470228791551" expanded="true" signature="4757:4883" placeholder="UPDATE users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userlistpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1470234484974" expanded="true" signature="6363:6430" placeholder="SELECT uid F... users" />
           </folding>
         </state>
       </provider>
@@ -1579,57 +1570,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/closepage_updatedata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="133" column="29" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-410">
+          <caret line="193" column="13" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="600">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding>
-            <marker date="1469021335885" expanded="true" signature="1523:1791" placeholder="UPDATE users... " />
+            <marker date="1470276023066" expanded="true" signature="1569:1860" ph="UPDATE users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="20" column="82" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlistpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <marker date="1470270873589" expanded="true" signature="6363:6430" ph="SELECT uid F... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info_settingpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="296" column="99" selection-start-line="296" selection-start-column="99" selection-end-line="296" selection-end-column="99" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#dialog#2;n#div#0;n#!!top" expanded="true" />
+            <marker date="1470281276430" expanded="true" signature="1288:1326" ph="SELECT * FRO... users" />
+            <marker date="1470281276430" expanded="true" signature="9882:9934" ph="SELECT REGIO... region" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="260" column="11" selection-start-line="260" selection-start-column="11" selection-end-line="260" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info_settingpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
-          <folding>
-            <marker date="1470233553739" expanded="true" signature="1288:1326" placeholder="SELECT * FRO... users" />
-            <marker date="1470233553739" expanded="true" signature="9882:9934" placeholder="SELECT REGIO... region" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/closepage_updatedata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <marker date="1468742792046" expanded="true" signature="349:406" placeholder="UPDATE users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="142" column="25" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
+        <state relative-caret-position="352">
+          <caret line="311" column="36" selection-start-line="311" selection-start-column="36" selection-end-line="311" selection-end-column="36" />
           <folding />
         </state>
       </provider>

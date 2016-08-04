@@ -285,7 +285,22 @@ include("library/xwFE-0.0.1/FEM.php");
             </form>
         </div>
     </dialog>
+
+    <!--上传头像真正上传到的地址-->
     <iframe id="uploadAvatar" name="uploadAvatar" style="display:none" src="library/xwBE-0.0.1/php/uploadavatar_action.php"></iframe>
+
+    <!--收录数据-->
+    <dialog ng-if="recordPlayerInfo.open" modal fixed>
+        <div dialog-title>{{recordPlayerInfo.title}}</div>
+        <div dialog-content>
+            <div class="progress progress-striped active" style="width:400px;">
+                <div class="progress-bar" ng-class="{'progress-bar-success':recordPlayerInfoComplete,'progress-bar-danger':recordPlayerInfoError}" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: {{RecordProcession}}%;">
+                </div>
+            </div>
+            <button ng-if="recordPlayerInfoError || recordPlayerInfoComplete" class="btn btn-primary center-block" role="button" ng-click="recordPlayerInfo.open = false">知道了</button>
+        </div>
+    </dialog>
+
     <hr>
     <? echo $footer;?>
 

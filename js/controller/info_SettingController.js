@@ -1,7 +1,7 @@
 /**
  * Created by 马子航 on 2016/5/16.
  */
-app.controller('info_SettingController',function ($scope,$rootScope,$http,$window,$timeout){
+app.controller('info_SettingController',function ($scope,$rootScope,$http,$window,$timeout,$q,$interval){
 
 
     $scope.CityNameShowStatus = null;
@@ -9,6 +9,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
     $scope.CityListArr = [];
     $rootScope.NowPageTitle = "资料设置 - 喜屋";
     timing = Math.round(new Date().getTime()/1000);
+    $scope.RecordProcession = 0.25;
 
 
     $scope.ServerArr = [];
@@ -207,6 +208,10 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
     /**
      * 提交表单信息
      */
+    /*$scope.recordPlayerInfo = {
+        open: true,
+        title: "正在收录游戏数据，请勿关闭或刷新页面"
+    };*/
     $scope.submitData = function (){
 
         //把所有UserServer域下的等于1的值加进数组
@@ -243,40 +248,90 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
             async:false,
             data: $scope.UserInfoData,
             success: function (data){
-                data = welcomejsonstring(data);//在utills/welcomejsonstring.js中定义
-                if(data == 1){
+                data = welcomejsonstring(data);
+
+                if(data == 1 && $scope.isDota2_uidChanged !== true){
+                    //没有修改dota2数字id
                     $scope.dialog={
                         open: true,
                         content : "保存成功"
                     };
+
+                    $timeout(function (){
+                        window.location.reload();
+                    },700);
+
+                    $scope.ServerStr = [];
+
+                }else if(data == 1 && $scope.isDota2_uidChanged == true){
+                    //修改了dota2数字id
+                    $scope.recordPlayerInfoComplete = false;
+                    $scope.recordPlayerInfoError = false;
+
+                    //弹出进度条
+                    $scope.recordPlayerInfo = {
+                        open: true,
+                        title: "正在收录游戏数据，请勿关闭或刷新页面"
+                    };
+
+                    //开始进度条的动画效果
+                    $scope.RecordProcession = 0;
+                    var intervalTimer = $interval(function (){
+                        if($scope.RecordProcession >= 100){
+                            //请求失败了
+                            $interval.cancel(intervalTimer);
+                            $scope.recordPlayerInfoError = true;
+                            $scope.recordPlayerInfo.title = "连接超时";
+                        }else{
+                            $scope.RecordProcession += 0.0825;
+                        }
+                    },75);
+
+                    //收录用户Dota2信息
+                    var deferred = $q.defer();
+                    $http({
+                        url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
+                        method: 'POST',
+                        dataType: 'json',
+                        data:20
+                    }).success(function (data){
+                        deferred.resolve(data);
+                    }).error(function (reason){
+                        $scope.recordPlayerInfo.title = "不明原因导致的收录失败";
+                        $scope.RecordProcession = 100;
+                        $scope.recordPlayerInfoError = true;
+                        deferred.reject(reason);
+                    }).then(function (httpCont){
+                        $interval.cancel(intervalTimer);//停止秒表
+                        if(httpCont.data.statuscode == 1 && httpCont.data.average_dr !== "0%" && httpCont.data.average_pr !== "0%" && httpCont.data.average_kda !== "0.0"){
+                            $timeout(function (){
+                                $scope.recordPlayerInfo.title = "收录完成";
+                                $scope.RecordProcession = 100;
+                                $scope.recordPlayerInfoComplete = true;
+                                $scope.recordedPlayerInfo = httpCont.data;
+                            },2700);
+                            window.location.reload();
+                        }else{
+                            $scope.recordPlayerInfo.title = "收录失败";
+                            $scope.RecordProcession = 100;
+                            $scope.recordPlayerInfoError = true;
+                        }
+                    });
+
+                }else if(data !== 1){
+                    $scope.dialog={
+                        open: true,
+                        content : "信息保存失败，请联系管理员"
+                    };
+                    $timeout(function (){
+                        $scope.dialog.open = false;
+                    },700);
                 }
-                $timeout(function (){
-                    window.location.reload();
-                },700);
-                $scope.ServerStr = [];
-            },
+            },//End of success
             error: function (){
                 alert ("不明原因导致的修改失败，请联系管理员");
             }
         });
-
-        if($scope.isDota2_uidChanged == true){
-            //如果dota2_uid发生了改变，则提交的时候，需要更新用户的游戏数据
-            var deferred = $q.defer();
-            $http({
-                url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
-                method: 'POST',
-                dataType: 'json',
-                data:20
-            }).success(function (data){
-                deferred.resolve(data);
-            }).error(function (reason){
-                deferred.reject(reason);
-            }).then(function (httpCont){
-                console.log(httpCont);
-            });
-        }
-
     };
 
     $scope.UploadBtnContent = '提交';
