@@ -91,7 +91,6 @@ echo $openupalertdiv;
 <!-------------------------------------------------------------------------------------->
 <!--services-->
 <script src="js/service/checkStatus.js" type="text/javascript"></script>
-<script src="js/service/snslogin/qq.js" type="text/javascript"></script>
 <script src="js/service/countLiveness.js" type="text/javascript"></script>
 <script src="js/service/loadAndsaveHerosInfo.js" type="text/javascript"></script>
 <script src="js/service/search.js" type="text/javascript"></script>
@@ -104,7 +103,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/xiwucontroller.js"></script>
 <script  type="text/javascript" src="js/controller/maincontroller.js"></script>
 <script  type="text/javascript" src="js/controller/userlistcontroller.js"></script>
-<script  type="text/javascript" src="js/controller/roomlistcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/logincontroller.js"></script>
 <script  type="text/javascript" src="js/controller/signupcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/writeblogcontroller.js"></script>

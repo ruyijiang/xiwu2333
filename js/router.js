@@ -1,6 +1,6 @@
 
 //配置路由
-app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state("/", {
             url: "/",
@@ -48,7 +48,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/blog",
             templateUrl: "blogpage.php",
             resolve:{
-                guarder: function($location,checkStatus){
+                guarder: function($location){
                     if(!$location.search()["aid"] || $location.search()["aid"]==true ||  $location.search()["aid"]=="") $location.path("/404").replace();
                 }
 
@@ -58,7 +58,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/writeblog",
             templateUrl: "writeblogpage.php",
             resolve:{
-                guarder: function($location,checkStatus,$state){
+                guarder: function($location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
@@ -73,7 +73,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/myhome",
             templateUrl: "personpage.php",
             resolve:{
-                guarder: function($location,checkStatus,$state){
+                guarder: function($location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
@@ -88,7 +88,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/info_setting",
             templateUrl: "info_settingpage.php",
             resolve:{
-                guarder: function($location,checkStatus,$state){
+                guarder: function($location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
@@ -103,7 +103,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/m_password",
             templateUrl: "m_passwordpage.php",
             resolve:{
-                guarder: function($location,checkStatus,$state){
+                guarder: function($location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
@@ -118,7 +118,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/certification",
             templateUrl: "certification_settingpage.php",
             resolve:{
-                guarder: function($location,checkStatus,$state){
+                guarder: function($location,checkStatus){
                     var allowed = checkStatus.checkLoginStatus();
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
@@ -144,7 +144,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                         if(allowed!=="1" &&(!$location.search()["uid"] || $location.search()["uid"]==true)) $location.path("/404").replace();
                     });
                 }
-
             }
         })
         .state("search",{

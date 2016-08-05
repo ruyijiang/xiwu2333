@@ -49,7 +49,6 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
         }
     }
 
-
     /**
      * 退出登录
      */
