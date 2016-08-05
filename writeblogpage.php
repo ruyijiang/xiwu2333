@@ -12,10 +12,8 @@ include("library/xwFE-0.0.1/FEM.php");
             <input ng-model="NeedModifiedTitle" style="font-weight:500" type="text" class="form-control" id="a_title" name="title" placeholder="请输入文章标题" aria-describedby="basic-addon1" maxlength="20" autocomplete="off">
         </div>
 
-        <script id="ueditor-main" class="ueditor-main"  style="margin-top:150px;height:450px;" ng-bind-html="NeedModifiedContent|to_trusted"></script>
-        <!--<div id="ueditor-main" class="ueditor-main" style="margin-top:150px;height:350px;"></div>-->
-
-        <!--End of Ueditor-->
+        <script id="ueditor-main" class="ueditor-main"  style="margin-top:150px;height:450px;" ></script>
+        <!--ng-bind-html="NeedModifiedContent|to_trusted"-->
 
         <div class="alert alert-info clearfix" style="margin-top:-2px;">
             <small>如果文本编辑器显示异常，请刷新页面。</small>

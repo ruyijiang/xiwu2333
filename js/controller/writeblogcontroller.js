@@ -14,9 +14,14 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, ch
             url: 'library/xwBE-0.0.1/php/blogpage_export.php',
             params:{'aid':InitArticleAid}
         }).then(function (httpCont){
+
             $scope.NeedModifiedTitle = htmldecode(httpCont.data.title);
             $scope.NeedModifiedContent = htmldecode(httpCont.data.content);
-            //ueditor.setContent($scope.NeedModifiedContent);
+
+            ueditor.addListener("ready", function () {// editor准备好之后才可以使用
+                ueditor.setContent($scope.NeedModifiedContent);
+            });
+
         })
     }
     /**

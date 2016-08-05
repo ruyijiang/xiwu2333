@@ -151,6 +151,10 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/search",
             templateUrl: "search.php"
         })
+        .state("testUe",{
+            url: "/testUe",
+            templateUrl: "testUeditor.php"
+        })
         .state("404", {
             url: "/404",
             templateUrl: "404.html"

@@ -193,7 +193,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
                 {
                     name:'玩家数量',
                     type:'bar',
-                    data:[$scope.UserDataMostRegion.MostRegion_No1Count, $scope.UserDataMostRegion.MostRegion_No2Count, $scope.UserDataMostRegion.MostRegion_No3Count]
+                    data:[$scope.UserDataMostRegion.MostRegion_No1Count*10, $scope.UserDataMostRegion.MostRegion_No2Count*10, $scope.UserDataMostRegion.MostRegion_No3Count*10]
                 }
             ]
         };
