@@ -64,7 +64,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
                 alert ("注销失败，请联系管理员");
             }
         });
-    }//End of logout()
+    };//End of logout()
 
     /**
      * 开放组队的更新数据和视觉效果
@@ -135,28 +135,6 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
         }
     };
 
-    /*function checkPageLocation(){
-        var pagelocation = $location.path();
-        switch (pagelocation){
-            case "/info_setting":
-                $rootScope.SettingActivity = 1;
-                break;
-            case "/m_password":
-                $rootScope.SettingActivity = 1;
-                break;
-            case "/createroom":
-                $rootScope.MyHomeActivity = 1;
-                break;
-            case "/certification":
-                $rootScope.MyHomeActivity = 1;
-                break;
-            case "/blog":
-                $rootScope.BlogActivity = 1;
-                break;
-        }
-    }
-    checkPageLocation();*/
-
     /**
      * 获取热门搜索
      */
@@ -168,13 +146,13 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
             url: 'library/xwBE-0.0.1/php/HotSearching_Export.php',
             params:{'timing':timing}
         }).success(function (data){
-            deferred.resolve();
-        }).error(function (){
-            deferred.reject();
+            deferred.resolve(data);
+        }).error(function (reason){
+            deferred.reject(reason);
         }).then(function (httpCont){
             $scope.HotSearchingContent = httpCont.data.content
         });
-    };
+    }
     gotHotSearching();
 
 

@@ -15,7 +15,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
     $rootScope.NowPageTitle = "玩家列表 - 喜屋";
 
     var timing = Math.round(new Date().getTime()/1000);
-    alterOnlineStatus(1);
 
     /**
      * 左侧微导航的样式驱动的功能的函数
