@@ -16,37 +16,43 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
      * 初始化
      */
     $scope.SetTimeOut = null;
-    var timeout = null;
-    $("[data-toggle='tooltip']").tooltip();//开启tooltip
+    var timing = Math.round(new Date().getTime()/1000);
+    $("[data-toggle='tooltip']").tooltip();
     alterOnlineStatus(1);
     liveness.countLivenessInTimer();
 
-    window.onbeforeunload = function (){
+    window.addEventListener("beforeunload",function (){
         liveness.sendLivenessOnUnload();
         if(localStorage.OnlineStatus == '1'){
             alterOnlineStatus(0);
         }
-    };
-
-    var timing = Math.round(new Date().getTime()/1000);
-
+    });
 
     /**
      * 监听storage数据更改
      */
     if(window.addEventListener){
-        window.addEventListener("storage",handle_storage,false);
+        window.addEventListener("storage",handle_storage);
+        console.log("123");
     }else if(window.attachEvent){
         window.attachEvent("onstorage",handle_storage);
+        console.log("234");
     }else{
-        console.log("在线状态即时处理程序报错");
+        console.log("在线状态即时处理程序不被支持");
     }
 
+    var LimitationToIE = 0;//这里需要特别说明一下：
+    //在IE浏览器中，会无数次执行handle_storage()，导致浏览器消耗大量内存，从而引发系统崩溃。具体原因目前尚未
+    //清楚，估计是storage检测时出的问题，所以这里我加入了一个限制量，强制不允许多次执行。
+    //milobluebell - 2016/8/8
     function handle_storage(e){
-        if(!e){e=window.event;}
-        if(e.key == 'OnlineStatus'){
-            alterOnlineStatus(1);
+        if(LimitationToIE < 1){
+            if(!e){e=window.event;}
+            if(e.key == 'OnlineStatus'){
+                alterOnlineStatus(1);
+            }
         }
+        LimitationToIE++;
     }
 
     /**
@@ -97,7 +103,6 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
             }
         });
     };
-
 
     /**
      * 动态控制头部nav导航的样式效果
@@ -153,6 +158,5 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
         });
     }
     gotHotSearching();
-
 
 });

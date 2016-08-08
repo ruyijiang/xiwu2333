@@ -23,7 +23,7 @@ if($timing && isset($mod)){
         $qry = $db->query($sql);
         if($qry){
             $status = 1;
-            $reminder = "";
+            $reminder = "登陆成功";
             echo $a->normalrespond($status,$reminder);
         }else{
             $status = 0;

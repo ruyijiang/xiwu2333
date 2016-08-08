@@ -1,8 +1,9 @@
-app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$location,$stateParams){
+app.controller('loginController',function ($scope,$rootScope,$http,$location,$stateParams){
 
     $scope.UserName = "";
     $scope.UserPassword = "";
     $rootScope.NowPageTitle = "登陆 - 喜屋";
+
     /**
      * 提交登陆表单
      */
@@ -23,7 +24,6 @@ app.controller('loginController',function ($scope,$rootScope,$http,loginqq,$loca
             }
         })
     };
-
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(7);

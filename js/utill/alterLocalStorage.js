@@ -14,7 +14,6 @@ function alterOnlineStatus(ToNum){
         url:'../../library/xwBE-0.0.1/php/closepage_updatedata.php',
         data:{"timing":timing,"mod":ToNum},
         success: function (data){
-            console.log(data);
         }
     });//End of $.ajax()
 
