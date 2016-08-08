@@ -208,10 +208,6 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
     /**
      * 提交表单信息
      */
-    /*$scope.recordPlayerInfo = {
-        open: true,
-        title: "正在收录游戏数据，请勿关闭或刷新页面"
-    };*/
     $scope.submitData = function (){
 
         //把所有UserServer域下的等于1的值加进数组
@@ -346,7 +342,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
         $scope.UploadBtnContent = '修改成功';
         $("#uploadavatarbtn").attr("disabled","disabled");
         alert ("头像修改成功");
-        window.location.reload();
+        //window.location.reload();
     }
 
 });
