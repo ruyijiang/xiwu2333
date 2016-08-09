@@ -67,19 +67,10 @@ include("library/xwFE-0.0.1/FEM.php");
                     <td>QQ：</td>
                     <td><span>{{UserData.qq}}</span></td>
                 </tr>
-                <tr ng-if="UserData.weixin!==''">
-                    <td><i class="iconfont icon-weixin2"></i></td>
-                    <td>微信：</td>
-                    <td>
-                        <span class="glyphicon glyphicon-qrcode thisQR" style="">
-                            <img src="img/user_img/qrcode/1_1341237641.jpg" class="qrcodeimg"/>
-                        </span>
-                    </td>
-                </tr>
                 <tr ng-if="UserData.weibo!==''">
                     <td><i class="iconfont icon-weibo2"></i></td>
                     <td>微博：</td>
-                    <td><a>马子航milo</a></td>
+                    <td><a>{{UserData.weibo}}</a></td>
                 </tr>
             </table>
             <!--
