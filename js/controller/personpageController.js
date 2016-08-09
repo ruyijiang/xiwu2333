@@ -69,7 +69,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
             type:'GET',
             async: false,
-            data:{"uid":uid,"gender":gender},//lo这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
+            data:{"uid":uid},//lo这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
             success: function (data){
                 data = eval( "(" + data + ")");
                 var SArr = data.server.split(',');//SArr = [1,2,3,];

@@ -57,7 +57,7 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
                         return true;
                     },
                     error: function (){
-                        alert ("注册错误，请联系管理员");
+                        alert ("注册失败，请联系管理员");
                         return false;
                     }
                 })

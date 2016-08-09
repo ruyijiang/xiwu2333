@@ -322,7 +322,7 @@ function login($email, $password){
 /*****************************************************************************************************************************注册函数signup() | 返回值： ***/
 function signup($email, $password, $gender){
     require ("connectDB.php");
-    require ("algorithm/randUid.php");
+    require ("algorithm/RandUid.php");
 
     $useremail = $email;
     $userpassword = $password;

@@ -7,7 +7,7 @@ include("library/xwFE-0.0.1/FEM.php");
     <div class="row">
         <div class="leftpart col-lg-3 col-md-4 col-sm-4 col-xs-8">
             <div>
-                <img ng-src="{{UserData.avatar}}" class="img-responsive img-rounded" width="198" height="198"/>
+                <img ng-src="{{UserData.avatar}}" class="img-rounded" width="198" height="198"/>
                 <div>
                     <strong style="display:inline-block;font-size:18px;margin-top:15px">{{UserData.name}}</strong>
                     <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:32px;color:#346ea1" title="男"></i>
