@@ -56,8 +56,8 @@ include("library/xwFE-0.0.1/FEM.php");
 
                             <div style="display: block;margin-bottom:5px">
                                 <span style="font-size:15px;margin-right:5px">
-                                    <small style="font-weight:bold">天梯</small>
-                                    <span class="label ng-scope label-success" style="font-weight:bold;font-style:italic;font-size:12px">{{RecoUser.ladderscore}}</span>
+                                    <small style="font-weight:bold">技术级</small>
+                                    <span class="label ng-scope label-success" style="font-weight:bold;font-style:italic;font-size:12px">{{RecoUser.skilllevel}}</span>
                                 </span>
                                 <span style="font-size:15px;">
                                     <small style="font-weight:bold">评分</small>
