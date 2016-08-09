@@ -40,12 +40,13 @@ require("../all.php");
                     $city = $row["city"];
                     $uid = $row["uid"];
                     $score = $row["score"];
+                    $avatar = $row["avatar"];
                     $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid'";
                     $qry3 = $db->query($sql3);
                     $row3 = $qry3->fetch_assoc();
                     $result_callingcard = $row3["content"];
 
-                    $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
+                    $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'avatar'=>$avatar,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
 
                     foreach ( $dataArr as $key => $value ) {
                         $dataArr[$key] = urlencode ($value);
@@ -72,12 +73,13 @@ require("../all.php");
                         $city = $row["city"];
                         $uid = $row["uid"];
                         $score = $row["score"];
+                        $avatar = $row["avatar"];
                         $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid'";
                         $qry3 = $db->query($sql3);
                         $row3 = $qry3->fetch_assoc();
                         $result_callingcard = $row3["content"];
 
-                        $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
+                        $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'avatar'=>$avatar,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
 
                         foreach ( $dataArr as $key => $value ) {
                             $dataArr[$key] = urlencode ($value);
@@ -104,12 +106,13 @@ require("../all.php");
                             $city = $row["city"];
                             $uid = $row["uid"];
                             $score = $row["score"];
+                            $avatar = $row["avatar"];
                             $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid'";
                             $qry3 = $db->query($sql3);
                             $row3 = $qry3->fetch_assoc();
                             $result_callingcard = $row3["content"];
 
-                            $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
+                            $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'avatar'=>$avatar,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
 
                             foreach ( $dataArr as $key => $value ) {
                                 $dataArr[$key] = urlencode ($value);
@@ -136,12 +139,13 @@ require("../all.php");
                                 $city = $row["city"];
                                 $uid = $row["uid"];
                                 $score = $row["score"];
+                                $avatar = $row["avatar"];
                                 $sql3 = "SELECT content FROM callingcard WHERE uid = '$uid' ";
                                 $qry3 = $db->query($sql3);
                                 $row3 = $qry3->fetch_assoc();
                                 $result_callingcard = $row3["content"];
 
-                                $dataArr = array('name' => $username,'callingcardname'=>$result_callingcard, 'slogan' => $slogan, 'gender' => $gender, 'province' => $province, 'city' => $city, 'uid' => $uid, 'score' => $score);
+                                $dataArr = array('name' => $username,'callingcardname'=>$result_callingcard, 'slogan' => $slogan, 'gender' => $gender,'avatar'=>$avatar,'province' => $province, 'city' => $city, 'uid' => $uid, 'score' => $score);
 
                                 foreach ($dataArr as $key => $value) {
                                     $dataArr[$key] = urlencode($value);
@@ -168,12 +172,13 @@ require("../all.php");
                                     $city = $row["city"];
                                     $uid = $row["uid"];
                                     $score = $row["score"];
+                                    $avatar = $row["avatar"];
                                     $sql3 = "SELECT content FROM callingcard WHERE  uid = '$uid' ";
                                     $qry3 = $db->query($sql3);
                                     $row3 = $qry3->fetch_assoc();
                                     $result_callingcard = $row3["content"];
 
-                                    $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
+                                    $dataArr = array ('name'=>$username,'callingcardname'=>$result_callingcard,'slogan'=>$slogan,'gender'=>$gender,'avatar'=>$avatar,'province'=>$province,'city'=>$city,'uid'=>$uid,'score'=>$score);
 
                                     foreach ( $dataArr as $key => $value ) {
                                         $dataArr[$key] = urlencode ($value);

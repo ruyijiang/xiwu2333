@@ -69,7 +69,8 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div ng-if="priority=='user' && SearchContentReq[0].statuscode!=='0'" style="display:block;" class="col-lg-9 col-md-10 col-xs-12 search_user_container" style="font-size:16px;">
                     <div class="col-lg-12 clearfix user_conse" ng-repeat="xu in SearchContentReq" ng-if="xu.name !== undefined">
                         <div class="search_content-leftpart pull-left" style="margin-top:5px">
-                            <a href="#/person?uid={{xu.uid}}"><img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54"/></a>
+                            <a href="#/person?uid={{xu.uid}}">
+                            <img class="img-rounded" ng-src="{{xu.avatar}}" width="54"/></a>
                         </div>
                         <div class="search_content-rightpart pull-left" style="margin-left:10px">
                             <div class="search_content-toppart">
