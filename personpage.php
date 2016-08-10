@@ -40,7 +40,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </td>
                 </tr>
                 <tr>
-                    <td><i class="iconfont icon-score"></i></td>
+                    <td><i class="iconfont icon-ladder"></i></td>
                     <td>技术级：</td>
                     <td>
                         <span ng-if="UserData.skilllevel!=='' && UserData.skilllevel!==null" class="label label-success" style="font-weight:bold;font-style:italic">{{UserData.skilllevel}}</span>
