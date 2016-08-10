@@ -3,7 +3,7 @@ require("library/xwBE-0.0.1/connectDB.php");
 require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 ?>
-<!--喜屋是milo独自开发的一款，游戏玩家的社区类型网页应用-->
+<!--欢迎来到喜屋-->
 <!Doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp" ng-controller="xiwucontroller">
 <head>
@@ -19,19 +19,20 @@ include("library/xwFE-0.0.1/FEM.php");
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-control" content="no-cache">
 	<meta http-equiv="Cache" content="no-cache">
-	<!--<meta http-equiv="Pragma" content="no-cache">-->
 	<title>{{NowPageTitle}}</title>
+
 	<!-- Bootstrap Css -->
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="library/normalize.css/normalize-4.0.0.css" rel="stylesheet"/>
-	<link href="library/bootstrap-3.3.5-dist/css/dashboard.css" rel="stylesheet"/>
+	<link href="css/normalize-4.0.0.css" rel="stylesheet"/>
+	<link href="css/dashboard.css" rel="stylesheet"/>
 	<link href="//at.alicdn.com/t/font_1469770812_0737498.css" rel="stylesheet"/>
-	<link href="library/bootstrap-3.3.5-dist/css/bootstrap-slider.min.css" rel="stylesheet"/>
+	<link href="css/bootstrap-slider.min.css" rel="stylesheet"/>
 	<!-- All Css -->
 	<link href="css/all.css" rel="stylesheet"/>
 	<!-- AngularJs -->
-	<script src="js/angular.min.js"></script>
+	<script src="js/vendor/angular.min.js"></script>
+
 </head>
 <script>
 	var SERVER_BASE = "localhost";
@@ -47,59 +48,49 @@ if(isset($_SESSION['loginstatus']) == 1 && !empty($_SESSION['uid'])){
 	echo $header_unregistered;
 }
 ?>
+
 <?php
 //输出header头部navi_bar
 echo $openupalertdiv;
 ?>
+
+<!--ui-view-->
 <div ui-view class="ui-viewcon"></div>
+
 <!-- 邀请码 -->
 <invitation-code></invitation-code>
+
 <!-- loading -->
 <div class="index-mask">
     <img src="img/fragments/loading/5375751.gif" style="margin-top:23%">
 </div>
 
-<!-- UI router -->
 <script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-<!--jQuery Js-->
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-<!--Bootstrap Js-->
 <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<!--Echart Js-->
-<script  type="text/javascript" src="library/Echart-3.1.4/echarts.simple.min.js"></script>
-<!--angular Validation-->
-<script  type="text/javascript" src="js/angular-validation.js"></script>
-<script  type="text/javascript" src="js/angular-validation-rule.js"></script>
+<script  type="text/javascript" src="js/vendor/echarts.simple.min.js"></script>
+<script  type="text/javascript" src="js/vendor/angular-validation.js"></script>
+<script  type="text/javascript" src="js/vendor/angular-validation-rule.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!--all.js-->
 <script  type="text/javascript" src="js/run.js"></script>
-<script  type="text/javascript" src="js/vendor/all.js"></script>
-<!-- angular-popups -->
-<script  type="text/javascript" src="js/angular-popups.js"></script>
-<!-- router-->
+<script  type="text/javascript" src="js/utill/all.js"></script>
+<script  type="text/javascript" src="js/vendor/angular-popups.js"></script>
 <script  type="text/javascript" src="js/router.js"></script>
-<!-- utills -->
 <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>
 <script  type="text/javascript" src="js/utill/alterLocalStorage.js"></script>
 <script  type="text/javascript" src="js/utill/unique_inarr.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------------------------------->
-<!-- Ueditor Js-->
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.config.js"></script>
 <script type="text/javascript" src="library/ueditor-1.4.3.2/ueditor.all.min.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!--services-->
 <script src="js/service/checkStatus.js" type="text/javascript"></script>
 <script src="js/service/countLiveness.js" type="text/javascript"></script>
 <script src="js/service/loadAndsaveHerosInfo.js" type="text/javascript"></script>
 <script src="js/service/search.js" type="text/javascript"></script>
 <!-------------------------------------------------------------------------------------->
-<!--bootstrap-slider-->
-<script  type="text/javascript" src="library/bootstrap-3.3.5-dist/js/bootstrap-slider.min.js"></script>
+<script  type="text/javascript" src="js/vendor/bootstrap-slider.min.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------------------------------->
-<!--controllers-->
 <script  type="text/javascript" src="js/controller/xiwucontroller.js"></script>
 <script  type="text/javascript" src="js/controller/maincontroller.js"></script>
 <script  type="text/javascript" src="js/controller/userlistcontroller.js"></script>
@@ -117,8 +108,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/404.js"></script>
 <script  type="text/javascript" src="js/controller/testUeController.js"></script>
 <!-------------------------------------------------------------------------------------->
-<!--direcitves-->
 <script  type="text/javascript" src="js/directive/useInvitationCode/useInvitationCode.js"></script>
-<!-------------------------------------------------------------------------------------->
 </body>
 </html>

@@ -33,10 +33,8 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
      */
     if(window.addEventListener){
         window.addEventListener("storage",handle_storage);
-        console.log("123");
     }else if(window.attachEvent){
         window.attachEvent("onstorage",handle_storage);
-        console.log("234");
     }else{
         console.log("在线状态即时处理程序不被支持");
     }
