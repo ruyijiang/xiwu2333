@@ -342,7 +342,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
         $scope.UploadBtnContent = '修改成功';
         $("#uploadavatarbtn").attr("disabled","disabled");
         alert ("头像修改成功");
-        //window.location.reload();
+        window.location.reload();
     }
 
 });

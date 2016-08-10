@@ -55,3 +55,13 @@
 ['Time':2016-08-03 22:51:00,'Commit:'onlineDuration]{980}
 ['Time':2016-08-03 22:51:04,'Commit:'onlineDuration]{0}
 ['Time':2016-08-03 22:51:16,'Commit:'onlineDuration]{0}
+['Time':2016-08-03 22:57:28,'Commit:'openTeam]{190}
+['Time':2016-08-03 22:57:29,'Commit:'onlineDuration]{420}
+['Time':2016-08-03 22:59:31,'Commit:'openTeam]{190}
+['Time':2016-08-03 22:59:32,'Commit:'onlineDuration]{140}
+['Time':2016-08-03 22:59:45,'Commit:'openTeam]{190}
+['Time':2016-08-03 22:59:53,'Commit:'onlineDuration]{0}
+['Time':2016-08-03 23:20:17,'Commit:'onlineDuration]{1330}
+['Time':2016-08-03 23:25:54,'Commit:'onlineDuration]{350}
+['Time':2016-08-03 23:27:57,'Commit:'onlineDuration]{140}
+['Time':2016-08-03 23:29:38,'Commit:'onlineDuration]{70}

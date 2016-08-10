@@ -33,13 +33,6 @@ header("Content-Type: text/html; charset=utf-8");
                   <!--<a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-print"></span>打印</a>-->
                   <a role="button" class="btn btn-default btn-xs" ng-href="/#/writeblog?aid={{BlogExport.aid}}"><span class="glyphicon glyphicon-edit"></span>修改</a>
 
-                  <!--<div style="display:inline-block;margin-left:10px;">
-                      <div class="share_hiddendiv">
-                          <i class="icon-weibo2 iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到微博"></i>
-                          <i class="icon-weixin2 iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到微信"></i>
-                          <i class="icon-qq2 iconfont blogpage-i-icon" data-toggle="tooltip" data-placement="top" data-original-title="分享到qq"></i>
-                      </div>
-                  </div>-->
               </div>
             
               <hr>
@@ -75,24 +68,6 @@ header("Content-Type: text/html; charset=utf-8");
             <small ng-if="BlogExportHotblogLen == 0">暂无其它</small>
           </div>
           <hr>
-         <!-- <div class="sidebar-module">
-            <h4><span class="glyphicon glyphicon-calendar"></span>归档</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-              <li><a href="#">2016年3月</a></li>
-            </ol>
-          </div>
-          <hr>-->
           <div class="sidebar-module">
             <h4><span class="glyphicon glyphicon-link"></span>其它平台</h4>
             <ol class="list-unstyled" style="margin-left:30px">
