@@ -10,12 +10,6 @@ require("all.php");
 ?>
 <?php
 
-
-
-
-
-
-
     $status = $reminder = "";
     @$RequestUid = $_GET["uid"];
 
@@ -62,19 +56,13 @@ require("all.php");
         $result_weixin = $row["weixin"];//微信
         $result_weibo = $row["weibo"];//微博
         $skilllevel = $row["skilllevel"];
+        $dota2_uid = $row["dota2_uid"];
         $result_page_num = $row["page_num"];
-
-        /*$sql3 = "SELECT name,bg_img FROM rooms WHERE creator = $RequestUid ";
-        $qry3 = $db->query($sql3);
-        $row3 = $qry3->fetch_assoc();
-        $result_roomimg = $row3["bg_img"];//房间背景图
-        $result_roomname = $row3["name"];//房间名称*/
-
 
         /**
          * 输出
          */
-        $dataArr = array ('uid'=>$result_uid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'server_bigarea'=>$result_server_bigarea,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'page_num'=>$result_page_num,'skilllevel'=>$skilllevel);
+        $dataArr = array ('uid'=>$result_uid,'name'=>$result_name,'gender'=>$result_gender,'slogan'=>$result_slogan,'callingcard_content'=>$result_calling_card,'country'=>$result_country,'province'=>$result_province,'city'=>$result_city,'server'=>$result_server,'server_bigarea'=>$result_server_bigarea,'qq'=>$result_qq,'weixin'=>$result_weixin,'weibo'=>$result_weibo,'liveplain'=>$result_liveplain,'ladderscore'=>$result_ladderscore,'score'=>$result_score,'avatar'=>$result_avatar,'page_num'=>$result_page_num,'skilllevel'=>$skilllevel,'dota2_uid'=>$dota2_uid);
 
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value);

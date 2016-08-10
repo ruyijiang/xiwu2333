@@ -19,8 +19,8 @@ include("library/xwFE-0.0.1/FEM.php");
             <div ng-if="UserData.callingcard_content !== ''">
                 <table class="id_info">
                     <tr>
-                        <td><i class="iconfont icon-renzheng" style="font-size:28px;color:#d87f00"></i></td>
-                        <td style="font-size:18px">{{UserData.callingcard_content}}</td>
+                        <td><i class="iconfont icon-renzheng" style="font-size:20px;color:#d87f00"></i></td>
+                        <td style="font-size:14px">{{UserData.callingcard_content}}</td>
                     </tr>
                 </table>
                 <hr>
@@ -29,8 +29,8 @@ include("library/xwFE-0.0.1/FEM.php");
             <table class="userp_info">
                 <tr>
                     <td><i class="iconfont icon-shuziliu"></i></td>
-                    <td width="25%">UID：</td>
-                    <td><span>{{UserData.uid}}</span></td>
+                    <td width="25%">游戏ID：</td>
+                    <td><span>{{UserData.dota2_uid}}</span></td>
                 </tr>
                 <tr ng-if="UserData.province!=='' || UserData.city!==''">
                     <td><i class="iconfont icon-dingwei"></i></td>
@@ -41,10 +41,18 @@ include("library/xwFE-0.0.1/FEM.php");
                 </tr>
                 <tr>
                     <td><i class="iconfont icon-score"></i></td>
+                    <td>技术级：</td>
+                    <td>
+                        <span ng-if="UserData.skilllevel!=='' && UserData.skilllevel!==null" class="label label-success" style="font-weight:bold;font-style:italic">{{UserData.skilllevel}}</span>
+                        <span ng-if="UserData.skilllevel=='' || UserData.skilllevel==null" class="label label-danger" style="font-weight:bold;font-style:italic">暂无数据</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="iconfont icon-score"></i></td>
                     <td>评分：</td>
                     <td>
-                        <span ng-if="UserData.score!=='' && UserData.score!=='0'" ng-class="{'label-success':UserData.score>=80,'label-warning':UserData.score<80&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">{{UserData.score}}</span>
-                        <span ng-if="UserData.score=='' || UserData.score=='0'" ng-class="{'label-success':UserData.score>=80,'label-warning':UserData.score<80&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">暂无数据</span>
+                        <span ng-if="UserData.score!=='' && UserData.score!=='0'" ng-class="{'label-success':UserData.score>=70,'label-warning':UserData.score<70&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">{{UserData.score}}</span>
+                        <span ng-if="UserData.score=='' || UserData.score=='0'" class="label label-danger" style="font-weight:bold;font-style:italic">暂无数据</span>
                     </td>
                 </tr>
                 <tr ng-if="UserData.server.length > 0">
