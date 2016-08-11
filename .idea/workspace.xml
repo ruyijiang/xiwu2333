@@ -3,11 +3,136 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogpage.php" afterPath="$PROJECT_DIR$/blogpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-08-03.txt" afterPath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-08-03.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/info_SettingController.js" afterPath="$PROJECT_DIR$/js/controller/info_SettingController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" afterPath="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/anchor/anchor.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/anchor/anchor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/background/background.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/background/background.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/background/background.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/background/background.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/background/background.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/background/background.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/chart.config.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/chart.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/charts/charts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/emotion/emotion.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/emotion/emotion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/emotion/emotion.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/emotion/emotion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/emotion/emotion.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/emotion/emotion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/gmap/gmap.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/gmap/gmap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/help/help.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/help/help.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/help/help.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/help/help.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/help/help.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/help/help.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/image/image.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/image/image.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/image/image.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/image/image.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/image/image.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/image/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/insertframe/insertframe.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/insertframe/insertframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/internal.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/internal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/link/link.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/link/link.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/map/map.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/map/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/map/show.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/map/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/music/music.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/music/music.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/music/music.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/music/music.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/music/music.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/music/music.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/preview/preview.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/preview/preview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/scrawl/scrawl.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/scrawl/scrawl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/scrawl/scrawl.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/scrawl/scrawl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/scrawl/scrawl.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/scrawl/scrawl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/searchreplace/searchreplace.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/searchreplace/searchreplace.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/searchreplace/searchreplace.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/searchreplace/searchreplace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/snapscreen/snapscreen.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/snapscreen/snapscreen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/spechars/spechars.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/spechars/spechars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/spechars/spechars.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/spechars/spechars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittd.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittip.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/table/edittip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/config.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/template.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/template.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/template.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/template/template.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/video/video.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/video/video.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/video/video.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/video/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/video/video.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/video/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/webapp/webapp.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/webapp/webapp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/tangram.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/tangram.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/wordimage.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/wordimage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/wordimage.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/wordimage/wordimage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/index.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/lang/en/en.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/lang/en/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/lang/zh-cn/zh-cn.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/lang/zh-cn/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/Uploader.class.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/Uploader.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_crawler.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_crawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_list.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_upload.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/action_upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/config.json" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/controller.php" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/php/controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/css/ueditor.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/css/ueditor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/css/ueditor.min.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/css/ueditor.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/dialogbase.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/default/dialogbase.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/iframe.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/themes/iframe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/SyntaxHighlighter/shCore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/codemirror/codemirror.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/codemirror/codemirror.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/mootools-adapter.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/prototype-adapter.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/adapters/standalone-framework.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts-more.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/highcharts.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/annotations.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/canvas-tools.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/data.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/drilldown.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/exporting.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/funnel.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/heatmap.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/map.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/modules/no-data-to-display.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-blue.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-blue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-green.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/dark-green.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/gray.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/gray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/grid.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/skies.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/highcharts/themes/skies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/jquery-1.10.2.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/font/vjs.svg" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/font/vjs.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.min.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video-js.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.dev.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/video-js/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.flashonly.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.html5only.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.withoutimage.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/zeroclipboard/ZeroClipboard.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.all.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.all.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.all.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.config.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,69 +162,7 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FEM.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-              <folding>
-                <marker date="1470842508228" expanded="true" signature="279:332" placeholder="SELECT avata... users" />
-                <marker date="1470842508228" expanded="true" signature="751:762" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="1206:1224" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="1279:1334" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="1785:1800" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="1983:2071" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="2533:2544" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="2602:5536" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="2625:5530" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="3034:3083" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="3164:5524" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="3494:5518" placeholder="..." />
-                <marker date="1470842508228" expanded="false" signature="3555:3570" placeholder="..." />
-                <marker date="1470842508228" expanded="false" signature="3753:3841" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="5869:5901" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="6040:6050" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="7927:7988" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="8008:8069" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="9743:9759" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="9854:9867" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="10296:10312" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="10371:10388" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="10819:10856" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="11780:11796" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="11985:12008" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="12044:12061" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="12360:12383" placeholder="..." />
-                <marker date="1470842508228" expanded="true" signature="12419:12436" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/personpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="110" column="84" selection-start-line="110" selection-start-column="82" selection-end-line="110" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogpage.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blogpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-              <folding>
-                <marker date="1470841988302" expanded="true" signature="453:494" placeholder="SELECT * FRO... articles" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/vendor/kronusme/dota2-api/includes/Mappers/MatchesMapperWeb.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/Database/getHerosBaseInfo.php.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getHerosInfo.php" />
         <option value="$PROJECT_DIR$/js/service/loadAndsaveHerosInfo.js" />
@@ -160,7 +222,6 @@
         <option value="$PROJECT_DIR$/js/controller/info_SettingController.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/all.inc.php" />
         <option value="$PROJECT_DIR$/js/controller/signupcontroller.js" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/signup_action.php" />
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/search_action.php" />
@@ -174,13 +235,16 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/blogpage.php" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -189,8 +253,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -233,19 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,7 +315,34 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
       </pane>
     </panes>
   </component>
@@ -739,6 +817,7 @@
       <workItem from="1470793939373" duration="12244000" />
       <workItem from="1470837218680" duration="2667000" />
       <workItem from="1470841859018" duration="820000" />
+      <workItem from="1470878524257" duration="6102000" />
     </task>
     <task id="LOCAL-00035" summary="finish person Limitation">
       <created>1467168413153</created>
@@ -1087,14 +1166,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1538107000" />
+    <option name="totallyTimeSpent" value="1544209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21321961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1211,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add class pull-left in personpage.php" />
     <MESSAGE value="fixed logout's bug in all.php , rewrite a if()else{} to it" />
     <MESSAGE value="fixed the bug that after signup an account , once click cannot hide OpenTeamBar." />
     <MESSAGE value="analyse codes for dota2-api,almost finished." />
@@ -1157,7 +1235,8 @@
     <MESSAGE value="fixed weibo's bug in person.modal" />
     <MESSAGE value="fixed LadderScore's bug" />
     <MESSAGE value="modify something" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify something" />
+    <MESSAGE value="fixed bug of writeblog,and i chmod 0777 to all files." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug of writeblog,and i chmod 0777 to all files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1166,34 +1245,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="197" column="49" selection-start-line="197" selection-start-column="49" selection-end-line="197" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/user_traces/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/404.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/目录说明.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/articles/20253012/1234.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1240,13 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="147" column="10" selection-start-line="147" selection-start-column="10" selection-end-line="147" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1311,13 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="322" column="30" selection-start-line="322" selection-start-column="30" selection-end-line="322" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1456,38 +1493,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
+        <state relative-caret-position="509">
           <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <marker date="1470842508228" expanded="true" signature="279:332" placeholder="SELECT avata... users" />
-            <marker date="1470842508228" expanded="true" signature="751:762" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="1206:1224" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="1279:1334" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="1785:1800" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="1983:2071" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="2533:2544" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="2602:5536" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="2625:5530" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="3034:3083" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="3164:5524" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="3494:5518" placeholder="..." />
-            <marker date="1470842508228" expanded="false" signature="3555:3570" placeholder="..." />
-            <marker date="1470842508228" expanded="false" signature="3753:3841" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="5869:5901" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="6040:6050" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="7927:7988" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="8008:8069" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="9743:9759" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="9854:9867" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="10296:10312" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="10371:10388" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="10819:10856" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="11780:11796" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="11985:12008" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="12044:12061" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="12360:12383" placeholder="..." />
-            <marker date="1470842508228" expanded="true" signature="12419:12436" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1504,7 +1512,78 @@
         <state relative-caret-position="168">
           <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
           <folding>
-            <marker date="1470841988302" expanded="true" signature="453:494" placeholder="SELECT * FRO... articles" />
+            <marker date="1470878500912" expanded="true" signature="453:494" ph="SELECT * FRO... articles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3456">
+          <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1752">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="616" column="25" selection-start-line="616" selection-start-column="25" selection-end-line="616" selection-end-column="25" />
+          <folding>
+            <marker date="1470882494670" expanded="true" signature="9125:9171" ph="SELECT * FRO... users" />
+            <marker date="1470882494670" expanded="true" signature="10525:10719" ph="UPDATE users... " />
+            <marker date="1470882494670" expanded="true" signature="14778:14832" ph="SELECT `uid`... users" />
+            <marker date="1470882494670" expanded="true" signature="16052:16133" ph="SELECT regti... users" />
+            <marker date="1470882494670" expanded="true" signature="17562:17836" ph="INSERT INTO `xiwu2333.com`.`users`... " />
+            <marker date="1470882494670" expanded="true" signature="20819:20919" ph="UPDATE users... " />
+            <marker date="1470882494670" expanded="true" signature="22143:22193" ph="UPDATE users... " />
+            <marker date="1470882494670" expanded="true" signature="23027:23079" ph="UPDATE users... " />
+            <marker date="1470882494670" expanded="true" signature="24174:24224" ph="SELECT COUNT... users" />
+            <marker date="1470882494670" expanded="true" signature="24515:24565" ph="SELECT COUNT... users" />
+            <marker date="1470882494670" expanded="true" signature="25198:25284" ph="select count... users" />
+            <marker date="1470882494670" expanded="true" signature="25683:25750" ph="SELECT uid F... users" />
+            <marker date="1470882494670" expanded="true" signature="28625:28693" ph="SELECT l_val... liveness" />
+            <marker date="1470882494670" expanded="true" signature="28954:29036" ph="UPDATE liven... " />
+            <marker date="1470882494670" expanded="true" signature="29668:29768" ph="INSERT INTO liveness... " />
+            <marker date="1470882494670" expanded="true" signature="30880:30996" ph="select time,... " />
+            <marker date="1470882494670" expanded="true" signature="31288:31386" ph="SELECT l_val... liveness" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+          <folding>
+            <marker date="1470881840435" expanded="true" signature="1475:1516" ph="SELECT * FRO... articles" />
+            <marker date="1470881840435" expanded="true" signature="2348:2445" ph="UPDATE artic... " />
+            <marker date="1470881840435" expanded="true" signature="3625:3672" ph="SELECT * FRO... articles" />
+            <marker date="1470881840435" expanded="true" signature="4659:4822" ph="INSERT INTO articles... " />
           </folding>
         </state>
       </provider>

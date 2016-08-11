@@ -130,10 +130,10 @@ require("../algorithm/Liveness.php");
                         $d = new liveness();
                         if($d->setLiveness('writeBlog',$thisScore)){
                             $status = $abc;
-                            $reminder = "文章修改成功";
+                            $reminder = "文章发布成功";
                         }else{
                             $status = 0;
-                            $reminder = "文章修改失败";
+                            $reminder = "文章发布失败";
                         }
                         echo $b->normalrespond($status,$reminder);
 
@@ -163,7 +163,6 @@ require("../algorithm/Liveness.php");
 
                         //**开始写入文档**//
                         @$filestream = fopen($file,"a");
-                        //$a_content = "\xEF\xBB\xBF".$a_content;
                         @$d = fwrite($filestream,$a_content);
                         @fclose($filestream);
                         if(!$d){
