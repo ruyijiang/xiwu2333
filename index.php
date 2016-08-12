@@ -26,7 +26,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/normalize-4.0.0.css" rel="stylesheet"/>
 	<link href="css/dashboard.css" rel="stylesheet"/>
-	<link href="//at.alicdn.com/t/font_1469770812_0737498.css" rel="stylesheet"/>
+	<link href="//at.alicdn.com/t/font_1470967390_0934505.css" rel="stylesheet"/>
 	<link href="css/bootstrap-slider.min.css" rel="stylesheet"/>
 	<!-- All Css -->
 	<link href="css/all.css" rel="stylesheet"/>
@@ -68,7 +68,7 @@ echo $openupalertdiv;
 <script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script  type="text/javascript" src="js/vendor/echarts.simple.min.js"></script>
+<script  type="text/javascript" src="js/vendor/echarts.min.js"></script>
 <script  type="text/javascript" src="js/vendor/angular-validation.js"></script>
 <script  type="text/javascript" src="js/vendor/angular-validation-rule.js"></script>
 <!-------------------------------------------------------------------------------------->

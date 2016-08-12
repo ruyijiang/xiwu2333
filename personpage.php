@@ -7,7 +7,7 @@ include("library/xwFE-0.0.1/FEM.php");
     <div class="row">
         <div class="leftpart col-lg-3 col-md-4 col-sm-4 col-xs-8">
             <div>
-                <img ng-src="{{UserData.avatar}}" class="img-rounded" width="198" height="198"/>
+                <img ng-src="{{UserData.avatar}}" class="img-rounded center-block" width="198" height="198"/>
                 <div>
                     <strong style="display:inline-block;font-size:18px;margin-top:15px">{{UserData.name}}</strong>
                     <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:32px;color:#346ea1" title="男"></i>
@@ -19,7 +19,7 @@ include("library/xwFE-0.0.1/FEM.php");
             <div ng-if="UserData.callingcard_content !== ''">
                 <table class="id_info">
                     <tr>
-                        <td><i class="iconfont icon-renzheng" style="font-size:20px;color:#d87f00"></i></td>
+                        <td><i class="iconfont icon-renzheng" style="font-size:24px;color:#d87f00"></i></td>
                         <td style="font-size:14px">{{UserData.callingcard_content}}</td>
                     </tr>
                 </table>
@@ -84,22 +84,27 @@ include("library/xwFE-0.0.1/FEM.php");
         </div>
         <div class="rightpart col-lg-9 col-md-8 col-sm-8 col-xs-12">
             <ul class="nav nav-tabs" style="margin-top:20px;">
-                <li ng-class="{active:TabShowPage === 1}"><a ng-click="Tabshow(1)">动态</a></li>
-                <li ng-class="{active:TabShowPage === 2}"><a ng-click="Tabshow(2)">文章</a></li>
-                <!--<li ng-class="{active:TabShowPage === 3}"><a ng-click="Tabshow(3)">评论</a></li>-->
+                <li ng-class="{active:TabShowPage === 1}"><a ng-click="Tabshow(1)" style="font-size:13px"><i class="iconfont icon-chart" style="font-size:16px;margin-right:5px"></i>动态</a></li>
+                <li ng-class="{active:TabShowPage === 2}"><a ng-click="Tabshow(2)"><i class="iconfont icon-article" style="font-size:16px;margin-right:5px"></i>文章</a></li>
             </ul>
 
+            <div class="dota2-thermodynamic-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
+                <div class="panel-heading">
+                    <img width="21" height="21" style="margin-top:-6px;margin-right:3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
+                    游戏活跃分布
+                    <i class="iconfont icon-alert" style="font-size:14px;margin-top:5px" title="每天首次加载时间会比较长，请耐心等待"></i>
+                    
+                </div>
+                <div class="panel-body" id="dota2-thermodynamic-sheet-chart-body" style="height:260px;"></div>
+            </div>
 
             <div class="liveness-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
-                <div class="panel-heading">活跃曲线</div>
+                <div class="panel-heading">
+                    <img width="21" height="21" style="margin-top:-6px;margin-right:3px;display:inline;" alt="Dota2ImgThumbnail32^2" src="img/fragments/logo/xiwu_circle.png"/>
+                    喜屋活跃曲线
+                </div>
                 <div class="panel-body" id="liveness-chart-body" style="height:260px;"></div>
             </div>
-            <!--<div ng-if="TabShowPage == 1">
-                <h5><strong>最新动态</strong></h5>
-                <p>发表了&nbsp;<a href=""><span class="glyphicon glyphicon-file"></span>我的3月23日DOTA2一日游</a>&nbsp;一文</p><span></span>
-                <p>评价了&nbsp;<a href=""><span class="glyphicon glyphicon-user"></span>Zxc</a></p>
-                <p>评价了&nbsp;<a href=""><span class="glyphicon glyphicon-user"></span>MARTIN</a></p>
-            </div>-->
 
             <div class="article-sheet form-inline" style="margin-top:15px;" ng-show="TabShowPage == 2">
                 <a ng-if="UidEqu==true" class="btn btn-danger form-group" role="button" style="padding-left:35px;padding-right:45px;" ui-sref="writeblog"><span class="glyphicon glyphicon-pencil spanicon"></span>写文章</a>
@@ -150,28 +155,6 @@ include("library/xwFE-0.0.1/FEM.php");
                     </nav>
                 </div>
             </div>
-
-
-            <div class="comment-sheet" style="margin-top:15px;" ng-show="TabShowPage == 3">
-                <div class="article">
-                    <blockquote class="clearfix">
-                        <a class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="Yado"><img class="img-responsive" style="height:42px;width:42px;"/></a>
-                        <h5 class="pull-left" style="margin-left:20px;">这个人好坑的...</h5>
-                    </blockquote>
-                    <small class="pull-right"><time>3min 前</time></small>
-                </div>
-                <div class="article">
-                    <blockquote class="clearfix">
-                        <a class="pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="shy"><img class="img-responsive" style="height:42px;width:42px;"/></a>
-                        <h5 class="pull-left" style="margin-left:20px;">这个人好坑的...</h5>
-                    </blockquote>
-                    <small class="pull-right"><time>3min 前</time></small>
-                </div>
-            </div>
-
-
-
-
         </div><!--rightpart-->
     </div><!--row-->
 

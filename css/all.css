@@ -244,6 +244,7 @@ div.alert-success{margin-top: 50px; z-index: 99; background-image: none; backgro
 .navbar-right .dropdown-menu{right:15px}
 .dropdown button.dropdown-toggle{background-color:#337ab7;color:white}
 .nav-pills>li.active>a{border-radius:1px}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{border-top:solid 2px #346ea1}
 /*ng-validate*/
 .ng-invalid{
 	border-width: 1px;
