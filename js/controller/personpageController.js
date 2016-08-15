@@ -3,6 +3,22 @@
  */
 app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q){
 
+    $http({
+        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/test.php',
+        params:{
+            "key":"77E69E31E10BC86B78CB6734A1C26F95",
+            "steamids":"76561198253477944"
+        }
+    }).then(function (httpCont){
+        var Result = httpCont.data.result.matches;
+
+        //对获取下来的数组进行分解，执行我们所需要的功能
+        for(x in Result){
+            console.log("编号"+ x + "的开始时间：" + Result[x].start_time);
+        }
+
+    });
+
 
     $scope.TabShowPage = 1;//当前TabIndex值
     $scope.UserData = {};//请求回来用户数据内容对象
@@ -287,9 +303,9 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             },
             grid: {
                 left: '1%',
-                right: '2%',
-                bottom: '6%',
-                top:"14%",
+                right: '4%',
+                bottom: '4%',
+                top:"15%",
                 containLabel: true
             },
             calculable: true,
@@ -298,7 +314,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                     type: "category",
                     boundaryGap: false,
                     data:DateDateArr,
-                    name: "最近"+$scope.LivenessDataArr.length+"天",
                     nameLocation: "end",
                     min: 1,
                     max: 15,
@@ -326,7 +341,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             ],
             series: [
                 {
-                    name: "用户活跃度",
+                    name: "活跃度",
                     type: "line",
                     data:DateLivenessArr,
                     smooth: true,

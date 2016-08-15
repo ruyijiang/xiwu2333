@@ -738,7 +738,7 @@ class liveness{
             $n_day = ((int)substr($n_time,8,2));
             strlen($n_month)==1?$n_month="0".$n_month:$n_month;
             strlen($n_day)==1?$n_day="0".$n_day:$n_day;
-            $n_time = $n_month."/".$n_day;//把timestamp转成date
+            $n_time = $n_month."月".$n_day."日";//把timestamp转成date
             
 
 

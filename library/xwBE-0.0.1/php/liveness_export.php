@@ -22,7 +22,7 @@ require("../all.php");
     if(!$uid) @$uid=$_SESSION["uid"];
         if(!isset($timestart) || !isset($timeend)){
             //使用默认请求时间，默认是从今天开始往前15天这段时间
-            $timestart = strtotime(date("Y-m-d",strtotime("-14 day")));
+            $timestart = strtotime(date("Y-m-d",strtotime("-15 day")));
             $timeend = strtotime(date("Y-m-d"));
         }
         $b->getLiveness($uid,$timestart,$timeend);

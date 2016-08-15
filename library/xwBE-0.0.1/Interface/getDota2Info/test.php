@@ -8,14 +8,5 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-$mm = new Dota2Api\Mappers\MatchMapperWeb(2051819680);
-$match = $mm->load();
-echo $match->get('match_id');
-echo $match->get('start_time');
-echo $match->get('game_mode');
-$slots = $match->getAllSlots();
-foreach($slots as $slot) {
-    echo $slot->get('last_hits');
-}
-print_r($match->getDataArray());
-print_r($match->getSlot(0)->getDataArray());
+$a = file_get_contents("https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001/?key=77E69E31E10BC86B78CB6734A1C26F95&steamids=76561198253477944");
+echo $a;
