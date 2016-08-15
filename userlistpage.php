@@ -40,14 +40,6 @@ include("library/xwFE-0.0.1/FEM.php");
               <button type="button" ng-class="{active:UserListSearchConfig.server == 'quanwang'}" ng-click="MiniNav('quanwang')" class="btn btn-default">全网</button>
             </div>
           </ul><hr>
-            <!--<ul class="nav nav-sidebar">
-                <li class="panel-heading">按水平等级：</li>
-                <div class="btn-group btn-group-sm center-block" style="width:90%">
-                  <button type="button" ng-class="{active:UserListSearchConfig.skillLevel == 'Normal'}" ng-click="MiniNav('Normal')" class="btn btn-default">Normal</button>
-                  <button type="button" ng-class="{active:UserListSearchConfig.skillLevel == 'High'}" ng-click="MiniNav('High')" class="btn btn-default">High</button>
-                  <button type="button" ng-class="{active:UserListSearchConfig.skillLevel == 'Very High'}" ng-click="MiniNav('Very High')" class="btn btn-default">Very High</button>
-                </div>
-            </ul><hr>-->
         </div>
         <div>
           <div class="col-lg-7 col-md-7 col-sm-12 col-lg-offset-2 col-sm-offset-2 main">
@@ -63,12 +55,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="userlist-chart center-block" id="user-ratio"></div>
                 <h4><strong>男女比例</strong></h4>
                 <span class="text-muted">{{(UserDataSexRate.MaleRate.toFixed(2))*100}}% - {{(UserDataSexRate.FemaleRate.toFixed(2))*100}}%</span>
-              </div><!--
-              <div class="col-lg-4 col-sm-6 col-xs-12 placeholder">
-                <div class="userlist-chart center-block" id="user-online" style="width:214px"></div>
-                <h4><strong>当前在线玩家</strong></h4>
-                <span class="text-muted">{{UserDataNowOnline.NowOnlineCount}}人</span>
-              </div>-->
+              </div>
             </div>
 
             <h3 class="sub-header">
@@ -86,8 +73,6 @@ include("library/xwFE-0.0.1/FEM.php");
                 <tr class="info">
                   <th width="15%">游戏ID</th>
                   <th width="15%">用户名</th>
-                  <!--<th width="10%">性别</th>
-                  <th>组队次数</th>-->
                   <th>场均参战率</th>
                   <th>场均输出比<i class="iconfont icon-alert" title="输出是指造成的英雄伤害和建筑伤害之和" style="font-size:15px"></i></th>
                   <th>场均KDA</th>
@@ -116,7 +101,6 @@ include("library/xwFE-0.0.1/FEM.php");
                     <span ng-if="ud.score">{{ud.score}}</span>
                   </td>
                 </tr>
-                <!--<tr><td>252556081</td><td><a href="">攻略写手-总导演</a></td><td>男</td><td>1号位</td><td>32.3%</td><td>4.2</td><td>96</td></tr>-->
                 </tbody>
               </table>
               <hr/>

@@ -2,7 +2,6 @@
  * Created by 马子航 on 2016/4/15.
  */
 app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q){
-
     $http({
         url:'../../library/xwBE-0.0.1/Interface/getDota2Info/test.php',
         params:{

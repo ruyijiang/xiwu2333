@@ -67,7 +67,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <td><i class="iconfont icon-live"></i></td>
                     <td>直播间：</td>
                     <td>
-                        <a ng-href="{{UserData.liveplain}}" target="_blank" class="btn btn-default btn-sm" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width:160px">{{UserData.liveplain}}</a>
+                        <a style="display:inline-block;width:160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;" ng-href="{{UserData.liveplain}}" target="_blank" class="btn btn-default btn-sm" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width:160px">{{UserData.liveplain}}</a>
                     </td>
                 </tr>
                 <tr ng-if="UserData.qq!==''">
@@ -78,7 +78,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <tr ng-if="UserData.weibo!==''">
                     <td><i class="iconfont icon-weibo2"></i></td>
                     <td>微博：</td>
-                    <td><a>{{UserData.weibo}}</a></td>
+                    <td><a style="display:inline-block;width:160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">{{UserData.weibo}}</a></td>
                 </tr>
             </table>
         </div>
@@ -88,12 +88,16 @@ include("library/xwFE-0.0.1/FEM.php");
                 <li ng-class="{active:TabShowPage === 2}"><a ng-click="Tabshow(2)"><i class="iconfont icon-article" style="font-size:16px;margin-right:5px"></i>文章</a></li>
             </ul>
 
-            <div class="dota2-thermodynamic-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
+            <div class="dota2-thermodynamic-sheet panel panel-default" style="margin-top:15px;position: relative" ng-show="TabShowPage == 1">
+                <div style="position: absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:999;border-radius:3px">
+                    <div style="width:32px;top:45%;left:47%;position:absolute">
+                        <img src="img/fragments/loading/5-121204193955-50.gif">
+                    </div>
+                    <p style="width:32%;left:34%;top:55%;position:absolute;color:white;">每天首次加载时间会比较长，请耐心等待...</p>
+                </div>
                 <div class="panel-heading">
                     <img width="21" height="21" style="margin-top:-6px;margin-right:3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
                     游戏活跃分布
-                    <i class="iconfont icon-alert" style="font-size:14px;margin-top:5px" title="每天首次加载时间会比较长，请耐心等待"></i>
-                    
                 </div>
                 <div class="panel-body" id="dota2-thermodynamic-sheet-chart-body" style="height:260px;"></div>
             </div>
