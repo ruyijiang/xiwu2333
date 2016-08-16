@@ -83,6 +83,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 $http({
                     url:'../../library/xwBE-0.0.1/Interface/getDota2Info/test.php',
                     params:{
+                        "uid":$scope.UserData.uid,
                         "dota2_uid":$scope.UserData.dota2_uid
                     }
                 }).then(function (httpCont){
