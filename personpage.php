@@ -89,7 +89,7 @@ include("library/xwFE-0.0.1/FEM.php");
             </ul>
 
             <div class="dota2-thermodynamic-sheet panel panel-default" style="margin-top:15px;position: relative" ng-show="TabShowPage == 1">
-                <div style="position: absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:999;border-radius:3px">
+                <div ng-if="dota2panelmaskshow == 1" style="position: absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:9;border-radius:3px">
                     <div style="width:32px;top:45%;left:47%;position:absolute">
                         <img src="img/fragments/loading/5-121204193955-50.gif">
                     </div>
