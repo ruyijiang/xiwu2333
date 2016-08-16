@@ -7,6 +7,15 @@
  */
 require("../../connectDB.php");
 require("../../all.php");
-?><?php
-$a = file_get_contents("https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001/?key=77E69E31E10BC86B78CB6734A1C26F95&steamids=76561198253477944");
-echo $a;
+
+$a = new interfaceResponse();
+$status = $reminder = 0;
+
+@$b = file_get_contents("https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001/?key=77E69E31E10BC86B78CB6734A1C26F95&account_id=252556081");
+if(!$b){
+    $status = 0;
+    $reminder = "dota2服务器崩溃";
+    echo $a->normalnormalrespond($status,$reminder);
+}else{
+    echo $b;
+}

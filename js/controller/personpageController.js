@@ -2,21 +2,6 @@
  * Created by 马子航 on 2016/4/15.
  */
 app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q){
-    $http({
-        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/test.php',
-        params:{
-            "key":"77E69E31E10BC86B78CB6734A1C26F95",
-            "steamids":"76561198253477944"
-        }
-    }).then(function (httpCont){
-        var Result = httpCont.data.result.matches;
-
-        //对获取下来的数组进行分解，执行我们所需要的功能
-        for(x in Result){
-            console.log("编号"+ x + "的开始时间：" + Result[x].start_time);
-        }
-
-    });
 
 
     $scope.TabShowPage = 1;//当前TabIndex值
@@ -91,6 +76,20 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 SArr.pop();
                 data.server = SArr;
                 $scope.UserData = data;
+
+                /**
+                 * 获取用户的比赛数据
+                 */
+                $http({
+                    url:'../../library/xwBE-0.0.1/Interface/getDota2Info/test.php',
+                    params:{
+                        "dota2_uid":$scope.UserData.dota2_uid
+                    }
+                }).then(function (httpCont){
+                    var Result = httpCont.data.result.matches;
+
+                });
+
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");

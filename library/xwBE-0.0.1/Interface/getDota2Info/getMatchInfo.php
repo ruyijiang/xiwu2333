@@ -17,9 +17,7 @@ $a = new interfaceResponse();
 $status = $reminder = 0;
 
 if(!empty($content) || !empty($startnum)){
-
-
-
+    
     @$mm = new Dota2Api\Mappers\MatchMapperWeb($content);
     @$match = $mm->load();
     @$result = $match->getDataArray();
@@ -43,7 +41,6 @@ if(!empty($content) || !empty($startnum)){
             }
         }
         $result["slot_info"] = $slot_info;
-
 
         /*************************
          ****** 翻译数组内容：******
@@ -81,10 +78,8 @@ if(!empty($content) || !empty($startnum)){
         /*******************End of 翻译****************/
         /*********************************************/
 
-
         //输出json对象
         echo(json_encode($result));
-
 
         //把搜索结果记入数据库，并添加分类
         insertIntoDatabase("搜索比赛",$content,1);
@@ -95,9 +90,7 @@ if(!empty($content) || !empty($startnum)){
         $reminder = "没有找到以'".$content."'为编号的比赛数据";
         echo $a->normalrespond($status,$reminder);
     }
-
-
-
+    
 }else{
     $status = 0;
     $reminder = "缺少关键参数";
