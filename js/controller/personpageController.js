@@ -87,7 +87,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                         "dota2_uid":$scope.UserData.dota2_uid
                     }
                 }).then(function (httpCont){
-                    var Result = httpCont.data.result.matches;
+                    var Result = httpCont.data;
 
                 });
 

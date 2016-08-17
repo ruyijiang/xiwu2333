@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="add a new charts in personpage.php">
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="重新梳理了php抓取程序">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/anchor/anchor.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/anchor/anchor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.css" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.html" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/dialogs/attachment/attachment.html" />
@@ -132,7 +133,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.min.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/ueditor.parse.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/test.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personpage.php" afterPath="$PROJECT_DIR$/personpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -173,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1992">
-              <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+            <state relative-caret-position="222">
+              <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -186,63 +186,35 @@
       <file leaf-file-name="info_SettingController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7152">
-              <caret line="298" column="41" selection-start-line="298" selection-start-column="41" selection-end-line="298" selection-end-column="41" />
+            <state relative-caret-position="-1320">
+              <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recordPlayerAnyNumMatchInfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3504">
-              <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-              <folding>
-                <marker date="1471335737209" expanded="true" signature="391:437" ph="SELECT dota2... users" />
-                <marker date="1471335737209" expanded="true" signature="4757:4883" ph="UPDATE users... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="240">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <marker date="1471336210680" expanded="true" signature="331:426" ph="SELECT last_... users" />
-                <marker date="1471336210680" expanded="true" signature="1435:1487" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+                <marker date="1471412667668" expanded="true" signature="632:715" ph="SELECT last_... users" />
+                <marker date="1471412667668" expanded="true" signature="632:732" ph="SELECT id FR... d2i_matchhistory" />
+                <marker date="1471412667668" expanded="true" signature="632:746" ph="SELECT id FR... d2i_matchhistory" />
+                <marker date="1471412667668" expanded="true" signature="2262:2341" ph="SELECT id FR... d2i_matchhistory" />
+                <marker date="1471412667668" expanded="true" signature="2494:2636" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/all.php">
+      <file leaf-file-name="getMatchInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9744">
-              <caret line="406" column="37" selection-start-line="406" selection-start-column="37" selection-end-line="406" selection-end-column="37" />
-              <folding>
-                <marker date="1471227684980" expanded="true" signature="9125:9171" ph="SELECT * FRO... users" />
-                <marker date="1471227684980" expanded="true" signature="10525:10719" ph="UPDATE users... " />
-                <marker date="1471227684980" expanded="true" signature="14778:14832" ph="SELECT `uid`... users" />
-                <marker date="1471227684980" expanded="true" signature="16052:16133" ph="SELECT regti... users" />
-                <marker date="1471227684980" expanded="true" signature="17562:17836" ph="INSERT INTO `xiwu2333.com`.`users`... " />
-                <marker date="1471227684980" expanded="true" signature="20819:20919" ph="UPDATE users... " />
-                <marker date="1471227684980" expanded="true" signature="22143:22193" ph="UPDATE users... " />
-                <marker date="1471227684980" expanded="true" signature="23027:23079" ph="UPDATE users... " />
-                <marker date="1471227684980" expanded="true" signature="24174:24224" ph="SELECT COUNT... users" />
-                <marker date="1471227684980" expanded="true" signature="24515:24565" ph="SELECT COUNT... users" />
-                <marker date="1471227684980" expanded="true" signature="25198:25284" ph="select count... users" />
-                <marker date="1471227684980" expanded="true" signature="25683:25750" ph="SELECT uid F... users" />
-                <marker date="1471227684980" expanded="true" signature="28625:28693" ph="SELECT l_val... liveness" />
-                <marker date="1471227684980" expanded="true" signature="28954:29036" ph="UPDATE liven... " />
-                <marker date="1471227684980" expanded="true" signature="29668:29768" ph="INSERT INTO liveness... " />
-                <marker date="1471227684980" expanded="true" signature="30880:30996" ph="select time,... " />
-                <marker date="1471227684980" expanded="true" signature="31288:31386" ph="SELECT l_val... liveness" />
-              </folding>
+            <state relative-caret-position="205">
+              <caret line="81" column="24" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -317,11 +289,11 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/liveness_export.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php" />
-        <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
         <option value="$PROJECT_DIR$/personpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/infosetting_action.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/test.php" />
+        <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
       </list>
     </option>
   </component>
@@ -382,6 +354,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -394,7 +367,6 @@
         </subPane>
         <subPane subId="Tests" />
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -976,14 +948,9 @@
       <workItem from="1471308584994" duration="5269000" />
       <workItem from="1471314995941" duration="3733000" />
       <workItem from="1471325848581" duration="8187000" />
-      <workItem from="1471337862751" duration="317000" />
-    </task>
-    <task id="LOCAL-00037" summary="about finished userlist.modal,and i would fixed it's controller ,now!">
-      <created>1467336039989</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1467336039989</updated>
+      <workItem from="1471337862751" duration="398000" />
+      <workItem from="1471394438116" duration="9629000" />
+      <workItem from="1471405724153" duration="2698000" />
     </task>
     <task id="LOCAL-00038" summary="add something in userlistController.js">
       <created>1467340970362</created>
@@ -1321,18 +1288,25 @@
       <option name="project" value="LOCAL" />
       <updated>1470992491990</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="重新梳理了php抓取程序">
+      <created>1471338228617</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1471338228617</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1596772000" />
+    <option name="totallyTimeSpent" value="1609180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1370,7 +1344,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed the bug that after signup an account , once click cannot hide OpenTeamBar." />
     <MESSAGE value="analyse codes for dota2-api,almost finished." />
     <MESSAGE value="modify database of searchings.and fixed some codes to adjust this modification." />
     <MESSAGE value="almost finish searching for competition.but there were some bugs remainning , i will fixed it tonight and tomorrow morning." />
@@ -1395,11 +1368,12 @@
     <MESSAGE value="modify something" />
     <MESSAGE value="fixed bug of writeblog,and i chmod 0777 to all files." />
     <MESSAGE value="add a new charts in personpage.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a new charts in personpage.php" />
+    <MESSAGE value="重新梳理了php抓取程序" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新梳理了php抓取程序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="61" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1651,13 +1625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/loadThermodynamicChart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1680,14 +1647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1992">
-          <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/signup_action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1695,9 +1654,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/all.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9744">
+        <state relative-caret-position="508">
           <caret line="406" column="37" selection-start-line="406" selection-start-column="37" selection-end-line="406" selection-end-column="37" />
           <folding>
             <marker date="1471227684980" expanded="true" signature="9125:9171" ph="SELECT * FRO... users" />
@@ -1723,31 +1689,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7152">
-          <caret line="298" column="41" selection-start-line="298" selection-start-column="41" selection-end-line="298" selection-end-column="41" />
+        <state relative-caret-position="-1320">
+          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3504">
-          <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-          <folding>
-            <marker date="1471335737209" expanded="true" signature="391:437" ph="SELECT dota2... users" />
-            <marker date="1471335737209" expanded="true" signature="4757:4883" ph="UPDATE users... " />
-          </folding>
+        <state relative-caret-position="205">
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1471336210680" expanded="true" signature="331:426" ph="SELECT last_... users" />
-            <marker date="1471336210680" expanded="true" signature="1435:1487" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+            <marker date="1471412667668" expanded="true" signature="632:715" ph="SELECT last_... users" />
+            <marker date="1471412667668" expanded="true" signature="632:732" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1471412667668" expanded="true" signature="632:746" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1471412667668" expanded="true" signature="2262:2341" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1471412667668" expanded="true" signature="2494:2636" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
