@@ -9,6 +9,8 @@ require("../../connectDB.php");
 require("../../all.php");
 ?><?php
 header('Content-type: application/json');
+$weekarray=array("日","一","二","三","四","五","六");
+$weektoday = "周".$weekarray[date("w")];
 
 $a = new interfaceResponse();
 $status = $reminder = 0;
@@ -19,9 +21,40 @@ $dota2_uid = $_GET["dota2_uid"];                            //dota2_uid
 $todayStart = mktime(0,0,0,date("m"),date("d"),date("Y"));  //今天0点UNIX时间
 $todayEnd = $todayStart + 24*60*60-1;                       //今天23:59的UNIX时间
 
+switch (date("w")){
+    case "1":
+        $_91daysBeforeToday = date('m/d', strtotime('-91 days'));
+        $_91daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-91 days')),date('d', strtotime('-91 days')));
+        break;
+    case "2":
+        $_91daysBeforeToday = date('m/d', strtotime('-92 days'));
+        $_91daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-92 days')),date('d', strtotime('-92 days')));
+        break;
+    case "3":
+        $_91daysBeforeToday = date('m/d', strtotime('-93 days'));
+        $_91daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-93 days')),date('d', strtotime('-93 days')));
+        break;
+    case "4":
+        $_91daysBeforeToday = date('m/d', strtotime('-94 days'));
+        $_91daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-94 days')),date('d', strtotime('-94 days')));
+        break;
+    case "5":
+        $_91daysBeforeToday = date('m/d', strtotime('-95 days'));
+        $_91daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-95 days')),date('d', strtotime('-95 days')));
+        break;
+    case "6":
+        $_91daysBeforeToday = date('m/d', strtotime('-96 days'));
+        $_91daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-96 days')),date('d', strtotime('-96 days')));
+        break;
+    case "7":
+        $_91daysBeforeToday = date('m/d', strtotime('-97 days'));
+        $_91daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-97 days')),date('d', strtotime('-97 days')));
+        break;
+}
+
 $EchoResult = array();                                      //此程序最终要等待json格式化输出的数组
 
-$sql = "SELECT id,start_time FROM `info_dota2`.`d2i_matchhistory` WHERE d2id = '$dota2_uid' AND start_time < '$todayStart' ";
+$sql = "SELECT id,start_time FROM `info_dota2`.`d2i_matchhistory` WHERE d2id = '$dota2_uid' AND start_time >= '$_91daysBeforeToday_Unix' AND start_time < '$todayStart' ";
 $qry = $db->query($sql);
 @$row = mysqli_num_rows($qry);
     //拿存入数据库的今天之前的比赛数据//从数据库取
