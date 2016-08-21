@@ -55,6 +55,8 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
      * 备注：此函数所有参数均为可选
      * @param uid ： 请求的用户的uid，如果为空，则会传递空值给ajax，而在对应的程序里会默认显示登陆的用户自己的
      */
+    $scope.xArr = [];
+    $scope.xArr_months = [];
     function _loadUserData(uid){
         //判断url里是否有tab。如果有，则请求对应tab的请求；如果没有，则请求默认的pulse数据
         uid==undefined?uid=$location.search()["uid"]:uid;
@@ -87,14 +89,57 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                         "uid":$scope.UserData.uid,
                         "dota2_uid":$scope.UserData.dota2_uid
                     }
-                }).then(function (httpCont){
-                    var Result = httpCont.data;
-                    if(httpCont.data){
+                }).success(function (Cont){
+                    var Result = Cont;
+
+                    var x_a = 0;
+                    var y_a = 0;
+                    var xContent;
+                    var xContent_months = [];
+
+                    for (var x in Result){
+                        xContent = [];
+                        xContent.push(y_a);
+                        xContent.push(x_a);
+                        xContent.push(Result[x]);
+
+                        y_a++;
+                        if(y_a%7==0){
+                            x_a++;
+                            y_a=0;
+
+                            var month_num = x.split("/")[0].substr(1) + "月";
+                            if(xContent_months.length == 0){
+                                xContent_months.push(month_num);
+                            }else{
+                                var repeatStatus = false;
+                                for (var y in xContent_months){
+                                    if(xContent_months[y] == month_num){
+                                        repeatStatus = true;
+                                    }
+                                }
+                                if(repeatStatus){
+                                    xContent_months.push("");
+                                }else{
+                                    xContent_months.push(month_num);
+                                }
+                            }
+                        }
+
+                        $scope.xArr.push(xContent);
+
+                    }
+                    $scope.xArr_months = xContent_months;
+                    console.log($scope.xArr_months);
+
+                    if(Cont){
                         $scope.dota2panelmaskshow = 0;
+                        $scope.loadEchart2();
                     }
 
+                }).error(function (){
+                    alert ("不明原因导致比赛信息获取失败");
                 });
-
             },
             error: function (){
                 alert ("myHomePageError：不明原因导致的获取数据失败，请联系管理员");
@@ -288,27 +333,27 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     /**
      * Echarts
      */
-    $scope.loadEchart = function (){
+    $scope.loadEchart1 = function () {
 
         var DateDateArr = [];
         var DateLivenessArr = [];
-        for(x in $scope.LivenessDataArr){
+        for (x in $scope.LivenessDataArr) {
             DateDateArr.push($scope.LivenessDataArr[x].date);
             DateLivenessArr.push($scope.LivenessDataArr[x].liveness_rate);
         }
 
-        /***配置echart**/
+
         var myChart = echarts.init(document.getElementById('liveness-chart-body'));
         myChart.setOption({
             tooltip: {
                 trigger: "axis",
-                triggerOn:"mousemove",
+                triggerOn: "mousemove",
             },
             grid: {
                 left: '1%',
                 right: '4%',
                 bottom: '4%',
-                top:"15%",
+                top: "15%",
                 containLabel: true
             },
             calculable: true,
@@ -316,7 +361,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 {
                     type: "category",
                     boundaryGap: false,
-                    data:DateDateArr,
+                    data: DateDateArr,
                     nameLocation: "end",
                     min: 1,
                     max: 15,
@@ -346,25 +391,23 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 {
                     name: "活跃度",
                     type: "line",
-                    data:DateLivenessArr,
+                    data: DateLivenessArr,
                     smooth: true,
                     symbolSize: 5
                 }
             ]
         });
+    };
+    $scope.loadEchart2 = function (){
 
+        /***配置echart**/
         var myChart2 = echarts.init(document.getElementById('dota2-thermodynamic-sheet-chart-body'));
-
-        var hours = ['5月', '', '','', '','6月','','', '', '', '7月', '',
-            '', '', '', '8月', '', '', '', ''];
-        var days = ['周日', '周六', '周五', '周四','周三', '周二', '周一'];
-
-        var data = [[0,0,5],[1,0,5],[2,0,5],[3,0,5],[4,0,5],[5,0,5],[6,0,5],[0,1,1],[0,2,0],[0,3,0],[0,4,0],[0,5,0],[0,6,0],[0,7,0],[0,8,0],[0,9,0],[0,10,0],[0,11,2],[0,12,4],[0,13,1],[0,14,1],[0,15,3],[0,16,4],[0,17,6],[0,18,4],[0,19,4],[1,0,7],[1,1,0],[1,2,0],[1,3,0],[1,4,0],[1,5,0],[1,6,0],[1,7,0],[1,8,0],[1,9,0],[1,10,5],[1,11,2],[1,12,2],[1,13,6],[1,14,9],[1,15,11],[1,16,6],[1,17,7],[1,18,8],[2,0,1],[2,1,1],[2,2,0],[2,3,0],[2,4,0],[2,5,0],[2,6,0],[2,7,0],[2,8,0],[2,9,0],[2,10,3],[2,11,2],[2,12,1],[2,13,9],[2,14,8],[2,15,10],[2,16,6],[2,17,5],[2,18,5],[3,0,7],[3,1,3],[3,2,0],[3,3,0],[3,4,0],[3,5,0],[3,6,0],[3,7,0],[3,8,1],[3,9,0],[3,10,5],[3,11,4],[3,12,7],[3,13,14],[3,14,13],[3,15,12],[3,16,9],[3,17,5],[3,18,5],[4,0,1],[4,1,3],[4,2,0],[4,3,0],[4,4,0],[4,5,1],[4,6,0],[4,7,0],[4,8,0],[4,9,2],[4,10,4],[4,11,4],[4,12,2],[4,13,4],[4,14,4],[4,15,14],[4,16,12],[4,17,1],[4,18,8],[5,0,2],[5,1,1],[5,2,0],[5,3,3],[5,4,0],[5,5,0],[5,6,0],[5,7,0],[5,8,2],[5,9,0],[5,10,4],[5,11,1],[5,12,5],[5,13,10],[5,14,5],[5,15,7],[5,16,11],[5,17,6],[5,18,0],[6,0,1],[6,1,0],[6,2,0],[6,3,0],[6,4,0],[6,5,0],[6,6,0],[6,7,0],[6,8,0],[6,9,0],[6,10,1],[6,11,0],[6,12,2],[6,13,1],[6,14,3],[6,15,4],[6,16,0],[6,17,0],[6,18,0]];
-
+        var months = $scope.xArr_months;
+        var days = ['周一', '周二', '周三', '周四', '周五','周六', '周日' ];
+        var data = $scope.xArr;
         data = data.map(function (item) {
             return [item[1], item[0], item[2] || '-'];
         });
-
         myChart2.setOption({
             tooltip: {
                 position: 'top'
@@ -377,7 +420,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             },
             xAxis: {
                 type: 'category',
-                data: hours,
+                data: months,
                 splitArea: {
                     show: true
                 }
@@ -435,7 +478,8 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     _loadUserData();
     _loadUserLiveness();
-    $scope.loadEchart();
+
+    $scope.loadEchart1();
     $rootScope.navactivitify(1);
     $scope.dialog={
         open: false,

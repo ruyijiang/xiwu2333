@@ -24,31 +24,31 @@ $todayEnd = $todayStart + 24*60*60-1;                       //今天23:59的UNIX
 $daysBeforeToday = "";
 $daysBeforeToday_Unix = 0;
 switch (date("w")){
-    case "1":
-        $daysBeforeToday = date('m/d', strtotime('-91 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-91 days')),date('d', strtotime('-91 days')));
+    case "0":
+        $daysBeforeToday = date('m/d', strtotime('-98 days'));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-98 days')),date('d', strtotime('-98 days')));
         break;
-    case "2":
+    case "1":
         $daysBeforeToday = date('m/d', strtotime('-92 days'));
         $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-92 days')),date('d', strtotime('-92 days')));
         break;
-    case "3":
+    case "2":
         $daysBeforeToday = date('m/d', strtotime('-93 days'));
         $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-93 days')),date('d', strtotime('-93 days')));
         break;
-    case "4":
+    case "3":
         $daysBeforeToday = date('m/d', strtotime('-94 days'));
         $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-94 days')),date('d', strtotime('-94 days')));
         break;
-    case "5":
+    case "4":
         $daysBeforeToday = date('m/d', strtotime('-95 days'));
         $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-95 days')),date('d', strtotime('-95 days')));
         break;
-    case "6":
+    case "5":
         $daysBeforeToday = date('m/d', strtotime('-96 days'));
         $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-96 days')),date('d', strtotime('-96 days')));
         break;
-    case "7":
+    case "6":
         $daysBeforeToday = date('m/d', strtotime('-97 days'));
         $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-97 days')),date('d', strtotime('-97 days')));
         break;

@@ -93,7 +93,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div style="width:32px;top:45%;left:47%;position:absolute">
                         <img src="img/fragments/loading/5-121204193955-50.gif">
                     </div>
-                    <p style="width:32%;left:34%;top:55%;position:absolute;color:white;">每天首次加载时间会比较长，请耐心等待...</p>
+                    <p style="width:32%;left:40%;top:55%;position:absolute;color:white;">正在读取数据，请稍候...</p>
                 </div>
                 <div class="panel-heading">
                     <img width="21" height="21" style="margin-top:-6px;margin-right:3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
