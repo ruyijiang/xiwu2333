@@ -130,7 +130,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
 
                     }
                     $scope.xArr_months = xContent_months;
-                    console.log($scope.xArr_months);
 
                     if(Cont){
                         $scope.dota2panelmaskshow = 0;

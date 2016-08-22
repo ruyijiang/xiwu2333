@@ -106,7 +106,7 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/personpageController.js"></script>
 <script  type="text/javascript" src="js/controller/searchController.js"></script>
 <script  type="text/javascript" src="js/controller/404.js"></script>
-<script  type="text/javascript" src="js/controller/testUeController.js"></script>
+<script  type="text/javascript" src="js/controller/communityController.js"></script>
 <!-------------------------------------------------------------------------------------->
 <script  type="text/javascript" src="js/directive/useInvitationCode/useInvitationCode.js"></script>
 </body>
