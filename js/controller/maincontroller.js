@@ -5,11 +5,6 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
     $rootScope.navactivitify(0);
     var timing = Math.round(new Date().getTime());
 
-    $scope.dialog = {
-        open:false,
-        content:"尚未开启，敬请期待"
-    };
-
     $scope.RecoUser = {};
     $rootScope.NowPageTitle = "首页 - 喜屋";
 
