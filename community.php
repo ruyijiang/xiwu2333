@@ -3,7 +3,7 @@ require("library/xwBE-0.0.1/connectDB.php");
 require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 ?>
-<style>body{background-color:#eee}.carousel{height:451px;}.carousel-caption{z-index:10}.carousel .item{height:451px;background-color:#333}.carousel-inner>.item>img{position:absolute;top:0;left:15%;width:70%;height:451px;border-bottom:solid 1px black}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:10px;margin-left:10px}@media (min-width:768px){.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}</style>
+<style>body{background-color:#dadada}.carousel{height:451px;}.carousel-caption{z-index:10}.carousel .item{height:451px;background-color:#333}.carousel-inner>.item>img{position:absolute;top:0;left:15%;width:70%;height:451px;border-bottom:solid 1px black}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:10px;margin-left:10px}@media (min-width:768px){.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}</style>
 <div ng-controller="communityController">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -55,9 +55,12 @@ include("library/xwFE-0.0.1/FEM.php");
     </div>
     <!--End of 轮播-->
 
+
+
+
     <div class="container" style="padding-top:35px">
-        <div role="main" class="row main community-main">
-            <div class="main-leftpart col-lg-8" style="background-color:white;">
+        <div role="main" class="row main community-main" style="background-color:#efefef;box-shadow: 0px 0px 3px #999;">
+            <div class="main-leftpart col-lg-8" style="background-color:white;padding-bottom:35px">
                 <!-- 热门推荐 -->
                 <div class="hotarticles">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-fire"></span>热门推荐</h4>
@@ -68,7 +71,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         </div>
                         <div class="col-md-5">
-                            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                            <img class="featurette-image img-responsive center-block" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image">
                         </div>
                     </div>
                     <div class="row featurette">
@@ -92,8 +95,8 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
                 <!-- 最新文章 -->
-                <div class="lastedtarticles text-center">
-                    <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-fire"></span>最新发表</h4>
+                <div class="lastedtarticles text-center clearfix">
+                    <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-time"></span>最新发表</h4>
                     <hr>
                     <div class="col-lg-4">
                         <div>
@@ -122,12 +125,13 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
                 <!-- 赛事链接,3期做赛事链接，4期做详细内容 -->
-                <div class="tournaments text-center">
-                    <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-fire"></span>最新发表</h4>
+                <div class="tournaments text-center clearfix">
+                    <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-bisai" style="font-size:24px;font-weight:600"></span>联赛信息</h4>
+
                     <hr>
                     <div class="col-lg-4">
                         <div>
-                            <img class="img-circle" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="98" height="98">
+                            <img class="img-rounded" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="128" height="128">
                         </div>
                         <h2 class="tournament_title">那年十八，站如喽啰</h2>
                         <p class="tournament_content">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -135,7 +139,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div>
                     <div class="col-lg-4">
                         <div>
-                            <img class="img-circle" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="98" height="98">
+                            <img class="img-rounded" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="128" height="128">
                         </div>
                         <h2 class="tournament_title">那年十八，站如喽啰</h2>
                         <p class="tournament_content">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -143,7 +147,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div>
                     <div class="col-lg-4">
                         <div>
-                            <img class="img-circle" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="98" height="98">
+                            <img class="img-rounded" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="128" height="128">
                         </div>
                         <h2 class="tournament_title">那年十八，站如喽啰</h2>
                         <p class="tournament_content">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -153,14 +157,103 @@ include("library/xwFE-0.0.1/FEM.php");
             </div>
 
 
-            <div class="main-rightpart col-lg-4" style="background-color:#999;min-height:100px;">
+            <div class="main-rightpart col-lg-4">
                 <!--人物-->
-                <div class="figures">
+                <div class="topics">
+                    <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-huati" style="font-size:24px;"></span>话题</h4>
+                    <hr>
 
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            <h4 class="list-group-item-heading">
+                                免费域名注册
+                            </h4>
+                            <p class="list-group-item-text">
+                                您将通过网页进行免费域名注册。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                    </div>
                 </div>
                 <!--话题-->
-                <div class="topics">
+                <div class="figures" style="margin-top:45px">
+                    <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-renwu" style="font-size:24px;"></span>人物</h4>
+                    <hr>
 
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                免费域名注册
+                            </h4>
+                            <p class="list-group-item-text">
+                                您将通过网页进行免费域名注册。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                            <p class="list-group-item-text">
+                                我们提供 24*7 支持。
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
