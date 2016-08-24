@@ -215,7 +215,12 @@ include("library/xwFE-0.0.1/FEM.php");
 
                     <div class="list-group">
                         <a href="#" class="list-group-item">
-                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54" height="54">
+                            <div>
+                                <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54" height="54">
+                                <div class="user_desc">
+                                    <a>攻略写手 - shy</a>
+                                </div>
+                            </div>
                         </a>
                         <a href="#" class="list-group-item">
                             <h4 class="list-group-item-heading">
