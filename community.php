@@ -59,7 +59,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
 
     <div class="container" style="padding-top:35px">
-        <div role="main" class="row main community-main" style="background-color:#efefef;box-shadow: 0px 0px 3px #999;">
+        <div role="main" class="row main community-main" style="background-color:#efefef;box-shadow: 0px 0px 3px #999;padding:0">
             <div class="main-leftpart col-lg-8" style="background-color:white;padding-bottom:35px">
                 <!-- 热门推荐 -->
                 <div class="hotarticles">
@@ -161,12 +161,13 @@ include("library/xwFE-0.0.1/FEM.php");
                 <!--人物-->
                 <div class="topics">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-huati" style="font-size:24px;"></span>话题</h4>
-                    <hr>
+                    <hr style="border-top:solid 1px #c3c3c3">
 
                     <div class="list-group">
                         <a href="#" class="list-group-item active">
                             <h4 class="list-group-item-heading">
-                                免费域名注册
+                                <i class="iconfont icon-hotchunse" style="color:white;font-size:18px;font-weight:100;display:inline"></i>
+                                本届Ti发挥最优异的选手是哪位？
                             </h4>
                             <p class="list-group-item-text">
                                 您将通过网页进行免费域名注册。
@@ -174,7 +175,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </a>
                         <a href="#" class="list-group-item">
                             <h4 class="list-group-item-heading">
-                                24*7 支持
+                                剑圣六神对单是否打得过幽鬼？
                             </h4>
                             <p class="list-group-item-text">
                                 我们提供 24*7 支持。
@@ -182,7 +183,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </a>
                         <a href="#" class="list-group-item">
                             <h4 class="list-group-item-heading">
-                                24*7 支持
+                                讲道理哪位女主播最漂亮？
                             </h4>
                             <p class="list-group-item-text">
                                 我们提供 24*7 支持。
@@ -209,17 +210,12 @@ include("library/xwFE-0.0.1/FEM.php");
                 <!--话题-->
                 <div class="figures" style="margin-top:45px">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-renwu" style="font-size:24px;"></span>人物</h4>
-                    <hr>
+                    <hr style="border-top:solid 1px #c3c3c3">
 
 
                     <div class="list-group">
                         <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                免费域名注册
-                            </h4>
-                            <p class="list-group-item-text">
-                                您将通过网页进行免费域名注册。
-                            </p>
+                            <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54" height="54">
                         </a>
                         <a href="#" class="list-group-item">
                             <h4 class="list-group-item-heading">
