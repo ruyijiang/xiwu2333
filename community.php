@@ -60,7 +60,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
     <div class="container" style="padding-top:35px">
         <div role="main" class="row main community-main" style="background-color:#efefef;box-shadow: 0px 0px 3px #999;padding:0">
-            <div class="main-leftpart col-lg-8" style="background-color:white;padding-bottom:35px">
+            <div class="main-leftpart col-lg-8 col-md-8" style="background-color:white;padding-bottom:35px">
                 <!-- 热门推荐 -->
                 <div class="hotarticles">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-fire"></span>热门推荐</h4>
@@ -156,111 +156,86 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
             </div>
 
-
-            <div class="main-rightpart col-lg-4">
+            <div class="main-rightpart col-lg-4 col-md-4">
                 <!--人物-->
                 <div class="topics">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-huati" style="font-size:24px;"></span>话题</h4>
                     <hr style="border-top:solid 1px #c3c3c3">
 
-                    <div class="list-group">
-                        <a href="#" class="list-group-item active">
-                            <h4 class="list-group-item-heading">
-                                <i class="iconfont icon-hotchunse" style="color:white;font-size:18px;font-weight:100;display:inline"></i>
-                                本届Ti发挥最优异的选手是哪位？
-                            </h4>
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                            <span class="badge" style="margin-top:3%">21</span>
+                            <a>
+                                <h4 class="list-group-item-heading" style="color:white">
+                                    <i class="iconfont icon-hot" style="color:#df4239;font-size:18px;font-weight:100;display:inline"></i>
+                                    本届Ti发挥最优异的选手是哪位？
+                                </h4>
+                            </a>
                             <p class="list-group-item-text">
                                 您将通过网页进行免费域名注册。
                             </p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                剑圣六神对单是否打得过幽鬼？
-                            </h4>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge" style="margin-top:3%">9</span>
+                            <a>
+                                <h4 class="list-group-item-heading">
+                                    剑圣六神对单是否打得过幽鬼？
+                                </h4>
+                            </a>
                             <p class="list-group-item-text">
                                 我们提供 24*7 支持。
                             </p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                讲道理哪位女主播最漂亮？
-                            </h4>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge" style="margin-top:3%">9</span>
+                            <a>
+                                <h4 class="list-group-item-heading">
+                                    讲道理哪位女主播最漂亮？
+                                </h4>
+                            </a>
                             <p class="list-group-item-text">
                                 我们提供 24*7 支持。
                             </p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                24*7 支持
-                            </h4>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge" style="margin-top:3%">4</span>
+                            <a>
+                                <h4 class="list-group-item-heading">
+                                    24*7 支持
+                                </h4>
+                            </a>
                             <p class="list-group-item-text">
                                 我们提供 24*7 支持。
                             </p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                24*7 支持
-                            </h4>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </a>
+                        </li>
+                    </ul>
+
+                    <div class="list-group">
                     </div>
                 </div>
                 <!--话题-->
-                <div class="figures" style="margin-top:45px">
+                <div class="figures" style="margin-top:35px">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-renwu" style="font-size:24px;"></span>人物</h4>
                     <hr style="border-top:solid 1px #c3c3c3">
-
-
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">
-                            <div>
-                                <img class="img-rounded" src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="54" height="54">
-                                <div class="user_desc">
-                                    <a>攻略写手 - shy</a>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                24*7 支持
-                            </h4>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                24*7 支持
-                            </h4>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                24*7 支持
-                            </h4>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">
-                                24*7 支持
-                            </h4>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </a>
+                    <div class="figures_container">
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
                     </div>
-                </div>
-            </div>
+                </div><!--End of figures-->
+            </div><!--End of rightpart-->
         </div>
 
-
-        <hr>
+        <hr style="border-top:solid 1px #c3c3c3;">
         <?php echo $footer;?>
     </div>
 </div>

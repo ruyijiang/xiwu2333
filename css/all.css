@@ -199,6 +199,8 @@ footer{margin-bottom:30px;}
 .hotarticles,.lastedtarticles{margin-bottom:45px;}
 .hotarticles>h4,.lastedtarticles>h4,.tournaments>h4{font-weight:600}
 .topics>h4,.figures>h4{font-weight:300}
+.figures img{padding:0}
+
 
 /*bootstrap覆盖修正*/
 a[class^="sider-right-btn"]{
