@@ -4,6 +4,18 @@
 app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q){
 
 
+    $http({
+        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php',
+        params:{
+
+        }
+    }).then(function (httpCont){
+        console.log(httpCont);
+    });
+
+
+
+
     $scope.TabShowPage = 1;//当前TabIndex值
     $scope.UserData = {};//请求回来用户数据内容对象
 
@@ -84,7 +96,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                  */
                 $scope.dota2panelmaskshow = 1;
                 $http({
-                    url:'../../library/xwBE-0.0.1/Interface/getDota2Info/test.php',
+                    url:'../../library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php',
                     params:{
                         "uid":$scope.UserData.uid,
                         "dota2_uid":$scope.UserData.dota2_uid

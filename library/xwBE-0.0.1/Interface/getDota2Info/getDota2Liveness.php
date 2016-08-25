@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-//header('Content-type: application/json');
+header('Content-type: application/json');
 $weekarray=array("日","一","二","三","四","五","六");
 $weektoday = "周".$weekarray[date("w")];
 
