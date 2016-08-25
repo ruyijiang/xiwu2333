@@ -231,6 +231,8 @@ include("library/xwFE-0.0.1/FEM.php");
                         <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
                     </div>
                 </div><!--End of figures-->
+                <!--返回头部-->
+                <hr style="border-top:solid 1px #c3c3c3;">
             </div><!--End of rightpart-->
         </div>
 
