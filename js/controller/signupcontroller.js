@@ -82,5 +82,5 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
 
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
-    $rootScope.navactivitify(6);
+    $rootScope.navactivitify(4);
 })

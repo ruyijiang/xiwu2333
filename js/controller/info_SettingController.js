@@ -343,6 +343,9 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
         $("#uploadavatarbtn").attr("disabled","disabled");
         alert ("头像修改成功");
         window.location.reload();
-    }
+    };
+
+
+    $rootScope.navactivitify(22);
 
 });

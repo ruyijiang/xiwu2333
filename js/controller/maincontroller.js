@@ -2,7 +2,7 @@
 app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
-    $rootScope.navactivitify(0);
+    $rootScope.navactivitify(1);
     var timing = Math.round(new Date().getTime());
 
     $scope.RecoUser = {};

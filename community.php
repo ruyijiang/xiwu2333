@@ -165,12 +165,11 @@ include("library/xwFE-0.0.1/FEM.php");
                     <ul class="list-group">
                         <li class="list-group-item active">
                             <span class="badge" style="margin-top:3%">21</span>
-                            <a>
-                                <h4 class="list-group-item-heading" style="color:white">
+                                <h4 class="list-group-item-heading">
                                     <i class="iconfont icon-hot" style="color:#df4239;font-size:18px;font-weight:100;display:inline"></i>
-                                    本届Ti发挥最优异的选手是哪位？
+                                    <a style="color:white">本届Ti发挥最优异的选手是哪位？</a>
                                 </h4>
-                            </a>
+
                             <p class="list-group-item-text">
                                 您将通过网页进行免费域名注册。
                             </p>

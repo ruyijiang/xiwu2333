@@ -26,6 +26,6 @@ app.controller('loginController',function ($scope,$rootScope,$http,$location,$st
     };
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
-    $rootScope.navactivitify(7);
+    $rootScope.navactivitify(5);
     $stateParams.needLogin == 'needLogin'?$scope.showStepReminder = true:$scope.showStepReminder = false;
 });

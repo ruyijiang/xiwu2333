@@ -479,7 +479,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     _loadUserLiveness();
 
     $scope.loadEchart1();
-    $rootScope.navactivitify(1);
+    $rootScope.navactivitify(21);
     $scope.dialog={
         open: false,
         content : ""

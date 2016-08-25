@@ -107,34 +107,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
      * @param str
      */
     $rootScope.navactivitify = function (str){
-        $rootScope.MainPageActivity = $rootScope.RoomListActivity = $rootScope.UserListActivity = $rootScope.MyHomeActivity = $rootScope.MyRoomActivity = $rootScope.BlogActivity = $rootScope.SettingActivity = $rootScope.SignupActivity = $rootScope.LoginActivity = 0;
-
-        switch (str){
-            case 0:
-                $rootScope.MainPageActivity = 1;
-                break;
-            case 1:
-                $rootScope.MyHomeActivity = 1;
-                break;
-            case 2:
-                $rootScope.MyRoomActivity = 1;
-                break;
-            case 3:
-                $rootScope.BlogActivity = 1;
-                break;
-            case 4:
-                $rootScope.SettingActivity = 1;
-                break;
-            case 5:
-                $rootScope.UserListActivity = 1;
-                break;
-            case 6:
-                $rootScope.SignupActivity = 1;
-                break;
-            case 7:
-                $rootScope.LoginActivity = 1;
-                break;
-        }
+        $rootScope.NowShowPage = str;
     };
 
     /**

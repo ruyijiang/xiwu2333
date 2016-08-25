@@ -229,6 +229,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
 
     $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
-    $rootScope.navactivitify(5);
+    $rootScope.navactivitify(2);
     $scope.changeShowPage(1);
 });
