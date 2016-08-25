@@ -98,7 +98,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/signupcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/writeblogcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/blogpagecontroller.js"></script>
-<script  type="text/javascript" src="js/controller/homepagecontroller.js"></script>
 <script  type="text/javascript" src="js/controller/createroomcontroller.js"></script>
 <script  type="text/javascript" src="js/controller/info_SettingController.js"></script>
 <script  type="text/javascript" src="js/controller/certificationController.js"></script>
