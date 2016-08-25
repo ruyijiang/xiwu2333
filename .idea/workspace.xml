@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/community.php" afterPath="$PROJECT_DIR$/community.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/test.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,8 +66,8 @@
       <file leaf-file-name="getLeagueInfo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="336">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -899,7 +895,7 @@
       <workItem from="1472084900879" duration="3742000" />
       <workItem from="1472092104086" duration="10632000" />
       <workItem from="1472120945404" duration="1701000" />
-      <workItem from="1472135700669" duration="3958000" />
+      <workItem from="1472135700669" duration="4201000" />
     </task>
     <task id="LOCAL-00045" summary="finish a thing in search.modal">
       <created>1467770112031</created>
@@ -1248,7 +1244,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1713604000" />
+    <option name="totallyTimeSpent" value="1713847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1047" extended-state="0" />
@@ -1658,8 +1654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="336">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>

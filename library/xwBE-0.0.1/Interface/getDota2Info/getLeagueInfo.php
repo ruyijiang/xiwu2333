@@ -9,10 +9,10 @@ require("../../connectDB.php");
 require("../../all.php");
 ?><?php
 
+/*
 $leagueMapper = new Dota2Api\Mappers\LeagueMapper(22); // set league id (can be get via leagues_mapper)
 $games = $leagueMapper->load();
-print_r($games);
-/*
+print_r($games);*/
 $leaguesMapperWeb = new Dota2Api\Mappers\LeaguesMapperWeb();
 $leagues = $leaguesMapperWeb->load();
 print_r($leagues);
@@ -22,4 +22,4 @@ foreach($leagues as $league) {
     if ($league->get('tournament_url')) {
         echo $league->get('tournament_url');
     }
-}*/
+}
