@@ -90,7 +90,6 @@ echo $openupalertdiv;
 <script src="js/service/search.js" type="text/javascript"></script>
 <!-------------------------------------------------------------------------------------->
 <script  type="text/javascript" src="js/vendor/bootstrap-slider.min.js"></script>
-<script  type="text/javascript" src="js/vendor/stickUp.js"></script>
 <!-------------------------------------------------------------------------------------->
 <script  type="text/javascript" src="js/controller/xiwucontroller.js"></script>
 <script  type="text/javascript" src="js/controller/maincontroller.js"></script>

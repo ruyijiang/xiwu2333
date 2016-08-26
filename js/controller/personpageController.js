@@ -13,7 +13,9 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         console.log(httpCont);
     });
 
+    $scope.saveData = function (index){
 
+    }
 
 
     $scope.TabShowPage = 1;//当前TabIndex值
