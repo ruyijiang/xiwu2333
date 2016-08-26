@@ -60,12 +60,12 @@
       <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+            <state relative-caret-position="94">
+              <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
               <folding>
-                <marker date="1472200123450" expanded="true" signature="2453:2608" ph="SELECT id,st... d2i_matchhistory" />
-                <marker date="1472200123450" expanded="true" signature="4102:4181" ph="SELECT id FR... d2i_matchhistory" />
-                <marker date="1472200123450" expanded="true" signature="4334:4492" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+                <marker date="1472200573292" expanded="true" signature="2453:2608" ph="SELECT id,st... d2i_matchhistory" />
+                <marker date="1472200573292" expanded="true" signature="4101:4180" ph="SELECT id FR... d2i_matchhistory" />
+                <marker date="1472200573292" expanded="true" signature="4333:4491" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
               </folding>
             </state>
           </provider>
@@ -893,14 +893,7 @@
       <workItem from="1472120945404" duration="1701000" />
       <workItem from="1472135700669" duration="4201000" />
       <workItem from="1472173709252" duration="1888000" />
-      <workItem from="1472198619019" duration="1498000" />
-    </task>
-    <task id="LOCAL-00045" summary="finish a thing in search.modal">
-      <created>1467770112031</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1467770112031</updated>
+      <workItem from="1472198619019" duration="2159000" />
     </task>
     <task id="LOCAL-00046" summary="finish skip in search.modal | i need to resolve pagination.">
       <created>1467787051369</created>
@@ -1238,11 +1231,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472106085473</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="重新调整了dota2liveness收录时段，从只记录当日数据，改成记录当日和昨日数据了。">
+      <created>1472200156916</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1472200156918</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1717233000" />
+    <option name="totallyTimeSpent" value="1717894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1287,7 +1287,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add some" />
     <MESSAGE value="fuck valve and fuck myself" />
     <MESSAGE value="coded some" />
     <MESSAGE value="about finish info_setting.php" />
@@ -1312,7 +1311,8 @@
     <MESSAGE value="基本完成了square页面的设计" />
     <MESSAGE value="重新调整了导航active策略。" />
     <MESSAGE value="remove homepage.php,all function were moved to personpage.php &amp; personController.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove homepage.php,all function were moved to personpage.php &amp; personController.js" />
+    <MESSAGE value="重新调整了dota2liveness收录时段，从只记录当日数据，改成记录当日和昨日数据了。" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新调整了dota2liveness收录时段，从只记录当日数据，改成记录当日和昨日数据了。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1645,12 +1645,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+        <state relative-caret-position="94">
+          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
           <folding>
-            <marker date="1472200123450" expanded="true" signature="2453:2608" ph="SELECT id,st... d2i_matchhistory" />
-            <marker date="1472200123450" expanded="true" signature="4102:4181" ph="SELECT id FR... d2i_matchhistory" />
-            <marker date="1472200123450" expanded="true" signature="4334:4492" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+            <marker date="1472200573292" expanded="true" signature="2453:2608" ph="SELECT id,st... d2i_matchhistory" />
+            <marker date="1472200573292" expanded="true" signature="4101:4180" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1472200573292" expanded="true" signature="4333:4491" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
           </folding>
         </state>
       </provider>

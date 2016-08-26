@@ -93,7 +93,6 @@ do{
         echo $a->normalnormalrespond($status,$reminder);
         exit;
     }else{
-
         foreach($b->{"result"}->{"matches"} as $value){
             if($value->{"start_time"} >= $todayStart - 86400 && $value->{"start_time"} <= $todayEnd){
                 //是今天发生的比赛
