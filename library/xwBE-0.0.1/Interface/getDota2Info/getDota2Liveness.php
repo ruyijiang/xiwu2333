@@ -68,7 +68,7 @@ do{
     $EchoResult[$ISOTime] = 0;
 
 
-}while($finaltime < $todayStart);
+}while($finaltime < $todayStart - 86400);
 
 
     $sql = "SELECT id,start_time FROM `info_dota2`.`d2i_matchhistory` WHERE d2id = '$dota2_uid' AND start_time >= '$daysBeforeToday_Unix' AND start_time < '$finaltime' ";
@@ -95,7 +95,7 @@ do{
     }else{
 
         foreach($b->{"result"}->{"matches"} as $value){
-            if($value->{"start_time"} >= $todayStart && $value->{"start_time"} <= $todayEnd){
+            if($value->{"start_time"} >= $todayStart - 86400 && $value->{"start_time"} <= $todayEnd){
                 //是今天发生的比赛
 
                 $ThisMatch_id = $value->{"match_id"};
