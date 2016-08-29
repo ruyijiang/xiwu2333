@@ -3,21 +3,6 @@
  */
 app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeout,checkStatus,$http,$q){
 
-
-    $http({
-        url:'../../library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php',
-        params:{
-
-        }
-    }).then(function (httpCont){
-        console.log(httpCont);
-    });
-
-    $scope.saveData = function (index){
-
-    }
-
-
     $scope.TabShowPage = 1;//当前TabIndex值
     $scope.UserData = {};//请求回来用户数据内容对象
 
