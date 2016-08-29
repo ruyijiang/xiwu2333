@@ -42,26 +42,27 @@ if(!$targetid || !$cate){
         }else{
             $EchoResult = array();
 
-            $sql = "SELECT comment_id,content,regtime,from_uid FROM `comments` WHERE topic_id = '$target_id' ";
+            $sql = "SELECT comment_id,content,regtime,from_uid,to_id FROM `comments` WHERE topic_id = '$target_id' ";
             $qry = $db->query($sql);
             while($row = $qry->fetch_assoc()){
 
                 $arrTemp = array();
-
                 $result_comment_id = $row["comment_id"];
                 $result_content = $row["content"];
                 $result_regtime = $row["regtime"];
                 $result_from_uid = $row["from_uid"];
+                $result_to_id = $row["to_id"];
 
                 $arrTemp["comment_id"] = $result_comment_id;
                 $arrTemp["content"] = $result_content;
                 $arrTemp["regtime"] = $result_regtime;
                 $arrTemp["from_uid"] = $result_from_uid;
+                $arrTemp["to_id"] = $result_to_id;
 
                 array_push($EchoResult,$arrTemp);
             }
 
-            var_dump($EchoResult);
+            echo (json_encode($EchoResult));
 
         }
 
