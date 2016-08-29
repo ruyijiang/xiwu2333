@@ -432,7 +432,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             },
             visualMap: {
                 min: 0,
-                max: 10,
+                max: 18,
                 calculable: false,
                 orient: 'horizontal',
                 left: 'center',
@@ -449,8 +449,8 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 },
                 itemStyle: {
                     emphasis: {
-                        shadowBlur: 7,
-                        shadowColor: 'rgba(0, 0, 0, 0.4)'
+                        shadowBlur: 3,
+                        shadowColor: 'rgba(255, 255, 255, 0.3)'
                     }
                 }
             }]

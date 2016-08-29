@@ -1408,6 +1408,19 @@
     ]
   },
   {
+    "id": "108",
+    "name": "npc_dota_hero_abyssal_underlord",
+    "localizedName": "abyssal_underlord",
+    "chnName": "孽主",
+    "url": "abyssal_underlord",
+    "abilities": [
+      "5637",
+      "5638",
+      "5639",
+      "5640"
+    ]
+  },
+  {
     "id": "109",
     "name": "npc_dota_hero_terrorblade",
     "localizedName": "Terrorblade",
@@ -1469,7 +1482,7 @@
     "name": "npc_dota_hero_arc_warden",
     "localizedName": "Arc_Warden",
     "chnName": "寒冬飞龙",
-    "url": "弧光守望者",
+    "url": "Arc_Warden",
     "abilities": [
       "5637",
       "5638",

@@ -26,7 +26,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/normalize-4.0.0.css" rel="stylesheet"/>
 	<link href="css/dashboard.css" rel="stylesheet"/>
-	<link href="//at.alicdn.com/t/font_1472108556_9155803.css" rel="stylesheet"/>
+	<link href="//at.alicdn.com/t/font_1472482956_7149565.css" rel="stylesheet"/>
 	<link href="css/bootstrap-slider.min.css" rel="stylesheet"/>
 	<!-- All Css -->
 	<link href="css/all.css" rel="stylesheet"/>

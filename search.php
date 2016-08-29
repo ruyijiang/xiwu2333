@@ -99,14 +99,24 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
                 <!--Competition-->
+                <style>
+                    .abcd{
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                        -o-transition: all 0.3s;
+                        transition: all 0.3s;
+                    }
+                    .abcd:hover{
+                        background-color:#e9e9e9s;
+                    }
+                </style>
                 <div ng-if="priority=='competition' && ShowComp" style="" class="col-lg-9 col-md-10 col-xs-12"><!--Competiton-->
-                    <div class="col-lg-11 clearfix" style="padding: 15px;margin-bottom:10px;border-bottom:solid 1px #f1f1f1;">
+                    <div class="col-lg-11 clearfix abcd" style="padding:15px">
                         <div class="search_content-rightpart pull-left">
                             <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
-                                <small><i class="iconfont icon-shuziliu"></i><font>比赛编号:</font><a>{{MatchInfo.match_id}}</a></small> |
+                                <small><i class="iconfont icon-shuziliu"></i><font>比赛编号:</font><a title="查看详情">{{MatchInfo.match_id}}<i class="iconfont icon-fangdajing" style="font-size:13px"></i></a></small> |
                                 <small><i class="iconfont icon-time"></i><font>开始时间:</font><span>{{MatchInfo.start_time}}</span></small> |
                                 <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>{{MatchInfo.duration}}</span></small> |
-                                <small><i class="iconfont icon-ladder"></i><font>技能等级:</font><span>Vh</span></small> |
                                 <small><i class="iconfont icon-server"></i><font>服务器:</font><span>{{MatchInfo.cluster}}</span></small>
                             </div>
                             <div class="search_content-botpart" style="margin-left:10px;">
@@ -120,13 +130,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span class="diet">
                                         <img class="heroimg_insearch" ng-repeat="herourl in MatchInfo.slot_info_diet" alt="{{herourl}}" ng-src="http://cdn.dota2.com.cn/apps/dota2/images/heroes/{{herourl}}_sb.png" height="31"/>
                                     </span>
-                                </div><!--
-                                <div class="pull-left">
-                                    <i class="iconfont icon-star" style="font-size:22px"></i>
                                 </div>
-                                <div class="pull-left" style="margin-left:0px">
-                                    <img src="img/user_img/avatar/1/005ZSYD7jw8evwmt80xh8j30u00u0acx.jpg" width="32" height="32">
-                                </div>-->
                             </div>
                         </div>
                     </div><!--End of DIV1-->
