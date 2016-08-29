@@ -16,17 +16,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
 
     var timing = Math.round(new Date().getTime()/1000);
 
-    //test
-    $.ajax({
-        url:'../../library/xwBE-0.0.1/php/loadThermodynamicChart.php',
-        type:'GET',
-        async: false,
-        data:{},
-        success: function (data){
-        }
-    });
-
-
     /**
      * 左侧微导航的样式驱动的功能的函数
      */

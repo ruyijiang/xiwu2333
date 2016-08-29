@@ -52,15 +52,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
         if(!aid || aid == "undefined"){//缺少关键参数
             var timing = Math.round(new Date().getTime());
 
-            $http({
-                method: 'GET',
-                url: 'library/xwBE-0.0.1/php/HotBlog_Export.php',
-                params:{'timing':timing}
-            }).success(function (data){
-                return data;
-            }).error(function (){
-                alert ("系统检测参数失败，请联系管理员");
-            })
 
         }else{//有关键参数，则返回boolean
             return true;

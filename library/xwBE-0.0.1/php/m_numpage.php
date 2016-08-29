@@ -7,6 +7,7 @@
  */
 require("../connectDB.php");
 require("../all.php");
+//修改用户主页的文章每页显示的数目
 ?>
 <?php
     $uid = $_SESSION["uid"];
