@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="重新调整了dota2liveness收录时段，从当天调整为">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +17,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -46,12 +45,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getLeagueInfo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getLeagueInfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="170">
               <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getComments.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <marker date="1472435359531" expanded="true" signature="699:750" ph="SELECT aid F... article" />
+                <marker date="1472435359531" expanded="true" signature="1159:1247" ph="SELECT aid F... comments" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setComment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-946">
+              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+              <folding>
+                <element signature="e#6#84#0#PHP" expanded="false" />
+                <marker date="1472432063106" expanded="true" signature="2455:2610" ph="SELECT id,st... d2i_matchhistory" />
+                <marker date="1472432063106" expanded="true" signature="4103:4182" ph="SELECT id FR... d2i_matchhistory" />
+                <marker date="1472432063106" expanded="true" signature="4335:4493" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/angular-validation-rule.js" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getUserInfo.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/recordPlayer25MatchInfo.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/vendor/D2I_字段说明.md" />
         <option value="$PROJECT_DIR$/info_settingpage.php" />
@@ -128,9 +163,11 @@
         <option value="$PROJECT_DIR$/js/controller/communityController.js" />
         <option value="$PROJECT_DIR$/community.php" />
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php" />
       </list>
     </option>
   </component>
@@ -145,10 +182,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="681" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -401,6 +437,9 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -440,8 +479,6 @@
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
-      <force value="false" />
-      <verbose value="false" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -458,6 +495,19 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -849,6 +899,7 @@
       <workItem from="1472135700669" duration="4201000" />
       <workItem from="1472173709252" duration="1888000" />
       <workItem from="1472198619019" duration="3321000" />
+      <workItem from="1472432019167" duration="3344000" />
     </task>
     <task id="LOCAL-00047" summary="About finish modifyArticle,but i think there were bugs.fixed it later.">
       <created>1467964898890</created>
@@ -1197,14 +1248,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1719056000" />
+    <option name="totallyTimeSpent" value="1722400000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="681" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19969743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2245827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1276,20 +1327,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/vendor/kronusme/dota2-api/includes/Mappers/HeroesMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/vendor/kronusme/dota2-api/includes/Mappers/LeagueMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/liveness_export.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -1539,7 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1563,21 +1599,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-65">
           <caret line="93" column="52" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
-          <folding>
-            <marker date="1472200573292" expanded="true" signature="2453:2608" ph="SELECT id,st... d2i_matchhistory" />
-            <marker date="1472200573292" expanded="true" signature="4101:4180" ph="SELECT id FR... d2i_matchhistory" />
-            <marker date="1472200573292" expanded="true" signature="4333:4491" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1585,7 +1607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1597">
           <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1593,12 +1614,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1398">
           <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-          <folding>
-            <marker date="1471313659280" expanded="true" signature="779:843" ph="SELECT name heros" />
-            <marker date="1471313659280" expanded="true" signature="3277:3403" ph="SELECT times... searchings" />
-            <marker date="1471313659280" expanded="true" signature="3681:3765" ph="UPDATE searc... " />
-            <marker date="1471313659280" expanded="true" signature="4225:4397" ph="INSERT INTO searchings... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,11 +1626,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="false" />
+            <marker date="1472432063106" expanded="true" signature="2455:2610" ph="SELECT id,st... d2i_matchhistory" />
+            <marker date="1472432063106" expanded="true" signature="4103:4182" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1472432063106" expanded="true" signature="4335:4493" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getLeagueInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="170">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1472435359531" expanded="true" signature="699:750" ph="SELECT aid F... article" />
+            <marker date="1472435359531" expanded="true" signature="1159:1247" ph="SELECT aid F... comments" />
+          </folding>
         </state>
       </provider>
     </entry>
