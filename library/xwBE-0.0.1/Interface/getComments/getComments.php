@@ -13,6 +13,7 @@ $uid = $_GET["uid"];//uid
 $cate = $_GET["cate"];//索取类别
 $targetid = $_GET["target_id"];//目标id
 
+//test
 $cate = "article";
 $targetid = "ART_1543371634";
 
@@ -52,14 +53,24 @@ if(!$targetid || !$cate){
                 $result_regtime = $row["regtime"];
                 $result_from_uid = $row["from_uid"];
                 $result_to_id = $row["to_id"];
+                if($result_to_id && $result_to_id !== 1){
+                    $sql = "SELECT uid,name,avatar FROM users WHERE uid = '$result_to_id' ";
+                    $qry = $db->query($sql);
+                    $row = $qry->fetch_assoc();
+                    $result_to_name = $row["name"];
+                }else{
+                    $result_to_id = $result_to_name = null;
+                }
 
                 $arrTemp["comment_id"] = $result_comment_id;
                 $arrTemp["content"] = $result_content;
                 $arrTemp["regtime"] = $result_regtime;
                 $arrTemp["from_uid"] = $result_from_uid;
                 $arrTemp["to_id"] = $result_to_id;
+                $arrTemp["to_name"] = $result_to_name;
 
                 array_push($EchoResult,$arrTemp);
+
             }
 
             echo (json_encode($EchoResult));
