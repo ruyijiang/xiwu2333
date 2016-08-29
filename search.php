@@ -107,7 +107,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         transition: all 0.3s;
                     }
                     .abcd:hover{
-                        background-color:#e9e9e9s;
+                        background-color:#e9e9e9;
                     }
                 </style>
                 <div ng-if="priority=='competition' && ShowComp" style="" class="col-lg-9 col-md-10 col-xs-12"><!--Competiton-->

@@ -432,7 +432,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             },
             visualMap: {
                 min: 0,
-                max: 18,
+                max: 16,
                 calculable: false,
                 orient: 'horizontal',
                 left: 'center',
