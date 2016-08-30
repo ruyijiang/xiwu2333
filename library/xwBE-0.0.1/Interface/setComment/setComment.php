@@ -44,7 +44,7 @@ if(!$cate || !$content || !$topic_id){
             echo $a->normalrespond($status,$reminder);
             return false;
         }else{
-            $sql = "SELECT regtime FROM 'comments' WHERE from_uid = '$uid' ORDER BY regtime LIMIT 1 DESC ";
+            $sql = "SELECT regtime FROM 'comments' WHERE from_uid = '$uid' ORDER BY regtime DESC LIMIT 1 ";
             $qry = $db->query($sql);
             $row = $qry->fetch_assoc();
             if($row){
