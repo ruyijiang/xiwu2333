@@ -25,7 +25,6 @@ if($timing){
     if($row_all < 1){
         //一个认证用户都没有
 
-
         $sql = "SELECT uid,avatar,name,calling_card_id FROM users ORDER BY regtime DESC LIMIT 12";
         $qry = $db->query($sql);
         while($row = $qry->fetch_assoc()){
