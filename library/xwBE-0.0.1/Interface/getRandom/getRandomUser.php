@@ -9,7 +9,7 @@ require("../../connectDB.php");
 require("../../all.php");
 ?><?php
 
-    $timing = $_GET["timing"];
+    @$timing = $_GET["timing"];
     @$cate = $_GET["cate"];
     @$CateContent = $_GET["content"];
 
@@ -38,15 +38,9 @@ require("../../all.php");
         echo $result_uid;
 
     }else{
+
         $status = 0;
-        $reminder = "缺少关键参数";
+        $reminder = "缺少关键参数，无法进行查询";
         echo $a->normalrespond($status,$reminder);
+
     }
-
-
-
-
-
-
-
-?>
