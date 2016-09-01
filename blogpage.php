@@ -8,35 +8,14 @@ header("Content-Type: text/html; charset=utf-8");
 
       <div class="row">
         <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12" >
-        <?php
-            @$aid = $_POST["aid"];//文章id
-            $aid = 4;
-            $sql = "SELECT * FROM articles WHERE aid = '$aid' ";
-            $qry = $db->query($sql);
-            $row = $qry->fetch_assoc();
-            $result_title = $row["title"];//文章标题
-            $result_time = $row["time"];//文章创建时间
-            @$result_Uri = $row["txt_url"];//文章txt所在路径
-            @$result_content = $row["content"];//数据库中记载的文章正文
-            @empty($result_title)?$result_title="标题获取错误":$result_title;
-            @empty($result_time)?$result_time="创建时间获取错误":$result_time;
-
-
-
-        ?>
-
           <div class="blog-post a_content_container" style="overflow: hidden; word-wrap: break-word;">
               <h2>{{BlogExport.title}}</h2>
               <p><em class="blog-time">{{BlogExport.time}}</em></p>
               <div ng-if="BlogExport.permission == true">
                   <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
-                  <!--<a role="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-print"></span>打印</a>-->
                   <a role="button" class="btn btn-default btn-xs" ng-href="/#/writeblog?aid={{BlogExport.aid}}"><span class="glyphicon glyphicon-edit"></span>修改</a>
-
               </div>
-            
               <hr>
-
               <div class="a1_content_container" style="font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;letter-spacing:1px;" ng-bind-html="BlogExport.content|to_trusted">
               </div><!--End of a_content_container-->
           </div><!-- /.blog-post -->
@@ -49,7 +28,27 @@ header("Content-Type: text/html; charset=utf-8");
             </ul>
           </nav>
 
+
+            <hr>
+            <form role="form" class="row">
+                <div style="background-color:black" class="col-lg-1 col-md-1 col-xs-1 form-group">
+                    <img ng-src="{{BlogExport.avatar}}" class="img-rounded" width="54" height="54"/>
+                </div>
+                <div class="col-lg-11 col-md-11 col-xs-11 form-group">
+                    <div class="W_arrow_bor W_arrow_bor_l">
+                        <i class="S_line3"></i>
+                        <em class="S_bg2_br"></em>
+                    </div>
+                    <textarea class="form-control" style="resize:none" rows="4"></textarea>
+                </div>
+            </form>
+
         </div><!-- /.blog-main -->
+
+
+
+
+
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-3 blog-sidebar">
           <div class="user-avatar">
               <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
