@@ -31,17 +31,44 @@ header("Content-Type: text/html; charset=utf-8");
 
             <hr>
             <form role="form" class="row">
-                <div style="background-color:black" class="col-lg-1 col-md-1 col-xs-1 form-group">
+                <div class="col-lg-1 col-md-1 col-xs-1 form-group">
                     <img ng-src="{{BlogExport.avatar}}" class="img-rounded" width="54" height="54"/>
                 </div>
-                <div class="col-lg-11 col-md-11 col-xs-11 form-group">
-                    <div class="W_arrow_bor W_arrow_bor_l">
-                        <i class="S_line3"></i>
-                        <em class="S_bg2_br"></em>
-                    </div>
-                    <textarea class="form-control" style="resize:none" rows="4"></textarea>
+                <div class="col-lg-11 col-md-11 col-xs-11 form-group comment_main">
+                    <textarea class="form-control comment-textarea" style="resize: vertical;padding:8px;font-size:14px" rows="4"></textarea>
+                    <div class="arrow_icon"></div>
+                    <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 25px">评论</a>
                 </div>
             </form>
+
+            <div class="comments_shower" style="margin-top:10px">
+                <div style="margin-top:10px">
+                    <div class="row comments_shower_con_1" style="margin-top:10px">
+                        <div class="col-lg-1 col-sm-1 col-xs-1">
+                            <img ng-src="{{BlogExport.avatar}}" class="img-rounded" width="54" height="54"/>
+                        </div>
+                        <div class="col-lg-11 col-sm-11 col-xs-11">
+                            <a style="font-weight:600">攻略写手 - shy</a>
+                            <span style="font-size:13px;margin-left:10px">- 2016/09/02 10:44</span>
+                            <p style="margin-top:6px">我还是想知道你们到底是不是蠢？</p>
+                        </div>
+                    </div>
+                    <div class="row comment_shower_scul">
+                        <div class="col-lg-1 col-sm-1 col-xs-1"></div>
+                        <div class="col-lg-11 col-sm-11 col-xs-11">
+                            <div class="comment_shower_buttons" style="border-top:solid #eee 1px;padding-top:6px;font-size:13px">
+                                <a class="active">评论</a>
+                            </div>
+                            <form class="clearfix" role="form" style="margin-top:0px;">
+                                <div class="reply_reminder label label-primary" style="font-size:13px">回复 攻略写手 - shy<font style="font-weight:bold">：</font></div>
+                                <textarea class="form-control" style="text-indent:10.3em;resize:none;padding:8px;font-size:13px" rows="2"></textarea>
+                                <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 25px">评论</a>
+                            </form>
+                        </div>
+                    </div>
+                </div><!--End of comment_1-->
+
+            </div>
 
         </div><!-- /.blog-main -->
 

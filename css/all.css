@@ -201,6 +201,59 @@ footer{margin-bottom:30px;}
 .topics>h4,.figures>h4{font-weight:300}
 .figures img{padding:0}
 
+/*blog视图 - comment模块*/
+.comment_main{
+    position: relative;
+}
+.arrow_icon{
+    position: absolute;
+    width:0;
+    height:0;
+    top:19px;
+    left:0px;
+    border-top: 8px solid transparent;
+    border-right: 16px solid #ccc;
+    border-bottom: 8px solid transparent;
+    transition:all ease-in-out .10s;
+    outline: 0;
+}
+.comment-textarea:focus~.arrow_icon{
+    border-top: 8px solid transparent;
+    border-right: 16px solid #66afe9;
+    border-bottom: 8px solid transparent;
+}
+.comment-textarea{
+    background-color:#f1f1f1;
+    color:#555;
+}
+.comment-textarea:focus{
+    background-color:white;
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.comment_shower_buttons a{
+    display:inline-block;
+    padding:0 35px;
+    border-right:solid #eee 1px;
+}
+.comment_shower_buttons a.active{
+    font-weight:bolder;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(102,175,233,.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.reply_reminder{
+    position: absolute;
+    left:22px;
+    top:33px;
+    max-width: 10em;
+}
+
 
 /*bootstrap覆盖修正*/
 a[class^="sider-right-btn"]{
