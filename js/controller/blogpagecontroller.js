@@ -1,6 +1,7 @@
 app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$location,$timeout){
     var A_aid = $location.search()["aid"];//aid根
     $scope.BlogExport = "";
+    var timing = Math.round(new Date().getTime());
 
     /**
      * 根据aid对文章进行读取，并且把文章操作的权限和功能进行输出
@@ -50,8 +51,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
      */
     function checkAidNexport(aid){
         if(!aid || aid == "undefined"){//缺少关键参数
-            var timing = Math.round(new Date().getTime());
-
 
         }else{//有关键参数，则返回boolean
             return true;
@@ -96,13 +95,50 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
     };
 
-
-
     loadBlog(A_aid);
+
+    /**
+     * 获取评论
+     */
+    $http({
+        method: 'GET',
+        url: 'library/xwBE-0.0.1/Interface/getComments/getComments.php',
+        params:{
+            "cate":"article",
+            "target_id":A_aid
+        }
+    }).then(function (httpCont){
+        $scope.comments = httpCont.data;
+        console.log($scope.comments);
+    });
+
+    /**
+     * 提交评论
+    */
+    $scope.comment_content = "";
+    $scope.sendcomment = function (to_id){
+        if(!to_id){
+            to_id = null;
+        }
+        $.ajax({
+            method: 'POST',
+            url: 'library/xwBE-0.0.1/Interface/setComment/setComment.php',
+            data:{
+                "cate":"article",
+                "topic_id":A_aid,
+                "to_id":to_id,
+                "content":$scope.comment_content
+            }
+        }).success(function (data){
+            console.log(data);
+        }).error(function (){
+            alert ("不明原因导致的提交失败，请联系管理员");
+        })
+    };
+
+
+
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
-
-
-
 }).filter(
     'to_trusted', ['$sce', function ($sce) {
         return function (text) {

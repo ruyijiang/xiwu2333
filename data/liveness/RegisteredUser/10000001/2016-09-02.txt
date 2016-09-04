@@ -1,2 +1,8 @@
 ['Time':2016-09-02 00:00:13,'Commit:'onlineDuration]{0}
 ['Time':2016-09-02 00:00:39,'Commit:'onlineDuration]{0}
+['Time':2016-09-02 00:05:51,'Commit:'onlineDuration]{227.5}
+['Time':2016-09-02 23:46:54,'Commit:'onlineDuration]{70}
+['Time':2016-09-02 23:47:08,'Commit:'onlineDuration]{0}
+['Time':2016-09-02 23:47:16,'Commit:'onlineDuration]{0}
+['Time':2016-09-02 23:48:15,'Commit:'onlineDuration]{0}
+['Time':2016-09-02 23:48:29,'Commit:'onlineDuration]{0}

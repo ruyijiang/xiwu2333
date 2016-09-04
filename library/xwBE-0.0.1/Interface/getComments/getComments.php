@@ -9,19 +9,21 @@ require("../../connectDB.php");
 require("../../all.php");
 ?><?php
 //header('Content-type: application/json');
-$uid = $_GET["uid"];//uid
-$cate = $_GET["cate"];//索取类别
-$targetid = $_GET["target_id"];//目标id
-
-//test
-$cate = "article";
-$targetid = "ART_1543371634";
+@$uid = $_SESSION["uid"];//uid
+@$cate = $_GET["cate"];//索取类别
+@$target_id = $_GET["target_id"];//目标id
 
 $status = 0;
 $reminder = "";
 $a = new interfaceResponse();
 
-if(!$targetid || !$cate){
+$sql = "SELECT name,avatar FROM users WHERE uid = '$uid' ";
+$qry = $db->query($sql);
+$row = $qry->fetch_assoc();
+$result_from_name = $row["name"];
+$result_from_avatar = $row["avatar"];
+
+if(!$target_id || !$cate){
     //-------------------------------------------------------------------------------------->缺少关键参数
     $status = 0;
     $reminder = "缺少关键参数，无法查询";
@@ -43,7 +45,7 @@ if(!$targetid || !$cate){
         }else{
             $EchoResult = array();
 
-            $sql = "SELECT comment_id,content,regtime,from_uid,to_id FROM `comments` WHERE topic_id = '$target_id' ";
+            $sql = "SELECT comment_id,content,regtime,from_uid,to_id FROM `comments` WHERE topic_id = '$target_id' ORDER BY regtime DESC ";
             $qry = $db->query($sql);
             while($row = $qry->fetch_assoc()){
 
@@ -64,8 +66,10 @@ if(!$targetid || !$cate){
 
                 $arrTemp["comment_id"] = $result_comment_id;
                 $arrTemp["content"] = $result_content;
-                $arrTemp["regtime"] = $result_regtime;
+                $arrTemp["regtime"] = date("Y/m/d H:i:s", $result_regtime);
                 $arrTemp["from_uid"] = $result_from_uid;
+                $arrTemp["from_name"] = $result_from_name;
+                $arrTemp["from_avatar"] = $result_from_avatar;
                 $arrTemp["to_id"] = $result_to_id;
                 $arrTemp["to_name"] = $result_to_name;
 
