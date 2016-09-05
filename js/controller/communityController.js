@@ -1,8 +1,11 @@
 /**
  * Created by mazih on 2016/8/22.
  */
-app.controller('communityController',function ($scope,$rootScope){
+app.controller('communityController',function ($scope, $rootScope, $http, $q){
     $rootScope.navactivitify(3);
+    var timing = Math.round(new Date().getTime()/1000);
+    var deferred = $q.defer();
+
     //返回头部方法
     $scope.backtotop = function (){
 

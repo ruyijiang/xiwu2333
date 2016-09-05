@@ -55,10 +55,6 @@ include("library/xwFE-0.0.1/FEM.php");
     </div>
     <!--End of 轮播-->
 
-
-
-
-
     <div class="container" style="padding-top:35px">
         <div role="main" class="row main community-main" style="background-color:#efefef;box-shadow: 0px 0px 3px #999;padding:0">
             <div class="main-leftpart col-lg-8 col-md-8" style="background-color:white;padding-bottom:35px">
