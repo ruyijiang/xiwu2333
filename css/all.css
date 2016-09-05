@@ -233,10 +233,28 @@ footer{margin-bottom:30px;}
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }
+.comments_shower{
+    padding-left:0px;
+    padding-right:0px;
+}
+.comments_shower > div{
+    margin-top:10px;
+    margin-bottom:5px;
+    background-color:#f0f0f0;
+    padding:10px;
+    border-radius:4px
+}
+.comment_shower_buttons{
+     border-top:solid #cbcbcb 1px;
+     padding-top:6px;
+     font-size:13px
+ }
 .comment_shower_buttons a{
+    float:right;
     display:inline-block;
-    padding:0 35px;
-    border-right:solid #eee 1px;
+    padding:4px 25px;
+    font-size:12px;
+    border-left:solid #cbcbcb 1px;
 }
 .comment_shower_buttons a.active{
     font-weight:bolder;

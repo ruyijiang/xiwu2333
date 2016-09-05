@@ -10,7 +10,10 @@ header("Content-Type: text/html; charset=utf-8");
         <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12" >
           <div class="blog-post a_content_container" style="overflow: hidden; word-wrap: break-word;">
               <h2>{{BlogExport.title}}</h2>
-              <p><em class="blog-time">{{BlogExport.time}}</em></p>
+              <p>
+                  <em class="blog-time">{{BlogExport.time}}</em>
+                  <a style="display:inline-block;margin-left:10px" style="padding-bottom:15px"><span class="glyphicon glyphicon-comment" style="display:inline-block;margin-right:2px;"></span>{{commentsLen}}条评论</a>
+              </p>
               <div ng-if="BlogExport.permission == true">
                   <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
                   <a role="button" class="btn btn-default btn-xs" ng-href="/#/writeblog?aid={{BlogExport.aid}}"><span class="glyphicon glyphicon-edit"></span>修改</a>
@@ -31,37 +34,37 @@ header("Content-Type: text/html; charset=utf-8");
 
             <hr>
             <form role="form" class="row">
-                <div class="col-lg-1 col-md-1 col-xs-1 form-group">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1 form-group">
                     <img ng-src="{{BlogExport.avatar}}" class="img-rounded" width="54" height="54"/>
                 </div>
-                <div class="col-lg-11 col-md-11 col-xs-11 form-group comment_main">
+                <div class="col-lg-11 col-md-11 col-sm-10 col-xs-11 form-group comment_main">
                     <textarea class="form-control comment-textarea" style="resize: vertical;padding:8px;font-size:14px" rows="4" ng-model="comment_content"></textarea>
                     <div class="arrow_icon"></div>
-                    <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 25px" ng-click="sendcomment()">评论</a>
+                    <a class="btn btn-primary center-block" style="margin-top:3px" ng-disabled="comment_content==''" ng-click="sendcomment()">评论</a>
                 </div>
             </form>
-
-            <div class="comments_shower">
-                <div style="margin-top:10px" ng-repeat="xcom in comments track by $index">
-                    <div class="row comments_shower_con_1" style="margin-top:10px">
-                        <div class="col-lg-1 col-sm-1 col-xs-1">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1"></div>
+            <div class="comments_shower col-lg-11 col-md-11 col-sm-10 col-xs-11" id="comments_shower">
+                <div ng-repeat="xcom in comments track by $index">
+                    <div class="row comments_shower_con">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
                             <img ng-src="{{xcom.from_avatar}}" class="img-rounded" width="54" height="54"/>
                         </div>
-                        <div class="col-lg-11 col-sm-11 col-xs-11">
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-11">
                             <a style="font-weight:600" ng-href="/#/person?uid={{xcom.from_uid}}">{{xcom.from_name}}</a>
-                            <span style="font-size:13px;margin-left:10px">- {{xcom.regtime}}</span>
-                            <p style="margin-top:6px"><small ng-if="xcom.to_id">回复<a hg-href="xcom.to_id">{{xcom.to_name}}</a>：</small>{{xcom.content}}</p>
+                            <span style="font-size:13px;margin-left:5px">- {{xcom.regtime}}</span>
+                            <p style="margin-top:6px"><small ng-if="xcom.to_id">回复 <a ng-href="/#/person?uid={{xcom.to_id}}">{{xcom.to_name}}</a>：</small>{{xcom.content}}</p>
                         </div>
                     </div>
                     <div class="row comment_shower_scul">
-                        <div class="col-lg-1 col-sm-1 col-xs-1"></div>
-                        <div class="col-lg-11 col-sm-11 col-xs-11">
-                            <div class="comment_shower_buttons" style="border-top:solid #eee 1px;padding-top:6px;font-size:13px">
-                                <a class="active" ng-click="">评论</a>
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1"></div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-11">
+                            <div class="comment_shower_buttons clearfix">
+                                <a ng-class="{active:commentAreaShower == $index}" ng-click="commentthis($index)"><span class="glyphicon glyphicon-comment"></span>评论</a>
                             </div>
-                            <form class="clearfix" role="form" style="margin-top:0px;">
-                                <textarea class="form-control" style="resize:none;padding:8px;font-size:13px" rows="2"></textarea>
-                                <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 20px" ng-click="sendcomment(xcom.from_uid)">评论</a>
+                            <form class="clearfix" role="form" style="padding-bottom:10px" ng-if="commentAreaShower == $index">
+                                <textarea class="form-control" style="resize:vertical;padding:8px;font-size:13px" rows="2" ng-model="xcom.new_content"></textarea>
+                                <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 20px" ng-init="xcom.new_content=''" ng-disabled="xcom.new_content==''" ng-click="sendcomment(xcom.from_uid,xcom.new_content)">评论</a>
                             </form>
                         </div>
                     </div>

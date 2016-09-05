@@ -55,20 +55,29 @@ if(!$cate || !$content || !$topic_id){
                     $reminder = "您提交过于频繁，请稍后再试";
                     echo $a->normalrespond($status,$reminder);
                 }else{
-                    //这里的to_id有可能为空，但是topic_id一定不会为空
-                    $sql = "INSERT INTO comments(comment_id,content,from_uid,to_id,topic_id,regtime) VALUES ('','$content','$uid','$targetid','$topic_id','$tnow_stamp') ";
-                    $qry = $db->query($sql);
-                    if($qry){
-                        //------------------------------------------------------------------------------>提交成功
-                        $status = 1;
-                        $reminder = "提交成功";
+                    if($targetid == $uid){
+                        //------------------------------------------------------------------------------>不允许评论自己。
+                        $status = 0;
+                        $reminder = "不允许评论自己";
                         echo $a->normalrespond($status,$reminder);
                     }else{
-                        //------------------------------------------------------------------------------>提交失败
-                        $status = 0;
-                        $reminder = "提交失败，请联系管理员";
-                        echo $a->normalrespond($status,$reminder);
+                        //这里的to_id有可能为空，但是topic_id一定不会为空
+                        $sql = "INSERT INTO comments(comment_id,content,from_uid,to_id,topic_id,regtime) VALUES ('','$content','$uid','$targetid','$topic_id','$tnow_stamp') ";
+                        $qry = $db->query($sql);
+                        if($qry){
+                            //------------------------------------------------------------------------------>提交成功
+                            $status = 1;
+                            $reminder = "提交成功";
+                            echo $a->normalrespond($status,$reminder);
+                        }else{
+                            //------------------------------------------------------------------------------>提交失败
+                            $status = 0;
+                            $reminder = "提交失败，请联系管理员";
+                            echo $a->normalrespond($status,$reminder);
+                        }
+
                     }
+
                 }
             }else{
                 //这里的to_id有可能为空，但是topic_id一定不会为空

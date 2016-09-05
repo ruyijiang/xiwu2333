@@ -45,9 +45,9 @@ if(!$target_id || !$cate){
         }else{
             $EchoResult = array();
 
-            $sql = "SELECT comment_id,content,regtime,from_uid,to_id FROM `comments` WHERE topic_id = '$target_id' ORDER BY regtime DESC ";
-            $qry = $db->query($sql);
-            while($row = $qry->fetch_assoc()){
+            $sql1 = "SELECT comment_id,content,regtime,from_uid,to_id FROM comments WHERE topic_id = '$target_id' ORDER BY regtime desc LIMIT 15";
+            $qry1 = $db->query($sql1);
+            while($row = $qry1->fetch_assoc()){
 
                 $arrTemp = array();
                 $result_comment_id = $row["comment_id"];
@@ -81,7 +81,7 @@ if(!$target_id || !$cate){
 
         }
 
-    }else if($cate == "match"){
+    }else if($cate == "topic"){
 
     }else{
         //--------------------------------------------------------------------------------->参数无法解析
