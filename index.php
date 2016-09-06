@@ -28,6 +28,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<link href="css/dashboard.css" rel="stylesheet"/>
 	<link href="//at.alicdn.com/t/font_1472482956_7149565.css" rel="stylesheet"/>
 	<link href="css/bootstrap-slider.min.css" rel="stylesheet"/>
+	<link href="css/icheck_plugin/icheck_plugin_all.css" rel="stylesheet"/>
 	<!-- All Css -->
 	<link href="css/all.css" rel="stylesheet"/>
 	<!-- AngularJs -->
@@ -75,6 +76,7 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/run.js"></script>
 <script  type="text/javascript" src="js/utill/all.js"></script>
 <script  type="text/javascript" src="js/vendor/angular-popups.js"></script>
+<script  type="text/javascript" src="js/vendor/icheck.js"></script>
 <script  type="text/javascript" src="js/router.js"></script>
 <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>

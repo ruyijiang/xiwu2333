@@ -201,6 +201,26 @@ footer{margin-bottom:30px;}
 .topics>h4,.figures>h4{font-weight:300}
 .figures img{padding:0}
 
+/*topic视图*/
+.topic_content form >  ol{
+    padding:17px;
+}
+.topic_content form > ol li{
+    margin-bottom:5px;
+}
+.topic_content form >  ol li:hover{
+    background-color:#dfdfdf;
+}
+.btn_forer{
+    padding:5px 0 5px 5px;
+    display:block;
+    cursor:pointer;
+    font-size:15px;
+}
+.btn_forer > div{
+	margin-right:10px;
+}
+
 /*blog视图 - comment模块*/
 .comment_main{
     position: relative;

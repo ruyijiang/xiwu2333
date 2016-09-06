@@ -20,51 +20,73 @@ include("library/xwFE-0.0.1/FEM.php");
             <div class="main-leftpart col-lg-8 col-md-8" style="background-color:white;padding-bottom:35px">
                 <!-- 热门推荐 -->
                 <div class="topic_container">
-                    <h3 style="margin-top:20px;" class="text-left">
+                    <h3 class="text-left">
                         <span class="glyphicon glyphicon-align-left"></span>讲道理的话，你们觉得哪个女主播最漂亮？
+                        <small>2016/09/06 13:43</small>
                     </h3>
-                    <h6 style="display: inline-block">标签：</h6>
-                    <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>直播</div>
-                    <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>女主播</div>
-                    <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>Dota2</div>
-                    <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>英雄联盟</div>
+
+                        <h4 style="display: inline-block;color:#777">
+                            <span class="glyphicon glyphicon-hand-right" style="font-size:12px;margin-right:0px"></span>
+                            如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）
+                        </h4>
+                    <div>
+                        <h6 style="display: inline-block"><span class="glyphicon glyphicon-user"></span>话题发起人：</h6>
+                        <a>攻略写手 - shy</a>
+                    </div>
+                    <div>
+                        <h6 style="display: inline-block"><span class="glyphicon glyphicon-tags"></span>标签：</h6>
+                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>直播</div>
+                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>女主播</div>
+                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>Dota2</div>
+                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>英雄联盟</div>
+
+                    </div>
 
                     <div class="topic_content">
-                        <label><input type="radio" name="most_beautiful">冷冷</label>
-                        <label><input type="radio" name="most_beautiful">Mik</label>
-                        <label><input type="radio" name="most_beautiful">Miss</label>
+                        <form>
+                            <ol style="display:none">
+                                <li>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">冷冷</label>
+                                </li>
+                                <li>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">Mik</label>
+                                </li>
+                                <li>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">Miss</label>
+                                </li>
+                                <li>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">张天鸽</label>
+                                </li>
+                            </ol>
+                            <ol style="display:none">
+                                <li>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">冷冷</label>
+                                </li>
+                                <li>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">Mik</label>
+                                </li>
+                                <li>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">Miss</label>
+                                </li>
+                                <li>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">张天鸽</label>
+                                </li>
+                            </ol>
+                            <div style="padding:10px 0">
+                                <textarea class="form-control" rows="4" style="resize: vertical;max-height:600px;padding-top:11px;"></textarea>
+                            </div>
+                            <a class="btn btn-primary center-block" disabled="disabled">确定</a>
+                        </form>
                     </div>
+
 
                     <hr>
                 </div>
 
 
                 <!-- 赛事链接,3期做赛事链接，4期做详细内容 -->
-                <div class="tournaments text-center clearfix">
-                    <div class="col-lg-4">
-                        <div>
-                            <img class="img-rounded" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="128" height="128">
-                        </div>
-                        <h2 class="tournament_title">那年十八，站如喽啰</h2>
-                        <p class="tournament_content">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看原文 »</a></p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <img class="img-rounded" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="128" height="128">
-                        </div>
-                        <h2 class="tournament_title">那年十八，站如喽啰</h2>
-                        <p class="tournament_content">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看原文 »</a></p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <img class="img-rounded" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image" width="128" height="128">
-                        </div>
-                        <h2 class="tournament_title">那年十八，站如喽啰</h2>
-                        <p class="tournament_content">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看原文 »</a></p>
-                    </div>
+                <div class="text-center clearfix">
+
                 </div>
             </div>
 
