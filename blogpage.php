@@ -62,7 +62,7 @@ header("Content-Type: text/html; charset=utf-8");
                             <div class="comment_shower_buttons clearfix">
                                 <a ng-class="{active:commentAreaShower == $index}" ng-click="commentthis($index)"><span class="glyphicon glyphicon-comment"></span>评论</a>
                             </div>
-                            <form class="clearfix" role="form" style="padding-bottom:10px" ng-if="commentAreaShower == $index">
+                            <form class="clearfix" role="form" style="padding-bottom:10px" ng-show="commentAreaShower == $index">
                                 <textarea class="form-control" style="resize:vertical;padding:8px;font-size:13px" rows="2" ng-model="xcom.new_content"></textarea>
                                 <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 20px" ng-init="xcom.new_content=''" ng-disabled="xcom.new_content==''" ng-click="sendcomment(xcom.from_uid,xcom.new_content)">评论</a>
                             </form>

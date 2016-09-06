@@ -265,7 +265,7 @@ footer{margin-bottom:30px;}
     border-radius:4px
 }
 .comment_shower_buttons{
-     border-top:solid #cbcbcb 1px;
+     border-top:dashed #cbcbcb 1px;
      padding-top:6px;
      font-size:13px
  }
@@ -278,12 +278,14 @@ footer{margin-bottom:30px;}
 }
 .comment_shower_buttons a.active{
     font-weight:bolder;
-    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
-    background-image: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(102,175,233,.3) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-    background-repeat: repeat-x;
+	background-color:#265a88;
+    opacity: .75;
+    border-top:solid #222 1px;
+    border-left:solid #222 1px;
+    border-right:solid #222 1px;
+    border-top-right-radius:3px;
+    border-top-left-radius:3px;
+	color:white;
 }
 .reply_reminder{
     position: absolute;

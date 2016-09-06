@@ -17,7 +17,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
     <div class="container">
         <div role="main" class="row main community-main" style="background-color:#efefef;box-shadow: 0px 0px 3px #999;padding:0">
-            <div class="main-leftpart col-lg-8 col-md-8" style="background-color:white;padding-bottom:35px">
+            <div class="main-leftpart col-lg-8 col-md-8" style="background-color:white;padding-bottom:35px;min-height:705px">
                 <!-- 热门推荐 -->
                 <div class="topic_container">
                     <h3 class="text-left">
@@ -25,13 +25,12 @@ include("library/xwFE-0.0.1/FEM.php");
                         <small>2016/09/06 13:43</small>
                     </h3>
 
-                        <h4 style="display: inline-block;color:#777">
-                            <span class="glyphicon glyphicon-hand-right" style="font-size:12px;margin-right:0px"></span>
-                            如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）
+                        <h4 style="display: inline-block;color:#777;">
+                            <span style="line-height:1.6em;">如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）</span>
                         </h4>
                     <div>
                         <h6 style="display: inline-block"><span class="glyphicon glyphicon-user"></span>话题发起人：</h6>
-                        <a>攻略写手 - shy</a>
+                        <a><img src="img/user_img/avatar/default/default_female2.png" class="img-circle" width="26" height="26" style="margin-right:3px;">攻略写手 - shy</a>
                     </div>
                     <div>
                         <h6 style="display: inline-block"><span class="glyphicon glyphicon-tags"></span>标签：</h6>
@@ -79,16 +78,74 @@ include("library/xwFE-0.0.1/FEM.php");
                         </form>
                     </div>
 
-
                     <hr>
                 </div>
 
-
                 <!-- 赛事链接,3期做赛事链接，4期做详细内容 -->
-                <div class="text-center clearfix">
-
-                </div>
+                <ul class="topic_comments list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
+                                <img ng-src="img/user_img/avatar/default/default_female.png" class="img-rounded" width="54" height="54" src="img/user_img/avatar/default/default_female.png">
+                            </div>
+                            <div class="col-lg-11 col-md-11 col-sm-10 col-xs-11">
+                                <a style="font-weight:600" ng-href="/#/person?uid=10000001" class="ng-binding" href="/#/person?uid=10000001">Milo</a>
+                                <span style="font-size:13px;margin-left:5px" class="ng-binding">- 2016/09/04 23:41:44</span>
+                                <p style="margin-top:6px" class="ng-binding"><!-- ngIf: xcom.to_id -->55555</p>
+                            </div>
+                        </div>
+                        <div class="row comment_shower_scul">
+                            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1"></div>
+                            <div class="col-lg-11 col-md-11 col-sm-10 col-xs-11">
+                                <div class="comment_shower_buttons clearfix">
+                                    <a ng-class="{active:commentAreaShower == $index}" ng-click="commentthis($index)" class=""><span class="glyphicon glyphicon-comment"></span>评论</a>
+                                </div>
+                                <form class="clearfix ng-pristine ng-valid ng-hide" role="form" style="padding-bottom:10px" ng-show="commentAreaShower == $index">
+                                    <textarea class="form-control ng-pristine ng-untouched ng-valid" style="resize:vertical;padding:8px;font-size:13px" rows="2" ng-model="xcom.new_content"></textarea>
+                                    <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 20px" ng-init="xcom.new_content=''" ng-disabled="xcom.new_content==''" ng-click="sendcomment(xcom.from_uid,xcom.new_content)" disabled="disabled">评论</a>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="margin-top:3%">9</span>
+                        <a>
+                            <h4 class="list-group-item-heading">
+                                剑圣六神对单是否打得过幽鬼？
+                            </h4>
+                        </a>
+                        <p class="list-group-item-text">
+                            我们提供 24*7 支持。
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="margin-top:3%">9</span>
+                        <a>
+                            <h4 class="list-group-item-heading">
+                                讲道理哪位女主播最漂亮？
+                            </h4>
+                        </a>
+                        <p class="list-group-item-text">
+                            我们提供 24*7 支持。
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="margin-top:3%">4</span>
+                        <a>
+                            <h4 class="list-group-item-heading">
+                                24*7 支持
+                            </h4>
+                        </a>
+                        <p class="list-group-item-text">
+                            我们提供 24*7 支持。
+                        </p>
+                    </li>
+                </ul>
             </div>
+
+
+
+
 
             <div class="main-rightpart col-lg-4 col-md-4">
                 <!--人物-->
@@ -97,11 +154,10 @@ include("library/xwFE-0.0.1/FEM.php");
                     <hr style="border-top:solid 1px #c3c3c3">
 
                     <ul class="list-group">
-                        <li class="list-group-item active">
+                        <li class="list-group-item">
                             <span class="badge" style="margin-top:3%">21</span>
                             <h4 class="list-group-item-heading">
-                                <i class="iconfont icon-hot" style="color:#df4239;font-size:18px;font-weight:100;display:inline"></i>
-                                <a style="color:white">本届Ti发挥最优异的选手是哪位？</a>
+                                <a>本届Ti发挥最优异的选手是哪位？</a>
                             </h4>
 
                             <p class="list-group-item-text">
@@ -144,16 +200,15 @@ include("library/xwFE-0.0.1/FEM.php");
                     </ul>
                 </div>
 
-                <div class="others_topics" style="margin-top:35px">
+                <div class="latest_comments" style="margin-top:35px;">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-huati" style="font-size:24px;"></span>最新发表</h4>
                     <hr style="border-top:solid 1px #c3c3c3">
 
                     <ul class="list-group">
-                        <li class="list-group-item active">
+                        <li class="list-group-item">
                             <span class="badge" style="margin-top:3%">21</span>
                             <h4 class="list-group-item-heading">
-                                <i class="iconfont icon-hot" style="color:#df4239;font-size:18px;font-weight:100;display:inline"></i>
-                                <a style="color:white">本届Ti发挥最优异的选手是哪位？</a>
+                                <a>本届Ti发挥最优异的选手是哪位？</a>
                             </h4>
 
                             <p class="list-group-item-text">
