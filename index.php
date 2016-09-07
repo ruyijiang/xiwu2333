@@ -111,5 +111,6 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/controller/404.js"></script>
 <!-------------------------------------------------------------------------------------->
 <script  type="text/javascript" src="js/directive/useInvitationCode/useInvitationCode.js"></script>
+<script  type="text/javascript" src="js/directive/iCheck/iCheck.js"></script>
 </body>
 </html>

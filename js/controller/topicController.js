@@ -11,4 +11,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location){
     });
 
 
+    $scope.test = true;
+
+
 });

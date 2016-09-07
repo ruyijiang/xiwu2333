@@ -57,21 +57,24 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">张天鸽</label>
                                 </li>
                             </ol>
-                            <ol style="display:none">
+                            <ol>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">冷冷</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" i-check ng-model="test" type="checkbox">冷冷</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">Mik</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox">Mik</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">Miss</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox">Miss</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" name="most_beautiful">张天鸽</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox">张天鸽</label>
+                                </li>
+                                <li>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox">时尚</label>
                                 </li>
                             </ol>
-                            <div style="padding:10px 0">
+                            <div style="padding:15px 0;display:none">
                                 <textarea class="form-control" rows="4" style="resize: vertical;max-height:600px;padding-top:11px;"></textarea>
                             </div>
                             <a class="btn btn-primary center-block" disabled="disabled">确定</a>
