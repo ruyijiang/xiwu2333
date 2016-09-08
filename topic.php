@@ -59,7 +59,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </ol>
                             <ol>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" i-check ng-model="test" type="checkbox">冷冷</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" i-check ng-model="test1" type="checkbox">冷冷</label>
                                 </li>
                                 <li>
                                     <label class="btn_forer"><input class="topic_checkbox" type="checkbox">Mik</label>
