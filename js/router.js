@@ -154,6 +154,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/square",
             templateUrl: "community.php"
         })
+        .state("edittopic",{
+            url: "/edittopic",
+            templateUrl: "writeTopic.php"
+        })
         .state("topic",{
             url: "/topic",
             templateUrl: "topic.php"
