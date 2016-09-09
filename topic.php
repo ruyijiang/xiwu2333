@@ -43,29 +43,29 @@ include("library/xwFE-0.0.1/FEM.php");
 
                     <div class="topic_content">
                         <form>
-                            <ol style="display:none">
+                            <ol>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">冷冷</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="1" i-check prop="testra" ng-model="testra">冷冷</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">Mik</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="2" i-check prop="testra" ng-model="testra">Mik</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">Miss</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="3" i-check prop="testra" ng-model="testra">Miss</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful">张天鸽</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="4" i-check prop="testra" ng-model="testra">张天鸽</label>
                                 </li>
                             </ol>
                             <ol>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" i-check ng-model="test1" type="checkbox">冷冷</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" i-check prop="test1" ng-model="test1" type="checkbox">冷冷</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox">Mik</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test2" ng-model="test2">Mik</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox">Miss</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test3" ng-model="test3">Miss</label>
                                 </li>
                                 <li>
                                     <label class="btn_forer"><input class="topic_checkbox" type="checkbox">张天鸽</label>

@@ -6,17 +6,21 @@ app.directive("iCheck",function() {
     return {
         restrict : 'A',
         require: '?ngModel',
+        scope:{
+            prop:"="
+        },
         link:function (scope, elem, attr, ngModel){
+            //初始赋值
+            $(elem).on('ifCreated ',function (){
 
-            scope.$watch('test1',function (newVal,oldVal){
-                console.log(newVal);
-                if(newVal){
+                if(scope.prop === true || attr.value == scope.prop){
                     $(elem).iCheck('check');
                 }else{
                     $(elem).iCheck('uncheck');
                 }
             });
 
+            //点击赋值
             $(elem).iCheck({
 
                 checkboxClass: 'icheckbox_square',
