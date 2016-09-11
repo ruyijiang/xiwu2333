@@ -38,7 +38,6 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>女主播</div>
                         <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>Dota2</div>
                         <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>英雄联盟</div>
-
                     </div>
 
                     <div class="topic_content">
@@ -145,10 +144,6 @@ include("library/xwFE-0.0.1/FEM.php");
                     </li>
                 </ul>
             </div>
-
-
-
-
 
             <div class="main-rightpart col-lg-4 col-md-4">
                 <!--人物-->
