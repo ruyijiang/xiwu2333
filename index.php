@@ -115,5 +115,6 @@ echo $openupalertdiv;
 <!-------------------------------------------------------------------------------------->
 <script  type="text/javascript" src="js/directive/useInvitationCode/useInvitationCode.js"></script>
 <script  type="text/javascript" src="js/directive/iCheck/iCheck.js"></script>
+<script  type="text/javascript" src="js/directive/tagsinput/tagsInput.js"></script>
 </body>
 </html>

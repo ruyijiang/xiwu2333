@@ -78,9 +78,10 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span class="glyphicon glyphicon-bookmark" style="font-size:12px"></span>话题分类：
                                 </div>
                                 <div class="form-group col-lg-10 col-sm-10 col-xs-10">
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="1" i-check prop="testra">战报</label>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="2" i-check prop="testra">技术贴</label>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="3" i-check prop="testra">八卦</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="1" i-check prop="testra">天梯</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="2" i-check prop="testra">赛事</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="3" i-check prop="testra">技术贴</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="4" i-check prop="testra">八卦</label>
                                 </div>
                             </div>
 
@@ -89,13 +90,13 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span class="glyphicon glyphicon-tags" style="font-size:12px"></span>关键词：
                                 </div>
                                 <div class="form-group col-lg-10 col-sm-10 col-xs-10">
-                                    <input name="tags" id="tags" value="Dota2"/>
+                                    <tagsinput ng-model="pageData.tags" default-value="Dota2"></tagsinput>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <a class="btn btn-primary center-block" disabled="disabled"><span class="glyphicon glyphicon-send"></span>确认发表</a>
+                            <a class="btn btn-primary center-block" ng-click="tellmemore()"><span class="glyphicon glyphicon-send"></span>确认发表</a>
                         </div>
 
                         <hr>
@@ -103,6 +104,12 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
             </div><!--End of leftpart-->
+
+
+
+
+
+
 
             <div class="main-rightpart col-lg-4 col-md-4">
             </div><!--End of rightpart-->
