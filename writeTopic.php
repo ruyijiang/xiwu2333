@@ -11,6 +11,7 @@ include("library/xwFE-0.0.1/FEM.php");
 ?>
 <style>
     body{background-color:#dadada}
+    .topic_container{margin-top:25px;}
 </style>
 
 <div ng-controller="writeTopicController" style="margin-top:110px">
@@ -22,19 +23,16 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="topic_container">
                     <form>
                         <div class="topic_editor_content">
-                            <legend>
+                            <legend style="padding:6px 0">
                                 <span class="glyphicon glyphicon-link" style="font-size:20px"></span>自定义链接
                             </legend>
                             <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-xs-1">
-                                </div>
-                                <div class="col-lg-11 col-sm-11 col-xs-11">
-                                    <p>http://www.xiwu2333.com/topic/<span style="font-weight:bold">{{pageData.customUrl}}</span></p>
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <p>URL链接预览：http://www.xiwu2333.com/topic/<span style="font-weight:bold">{{pageData.customUrl}}</span></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-xs-1"></div>
-                                <div class="col-lg-11 col-sm-11 col-xs-11">
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
                                     <div class="input-group">
                                         <input type="text" class="form-control" style="font-weight:bold" ng-model="pageData.customUrl">
                                     <span class="input-group-btn">
@@ -46,32 +44,27 @@ include("library/xwFE-0.0.1/FEM.php");
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-xs-1"></div>
-                                <div class="form-group col-lg-11 col-sm-11 col-xs-11">
-                                    <small><i class="iconfont icon-alert" style="color:#337ab7;"></i>您可以不填写此项，那么将使用默认的URL链接</small>
+                                <div class="form-group col-lg-12 col-sm-12 col-xs-12">
+                                    <small><i class="iconfont icon-alert" style="color:#337ab7;margin-right:5px"></i>您可以不填写此项，那么将使用默认的URL链接</small>
                                 </div>
                             </div>
 
-                            <legend><span class="glyphicon glyphicon-align-left" style="font-size:20px"></span>话题正文</legend>
+                            <legend style="padding:6px 0"><span class="glyphicon glyphicon-align-left" style="font-size:20px"></span>话题正文</legend>
                             <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-xs-1"></div>
-                                <div class="form-group col-lg-11 col-sm-11 col-xs-11">
+                                <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                     <input class="form-control" type="text" placeholder="话题标题">
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-xs-1">
-                                    <span class="glyphicon glyphicon-align-user" style="font-size:20px"></span>
-                                </div>
-                                <div class="form-group col-lg-11 col-sm-11 col-xs-11">
+                                <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                     <textarea class="form-control" type="text" placeholder="话题描述" style="resize: vertical" rows="4"></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="topic_choice">
-                            <legend><span class="glyphicon glyphicon-paperclip" style="font-size:20px"></span>话题选项</legend>
+                            <legend style="padding:6px 0"><span class="glyphicon glyphicon-paperclip" style="font-size:20px"></span>话题选项</legend>
 
                             <div class="row">
                                 <div class="col-lg-2 col-sm-2 col-xs-1">
