@@ -24,6 +24,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, ch
 
         })
     }
+
     /**
      * 如果采用AJAX方式提交表单，则在form ng-submit属性上添加此函数
      * @returns {boolean}
