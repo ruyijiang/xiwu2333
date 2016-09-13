@@ -28,15 +28,15 @@ include("library/xwFE-0.0.1/FEM.php");
                             </legend>
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                                    <p>URL链接预览：http://www.xiwu2333.com/topic/<span style="font-weight:bold">{{pageData.customUrl}}</span></p>
+                                    <p>URL链接预览：http://www.xiwu2333.com/#/topic/<span style="font-weight:bold">{{pageData.customUrl}}</span></p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12 col-xs-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" style="font-weight:bold" ng-model="pageData.customUrl">
+                                        <input type="text" class="form-control" style="font-weight:bold" id="customUrl" ng-model="pageData.customUrl">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">
+                                        <button class="btn btn-default" type="button" id="d_clip_button" data-clipboard-target="customUrl" ng-disabled="!pageData.customUrl || pageData.customUrl == ''">
                                             <i class="iconfont icon-copy" style="font-size:12px;margin-right:4px"></i>复制URL链接
                                         </button>
                                     </span>
@@ -83,7 +83,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span class="glyphicon glyphicon-tags" style="font-size:12px"></span>关键词：
                                 </div>
                                 <div class="form-group col-lg-10 col-sm-10 col-xs-10">
-                                    <tagsinput ng-model="pageData.tags" default-value="Dota2"></tagsinput>
+                                    <tagsinput ng-model="pageData.tags" tags-data="pageData.tags" default-value="Dota2"></tagsinput>
                                 </div>
                             </div>
                         </div>

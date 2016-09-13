@@ -79,6 +79,7 @@ echo $openupalertdiv;
 <script  type="text/javascript" src="js/vendor/angular-popups.js"></script>
 <script  type="text/javascript" src="js/vendor/icheck.js"></script>
 <script  type="text/javascript" src="js/vendor/tagsinput.js"></script>
+<script  type="text/javascript" src="js/vendor/ZeroClipboard.js"></script>
 <script  type="text/javascript" src="js/router.js"></script>
 <script  type="text/javascript" src="js/utill/htmldecode.js"></script>
 <script  type="text/javascript" src="js/utill/welcomejsonstring.js"></script>

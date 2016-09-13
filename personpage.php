@@ -94,6 +94,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <img src="img/fragments/loading/5-121204193955-50.gif">
                     </div>
                     <p style="width:32%;left:40%;top:55%;position:absolute;color:white;">正在读取数据，请稍候...</p>
+                    <p style="width:70%;left:15%;top:60%;position:absolute;color:white;">（如果长时间没有反应，可能是STEAM服务器连接超时所引起的，请尝试刷新页面）</p>
                 </div>
                 <div class="panel-heading">
                     <img width="21" height="21" style="margin-top:-6px;margin-right:3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
