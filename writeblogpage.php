@@ -22,7 +22,6 @@ include("library/xwFE-0.0.1/FEM.php");
     </form>
 
 
-
     <hr>
     <?php echo $footer;?>
 

@@ -9,18 +9,19 @@ header("Content-Type: text/html; charset=utf-8");
       <div class="row">
         <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12" >
           <div class="blog-post a_content_container" style="overflow: hidden; word-wrap: break-word;">
-              <h2>{{BlogExport.title}}</h2>
-              <p>
-                  <em class="blog-time">{{BlogExport.time}}</em>
-                  <a style="display:inline-block;margin-left:10px" style="padding-bottom:15px"><span class="glyphicon glyphicon-comment" style="display:inline-block;margin-right:2px;"></span>{{commentsLen}}条评论</a>
-              </p>
-              <div ng-if="BlogExport.permission == true">
-                  <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
-                  <a role="button" class="btn btn-default btn-xs" ng-href="/#/writeblog?aid={{BlogExport.aid}}"><span class="glyphicon glyphicon-edit"></span>修改</a>
+              <div class="blog_titlecontainer" style="position: relative;padding:25px 0 15px 0px;margin-bottom:25px;">
+                  <div class="blog_title_mask" style="position:absolute;right:0;top:0;width:60%;height:100%;background-image:linear-gradient(to left,rgba(0,0,0,.7) 0,rgba(0,0,0,0.00001) 80%);"></div>
+                  <h2>{{BlogExport.title}}</h2>
+                  <p>
+                      <em class="blog-time">{{BlogExport.time}}</em>
+                      <a style="display:inline-block;margin-left:10px" style="padding-bottom:15px"><span class="glyphicon glyphicon-comment" style="display:inline-block;margin-right:2px;"></span>{{commentsLen}}条评论</a>
+                  </p>
+                  <div ng-if="BlogExport.permission == true">
+                      <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
+                      <a role="button" class="btn btn-default btn-xs" ng-href="/#/writeblog?aid={{BlogExport.aid}}"><span class="glyphicon glyphicon-edit"></span>修改</a>
+                  </div>
               </div>
-              <hr>
-              <div class="a1_content_container" style="font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;letter-spacing:1px;" ng-bind-html="BlogExport.content|to_trusted">
-              </div><!--End of a_content_container-->
+              <div class="a1_content_container" style="font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;letter-spacing:1px;" ng-bind-html="BlogExport.content|to_trusted"></div><!--End of a_content_container-->
           </div><!-- /.blog-post -->
 
 
