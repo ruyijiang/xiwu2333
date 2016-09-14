@@ -19,8 +19,7 @@ header("Content-Type: text/html; charset=utf-8");
 
                   <div class="blog_title_mask" style="position:absolute;right:0;top:0;width:54%;height:100%;background:linear-gradient(to left,transparent 17%,rgba(255,255,255,1) 86%);z-index:2;"></div>
                   <div class="blog_title_img" style="position:absolute;right:0;top:0;width:54%;height:100%;background-image:url('img/main_bg/20130428100656532.jpg');z-index:1;border-radius:7px"></div>
-                  <p>
-                  </p>
+                  
                   <div ng-if="BlogExport.permission == true">
                       <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
                       <a role="button" class="btn btn-default btn-xs" ng-href="/#/writeblog?aid={{BlogExport.aid}}"><span class="glyphicon glyphicon-edit"></span>修改</a>
