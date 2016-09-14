@@ -10,11 +10,16 @@ header("Content-Type: text/html; charset=utf-8");
         <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12" >
           <div class="blog-post a_content_container" style="overflow: hidden; word-wrap: break-word;">
               <div class="blog_titlecontainer" style="position: relative;padding:25px 0 15px 0px;margin-bottom:25px;">
-                  <div class="blog_title_mask" style="position:absolute;right:0;top:0;width:60%;height:100%;background-image:linear-gradient(to left,rgba(0,0,0,.7) 0,rgba(0,0,0,0.00001) 80%);"></div>
-                  <h2>{{BlogExport.title}}</h2>
-                  <p>
+
+                  <div class="blog_title_main" style="position:relative;z-index: 3">
+                      <h2>{{BlogExport.title}}</h2>
                       <em class="blog-time">{{BlogExport.time}}</em>
                       <a style="display:inline-block;margin-left:10px" style="padding-bottom:15px"><span class="glyphicon glyphicon-comment" style="display:inline-block;margin-right:2px;"></span>{{commentsLen}}条评论</a>
+                  </div>
+
+                  <div class="blog_title_mask" style="position:absolute;right:0;top:0;width:54%;height:100%;background:linear-gradient(to left,transparent 17%,rgba(255,255,255,1) 86%);z-index:2;"></div>
+                  <div class="blog_title_img" style="position:absolute;right:0;top:0;width:54%;height:100%;background-image:url('img/main_bg/20130428100656532.jpg');z-index:1;border-radius:7px"></div>
+                  <p>
                   </p>
                   <div ng-if="BlogExport.permission == true">
                       <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>
