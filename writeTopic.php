@@ -34,7 +34,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12 col-xs-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" style="font-weight:bold" id="customUrl" ng-model="pageData.customUrl">
+                                        <input type="text" class="form-control" style="font-weight:bold" name="customUrl" id="customUrl" ng-model="pageData.customUrl">
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="button" id="d_clip_button" data-clipboard-target="customUrl" ng-disabled="!pageData.customUrl || pageData.customUrl == ''">
                                             <i class="iconfont icon-copy" style="font-size:12px;margin-right:4px"></i>复制URL链接
