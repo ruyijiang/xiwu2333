@@ -35,8 +35,16 @@ app.controller('writeTopicController',function ($scope){
     /**
      * 提交本页数据
      */
-    $scope.tellmemore = function (){
+    $scope.saveData = function (){
+        $.ajax({
+            url:'../../library/xwBE-0.0.1/Interface/setTopic.php',
+            type:'POST',
+            async:false,
+            data: $scope.pageData,
+            success: function (data){
 
+            }
+        })
     };
 
 

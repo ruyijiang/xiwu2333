@@ -89,7 +89,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </div>
 
                         <div>
-                            <a class="btn btn-primary center-block" ng-click="tellmemore()"><span class="glyphicon glyphicon-send"></span>确认发表</a>
+                            <a class="btn btn-primary center-block" ng-click="saveData()"><span class="glyphicon glyphicon-send"></span>确认发表</a>
                         </div>
 
                         <hr>
