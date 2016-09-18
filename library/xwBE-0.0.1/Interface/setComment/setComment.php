@@ -94,6 +94,7 @@ if(!$cate || !$content || !$topic_id){
                     $reminder = "提交失败，请联系管理员";
                     echo $a->normalrespond($status,$reminder);
                 }
+
             }
 
         }

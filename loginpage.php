@@ -28,25 +28,18 @@ include("library/xwFE-0.0.1/FEM.php");
                 <input type="password" id="inputPassword" class="form-control" placeholder="密码" minlength="8" ng-model="UserPassword">
             </div>
 
-            <!--<div class="checkbox">
-              <label>
-                <input type="checkbox" value="remember-me" checked="checked">记住密码
-              </label>
-              <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" data-original-title="在公共计算机上不建议勾选"></span>
-            </div>-->
-
             <div class="btn-group" style="margin-top:15px">
               <button type="button" class="btn btn-default" ui-sref="signup"><small>还没有账号?</small></button>
               <input type="submit" class="btn btn-primary" value="登陆&raquo;"/>
             </div>
           </form>
-        <div class="otherlogindiv" style="margin-top:25px">
+          <div class="otherlogindiv" style="margin-top:25px">
             <small class="pull-left" style="margin-top:4px">使用其它社交账号登陆：</small>
             <div class="clearfix otherlogindiv_div">
               <a class="weibolog pull-left" ng-click="loginqq()"></a>
               <a class="qqlog pull-left" ng-click="loginqq()"></a>
             </div>
-        </div>
+          </div>
         </div><!--row-->
 </div><!--container-->
 

@@ -1,7 +1,7 @@
 /**
  * Created by mazih on 2016/9/9.
  */
-app.controller('writeTopicController',function ($scope){
+app.controller('writeTopicController',function ($scope, $http, $q){
 
 
     /**
@@ -49,6 +49,31 @@ app.controller('writeTopicController',function ($scope){
             }
         })
     };
+
+
+    /**
+     * 实时检查自定义URL是否已被注册
+     */
+    var deferred = $q.defer();
+    $("#customUrl").blur(function (){
+        checkUrl();
+    });
+
+    function checkUrl(){
+        $http({
+            method: 'GET',
+            url: '../../library/xwBE-0.0.1/Interface/setTopic/checkUrl.php',
+            params:{'content': $scope.pageData.customUrl}
+        }).success(function (data){
+            deferred.resolve(data);
+        }).error(function (reason) {
+            deferred.reject(reason);
+        }).then(function (httpCont) {
+
+            console.log(httpCont);
+
+        })
+    }
 
 
 });
