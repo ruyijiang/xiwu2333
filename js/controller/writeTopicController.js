@@ -9,7 +9,10 @@ app.controller('writeTopicController',function ($scope){
      */
     $scope.pageData = {
         customUrl:"",
-        tags:""
+        topic_title:"",
+        topic_desc:"",
+        topic_cate:1,
+        topic_tags:"Dota2"
     };
 
 
@@ -37,7 +40,7 @@ app.controller('writeTopicController',function ($scope){
      */
     $scope.saveData = function (){
         $.ajax({
-            url:'../../library/xwBE-0.0.1/Interface/setTopic.php',
+            url:'../../library/xwBE-0.0.1/Interface/setTopic/setTopic.php',
             type:'POST',
             async:false,
             data: $scope.pageData,

@@ -51,7 +51,7 @@ require("../algorithm/Liveness.php");
 
                 $sql = "SELECT * FROM articles WHERE aid = '$aid' ";
                 $qry = $db->query($sql);
-                @$row = $qry->fetch_assoc($qry);
+                @$row = $qry->fetch_assoc();
                 $row_all = mysqli_num_rows($qry);
                 if($row_all>1){
                     $status = 0;
@@ -93,7 +93,7 @@ require("../algorithm/Liveness.php");
 
                 $sql = "SELECT * FROM articles WHERE title = '$a_title' ";
                 $qry = $db->query($sql);
-                @$row = $qry->fetch_assoc($qry);
+                @$row = $qry->fetch_assoc();
                 $row_all = mysqli_num_rows($qry);
 
                 if($row_all>0 || $row){

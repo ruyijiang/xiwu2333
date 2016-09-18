@@ -53,7 +53,7 @@ function countScore($commitname,$extra=''){
     if($extra && $commitname == "writeBlog"){
         //为了给写文章打分的
         //extra在这里的内容，是文章的字符串长度
-        $Blscore = (float)0.00;//Dscore means "Duration score"
+        $Blscore = (float)0.00;//Bscore means "Blog score"
 
         if($extra>20 && $extra<=100){
             $Blscore += 2025;//15min * 35 + 1500创意分
@@ -81,7 +81,7 @@ function countScore($commitname,$extra=''){
     if($commitname == "openTeam"){
         //为了给开放组队打分的
         //这里之所以没有用到$extra，是因为这里仅有一个浮动维度，就是时间段，这里在后端取值，不需要前段发送过来。而开放组队是每次开放，都实时向数据库添加活跃度。
-        $Otscore = (float)0.00;//Dscore means "Open team score"
+        $Otscore = (float)0.00;//Otscore means "Open team score"
 
         $tnow = date("H");
         $tnow = (int)$tnow;
@@ -97,6 +97,16 @@ function countScore($commitname,$extra=''){
         }
 
         $FinalScore += $Otscore;
+
+    }
+
+
+    if($commitname == "setTopic"){
+        //为了给开放组队打分的
+        //这里之所以没有用到$extra，是因为这里仅有一个浮动维度，就是时间段，这里在后端取值，不需要前段发送过来。而开放组队是每次开放，都实时向数据库添加活跃度。
+        $Tscore = (float)0.00;//Otscore means "Topic score"
+        $Tscore += 3400;
+        $FinalScore += $Tscore;
 
     }
 

@@ -605,20 +605,25 @@ class liveness{
      * @param $commitname : 获得分数的操作的名称，如writearticle、login、comment etc,
      * @param $score : 对应这个操作，所打的分数
      */
-    public function setLiveness($commitname,$score){
+    public function setLiveness($commitname,$score,$fromWhere=''){
         require("connectDB.php");
         $_En = new _environment();
         $uip = $_En->getIp();
 
         /******创建文件夹和文件******/
         $lj = preg_split('/\/{1}/',$_SERVER["PHP_SELF"]);//PHP5.3及以后的写法
-        $folder = $lj[count($lj)-5];//得到根目录文件夹
         $a = "";
         if(!empty($_SESSION["uid"])){
             $a = $_SESSION["uid"];
             $tg = "/RegisteredUser/".$a."/";
             $filename = date('Y-m-d',time()).".txt";
-            $file = $folder."../../../data/liveness".$tg.$filename;
+            if($fromWhere == 'Interface'){
+                $folder = $lj[count($lj)-6];//得到根目录文件夹
+                $file = $folder."../../../../data/liveness".$tg.$filename;
+            }else{
+                $folder = $lj[count($lj)-5];//得到根目录文件夹
+                $file = $folder."../../../data/liveness".$tg.$filename;
+            }
 
             if(!file_exists($file)){
                 if(!file_exists(dirname($file))){//如果目录不存在
@@ -645,7 +650,12 @@ class liveness{
                 $a = $_SESSION["uid"];
                 $tg = "/RegisteredUser/".$a."/";
                 $filename = date('Y-m-d',time()).".txt";
-                $file = "../../../data/liveness".$tg.$filename;
+
+                if($fromWhere == 'Interface'){
+                    $file = "../../../../data/liveness".$tg.$filename;
+                }else{
+                    $file = "../../../data/liveness".$tg.$filename;
+                }
 
                 $filestream = fopen($file,"a");
                 fwrite($filestream,"['Time':".$now.",'Commit:'".$commit."]{".$sc."}"."\r\n");

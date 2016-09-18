@@ -7,6 +7,8 @@
  */
 require("../../connectDB.php");
 require("../../all.php");
+require("../../algorithm/RandTopicId.php");
+require("../../algorithm/Liveness.php");
 ?><?php
 //header('Content-type: application/json');
 
@@ -25,27 +27,66 @@ $tnow_stamp = time();//当前datetime - UNIX时间
 $status = 0;
 $reminder = "";
 $a = new interfaceResponse();
-
-
-if(!$topic_title || !$topic_desc || !$topic_cate){
-    //-------------------------------------------------------------------------------------->缺少关键参数
+if(empty($_SESSION["uid"]) || !isset($_SESSION["uid"])){
     $status = 0;
-    $reminder = "缺少关键参数，无法查询";
-    echo $a->normalrespond($status,$reminder);
+    $reminder = "发表失败。请登录后再发表话题";
+    echo $b->normalrespond($status,$reminder);
+    return false;
 }else{
-    $sql = "INSERT INTO topics('topic_id','customed_url','uid','title','desc','cate','tags','regtime') VALUES ('','$customUrl','$uid','$topic_title','$topic_desc','$topic_cate','$topic_tags','$tnow_stamp') ";
-    $qry = $db->query($sql);
 
-    if($qry){
-        //-------------------------------------------------------------------------------------->
-        $status = 1;
-        $reminder = "话题发表成功";
+    if(!$topic_title || !$topic_desc || !$topic_cate){
+        //-------------------------------------------------------------------------------------->缺少关键参数
+        $status = 0;
+        $reminder = "缺少关键参数，无法查询";
         echo $a->normalrespond($status,$reminder);
     }else{
-        //-------------------------------------------------------------------------------------->
-        $status = 0;
-        $reminder = "";
-        echo $a->normalrespond($status,$reminder);
+        $sql = "SELECT topic_id FROM topics WHERE customed_url = '$customUrl' ";
+        $qry = $db->query($sql);
+        $row_all = mysqli_num_rows($qry);
+
+        if($row_all > 0){
+            //-------------------------------------------------------------------------------------->相同的自定义URL已经存在了
+            $status = 0;
+            $reminder = "自定义的URL链接已经有对应的话题了";
+            echo $a->normalrespond($status,$reminder);
+        }else{
+            $sql = "SELECT topic_id FROM topics WHERE title = '$topic_title' OR topic_desc = '$topic_desc' ";
+            $qry = $db->query($sql);
+            $row_all = mysqli_num_rows($qry);
+            if($row_all > 0){
+                //---------------------------------------------------------------------------------->有相同标题或相同描述的话题了
+                $status = 0;
+                $reminder = "有相同标题或相同描述的话题了";
+                echo $a->normalrespond($status,$reminder);
+            }else{
+
+                $abc = create_TopicId();
+                $sql = "INSERT INTO topics(id,topic_id,customed_url,uid,title,topic_desc,cate,tags,regtime) VALUES ('','$abc','$customUrl','$uid','$topic_title','$topic_desc','$topic_cate','$topic_tags','$tnow_stamp') ";
+                $qry = $db->query($sql);
+
+                if($qry){
+                    $thisScore = countScore('setTopic');
+                    $d = new liveness();
+
+                    if($d->setLiveness('setTopic',$thisScore,'Interface')){
+                        $status = $abc;
+                        $reminder = "话题发布成功";
+                    }else{
+                        $status = 0;
+                        $reminder = "记录活跃度时出现错误，导致话题发布失败";
+                    }
+                    echo $a->normalrespond($status,$reminder);
+                }else{
+                    //-------------------------------------------------------------------------------------->
+                    $status = 0;
+                    $reminder = "数据库插入错误，请联系管理员";
+                    echo $a->normalrespond($status,$reminder);
+                }
+
+            }
+
+        }
+
     }
 
 }

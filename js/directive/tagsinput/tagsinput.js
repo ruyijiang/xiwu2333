@@ -8,34 +8,40 @@ app.directive("tagsinput",function() {
         template:'<input name="tags"/>',
         require: '?ngModel',
         scope:{
-            defaultValue:"@",
             tagsData:"="
         },
         link:function(scope,elem,attr,ngModel){
-            scope.tagsData = scope.defaultValue;
-            $(elem).addTag(scope.defaultValue);//添加默认tag
+            if(scope.tagsData){
+                $(elem).addTag(scope.tagsData);//添加默认tag
+            }
 
-            var NowAccount = 1;
+            var dataStr = $(elem).val();//获取当前的值
+            var temArr = dataStr.split(";");
+            var NowAccount = temArr.length;
 
             $(elem).tagsInput({
 
                 onAddTag:function (){
-                    var dataStr = $(elem).val();//获取当前的值
 
                     if(NowAccount < 5){
 
-                        ngModel.$modelValue = scope.tagsData = dataStr;//把当前的值传递给modelValue
+                        var dataStr2 = $(elem).val();//获取当前的值
+                        ngModel.$modelValue = scope.tagsData = dataStr2;//把当前的值传递给modelValue
                         scope.$apply(function(){
                             ngModel.$setViewValue(attr.value);
                         });
 
                         NowAccount++;
+
                     }else{
-                        var dataArr = dataStr.split(";");
+
+                        var dataStr2 = $(elem).val();//获取当前的值
+                        var dataArr = dataStr2.split(";");
                         dataArr.pop();
                         var newDataStr = dataArr.join(";");
                         $(elem).importTags(newDataStr);
                         alert ("最多只能关联5个关键词");
+
                     }
 
                 },

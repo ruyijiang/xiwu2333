@@ -52,13 +52,13 @@ include("library/xwFE-0.0.1/FEM.php");
                             <legend style="padding:6px 0"><span class="glyphicon glyphicon-align-left" style="font-size:20px"></span>话题正文</legend>
                             <div class="row">
                                 <div class="form-group col-lg-12 col-sm-12 col-xs-12">
-                                    <input class="form-control" type="text" placeholder="话题标题">
+                                    <input class="form-control" type="text" placeholder="话题标题" ng-model="pageData.topic_title">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-lg-12 col-sm-12 col-xs-12">
-                                    <textarea class="form-control" type="text" placeholder="话题描述" style="resize: vertical" rows="4"></textarea>
+                                    <textarea class="form-control" type="text" placeholder="话题描述" style="resize: vertical" rows="4" ng-model="pageData.topic_desc"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -71,10 +71,10 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span class="glyphicon glyphicon-bookmark" style="font-size:12px"></span>话题分类：
                                 </div>
                                 <div class="form-group col-lg-10 col-sm-10 col-xs-10">
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="1" i-check prop="testra">天梯</label>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="2" i-check prop="testra">赛事</label>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="3" i-check prop="testra">技术贴</label>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="4" i-check prop="testra">八卦</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="1" i-check ng-model="pageData.topic_cate" prop="pageData.topic_cate">天梯</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="2" i-check ng-model="pageData.topic_cate" prop="pageData.topic_cate">赛事</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="3" i-check ng-model="pageData.topic_cate" prop="pageData.topic_cate">技术贴</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="topic_cate" value="4" i-check ng-model="pageData.topic_cate" prop="pageData.topic_cate">八卦</label>
                                 </div>
                             </div>
 
@@ -83,7 +83,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span class="glyphicon glyphicon-tags" style="font-size:12px"></span>关键词：
                                 </div>
                                 <div class="form-group col-lg-10 col-sm-10 col-xs-10">
-                                    <tagsinput ng-model="pageData.tags" tags-data="pageData.tags" default-value="Dota2"></tagsinput>
+                                    <tagsinput ng-model="pageData.topic_tags" tags-data="pageData.topic_tags"></tagsinput>
                                 </div>
                             </div>
                         </div>
