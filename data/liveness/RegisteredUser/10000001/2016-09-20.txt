@@ -1,0 +1,3 @@
+['Time':2016-09-20 10:20:20,'Commit:'setTopic]{3400}
+['Time':2016-09-20 10:20:35,'Commit:'onlineDuration]{280}
+['Time':2016-09-20 10:21:18,'Commit:'onlineDuration]{0}

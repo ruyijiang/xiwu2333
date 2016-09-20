@@ -10,7 +10,7 @@ require("../../all.php");
 ?>
 <?
 @$uid = $_SESSION["uid"];//uid
-@$content = $_POST["content"];//索取类别
+@$content = $_GET["content"];//索取类别
 
 $a = new _environment();
 $tnow = $a->getTime();//当前datetime - iso时间
@@ -30,13 +30,13 @@ if($content){
 
         $status = 0;
         $reminder = "已存在相同的自定义URL链接";
-        echo $a->interfaceResponse($status,$reminder);
+        echo $a->normalrespond($status,$reminder);
 
     }else{
 
         $status = 1;
         $reminder = "该URL可以使用";
-        echo $a->interfaceResponse($status,$reminder);
+        echo $a->normalrespond($status,$reminder);
 
     }
 
@@ -44,6 +44,6 @@ if($content){
 
     $status = 0;
     $reminder = "缺少关键参数，无法进行查询";
-    echo $a->interfaceResponse($status,$reminder);
+    echo $a->normalrespond($status,$reminder);
 
 }
