@@ -3,7 +3,7 @@
  */
 (function() {
     angular
-        .module('validation.rule', ['validation'])
+        .module('validation.rule', ['validation','myApp'])
         .config(['$validationProvider', function($validationProvider) {
             var expression = {
                 required: function(value) {
@@ -16,6 +16,29 @@
                         return true;
                     }else{
                         return ab.match(/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/);
+                    }
+                },
+                TopicUrl:function (value, scope, element, attrs, param){
+                    var ab = element.val();
+                    if(!ab){
+                        return true;
+                    }else{
+                        if(ab.match(/^[0-9A-Za-z]+$/)){
+                            $http({
+                                method: 'GET',
+                                url: '../../library/xwBE-0.0.1/Interface/setTopic/checkUrl.php',
+                                params:{'content': $scope.pageData.customUrl}
+                            }).success(function (httpCont) {
+                                console.log(httpCont);
+                                if(httpCont.status !== 1){
+                                    return false;
+                                }else{
+                                    return true;
+                                }
+                            })
+                        }else{
+                            return false;
+                        }
                     }
                 },
                 email: /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
@@ -71,6 +94,9 @@
                 },
                 newurl: {
                     error: '请输入正确的网址链接'
+                },
+                TopicUrl:{
+                    error: '该URL链接不符合要求或已被占用'
                 },
                 url: {
                     error: '请输入正确的网址链接'
