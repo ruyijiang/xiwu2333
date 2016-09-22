@@ -3,8 +3,8 @@
  */
 (function() {
     angular
-        .module('validation.rule', ['validation','myApp'])
-        .config(['$validationProvider', function($validationProvider) {
+        .module('validation.rule', ['validation'])
+        .config(['$validationProvider', function($validationProvider,$httpProvider) {
             var expression = {
                 required: function(value) {
                     return !!value;
@@ -24,18 +24,27 @@
                         return true;
                     }else{
                         if(ab.match(/^[0-9A-Za-z]+$/)){
-                            $http({
+
+                            $.ajax({
                                 method: 'GET',
+                                async:false,
                                 url: '../../library/xwBE-0.0.1/Interface/setTopic/checkUrl.php',
-                                params:{'content': $scope.pageData.customUrl}
+                                data:{'content': ab}
                             }).success(function (httpCont) {
-                                console.log(httpCont);
-                                if(httpCont.status !== 1){
+                                var temp = eval("(" + httpCont + ")");
+
+                                console.log(temp);
+
+                                if(temp.statuscode !== '1'){
+                                    console.log("123");
                                     return false;
                                 }else{
+                                    console.log("456");
                                     return true;
                                 }
-                            })
+
+                            });
+
                         }else{
                             return false;
                         }

@@ -21,7 +21,7 @@ include("library/xwFE-0.0.1/FEM.php");
             <div class="main-leftpart col-lg-8 col-md-8" style="background-color:white;padding-bottom:35px;min-height:705px">
                 <!-- 热门推荐 -->
                 <div class="topic_container">
-                    <form>
+                    <form ng-submit="saveData()">
                         <div class="topic_editor_content">
                             <legend style="padding:6px 0">
                                 <span class="glyphicon glyphicon-link" style="font-size:20px"></span>自定义链接
@@ -83,14 +83,14 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <div class="col-lg-2 col-sm-2 col-xs-1">
                                     <span class="glyphicon glyphicon-tags" style="font-size:12px"></span>关键词：
                                 </div>
-                                <div class="form-group col-lg-10 col-sm-10 col-xs-10">
+                                <div class="form-group col-lg-10 col-sm-10 col-xs-11">
                                     <tagsinput ng-model="pageData.topic_tags" tags-data="pageData.topic_tags"></tagsinput>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <a class="btn btn-primary center-block" ng-click="saveData()"><span class="glyphicon glyphicon-send"></span>确认发表</a>
+                            <input type="submit" class="btn btn-primary center-block" value="确认发表">
                         </div>
 
                         <hr>
