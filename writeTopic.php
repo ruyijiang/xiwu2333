@@ -34,7 +34,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12 col-xs-12">
                                     <div class="input-group">
-                                        <input validator="TopicUrl" message-id="customUrl_span" type="text" class="form-control" style="font-weight:bold" name="customUrl" id="customUrl" ng-model="pageData.customUrl">
+                                        <input type="text" class="form-control" style="font-weight:bold" name="customUrl" id="customUrl" ng-model="pageData.customUrl">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default" type="button" id="d_clip_button" data-clipboard-target="customUrl" ng-disabled="!pageData.customUrl || pageData.customUrl == ''">
                                                 <i class="iconfont icon-copy" style="font-size:12px;margin-right:4px"></i>复制URL链接
@@ -45,8 +45,9 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                             <div class="row">
                                 <div class="form-group col-lg-12 col-sm-12 col-xs-12">
-                                    <span id="customUrl_span" style="display:block"></span>
-                                    <small><i class="iconfont icon-alert" style="color:#337ab7;margin-right:5px"></i>您可以不填写此项，那么将使用默认的URL链接</small>
+                                    <span ng-if="urlReminder == 0" style="display:block"><span class="glyphicon glyphicon-remove" style="color:#d9534f;font-size:12px;"></span>该自定义链接不符合要求或已被占用</span>
+                                    <span ng-if="urlReminder == 1" style="display:block"><span class="glyphicon glyphicon-ok" style="color:#57d718;font-size:12px;"></span>可以使用</span>
+                                    <small style="color:#888" ng-if="urlReminder == 2"><i class="iconfont icon-alert" style="color:#337ab7;margin-right:5px"></i>您可以不填写此项，那么将使用默认的URL链接。</small>
                                 </div>
                             </div>
 

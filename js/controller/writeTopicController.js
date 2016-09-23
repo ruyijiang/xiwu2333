@@ -1,7 +1,7 @@
 /**
  * Created by mazih on 2016/9/9.
  */
-app.controller('writeTopicController',function ($scope, $http, $q){
+app.controller('writeTopicController',function ($scope, $http, $q, $timeout){
 
 
     /**
@@ -39,16 +39,46 @@ app.controller('writeTopicController',function ($scope, $http, $q){
      * 提交本页数据
      */
     $scope.saveData = function (){
-        $.ajax({
-            url:'../../library/xwBE-0.0.1/Interface/setTopic/setTopic.php',
-            type:'POST',
-            async:false,
-            data: $scope.pageData,
-            success: function (data){
+        if($scope.urlReminder !== 1){
+            alert ("自定义链接不可使用，请重新填写");
+        }else{
+            $.ajax({
+                url:'../../library/xwBE-0.0.1/Interface/setTopic/setTopic.php',
+                type:'POST',
+                async:false,
+                data: $scope.pageData,
+                success: function (data){
 
-            }
-        })
+                }
+            })
+        }
     };
+
+    $scope.urlReminder = 2;
+    $("#customUrl").blur(function (){
+        if($scope.pageData.customUrl){
+            checkUrl();
+        }else if($scope.pageData.customUrl == ""){
+            $timeout(function (){
+                $scope.urlReminder = 2;
+            },0);
+        }
+    });
+    
+    function checkUrl() {
+        $http({
+            method: 'GET',
+            url: '../../library/xwBE-0.0.1/Interface/setTopic/checkUrl.php',
+            params:{'content': $scope.pageData.customUrl }
+        }).success(function (httpCont) {
+            console.log(httpCont);
+            if(httpCont.statuscode == 1){
+                $scope.urlReminder = 1;
+            }else{
+                $scope.urlReminder = 0;
+            }
+        });
+    }
 
 
 });

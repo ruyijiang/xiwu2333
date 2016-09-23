@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/writeTopicController.js" afterPath="$PROJECT_DIR$/js/controller/writeTopicController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" afterPath="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeTopic.php" afterPath="$PROJECT_DIR$/writeTopic.php" />
     </list>
@@ -38,9 +39,15 @@
       <file leaf-file-name="writeTopic.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeTopic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="-72">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,25 +55,23 @@
       <file leaf-file-name="writeTopicController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/writeTopicController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="45" column="16" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
+            <state relative-caret-position="166">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <element signature="e#115#139#0" expanded="false" />
-                <element signature="e#295#320#0" expanded="false" />
-                <element signature="e#707#732#0" expanded="false" />
+                <element signature="e#125#149#0" expanded="false" />
+                <element signature="e#305#330#0" expanded="false" />
+                <element signature="e#717#742#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-validation-rule.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/vendor/angular-validation-rule.js">
+      <file leaf-file-name="info_SettingController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-378">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#39#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="310">
+              <caret line="148" column="30" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,10 +163,10 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/checkUrl.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/checkUrl.php" />
-        <option value="$PROJECT_DIR$/js/controller/writeTopicController.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/writeTopic.php" />
         <option value="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" />
+        <option value="$PROJECT_DIR$/writeTopic.php" />
+        <option value="$PROJECT_DIR$/js/controller/writeTopicController.js" />
       </list>
     </option>
   </component>
@@ -887,14 +892,8 @@
       <workItem from="1474418477956" duration="18911000" />
       <workItem from="1474505401817" duration="3797000" />
       <workItem from="1474526857710" duration="41000" />
-      <workItem from="1474528795949" duration="5435000" />
-    </task>
-    <task id="LOCAL-00059" summary="fixed the bug that after signup an account , once click cannot hide OpenTeamBar.">
-      <created>1469089269083</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1469089269083</updated>
+      <workItem from="1474528795949" duration="5742000" />
+      <workItem from="1474591928186" duration="3683000" />
     </task>
     <task id="LOCAL-00060" summary="analyse codes for dota2-api,almost finished.">
       <created>1469432097548</created>
@@ -1232,18 +1231,25 @@
       <option name="project" value="LOCAL" />
       <updated>1474448922327</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="修改了angular-validation-rule，但是还存在远程验证的问题。">
+      <created>1474534713635</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1474534713640</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2021856000" />
+    <option name="totallyTimeSpent" value="2025846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1281,7 +1287,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modify something" />
     <MESSAGE value="fixed bug of writeblog,and i chmod 0777 to all files." />
     <MESSAGE value="add a new charts in personpage.php" />
     <MESSAGE value="重新梳理了php抓取程序" />
@@ -1306,7 +1311,8 @@
     <MESSAGE value="完成了&quot;关键词添加&quot;控件指令的封装、和指令的业务逻辑限制，以及&quot;复制到剪切板&quot;功能。" />
     <MESSAGE value="修改了Ueditor编辑器的默认字体。" />
     <MESSAGE value="增加了远程表单验证，但是目前依赖注入有问题。" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了远程表单验证，但是目前依赖注入有问题。" />
+    <MESSAGE value="修改了angular-validation-rule，但是还存在远程验证的问题。" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了angular-validation-rule，但是还存在远程验证的问题。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1581,13 +1587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="141" column="7" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/utill/welcomejsonstring.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -1642,33 +1641,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/writeTopicController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="45" column="16" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-          <folding>
-            <element signature="e#115#139#0" expanded="false" />
-            <element signature="e#295#320#0" expanded="false" />
-            <element signature="e#707#732#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/vendor/angular-validation-rule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="247">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="44" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="148" column="30" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/writeTopicController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#125#149#0" expanded="false" />
+            <element signature="e#305#330#0" expanded="false" />
+            <element signature="e#717#742#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/writeTopic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="-72">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

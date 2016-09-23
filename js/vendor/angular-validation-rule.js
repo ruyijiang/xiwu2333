@@ -18,38 +18,6 @@
                         return ab.match(/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/);
                     }
                 },
-                TopicUrl:function (value, scope, element, attrs, param){
-                    var ab = element.val();
-                    if(!ab){
-                        return true;
-                    }else{
-                        if(ab.match(/^[0-9A-Za-z]+$/)){
-
-                            $.ajax({
-                                method: 'GET',
-                                async:false,
-                                url: '../../library/xwBE-0.0.1/Interface/setTopic/checkUrl.php',
-                                data:{'content': ab}
-                            }).success(function (httpCont) {
-                                var temp = eval("(" + httpCont + ")");
-
-                                console.log(temp);
-
-                                if(temp.statuscode !== '1'){
-                                    console.log("123");
-                                    return false;
-                                }else{
-                                    console.log("456");
-                                    return true;
-                                }
-
-                            });
-
-                        }else{
-                            return false;
-                        }
-                    }
-                },
                 email: /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
                 number: /^\d+$/,
                 dota2Uid:function (value, scope, element, attrs, param){
