@@ -159,14 +159,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "writeTopic.php"
         })
         .state("topic",{
-            url: "/topic",
+            url: "/topic/:TopicUrl",
             templateUrl: "topic.php"
         })
         .state("404", {
             url: "/404",
             templateUrl: "404.html"
         });
-        $urlRouterProvider.otherwise('main');
+        $urlRouterProvider.otherwise('404');
         //remove #
         //$locationProvider.html5Mode(true);
 });
