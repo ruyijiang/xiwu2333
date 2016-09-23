@@ -1,7 +1,7 @@
 /**
  * Created by mazih on 2016/9/9.
  */
-app.controller('writeTopicController',function ($scope, $http, $q, $timeout){
+app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $location){
 
 
     /**
@@ -48,7 +48,10 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout){
                 async:false,
                 data: $scope.pageData,
                 success: function (data){
-
+                    var _data = eval("(" + data + ")");
+                    if(_data.statuscode !== "0"){
+                        $location.url("/topic/"+_data.statuscode).replace();
+                    }
                 }
             })
         }
@@ -71,7 +74,6 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout){
             url: '../../library/xwBE-0.0.1/Interface/setTopic/checkUrl.php',
             params:{'content': $scope.pageData.customUrl }
         }).success(function (httpCont) {
-            console.log(httpCont);
             if(httpCont.statuscode == 1){
                 $scope.urlReminder = 1;
             }else{

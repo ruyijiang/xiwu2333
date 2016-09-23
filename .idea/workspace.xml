@@ -4,8 +4,7 @@
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/writeTopicController.js" afterPath="$PROJECT_DIR$/js/controller/writeTopicController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" afterPath="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeTopic.php" afterPath="$PROJECT_DIR$/writeTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/setTopic.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/setTopic.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="writeTopic.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="writeTopic.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeTopic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="192">
+              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -52,16 +51,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="writeTopicController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="writeTopicController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/writeTopicController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="384">
+              <caret line="52" column="76" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
               <folding>
-                <element signature="e#125#149#0" expanded="false" />
-                <element signature="e#305#330#0" expanded="false" />
-                <element signature="e#717#742#0" expanded="false" />
+                <element signature="e#136#160#0" expanded="false" />
+                <element signature="e#316#341#0" expanded="false" />
+                <element signature="e#728#753#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setTopic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/setTopic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+              <folding>
+                <marker date="1474599226730" expanded="true" signature="1172:1233" ph="SELECT topic... topics" />
+                <marker date="1474599226730" expanded="true" signature="1635:1721" ph="SELECT topic... topics" />
+                <marker date="1474599226730" expanded="true" signature="2192:2385" ph="INSERT INTO topics... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writeblogcontroller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="59" selection-end-column="74" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,7 +181,6 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/Liveness.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/all.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/setTopic.php" />
         <option value="$PROJECT_DIR$/loginpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/checkUrl.php" />
@@ -167,6 +189,7 @@
         <option value="$PROJECT_DIR$/js/vendor/angular-validation-rule.js" />
         <option value="$PROJECT_DIR$/writeTopic.php" />
         <option value="$PROJECT_DIR$/js/controller/writeTopicController.js" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/setTopic.php" />
       </list>
     </option>
   </component>
@@ -893,14 +916,7 @@
       <workItem from="1474505401817" duration="3797000" />
       <workItem from="1474526857710" duration="41000" />
       <workItem from="1474528795949" duration="5742000" />
-      <workItem from="1474591928186" duration="3683000" />
-    </task>
-    <task id="LOCAL-00060" summary="analyse codes for dota2-api,almost finished.">
-      <created>1469432097548</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1469432097548</updated>
+      <workItem from="1474591928186" duration="5089000" />
     </task>
     <task id="LOCAL-00061" summary="analyse codes for dota2-api,almost finished.">
       <created>1469548153782</created>
@@ -1238,11 +1254,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474534713640</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="基本上完成了实时检测自定义URL是否可用">
+      <created>1474597861300</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1474597861302</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2025846000" />
+    <option name="totallyTimeSpent" value="2027252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1287,7 +1310,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed bug of writeblog,and i chmod 0777 to all files." />
     <MESSAGE value="add a new charts in personpage.php" />
     <MESSAGE value="重新梳理了php抓取程序" />
     <MESSAGE value="准备添加community社区广场。" />
@@ -1312,7 +1334,8 @@
     <MESSAGE value="修改了Ueditor编辑器的默认字体。" />
     <MESSAGE value="增加了远程表单验证，但是目前依赖注入有问题。" />
     <MESSAGE value="修改了angular-validation-rule，但是还存在远程验证的问题。" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了angular-validation-rule，但是还存在远程验证的问题。" />
+    <MESSAGE value="基本上完成了实时检测自定义URL是否可用" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本上完成了实时检测自定义URL是否可用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1360,13 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1438,13 +1454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="110" column="43" selection-start-line="110" selection-start-column="43" selection-end-line="110" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/setTopic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1651,6 +1660,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/writeTopic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1659,28 +1682,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/writeTopicController.js">
+    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="59" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/setTopic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
           <folding>
-            <element signature="e#125#149#0" expanded="false" />
-            <element signature="e#305#330#0" expanded="false" />
-            <element signature="e#717#742#0" expanded="false" />
+            <marker date="1474599226730" expanded="true" signature="1172:1233" ph="SELECT topic... topics" />
+            <marker date="1474599226730" expanded="true" signature="1635:1721" ph="SELECT topic... topics" />
+            <marker date="1474599226730" expanded="true" signature="2192:2385" ph="INSERT INTO topics... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeTopic.php">
+    <entry file="file://$PROJECT_DIR$/js/controller/writeTopicController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="384">
+          <caret line="52" column="76" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#136#160#0" expanded="false" />
+            <element signature="e#316#341#0" expanded="false" />
+            <element signature="e#728#753#0" expanded="false" />
           </folding>
         </state>
       </provider>
