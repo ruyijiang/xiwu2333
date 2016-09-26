@@ -28,7 +28,9 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getLatestTopic.php',
             params:{'params': new Date().getTime() }
         }).success(function (httpCont){
-            $scope.LatestTopicArr = httpCont;
+            console.log(httpCont);
+            $scope.pageDate.LatestTopicArr = httpCont;
+            console.log($scope.pageDate);
         });
 
     },0);

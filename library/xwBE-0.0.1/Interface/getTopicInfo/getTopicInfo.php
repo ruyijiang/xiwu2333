@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-//header('Content-type: application/json');
+header('Content-type: application/json');
 
 @$uid = $_SESSION["uid"];//uid
 
