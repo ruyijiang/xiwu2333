@@ -8,11 +8,11 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-header('Content-type: application/json');
+//header('Content-type: application/json');
 
 @$uid = $_SESSION["uid"];//uid
 
-$tnow = $_GET["tnow"];
+@$tnow = $_GET["tnow"];
 
 $a = new _environment();
 $tnow = $a->getTime();//当前datetime - iso时间

@@ -4,6 +4,7 @@
 
 app.controller('topicController',function ($scope,$rootScope,$http,$location,$timeout,$stateParams){
 
+
     /**
      * 对topic_url参数进行分析操作，从而输出话题
      */

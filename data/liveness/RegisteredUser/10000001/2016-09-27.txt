@@ -1,0 +1,16 @@
+['Time':2016-09-27 00:06:21,'Commit:'onlineDuration]{45.5}
+['Time':2016-09-27 00:06:26,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:07:18,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:07:33,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:07:46,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:07:57,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:10:28,'Commit:'onlineDuration]{91}
+['Time':2016-09-27 00:11:30,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:11:56,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:12:02,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:13:21,'Commit:'onlineDuration]{45.5}
+['Time':2016-09-27 00:15:18,'Commit:'onlineDuration]{45.5}
+['Time':2016-09-27 00:15:57,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:20:11,'Commit:'onlineDuration]{182}
+['Time':2016-09-27 00:21:03,'Commit:'onlineDuration]{0}
+['Time':2016-09-27 00:21:05,'Commit:'onlineDuration]{0}

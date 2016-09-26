@@ -58,13 +58,13 @@ include("library/xwFE-0.0.1/FEM.php");
                             </ol>
                             <ol>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" i-check prop="test1" ng-model="test1" type="checkbox">冷冷</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" i-check prop="test1" ng-model="test1" type="checkbox" value="1">冷冷</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test2" ng-model="test2">Mik</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test2" ng-model="test2" value="2">Mik</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test3" ng-model="test3">Miss</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test3" ng-model="test3" value="3">Miss</label>
                                 </li>
                                 <li>
                                     <label class="btn_forer"><input class="topic_checkbox" type="checkbox">张天鸽</label>
