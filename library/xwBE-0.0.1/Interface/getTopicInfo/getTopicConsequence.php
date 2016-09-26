@@ -28,10 +28,11 @@ if($topic_id){
     $sql = "SELECT `choices` FROM comments WHERE `topic_id` = '$topic_id' ";
     $qry = $db->query($sql);
     if($row_all = mysqli_num_rows($qry) > 0){
-        $row = $qry->fetch_assoc();
-        $result_choices = $row["choices"];
+        $result_conArr = array();//最终结果
 
-        $result_choices = explode(";",$result_choices);
+        $row = $qry->fetch_assoc();
+
+        $result_choices_arr = explode(";",$row["choices"]);
 
 
 

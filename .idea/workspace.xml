@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicConsequence.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicConsequence.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicConsequence.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,6 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -48,13 +49,13 @@
       <file leaf-file-name="getTopicInfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="57" column="47" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="47" />
+            <state relative-caret-position="74">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="false" />
-                <marker date="1474858685343" expanded="true" signature="464:541" ph="SELECT * FRO... topics" />
-                <marker date="1474858685343" expanded="true" signature="1161:1206" ph="SELECT * FRO... users" />
-                <marker date="1474858685343" expanded="true" signature="1613:1726" ph="SELECT topic... topics" />
+                <marker date="1474903239756" expanded="true" signature="464:541" placeholder="SELECT * FRO... topics" />
+                <marker date="1474903239756" expanded="true" signature="1161:1206" placeholder="SELECT * FRO... users" />
+                <marker date="1474903239756" expanded="true" signature="1613:1726" placeholder="SELECT topic... topics" />
               </folding>
             </state>
           </provider>
@@ -63,12 +64,12 @@
       <file leaf-file-name="getLatestTopic.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getLatestTopic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="-166">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="false" />
-                <marker date="1474859936977" expanded="true" signature="494:571" ph="SELECT * FRO... " />
-                <marker date="1474859936977" expanded="true" signature="1292:1344" ph="SELECT * FRO... " />
+                <marker date="1474903239754" expanded="true" signature="494:571" placeholder="SELECT * FRO... " />
+                <marker date="1474903239754" expanded="true" signature="1292:1344" placeholder="SELECT * FRO... " />
               </folding>
             </state>
           </provider>
@@ -77,11 +78,11 @@
       <file leaf-file-name="getTopicConsequence.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicConsequence.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="386">
+              <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="false" />
-                <marker date="1474878496752" expanded="true" signature="467:528" ph="SELECT * FRO... comments" />
+                <marker date="1474904312991" expanded="true" signature="467:528" placeholder="SELECT `choi... comments" />
               </folding>
             </state>
           </provider>
@@ -171,20 +172,20 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="681" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -227,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -341,7 +343,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -419,9 +420,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -461,6 +459,8 @@
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
+      <force value="false" />
+      <verbose value="false" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -477,19 +477,6 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -967,6 +954,7 @@
       <workItem from="1474814433137" duration="471000" />
       <workItem from="1474851696789" duration="4148000" />
       <workItem from="1474855915200" duration="14965000" />
+      <workItem from="1474903255347" duration="1116000" />
     </task>
     <task id="LOCAL-00064" summary="why cannot upload heros.json to git??">
       <created>1469686141117</created>
@@ -1315,18 +1303,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2068005000" />
+    <option name="totallyTimeSpent" value="2069121000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="681" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25265554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40849674" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.580756" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36006546" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1340,6 +1327,7 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40849674" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1537,7 +1525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/directive/icheck/iCheck.js">
+    <entry file="file://$PROJECT_DIR$/js/directive/iCheck/iCheck.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
@@ -1648,7 +1636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-513">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1682,7 +1669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-159">
           <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1690,10 +1676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding>
-            <marker date="1470362010334" expanded="true" signature="391:437" ph="SELECT dota2... users" />
-            <marker date="1470362010334" expanded="true" signature="4757:4883" ph="UPDATE users... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1701,11 +1683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding>
-            <marker date="1474615945492" expanded="true" signature="1172:1233" ph="SELECT topic... topics" />
-            <marker date="1474615945492" expanded="true" signature="1635:1721" ph="SELECT topic... topics" />
-            <marker date="1474615945492" expanded="true" signature="2192:2385" ph="INSERT INTO topics... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1713,11 +1690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-            <marker date="1474871381079" expanded="true" signature="424:483" ph="SELECT topic... topics" />
-            <marker date="1474871381079" expanded="true" signature="718:767" ph="SELECT topic... topics" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1725,15 +1697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <marker date="1470362010334" expanded="true" signature="280:360" ph="SELECT id,ai... " />
-            <marker date="1470362010334" expanded="true" signature="637:736" ph="SELECT aid F... articles" />
-            <marker date="1470362010334" expanded="true" signature="900:998" ph="SELECT aid F... articles" />
-            <marker date="1470362010334" expanded="true" signature="1455:1546" ph="SELECT aid,t... articles" />
-            <marker date="1470362010334" expanded="true" signature="1856:1941" ph="SELECT name,... users" />
-            <marker date="1470362010334" expanded="true" signature="2247:2304" ph="SELECT conte... callingcard" />
-            <marker date="1470362010334" expanded="true" signature="3607:3686" ph="UPDATE artic... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1753,12 +1716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <marker date="1473123224501" expanded="true" signature="373:421" ph="SELECT name,... users" />
-            <marker date="1473123224501" expanded="true" signature="844:895" ph="SELECT aid F... articles" />
-            <marker date="1473123224501" expanded="true" signature="1305:1428" ph="SELECT comme... comments" />
-            <marker date="1473123224501" expanded="true" signature="1900:1961" ph="SELECT uid,n... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1766,12 +1723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-          <folding>
-            <marker date="1474182588850" expanded="true" signature="859:942" ph="SELECT comme... comments" />
-            <marker date="1474182588850" expanded="true" signature="1377:1459" ph="SELECT regti... comments" />
-            <marker date="1474182588850" expanded="true" signature="2383:2523" ph="INSERT INTO comments... " />
-            <marker date="1474182588850" expanded="true" signature="3356:3496" ph="INSERT INTO comments... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1779,13 +1730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-          <folding>
-            <marker date="1474874312759" expanded="true" signature="783:842" ph="SELECT id FR... " />
-            <marker date="1474874312759" expanded="true" signature="1071:1156" ph="UPDATE topic... " />
-            <marker date="1474874312759" expanded="true" signature="1078:1156" ph="INSERT INTO " />
-            <marker date="1474874312759" expanded="true" signature="1208:1349" ph="INSERT INTO comments... " />
-            <marker date="1474874312759" expanded="true" signature="1219:1228" ph="UPDATE comme... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1801,36 +1745,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="47" />
+        <state relative-caret-position="74">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="false" />
-            <marker date="1474858685343" expanded="true" signature="464:541" ph="SELECT * FRO... topics" />
-            <marker date="1474858685343" expanded="true" signature="1161:1206" ph="SELECT * FRO... users" />
-            <marker date="1474858685343" expanded="true" signature="1613:1726" ph="SELECT topic... topics" />
+            <marker date="1474903239756" expanded="true" signature="464:541" placeholder="SELECT * FRO... topics" />
+            <marker date="1474903239756" expanded="true" signature="1161:1206" placeholder="SELECT * FRO... users" />
+            <marker date="1474903239756" expanded="true" signature="1613:1726" placeholder="SELECT topic... topics" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getLatestTopic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="-166">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="false" />
-            <marker date="1474859936977" expanded="true" signature="494:571" ph="SELECT * FRO... " />
-            <marker date="1474859936977" expanded="true" signature="1292:1344" ph="SELECT * FRO... " />
+            <marker date="1474903239754" expanded="true" signature="494:571" placeholder="SELECT * FRO... " />
+            <marker date="1474903239754" expanded="true" signature="1292:1344" placeholder="SELECT * FRO... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicConsequence.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="386">
+          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="false" />
-            <marker date="1474878496752" expanded="true" signature="467:528" ph="SELECT * FRO... comments" />
+            <marker date="1474904312991" expanded="true" signature="467:528" placeholder="SELECT `choi... comments" />
           </folding>
         </state>
       </provider>
