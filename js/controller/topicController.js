@@ -23,16 +23,6 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
      * 输出其它栏目的内容
      */
     $timeout(function (){
-        //1，输出相关话题
-        $http({
-            method: 'GET',
-            url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getRelatedTopic.php',
-            params:{'params': $scope.pageDate.tags }
-        }).success(function (httpCont){
-            $scope.RelatedTopicArr = httpCont;
-        });
-
-        //2，输出最新话题
         $http({
             method: 'GET',
             url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getLatestTopic.php',

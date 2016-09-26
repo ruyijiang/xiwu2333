@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-header('Content-type: application/json');
+//header('Content-type: application/json');
 
 @$uid = $_SESSION["uid"];//uid
 
@@ -38,14 +38,35 @@ if($content){
         $arrTemp["title"] = $row["title"];
         $arrTemp["topic_desc"] = $row["topic_desc"];
         $arrTemp["cate"] = $row["cate"];
-        $arrTemp["tags"] = $row["tags"];
         $arrTemp["regtime"] = $row["regtime"];
+
         $arrTemp["uid"] = $result_uid =  $row["uid"];
         $sql1 = "SELECT * FROM users WHERE uid = '$result_uid' ";
         $qry1 = $db->query($sql1);
         $row1 = $qry1->fetch_assoc();
         $arrTemp["user_avatar"] = $row1["avatar"];
         $arrTemp["user_name"] = $row1["name"];
+
+        $arrTemp["tags"] = $result_tags = $row["tags"];
+        $result_tags = explode(";",$result_tags);
+        $arrTemp2 = array();
+        foreach ($result_tags as $temp){
+            $arrTemp3 = array();
+
+            $sql2 = "SELECT topic_id,customed_url,title,topic_desc FROM topics WHERE tags LIKE '%$temp%' ORDER BY regtime DESC LIMIT 5 ";
+            $qry2 = $db->query($sql2);
+            while ($row2 = $qry2->fetch_assoc()){
+
+                $arrTemp3["topic_id"] = $row2["topic_id"];
+                $arrTemp3["customed_url"] = $row2["customed_url"];
+                $arrTemp3["title"] = $row2["title"];
+                $arrTemp3["topic_desc"] = $row2["topic_desc"];
+
+                array_push($arrTemp2,$arrTemp3);
+            }
+        }
+
+        $arrTemp["related_topics"] = $arrTemp2;
 
         echo (json_encode($arrTemp));
 
