@@ -10,7 +10,7 @@ require("../../all.php");
 ?>
 <?
 @$uid = $_SESSION["uid"];//uid
-@$content = $_GET["content"];//索取类别
+@$content = $_GET["content"];//检索内容
 
 $a = new _environment();
 $tnow = $a->getTime();//当前datetime - iso时间
@@ -34,9 +34,21 @@ if($content){
 
     }else{
 
-        $status = 1;
-        $reminder = "该URL可以使用";
-        echo $a->normalrespond($status,$reminder);
+        $sql1 = "SELECT id FROM topics WHERE topic_id = '$content' ";
+        $qry1 = $db->query($sql1);
+        if(mysqli_num_rows($qry1) > 0){
+
+            $status = 0;
+            $reminder = "该URL不符合要求，请再换一个";
+            echo $a->normalrespond($status,$reminder);
+
+        }else{
+
+            $status = 1;
+            $reminder = "该URL可以使用";
+            echo $a->normalrespond($status,$reminder);
+
+        }
 
     }
 
