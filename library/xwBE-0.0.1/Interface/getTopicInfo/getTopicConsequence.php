@@ -30,10 +30,30 @@ if($topic_id){
     if($row_all = mysqli_num_rows($qry) > 0){
         $result_conArr = array();//最终结果
 
-        $row = $qry->fetch_assoc();
+        while ($row = $qry->fetch_assoc()){
 
-        $result_choices_arr = explode(";",$row["choices"]);
+            $result_choices_arr = explode(";",$row["choices"]);//单选：2 //多选：0;0;1;1;0;0
+            if(count($result_choices_arr) > 1){
+                //是多选
+                foreach ($result_choices_arr as $key => $value){
+                    if($value !== 0 && $value !== false){
+                        if(isset($result_conArr[$key+1])){
+                            $result_conArr[$key+1]++;
+                        }else{
+                            $result_conArr[$key+1] = 1;
+                        }
+                    }
+                }
+            }else{
+                //是单选
+                if(isset($result_conArr[$value])){
+                    $result_conArr[$value]++;
+                }else{
+                    $result_conArr[$value] = 1;
+                }
+            }
 
+        }
 
 
     }else{
@@ -46,6 +66,6 @@ if($topic_id){
 }else{
     //------------------------------------------------------------------------------------>缺少关键参数
     $status = 0;
-    $reminder = "缺少关键参数，无法获取话题".$content."的结果";
+    $reminder = "缺少关键参数，无法获取话题".$topic_id."的结果";
     echo $a->normalrespond($status,$reminder);
 }
