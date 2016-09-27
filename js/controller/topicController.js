@@ -33,40 +33,11 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
     },0);
 
 
-    $scope.multiplechoices = [];
-    $scope.checkbox_choose = function (index){
-        if($scope.multiplechoices[index] == 1){
-            $scope.multiplechoices[index] = 0;
-        }else{
-            $scope.multiplechoices[index] = 1;
-        }
-        console.log($scope.multiplechoices);
-    };
-
     /**
      * 保存数据
      */
+    $scope.multiplechoices = [];
     $scope.saveData = function (e){
-        console.log($(".btn_forer > input").attr("type"));
-
-
-        //把单选或多选的数据格式化
-        if($(".btn_forer > input").attr("type") == "checkbox"){
-
-            var Tclassification = "checkbox";
-
-            for(var i=0;i<$(".btn_forer > input.topic_checkbox").length;i++){
-                if(!$scope.multiplechoices[i]){
-                    $scope.multiplechoices[i] = 0;
-                }
-            }
-
-        }else if($(".btn_forer > input").attr("type") == "radio"){
-
-            var Tclassification = "radio";
-            $scope.multiplechoices = $scope.topic_radio;
-
-        }
 
         //发送数据
         $.ajax({
@@ -74,7 +45,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             type:'POST',
             async: false,
             data:{
-                "classification":Tclassification,
+                "classification":"",
                 "choices":$scope.multiplechoices,
                 "content":"",
                 "topic_id":""

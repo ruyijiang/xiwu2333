@@ -24,10 +24,9 @@ include("library/xwFE-0.0.1/FEM.php");
                         <span class="glyphicon glyphicon-align-left"></span>讲道理的话，你们觉得哪个女主播最漂亮？
                         <small>2016/09/06 13:43</small>
                     </h3>
-
-                        <h4 style="display: inline-block;color:#777;">
-                            <span style="line-height:1.6em;">如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）</span>
-                        </h4>
+                    <h4 style="display: inline-block;color:#777;">
+                        <span style="line-height:1.6em;">如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）</span>
+                    </h4>
                     <div>
                         <h6 style="display: inline-block"><span class="glyphicon glyphicon-user"></span>话题发起人：</h6>
                         <a><img src="img/user_img/avatar/default/default_female2.png" class="img-circle" width="26" height="26" style="margin-right:3px;">攻略写手 - shy</a>
@@ -42,7 +41,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
                     <div class="topic_content">
                         <form ng-submit="saveData()">
-                            <ol>
+                            <ol style="display:none">
                                 <li>
                                     <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="1" i-check prop="topic_radio" ng-model="topic_radio">冷冷</label>
                                 </li>
@@ -56,21 +55,21 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="4" i-check prop="topic_radio" ng-model="topic_radio">张天鸽</label>
                                 </li>
                             </ol>
-                            <ol style="display:none">
+                            <ol>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test1" ng-click="checkbox_choose(0)">冷冷</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test1" ng-model="test1">冷冷</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test2" ng-click="checkbox_choose(1)">Mik</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test2" ng-model="test2">Mik</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test3" ng-click="checkbox_choose(2)">Miss</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test3" ng-model="test3">Miss</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test4" ng-click="checkbox_choose(3)">张天鸽</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test4" ng-model="test4">张天鸽</label>
                                 </li>
                                 <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test5" ng-click="checkbox_choose(4)">时尚</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test5" ng-model="test5">时尚</label>
                                 </li>
                             </ol>
                             <div style="padding:15px 0;display:none">
