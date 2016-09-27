@@ -56,7 +56,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="4" i-check prop="topic_radio" ng-model="topic_radio">张天鸽</label>
                                 </li>
                             </ol>
-                            <ol>
+                            <ol style="display:none">
                                 <li>
                                     <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test1" ng-click="checkbox_choose(0)">冷冷</label>
                                 </li>

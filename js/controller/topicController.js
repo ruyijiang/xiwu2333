@@ -14,11 +14,9 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php',
             params:{'content': $stateParams.TopicUrl }
         }).success(function (httpCont){
-            console.log(httpCont);
             $scope.pageDate = httpCont;
         });
     }
-
 
     /**
      * 输出其它栏目的内容
@@ -27,11 +25,9 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
         $http({
             method: 'GET',
             url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getLatestTopic.php',
-            params:{'params': new Date().getTime() }
+            params:{'params': Math.round(new Date().getTime()/1000) }
         }).success(function (httpCont){
-            console.log(httpCont);
             $scope.pageDate.LatestTopicArr = httpCont;
-            console.log($scope.pageDate);
         });
 
     },0);
@@ -51,6 +47,8 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
      * 保存数据
      */
     $scope.saveData = function (e){
+        console.log($(".btn_forer > input").attr("type"));
+
 
         //把单选或多选的数据格式化
         if($(".btn_forer > input").attr("type") == "checkbox"){

@@ -25,20 +25,23 @@ $a = new interfaceResponse();
 
 if($tnow){
     //如果$tnow不为空，则针对tnow进行latestTopic检索//输出5个
-    $sql = "SELECT * FROM 'topics' WHERE regtime <= '$tnow' ORDER BY regtime DESC LIMIT 5 ";
+    $sql = "SELECT topic_id,customed_url,title,topic_desc FROM topics WHERE `regtime` <= '$tnow' ORDER BY `regtime` DESC LIMIT 5 ";
     $qry = $db->query($sql);
-    $row_all = mysqli_num_rows($qry);
+    @$row_all = mysqli_num_rows($qry);
     if($row_all > 0){
-        $arrTemp = array();
+        $arrResult = array();
 
         while ($row = $qry->fetch_assoc()){
+            $arrTemp = array();
             $arrTemp["topic_id"] = $row["topic_id"];
             $arrTemp["customed_url"] = $row["customed_url"];
             $arrTemp["title"] = $row["title"];
             $arrTemp["topic_desc"] = $row["topic_desc"];
+
+            array_push($arrResult,$arrTemp);
         }
 
-        echo (json_encode($arrTemp));
+        echo (json_encode($arrResult));
     }else{
         //------------------------------------------------------------------------------------>没有搜索到结果
         $status = 0;
