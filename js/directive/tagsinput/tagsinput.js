@@ -46,6 +46,13 @@ app.directive("tagsinput",function() {
 
                 },
                 onRemoveTag:function (){
+                    
+                    var dataStr3 = $(elem).val();//获取当前的值
+                    ngModel.$modelValue = scope.tagsData = dataStr3;//把当前的值传递给modelValue
+                    scope.$apply(function(){
+                        ngModel.$setViewValue(attr.value);
+                    });
+
                     NowAccount--;
                 }
             });

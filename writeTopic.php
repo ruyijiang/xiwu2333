@@ -63,6 +63,34 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <textarea class="form-control" type="text" placeholder="话题描述" style="resize: vertical" rows="4" ng-model="pageData.topic_desc"></textarea>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="form-group col-lg-12 col-sm-12 col-xs-12">
+                                    <label style="font-weight:400;cursor:pointer">
+                                        <input class="topic_radio" type="checkbox" name="needSelect" i-check ng-model="needSelect" prop="needSelect"> 是否需要选项？
+                                    </label>
+                                </div>
+                                <div ng-if="needSelect" class="form-group col-lg-12 col-sm-12 col-xs-12" style="border-top:dashed #ddd 1px;border-bottom:dashed #ddd 1px;padding:15px;background-color:#f7f7f7">
+                                    <a class="btn btn-primary" ng-click="addChoice()"><span class="glyphicon glyphicon-plus"></span>添加选项</a>
+                                    <small style="margin:0 10px">选项模式：</small>
+                                    <label style="margin-right:15px;cursor: pointer;">
+                                        <input class="topic_radio" type="radio" name="topic_classification" value="radio" i-check ng-model="pageData.topic_classification" prop="pageData.topic_classification"> 单选
+                                    </label>
+                                    <label style="margin-right:15px;cursor: pointer;">
+                                        <input class="topic_radio" type="radio" name="topic_classification" value="checkbox" i-check ng-model="pageData.topic_classification" prop="pageData.topic_classification"> 多选
+                                    </label>
+
+                                    <div class="row" style="margin-top:15px">
+                                        <div ng-repeat="xChoi in pageData.topic_choices">
+                                            <div class="col-lg-11 col-sm-11 col-xs-11" style="margin-bottom:10px">
+                                                <input class="form-control" type="text" placeholder="选项{{$index+1}}" ng-model="xChoi.content">
+                                            </div>
+                                            <div class="col-lg-1 col-sm-1 col-xs-1" style="padding-left:0;padding-top:6px">
+                                                <a ng-click="removeThisChoice($index)"><span class="glyphicon glyphicon-remove" style="color:#d9534f"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="topic_choice">

@@ -12,7 +12,16 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
         topic_title:"",
         topic_desc:"",
         topic_cate:1,
-        topic_tags:"Dota2"
+        topic_tags:"Dota2",
+        topic_classification:"radio",
+        topic_choices:[
+            {
+                "content":""
+            },
+            {
+                "content":""
+            }
+        ]
     };
 
 
@@ -23,6 +32,32 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
     var clip = new ZeroClipboard( document.getElementById("d_clip_button"), {
         moviePath: "ZeroClipboard.swf"
     } );
+
+
+    var ChoicesAmount = 2;
+    /**
+     * 添加选项
+     */
+    $scope.addChoice = function (){
+        if(ChoicesAmount==8){
+            alert ("上限为8条选项，您已不能再添加");
+            return false;
+        }else{
+            var aTemp = {"content":""};
+            $scope.pageData.topic_choices.push(aTemp);
+            ChoicesAmount++;
+        }
+    };
+
+
+    /**
+     * 删除对应选项功能
+     */
+    $scope.removeThisChoice = function (index){
+        $scope.pageData.topic_choices.splice(index,1);
+        ChoicesAmount--;
+    };
+
 
     // 复制内容到剪贴板成功后的操作
     clip.on( 'complete', function(client, args) {
@@ -39,7 +74,13 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
      * 提交本页数据
      */
     $scope.saveData = function (){
-        if($scope.urlReminder !== 1){
+
+        if(!$scope.needSelect){
+            $scope.pageData.topic_choices = [{"content":""},{"content":""}];
+            $scope.pageData.topic_classification = "radio";
+        }
+
+        if($scope.urlReminder == 0){
             alert ("自定义链接不可使用，请重新填写");
         }else{
             $.ajax({
@@ -82,5 +123,6 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
         });
     }
 
+    $scope.needSelect = false;
 
 });
