@@ -75,7 +75,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div style="padding:15px 0;display:none">
                                 <textarea class="form-control" rows="4" style="resize: vertical;max-height:600px;padding-top:11px;"></textarea>
                             </div>
-                            <input type="submit" class="btn btn-primary center-block">
+                            <input type="submit" class="btn btn-primary" style="width:100%">
                         </form>
                     </div>
 

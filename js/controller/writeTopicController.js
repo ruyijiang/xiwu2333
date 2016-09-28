@@ -54,8 +54,13 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
      * 删除对应选项功能
      */
     $scope.removeThisChoice = function (index){
-        $scope.pageData.topic_choices.splice(index,1);
-        ChoicesAmount--;
+        if(ChoicesAmount==2){
+            alert ("至少需要设置2个选项");
+            return false;
+        }else{
+            $scope.pageData.topic_choices.splice(index,1);
+            ChoicesAmount--;
+        }
     };
 
 
@@ -77,7 +82,7 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
 
         if(!$scope.needSelect){
             $scope.pageData.topic_choices = [{"content":""},{"content":""}];
-            $scope.pageData.topic_classification = "radio";
+            $scope.pageData.topic_classification = "text";
         }
 
         if($scope.urlReminder == 0){

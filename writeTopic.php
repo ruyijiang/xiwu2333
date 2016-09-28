@@ -84,7 +84,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                             <div class="col-lg-11 col-sm-11 col-xs-11" style="margin-bottom:10px">
                                                 <input class="form-control" type="text" placeholder="选项{{$index+1}}" ng-model="xChoi.content">
                                             </div>
-                                            <div class="col-lg-1 col-sm-1 col-xs-1" style="padding-left:0;padding-top:6px">
+                                            <div class="col-lg-1 col-sm-1 col-xs-1" style="padding-left:0;padding-top:7px">
                                                 <a ng-click="removeThisChoice($index)"><span class="glyphicon glyphicon-remove" style="color:#d9534f"></span></a>
                                             </div>
                                         </div>
@@ -119,7 +119,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </div>
 
                         <div>
-                            <input type="submit" class="btn btn-primary center-block" value="确认发表">
+                            <input type="submit" class="btn btn-primary" style="width:100%" value="确认发表">
                         </div>
 
                         <hr>
