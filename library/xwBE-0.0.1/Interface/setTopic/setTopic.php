@@ -10,7 +10,7 @@ require("../../all.php");
 require("../../algorithm/RandTopicId.php");
 require("../../algorithm/Liveness.php");
 ?><?php
-//header('Content-type: application/json');
+header('Content-type: application/json');
 
 @$uid = $_SESSION["uid"];//uid
 
@@ -19,6 +19,33 @@ $topic_title = $_POST["topic_title"];
 $topic_desc = $_POST["topic_desc"];
 $topic_cate = $_POST["topic_cate"];
 @$topic_tags = $_POST["topic_tags"];
+@$topic_classification = $_POST["topic_classification"];
+@$topic_choices = $_POST["topic_choices"];
+
+//处理topic_choices
+if(is_array($topic_choices[0]) && is_array($topic_choices)){
+
+    $tempArr = array();
+
+    foreach ($topic_choices as $key => $value){
+        foreach ($value as $key2 => $value2){
+            if($key2 !== '$$hashKey'){
+                array_push($tempArr,$value2);
+            }
+        }
+        if(empty($value)){
+            array_splice($topic_choices,$key,1);
+        }
+    }
+
+    $tempArr = array_unique($tempArr);//数组去重
+
+    $topic_choices = $tempArr;
+
+    $topic_choices = implode(";",$topic_choices);
+
+}
+
 
 $a = new _environment();
 $tnow = $a->getTime();//当前datetime - iso时间
@@ -61,7 +88,7 @@ if(empty($_SESSION["uid"]) || !isset($_SESSION["uid"])){
             }else{
 
                 $abc = create_TopicId();
-                $sql = "INSERT INTO topics(id,topic_id,customed_url,uid,title,topic_desc,cate,tags,regtime) VALUES ('','$abc','$customUrl','$uid','$topic_title','$topic_desc','$topic_cate','$topic_tags','$tnow_stamp') ";
+                $sql = "INSERT INTO topics(id,topic_id,customed_url,uid,title,topic_desc,cate,tags,classification,choices,regtime) VALUES ('','$abc','$customUrl','$uid','$topic_title','$topic_desc','$topic_cate','$topic_tags','$topic_classification','$topic_choices','$tnow_stamp') ";
                 $qry = $db->query($sql);
 
                 if($qry){
