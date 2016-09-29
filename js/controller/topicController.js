@@ -14,7 +14,8 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php',
             params:{'content': $stateParams.TopicUrl }
         }).success(function (httpCont){
-            $scope.pageDate = httpCont;
+            $scope.pageData = httpCont;
+            console.log($scope.pageData);
         });
     }
 
@@ -27,7 +28,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getLatestTopic.php',
             params:{'params': Math.round(new Date().getTime()/1000) }
         }).success(function (httpCont){
-            $scope.pageDate.LatestTopicArr = httpCont;
+            $scope.pageData.LatestTopicArr = httpCont;
         });
 
     },0);

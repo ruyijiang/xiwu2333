@@ -21,61 +21,39 @@ include("library/xwFE-0.0.1/FEM.php");
                 <!-- 热门推荐 -->
                 <div class="topic_container">
                     <h3 class="text-left">
-                        <span class="glyphicon glyphicon-align-left"></span>讲道理的话，你们觉得哪个女主播最漂亮？
-                        <small>2016/09/06 13:43</small>
+                        <span class="glyphicon glyphicon-align-left"></span>{{pageData.title}}
+                        <small>{{pageData.regtime}}</small>
                     </h3>
-                    <h4 style="display: inline-block;color:#777;">
-                        <span style="line-height:1.6em;">如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）如果只有一个机会，你会看谁的直播呢？（这是导语，只在讨论发言情况下出现）</span>
+                    <h4 style="color:#777;">
+                        <span style="line-height:1.6em;word-wrap: break-word">{{pageData.topic_desc}}</span>
                     </h4>
                     <div>
                         <h6 style="display: inline-block"><span class="glyphicon glyphicon-user"></span>话题发起人：</h6>
-                        <a><img src="img/user_img/avatar/default/default_female2.png" class="img-circle" width="26" height="26" style="margin-right:3px;">攻略写手 - shy</a>
+                        <a><img ng-src="{{pageData.user_avatar}}" class="img-circle" width="26" height="26" style="margin-right:3px;">{{pageData.user_name}}</a>
                     </div>
                     <div>
                         <h6 style="display: inline-block"><span class="glyphicon glyphicon-tags"></span>标签：</h6>
-                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>直播</div>
-                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>女主播</div>
-                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>Dota2</div>
-                        <div class="label label-primary ng-scope"><span class="glyphicon glyphicon-tag"></span>英雄联盟</div>
+                        <div ng-repeat="xTag in pageData.tags" class="label label-primary ng-scope" style="margin-right:8px">
+                            <span class="glyphicon glyphicon-tag"></span>{{xTag}}
+                        </div>
                     </div>
 
                     <div class="topic_content">
                         <form ng-submit="saveData()">
-                            <ol style="display:none">
-                                <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="1" i-check prop="topic_radio" ng-model="topic_radio">冷冷</label>
-                                </li>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="2" i-check prop="topic_radio" ng-model="topic_radio">Mik</label>
-                                </li>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="3" i-check prop="topic_radio" ng-model="topic_radio">Miss</label>
-                                </li>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="4" i-check prop="topic_radio" ng-model="topic_radio">张天鸽</label>
+                            <ol ng-if="pageData.topic_classification == 'radio'">
+                                <li ng-repeat="xcho in pageData.topic_choices">
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="1" i-check prop="topic_radio" ng-model="topic_radio">{{xcho.content}}</label>
                                 </li>
                             </ol>
-                            <ol>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test1" ng-model="test1">冷冷</label>
-                                </li>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test2" ng-model="test2">Mik</label>
-                                </li>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test3" ng-model="test3">Miss</label>
-                                </li>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test4" ng-model="test4">张天鸽</label>
-                                </li>
-                                <li>
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test5" ng-model="test5">时尚</label>
+                            <ol ng-if="pageData.topic_classification == 'checkbox'">
+                                <li ng-repeat="xcho in pageData.topic_choices">
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test1" ng-model="test1">{{xcho.content}}</label>
                                 </li>
                             </ol>
-                            <div style="padding:15px 0;display:none">
+                            <div style="padding:15px 0;" ng-if="pageData.topic_classification !== 'radio' && pageData.topic_classification !== 'checkbox'">
                                 <textarea class="form-control" rows="4" style="resize: vertical;max-height:600px;padding-top:11px;"></textarea>
                             </div>
-                            <input type="submit" class="btn btn-primary" style="width:100%">
+                            <input type="submit" class="btn btn-primary" style="width:100%" value="发表我的观点">
                         </form>
                     </div>
 
@@ -151,47 +129,14 @@ include("library/xwFE-0.0.1/FEM.php");
                     <hr style="border-top:solid 1px #c3c3c3">
 
                     <ul class="list-group">
-                        <li class="list-group-item">
+                        <li class="list-group-item" ng-repeat="xRel in pageData.related_topics">
                             <span class="badge" style="margin-top:3%">21</span>
-                            <h4 class="list-group-item-heading">
-                                <a>本届Ti发挥最优异的选手是哪位？</a>
+                            <h4 class="list-group-item-heading" style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden;">
+                                <a ng-href="/#/topic/{{xRel.customed_url}}">{{xRel.title}}</a>
                             </h4>
 
-                            <p class="list-group-item-text">
-                                您将通过网页进行免费域名注册。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">9</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    剑圣六神对单是否打得过幽鬼？
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">9</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    讲道理哪位女主播最漂亮？
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">4</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    24*7 支持
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
+                            <p class="list-group-item-text" style="word-wrap: break-word">
+                                {{xRel.topic_desc}}
                             </p>
                         </li>
                     </ul>
@@ -202,47 +147,14 @@ include("library/xwFE-0.0.1/FEM.php");
                     <hr style="border-top:solid 1px #c3c3c3">
 
                     <ul class="list-group">
-                        <li class="list-group-item">
+                        <li class="list-group-item" ng-repeat="xLat in pageData.LatestTopicArr">
                             <span class="badge" style="margin-top:3%">21</span>
-                            <h4 class="list-group-item-heading">
-                                <a>本届Ti发挥最优异的选手是哪位？</a>
+                            <h4 class="list-group-item-heading" style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden;">
+                                <a ng-href="/#/topic/{{xLat.customed_url}}">{{xLat.title}}</a>
                             </h4>
 
-                            <p class="list-group-item-text">
-                                您将通过网页进行免费域名注册。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">9</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    剑圣六神对单是否打得过幽鬼？
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">9</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    讲道理哪位女主播最漂亮？
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">4</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    24*7 支持
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
+                            <p class="list-group-item-text" style="word-wrap: break-word">
+                                {{xLat.topic_desc}}
                             </p>
                         </li>
                     </ul>

@@ -8,7 +8,7 @@
 require("../../connectDB.php");
 require("../../all.php");
 ?><?php
-header('Content-type: application/json');
+//header('Content-type: application/json');
 
 @$uid = $_SESSION["uid"];//uid
 
@@ -38,7 +38,17 @@ if($content){
         $arrTemp["title"] = $row["title"];
         $arrTemp["topic_desc"] = $row["topic_desc"];
         $arrTemp["cate"] = $row["cate"];
-        $arrTemp["regtime"] = $row["regtime"];
+        $arrTemp["regtime"] = date("Y/m/d H:i",$row["regtime"]);
+        $arrTemp["topic_classification"] = $row["classification"];
+        $arrTemp["topic_choices"] = $row["choices"];
+
+        $arrTemp["topic_choices"] = explode(";",$arrTemp["topic_choices"]);
+        foreach ($arrTemp["topic_choices"] as $key => $value){
+            if(!empty($value)){
+                $arrTemp4["content"] = $value;
+                $arrTemp["topic_choices"][$key] = $arrTemp4;
+            }
+        }
 
         $arrTemp["uid"] = $result_uid =  $row["uid"];
         $sql1 = "SELECT * FROM users WHERE uid = '$result_uid' ";
@@ -47,8 +57,7 @@ if($content){
         $arrTemp["user_avatar"] = $row1["avatar"];
         $arrTemp["user_name"] = $row1["name"];
 
-        $arrTemp["tags"] = $result_tags = $row["tags"];
-        $result_tags = explode(";",$result_tags);
+        $arrTemp["tags"] = $result_tags = explode(";",$row["tags"]);
         $arrTemp2 = array();
         foreach ($result_tags as $temp){
             $arrTemp3 = array();
@@ -66,7 +75,18 @@ if($content){
             }
         }
 
-        $arrTemp["related_topics"] = $arrTemp2;
+        $min = 0;$max = count($arrTemp2) - 1;
+        $numbers = range ($min,$max);
+        shuffle ($numbers);
+        $arrTemp2_temp = array();
+        
+        var_dump($arrTemp2);
+        for($i=0;$i<5;$i++){
+            var_dump($numbers[$i]);
+            array_push($arrTemp2_temp,$arrTemp2[$numbers[$i]]);
+        }
+
+        $arrTemp["related_topics"] = $arrTemp2_temp;
 
         echo (json_encode($arrTemp));
 
