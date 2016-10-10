@@ -59,30 +59,46 @@ if($content){
 
         $arrTemp["tags"] = $result_tags = explode(";",$row["tags"]);
         $arrTemp2 = array();
+        $arrTemp2_topics = array();
         foreach ($result_tags as $temp){
             $arrTemp3 = array();
 
             $sql2 = "SELECT topic_id,customed_url,title,topic_desc FROM topics WHERE tags LIKE '%$temp%' ORDER BY regtime DESC LIMIT 5 ";
             $qry2 = $db->query($sql2);
             while ($row2 = $qry2->fetch_assoc()){
+                
+                if(count($arrTemp2_topics) > 0){
 
-                $arrTemp3["topic_id"] = $row2["topic_id"];
-                $arrTemp3["customed_url"] = $row2["customed_url"];
-                $arrTemp3["title"] = $row2["title"];
-                $arrTemp3["topic_desc"] = $row2["topic_desc"];
+                    foreach ($arrTemp2_topics as $key => $value){
 
-                array_push($arrTemp2,$arrTemp3);
+                        if(!empty($value) && $value !== $row2["topic_id"]){
+                            //该临时数组里没有这个topic_id,说明这个topic还没有成为相关话题
+                            $arrTemp3["topic_id"] = $row2["topic_id"];
+                            $arrTemp3["customed_url"] = $row2["customed_url"];
+                            $arrTemp3["title"] = $row2["title"];
+                            $arrTemp3["topic_desc"] = $row2["topic_desc"];
+
+                            array_push($arrTemp2,$arrTemp3);
+                            array_push($arrTemp2_topics,$row2["topic_id"]);
+
+                        }
+
+                    }
+
+                }
+
             }
         }
+
+        var_dump($arrTemp2);
+        var_dump($arrTemp2_topics);
 
         $min = 0;$max = count($arrTemp2) - 1;
         $numbers = range ($min,$max);
         shuffle ($numbers);
         $arrTemp2_temp = array();
-        
-        var_dump($arrTemp2);
+
         for($i=0;$i<5;$i++){
-            var_dump($numbers[$i]);
             array_push($arrTemp2_temp,$arrTemp2[$numbers[$i]]);
         }
 

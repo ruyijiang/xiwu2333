@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/topicController.js" afterPath="$PROJECT_DIR$/js/controller/topicController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic.php" afterPath="$PROJECT_DIR$/topic.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,17 +38,9 @@
       <file leaf-file-name="topic.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="840">
               <caret line="35" column="121" selection-start-line="35" selection-start-column="121" selection-end-line="35" selection-end-column="121" />
-              <folding>
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,9 +48,10 @@
       <file leaf-file-name="topicController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="384">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
+                <element signature="e#0#38#0" expanded="false" />
                 <element signature="e#147#191#0" expanded="false" />
                 <element signature="e#551#579#0" expanded="false" />
                 <element signature="e#930#953#0" expanded="false" />
@@ -72,12 +63,12 @@
       <file leaf-file-name="getTopicInfo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+            <state relative-caret-position="214">
+              <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
               <folding>
-                <marker date="1475139858162" expanded="true" signature="466:543" ph="SELECT * FRO... topics" />
-                <marker date="1475139858162" expanded="true" signature="1605:1650" ph="SELECT * FRO... users" />
-                <marker date="1475139858162" expanded="true" signature="2020:2133" ph="SELECT topic... topics" />
+                <marker date="1476090603841" expanded="true" signature="466:543" ph="SELECT * FRO... topics" />
+                <marker date="1476090603841" expanded="true" signature="1605:1650" ph="SELECT * FRO... users" />
+                <marker date="1476090603841" expanded="true" signature="2056:2169" ph="SELECT topic... topics" />
               </folding>
             </state>
           </provider>
@@ -236,7 +227,6 @@
         </subPane>
         <subPane subId="Tests" />
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -413,6 +403,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1020,14 +1011,10 @@
       <workItem from="1475024454935" duration="7686000" />
       <workItem from="1475039612872" duration="8490000" />
       <workItem from="1475072315745" duration="1292000" />
-      <workItem from="1475112408852" duration="13098000" />
-    </task>
-    <task id="LOCAL-00066" summary="add more record method of searching model. in any case">
-      <created>1469687963103</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1469687963104</updated>
+      <workItem from="1475112408852" duration="13144000" />
+      <workItem from="1475196912034" duration="3383000" />
+      <workItem from="1475890500608" duration="265000" />
+      <workItem from="1476081297727" duration="7247000" />
     </task>
     <task id="LOCAL-00067" summary="release a new version | alpha 0.2">
       <created>1469688280704</created>
@@ -1365,18 +1352,25 @@
       <option name="project" value="LOCAL" />
       <updated>1475118480264</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="getTopicInfo接口的line.82附近存在逻辑问题">
+      <created>1475139894639</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1475139894639</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2114336000" />
+    <option name="totallyTimeSpent" value="2125277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25869894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1432,7 +1426,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="design square" />
     <MESSAGE value="基本完成了square页面的设计" />
     <MESSAGE value="重新调整了导航active策略。" />
     <MESSAGE value="remove homepage.php,all function were moved to personpage.php &amp; personController.js" />
@@ -1457,7 +1450,8 @@
     <MESSAGE value="about finish topic_action.php and improved checkUrl.php" />
     <MESSAGE value="add some" />
     <MESSAGE value="about finish setTopic.interface." />
-    <option name="LAST_COMMIT_MESSAGE" value="about finish setTopic.interface." />
+    <MESSAGE value="getTopicInfo接口的line.82附近存在逻辑问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="getTopicInfo接口的line.82附近存在逻辑问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1724,7 +1718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1732,12 +1725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-            <marker date="1475118063678" expanded="true" signature="1804:1865" ph="SELECT topic... topics" />
-            <marker date="1475118063678" expanded="true" signature="2267:2353" ph="SELECT topic... topics" />
-            <marker date="1475118063678" expanded="true" signature="2824:3081" ph="INSERT INTO topics... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1745,10 +1732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-966">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1470793930916" expanded="true" signature="478:523" ph="SELECT * FRO... users" />
-            <marker date="1470793930916" expanded="true" signature="968:1038" ph="SELECT conte... callingcard" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1756,7 +1739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1764,13 +1746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1119">
           <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding>
-            <element signature="e#136#160#0" expanded="false" />
-            <element signature="e#504#529#0" expanded="false" />
-            <element signature="e#707#730#0" expanded="false" />
-            <element signature="e#1024#1051#0" expanded="false" />
-            <element signature="e#1553#1578#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1778,35 +1753,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/topic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="840">
           <caret line="35" column="121" selection-start-line="35" selection-start-column="121" selection-end-line="35" selection-end-column="121" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#147#191#0" expanded="false" />
-            <element signature="e#551#579#0" expanded="false" />
-            <element signature="e#930#953#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1814,7 +1768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1822,20 +1775,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <marker date="1472777887921" expanded="true" signature="302:384" ph="SELECT topic... topics" />
+            <element signature="e#0#38#0" expanded="false" />
+            <element signature="e#147#191#0" expanded="false" />
+            <element signature="e#551#579#0" expanded="false" />
+            <element signature="e#930#953#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        <state relative-caret-position="214">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
           <folding>
-            <marker date="1475139858162" expanded="true" signature="466:543" ph="SELECT * FRO... topics" />
-            <marker date="1475139858162" expanded="true" signature="1605:1650" ph="SELECT * FRO... users" />
-            <marker date="1475139858162" expanded="true" signature="2020:2133" ph="SELECT topic... topics" />
+            <marker date="1476090603841" expanded="true" signature="466:543" ph="SELECT * FRO... topics" />
+            <marker date="1476090603841" expanded="true" signature="1605:1650" ph="SELECT * FRO... users" />
+            <marker date="1476090603841" expanded="true" signature="2056:2169" ph="SELECT topic... topics" />
           </folding>
         </state>
       </provider>
