@@ -70,28 +70,42 @@ if($content){
                 if(count($arrTemp2_topics) > 0){
 
                     foreach ($arrTemp2_topics as $key => $value){
+                        $AddFlag = true;
 
-                        if(!empty($value) && $value !== $row2["topic_id"]){
-                            //该临时数组里没有这个topic_id,说明这个topic还没有成为相关话题
-                            $arrTemp3["topic_id"] = $row2["topic_id"];
-                            $arrTemp3["customed_url"] = $row2["customed_url"];
-                            $arrTemp3["title"] = $row2["title"];
-                            $arrTemp3["topic_desc"] = $row2["topic_desc"];
-
-                            array_push($arrTemp2,$arrTemp3);
-                            array_push($arrTemp2_topics,$row2["topic_id"]);
-
+                        if(!empty($value) && ($value == $row2["topic_id"] && $value == $arrTemp["topic_id"]) ){
+                            $AddFlag = false;
                         }
 
                     }
 
+                    if($AddFlag == true){
+
+                        //该临时数组里没有这个topic_id,说明这个topic还没有成为相关话题
+                        $arrTemp3["topic_id"] = $row2["topic_id"];
+                        $arrTemp3["customed_url"] = $row2["customed_url"];
+                        $arrTemp3["title"] = $row2["title"];
+                        $arrTemp3["topic_desc"] = $row2["topic_desc"];
+
+                        array_push($arrTemp2,$arrTemp3);
+                        array_push($arrTemp2_topics,$row2["topic_id"]);
+
+                    }
+
+                }else{
+
+                    $arrTemp3["topic_id"] = $row2["topic_id"];
+                    $arrTemp3["customed_url"] = $row2["customed_url"];
+                    $arrTemp3["title"] = $row2["title"];
+                    $arrTemp3["topic_desc"] = $row2["topic_desc"];
+
+                    array_push($arrTemp2,$arrTemp3);
+                    array_push($arrTemp2_topics,$row2["topic_id"]);
+
                 }
 
             }
-        }
 
-        var_dump($arrTemp2);
-        var_dump($arrTemp2_topics);
+        }
 
         $min = 0;$max = count($arrTemp2) - 1;
         $numbers = range ($min,$max);
