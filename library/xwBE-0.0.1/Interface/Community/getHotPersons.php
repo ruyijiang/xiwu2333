@@ -58,7 +58,8 @@ if($timing){
 
             $sql2 = "SELECT content FROM callingcard WHERE ccid = '$result_calling_card_id' ";
             $qry2 = $db->query($sql2);
-            $result_calling_card_name = $qry2["content"];
+            $row2 = $qry2->fetch_assoc();
+            $result_calling_card_name = $row2["content"];
 
             $dataArr = array('uid'=>$result_uid,'avatar'=>$result_avatar,'title'=>$result_calling_card_name);
             foreach ( $dataArr as $key => $value ) {
@@ -70,13 +71,13 @@ if($timing){
         }
 
 
-        $sql = "SELECT uid,avatar,name,calling_card_id FROM users ORDER BY regtime DESC LIMIT '$Num' ";
-        $qry = $db->query($sql3);
-        while($row = $qry->fetch_assoc()){
+        $sql3 = "SELECT uid,avatar,name,calling_card_id FROM users ORDER BY regtime DESC LIMIT '$Num' ";
+        $qry3 = $db->query($sql3);
+        while($row3 = $qry3->fetch_assoc()){
 
-            $result_uid = $row["uid"];
-            $result_avatar = $row["avatar"];
-            $result_name = $row["name"];
+            $result_uid = $row3["uid"];
+            $result_avatar = $row3["avatar"];
+            $result_name = $row3["name"];
 
             $dataArr = array('uid'=>$result_uid,'avatar'=>$result_avatar,'title'=>$result_name);
             foreach ( $dataArr as $key => $value ) {

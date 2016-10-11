@@ -56,6 +56,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
      */
     $scope.xArr = [];
     $scope.xArr_months = [];
+
     function _loadUserData(uid){
         //判断url里是否有tab。如果有，则请求对应tab的请求；如果没有，则请求默认的pulse数据
         uid==undefined?uid=$location.search()["uid"]:uid;
@@ -107,7 +108,12 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                             x_a++;
                             y_a=0;
 
-                            var month_num = x.split("/")[0].substr(1) + "月";
+                            if(x.split("/")[0].charAt(0) == 0){
+                                var month_num = x.split("/")[0].substr(1) + "月";
+                            }else if(x.split("/")[0].charAt(1) == 0){
+                                var month_num = x.split("/")[0].substr(0) + "月";
+                            }
+
                             if(xContent_months.length == 0){
                                 xContent_months.push(month_num);
                             }else{

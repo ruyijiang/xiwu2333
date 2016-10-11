@@ -16,8 +16,8 @@ $status = 0;
 $reminder = "";
 
 $b = new _environment();
-$tnow = $b->getTime();//当年的Unix时间
-$tnow_stamp = mktime($tnow);//当前的UNIX时间
+$tnow = $b->getTime();//当年的ISO时间
+$tnow_stamp = strtotime($tnow);//当前的UNIX时间
 $todayStart = mktime(0,0,0,date("m"),date("d"),date("Y"));  //今天0点UNIX时间
 $todayEnd = $todayStart + 24*60*60-1;                       //今天23:59的UNIX时间
 

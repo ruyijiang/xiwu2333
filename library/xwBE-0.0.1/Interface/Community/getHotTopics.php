@@ -19,7 +19,7 @@ if($timing){
 
     $EchoResult = array();
 
-    $sql = "SELECT topic_id,title,subtitle,readtimes FROM topics ORDER BY regtime DESC LIMIT 4";
+    $sql = "SELECT topic_id,title,topic_desc,readtimes FROM topics ORDER BY regtime DESC LIMIT 4";
     $qry = $db->query($sql);
     $row_all = mysqli_num_rows($qry);
     if($row_all >= 1){
