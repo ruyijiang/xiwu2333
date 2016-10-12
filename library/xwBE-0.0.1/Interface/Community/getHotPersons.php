@@ -19,7 +19,7 @@ if($timing){
 
     $EchoResult = array();
 
-    $sql = "SELECT uid,avatar,name,calling_card_id FROM users WHERE identification = 1 AND calling_card_id <> '' ORDER BY regtime DESC LIMIT 12";
+    $sql = "SELECT uid,avatar,name,calling_card_id FROM users WHERE identification = 1 ORDER BY regtime DESC LIMIT 12";
     $qry = $db->query($sql);
     $row_all = mysqli_num_rows($qry);
     if($row_all < 1){
@@ -70,23 +70,44 @@ if($timing){
 
         }
 
-
-        $sql3 = "SELECT uid,avatar,name,calling_card_id FROM users ORDER BY regtime DESC LIMIT '$Num' ";
+        $newNum = 12 - $Num;
+        $sql3 = "SELECT uid,avatar,name,calling_card_id FROM users ORDER BY regtime DESC LIMIT $newNum ";
         $qry3 = $db->query($sql3);
         while($row3 = $qry3->fetch_assoc()){
+            $addFlag = true;
 
-            $result_uid = $row3["uid"];
-            $result_avatar = $row3["avatar"];
-            $result_name = $row3["name"];
 
-            $dataArr = array('uid'=>$result_uid,'avatar'=>$result_avatar,'title'=>$result_name);
-            foreach ( $dataArr as $key => $value ) {
-                $dataArr[$key] = urlencode ($value);
+            if(count($EchoResult) > 0){
+
+                foreach ($EchoResult as $key => $value){
+                    if($value["uid"] == $row3["uid"]){
+                        $addFlag = false;
+                    }
+                }
+
             }
 
-            array_push($EchoResult,$dataArr);
+            if($addFlag == true){
+
+                $result_uid = $row3["uid"];
+                $result_avatar = $row3["avatar"];
+                $result_name = $row3["name"];
+
+                $dataArr = array('uid'=>$result_uid,'avatar'=>$result_avatar,'title'=>$result_name);
+                foreach ( $dataArr as $key => $value ) {
+                    $dataArr[$key] = urlencode ($value);
+                }
+
+                array_push($EchoResult,$dataArr);
+
+            }
 
         }
+
+
+
+
+
 
         $EchoResult = urldecode ( json_encode ( $EchoResult ));
         echo $EchoResult;

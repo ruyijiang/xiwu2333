@@ -17,7 +17,7 @@ $reminder = "";
 
 if($timing){
 
-    $sql = "SELECT aid,title,subtitle,abstract,cover_img FROM articles WHERE abstract <> '' AND LEN(content) > 400 ORDER BY read_times DESC LIMIT 3 ";
+    $sql = "SELECT aid,title,subtitle,abstract,cover_img FROM articles WHERE length(content) > 400 ORDER BY read_times DESC LIMIT 3 ";
     $qry = $db->query($sql);
 
     if($qry){
