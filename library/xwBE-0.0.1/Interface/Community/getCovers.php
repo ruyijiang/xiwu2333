@@ -25,7 +25,7 @@ if($timing){
 
     $EchoResult = array();
 
-    $sql = "SELECT cover_id,title,subtitle,img FROM covers WHERE post_time > '$todayStart' AND post_time >= '$tnow_stamp' + duration ORDER BY time DESC LIMIT 4";
+    $sql = "SELECT cover_id,title,cover_desc,cover_img FROM covers WHERE post_time > '$todayStart' AND post_time >= '$tnow_stamp' + duration ORDER BY time DESC LIMIT 4";
     $qry = $db->query($sql);
     $row_all = mysqli_num_rows($qry);
     if($row_all >= 1){

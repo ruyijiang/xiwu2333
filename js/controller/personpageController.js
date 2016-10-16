@@ -150,6 +150,8 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             }
         });
     }
+    
+    
     /**
      * 读取用户活跃度数据
      */
@@ -171,6 +173,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             }
         });
     }
+
 
     /**
      * 读取用户博客数据

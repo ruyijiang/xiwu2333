@@ -1,0 +1,9 @@
+['Time':2016-10-13 00:29:03,'Commit:'onlineDuration]{6891.5}
+['Time':2016-10-13 00:49:14,'Commit:'onlineDuration]{864.5}
+['Time':2016-10-13 00:57:40,'Commit:'onlineDuration]{318.5}
+['Time':2016-10-13 18:32:16,'Commit:'onlineDuration]{420}
+['Time':2016-10-13 20:54:05,'Commit:'onlineDuration]{0}
+['Time':2016-10-13 20:54:15,'Commit:'onlineDuration]{0}
+['Time':2016-10-13 20:56:39,'Commit:'onlineDuration]{112}
+['Time':2016-10-13 20:57:55,'Commit:'onlineDuration]{56}
+['Time':2016-10-13 21:13:47,'Commit:'onlineDuration]{1057}

@@ -90,7 +90,7 @@ do{
     if(!$b || !$b->{"result"}->{"matches"}){
         $status = 0;
         $reminder = "无法访问steam-dota2服务器";
-        echo $a->normalnormalrespond($status,$reminder);
+        echo $a->normalrespond($status,$reminder);
         exit;
     }else{
         foreach($b->{"result"}->{"matches"} as $value){

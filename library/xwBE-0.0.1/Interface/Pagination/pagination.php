@@ -12,6 +12,7 @@ require("../../all.php");
     $responseCate = $_GET["responseCate"];
     $num_onepage = $_GET["num_onepage"];//每页显示条数
     @$uid = $_GET["uid"];
+    @$content = $_GET["content"];
 
     if(!$uid) $uid=$_SESSION["uid"];
 
@@ -33,6 +34,20 @@ require("../../all.php");
 
     }else if($responseCate == 'user'){
         //-----------------请求的是用户列表的分页
-        
+
+    }else if($responseCate == 'comment'){
+        $sql = "SELECT comment_id FROM comments WHERE topic_id = '$content' ";
+        $qry = $db->query($sql);
+        $row_all = mysqli_num_rows($qry);//总条数
+        $page_all = (int)ceil($row_all/$num_onepage);//总页数
+
+        $dataArr = array ('row_all'=>$row_all,'page_all'=>$page_all);
+
+        foreach ( $dataArr as $key => $value ) {
+            $dataArr[$key] = urlencode ($value);
+        }
+
+        $dataArr = urldecode ( json_encode ( $dataArr ));
+        echo $dataArr;
     }
 ?>

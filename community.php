@@ -3,7 +3,9 @@ require("library/xwBE-0.0.1/connectDB.php");
 require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 ?>
-<style>body{background-color:#dadada}.carousel{height:451px;}.carousel-caption{z-index:10}.carousel .item{height:451px;background-color:#333}.carousel-inner>.item>img{position:absolute;top:0;left:15%;width:70%;height:451px;border-bottom:solid 1px black}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:10px;margin-left:10px}@media (min-width:768px){.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}</style>
+<style>body{background-color:#dadada}.carousel{height:451px;}.carousel-caption{z-index:10}.carousel .item{height:451px;background-color:#333}.carousel-inner>.item>img{position:absolute;top:0;left:15%;width:70%;height:451px;border-bottom:solid 1px black}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:10px;margin-left:10px}@media (min-width:768px){.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}
+        ul.list-group li.list-group-item.active a{color:white}
+</style>
 <div ng-controller="communityController">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -160,48 +162,15 @@ include("library/xwFE-0.0.1/FEM.php");
                     <hr style="border-top:solid 1px #c3c3c3">
 
                     <ul class="list-group">
-                        <li class="list-group-item active">
+                        <li class="list-group-item" ng-class="{active:xHT.remark=='hotest'}" ng-repeat="xHT in pageData_HotTopics">
                             <span class="badge" style="margin-top:3%">21</span>
                                 <h4 class="list-group-item-heading">
-                                    <i class="iconfont icon-hot" style="color:#df4239;font-size:18px;font-weight:100;display:inline"></i>
-                                    <a style="color:white">本届Ti发挥最优异的选手是哪位？</a>
+                                    <i class="iconfont icon-hot" style="color:#df4239;font-size:18px;font-weight:100;display:inline" ng-if="xHT.remark == 'hotest'"></i>
+                                    <a>{{xHT.title}}</a>
                                 </h4>
 
                             <p class="list-group-item-text">
-                                您将通过网页进行免费域名注册。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">9</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    剑圣六神对单是否打得过幽鬼？
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">9</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    讲道理哪位女主播最漂亮？
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge" style="margin-top:3%">4</span>
-                            <a>
-                                <h4 class="list-group-item-heading">
-                                    24*7 支持
-                                </h4>
-                            </a>
-                            <p class="list-group-item-text">
-                                我们提供 24*7 支持。
+                                {{xHT.subtitle}}
                             </p>
                         </li>
                     </ul>
@@ -214,18 +183,9 @@ include("library/xwFE-0.0.1/FEM.php");
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon iconfont icon-renwu" style="font-size:24px;"></span>人物</h4>
                     <hr style="border-top:solid 1px #c3c3c3">
                     <div class="figures_container">
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
-                        <a><img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" src="/img/user_img/avatar/20253012/20160812161606-BucfeOmWQQ.jpg"/></a>
+                        <a ng-repeat="xHP in pageData_HotPersons" ng-href="/#/person?uid={{xHP.uid}}" title="{{xHP.title}}">
+                            <img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" ng-src="{{xHP.avatar}}" width/>
+                        </a>
                     </div>
                 </div><!--End of figures-->
                 <!--返回头部-->

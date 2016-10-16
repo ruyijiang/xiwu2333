@@ -20,7 +20,6 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
         deferred.reject(reason);
     }).then(function (httpCont){
 
-        console.log(httpCont);
 
     });
 
@@ -37,9 +36,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
     }).error(function (reason){
         deferred.reject(reason);
     }).then(function (httpCont){
-
-        console.log(httpCont);
-
+        $scope.pageData_HotTopics = httpCont.data;
     });
 
 
@@ -56,7 +53,6 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
         deferred.reject(reason);
     }).then(function (httpCont){
 
-        console.log(httpCont);
 
     });
 
@@ -74,7 +70,8 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
         deferred.reject(reason);
     }).then(function (httpCont){
 
-        console.log(httpCont);
+        $scope.pageData_HotPersons = httpCont.data;
+        console.log($scope.pageData_HotPersons);
 
     });
 
