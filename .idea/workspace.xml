@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="接通了community.php的接口，还有一些问题。">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-10-09.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/liveness/RegisteredUser/10000001/2016-10-11.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/community.php" afterPath="$PROJECT_DIR$/community.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/10000001.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/communityController.js" afterPath="$PROJECT_DIR$/js/controller/communityController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php" />
-    </list>
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="接通了community.php的接口，还有一些问题。" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -43,11 +31,11 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="personpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/personpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="3528">
               <caret line="147" column="55" selection-start-line="147" selection-start-column="55" selection-end-line="147" selection-end-column="55" />
               <folding />
             </state>
@@ -57,7 +45,7 @@
       <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
+            <state relative-caret-position="5520">
               <caret line="234" column="45" selection-start-line="234" selection-start-column="45" selection-end-line="234" selection-end-column="45" />
               <folding>
                 <element signature="e#5104#5132#0" expanded="false" />
@@ -70,12 +58,12 @@
       <file leaf-file-name="pagination.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="626">
+              <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
               <folding>
                 <element signature="e#6#83#0#PHP" expanded="false" />
-                <marker date="1476632845493" expanded="true" signature="433:474" placeholder="SELECT aid F... articles" />
-                <marker date="1476632845493" expanded="true" signature="1017:1076" placeholder="SELECT comme... comments" />
+                <marker date="1476634102884" expanded="true" signature="433:474" placeholder="SELECT aid F... articles" />
+                <marker date="1476634102884" expanded="true" signature="1017:1076" placeholder="SELECT comme... comments" />
               </folding>
             </state>
           </provider>
@@ -94,7 +82,7 @@
       <file leaf-file-name="blogpagecontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="1128">
               <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="e#228#277#0" expanded="false" />
@@ -126,7 +114,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="community" />
       </map>
     </option>
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
@@ -248,6 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -362,7 +351,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -999,6 +987,7 @@
       <workItem from="1476541896049" duration="1323000" />
       <workItem from="1476590973529" duration="1568000" />
       <workItem from="1476624216126" duration="6779000" />
+      <workItem from="1476634107078" duration="19000" />
     </task>
     <task id="LOCAL-00069" summary="add some">
       <created>1469690215645</created>
@@ -1347,14 +1336,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2164534000" />
+    <option name="totallyTimeSpent" value="2164553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18923241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1913646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1444,7 +1433,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/directive/iCheck/iCheck.js" />
+    <entry file="file://$PROJECT_DIR$/js/directive/icheck/iCheck.js" />
     <entry file="file://$PROJECT_DIR$/js/utill/htmldecode.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1750,7 +1739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/personpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="3528">
           <caret line="147" column="55" selection-start-line="147" selection-start-column="55" selection-end-line="147" selection-end-column="55" />
           <folding />
         </state>
@@ -1758,7 +1747,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="1128">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#228#277#0" expanded="false" />
@@ -1771,17 +1760,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
+        <state relative-caret-position="5520">
           <caret line="234" column="45" selection-start-line="234" selection-start-column="45" selection-end-line="234" selection-end-column="45" />
           <folding>
             <element signature="e#5104#5132#0" expanded="false" />
@@ -1790,14 +1771,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="626">
+          <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
           <folding>
             <element signature="e#6#83#0#PHP" expanded="false" />
-            <marker date="1476632845493" expanded="true" signature="433:474" placeholder="SELECT aid F... articles" />
-            <marker date="1476632845493" expanded="true" signature="1017:1076" placeholder="SELECT comme... comments" />
+            <marker date="1476634102884" expanded="true" signature="433:474" placeholder="SELECT aid F... articles" />
+            <marker date="1476634102884" expanded="true" signature="1017:1076" placeholder="SELECT comme... comments" />
           </folding>
         </state>
       </provider>
