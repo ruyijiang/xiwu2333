@@ -1,5 +1,6 @@
 app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$location,$timeout){
     var A_aid = $location.search()["aid"];//aid根
+    $scope.A_aid = A_aid;
     $scope.BlogExport = "";
     var timing = Math.round(new Date().getTime());
 
@@ -100,21 +101,62 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
     };
 
+    $scope.ArticlePageListInfo = [];
+    $scope.changeShowPage = function (num,content){
 
-    /**
-     * 获取评论
-     */
-    $http({
-        method: 'GET',
-        url: 'library/xwBE-0.0.1/Interface/getComments/getComments.php',
-        params:{
-            "cate":"article",
-            "target_id":A_aid
-        }
-    }).then(function (httpCont){
-        $scope.comments = httpCont.data;
-        !$scope.comments?$scope.commentsLen = 0:$scope.commentsLen = $scope.comments.length;
-    });
+        $.ajax({
+            url:'library/xwBE-0.0.1/Interface/Pagination/pagination.php',
+            type:'GET',
+            async:false,
+            data:{
+                "responseCate":"comment",
+                "num_onepage":6,
+                "content":A_aid
+            },
+            success: function (data){
+                var obj1 = eval ("(" + data + ")");
+                for(var i=0;i<obj1.page_all;i++){
+                    $scope.ArticlePageListInfo.push(i+1);
+                    unique($scope.ArticlePageListInfo);
+                    $scope.maxPageNum = parseInt(obj1.page_all);
+                }
+            },
+            error: function (){
+                alert ("分页数据获取失败");
+            }
+        });
+
+        //根据指示调取该页的信息
+        $.ajax({
+            url:'../../library/xwBE-0.0.1/Interface/getComments/getComments.php',
+            type:'GET',
+            async: false,
+            data:{
+                "cate":"article",
+                "target_id":A_aid,
+                "now_page":num,
+                "num_onepage":6
+
+            },
+            success: function (data){
+                $scope.ArticleDataArr = welcomejsonarrstring(data);
+                $scope.ListActive = num;
+                $scope.ListSelectedNum = num;
+
+                console.log($scope.ArticleDataArr);
+
+                $scope.comments = $scope.ArticleDataArr[0];
+                !$scope.comments?$scope.commentsLen = 0:$scope.commentsLen = $scope.comments.length;
+            },
+            error: function (data){
+                alert ("获取[用户文章资料]异常，请联系管理员");
+            }
+        });
+
+    };
+
+    $scope.changeShowPage(1,A_aid);
+
 
 
     /**

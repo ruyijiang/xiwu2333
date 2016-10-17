@@ -76,6 +76,24 @@ header("Content-Type: text/html; charset=utf-8");
                 </div><!--End of comment_1-->
 
             </div>
+            <!--分页组件-->
+            <div class="col-lg-12 text-center">
+                <nav>
+                    <ul class="pagination">
+                        <li ng-if="ListActive!==1">
+                            <a aria-label="Previous" ng-click="changeShowPage(1,A_aid)">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li ng-repeat="xpag in ArticlePageListInfo" ng-class="{active:ListActive==xpag}" ng-disabled="ListActive==xpag" ng-if="xpag >= ListActive - 3 && xpag <= ListActive + 3"><a ng-click="changeShowPage(xpag,A_aid)">{{xpag}}</a></li>
+                        <li ng-if="ListActive!==maxPageNum">
+                            <a aria-label="Next" ng-click="changeShowPage(maxPageNum,A_aid)">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
         </div><!-- /.blog-main -->
 

@@ -10,9 +10,9 @@ require("../../all.php");
 ?>
 <?php
     $responseCate = $_GET["responseCate"];
-    $num_onepage = $_GET["num_onepage"];//每页显示条数
-    @$uid = $_GET["uid"];
-    @$content = $_GET["content"];
+    @$num_onepage = $_GET["num_onepage"];//每页显示条数
+    @$uid = $_GET["uid"];//这个一般是针对文章所用，用于查询对应uid为作者的文章
+    @$content = $_GET["content"];//
 
     if(!$uid) $uid=$_SESSION["uid"];
 

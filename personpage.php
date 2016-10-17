@@ -150,7 +150,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
-                            <li ng-repeat="xpag in ArticlePageListInfo" ng-class="{active:ListActive==xpag}" ng-disabled="ListActive==xpag" ng-if="xpag >= xpag - 3 && xpag <= xpag + 3"><a ng-click="changeShowPage(xpag,UserData.uid)">{{xpag}}</a></li>
+                            <li ng-repeat="xpag in ArticlePageListInfo" ng-class="{active:ListActive==xpag}" ng-disabled="ListActive==xpag" ng-if="xpag >= ListActive - 3 && xpag <= ListActive + 3"><a ng-click="changeShowPage(xpag,UserData.uid)">{{xpag}}</a></li>
                             <li ng-if="ListActive!==maxPageNum">
                                 <a aria-label="Next" ng-click="changeShowPage(maxPageNum,UserData.uid)">
                                     <span aria-hidden="true">&raquo;</span>
