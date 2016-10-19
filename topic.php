@@ -29,7 +29,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </h4>
                     <div>
                         <h6 style="display: inline-block"><span class="glyphicon glyphicon-user"></span>话题发起人：</h6>
-                        <a><img ng-src="{{pageData.user_avatar}}" class="img-circle" width="26" height="26" style="margin-right:3px;">{{pageData.user_name}}</a>
+                        <a ng-href="/#/person?uid={{pageData.uid}}"><img ng-src="{{pageData.user_avatar}}" class="img-circle" width="26" height="26" style="margin-right:3px;">{{pageData.user_name}}</a>
                     </div>
                     <div>
                         <h6 style="display: inline-block"><span class="glyphicon glyphicon-tags"></span>标签：</h6>
@@ -53,73 +53,44 @@ include("library/xwFE-0.0.1/FEM.php");
                             <div style="padding:15px 0;" ng-if="pageData.topic_classification !== 'radio' && pageData.topic_classification !== 'checkbox'">
                                 <textarea class="form-control" rows="4" style="resize: vertical;max-height:600px;padding-top:11px;"></textarea>
                             </div>
-                            <input type="submit" class="btn btn-primary" style="width:100%" value="发表我的观点">
+                            <input ng-if="pageData.topic_classification == 'radio' || pageData.topic_classification == 'checkbox'" type="submit" class="btn btn-primary" style="width:100%" value="提交投票">
+                            <input ng-if="pageData.topic_classification !== 'radio' && pageData.topic_classification !== 'checkbox'" type="submit" class="btn btn-primary" style="width:100%" value="发表我的观点">
+                        </form>
+                        <form class="clearfix ng-pristine ng-valid" role="form" style="margin-top:15px">
+                            <textarea ng-disabled="1==1" class="form-control ng-pristine ng-untouched ng-valid" style="resize:vertical;padding:8px;font-size:13px" rows="2" ng-model="comment_content"></textarea>
+                            <input ng-disabled="comment_content == ''" type="submit" class="btn btn-primary" style="width:100%" value="发表评论">
                         </form>
                     </div>
 
                     <hr>
                 </div>
 
-                <!-- 赛事链接,3期做赛事链接，4期做详细内容 -->
-                <ul class="topic_comments list-group">
-                    <li class="list-group-item">
-                        <div class="row">
+                <div class="comments_shower col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comments_shower">
+                    <div ng-repeat="xcom in comments track by $index">
+                        <div class="row comments_shower_con">
                             <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
-                                <img ng-src="img/user_img/avatar/default/default_female.png" class="img-rounded" width="54" height="54" src="img/user_img/avatar/default/default_female.png">
+                                <img ng-src="{{xcom.from_avatar}}" class="img-rounded" width="54" height="54"/>
                             </div>
                             <div class="col-lg-11 col-md-11 col-sm-10 col-xs-11">
-                                <a style="font-weight:600" ng-href="/#/person?uid=10000001" class="ng-binding" href="/#/person?uid=10000001">Milo</a>
-                                <span style="font-size:13px;margin-left:5px" class="ng-binding">- 2016/09/04 23:41:44</span>
-                                <p style="margin-top:6px" class="ng-binding"><!-- ngIf: xcom.to_id -->55555</p>
+                                <a style="font-weight:600" ng-href="/#/person?uid={{xcom.from_uid}}">{{xcom.from_name}}</a>
+                                <span style="font-size:13px;margin-left:5px">- {{xcom.regtime}}</span>
+                                <p style="margin-top:6px"><small ng-if="xcom.to_id">回复 <a ng-href="/#/person?uid={{xcom.to_id}}">{{xcom.to_name}}</a>：</small>{{xcom.content}}</p>
                             </div>
                         </div>
                         <div class="row comment_shower_scul">
                             <div class="col-lg-1 col-md-1 col-sm-2 col-xs-1"></div>
                             <div class="col-lg-11 col-md-11 col-sm-10 col-xs-11">
                                 <div class="comment_shower_buttons clearfix">
-                                    <a ng-class="{active:commentAreaShower == $index}" ng-click="commentthis($index)" class=""><span class="glyphicon glyphicon-comment"></span>评论</a>
+                                    <a ng-class="{active:commentAreaShower == $index}" ng-click="commentthis($index)"><span class="glyphicon glyphicon-comment"></span>评论</a>
                                 </div>
-                                <form class="clearfix ng-pristine ng-valid ng-hide" role="form" style="padding-bottom:10px" ng-show="commentAreaShower == $index">
-                                    <textarea class="form-control ng-pristine ng-untouched ng-valid" style="resize:vertical;padding:8px;font-size:13px" rows="2" ng-model="xcom.new_content"></textarea>
-                                    <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 20px" ng-init="xcom.new_content=''" ng-disabled="xcom.new_content==''" ng-click="sendcomment(xcom.from_uid,xcom.new_content)" disabled="disabled">评论</a>
+                                <form class="clearfix" role="form" style="padding-bottom:10px" ng-show="commentAreaShower == $index">
+                                    <textarea class="form-control" style="resize:vertical;padding:8px;font-size:13px" rows="2" ng-model="xcom.new_content"></textarea>
+                                    <a class="btn btn-primary pull-right" style="margin-top:3px;padding:5px 20px" ng-init="xcom.new_content=''" ng-disabled="xcom.new_content==''" ng-click="sendcomment(xcom.from_uid,xcom.new_content)">评论</a>
                                 </form>
                             </div>
                         </div>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge" style="margin-top:3%">9</span>
-                        <a>
-                            <h4 class="list-group-item-heading">
-                                剑圣六神对单是否打得过幽鬼？
-                            </h4>
-                        </a>
-                        <p class="list-group-item-text">
-                            我们提供 24*7 支持。
-                        </p>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge" style="margin-top:3%">9</span>
-                        <a>
-                            <h4 class="list-group-item-heading">
-                                讲道理哪位女主播最漂亮？
-                            </h4>
-                        </a>
-                        <p class="list-group-item-text">
-                            我们提供 24*7 支持。
-                        </p>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge" style="margin-top:3%">4</span>
-                        <a>
-                            <h4 class="list-group-item-heading">
-                                24*7 支持
-                            </h4>
-                        </a>
-                        <p class="list-group-item-text">
-                            我们提供 24*7 支持。
-                        </p>
-                    </li>
-                </ul>
+                    </div><!--End of comment_1-->
+                </div><!--Div#comments_shower-->
             </div>
 
             <div class="main-rightpart col-lg-4 col-md-4">

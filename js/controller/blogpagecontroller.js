@@ -55,7 +55,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
      */
     function checkAidNexport(aid){
         if(!aid || aid == "undefined"){//缺少关键参数
-
         }else{//有关键参数，则返回boolean
             return true;
         }
@@ -143,8 +142,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
                 $scope.ListActive = num;
                 $scope.ListSelectedNum = num;
 
-                console.log($scope.ArticleDataArr);
-
                 $scope.comments = $scope.ArticleDataArr[0];
                 !$scope.comments?$scope.commentsLen = 0:$scope.commentsLen = $scope.comments.length;
             },
@@ -163,7 +160,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
      * 发表评论
     */
     $scope.comment_content = "";//对文章的评论
-    $scope.commentContent_toid = "";//对评论的评论
 
     //提交评论
     $scope.sendcomment = function (to_id,content){
@@ -172,11 +168,10 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
         }
 
         if(!content && !$scope.comment_content){
-            //console.log("还没有填写评论内容");
             alert ("还没有填写评论内容");
             return false;
         }else if(!content && $scope.comment_content){
-            content = $scope.comment_content;
+            content = $scope.comment_content;//如果content参数为空，则是对文章的评论，所以调用$scope.comment_content
         }
 
         $.ajax({
@@ -198,8 +193,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
     //控制对应评论区域的显示和评论内容的初始化
     $scope.commentthis = function (index){
-
-        $scope.commentContent_toid = "";
 
         if($scope.commentAreaShower !== null && $scope.commentAreaShower !== index){
             $scope.commentAreaShower = index;

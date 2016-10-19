@@ -27,7 +27,7 @@ $reminder = "";
 $a = new interfaceResponse();
 
 
-if($classification && $content && $topic_id){
+if($classification && $topic_id){
     //classification只能有三种情况：单选、多选、填空
     if($classification == "radio" || $classification == "checkbox" || $classification == "text"){
 
