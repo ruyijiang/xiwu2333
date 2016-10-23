@@ -14,9 +14,13 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php',
             params:{'content': $stateParams.TopicUrl }
         }).success(function (httpCont){
-            $scope.pageData = httpCont;
 
-            $scope.changeShowPage(1,$scope.pageData.topic_id);
+            if(httpCont.statuscode == 0){
+                $location.path("404").replace();
+            }else{
+                $scope.pageData = httpCont;
+                $scope.changeShowPage(1,$scope.pageData.topic_id);
+            }
 
         });
     }
