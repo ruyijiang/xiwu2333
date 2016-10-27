@@ -45,8 +45,10 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
     /**
      * 保存数据
      */
-    $scope.multiplechoices = ['1'];
+    $scope.choices = "3";
     $scope.saveData = function (e){
+
+        console.log($scope.pageData.topic_choices);
 
         //发送数据
         $.ajax({
@@ -55,8 +57,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             async: false,
             data:{
                 "classification":$scope.pageData.topic_classification,
-                "choices":$scope.multiplechoices,
-                "content":$scope.comment_content,
+                "choices":$scope.choices,
                 "topic_id":$scope.pageData.topic_id
             },
             success: function (data){

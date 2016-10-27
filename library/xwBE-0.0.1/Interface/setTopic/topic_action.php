@@ -15,7 +15,9 @@ require("../../all.php");
 
 $classification = $_POST["classification"];
 $topic_id = $_POST["topic_id"];
+var_dump($topic_id);
 @$choices = $_POST["choices"];
+var_dump($choices);
 @$content = $_POST["content"];
 
 $a = new _environment();
@@ -31,22 +33,17 @@ if($classification && $topic_id){
     //classification只能有三种情况：单选、多选、填空
     if($classification == "radio" || $classification == "checkbox" || $classification == "text"){
 
-        $sql = "SELECT id,answer FROM 'topics' WHERE topic_id = '$topic_id' ";
+        $sql = "SELECT topic_id FROM `topics` WHERE topic_id = '$topic_id' ";
         $qry = $db->query($sql);
         if(mysqli_num_rows($qry) > 0){
-            $row = $qry->fetch_assoc();
-            $participation = (int)$row["participation_times"] + 1;
-
-            //更新topics表
-            $sql1 = "UPDATE topics SET participation_times = '$participation' WHERE topic_id = '$topic_id' ";
 
             //更新comments表
             if($classification == "radio" || $classification == "checkbox"){
                 //选择题类型的话题，回答是ballot
-                $sql2 = "INSERT INTO ballots(ballot_id,content,from_uid,to_topicid,regtime) VALUES ('','$content','$uid','$topic_id','$tnow_stamp') ";
+                $sql2 = "INSERT INTO `ballots`(ballot_id,content,from_uid,to_topicid,regtime) VALUES ('','$choices','$uid','$topic_id','$tnow_stamp') ";
             }else if($classification == "text"){
                 //问答类型的话题，回答即是comment
-                $sql2 = "INSERT INTO comments(comment_id,content,choices,from_uid,to_id,regtime) VALUES ('','$content','$choices','$uid','','$topic_id','$tnow_stamp') ";
+                $sql2 = "INSERT INTO `comments`(comment_id,content,choices,from_uid,to_id,regtime) VALUES ('','$content','$choices','$uid','','$topic_id','$tnow_stamp') ";
             }else{
                 //------------------------------------------------------------------------------------>没有找到符合要求的话题类型
                 $status = 1;
@@ -55,11 +52,24 @@ if($classification && $topic_id){
                 return false;
             }
 
-            if($qry1 = $db->query($sql1) && $qry2 = $db->query($sql2)){
-                //------------------------------------------------------------------------------------>话题参与成功---@@@
-                $status = 1;
-                $reminder = "提交成功";
-                echo $a->normalrespond($status,$reminder);
+            if($qry2 = $db->query($sql2)){
+                $row2 = $qry2->fetch_assoc();
+                $participation = (int)$row2["par_times"] + 1;
+
+                //更新topics表
+                $sql3 = "UPDATE `topics` SET par_times = '$participation' WHERE topic_id = '$topic_id' ";
+
+                if($qry3 = $db->query($sql3)){
+                    //------------------------------------------------------------------------------------>话题参与成功---@@@
+                    $status = 1;
+                    $reminder = "提交成功";
+                    echo $a->normalrespond($status,$reminder);
+                }else{
+                    //------------------------------------------------------------------------------------>不明原因导致的话题参与次数更新失败，但是参与内容已经提交成功
+                    $status = 0;
+                    $reminder = "不明原因导致的话题参与次数更新失败，但是参与内容已经提交成功";
+                    echo $a->normalrespond($status,$reminder);
+                }
             }else{
                 //------------------------------------------------------------------------------------>不明原因导致的话题参与失败
                 $status = 0;

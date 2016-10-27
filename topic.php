@@ -41,13 +41,13 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="topic_content">
                         <form ng-submit="saveData()">
                             <ol ng-if="pageData.topic_classification == 'radio'">
-                                <li ng-repeat="xcho in pageData.topic_choices">
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="most_beautiful" value="1" i-check prop="topic_radio" ng-model="topic_radio">{{xcho.content}}</label>
+                                <li ng-repeat="xcho in pageData.topic_choices track by $index">
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="radio_choice" value="{{xcho.content}}" i-check prop="xcho.content" ng-model="choices">{{xcho.content}}</label>
                                 </li>
                             </ol>
                             <ol ng-if="pageData.topic_classification == 'checkbox'">
                                 <li ng-repeat="xcho in pageData.topic_choices">
-                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="test1" ng-model="test1">{{xcho.content}}</label>
+                                    <label class="btn_forer"><input class="topic_checkbox" type="checkbox" i-check prop="xcho.content" ng-model="test1">{{xcho.content}}</label>
                                 </li>
                             </ol>
                             <div style="padding:15px 0;" ng-if="pageData.topic_classification !== 'radio' && pageData.topic_classification !== 'checkbox'">
