@@ -14,9 +14,9 @@ require("../../all.php");
 @$uid = $_SESSION["uid"];//uid
 
 $classification = $_POST["classification"];
-$choices = $_POST["choices"];
-$content = $_POST["content"];
 $topic_id = $_POST["topic_id"];
+@$choices = $_POST["choices"];
+@$content = $_POST["content"];
 
 $a = new _environment();
 $tnow = $a->getTime();//当前datetime - iso时间
@@ -41,10 +41,22 @@ if($classification && $topic_id){
             $sql1 = "UPDATE topics SET participation_times = '$participation' WHERE topic_id = '$topic_id' ";
 
             //更新comments表
-            $sql2 = "INSERT INTO comments(comment_id,content,choices,from_uid,to_id,regtime) VALUES ('','$content','$choices','$uid','','$topic_id','$tnow_stamp') ";
+            if($classification == "radio" || $classification == "checkbox"){
+                //选择题类型的话题，回答是ballot
+                $sql2 = "INSERT INTO ballots(ballot_id,content,from_uid,to_topicid,regtime) VALUES ('','$content','$uid','$topic_id','$tnow_stamp') ";
+            }else if($classification == "text"){
+                //问答类型的话题，回答即是comment
+                $sql2 = "INSERT INTO comments(comment_id,content,choices,from_uid,to_id,regtime) VALUES ('','$content','$choices','$uid','','$topic_id','$tnow_stamp') ";
+            }else{
+                //------------------------------------------------------------------------------------>没有找到符合要求的话题类型
+                $status = 1;
+                $reminder = "没有找到符合要求的话题类型";
+                echo $a->normalrespond($status,$reminder);
+                return false;
+            }
 
             if($qry1 = $db->query($sql1) && $qry2 = $db->query($sql2)){
-                //------------------------------------------------------------------------------------>话题参与成功
+                //------------------------------------------------------------------------------------>话题参与成功---@@@
                 $status = 1;
                 $reminder = "提交成功";
                 echo $a->normalrespond($status,$reminder);
