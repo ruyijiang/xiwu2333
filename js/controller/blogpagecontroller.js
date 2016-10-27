@@ -27,7 +27,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
                     //找到了相对应的文章，对文章相关信息进行索取
 
                     $scope.BlogExport = data;
-                    $rootScope.NowPageTitle = $scope.BlogExport.title;
+                    $rootScope.NowPageTitle = $scope.BlogExport.title + " - 喜屋";
                     $scope.BlogExport.content = htmldecode($scope.BlogExport.content);
                     $scope.BlogExport.hotblog = eval("("+$scope.BlogExport.hotblog+")");
                     $scope.BlogExportHotblogLen = $scope.BlogExport.hotblog.length;

@@ -32,7 +32,7 @@ if($topic_id){
         $reminder = "没有找到对应的话题，无法正确执行";
         echo $a->normalrespond($status,$reminder);
     }else{
-        $sql2 = "SELECT ballot_id FROM `ballots` WHERE from_uid = '$uid' AND topic_id = '$topic_id' ";
+        $sql2 = "SELECT ballot_id FROM `ballots` WHERE from_uid = '$uid' AND to_topicid = '$topic_id' ";
         $qry2 = $db->query($sql2);
 
         if(mysqli_num_rows($qry2) == 1){
