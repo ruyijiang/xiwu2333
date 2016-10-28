@@ -15,7 +15,6 @@ require("../../all.php");
 
 $classification = $_POST["classification"];
 $topic_id = $_POST["topic_id"];
-var_dump($topic_id);
 @$choices = $_POST["choices"];
 var_dump($choices);
 @$content = $_POST["content"];

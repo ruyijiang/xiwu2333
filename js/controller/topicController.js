@@ -45,10 +45,11 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
     /**
      * 保存数据
      */
-    $scope.choices = "3";
+    $scope.choices = [];
+    $scope.test2 = 1;
     $scope.saveData = function (e){
 
-        console.log($scope.pageData.topic_choices);
+        console.log($scope.choices);
 
         //发送数据
         $.ajax({
