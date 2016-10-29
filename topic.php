@@ -42,7 +42,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <form ng-submit="saveData()">
                             <ol ng-if="pageData.topic_classification == 'radio'">
                                 <li ng-repeat="xcho in pageData.topic_choices track by $index">
-                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="radio_choice" i-check value="{{xcho.content}}" ng-model="choices[0]">{{xcho.content}}</label>
+                                    <label class="btn_forer"><input class="topic_radio" type="radio" name="radio_choice" i-check value="{{$index}}" ng-model="choices[0]">{{xcho.content}}</label>
                                 </li>
                             </ol>
                             <ol ng-if="pageData.topic_classification == 'checkbox'">
