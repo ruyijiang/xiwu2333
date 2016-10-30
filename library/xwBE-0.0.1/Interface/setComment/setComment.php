@@ -11,10 +11,10 @@ require("../../all.php");
 //header('Content-type: application/json');
 
 @$uid = $_SESSION["uid"];//uid
-@$cate = $_POST["cate"];//索取类别
+$cate = $_POST["cate"];//索取类别
 @$targetid = $_POST["to_id"];//目标id
-@$topic_id = $_POST["topic_id"];//主题id
-@$content = $_POST["content"];//评论正文内容
+$topic_id = $_POST["topic_id"];//主题id
+$content = $_POST["content"];//评论正文内容
 
 $a = new _environment();
 $tnow = $a->getTime();//当前datetime - iso时间
@@ -98,6 +98,9 @@ if(!$cate || !$content || !$topic_id){
             }
 
         }
+
+    }else{
+
 
     }
 

@@ -64,15 +64,13 @@ if($classification && $topic_id){
                     if($classification == "radio"){
                         $choices_str = $choices[0];
                     }else if($classification == "checkbox"){
-                        $choices_str = "[";
 
                         foreach ($choices as $key => $value){
                             if($value == "true"){
-                                $choices_str .= $key.":".$value.",";
+                                $choices_str .= $key.",";
                             }
                         }
 
-                        $choices_str .= "]";
                     }
 
                     $sql2 = "INSERT INTO `ballots`(ballot_id,classification,result,from_uid,to_topicid,regtime) VALUES ('','$classification','$choices_str','$uid','$topic_id','$tnow_stamp') ";

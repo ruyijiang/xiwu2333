@@ -4,7 +4,6 @@
 
 app.controller('topicController',function ($scope,$rootScope,$http,$location,$timeout,$stateParams){
 
-
     /**
      * 对topic_url参数进行分析操作，从而输出话题
      */
@@ -19,7 +18,39 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
                 $location.path("404").replace();
             }else{
                 $scope.pageData = httpCont;
+
+                //判断用户是否已经投票
+                if($scope.pageData.topic_classification == "radio" || $scope.pageData.topic_classification == "checkbox"){
+
+                    $http({
+                        method: 'GET',
+                        url: '../../library/xwBE-0.0.1/Interface/checkStatus/check_ballotstatus.php',
+                        params:{'topic_id': $scope.pageData.topic_id}
+                    }).then(function (httpCont2){
+
+
+                        if(httpCont2.data.statuscode == 0){
+                            $scope.isVoted = false;//没有投过票
+                        }else{
+                            $scope.isVoted = true;//投过票
+                            console.log(httpCont2.data.results);
+                            for(var i in httpCont2.data.results){
+                                for (var j in httpCont.topic_choices){
+                                    if(i == j){
+                                        httpCont.topic_choices[j]["ballots_amount"] = httpCont2.data.results[i];
+                                    }
+                                }
+                            }
+                            console.log($scope.pageData);
+                        }
+                        
+                    });
+
+                }
+
                 $scope.changeShowPage(1,$scope.pageData.topic_id);
+
+
             }
 
         });
@@ -49,7 +80,6 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
     $scope.test2 = 1;
     $scope.saveData = function (e){
 
-        console.log($scope.choices);
 
         //发送数据
         $.ajax({
@@ -74,6 +104,12 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
 
 
     /**
+     * 获取用户是否已经投票
+     */
+
+
+
+    /**
      * 发表评论
      */
     $scope.comment_content = "";//对话题的评论
@@ -85,7 +121,6 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
         }
 
         if(!content && !$scope.comment_content){
-            //console.log("还没有填写评论内容");
             alert ("还没有填写评论内容");
             return false;
         }else if(!content && $scope.comment_content){

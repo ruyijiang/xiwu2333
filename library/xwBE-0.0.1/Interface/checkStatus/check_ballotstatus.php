@@ -32,16 +32,38 @@ if($topic_id){
         $reminder = "没有找到对应的话题，无法正确执行";
         echo $a->normalrespond($status,$reminder);
     }else{
-        $sql2 = "SELECT ballot_id FROM `ballots` WHERE from_uid = '$uid' AND to_topicid = '$topic_id' ";
+        $sql2 = "SELECT ballot_id,to_topicid,result FROM `ballots` WHERE from_uid = '$uid' AND to_topicid = '$topic_id' ";
         $qry2 = $db->query($sql2);
 
         if(mysqli_num_rows($qry2) == 1){
             $rows = $qry2->fetch_assoc();
-            $result_ballot_id = $rows[0]["ballot_id"];
-            //-------------------------------------------------------------------------------->在对应话题下投过票@@@
-            $status = $result_ballot_id;
-            $reminder = "在对应话题下投过票";
-            echo $a->normalrespond($status,$reminder);
+            $result_topicid = $rows["to_topicid"];
+            //-------------------------------------------------------------------------------->在对应话题下投过票---@@@
+
+            $sql3 = "SELECT result FROM `ballots` WHERE to_topicid = '$topic_id' ";
+            $qry3 = $db->query($sql3);
+            $EchoArr = array();
+            $ResultArr = array();
+
+            while($rows3 = $qry3->fetch_assoc()){
+                $TempArr = explode(",",$rows3["result"]);
+                foreach ($TempArr as $key => $value){
+
+                    if(isset($ResultArr[$value])){
+                        $ResultArr[$value]++;
+                    }else{
+                        $ResultArr[$value] = 1;
+                    }
+
+                }
+            }
+
+            $result_ballot_result = $rows["result"];
+
+            $EchoArr["statuscode"] = $result_topicid;
+            $EchoArr["message"] = "在对应话题下投过票";
+            $EchoArr["results"] = $ResultArr;
+            echo (json_encode($EchoArr));
 
         }else if(mysqli_num_rows($qry2) > 1){
             //-------------------------------------------------------------------------------->用户在对应话题下多次投票
@@ -50,7 +72,7 @@ if($topic_id){
             echo $a->normalrespond($status,$reminder);
 
         }else{
-            //-------------------------------------------------------------------------------->没有在对应话题下投过票
+            //-------------------------------------------------------------------------------->没有在对应话题下投过票---@@@
             $status = 0;
             $reminder = "没有在对应话题下透过票";
             echo $a->normalrespond($status,$reminder);
