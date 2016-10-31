@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="完成了话题页面的分页功能">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/liveness/RegisteredUser/20253012/2016-10-30.txt" afterPath="$PROJECT_DIR$/data/liveness/RegisteredUser/20253012/2016-10-30.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/topicController.js" afterPath="$PROJECT_DIR$/js/controller/topicController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_ballotstatus.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_ballotstatus.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/topic_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/topic_action.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic.php" afterPath="$PROJECT_DIR$/topic.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +15,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -40,21 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="topic.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="topic.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="21">
               <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topicController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="topicController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="39" column="112" selection-start-line="39" selection-start-column="112" selection-end-line="39" selection-end-column="112" />
+            <state relative-caret-position="63">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="e#146#190#0" expanded="false" />
                 <element signature="e#1977#2005#0" expanded="false" />
@@ -67,31 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_ballotstatus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_ballotstatus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
-              <folding>
-                <marker date="1477833232875" expanded="true" signature="414:472" placeholder="SELECT topic... topics" />
-                <marker date="1477833232875" expanded="true" signature="782:884" placeholder="SELECT ballo... ballots" />
-                <marker date="1477833232875" expanded="true" signature="1191:1219" placeholder="SELECT resul... ballots" />
-                <marker date="1477833232875" expanded="true" signature="1191:1250" placeholder="SELECT resul... ballots" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="setComment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="156" column="31" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="31" />
               <folding>
-                <marker date="1477833377429" expanded="true" signature="856:939" placeholder="SELECT comme... comments" />
-                <marker date="1477833377429" expanded="true" signature="1374:1456" placeholder="SELECT regti... comments" />
-                <marker date="1477833377429" expanded="true" signature="2380:2520" placeholder="INSERT INTO comments... " />
-                <marker date="1477833377429" expanded="true" signature="3353:3493" placeholder="INSERT INTO comments... " />
+                <marker date="1477904401091" expanded="true" signature="856:939" ph="SELECT comme... comments" />
+                <marker date="1477904401091" expanded="true" signature="1374:1456" ph="SELECT regti... comments" />
+                <marker date="1477904401091" expanded="true" signature="2380:2520" ph="INSERT INTO comments... " />
+                <marker date="1477904401091" expanded="true" signature="3353:3493" ph="INSERT INTO comments... " />
+                <marker date="1477904401091" expanded="true" signature="4191:4274" ph="SELECT comme... comments" />
+                <marker date="1477904401091" expanded="true" signature="4709:4791" ph="SELECT regti... comments" />
+                <marker date="1477904401091" expanded="true" signature="5715:5855" ph="INSERT INTO comments... " />
+                <marker date="1477904401091" expanded="true" signature="6688:6828" ph="INSERT INTO comments... " />
               </folding>
             </state>
           </provider>
@@ -100,27 +83,12 @@
       <file leaf-file-name="getTopicInfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state relative-caret-position="2079">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
-                <marker date="1476634102889" expanded="true" signature="466:543" placeholder="SELECT * FRO... topics" />
-                <marker date="1476634102889" expanded="true" signature="1605:1650" placeholder="SELECT * FRO... users" />
-                <marker date="1476634102889" expanded="true" signature="2056:2169" placeholder="SELECT topic... topics" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topic_action.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/topic_action.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding>
-                <marker date="1477830229160" expanded="true" signature="773:841" placeholder="SELECT topic... topics" />
-                <marker date="1477830229160" expanded="true" signature="2194:2354" placeholder="INSERT INTO `ballots`... " />
-                <marker date="1477830229160" expanded="true" signature="2870:3013" placeholder="INSERT INTO `comments`... " />
-                <marker date="1477830229160" expanded="true" signature="3553:3630" placeholder="UPDATE `topi... " />
+                <marker date="1476771927658" expanded="true" signature="466:543" ph="SELECT * FRO... topics" />
+                <marker date="1476771927658" expanded="true" signature="1605:1650" ph="SELECT * FRO... users" />
+                <marker date="1476771927658" expanded="true" signature="2056:2169" ph="SELECT topic... topics" />
               </folding>
             </state>
           </provider>
@@ -204,26 +172,26 @@
         <option value="$PROJECT_DIR$/js/directive/icheck/iCheck.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/topic_action.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_ballotstatus.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
         <option value="$PROJECT_DIR$/js/controller/topicController.js" />
         <option value="$PROJECT_DIR$/topic.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="681" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -266,19 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -433,6 +388,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -537,8 +505,6 @@
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
-      <force value="false" />
-      <verbose value="false" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -1084,6 +1050,8 @@
       <workItem from="1477792644209" duration="9891000" />
       <workItem from="1477828743093" duration="1998000" />
       <workItem from="1477831309188" duration="3310000" />
+      <workItem from="1477881652749" duration="1198000" />
+      <workItem from="1477890586241" duration="3915000" />
     </task>
     <task id="LOCAL-00072" summary="about finish info_setting.php">
       <created>1470281639067</created>
@@ -1432,14 +1400,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2252714000" />
+    <option name="totallyTimeSpent" value="2257827000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="681" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1716418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17754173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1793,7 +1761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1841,59 +1808,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/topic_action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
+        <state relative-caret-position="485">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <marker date="1477830229160" expanded="true" signature="773:841" placeholder="SELECT topic... topics" />
-            <marker date="1477830229160" expanded="true" signature="2194:2354" placeholder="INSERT INTO `ballots`... " />
-            <marker date="1477830229160" expanded="true" signature="2870:3013" placeholder="INSERT INTO `comments`... " />
-            <marker date="1477830229160" expanded="true" signature="3553:3630" placeholder="UPDATE `topi... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <marker date="1476634102889" expanded="true" signature="466:543" placeholder="SELECT * FRO... topics" />
-            <marker date="1476634102889" expanded="true" signature="1605:1650" placeholder="SELECT * FRO... users" />
-            <marker date="1476634102889" expanded="true" signature="2056:2169" placeholder="SELECT topic... topics" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1477833377429" expanded="true" signature="856:939" placeholder="SELECT comme... comments" />
-            <marker date="1477833377429" expanded="true" signature="1374:1456" placeholder="SELECT regti... comments" />
-            <marker date="1477833377429" expanded="true" signature="2380:2520" placeholder="INSERT INTO comments... " />
-            <marker date="1477833377429" expanded="true" signature="3353:3493" placeholder="INSERT INTO comments... " />
+            <marker date="1477877398092" expanded="true" signature="773:841" ph="SELECT topic... topics" />
+            <marker date="1477877398092" expanded="true" signature="2194:2354" ph="INSERT INTO `ballots`... " />
+            <marker date="1477877398092" expanded="true" signature="2870:3013" ph="INSERT INTO `comments`... " />
+            <marker date="1477877398092" expanded="true" signature="3553:3630" ph="UPDATE `topi... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_ballotstatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        <state relative-caret-position="-817">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
-            <marker date="1477833232875" expanded="true" signature="414:472" placeholder="SELECT topic... topics" />
-            <marker date="1477833232875" expanded="true" signature="782:884" placeholder="SELECT ballo... ballots" />
-            <marker date="1477833232875" expanded="true" signature="1191:1219" placeholder="SELECT resul... ballots" />
-            <marker date="1477833232875" expanded="true" signature="1191:1250" placeholder="SELECT resul... ballots" />
+            <marker date="1477877398092" expanded="true" signature="414:472" ph="SELECT topic... topics" />
+            <marker date="1477877398092" expanded="true" signature="782:884" ph="SELECT ballo... ballots" />
+            <marker date="1477877398092" expanded="true" signature="1191:1250" ph="SELECT resul... ballots" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <marker date="1476771927658" expanded="true" signature="466:543" ph="SELECT * FRO... topics" />
+            <marker date="1476771927658" expanded="true" signature="1605:1650" ph="SELECT * FRO... users" />
+            <marker date="1476771927658" expanded="true" signature="2056:2169" ph="SELECT topic... topics" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="156" column="31" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="31" />
+          <folding>
+            <marker date="1477904401091" expanded="true" signature="856:939" ph="SELECT comme... comments" />
+            <marker date="1477904401091" expanded="true" signature="1374:1456" ph="SELECT regti... comments" />
+            <marker date="1477904401091" expanded="true" signature="2380:2520" ph="INSERT INTO comments... " />
+            <marker date="1477904401091" expanded="true" signature="3353:3493" ph="INSERT INTO comments... " />
+            <marker date="1477904401091" expanded="true" signature="4191:4274" ph="SELECT comme... comments" />
+            <marker date="1477904401091" expanded="true" signature="4709:4791" ph="SELECT regti... comments" />
+            <marker date="1477904401091" expanded="true" signature="5715:5855" ph="INSERT INTO comments... " />
+            <marker date="1477904401091" expanded="true" signature="6688:6828" ph="INSERT INTO comments... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="112" selection-start-line="39" selection-start-column="112" selection-end-line="39" selection-end-column="112" />
+        <state relative-caret-position="63">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#146#190#0" expanded="false" />
             <element signature="e#1977#2005#0" expanded="false" />
@@ -1902,14 +1880,6 @@
             <element signature="e#3128#3151#0" expanded="false" />
             <element signature="e#4348#4376#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
