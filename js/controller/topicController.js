@@ -33,7 +33,6 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
                             $scope.isVoted = false;//没有投过票
                         }else{
                             $scope.isVoted = true;//投过票
-                            console.log(httpCont2.data.results);
                             for(var i in httpCont2.data.results){
                                 for (var j in httpCont.topic_choices){
                                     if(i == j){
@@ -41,7 +40,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
                                     }
                                 }
                             }
-                            console.log($scope.pageData);
+
                         }
                         
                     });
@@ -78,41 +77,32 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
      */
     $scope.choices = [];
     $scope.test2 = 1;
-    $scope.saveData = function (e){
-
-
-        //发送数据
-        $.ajax({
-            url:'../../library/xwBE-0.0.1/Interface/setTopic/topic_action.php',
-            type:'POST',
-            async: false,
-            data:{
-                "classification":$scope.pageData.topic_classification,
-                "choices":$scope.choices,
-                "topic_id":$scope.pageData.topic_id
-            },
-            success: function (data){
-                data = eval( "(" + data + ")");
-                $scope.UserInfoData = data;
-            },
-            error: function (data){
-                alert ("获取个人信息异常，请联系管理员");
-            }
-        })
-
+    $scope.comment_content = "";//对话题的评论
+    $scope.saveData = function (content){
+        if($scope.pageData.topic_classification == "text" || $scope.isVoted){
+            $scope.sendcomment('',content);
+        }else{
+            //发送数据
+            $.ajax({
+                url:'../../library/xwBE-0.0.1/Interface/setTopic/topic_action.php',
+                type:'POST',
+                async: false,
+                data:{
+                    "classification":$scope.pageData.topic_classification,
+                    "choices":$scope.choices,
+                    "topic_id":$scope.pageData.topic_id
+                },
+                success: function (data){
+                    data = eval( "(" + data + ")");
+                    $scope.UserInfoData = data;
+                },
+                error: function (data){
+                    alert ("获取个人信息异常，请联系管理员");
+                }
+            })
+        }
     };
 
-
-    /**
-     * 获取用户是否已经投票
-     */
-
-
-
-    /**
-     * 发表评论
-     */
-    $scope.comment_content = "";//对话题的评论
 
     //提交评论
     $scope.sendcomment = function (to_id,content){
@@ -120,28 +110,27 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             to_id = null;
         }
 
-        if(!content && !$scope.comment_content){
+        if(!content){
             alert ("还没有填写评论内容");
             return false;
-        }else if(!content && $scope.comment_content){
-            content = $scope.comment_content;
+        }else{
+            $.ajax({
+                method: 'POST',
+                url: 'library/xwBE-0.0.1/Interface/setComment/setComment.php',
+                data:{
+                    "cate":"topic",
+                    "topic_id":$scope.pageData.topic_id,
+                    "to_id":to_id,
+                    "content":content
+                }
+            }).success(function (data){
+
+
+            }).error(function (){
+                alert ("不明原因导致的提交失败，请联系管理员");
+            })
         }
 
-        $.ajax({
-            method: 'POST',
-            url: 'library/xwBE-0.0.1/Interface/setComment/setComment.php',
-            data:{
-                "cate":"topic",
-                "topic_id":$scope.pageData.topic_id,
-                "to_id":to_id,
-                "content":content
-            }
-        }).success(function (data){
-
-
-        }).error(function (){
-            alert ("不明原因导致的提交失败，请联系管理员");
-        })
     };
 
     //控制对应评论区域的显示和评论内容的初始化

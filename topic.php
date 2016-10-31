@@ -45,32 +45,27 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div ng-if="isVoted">
                             <h6 style="display: inline-block"><span class="glyphicon glyphicon-align-left"></span>投票结果：</h6>
                         </div>
-                        <ol style="list-style: none;padding:0;margin-top:15px" ng-if="isVoted">
-
-                            <li ng-repeat="xcho in pageData.topic_choices track by $index">
-                                <label class="btn_forer" style="cursor:default">
-                                    {{xcho.content}}
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                            {{xcho.ballots_amount}}人选择
-                                        </div>
-                                    </div>
-                                </label>
-                            </li>
-                            <form class="clearfix ng-pristine ng-valid" role="form" style="margin-top:-15px" ng-submit="">
-                                <hr style="margin-bottom:17px">
-                                <textarea ng-disabled="!isVoted" class="form-control ng-pristine ng-untouched ng-valid" style="resize:vertical;padding:8px;font-size:13px" rows="2" ng-model="comment_content"></textarea>
-                                <input ng-disabled="!isVoted" type="submit" class="btn btn-primary" style="width:100%" value="发表评论">
-                            </form>
-                        </ol>
                         <!--End of 显示投票结果-->
 
 
 
 
 
-                        <form ng-submit="saveData()">
+                        <form ng-submit="saveData(comment_content)">
                             <!--topic_content_result_shows-->
+                            <ol style="list-style: none;padding:0;margin-top:15px" ng-if="isVoted">
+                                <li ng-repeat="xcho in pageData.topic_choices track by $index">
+                                    <label class="btn_forer" style="cursor:default">
+                                        {{xcho.content}}
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                {{xcho.ballots_amount}}人选择
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ol>
+                            <!--End of topic_content_result_shows-->
 
                             <ol ng-if="pageData.topic_classification == 'radio' && !isVoted">
                                 <li ng-repeat="xcho in pageData.topic_choices track by $index">
@@ -86,15 +81,15 @@ include("library/xwFE-0.0.1/FEM.php");
 
                                 </li>
                             </ol>
-                            <div style="padding:15px 0;" ng-if="pageData.topic_classification !== 'radio' && pageData.topic_classification !== 'checkbox'">
-                                <textarea class="form-control" rows="4" style="resize: vertical;max-height:600px;padding-top:11px;"></textarea>
+
+                            <textarea ng-show="pageData.topic_classification == 'text' || isVoted" class="form-control" rows="3" style="resize: vertical;max-height:600px;padding-top:11px;" ng-model="comment_content"></textarea>
+                            <div style="padding:15px 0" ng-if="pageData.topic_classification == 'text' || isVoted">
+                                <input type="submit" class="btn btn-primary" style="width:100%;margin-top:10px" value="发表评论">
                             </div>
                             <input ng-if="(pageData.topic_classification == 'radio' || pageData.topic_classification == 'checkbox') && !isVoted" type="submit" class="btn btn-primary" style="width:100%" value="提交投票">
-                            <input ng-if="pageData.topic_classification !== 'radio' && pageData.topic_classification !== 'checkbox'" type="submit" class="btn btn-primary" style="width:100%" value="发表我的观点">
+
                         </form>
                     </div>
-
-                    <hr>
                 </div>
 
 
