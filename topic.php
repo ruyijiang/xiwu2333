@@ -58,7 +58,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <label class="btn_forer" style="cursor:default">
                                         {{xcho.content}}
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{xcho.ballots_amount/BallotsAllAmount}}" aria-valuemin="0" aria-valuemax="100" style="width:{{(xcho.ballots_amount/BallotsAllAmount)*100}}%">
                                                 {{xcho.ballots_amount}}人选择
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
 
 
-                
+
                 <div class="comments_shower col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comments_shower">
                     <div ng-repeat="xcom in comments track by $index">
                         <div class="row comments_shower_con">
@@ -184,6 +184,3 @@ include("library/xwFE-0.0.1/FEM.php");
         <?php echo $footer;?>
     </div>
 </div>
-
-
-

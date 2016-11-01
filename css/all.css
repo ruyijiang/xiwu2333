@@ -209,7 +209,7 @@ footer{margin-bottom:30px;}
     margin-bottom:5px;
 }
 .topic_content form >  ol li:hover{
-    background-color:#dfdfdf;
+    background-color:#f3f3f3;
 }
 .btn_forer{
     padding:5px 0 5px 5px;
@@ -349,4 +349,3 @@ div.alert-success{margin-top: 50px; z-index: 99; background-image: none; backgro
 .carousel-indicators{margin-bottom:-10px}
 .carousel-indicators li{width:8px;height:8px;border-radius:0px;margin-right:12px;}
 .carousel-indicators .active{width:10px;height:10px;margin-right:12px;}
-

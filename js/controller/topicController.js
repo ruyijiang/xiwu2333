@@ -33,16 +33,18 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
                             $scope.isVoted = false;//没有投过票
                         }else{
                             $scope.isVoted = true;//投过票
+                            $scope.BallotsAllAmount = 0;
                             for(var i in httpCont2.data.results){
                                 for (var j in httpCont.topic_choices){
                                     if(i == j){
                                         httpCont.topic_choices[j]["ballots_amount"] = httpCont2.data.results[i];
+                                        $scope.BallotsAllAmount += httpCont2.data.results[i];
                                     }
                                 }
                             }
 
                         }
-                        
+
                     });
 
                 }
