@@ -83,8 +83,8 @@ include("library/xwFE-0.0.1/FEM.php");
                             </ol>
 
                             <textarea ng-if="pageData.topic_classification == 'text' || isVoted" class="form-control" rows="3" style="resize: vertical;max-height:600px;padding-top:11px;" ng-model="vm.comment_content"></textarea>
-                            <div style="padding:15px 0" ng-if="pageData.topic_classification == 'text' || isVoted">
-                                <input type="submit" class="btn btn-primary" style="width:100%;margin-top:10px" value="发表评论">
+                            <div style="padding:0 0 25px 0" ng-if="pageData.topic_classification == 'text' || isVoted">
+                                <input type="submit" class="btn btn-primary" style="width:100%;margin-top:3px" value="发表评论">
                             </div>
                             <input ng-if="(pageData.topic_classification == 'radio' || pageData.topic_classification == 'checkbox') && !isVoted" type="submit" class="btn btn-primary" style="width:100%" value="提交投票">
 
@@ -129,7 +129,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
-                            <li ng-repeat="xpag in ArticlePageListInfo" ng-class="{active:ListActive==xpag}" ng-disabled="ListActive==xpag" ng-if="xpag >= ListActive - 3 && xpag <= ListActive + 3"><a ng-click="changeShowPage(xpag,A_aid)">{{xpag}}</a></li>
+                            <li ng-repeat="xpag in TopicPageListInfo" ng-class="{active:ListActive==xpag}" ng-disabled="ListActive==xpag" ng-if="xpag >= ListActive - 3 && xpag <= ListActive + 3"><a ng-click="changeShowPage(xpag,A_aid)">{{xpag}}</a></li>
                             <li ng-if="ListActive!==maxPageNum">
                                 <a aria-label="Next" ng-click="changeShowPage(maxPageNum,A_aid)">
                                     <span aria-hidden="true">&raquo;</span>
