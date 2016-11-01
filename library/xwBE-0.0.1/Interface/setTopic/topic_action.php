@@ -27,7 +27,7 @@ $reminder = "";
 $a = new interfaceResponse();
 
 
-if($classification && $topic_id){
+if($classification && $topic_id && $uid){
     //classification只能有三种情况：单选、多选、填空
     if($classification == "radio" || $classification == "checkbox" || $classification == "text"){
 
@@ -51,11 +51,9 @@ if($classification && $topic_id){
                 }
 
                 if(count($choices) < 1 || !$reminder1){
-                    //没有填写答案
-
                     //------------------------------------------------------------------------------------>没有投票
                     $status = 0;
-                    $reminder = "没有投票";
+                    $reminder = "没有填写答案";
                     echo $a->normalrespond($status,$reminder);
                     return false;
 
@@ -80,8 +78,6 @@ if($classification && $topic_id){
                 //问答类型的话题，回答即是comment
 
                 if(empty($content)){
-                    //没有填写答案
-
                     //------------------------------------------------------------------------------------>没有投票
                     $status = 0;
                     $reminder = "没有填写答案";
@@ -140,6 +136,11 @@ if($classification && $topic_id){
         $reminder = "无法正确解析话题类型classification，请联系管理员";
         echo $a->normalrespond($status,$reminder);
     }
+}else if(!$uid){
+    //------------------------------------------------------------------------------------>尚未登陆
+    $status = 0;
+    $reminder = "请登陆后再进行投票";
+    echo $a->normalrespond($status,$reminder);
 }else{
     //------------------------------------------------------------------------------------>缺少关键参数，无法正确执行
     $status = 0;

@@ -14,7 +14,8 @@ require("../../all.php");
     @$uid = $_GET["uid"];//这个一般是针对文章所用，用于查询对应uid为作者的文章
     @$content = $_GET["content"];//
 
-    if(!$uid) $uid=$_SESSION["uid"];
+
+    if(!$uid && !empty($_SESSION["uid"])) $uid=$_SESSION["uid"];
 
     if($responseCate == 'article'){
         //-----------------请求的是文章列表的分页

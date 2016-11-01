@@ -46,12 +46,9 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
                     });
 
                 }
-
                 $scope.changeShowPage(1,$scope.pageData.topic_id);
-
-
             }
-
+            $rootScope.NowPageTitle = $scope.pageData.title + " - 喜屋";
         });
     }
 
@@ -77,7 +74,10 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
      */
     $scope.choices = [];
     $scope.test2 = 1;
-    $scope.comment_content = "";//对话题的评论
+
+    var vm = $scope.vm = {};
+    vm.comment_content = '';//对话题的评论
+
     $scope.saveData = function (content){
         if($scope.pageData.topic_classification == "text" || $scope.isVoted){
             $scope.sendcomment('',content);
@@ -200,5 +200,6 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
         });
 
     };
+
 
 });

@@ -22,7 +22,7 @@ $status = 0;
 $reminder = "";
 $a = new interfaceResponse();
 
-if($topic_id){
+if($topic_id && $uid){
 
     $sql = "SELECT topic_id FROM `topics` WHERE topic_id = '$topic_id' ";
     $qry = $db->query($sql);
@@ -81,6 +81,11 @@ if($topic_id){
 
     }
 
+}else if(!$uid){
+    //------------------------------------------------------------------------------------>该用户尚未登陆
+    $status = 0;
+    $reminder = "该用户尚未登陆";
+    echo $a->normalrespond($status,$reminder);
 }else{
     //------------------------------------------------------------------------------------>缺少关键参数，无法正确执行
     $status = 0;

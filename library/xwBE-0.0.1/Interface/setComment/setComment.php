@@ -26,10 +26,15 @@ $a = new interfaceResponse();
 
 
 
-if(!$cate || !$content || !$topic_id){
+if((!$cate || !$content || !$topic_id) && $uid){
     //-------------------------------------------------------------------------------------->缺少关键参数
     $status = 0;
     $reminder = "缺少关键参数，无法查询";
+    echo $a->normalrespond($status,$reminder);
+}else if(!$uid){
+    //-------------------------------------------------------------------------------------->请先登陆，再进行评论
+    $status = 0;
+    $reminder = "请登陆后再进行评论";
     echo $a->normalrespond($status,$reminder);
 }else{
     if($cate == "article"){

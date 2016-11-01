@@ -51,7 +51,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
 
 
-                        <form ng-submit="saveData(comment_content)">
+                        <form ng-submit="saveData(vm.comment_content)">
                             <!--topic_content_result_shows-->
                             <ol style="list-style: none;padding:0;margin-top:15px" ng-if="isVoted">
                                 <li ng-repeat="xcho in pageData.topic_choices track by $index">
@@ -82,7 +82,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 </li>
                             </ol>
 
-                            <textarea ng-show="pageData.topic_classification == 'text' || isVoted" class="form-control" rows="3" style="resize: vertical;max-height:600px;padding-top:11px;" ng-model="comment_content"></textarea>
+                            <textarea ng-if="pageData.topic_classification == 'text' || isVoted" class="form-control" rows="3" style="resize: vertical;max-height:600px;padding-top:11px;" ng-model="vm.comment_content"></textarea>
                             <div style="padding:15px 0" ng-if="pageData.topic_classification == 'text' || isVoted">
                                 <input type="submit" class="btn btn-primary" style="width:100%;margin-top:10px" value="发表评论">
                             </div>
