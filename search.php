@@ -112,7 +112,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <div class="col-lg-11 clearfix abcd" style="padding:15px">
                         <div class="search_content-rightpart pull-left">
                             <div class="search_content-toppart" style="margin-left:10px;font-size:12px">
-                                <small><i class="iconfont icon-shuziliu"></i><font>比赛编号:</font><a title="查看详情">{{MatchInfo.match_id}}<i class="iconfont icon-fangdajing" style="font-size:13px"></i></a></small> |
+                                <small><i class="iconfont icon-shuziliu"></i><font>比赛编号:</font><a title="查看详情">{{MatchInfo.match_id}}</a></small> |
                                 <small><i class="iconfont icon-time"></i><font>开始时间:</font><span>{{MatchInfo.start_time}}</span></small> |
                                 <small><i class="iconfont icon-loudou"></i><font>游戏时长:</font><span>{{MatchInfo.duration}}</span></small> |
                                 <small><i class="iconfont icon-server"></i><font>服务器:</font><span>{{MatchInfo.cluster}}</span></small>
