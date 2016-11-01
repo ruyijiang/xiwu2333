@@ -51,7 +51,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                 </div>
                             </div>
 
-                            <legend style="padding:6px 0"><span class="glyphicon glyphicon-align-left" style="font-size:20px"></span>话题正文</legend>
+                            <legend style="padding:6px 0"><i class="iconfont icon-huati" style="font-size:26px"></i>话题正文</legend>
                             <div class="row">
                                 <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                     <input class="form-control" type="text" placeholder="话题标题" ng-model="pageData.topic_title">
@@ -65,8 +65,8 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                             <div class="row">
                                 <div class="form-group col-lg-12 col-sm-12 col-xs-12">
-                                    <label style="font-weight:400;cursor:pointer">
-                                        <input class="topic_radio" type="checkbox" name="needSelect" i-check ng-model="needSelect" prop="needSelect"> 是否需要选项？
+                                    <label style="font-weight:400;cursor:pointer;font-size:13px">
+                                        <input class="topic_radio" type="checkbox" name="needSelect" i-check ng-model="needSelect" prop="needSelect"> &nbsp;是否为选择题？
                                     </label>
                                 </div>
                                 <div ng-if="needSelect" class="form-group col-lg-12 col-sm-12 col-xs-12" style="border-top:dashed #ddd 1px;border-bottom:dashed #ddd 1px;padding:15px;background-color:#f7f7f7">

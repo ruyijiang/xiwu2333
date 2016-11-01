@@ -78,12 +78,10 @@ include("library/xwFE-0.0.1/FEM.php");
                                 <h6 style="color:#999">{{xu.slogan}}</h6>
                             </div>
                             <div class="search_content-botpart">
+                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>{{xu.uid}} |</span>
                                 <span class="sexuality" ng-if="xu.gender==0"><i class="iconfont icon-nan"></i> |</span>
                                 <span class="sexuality" ng-if="xu.gender==1"><i class="iconfont icon-nvhai"></i> |</span>
-                                <span class="position" ng-if="xu.province!==''"><i class="iconfont icon-dingwei"></i>{{xu.province}}{{"，" + xu.city}} |</span>
-                                <span class="gameuid"><i class="iconfont icon-shuziliu"></i>{{xu.uid}} |</span>
-                                <span class="score" ng-if="xu.score=='0'"><i class="iconfont icon-score"></i>暂无数据</span>
-                                <span class="score" ng-if="xu.score!=='0'"><i class="iconfont icon-score"></i>{{xu.score}}</span>
+                                <span class="position" ng-if="xu.province!==''"><i class="iconfont icon-dingwei"></i>{{xu.province}}{{"，" + xu.city}}</span>
                             </div>
                         </div>
                     </div><!--END OF DIV-->

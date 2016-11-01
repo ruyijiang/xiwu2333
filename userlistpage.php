@@ -74,9 +74,8 @@ include("library/xwFE-0.0.1/FEM.php");
                   <th width="15%">游戏ID</th>
                   <th width="15%">用户名</th>
                   <th>场均参战率</th>
-                  <th>场均输出比<i class="iconfont icon-alert" title="输出是指造成的英雄伤害和建筑伤害之和" style="font-size:15px"></i></th>
+                  <th>场均输出比<i class="iconfont icon-alert" title='"输出"是指造成的英雄伤害和建筑伤害之和' style="font-size:15px"></i></th>
                   <th>场均KDA</th>
-                  <th>评分</th>
                 </tr>
                 </thead>
                 <tbody><!--一页15个-->
@@ -94,11 +93,6 @@ include("library/xwFE-0.0.1/FEM.php");
                   <td>
                     <span ng-if="!ud.kda">暂无</span>
                     <span ng-if="ud.kda">{{ud.kda}}</span>
-                  </td>
-                  </td>
-                  <td>
-                    <span ng-if="!ud.score">暂无</span>
-                    <span ng-if="ud.score">{{ud.score}}</span>
                   </td>
                 </tr>
                 </tbody>

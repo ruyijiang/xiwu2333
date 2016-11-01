@@ -77,6 +77,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <p style="width:70%;left:18%;top:62%;position:absolute;color:white;">（如果长时间没有反应，可能是STEAM服务器连接超时所引起的，请尝试刷新页面）</p>
                 </div>
                 <div class="panel-heading">
+                    <i class="iconfont icon-icon-dota2" style="font-size:17px;color:white;margin-right:3px;"></i>
                     游戏活跃分布
                 </div>
                 <div class="panel-body" id="dota2-thermodynamic-sheet-chart-body" style="height:260px;"></div>
@@ -84,9 +85,8 @@ include("library/xwFE-0.0.1/FEM.php");
 
             <div class="liveness-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
                 <div class="panel-heading">
-                    <i class="icon icon-dota2" style="font-size:18px;color:white"></i>
-                    <!--<img width="21" height="21" style="margin-top:-6px;margin-right:3px;display:inline;" alt="Dota2ImgThumbnail32^2" src="img/fragments/logo/xiwu_circle.png"/>
-                    -->喜屋活跃曲线
+                    <img width="21" height="21" style="margin-top:-6px;margin-right:3px;display:inline;" alt="Dota2ImgThumbnail32^2" src="img/fragments/logo/xiwu_circle.png"/>
+                    喜屋活跃曲线
                 </div>
                 <div class="panel-body" id="liveness-chart-body" style="height:260px;"></div>
             </div>
