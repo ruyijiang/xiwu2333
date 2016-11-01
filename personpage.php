@@ -3,28 +3,24 @@ require("library/xwBE-0.0.1/connectDB.php");
 require("library/xwBE-0.0.1/all.php");
 include("library/xwFE-0.0.1/FEM.php");
 ?>
-<div class="container" ng-controller="homepagecontroller" style="margin-top:100px">
+<div class="container" ng-controller="homepagecontroller" style="margin-top:115px">
     <div class="row">
         <div class="leftpart col-lg-3 col-md-4 col-sm-4 col-xs-8">
             <div>
                 <img ng-src="{{UserData.avatar}}" class="img-rounded center-block" width="198" height="198"/>
-                <div>
+                <div class="text-center">
                     <strong style="display:inline-block;font-size:18px;margin-top:15px">{{UserData.name}}</strong>
-                    <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:32px;color:#346ea1" title="男"></i>
-                    <i ng-if="UserData.gender == '1'" class="iconfont icon-nvhai" style="font-size:32px;color:#FF6699" title="女"></i>
+                    <i ng-if="UserData.gender == '0'" class="iconfont icon-nan" style="font-size:23px;color:#346ea1" title="男"></i>
+                    <i ng-if="UserData.gender == '1'" class="iconfont icon-nvhai" style="font-size:23px;color:#FF6699" title="女"></i>
                 </div>
-                <p style="color:#999">{{UserData.slogan}}</p>
-                <hr>
+                <p style="color:#999;font-size:12px;margin-top:5px">{{UserData.slogan}}</p>
+                <hr style="margin-bottom:0px">
             </div>
-            <div ng-if="UserData.callingcard_content !== ''">
-                <table class="id_info">
-                    <tr>
-                        <td><i class="iconfont icon-renzheng" style="font-size:24px;color:#d87f00"></i></td>
-                        <td style="font-size:14px">{{UserData.callingcard_content}}</td>
-                    </tr>
-                </table>
-                <hr>
+            <div class="text-center" style="padding:7px 0" ng-if="UserData.callingcard_content !== ''">
+                <i class="iconfont icon-renzheng" style="font-size:20px;color:#d87f00;"></i>
+                {{UserData.callingcard_content}}
             </div>
+            <hr style="margin-top:0px">
 
             <table class="userp_info">
                 <tr>
@@ -37,22 +33,6 @@ include("library/xwFE-0.0.1/FEM.php");
                     <td>地区：</td>
                     <td>
                         <span>{{UserData.province}}</span><span ng-if="UserData.province!=='' && UserData.city!==''">，</span><span>{{UserData.city}}</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td><i class="iconfont icon-ladder"></i></td>
-                    <td>技术级：</td>
-                    <td>
-                        <span ng-if="UserData.skilllevel!=='' && UserData.skilllevel!==null" class="label label-success" style="font-weight:bold;font-style:italic">{{UserData.skilllevel}}</span>
-                        <span ng-if="UserData.skilllevel=='' || UserData.skilllevel==null" class="label label-danger" style="font-weight:bold;font-style:italic">暂无数据</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td><i class="iconfont icon-score"></i></td>
-                    <td>评分：</td>
-                    <td>
-                        <span ng-if="UserData.score!=='' && UserData.score!=='0'" ng-class="{'label-success':UserData.score>=70,'label-warning':UserData.score<70&&UserData.score>=60,'label-danger':UserData.score<60}" class="label" style="font-weight:bold;font-style:italic">{{UserData.score}}</span>
-                        <span ng-if="UserData.score=='' || UserData.score=='0'" class="label label-danger" style="font-weight:bold;font-style:italic">暂无数据</span>
                     </td>
                 </tr>
                 <tr ng-if="UserData.server.length > 0">
@@ -97,7 +77,6 @@ include("library/xwFE-0.0.1/FEM.php");
                     <p style="width:70%;left:18%;top:62%;position:absolute;color:white;">（如果长时间没有反应，可能是STEAM服务器连接超时所引起的，请尝试刷新页面）</p>
                 </div>
                 <div class="panel-heading">
-                    <img width="21" height="21" style="margin-top:-6px;margin-right:3px" alt="Dota2ImgThumbnail32^2" src="img/fragments/icon/DOTA_32px_558493_easyicon.net.png"/>
                     游戏活跃分布
                 </div>
                 <div class="panel-body" id="dota2-thermodynamic-sheet-chart-body" style="height:260px;"></div>
@@ -105,8 +84,9 @@ include("library/xwFE-0.0.1/FEM.php");
 
             <div class="liveness-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
                 <div class="panel-heading">
-                    <img width="21" height="21" style="margin-top:-6px;margin-right:3px;display:inline;" alt="Dota2ImgThumbnail32^2" src="img/fragments/logo/xiwu_circle.png"/>
-                    喜屋活跃曲线
+                    <i class="icon icon-dota2" style="font-size:18px;color:white"></i>
+                    <!--<img width="21" height="21" style="margin-top:-6px;margin-right:3px;display:inline;" alt="Dota2ImgThumbnail32^2" src="img/fragments/logo/xiwu_circle.png"/>
+                    -->喜屋活跃曲线
                 </div>
                 <div class="panel-body" id="liveness-chart-body" style="height:260px;"></div>
             </div>
