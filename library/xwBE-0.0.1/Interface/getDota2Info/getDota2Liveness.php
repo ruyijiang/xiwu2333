@@ -117,7 +117,7 @@ do{
                     if(!$qry2){
                         $status = 0;
                         $reminder = "存储dota2比赛数据失败，失败的match_id是：".$ThisMatch_id;
-                        echo $a->normalnormalrespond($status,$reminder);
+                        echo $a->normalrespond($status,$reminder);
                     }
                     exit;
                 }

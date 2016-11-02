@@ -73,16 +73,22 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             async: false,
             data:{"uid":uid},//lo这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
             success: function (data){
-                data = eval( "(" + data + ")");
-                var SArr = data.server.split(',');//SArr = [1,2,3,];
-                SArr.pop();
-                data.server = SArr;
-                $scope.UserData = data;
+                if(data){
+                    data = eval( "(" + data + ")");
+                    var SArr = data.server.split(',');//SArr = [1,2,3,];
+                    SArr.pop();
+                    data.server = SArr;
+                    $scope.UserData = data;
+                }else{
+                    $location.path("/#/404").replace();
+                }
+
 
                 /**
                  * 获取用户的比赛数据
                  */
                 $scope.dota2panelmaskshow = 1;
+                $scope.Dota2LivenessShower = true;
                 $http({
                     url:'../../library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php',
                     params:{
@@ -136,9 +142,13 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                     }
                     $scope.xArr_months = xContent_months;
 
-                    if(Cont){
+                    if(Cont.statuscode !== '0' || !Cont.statuscode){
                         $scope.dota2panelmaskshow = 0;
                         $scope.loadEchart2();
+                        $scope.Dota2LivenessShower = true;
+                    }else{
+                        $scope.dota2panelmaskshow = 0;
+                        $scope.Dota2LivenessShower = false;
                     }
 
                 }).error(function (){
@@ -492,7 +502,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         open: false,
         content : ""
     };
-    $rootScope.NowPageTitle = $scope.UserData.name;
+    $rootScope.NowPageTitle = $scope.UserData.name + "  个人主页 - 喜屋";
 
 
 });

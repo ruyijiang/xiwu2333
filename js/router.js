@@ -19,7 +19,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "userlistpage.php"
         })
         .state("login", {
-            url: "/login/:needLogin",
+            url: "/login",
             templateUrl: "loginpage.php",
             resolve:{
                 guarder: function($q,$location,checkStatus,$state){
@@ -63,7 +63,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
                         if(allowed!=="1"){
-                            $location.path("/login/needLogin").replace();
+                            $location.search()["needLogin"] = true;
+                            $location.path("/login").replace();
                         }
                     });
                 }
@@ -108,7 +109,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                     allowed.then(function (httpCont){
                         allowed = httpCont.statuscode;
                         if(allowed!=="1"){
-                            $location.path("/login/needLogin").replace();
+                            $location.search()["needLogin"] = true;
+                            $location.path("/login").replace();
                         }
                     });
                 }
@@ -156,7 +158,18 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state("topiceditor",{
             url: "/topiceditor",
-            templateUrl: "writeTopic.php"
+            templateUrl: "writeTopic.php",
+            resolve:{
+                guarder: function($location,checkStatus){
+                    var allowed = checkStatus.checkLoginStatus();
+                    allowed.then(function (httpCont){
+                        allowed = httpCont.statuscode;
+                        if(allowed!=="1" &&(!$location.search()["uid"] || $location.search()["uid"]==true))
+                            $location.search()["needLogin"] = true;
+                            $location.path("/login").replace();
+                    });
+                }
+            }
         })
         .state("topic",{
             url: "/topic/:TopicUrl",

@@ -1,4 +1,4 @@
-app.controller('loginController',function ($scope,$rootScope,$http,$location,$stateParams){
+app.controller('loginController',function ($scope,$rootScope,$http,$location){
 
     $scope.UserName = "";
     $scope.UserPassword = "";
@@ -27,5 +27,5 @@ app.controller('loginController',function ($scope,$rootScope,$http,$location,$st
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(5);
-    $stateParams.needLogin == 'needLogin'?$scope.showStepReminder = true:$scope.showStepReminder = false;
+    $location.search()["needLogin"]?$scope.showStepReminder = true:$scope.showStepReminder = false;
 });

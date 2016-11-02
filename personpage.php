@@ -68,7 +68,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <li ng-class="{active:TabShowPage === 2}"><a ng-click="Tabshow(2)"><i class="iconfont icon-article" style="font-size:16px;margin-right:5px"></i>文章</a></li>
             </ul>
 
-            <div class="dota2-thermodynamic-sheet panel panel-default" style="margin-top:15px;position: relative" ng-show="TabShowPage == 1">
+            <div ng-show="TabShowPage == 1" class="dota2-thermodynamic-sheet panel panel-default" style="margin-top:15px;position: relative">
                 <div ng-if="dota2panelmaskshow == 1" style="position: absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:9;border-radius:3px">
                     <div style="width:32px;top:45%;left:47%;position:absolute">
                         <img src="img/fragments/loading/5-121204193955-50.gif">
@@ -78,9 +78,9 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
                 <div class="panel-heading">
                     <i class="iconfont icon-icon-dota2" style="font-size:17px;color:white;margin-right:3px;"></i>
-                    游戏活跃分布
+                    游戏活跃分布<small style="color:red" ng-if="!Dota2LivenessShower"> &nbsp;<i class="iconfont icon-alert"></i>该用户尚未关联dota2 id，无法获取游戏活跃度。</small>
                 </div>
-                <div class="panel-body" id="dota2-thermodynamic-sheet-chart-body" style="height:260px;"></div>
+                <div ng-if="Dota2LivenessShower" class="panel-body" id="dota2-thermodynamic-sheet-chart-body" style="height:260px;"></div>
             </div>
 
             <div class="liveness-sheet panel panel-default" style="margin-top:15px;" ng-show="TabShowPage == 1">
@@ -110,8 +110,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </li>
                     </ul>
                 </div>
-
-                <hr>
+                <hr ng-if="UidEqu==true">
                 <div ng-repeat="xarticle in ArticleDataArr">
                     <div class="article clearfix">
                         <a ng-href="/#/blog?aid={{xarticle.aid}}"><h4><strong>{{xarticle.title}}</strong></h4></a>

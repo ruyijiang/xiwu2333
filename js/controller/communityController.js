@@ -6,6 +6,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
     var timing = Math.round(new Date().getTime()/1000);
     var deferred = $q.defer();
 
+    $rootScope.NowPageTitle = "社区广场 - 喜屋";
 
     /**
      * 索取Covers内容
@@ -71,11 +72,8 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
     }).then(function (httpCont){
 
         $scope.pageData_HotPersons = httpCont.data;
-        console.log($scope.pageData_HotPersons);
 
     });
-
-
 
 
 
