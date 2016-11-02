@@ -37,18 +37,7 @@ include("library/xwFE-0.0.1/FEM.php");
             $sql = "SELECT * FROM users WHERE uid = '$uid' ";
             $qry = $db->query($sql);
             $row = $qry->fetch_assoc();
-            $result_name = $row["name"];
             $result_email = $row["email"];
-            $result_gender = $row["gender"];
-            $result_server = $row["server"];
-            $result_country = $row["country"];
-            $result_province = $row["province"];
-            $result_city = $row["city"];
-            $result_tel = $row["tel"];
-            $result_qq = $row["qq"];
-            $result_weixin = $row["weixin"];
-            $result_weibo = $row["weibo"];
-            $result_liveplain = $row["liveplain"];
         ?>
 
         <div class="per_s-rightpart col-lg-9 col-sm-9 col-xs-12 row" style="min-height:300px;border-radius:4px;">
