@@ -33,16 +33,18 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
                             $scope.isVoted = false;//没有投过票
                         }else{
                             $scope.isVoted = true;//投过票
+                            $scope.BallotsAllAmount = 0;
                             for(var i in httpCont2.data.results){
                                 for (var j in httpCont.topic_choices){
                                     if(i == j){
                                         httpCont.topic_choices[j]["ballots_amount"] = httpCont2.data.results[i];
+                                        $scope.BallotsAllAmount += httpCont2.data.results[i];
                                     }
                                 }
                             }
 
                         }
-                        
+
                     });
 
                 }
@@ -150,7 +152,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
     /**
      * 话题评论的分页控件
      */
-    $scope.ArticlePageListInfo = [];
+    $scope.TopicPageListInfo = [];
     $scope.changeShowPage = function (num,content){
 
         $.ajax({
@@ -165,8 +167,8 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
             success: function (data){
                 var obj1 = eval ("(" + data + ")");
                 for(var i=0;i<obj1.page_all;i++){
-                    $scope.ArticlePageListInfo.push(i+1);
-                    unique($scope.ArticlePageListInfo);
+                    $scope.TopicPageListInfo.push(i+1);
+                    unique($scope.TopicPageListInfo);
                     $scope.maxPageNum = parseInt(obj1.page_all);
                 }
             },

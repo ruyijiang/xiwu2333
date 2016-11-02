@@ -44,9 +44,13 @@ if($topic_id && $uid){
             $qry3 = $db->query($sql3);
             $EchoArr = array();
             $ResultArr = array();
+            $ResultsArr = array();
+            $ResultPlus = 0;//投票总和
 
-            while($rows3 = $qry3->fetch_assoc()){
-                $TempArr = explode(",",$rows3["result"]);
+            while($rows3 = $qry3->fetch_assoc()){// 1,2,3
+
+                $TempArr = explode(",",$rows3["result"]);//[1,2,3,]
+
                 foreach ($TempArr as $key => $value){
 
                     if(isset($ResultArr[$value])){
@@ -55,10 +59,23 @@ if($topic_id && $uid){
                         $ResultArr[$value] = 1;
                     }
 
+                    $ResultPlus++;
+
                 }
+                
             }
 
-            $result_ballot_result = $rows["result"];
+            //$ResultArr = ["2","1","3"];
+            /*
+            foreach($ResultArr as $key => $value){
+                $thisRate = round($value/$ResultPlus,1);
+                $newArr["rate"] = $thisRate;
+                $newArr["value"] = $value;
+                array_push($ResultArr,$newArr);
+            }*/
+
+
+
 
             $EchoArr["statuscode"] = $result_topicid;
             $EchoArr["message"] = "在对应话题下投过票";
