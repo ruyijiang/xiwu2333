@@ -60,3 +60,7 @@
 ['Time':2016-11-01 23:24:13,'Commit:'onlineDuration]{70}
 ['Time':2016-11-01 23:25:26,'Commit:'onlineDuration]{70}
 ['Time':2016-11-01 23:25:28,'Commit:'onlineDuration]{0}
+['Time':2016-11-01 23:28:11,'Commit:'onlineDuration]{140}
+['Time':2016-11-01 23:28:22,'Commit:'onlineDuration]{0}
+['Time':2016-11-01 23:29:51,'Commit:'onlineDuration]{70}
+['Time':2016-11-01 23:29:51,'Commit:'onlineDuration]{630}
