@@ -19,7 +19,7 @@ if($timing){
 
     $EchoResult = array();
 
-    $sql = "SELECT topic_id,title,topic_desc,par_times FROM topics ORDER BY par_times DESC LIMIT 5";
+    $sql = "SELECT topic_id,title,topic_desc,par_times FROM `topics` ORDER BY par_times DESC LIMIT 5";
     $qry = $db->query($sql);
     $row_all = mysqli_num_rows($qry);
     if($row_all >= 1){
@@ -27,6 +27,7 @@ if($timing){
         while($row = $qry->fetch_assoc()){
 
             $result_topic_id = $row["topic_id"];
+            $result_par_times = $row["customed_url"];
             $result_title = $row["title"];
             $result_topic_desc = $row["topic_desc"];
             $result_par_times = $row["par_times"];
