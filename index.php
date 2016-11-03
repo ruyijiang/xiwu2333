@@ -30,6 +30,7 @@ include("library/xwFE-0.0.1/FEM.php");
 	<link href="css/bootstrap-slider.min.css" rel="stylesheet"/>
 	<link href="css/icheck_plugin/icheck_plugin_all.css" rel="stylesheet"/>
 	<link href="css/tagsinput.css" rel="stylesheet"/>
+	<link href="css/colorPicker/color-picker.min.css" rel="stylesheet"/>
 	<!-- All Css -->
 	<link href="css/all.css" rel="stylesheet"/>
 	<!-- AngularJs -->

@@ -5,10 +5,10 @@
 app.controller('writeblogcontroller',function ($scope, $rootScope, $location,$timeout, checkStatus, $http, $q){
     var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
     $rootScope.NowPageTitle = "写文章 - 喜屋";
-    $scope.TabShow = 2;
+    $scope.TabShow = 1;
 
-    $scope.showTab2 = function (){
-        $scope.TabShow = 2;
+    $scope.showTab = function (TabShow_Index){
+        $scope.TabShow = TabShow_Index;
         $timeout(function (){
             var ueditor = UE.getEditor('ueditor-main'); //启用UEditor
         },1);
@@ -28,10 +28,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location,$ti
         alert("1234");
     };
 
-    $scope.ColorPicker = {
-        open:true,
-        color:""
-    };
     $scope.pickColor = function (){
         $scope.ColorPicker.open = true;
     };
@@ -112,10 +108,25 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location,$ti
     };
 
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
+
 }).filter(
     'to_trusted', ['$sce', function ($sce) {
         return function (text) {
             return $sce.trustAsHtml(text);
         }
     }]
-);
+).controller('demoCtrl', function($scope) {
+    $scope.selectedForeColor = dynamicSetColor();
+
+    $scope.$on('colorPicked', function(event, color) {
+        $scope.selectedForeColor = color;
+    });
+
+    // 动态设置默认颜色
+    $scope.dynamicSetColor = dynamicSetColor;
+
+    function dynamicSetColor() {
+        return '#fafafa';
+    }
+
+});

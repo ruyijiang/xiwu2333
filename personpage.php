@@ -78,7 +78,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
                 <div class="panel-heading">
                     <i class="iconfont icon-icon-dota2" style="font-size:17px;color:white;margin-right:3px;"></i>
-                    游戏活跃分布<small style="color:red" ng-if="!Dota2LivenessShower"> &nbsp;<i class="iconfont icon-alert"></i>该用户尚未关联dota2 id，无法获取游戏活跃度。</small>
+                    游戏活跃分布<small style="color:red" ng-if="!Dota2LivenessShower"> &nbsp;<i class="iconfont icon-alert"></i>该用户尚未关联dota2数字id，或者STEAM服务器连接出错，无法获取游戏活跃度。</small>
                 </div>
                 <div ng-if="Dota2LivenessShower" class="panel-body" id="dota2-thermodynamic-sheet-chart-body" style="height:260px;"></div>
             </div>
