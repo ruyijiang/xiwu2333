@@ -8,7 +8,7 @@ include("library/xwFE-0.0.1/FEM.php");
     .title_toppart,.title_botpart{width:100%}
     .title_toppart i{font-size:26px}
     .mid_toppart i{font-size:32px}
-    .title_botpart span{font-size:16px}
+    .title_botpart span{font-size:15px;font-weight:300}
     .writeblog_title{border-bottom:solid rgb(211, 224, 233) 1px;padding:15px 0}
     .blog-success{color:#71a359}
     .blog-wanted{color:gray}
@@ -20,8 +20,7 @@ include("library/xwFE-0.0.1/FEM.php");
     <div class="row boat" style="margin:0;padding-top:0">
 
         <div class="writeblog_title clearfix bg-info">
-            <div class="col-lg-1 col-sm-1"></div>
-            <div class="col-lg-2 col-sm-2 text-center blog-success">
+            <div class="col-lg-offset-1 col-sm-offset-1 col-lg-2 col-sm-2 text-center" ng-class="{true: 'blog-success', false: 'blog-wanted'}[TabShow==1]">
                 <div class="title_toppart">
                     <i class="iconfont icon-biaoti"></i>
                 </div>
@@ -29,12 +28,12 @@ include("library/xwFE-0.0.1/FEM.php");
                     <span>拟定文章标题</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-success">
+            <div class="col-lg-2 col-sm-2 text-center blog-wanted">
                 <div class="mid_toppart">
-                    <i class="iconfont icon-right" style="display:block;margin-top:10px"></i>
+                    <i class="iconfont icon-circle" style="display:block;margin-top:10px"></i>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-wrong">
+            <div class="col-lg-2 col-sm-2 text-center blog-wanted" ng-class="{true: 'blog-success', false: 'blog-wanted'}[TabShow==2]">
                 <div class="title_toppart">
                     <i class="iconfont icon-zhengwen"></i>
                 </div>
@@ -42,12 +41,12 @@ include("library/xwFE-0.0.1/FEM.php");
                     <span>撰写文章正文</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-wrong">
+            <div class="col-lg-2 col-sm-2 text-center blog-wanted">
                 <div class="mid_toppart">
-                    <i class="iconfont icon-wrong" style="display:block;margin-top:10px"></i>
+                    <i class="iconfont icon-circle" style="display:block;margin-top:10px"></i>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-wanted">
+            <div class="col-lg-2 col-sm-2 text-center blog-wanted" ng-class="{true: 'blog-success', false: 'blog-wanted'}[TabShow==3]">
                 <div class="title_toppart">
                     <i class="iconfont icon-wb_pic"></i>
                 </div>
@@ -55,17 +54,15 @@ include("library/xwFE-0.0.1/FEM.php");
                     <span>上传封面图片</span>
                 </div>
             </div>
-            <div class="col-lg-1 col-sm-1"></div>
         </div>
 
         <form>
-
             <!-- blog-writer-part1 -->
-            <div ng-show="TabShow == '1'" class="blog-writer-part1">
+            <div ng-show="TabShow == '1'" class="blog-writer-part1 col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10">
                 <div class="row" style="margin-top:35px">
                     <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10">
                         <div class="form-group">
-                            <label class="col-lg-2 col-sm-2 control-label text-right">标题</label>
+                            <label class="col-lg-2 col-sm-2 control-label text-right">标题<sup style="color:red">*</sup></label>
                             <div class="col-lg-10 col-sm-10">
                                 <input type="text" class="form-control">
                             </div>
@@ -75,7 +72,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="row" style="margin-top:25px">
                     <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10">
                         <div class="form-group">
-                            <label class="col-lg-2 col-sm-2 control-label text-right">副标题</label>
+                            <label class="col-lg-2 col-sm-2 control-label text-right">副标题<sup style="color:red">*</sup></label>
                             <div class="col-lg-10 col-sm-10">
                                 <textarea type="text" class="form-control" style="resize: vertical" rows="2"></textarea>
                             </div>
@@ -83,7 +80,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div>
                 </div>
                 <div class="row" style="margin-top:25px">
-                    <div class="col-lg-offset-1 col-sm-offset-1col-lg-10 col-sm-10">
+                    <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10">
                         <div class="form-group">
                             <label class="col-lg-2 col-sm-2 control-label text-right">摘要</label>
                             <div class="col-lg-10 col-sm-10">
@@ -113,13 +110,17 @@ include("library/xwFE-0.0.1/FEM.php");
                 </div>
             </div>
 
-            <div ng-show="TabShow == '3'" class="blog-writer-part2" ng-controller="demoCtrl">
+            <!-- blog-writer-part3 -->
+            <div ng-show="TabShow == '3'" class="blog-writer-part3" ng-controller="demoCtrl">
                 <div style="margin-top:15px">
+
                     <div class="row">
                         <div class="uploadImg-nav">
                             <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10" style="padding-left:0;">
                                 <ul class="nav nav-pills">
-                                    <li ng-click="tellmemore()" class=""><a>选择背景图片</a></li>
+                                    <li ng-click="selectImg()">
+                                        <a>选择背景图片</a>
+                                    </li>
                                     <li class="dropdown">
                                         <a class="dropdown-toggle" data-toggle="dropdown">
                                             选取背景颜色<span class="caret"></span>
@@ -143,10 +144,10 @@ include("library/xwFE-0.0.1/FEM.php");
                                         </ul>
                                     </li>
                                     <li>
-                                        <a>设置按钮文字</a>
+                                        <a ng-click="showBtnContent = true">设置按钮文字</a>
                                     </li>
                                     <li>
-                                        <input type="text" class="form-control" style="width:130px;margin:3px 0 0 5px">
+                                        <input ng-show="showBtnContent" type="text" class="form-control" style="width:130px;margin:3px 0 0 5px" ng-model="pageData.BtnContent" maxlength="18">
                                     </li>
                                 </ul>
                             </div>
@@ -160,17 +161,21 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <div class="text-center" style="width:30%;position:absolute;color:#bababa;top:45%;left:35%">
                                         <small style="display: block">图片预览</small>
                                         <small style="display: block">建议上传分辨率较大的图片</small>
-                                        <a class="btn btn-sm btn-primary" style="margin-top:35px">查看详情</a>
+                                        <a class="btn btn-sm btn-primary" style="margin-top:35px">{{pageData.BtnContent}}</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row text-center" style="margin-top:35px">
                     <a ng-click="showTab(2)" class="btn btn-md btn-default" style="padding-left:45px;padding-right:45px">上一步</a>
-                    <button type="submit" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn" autocomplete="off"  style="padding-left:35px;padding-right:45px">
+                    <a ng-click="uploadImg()" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn" style="padding-left:25px;padding-right:25px">
+                        <span class="glyphicon glyphicon-cloud-upload"></span>上传图片
+                    </a>
+                    <button ng-disabled="1==1" type="submit" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn"  style="padding-left:35px;padding-right:45px">
                         <span class="glyphicon glyphicon-send"></span>发表
                     </button>
                 </div>
@@ -181,27 +186,16 @@ include("library/xwFE-0.0.1/FEM.php");
 
 
 
-        <form ng-submit="tellmemore3()" style="display:none">
-            <input type="file" id="uploadbtn" name="avatar" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('#ImgShower_container'),$('#ImgShower'));"/>
+        <!--真正的图像处理区-->
+        <form id="upload_img" method="POST" action="library/xwBE-0.0.1/php/uploadavatar_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">
+            <input type="file" id="uploadbtn" name="coverImg" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('#ImgShower_container'),$('#ImgShower'));"/>
             <input type="submit" id="uploadbtn_submit">
         </form>
 
+        <!--封面图片真正上传到的地方-->
+        <iframe id="uploadCoverImg" name="uploadCoverImg" style="display:none" src="library/xwBE-0.0.1/php/uploadCoverImg_action.php"></iframe>
 
-
-    <form ng-submit="articlesubmit()" style="position: relative;z-index:98;margin-top:700px"><!--method="POST" action="library/xwBE-0.0.1/php/ueserver.php"-->
-        <div class="input-group writeblog-title">
-            <span class="input-group-addon" id="basic-addon1" style="font-weight:500"><g>文章标题</g></span>
-            <input ng-model="NeedModifiedTitle" style="font-weight:500" type="text" class="form-control" id="a_title" name="title" placeholder="请输入文章标题" aria-describedby="basic-addon1" maxlength="20" autocomplete="off">
-        </div>
-
-    </form>
+    </div>
 
     <hr>
     <?php echo $footer;?>
-
-
-    <!--封面图片真正上传到的地方-->
-    <iframe id="uploadCoverImg" name="uploadCoverImg" style="display:none" src="library/xwBE-0.0.1/php/uploadCoverImg_action.php"></iframe>
-
-
-</div>

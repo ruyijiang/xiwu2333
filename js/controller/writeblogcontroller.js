@@ -2,34 +2,45 @@
  * Created by 马子航 on 2016/4/15.
  */
 
-app.controller('writeblogcontroller',function ($scope, $rootScope, $location,$timeout, checkStatus, $http, $q){
+app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $timeout, checkStatus, $http, $q){
+    //预设内容
     var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
     $rootScope.NowPageTitle = "写文章 - 喜屋";
     $scope.TabShow = 1;
 
+
+    //页面数据模板
+    $scope.pageData = {
+        BtnContent:"查看原文"
+    };
+
+
+    /**
+     * 根据步数显示对应区域
+     */
     $scope.showTab = function (TabShow_Index){
         $scope.TabShow = TabShow_Index;
-        $timeout(function (){
-            var ueditor = UE.getEditor('ueditor-main'); //启用UEditor
-        },1);
+
+        if(TabShow_Index == 2){
+            $timeout(function (){
+                var ueditor = UE.getEditor('ueditor-main'); //启用UEditor
+            },0);
+        }
+
     };
 
-    $scope.showTab3 = function (){
-        $scope.TabShow = 3;
-    };
 
-    $scope.tellmemore = function (){
+    /**
+     * 选择图片，并且生成预览
+     */
+    $scope.selectImg = function (){
         $("#uploadbtn").click();
     };
-    $scope.tellmemore2 = function (){
+    /**
+     * 开始上传图片
+     */
+    $scope.uploadImg = function (){
         $("#uploadbtn_submit").click();
-    };
-    $scope.tellmemore3 = function (){
-        alert("1234");
-    };
-
-    $scope.pickColor = function (){
-        $scope.ColorPicker.open = true;
     };
 
 
