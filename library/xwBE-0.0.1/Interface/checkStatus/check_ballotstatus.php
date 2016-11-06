@@ -9,7 +9,6 @@ require("../../connectDB.php");
 require("../../all.php");
 ?>
 <?
-
 @$uid = $_SESSION["uid"];//uid
 
 $topic_id = $_GET["topic_id"];
@@ -64,18 +63,6 @@ if($topic_id && $uid){
                 }
                 
             }
-
-            //$ResultArr = ["2","1","3"];
-            /*
-            foreach($ResultArr as $key => $value){
-                $thisRate = round($value/$ResultPlus,1);
-                $newArr["rate"] = $thisRate;
-                $newArr["value"] = $value;
-                array_push($ResultArr,$newArr);
-            }*/
-
-
-
 
             $EchoArr["statuscode"] = $result_topicid;
             $EchoArr["message"] = "在对应话题下投过票";

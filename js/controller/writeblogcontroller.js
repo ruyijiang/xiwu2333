@@ -39,10 +39,11 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     /**
      * 开始上传图片
      */
+    $scope.tnow = 1;
     $scope.uploadImg = function (){
+        $scope.tnow = Math.round(new Date().getTime()/1000);
         $("#uploadbtn_submit").click();
     };
-
 
     /**
      * 根据url进行判断是否是修改文章
