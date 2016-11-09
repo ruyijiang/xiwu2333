@@ -10,7 +10,7 @@ require("../all.php");
 ?>
 <?php
     @$uid = $_SESSION["uid"];
-    $imgname = $_POST["imgname"];
+    $imgname = $_POST["imgname"];//imgname在前台进行控制，我们默认约定是此刻UNIX时间戳
     $a = new interfaceResponse();
     $status = $reminder = 0;
 

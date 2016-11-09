@@ -2,7 +2,7 @@
  * Created by 马子航 on 2016/4/15.
  */
 
-app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $timeout, checkStatus, $http, $q){
+app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $timeout, $interval, checkStatus, $http, $q){
     //预设内容
     var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
     $rootScope.NowPageTitle = "写文章 - 喜屋";
@@ -39,11 +39,26 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     /**
      * 开始上传图片
      */
-    $scope.tnow = 1;
+    $scope.tnow = Math.round(new Date().getTime()/1000);
     $scope.uploadImg = function (){
         $scope.tnow = Math.round(new Date().getTime()/1000);
         $("#uploadbtn_submit").click();
+        $(".index-mask").fadeIn("fast");
+        console.log($scope.tnow);
+        $interval(function (){
+            $http({
+                method: 'GET',
+                url: 'library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php',
+                params:{'imgname':$scope.tnow}
+            }).then(function (httpCont){
+
+                console.log(httpCont);
+
+            })
+
+        },1000);
     };
+
 
     /**
      * 根据url进行判断是否是修改文章
