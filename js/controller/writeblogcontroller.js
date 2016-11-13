@@ -39,9 +39,11 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     /**
      * 开始上传图片
      */
-    $scope.tnow = Math.round(new Date().getTime()/1000);
+    $scope.tnow = 0;
     $scope.uploadImg = function (){
-        $scope.tnow = Math.round(new Date().getTime()/1000);
+        $scope.$apply(function() {
+            $scope.tnow = Math.round(new Date().getTime()/1000);
+        });
         $("#uploadbtn_submit").click();
         $(".index-mask").fadeIn("fast");
         console.log($scope.tnow);

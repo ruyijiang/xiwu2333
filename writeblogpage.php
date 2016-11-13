@@ -189,7 +189,7 @@ include("library/xwFE-0.0.1/FEM.php");
         <!--真正的图像处理区-->
         <form id="upload_img" method="POST" action="library/xwBE-0.0.1/php/uploadCoverImg_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">
             <input type="file" id="uploadbtn" name="coverImg" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('#ImgShower_container'),$('#ImgShower'));"/>
-            <input type="text" name="imgname" ng-model="tnow">
+            <input type="text" name="imgname" value="{{tnow}}">
             <input type="submit" id="uploadbtn_submit">
         </form>
 
