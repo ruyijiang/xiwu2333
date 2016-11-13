@@ -172,10 +172,10 @@ include("library/xwFE-0.0.1/FEM.php");
 
                 <div class="row text-center" style="margin-top:35px">
                     <a ng-click="showTab(2)" class="btn btn-md btn-default" style="padding-left:45px;padding-right:45px">上一步</a>
-                    <a ng-click="uploadImg()" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn" style="padding-left:25px;padding-right:25px">
-                        <span class="glyphicon glyphicon-cloud-upload"></span>上传图片
+                    <a ng-disabled="submitbtnAvail" ng-click="uploadImg()" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn" style="padding-left:25px;padding-right:25px">
+                        <span class="glyphicon glyphicon-cloud-upload"></span>{{uploadbtn_content}}
                     </a>
-                    <button ng-disabled="1==1" type="submit" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn"  style="padding-left:35px;padding-right:45px">
+                    <button ng-disabled="!submitbtnAvail" type="submit" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn"  style="padding-left:35px;padding-right:45px">
                         <span class="glyphicon glyphicon-send"></span>发表
                     </button>
                 </div>
@@ -183,13 +183,10 @@ include("library/xwFE-0.0.1/FEM.php");
 
         </form>
 
-
-
-
         <!--真正的图像处理区-->
         <form id="upload_img" method="POST" action="library/xwBE-0.0.1/php/uploadCoverImg_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">
             <input type="file" id="uploadbtn" name="coverImg" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('#ImgShower_container'),$('#ImgShower'));"/>
-            <input type="text" name="imgname" value="{{tnow}}">
+            <input type="text" name="imgname" id="imgname">
             <input type="submit" id="uploadbtn_submit">
         </form>
 

@@ -24,7 +24,6 @@ if($imgname){
         $filename = $uid."cover".$imgname.".".$value;
         $imgFile=$uploaddir.$filename;
 
-        var_dump($imgFile);
         if(file_exists($imgFile)){
             $isExist = true;
         }

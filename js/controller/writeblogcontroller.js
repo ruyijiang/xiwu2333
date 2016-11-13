@@ -7,7 +7,8 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
     $rootScope.NowPageTitle = "写文章 - 喜屋";
     $scope.TabShow = 1;
-
+    $scope.submitbtnAvail = false;
+    $scope.uploadbtn_content = "确认，上传";
 
     //页面数据模板
     $scope.pageData = {
@@ -36,25 +37,44 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     $scope.selectImg = function (){
         $("#uploadbtn").click();
     };
+
+
     /**
      * 开始上传图片
      */
-    $scope.tnow = 0;
     $scope.uploadImg = function (){
-        $scope.$apply(function() {
-            $scope.tnow = Math.round(new Date().getTime()/1000);
-        });
+        $scope.tnow = Math.round(new Date().getTime()/1000);
+        $scope.uploadbtn_content = "上传中...";
+
+        $("#imgname").val($scope.tnow);//之所以用jq指定值，而不是使用angular的{{}}或ng-model，是因为提交表单的时候，提交的是字面值，而ng的值
+        //在表单提交的时候，并没有赋予该控件
+
         $("#uploadbtn_submit").click();
         $(".index-mask").fadeIn("fast");
-        console.log($scope.tnow);
-        $interval(function (){
+        var timer_times = 0;
+        var timer_CheckImgExsit = $interval(function (){
             $http({
                 method: 'GET',
                 url: 'library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php',
                 params:{'imgname':$scope.tnow}
             }).then(function (httpCont){
 
-                console.log(httpCont);
+                if(httpCont.data.statuscode == 1){//已经成功上传
+                    $interval.cancel(timer_CheckImgExsit);
+                    $(".index-mask").fadeOut("fast");
+                    $scope.submitbtnAvail = true;
+                    $scope.uploadbtn_content = "上传成功";
+                }else{
+
+                    if(timer_times >= 25){//25s没有检测到，即认为上传失败了
+                        $interval.cancel(timer_CheckImgExsit);
+                        alert ("上传失败");
+                        $(".index-mask").fadeOut("fast");
+                    }
+
+                    timer_times++;
+
+                }
 
             })
 
