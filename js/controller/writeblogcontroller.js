@@ -12,6 +12,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     //页面数据模板
     $scope.pageData = {
+
         BtnContent:"查看原文"
     };
 
