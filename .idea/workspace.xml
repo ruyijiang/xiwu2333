@@ -4,6 +4,7 @@
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" afterPath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeblogpage.php" afterPath="$PROJECT_DIR$/writeblogpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +39,7 @@
       <file leaf-file-name="isCoverImgExist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="509">
               <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
@@ -48,8 +49,8 @@
       <file leaf-file-name="writeblogpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeblogpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+            <state relative-caret-position="245">
+              <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -58,14 +59,15 @@
       <file leaf-file-name="writeblogcontroller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="218">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
-                <element signature="e#477#506#0" expanded="false" />
-                <element signature="e#775#805#0" expanded="false" />
-                <element signature="e#888#913#0" expanded="false" />
-                <element signature="e#2229#2264#0" expanded="false" />
+                <element signature="e#555#584#0" expanded="false" />
+                <element signature="e#877#907#0" expanded="false" />
+                <element signature="e#990#1015#0" expanded="false" />
+                <element signature="e#2331#2366#0" expanded="false" />
+                <element signature="e#3135#3219#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -165,8 +167,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php" />
-        <option value="$PROJECT_DIR$/writeblogpage.php" />
         <option value="$PROJECT_DIR$/js/utill/all.js" />
+        <option value="$PROJECT_DIR$/writeblogpage.php" />
         <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
       </list>
     </option>
@@ -228,18 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -412,6 +402,18 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
       </pane>
     </panes>
   </component>
@@ -1102,14 +1104,11 @@
       <workItem from="1478966037986" duration="3408000" />
       <workItem from="1479005326942" duration="4200000" />
       <workItem from="1479049088684" duration="3172000" />
-      <workItem from="1479087048974" duration="8077000" />
-    </task>
-    <task id="LOCAL-00079" summary="fixed image wrong in person.modal">
-      <created>1470704635540</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1470704635540</updated>
+      <workItem from="1479087048974" duration="8394000" />
+      <workItem from="1479359721186" duration="119000" />
+      <workItem from="1479369356761" duration="595000" />
+      <workItem from="1479437095424" duration="125000" />
+      <workItem from="1479447919501" duration="4693000" />
     </task>
     <task id="LOCAL-00080" summary="fixed avatar wrong in search.php">
       <created>1470705043065</created>
@@ -1447,18 +1446,25 @@
       <option name="project" value="LOCAL" />
       <updated>1478092945371</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="。。。">
+      <created>1479113925778</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1479113925813</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2371185000" />
+    <option name="totallyTimeSpent" value="2377034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23827533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1536,10 +1542,10 @@
     <MESSAGE value="调整了person页面部分样式" />
     <MESSAGE value="修改了部分样式" />
     <MESSAGE value="i dont  know what happened" />
-    <MESSAGE value="。。。" />
     <MESSAGE value="add  some" />
     <MESSAGE value="重新设计了writeblog页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="重新设计了writeblog页面" />
+    <MESSAGE value="。。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="。。。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1871,16 +1877,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="509">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1898,16 +1896,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="218">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#477#506#0" expanded="false" />
-            <element signature="e#775#805#0" expanded="false" />
-            <element signature="e#888#913#0" expanded="false" />
-            <element signature="e#2229#2264#0" expanded="false" />
+            <element signature="e#555#584#0" expanded="false" />
+            <element signature="e#877#907#0" expanded="false" />
+            <element signature="e#990#1015#0" expanded="false" />
+            <element signature="e#2331#2366#0" expanded="false" />
+            <element signature="e#3135#3219#0" expanded="false" />
           </folding>
         </state>
       </provider>

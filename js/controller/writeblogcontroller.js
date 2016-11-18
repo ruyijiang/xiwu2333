@@ -12,14 +12,17 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     //页面数据模板
     $scope.pageData = {
-
-        BtnContent:"查看原文"
+        title:"",//标题
+        subtitle:"",//副标题
+        abstract:"",//摘要
+        BtnContent:"查看原文"//按钮文字
     };
 
 
     /**
      * 根据步数显示对应区域
      */
+    var ueditor = null;
     $scope.showTab = function (TabShow_Index){
         $scope.TabShow = TabShow_Index;
 
@@ -108,6 +111,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         })
     }
 
+    
     /**
      * 如果采用AJAX方式提交表单，则在form ng-submit属性上添加此函数
      * @returns {boolean}
@@ -115,10 +119,8 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     $scope.articlesubmit = function () {
         $("#submit_btn").button('loading');//提交时按钮disable
         //获取要提交的内容
-        var a_title = $("input#a_title").val();//文章标题
         var a_content = ueditor.getContent();//文章内容
         var alength = ueditor.getContentTxt().length;
-        a_cotent = htmlencode(a_content);
 
         if(!ueditor.hasContents()){
             $("#submit_btn").button('reset');
@@ -157,6 +159,11 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         })
     };
 
+    
+    
+    
+    
+    
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
 }).filter(

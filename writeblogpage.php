@@ -56,7 +56,7 @@ include("library/xwFE-0.0.1/FEM.php");
             </div>
         </div>
 
-        <form>
+        <form ng-submit="articlesubmit()">
             <!-- blog-writer-part1 -->
             <div ng-show="TabShow == '1'" class="blog-writer-part1 col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10">
                 <div class="row" style="margin-top:35px">
@@ -64,7 +64,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label class="col-lg-2 col-sm-2 control-label text-right">标题<sup style="color:red">*</sup></label>
                             <div class="col-lg-10 col-sm-10">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" ng-model="pageData.title">
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label class="col-lg-2 col-sm-2 control-label text-right">副标题<sup style="color:red">*</sup></label>
                             <div class="col-lg-10 col-sm-10">
-                                <textarea type="text" class="form-control" style="resize: vertical" rows="2"></textarea>
+                                <textarea type="text" class="form-control" style="resize: vertical" rows="2" ng-model="pageData.subtitle"></textarea>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label class="col-lg-2 col-sm-2 control-label text-right">摘要</label>
                             <div class="col-lg-10 col-sm-10">
-                                <textarea type="text" class="form-control" style="resize: vertical" rows="4"></textarea>
+                                <textarea type="text" class="form-control" style="resize: vertical" rows="4" ng-model="pageData.abstract"></textarea>
                             </div>
                         </div>
                     </div>
