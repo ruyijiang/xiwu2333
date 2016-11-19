@@ -9,14 +9,41 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     $scope.TabShow = 1;
     $scope.submitbtnAvail = false;
     $scope.uploadbtn_content = "确认，上传";
+    //模态窗口元素
+    $scope.chooseType = {
+        open:true,
+        title:"选择文章类型"
+    };
+
 
     //页面数据模板
     $scope.pageData = {
+        aType:"normal",//article类型
         title:"",//标题
         subtitle:"",//副标题
         abstract:"",//摘要
+        bg_color:null,//背景颜色
         BtnContent:"查看原文"//按钮文字
     };
+
+
+    /**
+     * 检测用户激活具有撰写封面文章的邀请码
+     */
+    $http({
+        method: 'GET',
+        url: 'library/xwBE-0.0.1/Interface/checkStatus/check_invitationcodeStatus.php',
+        params:{
+            'funcType':"WriteCovers"
+        }
+    }).then(function (httpCont){
+        /*
+         if(httpCont.data.statuscode == 1){//用户已激活对应功能的邀请码
+         $scope.chooseType.open = true;
+         }else{//用户未激活邀请码
+         $scope.chooseType.open = false;
+         }*/
+    });
 
 
     /**
@@ -27,9 +54,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         $scope.TabShow = TabShow_Index;
 
         if(TabShow_Index == 2){
-            $timeout(function (){
-                var ueditor = UE.getEditor('ueditor-main'); //启用UEditor
-            },0);
+            ueditor = UE.getEditor('ueditor-main'); //启用UEditor
         }
 
     };
@@ -63,11 +88,12 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                 params:{'imgname':$scope.tnow}
             }).then(function (httpCont){
 
-                if(httpCont.data.statuscode == 1){//已经成功上传
+                if(httpCont.data.statuscode !== 0){//已经成功上传
                     $interval.cancel(timer_CheckImgExsit);
                     $(".index-mask").fadeOut("fast");
                     $scope.submitbtnAvail = true;
                     $scope.uploadbtn_content = "上传成功";
+                    $scope.Tempcover_img = httpCont.data.statuscode;
                 }else{
 
                     if(timer_times >= 25){//25s没有检测到，即认为上传失败了
@@ -102,7 +128,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         }).then(function (httpCont){
 
             $scope.NeedModifiedTitle = htmldecode(httpCont.data.title);
-            $scope.NeedModifiedContent = htmldecode(httpCont.data.content);
+            $scope.NeedModifiedContent = htmldecode(httpCont.data.content);//-------------------------------------------------//-
 
             ueditor.addListener("ready", function () {// editor准备好之后才可以使用
                 ueditor.setContent($scope.NeedModifiedContent);
@@ -122,6 +148,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         var a_content = ueditor.getContent();//文章内容
         var alength = ueditor.getContentTxt().length;
 
+
         if(!ueditor.hasContents()){
             $("#submit_btn").button('reset');
             alert ("还没有写文章正文");
@@ -134,7 +161,18 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             method:'POST',
             async: false,
             dataType: 'json',
-            data:{"title":a_title,"content":a_content,"aid":InitArticleAid,"alength":alength},
+            data:{
+                "aType":$scope.pageData.aType,
+                "title":$scope.pageData.title,
+                "subtitle":$scope.pageData.subtitle,
+                "abstract":$scope.pageData.abstract,
+                "BtnContent":$scope.pageData.BtnContent,
+                "cover_img":$scope.Tempcover_img,
+                "bg_color":$scope.pageData.bg_color,
+                "content":a_content,
+                "aid":InitArticleAid,
+                "alength":alength
+            },
             success: function (data){
                 if(data.statuscode == '0'){
                     alert (data.message);
@@ -158,11 +196,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             }
         })
     };
-
-    
-    
-    
-    
     
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
@@ -177,7 +210,13 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     $scope.$on('colorPicked', function(event, color) {
         $scope.selectedForeColor = color;
+        $scope.$parent.pageData.bg_color = $scope.selectedForeColor;
     });
+
+
+
+
+
 
     // 动态设置默认颜色
     $scope.dynamicSetColor = dynamicSetColor;

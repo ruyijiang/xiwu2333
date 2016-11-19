@@ -12,8 +12,16 @@ require("../algorithm/AbstractofArticle.php");
 require("../algorithm/Liveness.php");
 ?>
 <?php
+//TO DO:缺少Cover_img
+
+    @$aType = $_POST["aType"];
     @$a_title = $_POST["title"];
+    @$subtitle = $_POST["subtitle"];
+    @$abstract = $_POST["abstract"];
     @$a_content = $_POST["content"];
+    @$cover_img = $_POST["cover_img"];
+    @$bg_color = $_POST["bg_color"];
+    @$BtnContent = $_POST["BtnContent"];
     @$aid = $_POST["aid"];
     @$ArtLength = $_POST["alength"];
 
@@ -64,7 +72,18 @@ require("../algorithm/Liveness.php");
                     echo $b->normalrespond($status,$reminder);
                     //------------------------------------------------------------------------------------------------->出口9：并不存在该文章s
                 }else{
-                    $sql = "UPDATE articles SET content = '$a_content',title = '$a_title' WHERE aid = '$aid' AND uid = '$uid' ";
+
+                    if($aType == "normal"){
+                        $sql = "UPDATE `articles` SET content = '$a_content',title = '$a_title',abstract = '$abstract' WHERE aid = '$aid' AND uid = '$uid' ";
+                    }else if($aType == "cover"){
+                        $sql = "UPDATE `covers` SET content = '$a_content',title = '$a_title',subtitle='$subtitle',abstract = '$abstract',cover_img='$cover_img',bg_color='$bg_color',btn_content='$BtnContent' WHERE cover_id = '$aid' AND uid = '$uid' ";
+                    }else{
+                        $status = 0;
+                        $reminder = "没有对应类型的文章分类，请重新填写";
+                        echo $b->normalrespond($status,$reminder);
+                        //--------------------------------------------------------------------------------------------->出口12：文章更新失败
+                        return false;
+                    }
                     $qry = $db->query($sql);
                     if($qry){
 
@@ -88,6 +107,7 @@ require("../algorithm/Liveness.php");
                         //--------------------------------------------------------------------------------------------->出口11：文章更新失败
                     }
                 }
+
             }else{
                 //没有指定aid,说明是新建
 
@@ -104,16 +124,27 @@ require("../algorithm/Liveness.php");
                     echo $b->normalrespond($status,$reminder);
                     //----------------------------------------------------------------------------------------------------->出口3：同样标题的文章已存在
                 }else{
-
                     //***将文章放入数据库.article表****//
                     $uid = $_SESSION["uid"];
                     $abc = create_Aid();
                     $a_DataBaseContent = addslashes($a_content);
-                    $a_AbNeededContent = getAbstract(strip_tags($a_content));
+                    if(empty($abstract)){
+                        $a_AbNeededContent = getAbstract(strip_tags($a_content));
+                    }else{
+                        $a_AbNeededContent = $abstract;
+                    }
 
-                    //$a_content = htmlspecialchars($a_content);
-                    $sql = "INSERT INTO articles(id,aid,uid,time,title,content,txt_url,abstract) VALUES ('','$abc','$uid','$tnow','$a_title','$a_DataBaseContent','$file','$a_AbNeededContent') ";
-                    $qry = $db->query($sql);
+                    if($aType == "normal"){
+                        $sql = "INSERT INTO `articles`(id,aid,uid,time,title,content,txt_url,abstract) VALUES ('','$abc','$uid','$tnow','$a_title','$a_DataBaseContent','$file','$a_AbNeededContent') ";
+                    }else if($aType == "cover"){
+                        $sql = "INSERT INTO `covers`(id,cover_id,uid,title,subtitle,abstract,cover_img,bg_color,btn_content,content,regtime,remark,) VALUES ('','$abc','$uid','$a_title','$subtitle','$a_AbNeededContent','$cover_img','$bg_color','$BtnContent','$a_content','$tnow','') ";
+                    }else{
+                        $status = 0;
+                        $reminder = "没有对应类型的文章分类，请重新填写";
+                        echo $b->normalrespond($status,$reminder);
+                        //--------------------------------------------------------------------------------------------->出口12：文章更新失败
+                        return false;
+                    }$qry = $db->query($sql);
                     if(!$qry){
                         $status = 0;
                         $reminder = "发表失败，没有成功提交。请联系管理员";

@@ -26,12 +26,13 @@ if($imgname){
 
         if(file_exists($imgFile)){
             $isExist = true;
+            $tempFileName = $imgFile;
         }
 
     }
 
     if($isExist === true){
-        $status = 1;
+        $status = $tempFileName;
         $reminder = "存在对应的cover封面";
         echo $a->normalrespond($status,$reminder);
         //--------------------------------------------------------------------------------------------------------->出口1，存在对应的cover封面

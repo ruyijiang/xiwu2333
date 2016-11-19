@@ -13,6 +13,7 @@ include("library/xwFE-0.0.1/FEM.php");
     .blog-success{color:#71a359}
     .blog-wanted{color:gray}
     .blog-wrong{color:#a24747}
+    .chooseAType label{cursor:pointer;font-weight:normal}
 </style>
 
 <div class="container" ng-controller="writeblogcontroller" style="margin-top:130px">
@@ -69,7 +70,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top:25px">
+                <div class="row" style="margin-top:25px" ng-if="pageData.aType == 'cover'">
                     <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10">
                         <div class="form-group">
                             <label class="col-lg-2 col-sm-2 control-label text-right">副标题<sup style="color:red">*</sup></label>
@@ -172,10 +173,10 @@ include("library/xwFE-0.0.1/FEM.php");
 
                 <div class="row text-center" style="margin-top:35px">
                     <a ng-click="showTab(2)" class="btn btn-md btn-default" style="padding-left:45px;padding-right:45px">上一步</a>
-                    <a ng-disabled="submitbtnAvail" ng-click="uploadImg()" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn" style="padding-left:25px;padding-right:25px">
+                    <a ng-disabled="submitbtnAvail" ng-click="uploadImg()" id="submit_btn" class="btn btn-md btn-primary submit_btn" style="padding-left:25px;padding-right:25px">
                         <span class="glyphicon glyphicon-cloud-upload"></span>{{uploadbtn_content}}
                     </a>
-                    <button ng-disabled="!submitbtnAvail" type="submit" id="submit_btn" data-loading-text="提交中..." class="btn btn-md btn-primary submit_btn"  style="padding-left:35px;padding-right:45px">
+                    <button ng-disabled="!submitbtnAvail" type="submit" id="submit_btn" class="btn btn-md btn-primary submit_btn"  style="padding-left:35px;padding-right:45px">
                         <span class="glyphicon glyphicon-send"></span>发表
                     </button>
                 </div>
@@ -183,6 +184,40 @@ include("library/xwFE-0.0.1/FEM.php");
 
         </form>
 
+        <dialog ng-if="chooseType.open" modal fixed>
+            <div dialog-title>{{chooseType.title}}</div>
+            <div dialog-content>
+
+                <div style="margin:15px;margin-bottom:25px" class="chooseAType">
+                    <label style="margin-right:35px">
+                        <input type="radio" name="aType" i-check value="cover" ng-model="pageData.aType" prop="pageData.aType"/>
+                        <span style="display:inline-block;margin-left:3px">封面文章</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="aType" i-check value="normal" ng-model="pageData.aType" prop="pageData.aType"/>
+                        <span style="display:inline-block;margin-left:3px">普通文章</span>
+                    </label>
+                </div>
+
+                <button ng-disabled="!pageData.aType" class="btn btn-primary center-block" role="button" ng-click="chooseType.open = false" style="display:block;margin-top:15px">确定</button>
+
+            </div>
+        </dialog>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--虚拟区域-->
         <!--真正的图像处理区-->
         <form id="upload_img" method="POST" action="library/xwBE-0.0.1/php/uploadCoverImg_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">
             <input type="file" id="uploadbtn" name="coverImg" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('#ImgShower_container'),$('#ImgShower'));"/>
