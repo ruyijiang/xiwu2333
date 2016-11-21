@@ -8,7 +8,7 @@
 ?>
 <?php
 
-function create_Aid(){
+function create_Aid($category){
     $aidstr = "";
 
     $numbers = range (10,99);
@@ -19,8 +19,11 @@ function create_Aid(){
     foreach ($result as $xa){
         $aidstr .= $xa;
     }
-
-    return "ART_".$aidstr;
+    if($category == "article"){
+        return "ART_".$aidstr;
+    }else if($category == "cover"){
+        return "CVR_".$aidstr;
+    }
 }
 
 ?>

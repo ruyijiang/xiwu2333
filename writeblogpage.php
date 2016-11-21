@@ -127,14 +127,14 @@ include("library/xwFE-0.0.1/FEM.php");
                                             选取背景颜色<span class="caret"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li ng-click="selectedForeColor = '#101010'">
-                                                <a>纯黑</a>
+                                            <li>
+                                                <a ng-click="selectedForeColor = '#101010'">纯黑</a>
                                             </li>
-                                            <li ng-click="selectedForeColor = '#323232'">
-                                                <a>深灰</a>
+                                            <li>
+                                                <a ng-click="selectedForeColor = '#323232'">深灰</a>
                                             </li>
-                                            <li ng-click="selectedForeColor = '#4d5422'">
-                                                <a>深绿</a>
+                                            <li>
+                                                <a ng-click="selectedForeColor = '#4d5422'">深绿</a>
                                             </li>
                                             <li class="divider"></li>
                                             <li color-picker set-color="dynamicSetColor()">
@@ -187,7 +187,6 @@ include("library/xwFE-0.0.1/FEM.php");
         <dialog ng-if="chooseType.open" modal fixed>
             <div dialog-title>{{chooseType.title}}</div>
             <div dialog-content>
-
                 <div style="margin:15px;margin-bottom:25px" class="chooseAType">
                     <label style="margin-right:35px">
                         <input type="radio" name="aType" i-check value="cover" ng-model="pageData.aType" prop="pageData.aType"/>

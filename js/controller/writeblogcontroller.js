@@ -18,11 +18,11 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     //页面数据模板
     $scope.pageData = {
-        aType:"normal",//article类型
+        aType:"normal",//article类型 | 有两种类型：normal普通文章；cover封面文章
         title:"",//标题
         subtitle:"",//副标题
         abstract:"",//摘要
-        bg_color:null,//背景颜色
+        bg_color:"",//背景颜色
         BtnContent:"查看原文"//按钮文字
     };
 
@@ -137,7 +137,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         })
     }
 
-    
+
     /**
      * 如果采用AJAX方式提交表单，则在form ng-submit属性上添加此函数
      * @returns {boolean}
@@ -156,6 +156,8 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             return false;
         }
         //根据标题和内容，发送请求
+        console.log($scope.selectedForeColor);
+
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/writeblog_action.php',
             method:'POST',
@@ -168,7 +170,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                 "abstract":$scope.pageData.abstract,
                 "BtnContent":$scope.pageData.BtnContent,
                 "cover_img":$scope.Tempcover_img,
-                "bg_color":$scope.pageData.bg_color,
+                "bg_color":$scope.selectedForeColor,
                 "content":a_content,
                 "aid":InitArticleAid,
                 "alength":alength
@@ -196,7 +198,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             }
         })
     };
-    
+
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
 }).filter(
@@ -210,12 +212,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     $scope.$on('colorPicked', function(event, color) {
         $scope.selectedForeColor = color;
-        $scope.$parent.pageData.bg_color = $scope.selectedForeColor;
     });
-
-
-
-
 
 
     // 动态设置默认颜色
@@ -224,5 +221,13 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     function dynamicSetColor() {
         return '#fafafa';
     }
+
+    $scope.$watch("selectedForeColor",function (newVal,oldVal){
+        if(oldVal !== undefined){
+            console.log ("检测到了变化");
+            console.log (newVal);
+            $scope.$parent.selectedForeColor = newVal;
+        }
+    })
 
 });
