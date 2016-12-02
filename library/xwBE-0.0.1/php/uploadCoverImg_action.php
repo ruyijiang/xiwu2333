@@ -11,13 +11,18 @@ require("../all.php");
 <?php
     @$uid = $_SESSION["uid"];
     $imgname = $_POST["imgname"];//imgname在前台进行控制，我们默认约定是此刻UNIX时间戳
+    $atype = $_POST["atype"];//imgname在前台进行控制，我们默认约定是此刻UNIX时间戳
     $a = new interfaceResponse();
     $status = $reminder = 0;
 
     if($uid && $imgname){
 
         $type = array("jpg","bmp","jpeg","png","gif");
-        $uploaddir = "../../../img/cover_img/";
+        if($atype == "cover"){
+            $uploaddir = "../../../img/cover_img/";
+        }else{
+            $uploaddir = "../../../img/article_img/";
+        }
 
         if($_FILES['coverImg']['name']){
             if(in_array(strtolower(getFileCate($_FILES['coverImg']['name'])),$type)){

@@ -76,10 +76,13 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         $scope.uploadbtn_content = "上传中...";
 
         $("#imgname").val($scope.tnow);//之所以用jq指定值，而不是使用angular的{{}}或ng-model，是因为提交表单的时候，提交的是字面值，而ng的值
+        $("#arttype").val($scope.pageData.aType);
         //在表单提交的时候，并没有赋予该控件
-
         $("#uploadbtn_submit").click();
         $(".index-mask").fadeIn("fast");
+
+
+
         var timer_times = 0;
         var timer_CheckImgExsit = $interval(function (){
             $http({
@@ -156,7 +159,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             return false;
         }
         //根据标题和内容，发送请求
-        console.log($scope.selectedForeColor);
 
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/writeblog_action.php',
