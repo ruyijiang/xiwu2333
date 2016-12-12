@@ -122,7 +122,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <li ng-click="selectImg()">
                                         <a>选择背景图片</a>
                                     </li>
-                                    <li class="dropdown">
+                                    <li class="dropdown" ng-if="pageData.aType == 'cover'">
                                         <a class="dropdown-toggle" data-toggle="dropdown">
                                             选取背景颜色<span class="caret"></span>
                                         </a>
@@ -144,10 +144,10 @@ include("library/xwFE-0.0.1/FEM.php");
                                             </li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li ng-if="pageData.aType == 'cover'">
                                         <a ng-click="showBtnContent = true">设置按钮文字</a>
                                     </li>
-                                    <li>
+                                    <li ng-if="pageData.aType == 'cover'">
                                         <input ng-show="showBtnContent" type="text" class="form-control" style="width:130px;margin:3px 0 0 5px" ng-model="pageData.BtnContent" maxlength="18">
                                     </li>
                                 </ul>
@@ -158,7 +158,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="row">
                             <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10" ng-style="{'background-color': selectedForeColor}" style="border:dashed #777 1px;border-radius:3px;height:300px;margin-top:15px">
                                 <div id="ImgShower_container" class="ImgShower" style="margin-left:15%;width:70%;height:100%">
-                                    <img id="ImgShower" width="100%" height="100%">
+                                    <img id="ImgShower" width="100%" height="100%"/>
                                     <div class="text-center" style="width:30%;position:absolute;color:#bababa;top:45%;left:35%">
                                         <small style="display: block">图片预览</small>
                                         <small style="display: block">建议上传分辨率较大的图片</small>
