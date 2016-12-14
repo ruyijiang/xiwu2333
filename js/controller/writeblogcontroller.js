@@ -82,7 +82,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         $(".index-mask").fadeIn("fast");
 
 
-
         var timer_times = 0;
         var timer_CheckImgExsit = $interval(function (){
             $http({

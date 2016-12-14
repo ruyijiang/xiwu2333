@@ -57,7 +57,7 @@ include("library/xwFE-0.0.1/FEM.php");
             </div>
         </div>
 
-        <form ng-submit="articlesubmit()">
+        <form ng-submit="articlesubmit()" novalidate role="form" id="writeblog_form" name="writeblog_form">
             <!-- blog-writer-part1 -->
             <div ng-show="TabShow == '1'" class="blog-writer-part1 col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10">
                 <div class="row" style="margin-top:35px">
@@ -65,7 +65,7 @@ include("library/xwFE-0.0.1/FEM.php");
                         <div class="form-group">
                             <label class="col-lg-2 col-sm-2 control-label text-right">标题<sup style="color:red">*</sup></label>
                             <div class="col-lg-10 col-sm-10">
-                                <input type="text" class="form-control" ng-model="pageData.title">
+                                <input validator="required" type="text" class="form-control" ng-model="pageData.title" >
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@ include("library/xwFE-0.0.1/FEM.php");
                             </div>
                         </div>
                     </div>
-                    <div class="uploadImg">
+                    <div class="uploa dImg">
                         <div class="row">
                             <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10" ng-style="{'background-color': selectedForeColor}" style="border:dashed #777 1px;border-radius:3px;height:300px;margin-top:15px">
                                 <div id="ImgShower_container" class="ImgShower" style="margin-left:15%;width:70%;height:100%">
