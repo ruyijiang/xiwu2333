@@ -316,3 +316,8 @@
 [2016-11-21 15:46:09]浏览[writeblog_action.php]，备注内容为：【发表失败：test1】
 [2016-11-21 15:50:01]浏览[writeblog_action.php]，备注内容为：【发表失败：test1】
 [2016-11-21 15:50:36]浏览[writeblog_action.php]，备注内容为：【发表了文章：test1】
+[2016-12-19 10:28:06]浏览[writeblog_action.php]，备注内容为：【发表了文章：AAA】
+[2016-12-19 14:55:14]浏览[writeblog_action.php]，备注内容为：【发表了文章：TEST2】
+[2016-12-19 16:00:52]浏览[writeblog_action.php]，备注内容为：【发表了文章：test_3title】
+[2016-12-19 16:49:42]浏览[writeblog_action.php]，备注内容为：【发表了文章：TEST4_TITLE】
+[2016-12-19 17:02:13]浏览[writeblog_action.php]，备注内容为：【发表了文章：TEST5_TITLE】

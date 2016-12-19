@@ -80,14 +80,16 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         //在表单提交的时候，并没有赋予该控件
         $("#uploadbtn_submit").click();
         $(".index-mask").fadeIn("fast");
-
-
+        
         var timer_times = 0;
         var timer_CheckImgExsit = $interval(function (){
             $http({
                 method: 'GET',
                 url: 'library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php',
-                params:{'imgname':$scope.tnow}
+                params:{
+                    'imgname':$scope.tnow,
+                    'imgCate':$scope.pageData.aType
+                }
             }).then(function (httpCont){
 
                 if(httpCont.data.statuscode !== 0){//已经成功上传
@@ -141,7 +143,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
 
     /**
-     * 如果采用AJAX方式提交表单，则在form ng-submit属性上添加此函数
+     * 如果采用AJAX方式提交表单，则 m ng-submit属性上添加此函数
      * @returns {boolean}
      */
     $scope.articlesubmit = function () {
@@ -150,15 +152,14 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         var a_content = ueditor.getContent();//文章内容
         var alength = ueditor.getContentTxt().length;
 
-
         if(!ueditor.hasContents()){
             $("#submit_btn").button('reset');
             alert ("还没有写文章正文");
             $("#identifier").modal("show");
             return false;
         }
-        //根据标题和内容，发送请求
 
+        //根据标题和内容，发送请求
         $.ajax({
             url:'../../library/xwBE-0.0.1/php/writeblog_action.php',
             method:'POST',
@@ -225,8 +226,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     $scope.$watch("selectedForeColor",function (newVal,oldVal){
         if(oldVal !== undefined){
-            console.log ("检测到了变化");
-            console.log (newVal);
             $scope.$parent.selectedForeColor = newVal;
         }
     })

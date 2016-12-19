@@ -20,8 +20,10 @@ require("../all.php");
         $type = array("jpg","bmp","jpeg","png","gif");
         if($atype == "cover"){
             $uploaddir = "../../../img/cover_img/";
+            $filename_mid = "cover";
         }else{
             $uploaddir = "../../../img/article_img/";
+            $filename_mid = "article";
         }
 
         if($_FILES['coverImg']['name']){
@@ -29,8 +31,7 @@ require("../all.php");
                 $filename=explode(".",$_FILES['coverImg']['name']);//$filename = ['201606141106','jpg']
                 do{
                     $doctype = $filename[1];//jpg
-                    $filename_mid = "cover";
-                    $filename = $uid."cover".$imgname.".".$doctype;
+                    $filename = $uid.$filename_mid.$imgname.".".$doctype;
 
                     $uploadfile=$uploaddir.$filename;
                 }while(file_exists($uploadfile));

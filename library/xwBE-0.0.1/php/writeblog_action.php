@@ -12,8 +12,6 @@ require("../algorithm/AbstractofArticle.php");
 require("../algorithm/Liveness.php");
 ?>
 <?php
-//TO DO:缺少Cover_img
-
     @$aType = $_POST["aType"];
     @$a_title = $_POST["title"];
     @$subtitle = $_POST["subtitle"];
@@ -74,7 +72,7 @@ require("../algorithm/Liveness.php");
                 }else{
 
                     if($aType == "normal"){
-                        $sql = "UPDATE `articles` SET content = '$a_content',title = '$a_title',abstract = '$abstract' WHERE aid = '$aid' AND uid = '$uid' ";
+                        $sql = "UPDATE `articles` SET content = '$a_content',title = '$a_title',subtitle = '$abstract',article_img = '$cover_img' WHERE aid = '$aid' AND uid = '$uid' ";
                     }else if($aType == "cover"){
                         $sql = "UPDATE `covers` SET content = '$a_content',title = '$a_title',subtitle='$subtitle',abstract = '$abstract',cover_img='$cover_img',bg_color='$bg_color',btn_content='$BtnContent' WHERE cover_id = '$aid' AND uid = '$uid' ";
                     }else{
@@ -109,8 +107,8 @@ require("../algorithm/Liveness.php");
                 }
 
             }else{
-                //没有指定aid,说明是新建
 
+                //没有指定aid,说明是新建
                 $sql = "SELECT * FROM articles WHERE title = '$a_title' ";
                 $qry = $db->query($sql);
                 @$row = $qry->fetch_assoc();
@@ -135,7 +133,7 @@ require("../algorithm/Liveness.php");
 
                     if($aType == "normal"){
                         $abc = create_Aid('article');
-                        $sql = "INSERT INTO `articles`(id,aid,uid,time,title,content,txt_url,abstract) VALUES ('','$abc','$uid','$tnow','$a_title','$a_DataBaseContent','$file','$a_AbNeededContent') ";
+                        $sql = "INSERT INTO `articles`(id,aid,uid,time,title,content,txt_url,article_img,subtitle) VALUES ('','$abc','$uid','$tnow','$a_title','$a_DataBaseContent','$file','$cover_img','$a_AbNeededContent') ";
                     }else if($aType == "cover"){
                         $abc = create_Aid('cover');
                         $sql = "INSERT INTO `covers`(id,cover_id,uid,title,subtitle,abstract,cover_img,bg_color,btn_content,content,regtime,remark) VALUES ('','$abc','$uid','$a_title','$subtitle','$a_AbNeededContent','$cover_img','$bg_color','$BtnContent','$a_content','$tnow','') ";
