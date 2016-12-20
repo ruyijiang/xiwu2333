@@ -104,7 +104,7 @@ header("Content-Type: text/html; charset=utf-8");
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-3 blog-sidebar">
           <div class="user-avatar">
               <h5 style="border-bottom:solid #f1f1f1 1px;padding-bottom:5px">作者：</h5>
-          	<a ng-href="/#/person?uid={{BlogExport.uid}}"><img ng-src="{{BlogExport.avatar}}" class="img-responsive img-rounded" width="198" height="198"/></a>
+              <a ng-href="/#/person?uid={{BlogExport.uid}}"><img ng-src="{{BlogExport.avatar}}" class="center-block img-rounded" width="198" height="198"/></a>
           </div>
           <div class="sidebar-module sidebar-module-inset" style="margin-top:15px">
             <strong style="font-size:19px;">{{BlogExport.name}}</strong><i class="iconfont icon-renzheng" style="font-size:22px;color:#d87f00;margin-left:5px" title="{{BlogExport.callingcard_name}}"></i>

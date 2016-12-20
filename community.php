@@ -184,7 +184,7 @@ include("library/xwFE-0.0.1/FEM.php");
                     <hr style="border-top:solid 1px #c3c3c3">
                     <div class="figures_container">
                         <a ng-repeat="xHP in pageData_HotPersons" ng-href="/#/person?uid={{xHP.uid}}" title="{{xHP.title}}">
-                            <img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" ng-src="{{xHP.avatar}}" width/>
+                            <img class="col-lg-3 col-md-4 col-sm-4 col-xs-6" ng-src="{{xHP.avatar}}" width="90" height="90"/>
                         </a>
                     </div>
                 </div><!--End of figures-->
