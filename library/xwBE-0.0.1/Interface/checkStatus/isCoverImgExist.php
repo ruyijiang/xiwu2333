@@ -19,14 +19,16 @@ if($imgname){
 
     if($imgCate == "cover"){
         $uploaddir = "../../../../img/cover_img/";
+        $ImgMidName = "cover";
     }else{
         $uploaddir = "../../../../img/article_img/";
+        $ImgMidName = "article";
     }
     $type = array("jpg","bmp","jpeg","png","gif");
 
     $isExist = false;
     foreach ($type as $key => $value){
-        $filename = $uid."cover".$imgname.".".$value;
+        $filename = $uid.$ImgMidName.$imgname.".".$value;
         $imgFile=$uploaddir.$filename;
 
         if(file_exists($imgFile)){

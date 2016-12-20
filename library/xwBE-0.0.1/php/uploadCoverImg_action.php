@@ -32,7 +32,6 @@ require("../all.php");
                 do{
                     $doctype = $filename[1];//jpg
                     $filename = $uid.$filename_mid.$imgname.".".$doctype;
-
                     $uploadfile=$uploaddir.$filename;
                 }while(file_exists($uploadfile));
 

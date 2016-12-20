@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="修正了blog和community页面中的用户头像的样式。">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogpage.php" afterPath="$PROJECT_DIR$/blogpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/community.php" afterPath="$PROJECT_DIR$/community.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,31 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blogpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="106" column="151" selection-start-line="106" selection-start-column="151" selection-end-line="106" selection-end-column="151" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="community.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/community.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="186" column="122" selection-start-line="186" selection-start-column="122" selection-end-line="186" selection-end-column="122" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="writeblogpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeblogpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1525">
-              <caret line="176" column="44" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+            <state relative-caret-position="229">
+              <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -76,11 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploadCoverImg_action.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="uploadCoverImg_action.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="253">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isCoverImgExist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -180,11 +171,11 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/algorithm/RandAid.php" />
         <option value="$PROJECT_DIR$/writeblogpage.php" />
         <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/writeblog_action.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php" />
         <option value="$PROJECT_DIR$/blogpage.php" />
         <option value="$PROJECT_DIR$/community.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php" />
       </list>
     </option>
   </component>
@@ -1026,14 +1017,7 @@
       <workItem from="1481677947994" duration="10896000" />
       <workItem from="1481851104289" duration="8334000" />
       <workItem from="1482111819637" duration="18095000" />
-      <workItem from="1482196033031" duration="410000" />
-    </task>
-    <task id="LOCAL-00085" summary="add a new charts in personpage.php">
-      <created>1470992491977</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1470992491990</updated>
+      <workItem from="1482196033031" duration="2140000" />
     </task>
     <task id="LOCAL-00086" summary="重新梳理了php抓取程序">
       <created>1471338228617</created>
@@ -1371,11 +1355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482138541216</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="修正了blog和community页面中的用户头像的样式。">
+      <created>1482196486664</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1482196486664</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2459775000" />
+    <option name="totallyTimeSpent" value="2461505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1438,7 +1429,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加了远程表单验证，但是目前依赖注入有问题。" />
     <MESSAGE value="修改了angular-validation-rule，但是还存在远程验证的问题。" />
     <MESSAGE value="基本上完成了实时检测自定义URL是否可用" />
     <MESSAGE value="基本上完成writeTopic.modal和setTopic接口" />
@@ -1463,7 +1453,8 @@
     <MESSAGE value="..." />
     <MESSAGE value="添加了必填验证。" />
     <MESSAGE value="增加了图片名字的修改。" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了图片名字的修改。" />
+    <MESSAGE value="修正了blog和community页面中的用户头像的样式。" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正了blog和community页面中的用户头像的样式。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1766,14 +1757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/check_invitationcodeStatus.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1781,6 +1764,22 @@
           <folding>
             <marker date="1479691722076" expanded="true" signature="521:634" ph="SELECT iccod... invitationcode" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="186" column="122" selection-start-line="186" selection-start-column="122" selection-end-line="186" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="106" column="151" selection-start-line="106" selection-start-column="151" selection-end-line="106" selection-end-column="151" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1799,10 +1798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php">
+    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="229">
+          <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1815,26 +1814,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="176" column="44" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+        <state relative-caret-position="233">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogpage.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/uploadCoverImg_action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="106" column="151" selection-start-line="106" selection-start-column="151" selection-end-line="106" selection-end-column="151" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/community.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="186" column="122" selection-start-line="186" selection-start-column="122" selection-end-line="186" selection-end-column="122" />
+        <state relative-caret-position="253">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding />
         </state>
       </provider>
