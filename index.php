@@ -44,7 +44,6 @@ include("library/xwFE-0.0.1/FEM.php");
 <body>
 
 <?php
-//输出header头部navi_bar
 if(isset($_SESSION['loginstatus']) == 1 && !empty($_SESSION['uid'])){
 	echo $header_registered;
 }else{

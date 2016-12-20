@@ -16,15 +16,30 @@ require("../all.php");
     $status = $reminder = 0;
 
     $sql = "SELECT id,aid,title,content,uid,time,read_times FROM articles WHERE aid = '$aid' ";
-
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
+    $blogCate = "normal";
+
+    if($row == null){
+        $sql = "SELECT * FROM covers WHERE cover_id = '$aid' ";
+        $qry = $db->query($sql);
+        $row = $qry->fetch_assoc();
+        $blogCate = "cover";
+    }
+
     if(!empty($row)){
 
         $result_id = $row["id"];
-        $result_aid = $row["aid"];//文章aid
+        if($blogCate !== "cover"){
+            $result_aid = $row["aid"];//cover_aid
+            $result_read_times = $row["read_times"];
+            $result_time = $row["time"];//文章发表时间
+        }else{
+            $result_aid = $row["cover_id"];//文章aid
+            $result_read_times = $row["read_times"];
+            $result_time = $row["regtime"];//文章发表时间
+        }
         $result_uid = $row["uid"];//作者uid
-        $result_read_times = $row["read_times"];
 
         $sql_prev = "SELECT aid FROM articles WHERE id < '$result_id' AND uid = '$result_uid' ORDER BY id DESC LIMIT 0,1 ";
         $qry_prev = $db->query($sql_prev);
@@ -38,7 +53,6 @@ require("../all.php");
         $result_uid == $uid?$result_permission=true:$result_permission=false;//用户权限
         $result_title = $row["title"];//文章标题
         $result_content = $row["content"];//文章正文
-        $result_time = $row["time"];//文章发表时间
 
         $result_uid = $row["uid"];//文章作者uid
         //根据uid获取该用户热度前三的文章
