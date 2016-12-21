@@ -20,7 +20,8 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
     }).error(function (reason){
         deferred.reject(reason);
     }).then(function (httpCont){
-
+        //TODO:COMPLETE THIS
+        $scope.Covers = httpCont.data;
 
     });
 
