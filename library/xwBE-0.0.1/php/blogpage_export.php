@@ -41,6 +41,7 @@ require("../all.php");
             $result_bg_img = $row["cover_img"];//
             $result_time = $row["regtime"];//封面文章发表时间
         }
+
         $result_uid = $row["uid"];//作者uid
 
         $sql_prev = "SELECT aid FROM articles WHERE id < '$result_id' AND uid = '$result_uid' ORDER BY id DESC LIMIT 0,1 ";
@@ -89,11 +90,12 @@ require("../all.php");
             $result_author_liveplain = $row2["liveplain"];//作者直播平台
         }else $liveplain_status = 0;
 
-
         @$dataArr = array ('aid'=>$result_aid,'title'=>$result_title,'content'=>htmlspecialchars($result_content),'time'=>$result_time,'uid'=>$result_uid,'permission'=>$result_permission,'name'=>$result_author_name,'gender'=>$result_gender,'callingcard_name'=>$result_author_callingcard_name,'slogan'=>$result_author_slogan,'hotblog'=>$result_hotblog,'avatar'=>$result_author_avatar,'bg_img'=>$result_bg_img,'weibo_status'=>$weibo_status,'weibo'=>$result_author_weibo,'liveplain_status'=>$liveplain_status,'liveplain'=>$result_author_liveplain,'prev_aid'=>$result_prev,'next_aid'=>$result_next);
+
         foreach ( $dataArr as $key => $value ) {
             $dataArr[$key] = urlencode ($value) ;
         }
+
         $dataArr = urldecode ( json_encode ( $dataArr ));
         echo $dataArr;
 
