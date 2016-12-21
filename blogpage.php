@@ -17,8 +17,10 @@ header("Content-Type: text/html; charset=utf-8");
                       <a style="display:inline-block;margin-left:10px" style="padding-bottom:15px"><span class="glyphicon glyphicon-comment" style="display:inline-block;margin-right:2px;"></span>{{commentsLen}}条评论</a>
                   </div>
 
-                  <div class="blog_title_mask" style="position:absolute;right:0;top:0;width:54%;height:100%;background:linear-gradient(to left,transparent 17%,rgba(255,255,255,1) 86%);z-index:2;"></div>
-                  <div class="blog_title_img" style="position:absolute;right:0;top:0;width:54%;height:100%;background-image:url('img/main_bg/20130428100656532.jpg');z-index:1;border-radius:7px"></div>
+                  <div class="blog_title_mask" style="position:absolute;right:0;top:0;width:68%;height:100%;background:linear-gradient(to left,transparent 17%,rgba(255,255,255,1) 86%);z-index:2;"></div>
+                  <div class="blog_title_img" style="position:absolute;right:0;top:0;width:68%;height:100%;z-index:1">
+                      <img width="100%" height="100%" class="img-rounded" ng-src="{{BlogExport.bg_img}}">
+                  </div>
                   
                   <div ng-if="BlogExport.permission == true">
                       <a role="button" class="btn btn-danger btn-xs" id="delete_a" ng-click="dialog_confirmdelete.open=true"><span class="glyphicon glyphicon-remove"></span>删除</a>

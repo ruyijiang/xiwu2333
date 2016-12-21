@@ -133,7 +133,6 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
                 "target_id":A_aid,
                 "now_page":num,
                 "num_onepage":6
-
             },
             success: function (data){
                 $scope.ArticleDataArr = welcomejsonarrstring(data);
