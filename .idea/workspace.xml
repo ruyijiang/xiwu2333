@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogpage.php" afterPath="$PROJECT_DIR$/blogpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/blogpagecontroller.js" afterPath="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,14 +40,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
               <caret line="54" column="48" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogpagecontroller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blogpagecontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
@@ -62,56 +58,38 @@
       <file leaf-file-name="blogpage_export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+            <state relative-caret-position="177">
+              <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
               <folding>
-                <marker date="1482287443046" expanded="true" signature="280:360" ph="SELECT id,ai... " />
-                <marker date="1482287443046" expanded="true" signature="490:534" ph="SELECT * FRO... covers" />
-                <marker date="1482287443046" expanded="true" signature="1235:1334" ph="SELECT aid F... articles" />
-                <marker date="1482287443046" expanded="true" signature="1498:1596" ph="SELECT aid F... articles" />
-                <marker date="1482287443046" expanded="true" signature="2008:2099" ph="SELECT aid,t... articles" />
-                <marker date="1482287443046" expanded="true" signature="2409:2494" ph="SELECT name,... users" />
-                <marker date="1482287443046" expanded="true" signature="2800:2857" ph="SELECT conte... callingcard" />
-                <marker date="1482287443046" expanded="true" signature="4185:4264" ph="UPDATE artic... " />
+                <element signature="e#6#86#0#PHP" expanded="false" />
+                <marker date="1482288556870" expanded="true" signature="280:360" ph="SELECT id,ai... " />
+                <marker date="1482288556870" expanded="true" signature="490:534" ph="SELECT * FRO... covers" />
+                <marker date="1482288556870" expanded="true" signature="1236:1335" ph="SELECT aid F... articles" />
+                <marker date="1482288556870" expanded="true" signature="1499:1597" ph="SELECT aid F... articles" />
+                <marker date="1482288556870" expanded="true" signature="2009:2100" ph="SELECT aid,t... articles" />
+                <marker date="1482288556870" expanded="true" signature="2410:2495" ph="SELECT name,... users" />
+                <marker date="1482288556870" expanded="true" signature="2801:2858" ph="SELECT conte... callingcard" />
+                <marker date="1482288556870" expanded="true" signature="4187:4266" ph="UPDATE artic... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="getComments.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FEM.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state relative-caret-position="305">
+              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
               <folding>
-                <marker date="1482214154858" expanded="true" signature="279:332" ph="SELECT avata... users" />
-                <marker date="1482214154858" expanded="true" signature="751:762" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="1206:1224" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="1279:1334" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="1847:1862" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="2045:2133" ph="..." />
-                <marker date="1482214154858" expanded="false" signature="2590:2601" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="2659:5013" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="2682:5007" ph="..." />
-                <marker date="1482214154858" expanded="false" signature="3091:3140" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="3221:5001" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="3507:4995" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="3568:3583" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="3766:3854" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="5346:5378" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="5517:5527" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="7404:7465" ph="..." />
-                <marker date="1482214154858" expanded="true" signature="7485:7546" ph="..." />
+                <marker date="1482289144044" expanded="true" signature="846:897" ph="SELECT aid F... articles" />
+                <marker date="1482289144044" expanded="true" signature="1010:1069" ph="SELECT aid F... articles" />
+                <marker date="1482289144044" expanded="true" signature="1511:1643" ph="SELECT comme... comments" />
+                <marker date="1482289144044" expanded="true" signature="2129:2190" ph="SELECT uid,n... users" />
+                <marker date="1482289144044" expanded="true" signature="2533:2597" ph="SELECT uid,n... users" />
+                <marker date="1482289144044" expanded="true" signature="3475:3534" ph="SELECT topic... topics" />
+                <marker date="1482289144044" expanded="true" signature="3944:4076" ph="SELECT comme... comments" />
+                <marker date="1482289144044" expanded="true" signature="4562:4623" ph="SELECT uid,n... users" />
+                <marker date="1482289144044" expanded="true" signature="4966:5030" ph="SELECT uid,n... users" />
               </folding>
             </state>
           </provider>
@@ -163,7 +141,6 @@
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
         <option value="$PROJECT_DIR$/js/directive/icheck/iCheck.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/topic_action.php" />
         <option value="$PROJECT_DIR$/js/controller/topicController.js" />
@@ -196,9 +173,10 @@
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/library/xwFE-0.0.1/FEM.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php" />
         <option value="$PROJECT_DIR$/blogpage.php" />
         <option value="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php" />
       </list>
     </option>
   </component>
@@ -1042,21 +1020,7 @@
       <workItem from="1482111819637" duration="18095000" />
       <workItem from="1482196033031" duration="11559000" />
       <workItem from="1482282266925" duration="1338000" />
-      <workItem from="1482287119117" duration="865000" />
-    </task>
-    <task id="LOCAL-00088" summary="为square增加了轮播，制定了设计初稿。">
-      <created>1471855858924</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1471855858936</updated>
-    </task>
-    <task id="LOCAL-00089" summary="redesign button in carousel">
-      <created>1471856608229</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1471856608230</updated>
+      <workItem from="1482287119117" duration="2104000" />
     </task>
     <task id="LOCAL-00090" summary="design square">
       <created>1471943081784</created>
@@ -1387,11 +1351,25 @@
       <option name="project" value="LOCAL" />
       <updated>1482217774619</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="支持blog页面头部背景图片">
+      <created>1482287999493</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1482287999494</updated>
+    </task>
+    <task id="LOCAL-00138" summary="支持blog页面头部背景图片">
+      <created>1482288606678</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1482288606678</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2473127000" />
+    <option name="totallyTimeSpent" value="2474366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1454,7 +1432,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="基本上完成writeTopic.modal和setTopic接口" />
     <MESSAGE value="basicly complete getLatestTopic.php" />
     <MESSAGE value="about finish topic_action.php and improved checkUrl.php" />
     <MESSAGE value="about finish setTopic.interface." />
@@ -1479,7 +1456,8 @@
     <MESSAGE value="修正了blog和community页面中的用户头像的样式。" />
     <MESSAGE value="修正了不能正确判断普通文章图片的问题" />
     <MESSAGE value="blogpage_export接口增加了对cover的支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="blogpage_export接口增加了对cover的支持" />
+    <MESSAGE value="支持blog页面头部背景图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="支持blog页面头部背景图片" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1488,13 +1466,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/writeTopic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="85" column="50" selection-start-line="85" selection-start-column="50" selection-end-line="85" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1833,7 +1804,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="48">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
@@ -1843,25 +1814,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="54" column="48" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+        <state relative-caret-position="177">
+          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
           <folding>
-            <marker date="1482287443046" expanded="true" signature="280:360" ph="SELECT id,ai... " />
-            <marker date="1482287443046" expanded="true" signature="490:534" ph="SELECT * FRO... covers" />
-            <marker date="1482287443046" expanded="true" signature="1235:1334" ph="SELECT aid F... articles" />
-            <marker date="1482287443046" expanded="true" signature="1498:1596" ph="SELECT aid F... articles" />
-            <marker date="1482287443046" expanded="true" signature="2008:2099" ph="SELECT aid,t... articles" />
-            <marker date="1482287443046" expanded="true" signature="2409:2494" ph="SELECT name,... users" />
-            <marker date="1482287443046" expanded="true" signature="2800:2857" ph="SELECT conte... callingcard" />
-            <marker date="1482287443046" expanded="true" signature="4185:4264" ph="UPDATE artic... " />
+            <element signature="e#6#86#0#PHP" expanded="false" />
+            <marker date="1482288556870" expanded="true" signature="280:360" ph="SELECT id,ai... " />
+            <marker date="1482288556870" expanded="true" signature="490:534" ph="SELECT * FRO... covers" />
+            <marker date="1482288556870" expanded="true" signature="1236:1335" ph="SELECT aid F... articles" />
+            <marker date="1482288556870" expanded="true" signature="1499:1597" ph="SELECT aid F... articles" />
+            <marker date="1482288556870" expanded="true" signature="2009:2100" ph="SELECT aid,t... articles" />
+            <marker date="1482288556870" expanded="true" signature="2410:2495" ph="SELECT name,... users" />
+            <marker date="1482288556870" expanded="true" signature="2801:2858" ph="SELECT conte... callingcard" />
+            <marker date="1482288556870" expanded="true" signature="4187:4266" ph="UPDATE artic... " />
           </folding>
         </state>
       </provider>
@@ -1871,6 +1841,24 @@
         <state relative-caret-position="142">
           <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <marker date="1482289144044" expanded="true" signature="846:897" ph="SELECT aid F... articles" />
+            <marker date="1482289144044" expanded="true" signature="1010:1069" ph="SELECT aid F... articles" />
+            <marker date="1482289144044" expanded="true" signature="1511:1643" ph="SELECT comme... comments" />
+            <marker date="1482289144044" expanded="true" signature="2129:2190" ph="SELECT uid,n... users" />
+            <marker date="1482289144044" expanded="true" signature="2533:2597" ph="SELECT uid,n... users" />
+            <marker date="1482289144044" expanded="true" signature="3475:3534" ph="SELECT topic... topics" />
+            <marker date="1482289144044" expanded="true" signature="3944:4076" ph="SELECT comme... comments" />
+            <marker date="1482289144044" expanded="true" signature="4562:4623" ph="SELECT uid,n... users" />
+            <marker date="1482289144044" expanded="true" signature="4966:5030" ph="SELECT uid,n... users" />
+          </folding>
         </state>
       </provider>
     </entry>
