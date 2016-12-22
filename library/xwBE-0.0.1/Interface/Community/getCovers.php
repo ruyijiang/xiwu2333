@@ -25,19 +25,22 @@ if($timing){
 
     $EchoResult = array();
 
-    $sql = "SELECT cover_id,title,cover_desc,cover_img FROM covers WHERE post_time > '$todayStart' AND post_time >= '$tnow_stamp' + duration ORDER BY time DESC LIMIT 4";
+    $sql = "SELECT cover_id,title,subtitle,abstract,cover_img,bg_color,btn_content FROM covers WHERE post_time > '$todayStart' AND post_time >= '$tnow_stamp' + duration ORDER BY time DESC LIMIT 4";
     $qry = $db->query($sql);
     $row_all = mysqli_num_rows($qry);
     if($row_all >= 1){
 
         while($row = $qry->fetch_assoc()){
 
-            $result_topic_id = $row["cover_id"];
+            $result_cover_id = $row["cover_id"];
             $result_title = $row["title"];
             $result_subtitle = $row["subtitle"];
-            $result_img = $row["img"];
+            $result_abstract = $row["abstract"];
+            $result_cover_img = $row["cover_img"];
+            $result_bg_color = $row["bg_color"];
+            $result_btn_content = $row["btn_content"];
 
-            $dataArr = array('topic_id'=>$result_topic_id,'title'=>$result_title,'subtitle'=>$result_subtitle,'img'=>$result_img);
+            $dataArr = array('cover_id'=>$result_cover_id,'title'=>$result_title,'subtitle'=>$result_subtitle,'abstract'=>$result_abstract,'cover_img'=>$result_cover_img,'bg_color'=>$result_bg_color,'btn_content'=>$result_btn_content);
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
             }
