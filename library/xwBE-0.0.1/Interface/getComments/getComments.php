@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 /**
  * Created by PhpStorm.
@@ -38,11 +39,6 @@ if(!$target_id || !$cate){
         $qry = $db->query($sql);
         $row = $qry->fetch_assoc();
         if(!$row){
-            $sql2 = "SELECT cover_id FROM `covers` WHERE cover_id = '$target_id' ";
-            $qry2 = $db->query($sql2);
-            $row2 = $qry2->fetch_assoc();
-        }
-        if(!$row && !$row2){
             //----------------------------------------------------------------------------->不存在该文章
             $status = 0;
             $reminder = "指定文章并不存在，无法查询";
@@ -168,5 +164,4 @@ if(!$target_id || !$cate){
 
 
 }
-
 

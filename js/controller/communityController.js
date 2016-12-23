@@ -55,7 +55,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
         deferred.reject(reason);
     }).then(function (httpCont){
 
-
+        $scope.pageData_HotArticles = httpCont.data;
     });
 
 

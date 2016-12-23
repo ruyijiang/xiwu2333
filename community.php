@@ -64,33 +64,17 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="hotarticles">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-fire"></span>热门推荐</h4>
                     <hr>
-                    <div class="row featurette">
+
+                    <div ng-repeat="xHA in pageData_HotArticles" ng-href="/#/person?uid={{xHA.aid}}" class="row featurette">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            <h2 class="featurette-heading"> {{xHA.title}} <span class="text-muted">{{xHA.subtitle}}</span></h2>
+                            <p class="lead">{{xHA.abstract}}</p>
                         </div>
                         <div class="col-md-5">
-                            <img class="featurette-image img-responsive center-block" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="Generic placeholder image">
+                            <img class="featurette-image img-responsive center-block" ng-src="{{xHA.cover_img}}" alt="Generic placeholder image">
                         </div>
                     </div>
-                    <div class="row featurette">
-                        <div class="col-md-7 col-md-push-5">
-                            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                        </div>
-                        <div class="col-md-5 col-md-pull-7">
-                            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        </div>
-                    </div>
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        </div>
-                    </div>
+
                 </div>
 
                 <!-- 最新文章 -->

@@ -1,3 +1,5 @@
 .idea
 data
 .git
+*.xml
+.idea/workspace.xml
