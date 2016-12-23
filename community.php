@@ -15,18 +15,18 @@ include("library/xwFE-0.0.1/FEM.php");
             <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="item">
-                <img class="first-slide center-block" src="/img/main_bg/0e8fb0cd23e0d07f129f87067f4a3b4f8f92f23317219b-coNiZ0_fw658.gif" alt="First slide">
+            <div class="item" ng-repeat="xCar in Covers track by $index" ng-class="{'active':$index == 1}">
+                <img ng-src="{{xCar.cover_img}}">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>TI6 中国Wings战队夺冠！</h1>
-                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                        <p><a class="btn btn-lg btn-primary" role="button">查看原文</a></p>
+                        <h1>{{xCar.title}}</h1>
+                        <p>{{xCar.abstract}}</p>
+                        <p><a class="btn btn-lg btn-primary" role="button">{{xCar.btn_content}}</a></p>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img class="second-slide" src="/img/main_bg/7a425521gw1eiiixmi2jij21hc0qagyf.jpg" alt="Second slide">
+            <div class="item active">
+                <img src="/img/main_bg/7a425521gw1eiiixmi2jij21hc0qagyf.jpg">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>
@@ -35,8 +35,8 @@ include("library/xwFE-0.0.1/FEM.php");
                     </div>
                 </div>
             </div>
-            <div class="item active">
-                <img class="third-slide" src="/img/main_bg/20130428100656532.jpg" alt="Third slide">
+            <div class="item">
+                <img src="/img/main_bg/20130428100656532.jpg">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>One more for good measure.</h1>
