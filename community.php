@@ -64,6 +64,7 @@ include("library/xwFE-0.0.1/FEM.php");
                 <div class="hotarticles">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-fire"></span>热门推荐</h4>
                     <hr>
+
                     <div ng-repeat="xHA in pageData_HotArticles" ng-href="/#/person?uid={{xHA.aid}}" class="row featurette">
                         <div class="col-md-7">
                             <h2 class="featurette-heading"> {{xHA.title}} <span class="text-muted">{{xHA.subtitle}}</span></h2>
