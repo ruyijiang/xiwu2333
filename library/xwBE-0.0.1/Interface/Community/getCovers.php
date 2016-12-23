@@ -25,9 +25,9 @@ if($timing){
 
     $EchoResult = array();
 
-    $sql = "SELECT cover_id,title,subtitle,abstract,cover_img,bg_color,btn_content FROM covers WHERE post_time <= '$tnow_stamp' AND unpost_time > '$tnow_stamp' ORDER BY time DESC LIMIT 4";
-    $qry = $db->query($sql);
-    $row_all = mysqli_num_rows($qry);
+    $sql = "SELECT * FROM `covers` WHERE post_time <= '$tnow_stamp' AND unpost_time > '$tnow_stamp' ORDER BY regtime DESC LIMIT 4";
+    @$qry = $db->query($sql);
+    @$row_all = mysqli_num_rows($qry);
     if($row_all >= 1){
 
         while($row = $qry->fetch_assoc()){
@@ -46,6 +46,8 @@ if($timing){
             }
 
             array_push($EchoResult,$dataArr);
+            $EchoResult = urldecode ( json_encode ( $EchoResult ));
+            echo $EchoResult;
 
         }
 
