@@ -11,37 +11,19 @@ include("library/xwFE-0.0.1/FEM.php");
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <!--
             <li data-target="#myCarousel" data-slide-to="1" class=""></li>
             <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+            -->
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="item" ng-repeat="xCar in Covers track by $index" ng-class="{'active':$index == 1}">
-                <img ng-src="{{xCar.cover_img}}">
+            <div class="item" ng-repeat="xCar in Covers track by $index">
+                <img ng-src="{{xCar.cover_img}}" alt="carousel-image{{$index}}">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>{{xCar.title}}</h1>
                         <p>{{xCar.abstract}}</p>
-                        <p><a class="btn btn-lg btn-primary" role="button">{{xCar.btn_content}}</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item active">
-                <img src="/img/main_bg/7a425521gw1eiiixmi2jij21hc0qagyf.jpg">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/img/main_bg/20130428100656532.jpg">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" role="button">Browse gallery</a></p>
+                        <p><a class="btn btn-lg btn-primary" role="button" ng-href="/#/blog?aid={{xCar.cover_id}}">{{xCar.btn_content}}</a></p>
                     </div>
                 </div>
             </div>

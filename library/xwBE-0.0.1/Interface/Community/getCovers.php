@@ -46,10 +46,11 @@ if($timing){
             }
 
             array_push($EchoResult,$dataArr);
-            $EchoResult = urldecode ( json_encode ( $EchoResult ));
-            echo $EchoResult;
 
         }
+
+        $EchoResult = urldecode ( json_encode ( $EchoResult ));
+        echo $EchoResult;
 
     }else{
 

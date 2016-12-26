@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="修改了getCovers.oho">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/community.php" afterPath="$PROJECT_DIR$/community.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/communityController.js" afterPath="$PROJECT_DIR$/js/controller/communityController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php" afterPath="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php" />
     </list>
@@ -37,11 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="communityController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="community.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/community.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="communityController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/communityController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="288">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -50,34 +60,40 @@
       <file leaf-file-name="getCovers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="662">
+              <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
               <folding>
-                <marker date="1482481920419" expanded="true" signature="555:672" ph="SELECT FROM covers" />
+                <marker date="1482738479482" expanded="true" signature="555:672" ph="SELECT FROM covers" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="57" />
-              <folding>
-                <marker date="1482392811365" expanded="true" signature="478:523" ph="SELECT * FRO... users" />
-                <marker date="1482392811365" expanded="true" signature="968:1038" ph="SELECT conte... callingcard" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="community.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/community.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="190">
+              <caret line="153" column="10" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blogpage_export.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+              <folding>
+                <marker date="1482463454897" expanded="true" signature="280:360" ph="SELECT id,ai... " />
+                <marker date="1482463454897" expanded="true" signature="490:534" ph="SELECT * FRO... covers" />
+                <marker date="1482463454897" expanded="true" signature="1236:1335" ph="SELECT aid F... articles" />
+                <marker date="1482463454897" expanded="true" signature="1499:1597" ph="SELECT aid F... articles" />
+                <marker date="1482463454897" expanded="true" signature="2009:2100" ph="SELECT aid,t... articles" />
+                <marker date="1482463454897" expanded="true" signature="2410:2495" ph="SELECT name,... users" />
+                <marker date="1482463454897" expanded="true" signature="2801:2858" ph="SELECT conte... callingcard" />
+                <marker date="1482463454897" expanded="true" signature="4187:4266" ph="UPDATE artic... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,9 +177,9 @@
         <option value="$PROJECT_DIR$/js/controller/blogpagecontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php" />
+        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php" />
         <option value="$PROJECT_DIR$/community.php" />
         <option value="$PROJECT_DIR$/js/controller/communityController.js" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php" />
       </list>
     </option>
   </component>
@@ -224,6 +240,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -356,19 +385,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -417,116 +433,6 @@
       <recent name="E:\wamp\www\css\icheck_plugin" />
       <recent name="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -1200,14 +1106,8 @@
       <workItem from="1482287119117" duration="2104000" />
       <workItem from="1482332728384" duration="3768000" />
       <workItem from="1482463626355" duration="635000" />
-      <workItem from="1482470580837" duration="7623000" />
-    </task>
-    <task id="LOCAL-00090" summary="design square">
-      <created>1471943081784</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1471943081786</updated>
+      <workItem from="1482470580837" duration="8449000" />
+      <workItem from="1482735237835" duration="7723000" />
     </task>
     <task id="LOCAL-00091" summary="基本完成了square页面的设计">
       <created>1472095879667</created>
@@ -1545,18 +1445,25 @@
       <option name="project" value="LOCAL" />
       <updated>1482288606678</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="修改了getCovers接口">
+      <created>1482482121061</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1482482121061</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2486392000" />
+    <option name="totallyTimeSpent" value="2494941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18456884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1612,7 +1519,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="basicly complete getLatestTopic.php" />
     <MESSAGE value="about finish topic_action.php and improved checkUrl.php" />
     <MESSAGE value="about finish setTopic.interface." />
     <MESSAGE value="getTopicInfo接口的line.82附近存在逻辑问题" />
@@ -1637,7 +1543,8 @@
     <MESSAGE value="修正了不能正确判断普通文章图片的问题" />
     <MESSAGE value="blogpage_export接口增加了对cover的支持" />
     <MESSAGE value="支持blog页面头部背景图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="支持blog页面头部背景图片" />
+    <MESSAGE value="修改了getCovers接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了getCovers接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1784,13 +1691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/utill/unique_inarr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1924,13 +1824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/commit.php" />
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/composer.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1946,29 +1839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/community.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/getComments/getComments.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="44" />
-          <folding>
-            <marker date="1482463454898" expanded="true" signature="846:897" ph="SELECT aid F... articles" />
-            <marker date="1482463454898" expanded="true" signature="1010:1069" ph="SELECT cover... covers" />
-            <marker date="1482463454898" expanded="true" signature="1511:1643" ph="SELECT comme... comments" />
-            <marker date="1482463454898" expanded="true" signature="2129:2190" ph="SELECT uid,n... users" />
-            <marker date="1482463454898" expanded="true" signature="2533:2597" ph="SELECT uid,n... users" />
-            <marker date="1482463454898" expanded="true" signature="3475:3534" ph="SELECT topic... topics" />
-            <marker date="1482463454898" expanded="true" signature="3944:4076" ph="SELECT comme... comments" />
-            <marker date="1482463454898" expanded="true" signature="4562:4623" ph="SELECT uid,n... users" />
-            <marker date="1482463454898" expanded="true" signature="4966:5030" ph="SELECT uid,n... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1976,9 +1850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <marker date="1482475836784" expanded="true" signature="467:528" ph="SELECT `choi... comments" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1986,18 +1857,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2448">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1482475836786" expanded="true" signature="466:543" ph="SELECT * FRO... topics" />
-            <marker date="1482475836786" expanded="true" signature="1605:1650" ph="SELECT * FRO... users" />
-            <marker date="1482475836786" expanded="true" signature="2056:2169" ph="SELECT topic... topics" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/UserAllDetails_Export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="57" />
+        <state relative-caret-position="1176">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
           <folding>
             <marker date="1482392811365" expanded="true" signature="478:523" ph="SELECT * FRO... users" />
             <marker date="1482392811365" expanded="true" signature="968:1038" ph="SELECT conte... callingcard" />
@@ -2005,20 +1871,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/php/blogpage_export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding>
+            <marker date="1482463454897" expanded="true" signature="280:360" ph="SELECT id,ai... " />
+            <marker date="1482463454897" expanded="true" signature="490:534" ph="SELECT * FRO... covers" />
+            <marker date="1482463454897" expanded="true" signature="1236:1335" ph="SELECT aid F... articles" />
+            <marker date="1482463454897" expanded="true" signature="1499:1597" ph="SELECT aid F... articles" />
+            <marker date="1482463454897" expanded="true" signature="2009:2100" ph="SELECT aid,t... articles" />
+            <marker date="1482463454897" expanded="true" signature="2410:2495" ph="SELECT name,... users" />
+            <marker date="1482463454897" expanded="true" signature="2801:2858" ph="SELECT conte... callingcard" />
+            <marker date="1482463454897" expanded="true" signature="4187:4266" ph="UPDATE artic... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="153" column="10" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getCovers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="662">
+          <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
           <folding>
-            <marker date="1482481920419" expanded="true" signature="555:672" ph="SELECT FROM covers" />
+            <marker date="1482738479482" expanded="true" signature="555:672" ph="SELECT FROM covers" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/communityController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="288">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding />
         </state>
       </provider>

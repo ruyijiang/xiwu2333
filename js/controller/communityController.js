@@ -8,6 +8,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
 
     $rootScope.NowPageTitle = "社区广场 - 喜屋";
 
+
     /**
      * 索取Covers内容
      */
@@ -15,12 +16,13 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
         method: 'GET',
         url: 'library/xwBE-0.0.1/Interface/Community/getCovers.php',
         params:{'timing':timing}
-    }).success(function (data){
-        deferred.resolve(data);
-    }).error(function (reason){
-        deferred.reject(reason);
+    }).success(function (){
+        deferred.resolve();
+    }).error(function (){
+        deferred.reject();
     }).then(function (httpCont){
         $scope.Covers = httpCont.data;
+        console.log($scope.Covers);
     });
 
 
