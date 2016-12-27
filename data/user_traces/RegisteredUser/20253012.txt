@@ -325,3 +325,5 @@
 [2016-12-20 09:29:50]浏览[writeblog_action.php]，备注内容为：【发表了文章：TEST7】
 [2016-12-20 09:41:40]浏览[writeblog_action.php]，备注内容为：【发表了文章：TEST8_TITLE】
 [2016-12-20 13:59:29]浏览[login_action.php]，备注内容为：【登陆成功，用户登录的ip是127.0.0.1】
+[2016-12-27 09:38:47]浏览[writeblog_action.php]，备注内容为：【发表了文章：TEST1】
+[2016-12-27 13:56:19]浏览[writeblog_action.php]，备注内容为：【发表了文章：TEST2_TITLE】

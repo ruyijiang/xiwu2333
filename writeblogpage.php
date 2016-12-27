@@ -122,7 +122,7 @@ include("library/xwFE-0.0.1/FEM.php");
                                     <li ng-click="selectImg()">
                                         <a>选择背景图片</a>
                                     </li>
-                                    <li class="dropdown" ng-if="pageData.aType == 'cover'">
+                                    <li class="dropdown" ng-show="pageData.aType == 'cover'">
                                         <a class="dropdown-toggle" data-toggle="dropdown">
                                             选取背景颜色<span class="caret"></span>
                                         </a>
@@ -144,11 +144,11 @@ include("library/xwFE-0.0.1/FEM.php");
                                             </li>
                                         </ul>
                                     </li>
-                                    <li ng-if="pageData.aType == 'cover'">
+                                    <li ng-show="pageData.aType == 'cover'">
                                         <a ng-click="showBtnContent = true">设置按钮文字</a>
                                     </li>
-                                    <li ng-if="pageData.aType == 'cover'">
-                                        <input ng-show="showBtnContent" type="text" class="form-control" style="width:130px;margin:3px 0 0 5px" ng-model="pageData.BtnContent" maxlength="18">
+                                    <li >
+                                        <input ng-if="showBtnContent && pageData.aType == 'cover'" type="text" class="form-control" style="width:150px;margin:3px 0 0 5px" ng-model="pageData.BtnContent" maxlength="18" required>
                                     </li>
                                 </ul>
                             </div>

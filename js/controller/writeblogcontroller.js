@@ -18,7 +18,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     //页面数据模板
     $scope.pageData = {
-        aType:"normal",//article类型 | 有两种类型：normal普通文章；cover封面文章
+        aType:"cover",//article类型 | 有两种类型：normal普通文章；cover封面文章
         title:"",//标题
         subtitle:"",//副标题
         abstract:"",//摘要
@@ -94,6 +94,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
                 if(httpCont.data.statuscode !== 0){//已经成功上传
                     $interval.cancel(timer_CheckImgExsit);
+                    alert ("上传成功");
                     $(".index-mask").fadeOut("fast");
                     $scope.submitbtnAvail = true;
                     $scope.uploadbtn_content = "上传成功";
@@ -215,10 +216,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     $scope.$on('colorPicked', function(event, color) {
         $scope.selectedForeColor = color;
     });
-
-
-    // 动态设置默认颜色
-    $scope.dynamicSetColor = dynamicSetColor;
 
     function dynamicSetColor() {
         return '#fafafa';

@@ -10,14 +10,10 @@ include("library/xwFE-0.0.1/FEM.php");
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-            <!--
-            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-            -->
+            <li data-target="#myCarousel" ng-repeat="xCar in Covers track by $index" data-slide-to="{{$index}}" ng-class="{true: 'active', false: ''}[$index == '0']"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="item" ng-repeat="xCar in Covers track by $index">
+            <div class="item" ng-repeat="xCar in Covers track by $index" ng-class="{true: 'active'}[$index == '0']" ng-style="{'background-color':xCar.bg_color}">
                 <img ng-src="{{xCar.cover_img}}" alt="carousel-image{{$index}}">
                 <div class="container">
                     <div class="carousel-caption">

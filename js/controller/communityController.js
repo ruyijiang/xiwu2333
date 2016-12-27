@@ -22,7 +22,6 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
         deferred.reject();
     }).then(function (httpCont){
         $scope.Covers = httpCont.data;
-        console.log($scope.Covers);
     });
 
 
