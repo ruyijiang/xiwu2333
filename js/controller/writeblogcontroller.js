@@ -3,9 +3,12 @@
  */
 
 app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $timeout, $interval, checkStatus, $http, $q){
+
+    $rootScope.navactivitify(4);
+    $rootScope.NowPageTitle = "写文章 - 喜屋";
+
     //预设内容
     var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
-    $rootScope.NowPageTitle = "写文章 - 喜屋";
     $scope.TabShow = 1;
     $scope.submitbtnAvail = false;
     $scope.uploadbtn_content = "确认，上传";

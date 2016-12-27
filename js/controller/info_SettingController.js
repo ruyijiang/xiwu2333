@@ -3,12 +3,13 @@
  */
 app.controller('info_SettingController',function ($scope,$rootScope,$http,$window,$timeout,$q,$interval){
 
+    $rootScope.navactivitify(22);
+    $rootScope.NowPageTitle = "资料设置 - 喜屋";
 
     $scope.CityNameShowStatus = null;
     $scope.ProvinceName = $scope.CityName = null;
     $scope.CityListArr = [];
-    $rootScope.NowPageTitle = "资料设置 - 喜屋";
-    timing = Math.round(new Date().getTime()/1000);
+    var timing = Math.round(new Date().getTime()/1000);
     $scope.RecordProcession = 0.25;
 
 
@@ -345,7 +346,5 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
         window.location.reload();
     };
 
-
-    $rootScope.navactivitify(22);
 
 });

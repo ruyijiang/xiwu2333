@@ -2,12 +2,12 @@
  * Created by mazih on 2016/8/22.
  */
 app.controller('communityController',function ($scope, $rootScope, $http, $q){
+    
     $rootScope.navactivitify(3);
-    var timing = Math.round(new Date().getTime()/1000);
-    var deferred = $q.defer();
-
     $rootScope.NowPageTitle = "社区广场 - 喜屋";
 
+    var timing = Math.round(new Date().getTime()/1000);
+    var deferred = $q.defer();
 
     /**
      * 索取Covers内容
