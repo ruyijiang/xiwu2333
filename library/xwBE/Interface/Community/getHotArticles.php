@@ -17,11 +17,10 @@ $reminder = "";
 
 if($timing){
 
-    $sql = "SELECT aid,title,subtitle,abstract,cover_img FROM articles WHERE length(content) > 400 ORDER BY read_times DESC LIMIT 3 ";
+    $sql = "SELECT aid,title,subtitle,abstract,article_img FROM articles WHERE length(content) > 400 ORDER BY read_times DESC LIMIT 3 ";
     $qry = $db->query($sql);
 
     if($qry){
-
         $EchoResult = array();
 
         while($row = $qry->fetch_assoc()){
@@ -29,15 +28,14 @@ if($timing){
             $result_title = $row["title"];
             $result_subtitle = $row["subtitle"];
             $result_abstract = $row["abstract"];
-            $result_cover_img = $row["cover_img"];
+            $result_cover_img = $row["article_img"];
 
-            $dataArr = array ('aid'=>$result_aid,'title'=>$result_title,'subtitle'=>$result_subtitle,'abstract'=>$result_abstract,'cover_img'=>$result_cover_img);
+            $dataArr = array ('aid'=>$result_aid,'title'=>$result_title,'subtitle'=>$result_subtitle,'abstract'=>$result_abstract,'article_img'=>$result_cover_img);
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
             }
 
             array_push($EchoResult,$dataArr);
-
         }
 
         $EchoResult = urldecode ( json_encode ( $EchoResult ));

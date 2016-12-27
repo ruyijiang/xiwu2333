@@ -54,7 +54,6 @@ require("../algorithm/Liveness.php");
 
             if(!empty($aid)){
                 //指定了aid,说明是修改
-
                 $sql = "SELECT * FROM articles WHERE aid = '$aid' ";
                 $qry = $db->query($sql);
                 @$row = $qry->fetch_assoc();
@@ -96,7 +95,6 @@ require("../algorithm/Liveness.php");
                             $reminder = "文章修改失败";
                         }
                         echo $b->normalrespond($status,$reminder);
-
                         //--------------------------------------------------------------------------------------------->出口10：文章更新成功
                     }else{
                         $status = 0;
