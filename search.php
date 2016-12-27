@@ -5,9 +5,9 @@
  * Date: 2016/6/6
  * Time: 15:42
  */
-require("library/xwBE-0.0.1/connectDB.php");
-require("library/xwBE-0.0.1/all.php");
-include("library/xwFE-0.0.1/FEM.php");
+require("library/xwBE/connectDB.php");
+require("library/xwBE/all.php");
+include("library/xwFE/FEM.php");
 ?>
 <?php
 //---1，没有search参数

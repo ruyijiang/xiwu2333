@@ -50,7 +50,7 @@ app.controller('certificationController',function ($scope,$rootScope,$timeout){
         }
 
         $.ajax({
-            url:"../../library/xwBE-0.0.1/php/certdata_action.php",
+            url:"../../library/xwBE/php/certdata_action.php",
             type:'POST',
             async: false,
             data:{"key":key,"value":val},

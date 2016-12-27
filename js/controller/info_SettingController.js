@@ -71,7 +71,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
      * 获取用户信息
      */
     $.ajax({
-        url:'../../library/xwBE-0.0.1/php/personalinfo_export.php',
+        url:'../../library/xwBE/php/personalinfo_export.php',
         type:'POST',
         async: false,
         data:{"timing":timing},
@@ -175,7 +175,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
 
     function region_export(CountryName,ProvinceName){
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/region_export.php',
+            url:'../../library/xwBE/php/region_export.php',
             type:'GET',
             async: false,
             data:{"country":CountryName,"province":ProvinceName},
@@ -240,7 +240,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
         $scope.ServerArr = [];
 
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/infosetting_action.php',
+            url:'../../library/xwBE/php/infosetting_action.php',
             type:'POST',
             async:false,
             data: $scope.UserInfoData,
@@ -295,7 +295,7 @@ app.controller('info_SettingController',function ($scope,$rootScope,$http,$windo
                     //收录用户Dota2信息
                     var deferred = $q.defer();
                     $http({
-                        url:'../../library/xwBE-0.0.1/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
+                        url:'../../library/xwBE/Interface/setDota2Info/recordPlayerAnyNumMatchInfo.php',
                         method: 'POST',
                         dataType: 'json',
                         data:20

@@ -35,7 +35,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
      */
     $http({
         method: 'GET',
-        url: 'library/xwBE-0.0.1/Interface/checkStatus/check_invitationcodeStatus.php',
+        url: 'library/xwBE/Interface/checkStatus/check_invitationcodeStatus.php',
         params:{
             'funcType':"WriteCovers"
         }
@@ -88,7 +88,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         var timer_CheckImgExsit = $interval(function (){
             $http({
                 method: 'GET',
-                url: 'library/xwBE-0.0.1/Interface/checkStatus/isCoverImgExist.php',
+                url: 'library/xwBE/Interface/checkStatus/isCoverImgExist.php',
                 params:{
                     'imgname':$scope.tnow,
                     'imgCate':$scope.pageData.aType
@@ -131,7 +131,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         //URL参数带aid，且不为非法值
         $http({
             method: 'GET',
-            url: 'library/xwBE-0.0.1/php/blogpage_export.php',
+            url: 'library/xwBE/php/blogpage_export.php',
             params:{'aid':InitArticleAid}
         }).then(function (httpCont){
 
@@ -165,7 +165,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
         //根据标题和内容，发送请求
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/writeblog_action.php',
+            url:'../../library/xwBE/php/writeblog_action.php',
             method:'POST',
             async: false,
             dataType: 'json',

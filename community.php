@@ -1,7 +1,7 @@
 <?php
-require("library/xwBE-0.0.1/connectDB.php");
-require("library/xwBE-0.0.1/all.php");
-include("library/xwFE-0.0.1/FEM.php");
+require("library/xwBE/connectDB.php");
+require("library/xwBE/all.php");
+include("library/xwFE/FEM.php");
 ?>
 <style>body{background-color:#dadada}.carousel{height:451px;}.carousel-caption{z-index:10}.carousel .item{height:451px;background-color:#333}.carousel-inner>.item>img{position:absolute;top:0;left:15%;width:70%;height:451px;border-bottom:solid 1px black}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:10px;margin-left:10px}@media (min-width:768px){.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}
         ul.list-group li.list-group-item.active a{color:white}

@@ -1,7 +1,7 @@
 <?php
-require("library/xwBE-0.0.1/connectDB.php");
-require("library/xwBE-0.0.1/all.php");
-include("library/xwFE-0.0.1/FEM.php");
+require("library/xwBE/connectDB.php");
+require("library/xwBE/all.php");
+include("library/xwFE/FEM.php");
 ?>
 <style>
     body{background-color:#f5f8fa}
@@ -218,7 +218,7 @@ include("library/xwFE-0.0.1/FEM.php");
 
         <!--虚拟区域-->
         <!--真正的图像处理区-->
-        <form id="upload_img" method="POST" action="library/xwBE-0.0.1/php/uploadCoverImg_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">
+        <form id="upload_img" method="POST" action="library/xwBE/php/uploadCoverImg_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">
             <input type="file" id="uploadbtn" name="coverImg" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('#ImgShower_container'),$('#ImgShower'));"/>
             <input type="text" name="imgname" id="imgname">
             <input type="text" name="atype" id="arttype">
@@ -226,7 +226,7 @@ include("library/xwFE-0.0.1/FEM.php");
         </form>
 
         <!--封面图片真正上传到的地方-->
-        <iframe id="uploadCoverImg" name="uploadCoverImg" style="display:none" src="library/xwBE-0.0.1/php/uploadCoverImg_action.php"></iframe>
+        <iframe id="uploadCoverImg" name="uploadCoverImg" style="display:none" src="library/xwBE/php/uploadCoverImg_action.php"></iframe>
 
     </div>
 

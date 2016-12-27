@@ -24,7 +24,7 @@ app.controller('m_PasswordController',function ($scope,$rootScope,$timeout){
 
     $scope.submitData = function (){
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/m_password_action.php',
+            url:'../../library/xwBE/php/m_password_action.php',
             data:$scope.PasswordData,
             type:'POST',
             async:false,

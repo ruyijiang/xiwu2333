@@ -1,7 +1,7 @@
 <?php
-require("library/xwBE-0.0.1/connectDB.php");
-require("library/xwBE-0.0.1/all.php");
-include("library/xwFE-0.0.1/FEM.php");
+require("library/xwBE/connectDB.php");
+require("library/xwBE/all.php");
+include("library/xwFE/FEM.php");
 header("Content-Type: text/html; charset=utf-8");
 ?>
     <div class="container" ng-controller="blogpagecontroller" style="margin-top:100px;">

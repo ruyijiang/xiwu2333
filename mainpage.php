@@ -1,7 +1,7 @@
 <?php
-require("library/xwBE-0.0.1/all.php");
-require("library/xwBE-0.0.1/connectDB.php");
-include("library/xwFE-0.0.1/FEM.php");
+require("library/xwBE/all.php");
+require("library/xwBE/connectDB.php");
+include("library/xwFE/FEM.php");
 ?>
 <style>
     .caption span[class]{margin-right:5px;}

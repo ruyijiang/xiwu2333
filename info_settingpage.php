@@ -1,7 +1,7 @@
 <?php
-require("library/xwBE-0.0.1/connectDB.php");
-require("library/xwBE-0.0.1/all.php");
-include("library/xwFE-0.0.1/FEM.php");
+require("library/xwBE/connectDB.php");
+require("library/xwBE/all.php");
+include("library/xwFE/FEM.php");
 ?>
 <style>
     body{background-color:#f5f8fa}
@@ -242,7 +242,7 @@ include("library/xwFE-0.0.1/FEM.php");
         <div dialog-title>修改头像</div>
         <div dialog-content>
             <small>三种尺寸的预览：</small>
-            <form id="submit_form" method="POST" ng-submit="checkBtnStatus()" action="library/xwBE-0.0.1/php/uploadavatar_action.php" target="uploadAvatar" enctype="multipart/form-data">
+            <form id="submit_form" method="POST" ng-submit="checkBtnStatus()" action="library/xwBE/php/uploadavatar_action.php" target="uploadAvatar" enctype="multipart/form-data">
                 <table style="text-align: center;">
                     <tr>
                         <td style="padding:10px">
@@ -276,7 +276,7 @@ include("library/xwFE-0.0.1/FEM.php");
     </dialog>
 
     <!--上传头像真正上传到的地址-->
-    <iframe id="uploadAvatar" name="uploadAvatar" style="display:none" src="library/xwBE-0.0.1/php/uploadavatar_action.php"></iframe>
+    <iframe id="uploadAvatar" name="uploadAvatar" style="display:none" src="library/xwBE/php/uploadavatar_action.php"></iframe>
 
     <!--收录数据-->
     <dialog ng-if="recordPlayerInfo.open" modal fixed>

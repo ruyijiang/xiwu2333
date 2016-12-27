@@ -1,7 +1,7 @@
 <?php
-require("library/xwBE-0.0.1/connectDB.php");
-require("library/xwBE-0.0.1/all.php");
-include("library/xwFE-0.0.1/FEM.php");
+require("library/xwBE/connectDB.php");
+require("library/xwBE/all.php");
+include("library/xwFE/FEM.php");
 ?>
 <div class="container col-lg-12 col-sm-12" style="margin-top:100px" ng-controller="loginController">
     <div class="alert alert-info text-center center-block" role="alert" style="margin-top:-35px;width:100%" ng-if="showStepReminder == true">

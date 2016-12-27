@@ -16,7 +16,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
             $http({
                 method: 'GET',
-                url: 'library/xwBE-0.0.1/php/blogpage_export.php',
+                url: 'library/xwBE/php/blogpage_export.php',
                 params:{'aid':aid}
             }).success(function (data){
                 if(data.statuscode == 0){
@@ -79,7 +79,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
         $http({
             method: 'GET',
-            url: 'library/xwBE-0.0.1/php/deleteArticle_action.php',
+            url: 'library/xwBE/php/deleteArticle_action.php',
             params:{'aid':aid}
         }).success(function (){
             deferred.resolve();
@@ -102,7 +102,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
     $scope.changeShowPage = function (num,content){
 
         $.ajax({
-            url:'library/xwBE-0.0.1/Interface/Pagination/pagination.php',
+            url:'library/xwBE/Interface/Pagination/pagination.php',
             type:'GET',
             async:false,
             data:{
@@ -125,7 +125,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
         //根据指示调取该页的信息
         $.ajax({
-            url:'../../library/xwBE-0.0.1/Interface/getComments/getComments.php',
+            url:'../../library/xwBE/Interface/getComments/getComments.php',
             type:'GET',
             async: false,
             data:{
@@ -173,7 +173,7 @@ app.controller('blogpagecontroller',function ($scope,$rootScope,$http,$q,$locati
 
         $.ajax({
             method: 'POST',
-            url: 'library/xwBE-0.0.1/Interface/setComment/setComment.php',
+            url: 'library/xwBE/Interface/setComment/setComment.php',
             data:{
                 "cate":"article",
                 "topic_id":A_aid,

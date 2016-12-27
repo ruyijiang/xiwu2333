@@ -68,7 +68,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         }
 
         $.ajax({
-            url:'library/xwBE-0.0.1/UserAllDetails_Export.php',
+            url:'library/xwBE/UserAllDetails_Export.php',
             type:'GET',
             async: false,
             data:{"uid":uid},//lo这里gender有3种数据可能性:1,"random" | 2,"" | 3,"male" or "female"
@@ -90,7 +90,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 $scope.dota2panelmaskshow = 1;
                 $scope.Dota2LivenessShower = true;
                 $http({
-                    url:'../../library/xwBE-0.0.1/Interface/getDota2Info/getDota2Liveness.php',
+                    url:'../../library/xwBE/Interface/getDota2Info/getDota2Liveness.php',
                     params:{
                         "uid":$scope.UserData.uid,
                         "dota2_uid":$scope.UserData.dota2_uid
@@ -168,7 +168,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
     function _loadUserLiveness(uid){
         uid==undefined?uid=$location.search()["uid"]:uid;
         $.ajax({
-            url:'library/xwBE-0.0.1/php/liveness_export.php',
+            url:'library/xwBE/php/liveness_export.php',
             type:'POST',
             async: false,
             data:{"uid":uid},
@@ -204,7 +204,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         $scope.a_num_onepage = $scope.UserData.page_num;
         //先判断分页基本信息
         $.ajax({
-            url:'library/xwBE-0.0.1/Interface/Pagination/pagination.php',
+            url:'library/xwBE/Interface/Pagination/pagination.php',
             type:'GET',
             async:false,
             data:{
@@ -231,7 +231,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
 
         //根据指示调取该页的信息
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/article_export.php',
+            url:'../../library/xwBE/php/article_export.php',
             type:'POST',
             async: false,
             data:{
@@ -267,7 +267,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
 
         $http({
             method: 'GET',
-            url: '../../library/xwBE-0.0.1/php/search_action.php',
+            url: '../../library/xwBE/php/search_action.php',
             params:{
                 'content':$scope.search_in_blog_content,
                 'priority':'article',
@@ -316,7 +316,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
      */
     $scope.changePage_num = function(val){
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/m_numpage.php',
+            url:'../../library/xwBE/php/m_numpage.php',
             method:'POST',
             data:{'page_num':val},
             async:false,

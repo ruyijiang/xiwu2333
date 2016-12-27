@@ -10,7 +10,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
     if($stateParams.TopicUrl){
         $http({
             method: 'GET',
-            url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getTopicInfo.php',
+            url: '../../library/xwBE/Interface/getTopicInfo/getTopicInfo.php',
             params:{'content': $stateParams.TopicUrl }
         }).success(function (httpCont){
 
@@ -24,7 +24,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
 
                     $http({
                         method: 'GET',
-                        url: '../../library/xwBE-0.0.1/Interface/checkStatus/check_ballotstatus.php',
+                        url: '../../library/xwBE/Interface/checkStatus/check_ballotstatus.php',
                         params:{'topic_id': $scope.pageData.topic_id}
                     }).then(function (httpCont2){
 
@@ -62,7 +62,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
 
         $http({
             method: 'GET',
-            url: '../../library/xwBE-0.0.1/Interface/getTopicInfo/getLatestTopic.php',
+            url: '../../library/xwBE/Interface/getTopicInfo/getLatestTopic.php',
             params:{'params': Math.round(new Date().getTime()/1000) }
         }).success(function (httpCont){
             $scope.pageData.LatestTopicArr = httpCont;
@@ -86,7 +86,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
         }else{
             //发送数据
             $.ajax({
-                url:'../../library/xwBE-0.0.1/Interface/setTopic/topic_action.php',
+                url:'../../library/xwBE/Interface/setTopic/topic_action.php',
                 type:'POST',
                 async: false,
                 data:{
@@ -118,7 +118,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
         }else{
             $.ajax({
                 method: 'POST',
-                url: 'library/xwBE-0.0.1/Interface/setComment/setComment.php',
+                url: 'library/xwBE/Interface/setComment/setComment.php',
                 data:{
                     "cate":"topic",
                     "topic_id":$scope.pageData.topic_id,
@@ -156,7 +156,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
     $scope.changeShowPage = function (num,content){
 
         $.ajax({
-            url:'library/xwBE-0.0.1/Interface/Pagination/pagination.php',
+            url:'library/xwBE/Interface/Pagination/pagination.php',
             type:'GET',
             async:false,
             data:{
@@ -179,7 +179,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
 
         //根据指示调取该页的信息
         $.ajax({
-            url:'../../library/xwBE-0.0.1/Interface/getComments/getComments.php',
+            url:'../../library/xwBE/Interface/getComments/getComments.php',
             type:'GET',
             async: false,
             data:{
