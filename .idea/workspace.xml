@@ -959,14 +959,7 @@
       <workItem from="1482475995943" duration="1938000" />
       <workItem from="1482479882367" duration="243000" />
       <workItem from="1482827993907" duration="367000" />
-      <workItem from="1482828735782" duration="596000" />
-    </task>
-    <task id="LOCAL-00092" summary="重新调整了导航active策略。">
-      <created>1472105793317</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1472105793317</updated>
+      <workItem from="1482828735782" duration="605000" />
     </task>
     <task id="LOCAL-00093" summary="remove homepage.php,all function were moved to personpage.php &amp; personController.js">
       <created>1472106085473</created>
@@ -1304,11 +1297,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482829168163</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="remove version code of library ,and rewrite README for xiwu project.">
+      <created>1482829341905</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1482829341905</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2482116000" />
+    <option name="totallyTimeSpent" value="2482125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
