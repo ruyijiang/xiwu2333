@@ -14,7 +14,7 @@ app.factory("loadAndsaveHerosInfo",['$http','$q',function($http,$q){
     function loadAndsaveHerosInfo(){
         $http({
             method: 'GET',
-            url: 'library/xwBE-0.0.1/Interface/getDota2Info/getHerosInfo.php'
+            url: 'library/xwBE/Interface/getDota2Info/getHerosInfo.php'
         }).success(function (data){
             deferred.resolve(data);
         }).error(function (reason){

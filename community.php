@@ -15,6 +15,8 @@ include("library/xwFE/FEM.php");
         <div class="carousel-inner" role="listbox">
             <div class="item" ng-repeat="xCar in Covers track by $index" ng-class="{true: 'active'}[$index == '0']" ng-style="{'background-color':xCar.bg_color}">
                 <img ng-src="{{xCar.cover_img}}" alt="carousel-image{{$index}}">
+            <div class="item" ng-repeat="xCar in Covers track by $index">
+                <img ng-src="{{xCar.cover_img}}">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>{{xCar.title}}</h1>

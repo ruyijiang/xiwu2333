@@ -89,7 +89,7 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
             alert ("自定义链接不可使用，请重新填写");
         }else{
             $.ajax({
-                url:'../../library/xwBE-0.0.1/Interface/setTopic/setTopic.php',
+                url:'../../library/xwBE/Interface/setTopic/setTopic.php',
                 type:'POST',
                 async:false,
                 data: $scope.pageData,
@@ -117,7 +117,7 @@ app.controller('writeTopicController',function ($scope, $http, $q, $timeout, $lo
     function checkUrl() {
         $http({
             method: 'GET',
-            url: '../../library/xwBE-0.0.1/Interface/setTopic/checkUrl.php',
+            url: '../../library/xwBE/Interface/setTopic/checkUrl.php',
             params:{'content': $scope.pageData.customUrl }
         }).success(function (httpCont) {
             if(httpCont.statuscode == 1){

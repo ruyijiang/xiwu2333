@@ -50,7 +50,7 @@ app.factory("liveness",['$http','$interval',function($http,$interval){
         //上传数据到服务器
         $.ajax({
             method:'POST',
-            url:'library/xwBE-0.0.1/php/setScore_action.php',
+            url:'library/xwBE/php/setScore_action.php',
             data:{'commitname':'onlineDuration','extra':LivenessScoreArr}
         });
     }

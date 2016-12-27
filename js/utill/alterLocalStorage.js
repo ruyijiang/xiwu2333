@@ -11,7 +11,7 @@ function alterOnlineStatus(ToNum){
     $.ajax({
         type:'POST',
         async:true,
-        url:'../../library/xwBE-0.0.1/php/closepage_updatedata.php',
+        url:'../../library/xwBE/php/closepage_updatedata.php',
         data:{"timing":timing,"mod":ToNum},
         success: function (data){
         }

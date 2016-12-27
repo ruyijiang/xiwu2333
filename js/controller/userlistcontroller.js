@@ -69,7 +69,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
     $scope.changeShowPage = function (num){
         $scope.maskVis = 1;
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/userlist_export.php',
+            url:'../../library/xwBE/php/userlist_export.php',
             type:'GET',
             async: false,
             data:{
@@ -99,7 +99,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
      * 获取Echarts的数据1
      */
     $.ajax({
-        url:'../../library/xwBE-0.0.1/php/EchartData_Export.php',
+        url:'../../library/xwBE/php/EchartData_Export.php',
         type:'POST',
         async: false,
         data:{"timing":timing,"mod":"getHighestLocation"},
@@ -122,7 +122,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
      * 获取Echarts的数据2
      */
     $.ajax({
-        url:'../../library/xwBE-0.0.1/php/EchartData_Export.php',
+        url:'../../library/xwBE/php/EchartData_Export.php',
         type:'POST',
         async: false,
         data:{"timing":timing,"mod":"getOnlineUsersAmount"},
@@ -140,7 +140,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
      * 获取Echarts的数据3
      */
     $.ajax({
-        url:'../../library/xwBE-0.0.1/php/EchartData_Export.php',
+        url:'../../library/xwBE/php/EchartData_Export.php',
         type:'POST',
         async: false,
         data:{"timing":timing,"mod":"getSexualRates"},

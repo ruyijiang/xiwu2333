@@ -9,7 +9,7 @@ app.controller('loginController',function ($scope,$rootScope,$http,$location){
      */
     $scope.loginsubmit = function (){
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/login_action.php',
+            url:'../../library/xwBE/php/login_action.php',
             method:'POST',
             data:{"email":$scope.UserName,"password":$scope.UserPassword},
             success: function (data){

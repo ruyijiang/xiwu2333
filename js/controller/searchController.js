@@ -68,7 +68,7 @@ app.controller('searchController',function ($scope, $rootScope, $location, $http
             $.ajax({
                 type:'GET',
                 async:false,
-                url:'library/xwBE-0.0.1/php/search_action.php',
+                url:'library/xwBE/php/search_action.php',
                 data:{"priority":priority,"content":value,"startnum":startnum},
                 success: function (data){
                     $scope.SearchContentReq = welcomejsonarrstring(data);
@@ -94,7 +94,7 @@ app.controller('searchController',function ($scope, $rootScope, $location, $http
 
             $http({
                 method: 'GET',
-                url: 'library/xwBE-0.0.1/Interface/getDota2Info/getMatchInfo.php',
+                url: 'library/xwBE/Interface/getDota2Info/getMatchInfo.php',
                 params:{"content":value,"startnum":startnum}
             }).success(function (){
                 $(".index-mask").hide();

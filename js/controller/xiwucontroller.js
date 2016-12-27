@@ -58,7 +58,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
      */
     $scope.logout = function (){
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/logout_action.php',
+            url:'../../library/xwBE/php/logout_action.php',
             success: function (data){
                 welcomejsonstring(data);//在utills/welcomejsonstring.js中定义
                 window.location.reload();
@@ -74,7 +74,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
      */
     $scope.openteamornot = function (){
         $.ajax({
-            url:'../../library/xwBE-0.0.1/php/queue_action.php',
+            url:'../../library/xwBE/php/queue_action.php',
             type:'POST',
             data: {"timing":timing},
             success: function (data){
@@ -118,7 +118,7 @@ app.controller('xiwucontroller',function ($scope,$rootScope, $http, $location, $
 
         $http({
             method: 'GET',
-            url: 'library/xwBE-0.0.1/php/HotSearching_Export.php',
+            url: 'library/xwBE/php/HotSearching_Export.php',
             params:{'timing':timing}
         }).success(function (data){
             deferred.resolve(data);

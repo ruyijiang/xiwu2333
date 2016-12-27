@@ -14,7 +14,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
      */
     $http({
         method: 'GET',
-        url: 'library/xwBE-0.0.1/Interface/Community/getCovers.php',
+        url: 'library/xwBE/Interface/Community/getCovers.php',
         params:{'timing':timing}
     }).success(function (){
         deferred.resolve();
@@ -30,7 +30,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
      */
     $http({
         method: 'GET',
-        url: 'library/xwBE-0.0.1/Interface/Community/getHotTopics.php',
+        url: 'library/xwBE/Interface/Community/getHotTopics.php',
         params:{'timing':timing}
     }).success(function (data){
         deferred.resolve(data);
@@ -46,7 +46,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
      */
     $http({
         method: 'GET',
-        url: 'library/xwBE-0.0.1/Interface/Community/getHotArticles.php',
+        url: 'library/xwBE/Interface/Community/getHotArticles.php',
         params:{'timing':timing}
     }).success(function (data){
         deferred.resolve(data);
@@ -63,7 +63,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
      */
     $http({
         method: 'GET',
-        url: 'library/xwBE-0.0.1/Interface/Community/getHotPersons.php',
+        url: 'library/xwBE/Interface/Community/getHotPersons.php',
         params:{'timing':timing}
     }).success(function (data){
         deferred.resolve(data);

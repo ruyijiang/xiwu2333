@@ -2,10 +2,8 @@
  * Created by mazih on 2016/5/20.
  */
 
-
 //正则表达式汇总
 //2016.05.19 mazih
-
 
 /**常规验证**/
 var Regular_Phone = "/^[1][358][0-9]{9}$/";//匹配手机号，格式：{13xxxxxxxxx | 15xxxxxxxxx | 18xxxxxxxxx}

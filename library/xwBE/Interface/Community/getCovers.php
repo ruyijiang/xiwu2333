@@ -30,6 +30,15 @@ if($timing){
     @$row_all = mysqli_num_rows($qry);
     if($row_all >= 1){
 
+        $RemainAmount = 4 - $row_all;
+        if($RemainAmount > 0){
+
+            $sql = "SELECT * FROM `covers` WHERE isAuth = '1' ORDER BY regtime DESC LIMIT $RemainAmount";//调取官方Cover
+            @$qry = $db->query($sql);
+            @$row_all = mysqli_num_rows($qry);
+
+        }
+
         while($row = $qry->fetch_assoc()){
 
             $result_cover_id = $row["cover_id"];

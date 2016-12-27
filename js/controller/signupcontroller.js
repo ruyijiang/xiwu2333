@@ -32,7 +32,7 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
             if($scope.UserPassword_Repeat === $scope.UserPassword){
 
                 $.ajax({
-                    url:'../../library/xwBE-0.0.1/php/signup_action.php',
+                    url:'../../library/xwBE/php/signup_action.php',
                     method:'POST',
                     data:{"email":$scope.UserName,"password":$scope.UserPassword,"gender":$scope.Gender},
                     success: function (data){
@@ -40,7 +40,7 @@ app.controller('signupcontroller',function ($scope,$rootScope,$http,$location){
                             //--------------------------------------------------------------->注册成功
                             //1，登陆
                             $.ajax({
-                                url:'../../library/xwBE-0.0.1/php/login_action.php',
+                                url:'../../library/xwBE/php/login_action.php',
                                 method:'POST',
                                 data:{"email":$scope.UserName,"password":$scope.UserPassword},
                                 success: function (data){

@@ -14,7 +14,7 @@ app.factory("search",['$http','$window',function($http,$window){
             $http({
 
                 method: 'GET',
-                url: 'library/xwBE-0.0.1/php/search_action.php',
+                url: 'library/xwBE/php/search_action.php',
                 params:{'priority':priority,'content':value}
             }).success(function (data){
                 data = welcomejsonarrstring(data);

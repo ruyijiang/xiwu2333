@@ -17,7 +17,7 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
             $scope.RecCate = "user";
             $http({
                 method: 'GET',
-                url: 'library/xwBE-0.0.1/Interface/getRandom/getRandomUser.php',
+                url: 'library/xwBE/Interface/getRandom/getRandomUser.php',
                 params:{'timing':timing}
             }).success(function (){
                 derreferd.resolve();
@@ -26,7 +26,7 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
             }).then(function (httpCont){
                 $http({
                     method: 'GET',
-                    url: 'library/xwBE-0.0.1/UserAllDetails_Export.php',
+                    url: 'library/xwBE/UserAllDetails_Export.php',
                     params:{'uid':httpCont.data}
                 }).then(function (httpCont){
                     $scope.RecoUser = httpCont.data;
@@ -40,7 +40,7 @@ app.controller('maincontroller',function ($scope,$http,$rootScope,$q){
      * 获取当前在线玩家数
      */
     $.ajax({
-        url: 'library/xwBE-0.0.1/php/EchartData_Export.php',
+        url: 'library/xwBE/php/EchartData_Export.php',
         type:'POST',
         async: false,
         data:{'mod':'getOnlineUsersAmount','timing':timing},
