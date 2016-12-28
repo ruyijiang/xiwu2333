@@ -17,6 +17,10 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         open:true,
         title:"选择文章类型"
     };
+    $scope.chooseTime = {
+        open:true,
+        title:"选择刊发时间"
+    };
 
 
     //页面数据模板
@@ -42,9 +46,9 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     }).then(function (httpCont){
         /*
          if(httpCont.data.statuscode == 1){//用户已激活对应功能的邀请码
-         $scope.chooseType.open = true;
+            $scope.chooseType.open = true;
          }else{//用户未激活邀请码
-         $scope.chooseType.open = false;
+            $scope.chooseType.open = false;
          }*/
     });
 
@@ -168,6 +172,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         }
 
         //根据标题和内容，发送请求
+        $scope.ArticleSubmitStatus = false;
         $.ajax({
             url:'../../library/xwBE/php/writeblog_action.php',
             method:'POST',
@@ -191,8 +196,10 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     $("#submit_btn").button('reset');
                     return false;
                 }else if(data.statuscode !== '0'){
-                    alert ("发表成功");
-                    $location.url("/blog?aid="+data.statuscode).replace();
+                    /*alert ("发表成功");
+                      $location.url("/blog?aid="+data.statuscode).replace();
+                    */
+                    $scope.chooseTime.open = true;
                     return true;
                     //提交成功，跳转到文章blog
                 }else{
@@ -209,7 +216,115 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         })
     };
 
-    $("[data-toggle='tooltip']").tooltip();//开启tooltip
+
+    /**
+     * Echarts Function
+     */
+    $scope.loadEchart = function (){
+        var myChart_publishment = echarts.init(document.getElementById('cover-publish'));
+        var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '点', '击', '柱', '子', '或', '者', '两'];
+        var data = [220, 182, 191, 234, 290, 330, 310, 220, 182, 191, 234, 290, 330, 310];
+        var yMax = 500;
+        var dataShadow = [];
+
+        for (var i = 0; i < data.length; i++) {
+            dataShadow.push(yMax);
+        }
+
+        option = {
+            title: {
+                text: '特性示例：渐变色 阴影 点击缩放',
+                subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+            },
+            xAxis: {
+                data: dataAxis,
+                axisLabel: {
+                    inside: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: false
+                },
+                z: 10
+            },
+            yAxis: {
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#999'
+                    }
+                }
+            },
+            dataZoom: [
+                {
+                    type: 'inside'
+                }
+            ],
+            series: [
+                { // For shadow
+                    type: 'bar',
+                    itemStyle: {
+                        normal: {color: 'rgba(0,0,0,0.05)'}
+                    },
+                    barGap:'-100%',
+                    barCategoryGap:'40%',
+                    data: dataShadow,
+                    animation: false
+                },
+                {
+                    type: 'bar',
+                    itemStyle: {
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(
+                                0, 0, 0, 1,
+                                [
+                                    {offset: 0, color: '#83bff6'},
+                                    {offset: 0.5, color: '#188df0'},
+                                    {offset: 1, color: '#188df0'}
+                                ]
+                            )
+                        },
+                        emphasis: {
+                            color: new echarts.graphic.LinearGradient(
+                                0, 0, 0, 1,
+                                [
+                                    {offset: 0, color: '#2378f7'},
+                                    {offset: 0.7, color: '#2378f7'},
+                                    {offset: 1, color: '#83bff6'}
+                                ]
+                            )
+                        }
+                    },
+                    data: data
+                }
+            ]
+        };//End of option
+        myChart_publishment.setOption(option);
+
+    };
+    //End of Decoleration of loadEchart();
+
+    $scope.loadEchart();
+    var zoomSize = 6;
+    myChart_publishment.on('click', function (params) {
+        console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+        myChart.dispatchAction({
+            type: 'dataZoom',
+            startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+            endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+        });
+    });
+
 
 }).filter(
     'to_trusted', ['$sce', function ($sce) {

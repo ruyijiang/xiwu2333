@@ -19,7 +19,6 @@ include("library/xwFE/FEM.php");
 <div class="container" ng-controller="writeblogcontroller" style="margin-top:130px">
 
     <div class="row boat" style="margin:0;padding-top:0">
-
         <div class="writeblog_title clearfix bg-info">
             <div class="col-lg-offset-1 col-sm-offset-1 col-lg-2 col-sm-2 text-center" ng-class="{true: 'blog-success', false: 'blog-wanted'}[TabShow==1]">
                 <div class="title_toppart">
@@ -184,6 +183,7 @@ include("library/xwFE/FEM.php");
 
         </form>
 
+        <!--用户在这里选择文章类型-->
         <dialog ng-if="chooseType.open" modal fixed>
             <div dialog-title>{{chooseType.title}}</div>
             <div dialog-content>
@@ -198,25 +198,22 @@ include("library/xwFE/FEM.php");
                     </label>
                 </div>
 
-                <button ng-disabled="!pageData.aType" class="btn btn-primary center-block" role="button" ng-click="chooseType.open = false" style="display:block;margin-top:15px">确定</button>
+                <button ng-disabled="!pageData.aType" class="btn btn-primary center-block" role="button" ng-click="chooseType.open = false" style="display:block;margin-top:15px">确认</button>
 
+            </div>
+        </dialog>
+
+
+        <!--用户在这里选择上架时间-->
+        <dialog ng-if="chooseTime.open" modal fixed>
+            <div dialog-title>{{chooseTime.title}}</div>
+            <div dialog-content>
+                <div class="center-block" id="cover-publish"></div>
+                <button ng-disabled="!pageData.aType" ng-click="chooseTime.open = false" class="btn btn-primary center-block" role="button" style="display:block;margin-top:15px">确认</button>
             </div>
         </dialog>
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--虚拟区域-->
         <!--真正的图像处理区-->
         <form id="upload_img" method="POST" action="library/xwBE/php/uploadCoverImg_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">
             <input type="file" id="uploadbtn" name="coverImg" accept=".jpg,.jpeg,.png" onchange="javascript:setImagePreview(this,$('#ImgShower_container'),$('#ImgShower'));"/>
