@@ -63,8 +63,8 @@ echo $openupalertdiv;
 <invitation-code></invitation-code>
 
 <!-- loading -->
-<div class="index-mask">
-    <img src="img/fragments/loading/5375751.gif" style="margin-top:23%">
+<div class="index-mask" style="height:1080px">
+    <img src="img/fragments/loading/5375751.gif" style="margin-top:23%;position: fixed;">
 </div>
 
 <script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>

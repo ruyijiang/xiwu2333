@@ -94,20 +94,24 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     'imgCate':$scope.pageData.aType
                 }
             }).then(function (httpCont){
+                console.log(httpCont.data.statuscode);
 
-                if(httpCont.data.statuscode !== 0){//已经成功上传
+                if(httpCont.data.statuscode !== '0'){//已经成功上传
+
                     $interval.cancel(timer_CheckImgExsit);
                     alert ("上传成功");
                     $(".index-mask").fadeOut("fast");
                     $scope.submitbtnAvail = true;
                     $scope.uploadbtn_content = "上传成功";
                     $scope.Tempcover_img = httpCont.data.statuscode;
+
                 }else{
 
-                    if(timer_times >= 25){//25s没有检测到，即认为上传失败了
+                    if(timer_times >= 15){//25s没有检测到，即认为上传失败了
                         $interval.cancel(timer_CheckImgExsit);
                         alert ("上传失败");
                         $(".index-mask").fadeOut("fast");
+                        $scope.uploadbtn_content = "上传失败";
                     }
 
                     timer_times++;
