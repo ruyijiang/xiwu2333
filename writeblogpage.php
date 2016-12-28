@@ -17,6 +17,28 @@ include("library/xwFE/FEM.php");
 </style>
 
 <div class="container" ng-controller="writeblogcontroller" style="margin-top:130px">
+    <!--让用户选择刊发时间-->
+    <div class="modal fade" id="myModal_publishment" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top:160px">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        <div style="font-size:16px;font-weight:bold">选择刊发日期和时间</div>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="center-block" id="cover-publish" style="height:420px;width:570px;"></div>
+                </div>
+                <div class="modal-footer">
+                    <a data-dismiss="modal" style="margin-right:-5px">使用系统默认设置</a>
+                    <span class="glyphicon glyphicon-info-sign" style="margin-right:14px"></span>
+                    <button type="button" class="btn btn-primary">
+                        确认选择
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
 
     <div class="row boat" style="margin:0;padding-top:0">
         <div class="writeblog_title clearfix bg-info">
@@ -26,6 +48,9 @@ include("library/xwFE/FEM.php");
                 </div>
                 <div class="title_botpart">
                     <span>拟定文章标题</span>
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal_publishment">
+                        开始演示模态框
+                    </button>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-2 text-center blog-wanted">
@@ -183,6 +208,7 @@ include("library/xwFE/FEM.php");
 
         </form>
 
+
         <!--用户在这里选择文章类型-->
         <dialog ng-if="chooseType.open" modal fixed>
             <div dialog-title>{{chooseType.title}}</div>
@@ -197,22 +223,12 @@ include("library/xwFE/FEM.php");
                         <span style="display:inline-block;margin-left:3px">普通文章</span>
                     </label>
                 </div>
-
                 <button ng-disabled="!pageData.aType" class="btn btn-primary center-block" role="button" ng-click="chooseType.open = false" style="display:block;margin-top:15px">确认</button>
-
             </div>
         </dialog>
 
 
-        <!--用户在这里选择上架时间-->
-        <dialog ng-if="chooseTime.open" modal fixed>
-            <div dialog-title>{{chooseTime.title}}</div>
-            <div dialog-content>
-                <div class="center-block" id="cover-publish"></div>
-                <button ng-disabled="!pageData.aType" ng-click="chooseTime.open = false" class="btn btn-primary center-block" role="button" style="display:block;margin-top:15px">确认</button>
-            </div>
-        </dialog>
-        
+
 
         <!--真正的图像处理区-->
         <form id="upload_img" method="POST" action="library/xwBE/php/uploadCoverImg_action.php" target="uploadCoverImg" enctype="multipart/form-data" style="display:none">

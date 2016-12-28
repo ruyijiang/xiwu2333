@@ -63,7 +63,7 @@ echo $openupalertdiv;
 <invitation-code></invitation-code>
 
 <!-- loading -->
-<div class="index-mask" style="height:1080px">
+<div class="index-mask" style="height:1480px">
     <img src="img/fragments/loading/5375751.gif" style="margin-top:23%;position: fixed;">
 </div>
 

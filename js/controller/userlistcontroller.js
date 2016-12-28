@@ -215,7 +215,6 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
         myChart_ratio.setOption(option2);
     };
 
-
     $scope.loadEchart();
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
     $rootScope.navactivitify(2);

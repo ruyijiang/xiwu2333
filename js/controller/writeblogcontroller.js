@@ -218,23 +218,23 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
 
     /**
-     * Echarts Function
+     * 启动Echarts
      */
-    $scope.loadEchart = function (){
-        var myChart_publishment = echarts.init(document.getElementById('cover-publish'));
-        var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '点', '击', '柱', '子', '或', '者', '两'];
-        var data = [220, 182, 191, 234, 290, 330, 310, 220, 182, 191, 234, 290, 330, 310];
-        var yMax = 500;
-        var dataShadow = [];
+    var myChart_publishment = {};
+    var dataAxis = ['29日', '30日', '31日', '01日', '02日', '03日', '04日', '05日', '06日', '07日'];
+    var data = [3, 3, 4, 2, 0, 4, 4, 3, 3, 4];
+    var yMax = 4;
+    var dataShadow = [];
 
+    function loadEchart(){
         for (var i = 0; i < data.length; i++) {
             dataShadow.push(yMax);
         }
 
-        option = {
+        myChart_publishment = echarts.init(document.getElementById('cover-publish'));
+        var option = {
             title: {
-                text: '特性示例：渐变色 阴影 点击缩放',
-                subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+                subtext: '以下为10天内所有已经排期的封面文章刊发日期分布情况，贡您参考选择。'
             },
             xAxis: {
                 data: dataAxis,
@@ -271,16 +271,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                 }
             ],
             series: [
-                { // For shadow
-                    type: 'bar',
-                    itemStyle: {
-                        normal: {color: 'rgba(0,0,0,0.05)'}
-                    },
-                    barGap:'-100%',
-                    barCategoryGap:'40%',
-                    data: dataShadow,
-                    animation: false
-                },
                 {
                     type: 'bar',
                     itemStyle: {
@@ -308,22 +298,22 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     data: data
                 }
             ]
-        };//End of option
+        };
         myChart_publishment.setOption(option);
+    }
 
-    };
-    //End of Decoleration of loadEchart();
+    loadEchart();
 
-    $scope.loadEchart();
     var zoomSize = 6;
     myChart_publishment.on('click', function (params) {
         console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-        myChart.dispatchAction({
+        myChart_publishment.dispatchAction({
             type: 'dataZoom',
             startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
             endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
         });
     });
+    //End of 启动Echarts
 
 
 }).filter(
