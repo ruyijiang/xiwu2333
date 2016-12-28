@@ -28,9 +28,9 @@ if($timing){
             $result_title = $row["title"];
             $result_subtitle = $row["subtitle"];
             $result_abstract = $row["abstract"];
-            $result_cover_img = $row["article_img"];
+            $result_article_img = $row["article_img"];
 
-            $dataArr = array ('aid'=>$result_aid,'title'=>$result_title,'subtitle'=>$result_subtitle,'abstract'=>$result_abstract,'article_img'=>$result_cover_img);
+            $dataArr = array ('aid'=>$result_aid,'title'=>$result_title,'subtitle'=>$result_subtitle,'abstract'=>$result_abstract,'article_img'=>$result_article_img);
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
             }
