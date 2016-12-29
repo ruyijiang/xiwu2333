@@ -6,6 +6,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     $rootScope.navactivitify(4);
     $rootScope.NowPageTitle = "写文章 - 喜屋";
+    $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
     //预设内容
     var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
@@ -314,6 +315,10 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         });
     });
     //End of 启动Echarts
+
+    $("#confirm_time").click(function (){
+        $("#myModal_publishment").modal('hide');
+    });
 
 
 }).filter(

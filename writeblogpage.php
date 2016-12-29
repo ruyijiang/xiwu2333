@@ -3,22 +3,11 @@ require("library/xwBE/connectDB.php");
 require("library/xwBE/all.php");
 include("library/xwFE/FEM.php");
 ?>
-<style>
-    body{background-color:#f5f8fa}
-    .title_toppart,.title_botpart{width:100%}
-    .title_toppart i{font-size:26px}
-    .mid_toppart i{font-size:32px}
-    .title_botpart span{font-size:15px;font-weight:300}
-    .writeblog_title{border-bottom:solid rgb(211, 224, 233) 1px;padding:15px 0}
-    .blog-success{color:#71a359}
-    .blog-wanted{color:gray}
-    .blog-wrong{color:#a24747}
-    .chooseAType label{cursor:pointer;font-weight:normal}
-</style>
+<style>body{background-color:#f5f8fa}.title_toppart,.title_botpart{width:100%}.title_toppart i{font-size:26px}.mid_toppart i{font-size:32px}.title_botpart span{font-size:15px;font-weight:300}.writeblog_title{border-bottom:solid #d3e0e9 1px;padding:15px 0}.blog-success{color:#71a359}.blog-wanted{color:gray}.blog-wrong{color:#a24747}.chooseAType label{cursor:pointer;font-weight:normal}</style>
 
 <div class="container" ng-controller="writeblogcontroller" style="margin-top:130px">
     <!--让用户选择刊发时间-->
-    <div class="modal fade" id="myModal_publishment" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top:160px">
+    <div class="modal fade" id="myModal_publishment" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -30,9 +19,8 @@ include("library/xwFE/FEM.php");
                     <div class="center-block" id="cover-publish" style="height:420px;width:570px;"></div>
                 </div>
                 <div class="modal-footer">
-                    <a data-dismiss="modal" style="margin-right:-5px">使用系统默认设置</a>
-                    <span class="glyphicon glyphicon-info-sign" style="margin-right:14px"></span>
-                    <button type="button" class="btn btn-primary">
+                    <a data-dismiss="modal" style="margin-right:14px" data-toggle="tooltip" data-placement="top" title="默认在您发表封面文章的翌日7点刊发，48小时后下架">使用系统默认设置</a>
+                    <button type="button" class="btn btn-primary" id="confirm_time">
                         确认选择
                     </button>
                 </div>
@@ -178,7 +166,7 @@ include("library/xwFE/FEM.php");
                             </div>
                         </div>
                     </div>
-                    <div class="uploa dImg">
+                    <div class="upload dImg">
                         <div class="row">
                             <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10" ng-style="{'background-color': selectedForeColor}" style="border:dashed #777 1px;border-radius:3px;height:300px;margin-top:15px">
                                 <div id="ImgShower_container" class="ImgShower" style="margin-left:15%;width:70%;height:100%">
