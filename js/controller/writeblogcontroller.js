@@ -235,7 +235,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         myChart_publishment = echarts.init(document.getElementById('cover-publish'));
         var option = {
             title: {
-                subtext: '以下为10天内所有已经排期的封面文章刊发日期分布情况，贡您参考选择。'
+                subtext: '以下为未来10天内所有已经排期的封面文章刊发日期分布情况，仅供参考。请点击选择。'
             },
             xAxis: {
                 data: dataAxis,
@@ -308,11 +308,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     var zoomSize = 6;
     myChart_publishment.on('click', function (params) {
         console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-        myChart_publishment.dispatchAction({
-            type: 'dataZoom',
-            startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-            endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-        });
+        console.log(params.dataIndex);
     });
     //End of 启动Echarts
 

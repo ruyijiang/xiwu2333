@@ -12,11 +12,27 @@ include("library/xwFE/FEM.php");
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" id="myModalLabel">
-                        <div style="font-size:16px;font-weight:bold">选择刊发日期和时间</div>
+                        <div style="font-size:16px;font-weight:bold">选择刊发日期和时间<span class="glyphicon glyphicon-info-sign" style="font-size:12px;color:red"></span></div>
                     </h4>
                 </div>
                 <div class="modal-body">
                     <div class="center-block" id="cover-publish" style="height:420px;width:570px;"></div>
+                    <div class="text-center">
+                        <span style="font-weight:bold">选择封面文章刊发时长：</span>
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                                请选择<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" style="min-width: 100px">
+                                <li><a>10小时</a></li>
+                                <li><a>12小时</a></li>
+                                <li><a>24小时</a></li>
+                                <li><a>29小时</a></li>
+                                <li><a>34小时</a></li>
+                                <li><a>48小时</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <a data-dismiss="modal" style="margin-right:14px" data-toggle="tooltip" data-placement="top" title="默认在您发表封面文章的翌日7点刊发，48小时后下架">使用系统默认设置</a>
