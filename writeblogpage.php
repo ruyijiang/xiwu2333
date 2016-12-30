@@ -10,36 +10,40 @@ include("library/xwFE/FEM.php");
     <div class="modal fade" id="myModal_publishment" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">
-                        <div style="font-size:16px;font-weight:bold">选择刊发日期和时间<span class="glyphicon glyphicon-info-sign" style="font-size:12px;color:red"></span></div>
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <div class="center-block" id="cover-publish" style="height:420px;width:570px;"></div>
-                    <div class="text-center">
-                        <span style="font-weight:bold">选择封面文章刊发时长：</span>
-                        <div class="btn-group">
-                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                                请选择<span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" style="min-width: 100px">
-                                <li><a>10小时</a></li>
-                                <li><a>12小时</a></li>
-                                <li><a>24小时</a></li>
-                                <li><a>29小时</a></li>
-                                <li><a>34小时</a></li>
-                                <li><a>48小时</a></li>
-                            </ul>
-                        </div>
+                <form action="library/xwBE/Interface/setPublishment/setPublishment.php" target="_self" method="POST">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">
+                            <div style="font-size:16px;font-weight:bold">选择刊发日期和时间<span class="glyphicon glyphicon-info-sign" style="font-size:14px;color:red"  data-toggle="tooltip" data-placement="bottom" title="本网站并不保证您所刊发的文章一定能够在社区广场滚动展示。友情提示：为使您的封面文章能够尽可能地展示在社区广场顶部，被更多人看见，建议您选择刊发文章数较少的日期。"></span></div>
+                        </h4>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <a data-dismiss="modal" style="margin-right:14px" data-toggle="tooltip" data-placement="top" title="默认在您发表封面文章的翌日7点刊发，48小时后下架">使用系统默认设置</a>
-                    <button type="button" class="btn btn-primary" id="confirm_time">
-                        确认选择
-                    </button>
-                </div>
+                    <div class="modal-body">
+                        <div class="center-block" id="cover-publish" style="height:420px;width:570px;"></div>
+                        <div class="text-center" id="publishTime_div" style="display: none">
+                            <span style="font-weight:bold">
+                                刊发时间是：
+                                <span id="publishDate_span"></span> 07:00，请选择封面文章刊发时长：
+                            </span>
+                            <div class="btn-group dropup">
+                                <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span id="publishTime_span">请选择&nbsp;&nbsp;</span><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu publishTimeChooser" role="menu" style="min-width: 120px">
+                                    <li><a ng-click="chooseTime(12)">12小时</a></li>
+                                    <li><a ng-click="chooseTime(24)">24小时</a></li>
+                                    <li><a ng-click="chooseTime(29)">29小时</a></li>
+                                    <li><a ng-click="chooseTime(34)">34小时</a></li>
+                                    <li><a ng-click="chooseTime(48)">48小时</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="hidden" id="publishDate_ipt" value><!--隐藏区域，用以储存选择的刊发日期-->
+                        <input type="hidden" id="publishTime_ipt" value><!--隐藏区域，用以储存选择的刊发时长-->
+                    </div>
+                    <div class="modal-footer">
+                        <a style="margin-right:14px" ng-click="useDefault()">使用系统默认设置</a>
+                        <input type="submit" class="btn btn-primary" id="confirm_time" value="确认选择">
+                    </div>
+                </form>
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->
     </div>

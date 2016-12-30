@@ -305,16 +305,29 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     loadEchart();
 
-    var zoomSize = 6;
     myChart_publishment.on('click', function (params) {
-        console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-        console.log(params.dataIndex);
+        $("#publishTime_div").show();
+        $("#publishDate_ipt").val(params.name);
+        $("#publishDate_span").html(params.name);
     });
-    //End of 启动Echarts
+
+    $scope.chooseTime = function (a){
+        $("#publishTime_ipt").val(a);
+        $("#publishTime_span").html(a + "小时");
+    };
+
+    $scope.useDefault = function () {
+        $("#publishTime_div").show();
+        $("#publishDate_ipt").val();//选择并展示明天
+        $("#publishDate_span").html();
+        $("#publishTime_ipt").val(24);
+        $("#publishTime_span").html(24 + "小时");
+    };
 
     $("#confirm_time").click(function (){
         $("#myModal_publishment").modal('hide');
     });
+    //End of Echarts
 
 
 }).filter(
