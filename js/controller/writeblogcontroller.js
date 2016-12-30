@@ -223,7 +223,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
      */
     var myChart_publishment = {};
     var dataAxis = ['29日', '30日', '31日', '01日', '02日', '03日', '04日', '05日', '06日', '07日'];
-    var data = [3, 3, 4, 2, 0, 4, 4, 3, 3, 4];
+    var data = [3, 3, 4, 2, 0.1, 4, 4, 3, 3, 4];
     var yMax = 4;
     var dataShadow = [];
 
@@ -315,7 +315,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         $("#publishTime_ipt").val(a);
         $("#publishTime_span").html(a + "小时");
     };
-
     $scope.useDefault = function () {
         $("#publishTime_div").show();
         $("#publishDate_ipt").val();//选择并展示明天
