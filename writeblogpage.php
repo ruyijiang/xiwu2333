@@ -21,7 +21,7 @@ include("library/xwFE/FEM.php");
                         <div class="text-center" id="publishTime_div" style="display: none">
                             <span style="font-weight:bold">
                                 刊发时间是：
-                                <span id="publishDate_span"></span> 07:00，请选择封面文章刊发时长：
+                                <span id="publishDate_span"></span> 07:00，请选择刊发时长：
                             </span>
                             <div class="btn-group dropup">
                                 <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
