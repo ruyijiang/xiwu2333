@@ -13,15 +13,15 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     $scope.TabShow = 1;
     $scope.submitbtnAvail = false;
     $scope.uploadbtn_content = "确认，上传";
+
     //模态窗口元素
     $scope.chooseType = {
         open:true,
         title:"选择文章类型"
     };
-    $scope.chooseTime = {
-        open:true,
-        title:"选择刊发时间"
-    };
+
+    //多个接口的查询参数
+    var timing = Math.round(new Date().getTime()/1000);
 
 
     //页面数据模板
@@ -101,8 +101,8 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             }).then(function (httpCont){
                 console.log(httpCont.data.statuscode);
 
-                if(httpCont.data.statuscode !== '0'){//已经成功上传
-
+                if(httpCont.data.statuscode !== '0'){
+                    //已经成功上传
                     $interval.cancel(timer_CheckImgExsit);
                     alert ("上传成功");
                     $(".index-mask").fadeOut("fast");
@@ -311,23 +311,44 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
         $("#publishDate_span").html(params.name);
     });
 
-    $scope.chooseTime = function (a){
-        $("#publishTime_ipt").val(a);
-        $("#publishTime_span").html(a + "小时");
+    $scope.chooseTime = function (num){
+        $("#publishTime_ipt").val(num);
+        $("#publishTime_span").html(num + "小时");
     };
+
+    var tomorrow_date,tomorrow_month,today_month;
     $scope.useDefault = function () {
         $("#publishTime_div").show();
-        $("#publishDate_ipt").val();//选择并展示明天
-        $("#publishDate_span").html();
-        $("#publishTime_ipt").val(24);
-        $("#publishTime_span").html(24 + "小时");
-    };
+
+        $http({
+            method: 'GET',
+            url: 'library/xwBE/Interface/getEnvironment/getDate/getDate.php',
+            params:{
+                'timing':timing
+            }
+        }).then(function (httpCont){
+            tomorrow_date = httpCont.data.tomorrow_date + "日";
+            tomorrow_month = httpCont.data.tomorrow_month;
+            today_month = httpCont.data.today_month;
+
+            $("#publishDate_ipt").val(tomorrow_date);//选择并展示明天
+            if(tomorrow_month == today_month){
+                var tomIso = tomorrow_date;
+            }else{
+                var tomIso = tomorrow_month + "月" + tomorrow_date;
+            }
+
+            $("#publishDate_span").html(tomIso);
+            $("#publishTime_ipt").val(24);
+            $("#publishTime_span").html(24 + "小时");
+        });
+
+    };//End of $scope.useDefault();
 
     $("#confirm_time").click(function (){
         $("#myModal_publishment").modal('hide');
     });
     //End of Echarts
-
 
 }).filter(
     'to_trusted', ['$sce', function ($sce) {

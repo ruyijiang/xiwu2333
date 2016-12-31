@@ -40,6 +40,10 @@ class _environment{
     public function getTime(){
         return date('Y-m-d H:i:s',time());
     }
+    /*****************获取UNIX服务器时间*********************/
+    public function getUnixTime(){
+        return time();
+    }
     /*****************获取地址 | params:$mod:0,根据数据库***********************/
     public function getLocation($mod,$value){
         //
@@ -55,7 +59,7 @@ class getDirFile{
     private $DirArray  = array();  
     private $FileArray = array();  
     private $DirFileArray = array();    
-    private $Handle,$Dir,$File;  
+    private $Handle,$Dir,$File;
   
     //获取目录列表  
     public function getDir( & $Dir ){  

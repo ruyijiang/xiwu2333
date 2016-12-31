@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getTime.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getPublishment/getPublishment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getDate/getDate.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getTime.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" afterPath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/library/ueditor-1.4.3.2/third-party/webuploader/webuploader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/all.php" afterPath="$PROJECT_DIR$/library/xwBE/all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeblogpage.php" afterPath="$PROJECT_DIR$/writeblogpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,16 +45,9 @@
       <file leaf-file-name="writeblogpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeblogpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding>
-                <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#h4#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#h4#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="456">
+              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,10 +55,72 @@
       <file leaf-file-name="writeblogcontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="312" column="0" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+            <state relative-caret-position="517">
+              <caret line="195" column="41" selection-start-line="195" selection-start-column="41" selection-end-line="195" selection-end-column="41" />
               <folding>
-                <element signature="e#6439#6467#0" expanded="false" />
+                <element signature="e#898#935#0" expanded="false" />
+                <element signature="e#6458#6486#0" expanded="false" />
+                <element signature="e#6730#9114#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getDate.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getDate/getDate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getComments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getComments/getComments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="44" />
+              <folding>
+                <marker date="1482836954096" expanded="true" signature="846:897" placeholder="SELECT aid F... articles" />
+                <marker date="1482836954096" expanded="true" signature="1010:1069" placeholder="SELECT cover... covers" />
+                <marker date="1482836954096" expanded="true" signature="1511:1643" placeholder="SELECT comme... comments" />
+                <marker date="1482836954096" expanded="true" signature="2129:2190" placeholder="SELECT uid,n... users" />
+                <marker date="1482836954096" expanded="true" signature="2533:2597" placeholder="SELECT uid,n... users" />
+                <marker date="1482836954096" expanded="true" signature="3475:3534" placeholder="SELECT topic... topics" />
+                <marker date="1482836954096" expanded="true" signature="3944:4076" placeholder="SELECT comme... comments" />
+                <marker date="1482836954096" expanded="true" signature="4562:4623" placeholder="SELECT uid,n... users" />
+                <marker date="1482836954096" expanded="true" signature="4966:5030" placeholder="SELECT uid,n... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/all.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <marker date="1483204450415" expanded="true" signature="9243:9289" placeholder="SELECT * FRO... users" />
+                <marker date="1483204450415" expanded="true" signature="10643:10837" placeholder="UPDATE users... " />
+                <marker date="1483204450415" expanded="true" signature="14896:14950" placeholder="SELECT `uid`... users" />
+                <marker date="1483204450415" expanded="true" signature="16170:16251" placeholder="SELECT regti... users" />
+                <marker date="1483204450415" expanded="true" signature="17680:17954" placeholder="INSERT INTO `xiwu2333.com`.`users`... " />
+                <marker date="1483204450415" expanded="true" signature="20937:21037" placeholder="UPDATE users... " />
+                <marker date="1483204450415" expanded="true" signature="22261:22311" placeholder="UPDATE users... " />
+                <marker date="1483204450415" expanded="true" signature="23145:23197" placeholder="UPDATE users... " />
+                <marker date="1483204450415" expanded="true" signature="24292:24342" placeholder="SELECT COUNT... users" />
+                <marker date="1483204450415" expanded="true" signature="24633:24683" placeholder="SELECT COUNT... users" />
+                <marker date="1483204450415" expanded="true" signature="25316:25402" placeholder="select count... users" />
+                <marker date="1483204450415" expanded="true" signature="25801:25868" placeholder="SELECT uid F... users" />
+                <marker date="1483204450415" expanded="true" signature="29139:29207" placeholder="SELECT l_val... liveness" />
+                <marker date="1483204450415" expanded="true" signature="29468:29550" placeholder="UPDATE liven... " />
+                <marker date="1483204450415" expanded="true" signature="30182:30282" placeholder="INSERT INTO liveness... " />
+                <marker date="1483204450415" expanded="true" signature="31394:31510" placeholder="select time,... " />
+                <marker date="1483204450415" expanded="true" signature="31802:31900" placeholder="SELECT l_val... liveness" />
               </folding>
             </state>
           </provider>
@@ -69,24 +129,14 @@
       <file leaf-file-name="setPublishment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="96">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getTime.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getTime.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getPublishment.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getPublishment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getPublishment/getPublishment.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -126,10 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/directive/icheck/iCheck.js" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Pagination/pagination.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setComment/setComment.php" />
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setTopic/topic_action.php" />
         <option value="$PROJECT_DIR$/js/controller/topicController.js" />
         <option value="$PROJECT_DIR$/topic.php" />
         <option value="$PROJECT_DIR$/writeTopic.php" />
@@ -172,19 +218,22 @@
         <option value="$PROJECT_DIR$/js/directive/choosePublishTime/choosePublishTime.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/directive/choosePublishtime/choosePublishtime.js" />
-        <option value="$PROJECT_DIR$/writeblogpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php" />
-        <option value="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getTime.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getPublishment/getPublishment.php" />
+        <option value="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getTime.php" />
+        <option value="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getDate_today.php" />
+        <option value="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getDate.php" />
+        <option value="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getDate/getDate.php" />
+        <option value="$PROJECT_DIR$/library/xwBE/all.php" />
+        <option value="$PROJECT_DIR$/writeblogpage.php" />
         <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -193,8 +242,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -237,6 +286,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -357,6 +418,58 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Pagination" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xwBE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interface" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getRandom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xwBE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interface" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="getPublishment" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -387,7 +500,59 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="getTime" />
+              <option name="myItemId" value="getDate" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xwBE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interface" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getDota2Info" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xwBE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interface" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getComments" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,18 +591,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1174,6 +1327,12 @@
       <workItem from="1483023493936" duration="546000" />
       <workItem from="1483026816309" duration="1560000" />
       <workItem from="1483060461360" duration="13033000" />
+      <workItem from="1483115580393" duration="933000" />
+      <workItem from="1483119082349" duration="1420000" />
+      <workItem from="1483154258350" duration="6136000" />
+      <workItem from="1483183480178" duration="3357000" />
+      <workItem from="1483202140629" duration="801000" />
+      <workItem from="1483203851723" duration="3025000" />
     </task>
     <task id="LOCAL-00098" summary="about finish getHotTopics.php">
       <created>1472622749462</created>
@@ -1522,14 +1681,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2533482000" />
+    <option name="totallyTimeSpent" value="2549154000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1546,7 +1705,7 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.49791667" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4124031" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41226214" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1619,34 +1778,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/xwBE/UserAllDetails_Export.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/utill/unique_inarr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/utill/Regulars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/Database/heros.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28935">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/utill/all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1896,66 +2027,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getComments/getComments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/directive/icheck/iCheck.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="45" column="3" selection-start-line="3" selection-start-column="0" selection-end-line="45" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/directive/choosePublishtime/choosePublishtime.js">
+    <entry file="file://$PROJECT_DIR$/js/directive/choosePublishtime/choosePublishtime.js" />
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="-1046">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Pagination/pagination.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#h4#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#h4#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="576">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
+    <entry file="file://$PROJECT_DIR$/js/controller/communityController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="312" column="0" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-          <folding>
-            <element signature="e#6439#6467#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getTime.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="96">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1965,6 +2069,80 @@
         <state relative-caret-position="72">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <marker date="1483204450415" expanded="true" signature="9243:9289" placeholder="SELECT * FRO... users" />
+            <marker date="1483204450415" expanded="true" signature="10643:10837" placeholder="UPDATE users... " />
+            <marker date="1483204450415" expanded="true" signature="14896:14950" placeholder="SELECT `uid`... users" />
+            <marker date="1483204450415" expanded="true" signature="16170:16251" placeholder="SELECT regti... users" />
+            <marker date="1483204450415" expanded="true" signature="17680:17954" placeholder="INSERT INTO `xiwu2333.com`.`users`... " />
+            <marker date="1483204450415" expanded="true" signature="20937:21037" placeholder="UPDATE users... " />
+            <marker date="1483204450415" expanded="true" signature="22261:22311" placeholder="UPDATE users... " />
+            <marker date="1483204450415" expanded="true" signature="23145:23197" placeholder="UPDATE users... " />
+            <marker date="1483204450415" expanded="true" signature="24292:24342" placeholder="SELECT COUNT... users" />
+            <marker date="1483204450415" expanded="true" signature="24633:24683" placeholder="SELECT COUNT... users" />
+            <marker date="1483204450415" expanded="true" signature="25316:25402" placeholder="select count... users" />
+            <marker date="1483204450415" expanded="true" signature="25801:25868" placeholder="SELECT uid F... users" />
+            <marker date="1483204450415" expanded="true" signature="29139:29207" placeholder="SELECT l_val... liveness" />
+            <marker date="1483204450415" expanded="true" signature="29468:29550" placeholder="UPDATE liven... " />
+            <marker date="1483204450415" expanded="true" signature="30182:30282" placeholder="INSERT INTO liveness... " />
+            <marker date="1483204450415" expanded="true" signature="31394:31510" placeholder="select time,... " />
+            <marker date="1483204450415" expanded="true" signature="31802:31900" placeholder="SELECT l_val... liveness" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="195" column="41" selection-start-line="195" selection-start-column="41" selection-end-line="195" selection-end-column="41" />
+          <folding>
+            <element signature="e#898#935#0" expanded="false" />
+            <element signature="e#6458#6486#0" expanded="false" />
+            <element signature="e#6730#9114#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getComments/getComments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="44" />
+          <folding>
+            <marker date="1482836954096" expanded="true" signature="846:897" placeholder="SELECT aid F... articles" />
+            <marker date="1482836954096" expanded="true" signature="1010:1069" placeholder="SELECT cover... covers" />
+            <marker date="1482836954096" expanded="true" signature="1511:1643" placeholder="SELECT comme... comments" />
+            <marker date="1482836954096" expanded="true" signature="2129:2190" placeholder="SELECT uid,n... users" />
+            <marker date="1482836954096" expanded="true" signature="2533:2597" placeholder="SELECT uid,n... users" />
+            <marker date="1482836954096" expanded="true" signature="3475:3534" placeholder="SELECT topic... topics" />
+            <marker date="1482836954096" expanded="true" signature="3944:4076" placeholder="SELECT comme... comments" />
+            <marker date="1482836954096" expanded="true" signature="4562:4623" placeholder="SELECT uid,n... users" />
+            <marker date="1482836954096" expanded="true" signature="4966:5030" placeholder="SELECT uid,n... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getDate/getDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

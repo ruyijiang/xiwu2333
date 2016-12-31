@@ -38,6 +38,7 @@ include("library/xwFE/FEM.php");
                         </div>
                         <input type="hidden" id="publishDate_ipt" value><!--隐藏区域，用以储存选择的刊发日期-->
                         <input type="hidden" id="publishTime_ipt" value><!--隐藏区域，用以储存选择的刊发时长-->
+                        <input type="hidden" id="cover_id" value><!--隐藏区域，用以储存选择的刊发时长-->
                     </div>
                     <div class="modal-footer">
                         <a style="margin-right:14px" ng-click="useDefault()">使用系统默认设置</a>
