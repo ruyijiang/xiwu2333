@@ -17,9 +17,21 @@ $a = new interfaceResponse();
 
 if(!$timing){
 
-    $sql = "SELECT aid FROM `articles` WHERE aid = '$target_id' ";
-    $qry = $db->query($sql);
-    $row = $qry->fetch_assoc();
+
+    for($i=0;$i<7;$i++){
+
+        $y = date("Y",strtotime("+".$i." day"));
+        $m = date("m",strtotime("+".$i." day"));
+        $d = date("d",strtotime("+".$i." day"));
+
+        $todayTime= mktime(07,0,0,$m,$d,$y);
+
+        $sql = "SELECT aid FROM `articles` WHERE   ";
+        $qry = $db->query($sql);
+        $row = $qry->fetch_assoc();
+
+
+    }
 
 
     
