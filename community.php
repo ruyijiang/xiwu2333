@@ -15,13 +15,13 @@ include("library/xwFE/FEM.php");
         <div class="carousel-inner" role="listbox">
             <div class="item" ng-repeat="xCar in Covers track by $index" ng-class="{true: 'active'}[$index == '0']" ng-style="{'background-color':xCar.bg_color}">
                 <img ng-src="{{xCar.cover_img}}" alt="carousel-image{{$index}}">
-            <div class="item" ng-repeat="xCar in Covers track by $index">
-                <img ng-src="{{xCar.cover_img}}">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>{{xCar.title}}</h1>
-                        <p>{{xCar.abstract}}</p>
-                        <p><a class="btn btn-lg btn-primary" role="button" ng-href="/#/blog?aid={{xCar.cover_id}}">{{xCar.btn_content}}</a></p>
+                <div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>{{xCar.title}}</h1>
+                            <p>{{xCar.abstract}}</p>
+                            <p><a class="btn btn-lg btn-primary" role="button" ng-href="/#/blog?aid={{xCar.cover_id}}">{{xCar.btn_content}}</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,9 +136,6 @@ include("library/xwFE/FEM.php");
                             </p>
                         </li>
                     </ul>
-
-                    <div class="list-group">
-                    </div>
                 </div>
                 <!--话题-->
                 <div class="figures" style="margin-top:35px">

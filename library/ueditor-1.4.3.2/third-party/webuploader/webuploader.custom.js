@@ -5271,7 +5271,7 @@
     
                 this.encode = function(image,quality) // image data object
                 {
-                    // var time_start = new Date().getTime();
+                    // var time_start = new Date().getDate();
     
                     if(quality) setQuality(quality);
     
@@ -5375,7 +5375,7 @@
                     byteout = [];
     
                     // benchmarking
-                    // var duration = new Date().getTime() - time_start;
+                    // var duration = new Date().getDate() - time_start;
                     // console.log('Encoding time: '+ currentQuality + 'ms');
                     //
     
@@ -5405,7 +5405,7 @@
             }
     
             function init(){
-                // var time_start = new Date().getTime();
+                // var time_start = new Date().getDate();
                 if(!quality) quality = 50;
                 // Create tables
                 initCharLookupTable()
@@ -5414,7 +5414,7 @@
                 initRGBYUVTable();
     
                 setQuality(quality);
-                // var duration = new Date().getTime() - time_start;
+                // var duration = new Date().getDate() - time_start;
                 // console.log('Initialization '+ duration + 'ms');
             }
     
