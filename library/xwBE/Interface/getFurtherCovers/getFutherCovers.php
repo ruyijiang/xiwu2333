@@ -24,12 +24,13 @@ if(!$timing){
         $m = date("m",strtotime("+".$i." day"));
         $d = date("d",strtotime("+".$i." day"));
 
-        $todayTime= mktime(07,0,0,$m,$d,$y);
+        $TheDayStartTime = mktime(07,0,0,$m,$d,$y);
 
-        $sql = "SELECT aid FROM `articles` WHERE   ";
+        $sql = "SELECT cover_id FROM `covers` WHERE post_time >= $TheDayStartTime ";
         $qry = $db->query($sql);
-        $row = $qry->fetch_assoc();
+        @$row_all = mysqli_num_rows($qry);
 
+        var_dump($row_all);
 
     }
 

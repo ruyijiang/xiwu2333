@@ -52,7 +52,6 @@ if(!$target_id || !$cate){
             $EchoResult = array();
 
             $sql1 = "SELECT comment_id,content,regtime,from_uid,to_id FROM comments WHERE topic_id = '$target_id' ORDER BY regtime desc LIMIT $num_start,$num_onepage";
-
             $qry1 = $db->query($sql1);
             while($row = $qry1->fetch_assoc()){
 
