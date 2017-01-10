@@ -53,6 +53,16 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
          }*/
     });
 
+    $http({
+        method: 'GET',
+        url: 'library/xwBE/Interface/checkStatus/check_invitationcodeStatus.php',
+        params:{
+            'funcType':"WriteCovers"
+        }
+    }).then(function (httpCont){
+        console.log(httpCont);
+    });
+
 
     /**
      * 根据步数显示对应区域
