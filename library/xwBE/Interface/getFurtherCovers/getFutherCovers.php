@@ -17,8 +17,9 @@ $a = new interfaceResponse();
 
 if(!$timing){
 
+    $EchoResult = array();
 
-    for($i=0;$i<7;$i++){
+    for($i=0;$i<10;$i++){
 
         $y = date("Y",strtotime("+".$i." day"));
         $m = date("m",strtotime("+".$i." day"));
@@ -30,12 +31,14 @@ if(!$timing){
         $qry = $db->query($sql);
         @$row_all = mysqli_num_rows($qry);
 
-        var_dump($row_all);
+        $dataArr = array('amount'=>$row_all);
+
+        array_push($EchoResult,$dataArr);
+
 
     }
 
-
-    
+    var_dump($EchoResult);
 
 }else{
 
