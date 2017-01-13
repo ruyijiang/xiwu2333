@@ -53,15 +53,21 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
          }*/
     });
 
-    $http({
-        method: 'GET',
-        url: 'library/xwBE/Interface/checkStatus/check_invitationcodeStatus.php',
-        params:{
-            'funcType':"WriteCovers"
-        }
-    }).then(function (httpCont){
-        console.log(httpCont);
-    });
+
+    /**
+     * 查询未来10日每天发表的封面文章数目
+     */
+    $scope.tellmemore = function (){
+        $http({
+            method: 'GET',
+            url: 'library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php',
+            params:{
+                'timing':timing
+            }
+        }).then(function (httpCont){
+            console.log(httpCont.data);
+        });
+    };
 
 
     /**

@@ -57,7 +57,7 @@ include("library/xwFE/FEM.php");
                 </div>
                 <div class="title_botpart">
                     <span>拟定文章标题</span>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal_publishment">
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal_publishment" ng-click="tellmemore()">
                         开始演示模态框
                     </button>
                 </div>
