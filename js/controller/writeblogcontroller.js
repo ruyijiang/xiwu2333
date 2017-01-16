@@ -55,22 +55,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
 
     /**
-     * 查询未来10日每天发表的封面文章数目
-     */
-    $scope.tellmemore = function (){
-        $http({
-            method: 'GET',
-            url: 'library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php',
-            params:{
-                'timing':timing
-            }
-        }).then(function (httpCont){
-            console.log(httpCont.data);
-        });
-    };
-
-
-    /**
      * 根据步数显示对应区域
      */
     var ueditor = null;
@@ -115,7 +99,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     'imgCate':$scope.pageData.aType
                 }
             }).then(function (httpCont){
-                console.log(httpCont.data.statuscode);
 
                 if(httpCont.data.statuscode !== '0'){
                     //已经成功上传
@@ -237,134 +220,154 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     /**
      * 启动Echarts
      */
-    var myChart_publishment = {};
-    var dataAxis = ['29日', '30日', '31日', '01日', '02日', '03日', '04日', '05日', '06日', '07日'];
-    var data = [3, 3, 4, 2, 0.1, 4, 4, 3, 3, 4];
-    var yMax = 4;
-    var dataShadow = [];
-
-    function loadEchart(){
-        for (var i = 0; i < data.length; i++) {
-            dataShadow.push(yMax);
-        }
-
-        myChart_publishment = echarts.init(document.getElementById('cover-publish'));
-        var option = {
-            title: {
-                subtext: '以下为未来10天内所有已经排期的封面文章刊发日期分布情况，仅供参考。请点击选择。'
-            },
-            xAxis: {
-                data: dataAxis,
-                axisLabel: {
-                    inside: true,
-                    textStyle: {
-                        color: '#fff'
-                    }
-                },
-                axisTick: {
-                    show: false
-                },
-                axisLine: {
-                    show: false
-                },
-                z: 10
-            },
-            yAxis: {
-                axisLine: {
-                    show: false
-                },
-                axisTick: {
-                    show: false
-                },
-                axisLabel: {
-                    textStyle: {
-                        color: '#999'
-                    }
-                }
-            },
-            dataZoom: [
-                {
-                    type: 'inside'
-                }
-            ],
-            series: [
-                {
-                    type: 'bar',
-                    itemStyle: {
-                        normal: {
-                            color: new echarts.graphic.LinearGradient(
-                                0, 0, 0, 1,
-                                [
-                                    {offset: 0, color: '#83bff6'},
-                                    {offset: 0.5, color: '#188df0'},
-                                    {offset: 1, color: '#188df0'}
-                                ]
-                            )
-                        },
-                        emphasis: {
-                            color: new echarts.graphic.LinearGradient(
-                                0, 0, 0, 1,
-                                [
-                                    {offset: 0, color: '#2378f7'},
-                                    {offset: 0.7, color: '#2378f7'},
-                                    {offset: 1, color: '#83bff6'}
-                                ]
-                            )
-                        }
-                    },
-                    data: data
-                }
-            ]
-        };
-        myChart_publishment.setOption(option);
-    }
-
-    loadEchart();
-
-    myChart_publishment.on('click', function (params) {
-        $("#publishTime_div").show();
-        $("#publishDate_ipt").val(params.name);
-        $("#publishDate_span").html(params.name);
-    });
-
-    $scope.chooseTime = function (num){
-        $("#publishTime_ipt").val(num);
-        $("#publishTime_span").html(num + "小时");
-    };
-
-    var tomorrow_date,tomorrow_month,today_month;
-    $scope.useDefault = function () {
-        $("#publishTime_div").show();
-
+    /**
+     * 查询未来10日每天发表的封面文章数目
+     */
+    $scope.furtherCoversArrAm = [];
+    $scope.tellmemore = function (){
         $http({
             method: 'GET',
-            url: 'library/xwBE/Interface/getEnvironment/getDate/getDate.php',
+            url: 'library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php',
             params:{
                 'timing':timing
             }
         }).then(function (httpCont){
-            tomorrow_date = httpCont.data.tomorrow_date + "日";
-            tomorrow_month = httpCont.data.tomorrow_month;
-            today_month = httpCont.data.today_month;
 
-            $("#publishDate_ipt").val(tomorrow_date);//选择并展示明天
-            if(tomorrow_month == today_month){
-                var tomIso = tomorrow_date;
-            }else{
-                var tomIso = tomorrow_month + "月" + tomorrow_date;
+            $scope.FurtherCoversAmountArr = httpCont.data.FurtherCoversAmountArr;
+            $scope.FurtherDateArr = httpCont.data.FurtherDateArr;
+            $scope.LargestNum = httpCont.data.LargestNum;
+  
+            var myChart_publishment = {};
+            var dataAxis = $scope.FurtherDateArr;
+            var data = $scope.FurtherCoversAmountArr;
+            var yMax = $scope.LargestNum;
+            var dataShadow = [];
+
+            function loadEchart(){
+                for (var i = 0; i < data.length; i++) {
+                    dataShadow.push(yMax);
+                }
+
+                myChart_publishment = echarts.init(document.getElementById('cover-publish'));
+                var option = {
+                    title: {
+                        subtext: '以下为未来10天内所有已经排期的封面文章刊发日期分布情况，仅供参考。请点击选择。'
+                    },
+                    xAxis: {
+                        data: dataAxis,
+                        axisLabel: {
+                            inside: true,
+                            textStyle: {
+                                color: '#fff'
+                            }
+                        },
+                        axisTick: {
+                            show: false
+                        },
+                        axisLine: {
+                            show: false
+                        },
+                        z: 10
+                    },
+                    yAxis: {
+                        axisLine: {
+                            show: false
+                        },
+                        axisTick: {
+                            show: false
+                        },
+                        axisLabel: {
+                            textStyle: {
+                                color: '#999'
+                            }
+                        }
+                    },
+                    dataZoom: [
+                        {
+                            type: 'inside'
+                        }
+                    ],
+                    series: [
+                        {
+                            type: 'bar',
+                            itemStyle: {
+                                normal: {
+                                    color: new echarts.graphic.LinearGradient(
+                                        0, 0, 0, 1,
+                                        [
+                                            {offset: 0, color: '#83bff6'},
+                                            {offset: 0.5, color: '#188df0'},
+                                            {offset: 1, color: '#188df0'}
+                                        ]
+                                    )
+                                },
+                                emphasis: {
+                                    color: new echarts.graphic.LinearGradient(
+                                        0, 0, 0, 1,
+                                        [
+                                            {offset: 0, color: '#2378f7'},
+                                            {offset: 0.7, color: '#2378f7'},
+                                            {offset: 1, color: '#83bff6'}
+                                        ]
+                                    )
+                                }
+                            },
+                            data: data
+                        }
+                    ]
+                };
+                myChart_publishment.setOption(option);
             }
 
-            $("#publishDate_span").html(tomIso);
-            $("#publishTime_ipt").val(24);
-            $("#publishTime_span").html(24 + "小时");
+            loadEchart();
+
+            myChart_publishment.on('click', function (params) {
+                $("#publishTime_div").show();
+                $("#publishDate_ipt").val(params.name);
+                $("#publishDate_span").html(params.name);
+            });
+
+            $scope.chooseTime = function (num){
+                $("#publishTime_ipt").val(num);
+                $("#publishTime_span").html(num + "小时");
+            };
+
+            var tomorrow_date,tomorrow_month,today_month;
+            $scope.useDefault = function () {
+                $("#publishTime_div").show();
+
+                $http({
+                    method: 'GET',
+                    url: 'library/xwBE/Interface/getEnvironment/getDate/getDate.php',
+                    params:{
+                        'timing':timing
+                    }
+                }).then(function (httpCont){
+                    tomorrow_date = httpCont.data.tomorrow_date + "日";
+                    tomorrow_month = httpCont.data.tomorrow_month;
+                    today_month = httpCont.data.today_month;
+
+                    $("#publishDate_ipt").val(tomorrow_date);//选择并展示明天
+                    if(tomorrow_month == today_month){
+                        var tomIso = tomorrow_date;
+                    }else{
+                        var tomIso = tomorrow_month + "月" + tomorrow_date;
+                    }
+
+                    $("#publishDate_span").html(tomIso);
+                    $("#publishTime_ipt").val(24);
+                    $("#publishTime_span").html(24 + "小时");
+                });
+
+            };//End of $scope.useDefault();
+
+            $("#confirm_time").click(function (){
+                $("#myModal_publishment").modal('hide');
+            });
+            //End of Echarts
+
         });
-
-    };//End of $scope.useDefault();
-
-    $("#confirm_time").click(function (){
-        $("#myModal_publishment").modal('hide');
-    });
-    //End of Echarts
+    };
 
 }).filter(
     'to_trusted', ['$sce', function ($sce) {

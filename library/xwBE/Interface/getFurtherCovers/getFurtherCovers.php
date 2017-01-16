@@ -18,8 +18,11 @@ $a = new interfaceResponse();
 if($timing){
 
     $EchoResult = array();
+    $dataArr = array();
+    $dateArr = array();
+    $x = $y = 0;
 
-    for($i=0;$i<10;$i++){
+    for($i=1;$i<=10;$i++){
 
         $y = date("Y",strtotime("+".$i." day"));
         $m = date("m",strtotime("+".$i." day"));
@@ -30,17 +33,24 @@ if($timing){
 
         $sql = "SELECT cover_id FROM `covers` WHERE post_time <= '$TheDayStartTime' && unpost_time >= '$TheDayStartTime' ";
         $qry = $db->query($sql);
-        $row_all = mysqli_num_rows($qry);
+        $y = $row_all = mysqli_num_rows($qry);
 
-        $dataNum = $row_all;
-
-        if($dataNum==0){
-            $dataNum=0.1;
+        if($row_all >= $x){
+            $x = $row_all;
         }
 
-        array_push($EchoResult,$dataArr);
+        if($row_all==0){
+            $row_all=0.1;
+        }
+
+        array_push($dataArr,$row_all);
+        array_push($dateArr,$d."日");
 
     }
+
+    $EchoResult["FurtherCoversAmountArr"] = $dataArr;
+    $EchoResult["FurtherDateArr"] = $dateArr;
+    $EchoResult["LargestNum"] = $x;
 
     $EchoResult = urldecode ( json_encode ( $EchoResult ));
     echo $EchoResult;
