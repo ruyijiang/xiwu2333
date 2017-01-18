@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/userlistcontroller.js" afterPath="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" afterPath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userlistpage.php" afterPath="$PROJECT_DIR$/userlistpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeblogpage.php" afterPath="$PROJECT_DIR$/writeblogpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,21 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="writeblogpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writeblogpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getFurtherCovers.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getFurtherCovers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="1032">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <marker date="1484717874430" expanded="true" signature="674:723" ph="SELECT cover... covers" />
                 <marker date="1484717874430" expanded="true" signature="674:758" ph="SELECT cover... covers" />
@@ -64,11 +51,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="writeblogpage.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="writeblogcontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="297" column="43" selection-start-line="297" selection-start-column="43" selection-end-line="297" selection-end-column="43" />
+            <state relative-caret-position="8160">
+              <caret line="340" column="47" selection-start-line="340" selection-start-column="47" selection-end-line="340" selection-end-column="47" />
               <folding>
                 <element signature="e#11182#12217#0" expanded="false" />
               </folding>
@@ -79,7 +76,7 @@
       <file leaf-file-name="userlistpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userlistpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="1104">
               <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <marker date="1484703123091" expanded="true" signature="5207:5274" ph="SELECT uid F... users" />
@@ -91,7 +88,7 @@
       <file leaf-file-name="userlistcontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="2880">
               <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
               <folding>
                 <element signature="e#4002#4034#0" expanded="false" />
@@ -192,11 +189,11 @@
         <option value="$PROJECT_DIR$/community.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getComments/getComments.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFutherCovers.php" />
-        <option value="$PROJECT_DIR$/writeblogpage.php" />
         <option value="$PROJECT_DIR$/userlistpage.php" />
         <option value="$PROJECT_DIR$/js/controller/userlistcontroller.js" />
-        <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php" />
+        <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
+        <option value="$PROJECT_DIR$/writeblogpage.php" />
       </list>
     </option>
   </component>
@@ -257,6 +254,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -383,7 +381,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -1151,14 +1148,8 @@
       <workItem from="1484272970423" duration="12745000" />
       <workItem from="1484531984719" duration="15543000" />
       <workItem from="1484614595967" duration="6532000" />
-      <workItem from="1484701763372" duration="5813000" />
-    </task>
-    <task id="LOCAL-00101" summary="完成了文章的添加评论和读取评论功能。">
-      <created>1473325587756</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1473325587756</updated>
+      <workItem from="1484701763372" duration="11931000" />
+      <workItem from="1484729365294" duration="186000" />
     </task>
     <task id="LOCAL-00102" summary="封装了iCheck指令">
       <created>1473400619875</created>
@@ -1496,18 +1487,25 @@
       <option name="project" value="LOCAL" />
       <updated>1484557307398</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="大体上完成了未来10天cover发布情况的接口和控制器中的调用">
+      <created>1484717912453</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1484717912460</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2619593000" />
+    <option name="totallyTimeSpent" value="2625897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1633888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16565809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1563,7 +1561,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整了person页面部分样式" />
     <MESSAGE value="修改了部分样式" />
     <MESSAGE value="i dont  know what happened" />
     <MESSAGE value="add  some" />
@@ -1588,7 +1585,8 @@
     <MESSAGE value="...加入测试" />
     <MESSAGE value="about finish getFurtherCovers" />
     <MESSAGE value="加入了getFurtherCovers接口对应的逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入了getFurtherCovers接口对应的逻辑" />
+    <MESSAGE value="大体上完成了未来10天cover发布情况的接口和控制器中的调用" />
+    <option name="LAST_COMMIT_MESSAGE" value="大体上完成了未来10天cover发布情况的接口和控制器中的调用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1881,17 +1879,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/userlistcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="2880">
           <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
           <folding>
             <element signature="e#4002#4034#0" expanded="false" />
@@ -1904,7 +1894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/userlistpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="1104">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <marker date="1484703123091" expanded="true" signature="5207:5274" ph="SELECT uid F... users" />
@@ -1914,8 +1904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="297" column="43" selection-start-line="297" selection-start-column="43" selection-end-line="297" selection-end-column="43" />
+        <state relative-caret-position="8160">
+          <caret line="340" column="47" selection-start-line="340" selection-start-column="47" selection-end-line="340" selection-end-column="47" />
           <folding>
             <element signature="e#11182#12217#0" expanded="false" />
           </folding>
@@ -1924,14 +1914,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="1032">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <marker date="1484717874430" expanded="true" signature="674:723" ph="SELECT cover... covers" />
             <marker date="1484717874430" expanded="true" signature="674:758" ph="SELECT cover... covers" />
             <marker date="1484717874430" expanded="true" signature="674:760" ph="SELECT cover... covers" />
             <marker date="1484717874430" expanded="true" signature="674:778" ph="SELECT cover... covers" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>

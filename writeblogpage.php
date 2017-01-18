@@ -36,9 +36,9 @@ include("library/xwFE/FEM.php");
                                 </ul>
                             </div>
                         </div>
-                        <input type="hidden" id="publishDate_ipt" value><!--隐藏区域，用以储存选择的刊发日期-->
-                        <input type="hidden" id="publishTime_ipt" value><!--隐藏区域，用以储存选择的刊发时长-->
-                        <input type="hidden" id="cover_id" value><!--隐藏区域，用以储存选择的刊发时长-->
+                        <input type="hidden" id="publishDate_ipt" name="publishDate" value><!--隐藏区域，用以储存选择的刊发日期-->
+                        <input type="hidden" id="publishTime_ipt" name="publishDuration" value><!--隐藏区域，用以储存选择的刊发时长-->
+                        <input type="hidden" id="cover_id" name="cover_id" value><!--隐藏区域，用以储存选择文章的cover_id-->
                     </div>
                     <div class="modal-footer">
                         <a style="margin-right:14px" ng-click="useDefault()">使用系统默认设置</a>
@@ -235,8 +235,6 @@ include("library/xwFE/FEM.php");
                 <button ng-disabled="!pageData.aType" class="btn btn-primary center-block" role="button" ng-click="chooseType.open = false" style="display:block;margin-top:15px">确认</button>
             </div>
         </dialog>
-
-
 
 
         <!--真正的图像处理区-->

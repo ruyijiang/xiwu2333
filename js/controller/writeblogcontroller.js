@@ -294,7 +294,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                                 normal: {color: 'rgba(0,0,0,0.05)'}
                             },
                             barGap:'-100%',
-                            barCategoryGap:'40%',
+                            barCategoryGap:'20%',
                             data: dataShadow,
                             animation: false
                         },
