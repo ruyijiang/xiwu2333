@@ -334,6 +334,10 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             myChart_publishment.on('click', function (params) {
                 $("#publishTime_div").show();
                 $("#publishDate_ipt").val(params.name);
+
+                var xRi = params.name.indexOf("日");
+                console.log(xRi);
+                console.log(params.name);
                 $("#publishDate_span").html(params.name);
             });
 

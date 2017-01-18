@@ -13,7 +13,7 @@ require("../../all.php");
 $cover_id = $_POST["cover_id"];//cover_id
 
 $publishDate = $_POST["publishDate"];
-$publishUnixTime = strtotime("+".$i." day");//上架时间 - unix
+$publishUnixTime = strtotime("+".$publishDate." day");//上架时间 - unix
 
 $publishDuration = $_POST["publishDuration"];
 $unpublishUnixTime = $publishUnixTime + 60*60*$publishDuration;//下架时间 - unix
