@@ -118,6 +118,8 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
             alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
         }
     });
+
+
     /**
      * 获取Echarts的数据2
      */
@@ -136,6 +138,8 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
             alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
         }
     });
+
+
     /**
      * 获取Echarts的数据3
      */
@@ -155,8 +159,7 @@ app.controller('userlistController',function ($scope,$rootScope,$http,$q){
             alert ("获取[Dota2-开放组队玩家]数据异常，请联系管理员");
         }
     });
-
-
+    
 
     /**
      * 加载userlist视图的Echarts

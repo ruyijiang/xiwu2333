@@ -38,7 +38,7 @@ include("library/xwFE/FEM.php");
               <button type="button" ng-class="{active:UserListSearchConfig.server == 'dianxin'}" ng-click="MiniNav('dianxin')" class="btn btn-default">电信</button>
               <button type="button" ng-class="{active:UserListSearchConfig.server == 'liantong'}" ng-click="MiniNav('liantong')" class="btn btn-default">联通</button>
               <button type="button" ng-class="{active:UserListSearchConfig.server == 'quanwang'}" ng-click="MiniNav('quanwang')" class="btn btn-default">全网</button>
-            </div>
+            </div> 
           </ul><hr>
         </div>
         <div>

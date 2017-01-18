@@ -39,10 +39,6 @@ if($timing){
             $x = $row_all;
         }
 
-        if($row_all==0){
-            $row_all=0.1;
-        }
-
         array_push($dataArr,$row_all);
         array_push($dateArr,$d."日");
 
