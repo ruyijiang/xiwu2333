@@ -200,6 +200,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     $scope.cover_id = data.statuscode;
                     if($scope.pageData.aType == "cover"){//发表的是cover
                         $("#myModal_publishment").modal('show');
+                        $scope.checkFurtherCovers();
                     }else{//发表的是普通文章
                         alert ("发表成功");
                         $location.url("/blog?aid="+data.statuscode).replace();
@@ -222,13 +223,10 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
 
     /**
-     * 启动Echarts
-     */
-    /**
      * 查询未来10日每天发表的封面文章数目
      */
     $scope.furtherCoversArrAm = [];
-    $scope.tellmemore = function (){
+    $scope.checkFurtherCovers = function (){
         $http({
             method: 'GET',
             url: 'library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php',
@@ -334,23 +332,12 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             }
 
             loadEchart();
-            $(document).ready(function(){
-                setInterval(letitrun(),1000);
-                var x = 3;
-                function letitrun(){
-                    $("#timeoutspan").html(x);
-                    if(x == 0){
-                        window.location.href="/#/";
-                    }  
-                    x--;
-                }
-            });
+
             myChart_publishment.on('click', function (params) {
                 $("#publishTime_div").show();
                 $("#publishDate_ipt").val(params.dataIndex);
                 $("#publishDate_span").html(params.name);
                 $("#cover_id").val($scope.cover_id);
-                console.log($("#cover_id").val());
             });
 
             $scope.submitbtn2Available = false;
@@ -365,8 +352,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
                 $scope.submitbtn2Available = true;
                 $("#cover_id").val($scope.cover_id);
-                console.log($("#cover_id").val());
-
                 $("#publishTime_div").show();
 
                 $http({
@@ -380,7 +365,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     tomorrow_month = httpCont.data.tomorrow_month;
                     today_month = httpCont.data.today_month;
 
-                    $("#publishDate_ipt").val(tomorrow_date);//选择并展示明天
+                    $("#publishDate_ipt").val("0");
                     if(tomorrow_month == today_month){
                         var tomIso = tomorrow_date;
                     }else{

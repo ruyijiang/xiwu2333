@@ -13,11 +13,13 @@ require("../../all.php");
 $cover_id = $_POST["cover_id"];//cover_id
 
 $publishDate = (int)$_POST["publishDate"] + 1;
+var_dump($_POST["publishDate"]);
 $publishUnixTime = strtotime("+".((int)$publishDate+1)." day");
 $y = date("Y",strtotime("+".$publishDate." day"));
 $m = date("m",strtotime("+".$publishDate." day"));
 $d = date("d",strtotime("+".$publishDate." day"));
 $publishUnixTime = mktime(07,0,0,$m,$d,$y);//上架时间（上架当日7点） - unix
+
 
 $publishDuration = (int)$_POST["publishDuration"];
 $unpublishUnixTime = $publishUnixTime + (int)60*60*$publishDuration - 1;//下架时间 - unix
@@ -41,7 +43,7 @@ if(empty($publishDate+1)){
     if($qry){
 
         $reminder = "封面文章发布成功。自动为您跳转，请稍候...";
-        $reminder .= " <span style='font-style: italic;color:red' id='timeoutspan'>3</span> 秒";
+        $reminder .= " <span style='font-style: italic;font-weight:bold;color:red' id='timeoutspan'>3</span> 秒";
         $reminder .= "<script language=\"JavaScript\">";
         $reminder .= 'var x = 4;setInterval(function(){x--;document.getElementById("timeoutspan").innerHTML=x;if(x==0){window.location.href="/#/blog?aid='.$cover_id.'"}},1000);';
         $reminder .= "</script>";
