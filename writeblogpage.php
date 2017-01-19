@@ -6,7 +6,7 @@ include("library/xwFE/FEM.php");
 <style>body{background-color:#f5f8fa}.title_toppart,.title_botpart{width:100%}.title_toppart i{font-size:26px}.mid_toppart i{font-size:32px}.title_botpart span{font-size:15px;font-weight:300}.writeblog_title{border-bottom:solid #d3e0e9 1px;padding:15px 0}.blog-success{color:#71a359}.blog-wanted{color:gray}.blog-wrong{color:#a24747}.chooseAType label{cursor:pointer;font-weight:normal}</style>
 
 <div class="container" ng-controller="writeblogcontroller" style="margin-top:130px">
-    <!--让用户选择刊发时间-->
+    <!--让用户选择刊发时间--><!--放在container的第一个位置，是为了防止mask遮住Modal层-->
     <div class="modal fade" id="myModal_publishment" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -42,7 +42,7 @@ include("library/xwFE/FEM.php");
                     </div>
                     <div class="modal-footer">
                         <a style="margin-right:14px" ng-click="useDefault()">使用系统默认设置</a>
-                        <input type="submit" class="btn btn-primary" id="confirm_time" value="确认选择">
+                        <input type="submit" ng-disabled="!submitbtn2Available" class="btn btn-primary" id="confirm_time" value="确认选择">
                     </div>
                 </form>
             </div><!-- /.modal-content -->
@@ -57,7 +57,7 @@ include("library/xwFE/FEM.php");
                 </div>
                 <div class="title_botpart">
                     <span>拟定文章标题</span>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal_publishment" ng-click="tellmemore()">
+                    <button class="btn btn-primary btn-sm" data-target="#myModal_publishment" ng-click="tellmemore()">
                         开始演示模态框
                     </button>
                 </div>
@@ -127,7 +127,6 @@ include("library/xwFE/FEM.php");
                     <a ng-click="showTab(2)" class="btn btn-md btn-primary" style="padding-left:45px;padding-right:45px">下一步</a>
                 </div>
             </div>
-
             <!-- blog-writer-part2 -->
             <div ng-show="TabShow == '2'" class="blog-writer-part2">
                 <div class="ueditor-container">
@@ -143,7 +142,6 @@ include("library/xwFE/FEM.php");
                     <a ng-click="showTab(3)" class="btn btn-md btn-primary" style="padding-left:45px;padding-right:45px">下一步</a>
                 </div>
             </div>
-
             <!-- blog-writer-part3 -->
             <div ng-show="TabShow == '3'" class="blog-writer-part3" ng-controller="demoCtrl">
                 <div style="margin-top:15px">
@@ -214,7 +212,6 @@ include("library/xwFE/FEM.php");
                     </button>
                 </div>
             </div>
-
         </form>
 
 

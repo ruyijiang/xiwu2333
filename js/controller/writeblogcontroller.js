@@ -13,6 +13,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     $scope.TabShow = 1;
     $scope.submitbtnAvail = false;
     $scope.uploadbtn_content = "确认，上传";
+    $scope.cover_id = 0;
 
     //模态窗口元素
     $scope.chooseType = {
@@ -196,10 +197,13 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     $("#submit_btn").button('reset');
                     return false;
                 }else if(data.statuscode !== '0'){
-                    /*alert ("发表成功");
-                      $location.url("/blog?aid="+data.statuscode).replace();
-                    */
-                    $scope.chooseTime.open = true;
+                    $scope.cover_id = data.statuscode;
+                    if($scope.pageData.aType == "cover"){//发表的是cover
+                        $("#myModal_publishment").modal('show');
+                    }else{//发表的是普通文章
+                        alert ("发表成功");
+                        $location.url("/blog?aid="+data.statuscode).replace();
+                    }
                     return true;
                     //提交成功，跳转到文章blog
                 }else{
@@ -330,24 +334,39 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             }
 
             loadEchart();
-
+            $(document).ready(function(){
+                setInterval(letitrun(),1000);
+                var x = 3;
+                function letitrun(){
+                    $("#timeoutspan").html(x);
+                    if(x == 0){
+                        window.location.href="/#/";
+                    }  
+                    x--;
+                }
+            });
             myChart_publishment.on('click', function (params) {
                 $("#publishTime_div").show();
-                $("#publishDate_ipt").val(params.name);
-
-                var xRi = params.name.indexOf("日");
-                console.log(xRi);
-                console.log(params.name);
+                $("#publishDate_ipt").val(params.dataIndex);
                 $("#publishDate_span").html(params.name);
+                $("#cover_id").val($scope.cover_id);
+                console.log($("#cover_id").val());
             });
 
+            $scope.submitbtn2Available = false;
             $scope.chooseTime = function (num){
                 $("#publishTime_ipt").val(num);
                 $("#publishTime_span").html(num + "小时");
+                $scope.submitbtn2Available = true;
             };
 
             var tomorrow_date,tomorrow_month,today_month;
             $scope.useDefault = function () {
+
+                $scope.submitbtn2Available = true;
+                $("#cover_id").val($scope.cover_id);
+                console.log($("#cover_id").val());
+
                 $("#publishTime_div").show();
 
                 $http({
