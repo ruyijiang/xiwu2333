@@ -15,7 +15,7 @@ require("../all.php");
     $a = new interfaceResponse();
     $status = $reminder = 0;
 
-    $sql = "SELECT id,aid,title,content,uid,time,read_times FROM articles WHERE aid = '$aid' ";
+    $sql = "SELECT id,aid,title,content,uid,time,read_times,article_img FROM articles WHERE aid = '$aid' ";
     $qry = $db->query($sql);
     $row = $qry->fetch_assoc();
     $blogCate = "normal";

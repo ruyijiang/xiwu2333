@@ -9,10 +9,11 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     $("[data-toggle='tooltip']").tooltip();//开启tooltip
 
     //预设内容
-    var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，一般在用户需要修改文章时需要
+    var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，在用户需要修改文章时需要
     $scope.TabShow = 1;
     $scope.submitbtnAvail = false;
     $scope.uploadbtn_content = "确认，上传";
+    $scope.chooseImgBtn = "选择背景图片";
     $scope.cover_id = 0;
 
     //模态窗口元素
@@ -23,7 +24,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
     //多个接口的查询参数
     var timing = Math.round(new Date().getTime()/1000);
-
 
     //页面数据模板
     $scope.pageData = {
@@ -74,6 +74,9 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
      */
     $scope.selectImg = function (){
         $("#uploadbtn").click();
+        $scope.submitbtnAvail = false;
+        $scope.uploadbtn_content = "确认，上传";
+        $scope.chooseImgBtn = "重新选择背景图片";
     };
 
 
@@ -196,7 +199,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
                     alert (data.message);
                     $("#submit_btn").button('reset');
                     return false;
-                }else if(data.statuscode !== '0'){
+                }else if(data.statuscode !== '0' || data.message == "发表成功，但是用户文件存在异常。"){
                     $scope.cover_id = data.statuscode;
                     if($scope.pageData.aType == "cover"){//发表的是cover
                         $("#myModal_publishment").modal('show');

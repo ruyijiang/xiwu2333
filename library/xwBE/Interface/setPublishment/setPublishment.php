@@ -13,7 +13,6 @@ require("../../all.php");
 $cover_id = $_POST["cover_id"];//cover_id
 
 $publishDate = (int)$_POST["publishDate"] + 1;
-var_dump($_POST["publishDate"]);
 $publishUnixTime = strtotime("+".((int)$publishDate+1)." day");
 $y = date("Y",strtotime("+".$publishDate." day"));
 $m = date("m",strtotime("+".$publishDate." day"));

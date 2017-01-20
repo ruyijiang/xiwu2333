@@ -160,53 +160,59 @@ require("../algorithm/Liveness.php");
                         if($d->setLiveness('writeBlog',$thisScore)){
                             $status = $abc;
                             $reminder = "文章发布成功";
+                            //------------------------------------------------------------------------------------------------->出口4：文章入库成功
+
+                            //***将文章放进文件夹进行存档****//
+                            $a = $_SESSION["uid"];
+                            $filename = $a_title.".txt";
+                            //建立或者读取目录
+                            if(DIRECTORY_SEPARATOR == "\\" && PATH_SEPARATOR == ";"){
+                                //windows系统
+                                $filename = iconv("UTF-8", "GBK", $filename);//windows系统需要转码为gbk，如果是linux则不需要
+                            }
+                            $file = $folder."../../../product/articles/".$a."/".$filename;
+                            if(!file_exists($file)){
+                                if(!file_exists(dirname($file))){
+                                    //如果目录不存在
+                                    mkdir(dirname($file),0777);
+                                    @$filestream = fopen($file,"w");
+                                }else{
+                                    //如果目录存在
+                                    @$filestream = fopen($file,"w");
+                                }
+                            }else{
+                                $status = 0;
+                                $reminder = "您已经发布过一篇同名文章";
+                                $c->createUserRecordFile();
+                                $c->recordUserVisit("发表失败：".$a_title."，该目录下同名文章已经存在");
+                                echo $b->normalrespond($status,$reminder);
+                                return false;
+                                //--------------------------------------------------------------------------------------------->出口5：该目录下同名文章已经存在
+                            }
+
+                            //**开始写入文档**//
+                            $filestream = fopen($file,"w");
+                            $d = fwrite($filestream,$a_content);
+                            @fclose($filestream);
+                            if(!$d){
+                                $status = 0;
+                                $reminder = "发表成功，但是用户文件存在异常。";
+                                //--------------------------------------------------------------------------------------------->出口6：txt文件创建成功，但是文章记录失败**极严重错误
+                                $c->createUserRecordFile();
+                                $c->recordUserVisit("发表失败：".$a_title."，文章的在线记录出现错误");
+                                echo $b->normalrespond($status,$reminder);
+                                return false;
+                            }
                         }else{
                             $status = 0;
                             $reminder = "文章发布失败";
                         }
+
                         echo $b->normalrespond($status,$reminder);
 
-                        //------------------------------------------------------------------------------------------------->出口4：文章入库成功
-
-                        //***将文章放进文件夹进行存档****//
-                        $a = $_SESSION["uid"];
-                        $filename = $a_title.".txt";
-                        //建立或者读取目录//
-                        $file = $folder."../../../product/articles/".$a."/".$filename;
-                        if(!file_exists($file)){
-                            if(!file_exists(dirname($file))){//如果目录不存在
-                                mkdir(dirname($file),0777);//则创建一个目录，并赋予0777模式权限
-                                @$filestream = fopen($file,"w");//则创建一个文件，并富裕可读写权限
-                            }else{//如果目录存在
-                                @$filestream = fopen($file,"w");//则创建一个文件，并富裕可读写权限
-                            }
-                        }else{
-                            $status = 0;
-                            $reminder = "您已经发布过一篇同名文章";
-                            $c->createUserRecordFile();
-                            $c->recordUserVisit("发表失败：".$a_title."，该目录下同名文章已经存在");
-                            echo $b->normalrespond($status,$reminder);
-                            return false;
-                            //--------------------------------------------------------------------------------------------->出口5：该目录下同名文章已经存在
-                        }
-
-                        //**开始写入文档**//
-                        @$filestream = fopen($file,"a");
-                        @$d = fwrite($filestream,$a_content);
-                        @fclose($filestream);
-                        if(!$d){
-                            $status = 0;
-                            $reminder = "发表失败，可能是由于找不到用户文章根目录导致的，请联系管理员";
-                            //--------------------------------------------------------------------------------------------->出口6：txt文件创建成功，但是文章记录失败**极严重错误
-                            $c->createUserRecordFile();
-                            $c->recordUserVisit("发表失败：".$a_title."，文章的在线记录出现错误");
-                            echo $b->normalrespond($status,$reminder);
-                            return false;
-                        }
                     }
                 }
             }
-
 
         }
 

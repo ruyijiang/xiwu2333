@@ -147,8 +147,8 @@ include("library/xwFE/FEM.php");
                         <div class="uploadImg-nav">
                             <div class="col-lg-offset-1 col-sm-offset-1 col-lg-10 col-sm-10" style="padding-left:0;">
                                 <ul class="nav nav-pills">
-                                    <li ng-click="selectImg()">
-                                        <a>选择背景图片</a>
+                                    <li>
+                                        <a ng-click="selectImg()">{{chooseImgBtn}}</a>
                                     </li>
                                     <li class="dropdown" ng-show="pageData.aType == 'cover'">
                                         <a class="dropdown-toggle" data-toggle="dropdown">
