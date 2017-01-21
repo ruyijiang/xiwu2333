@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" afterPath="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/php/blogpage_export.php" afterPath="$PROJECT_DIR$/library/xwBE/php/blogpage_export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/php/writeblog_action.php" afterPath="$PROJECT_DIR$/library/xwBE/php/writeblog_action.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeblogpage.php" afterPath="$PROJECT_DIR$/writeblogpage.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,23 +38,23 @@
       <file leaf-file-name="writeblogpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writeblogpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="149" column="40" selection-start-line="149" selection-start-column="40" selection-end-line="149" selection-end-column="40" />
+            <state relative-caret-position="296">
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="writeblogcontroller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="writeblogcontroller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
+            <state relative-caret-position="312">
+              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
                 <element signature="e#956#993#0" expanded="false" />
-                <element signature="e#3591#3626#0" expanded="false" />
-                <element signature="e#6855#6892#0" expanded="false" />
-                <element signature="e#7667#11068#0" expanded="false" />
+                <element signature="e#3624#3659#0" expanded="false" />
+                <element signature="e#7149#7186#0" expanded="false" />
+                <element signature="e#7961#11362#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,8 +67,8 @@
               <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="false" />
-                <marker date="1484900568564" expanded="true" signature="960:1088" ph="UPDATE cover... " />
-                <marker date="1484900568564" expanded="true" signature="1218:1263" ph="..." />
+                <marker date="1484916552775" expanded="true" signature="960:1088" placeholder="UPDATE cover... " />
+                <marker date="1484916552775" expanded="true" signature="1218:1263" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -85,31 +80,31 @@
             <state relative-caret-position="58">
               <caret line="167" column="38" selection-start-line="167" selection-start-column="38" selection-end-line="167" selection-end-column="38" />
               <folding>
-                <marker date="1484894748722" expanded="true" signature="1696:1737" ph="SELECT * FRO... articles" />
-                <marker date="1484894748722" expanded="true" signature="2614:2763" ph="UPDATE `arti... " />
-                <marker date="1484894748722" expanded="true" signature="2848:3064" ph="UPDATE `cove... " />
-                <marker date="1484894748722" expanded="true" signature="4624:4671" ph="SELECT * FRO... articles" />
-                <marker date="1484894748722" expanded="true" signature="5800:5990" ph="INSERT INTO `articles`... " />
-                <marker date="1484894748722" expanded="true" signature="6127:6375" ph="INSERT INTO `covers`... " />
+                <marker date="1484916552778" expanded="true" signature="1696:1737" placeholder="SELECT * FRO... articles" />
+                <marker date="1484916552778" expanded="true" signature="2614:2763" placeholder="UPDATE `arti... " />
+                <marker date="1484916552778" expanded="true" signature="2848:3064" placeholder="UPDATE `cove... " />
+                <marker date="1484916552778" expanded="true" signature="4624:4671" placeholder="SELECT * FRO... articles" />
+                <marker date="1484916552778" expanded="true" signature="5800:5990" placeholder="INSERT INTO `articles`... " />
+                <marker date="1484916552778" expanded="true" signature="6127:6375" placeholder="INSERT INTO `covers`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogpage_export.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blogpage_export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE/php/blogpage_export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="188">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
-                <marker date="1484901725861" expanded="true" signature="280:372" ph="SELECT id,ai... " />
-                <marker date="1484901725861" expanded="true" signature="502:546" ph="SELECT * FRO... covers" />
-                <marker date="1484901725861" expanded="true" signature="1248:1347" ph="SELECT aid F... articles" />
-                <marker date="1484901725861" expanded="true" signature="1511:1609" ph="SELECT aid F... articles" />
-                <marker date="1484901725861" expanded="true" signature="2021:2112" ph="SELECT aid,t... articles" />
-                <marker date="1484901725861" expanded="true" signature="2422:2507" ph="SELECT name,... users" />
-                <marker date="1484901725861" expanded="true" signature="2813:2870" ph="SELECT conte... callingcard" />
-                <marker date="1484901725861" expanded="true" signature="4199:4278" ph="UPDATE artic... " />
+                <marker date="1484916552776" expanded="true" signature="280:372" placeholder="SELECT id,ai... " />
+                <marker date="1484916552776" expanded="true" signature="502:546" placeholder="SELECT * FRO... covers" />
+                <marker date="1484916552776" expanded="true" signature="1248:1347" placeholder="SELECT aid F... articles" />
+                <marker date="1484916552776" expanded="true" signature="1511:1609" placeholder="SELECT aid F... articles" />
+                <marker date="1484916552776" expanded="true" signature="2021:2112" placeholder="SELECT aid,t... articles" />
+                <marker date="1484916552776" expanded="true" signature="2422:2507" placeholder="SELECT name,... users" />
+                <marker date="1484916552776" expanded="true" signature="2813:2870" placeholder="SELECT conte... callingcard" />
+                <marker date="1484916552776" expanded="true" signature="4199:4278" placeholder="UPDATE artic... " />
               </folding>
             </state>
           </provider>
@@ -193,17 +188,16 @@
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFurtherCovers.php" />
         <option value="$PROJECT_DIR$/library/xwBE/php/writeblog_action.php" />
         <option value="$PROJECT_DIR$/writeblogpage.php" />
-        <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php" />
         <option value="$PROJECT_DIR$/library/xwBE/php/blogpage_export.php" />
+        <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -212,8 +206,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -268,6 +262,7 @@
         </subPane>
         <subPane subId="Tests" />
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,35 +331,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xwBE" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Interface" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1126,6 +1098,9 @@
       <workItem from="1484788632731" duration="18188000" />
       <workItem from="1484827448719" duration="7135000" />
       <workItem from="1484875315909" duration="14907000" />
+      <workItem from="1484916572081" duration="222000" />
+      <workItem from="1484926725246" duration="4312000" />
+      <workItem from="1484965211865" duration="12582000" />
     </task>
     <task id="LOCAL-00101" summary="完成了文章的添加评论和读取评论功能。">
       <created>1473325587756</created>
@@ -1474,14 +1449,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2676394000" />
+    <option name="totallyTimeSpent" value="2693510000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15729167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1841,9 +1816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <marker date="1484717874430" expanded="true" signature="674:778" ph="SELECT cover... covers" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1851,39 +1823,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="61" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE/php/blogpage_export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="149" column="40" selection-start-line="149" selection-start-column="40" selection-end-line="149" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="188">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="false" />
-            <marker date="1484900568564" expanded="true" signature="960:1088" ph="UPDATE cover... " />
-            <marker date="1484900568564" expanded="true" signature="1218:1263" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
-          <folding>
-            <element signature="e#956#993#0" expanded="false" />
-            <element signature="e#3591#3626#0" expanded="false" />
-            <element signature="e#6855#6892#0" expanded="false" />
-            <element signature="e#7667#11068#0" expanded="false" />
+            <marker date="1484916552776" expanded="true" signature="280:372" placeholder="SELECT id,ai... " />
+            <marker date="1484916552776" expanded="true" signature="502:546" placeholder="SELECT * FRO... covers" />
+            <marker date="1484916552776" expanded="true" signature="1248:1347" placeholder="SELECT aid F... articles" />
+            <marker date="1484916552776" expanded="true" signature="1511:1609" placeholder="SELECT aid F... articles" />
+            <marker date="1484916552776" expanded="true" signature="2021:2112" placeholder="SELECT aid,t... articles" />
+            <marker date="1484916552776" expanded="true" signature="2422:2507" placeholder="SELECT name,... users" />
+            <marker date="1484916552776" expanded="true" signature="2813:2870" placeholder="SELECT conte... callingcard" />
+            <marker date="1484916552776" expanded="true" signature="4199:4278" placeholder="UPDATE artic... " />
           </folding>
         </state>
       </provider>
@@ -1893,29 +1848,45 @@
         <state relative-caret-position="58">
           <caret line="167" column="38" selection-start-line="167" selection-start-column="38" selection-end-line="167" selection-end-column="38" />
           <folding>
-            <marker date="1484894748722" expanded="true" signature="1696:1737" ph="SELECT * FRO... articles" />
-            <marker date="1484894748722" expanded="true" signature="2614:2763" ph="UPDATE `arti... " />
-            <marker date="1484894748722" expanded="true" signature="2848:3064" ph="UPDATE `cove... " />
-            <marker date="1484894748722" expanded="true" signature="4624:4671" ph="SELECT * FRO... articles" />
-            <marker date="1484894748722" expanded="true" signature="5800:5990" ph="INSERT INTO `articles`... " />
-            <marker date="1484894748722" expanded="true" signature="6127:6375" ph="INSERT INTO `covers`... " />
+            <marker date="1484916552778" expanded="true" signature="1696:1737" placeholder="SELECT * FRO... articles" />
+            <marker date="1484916552778" expanded="true" signature="2614:2763" placeholder="UPDATE `arti... " />
+            <marker date="1484916552778" expanded="true" signature="2848:3064" placeholder="UPDATE `cove... " />
+            <marker date="1484916552778" expanded="true" signature="4624:4671" placeholder="SELECT * FRO... articles" />
+            <marker date="1484916552778" expanded="true" signature="5800:5990" placeholder="INSERT INTO `articles`... " />
+            <marker date="1484916552778" expanded="true" signature="6127:6375" placeholder="INSERT INTO `covers`... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/php/blogpage_export.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setPublishment/setPublishment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="181">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding>
-            <marker date="1484901725861" expanded="true" signature="280:372" ph="SELECT id,ai... " />
-            <marker date="1484901725861" expanded="true" signature="502:546" ph="SELECT * FRO... covers" />
-            <marker date="1484901725861" expanded="true" signature="1248:1347" ph="SELECT aid F... articles" />
-            <marker date="1484901725861" expanded="true" signature="1511:1609" ph="SELECT aid F... articles" />
-            <marker date="1484901725861" expanded="true" signature="2021:2112" ph="SELECT aid,t... articles" />
-            <marker date="1484901725861" expanded="true" signature="2422:2507" ph="SELECT name,... users" />
-            <marker date="1484901725861" expanded="true" signature="2813:2870" ph="SELECT conte... callingcard" />
-            <marker date="1484901725861" expanded="true" signature="4199:4278" ph="UPDATE artic... " />
+            <element signature="e#6#87#0#PHP" expanded="false" />
+            <marker date="1484916552775" expanded="true" signature="960:1088" placeholder="UPDATE cover... " />
+            <marker date="1484916552775" expanded="true" signature="1218:1263" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeblogpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/writeblogcontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding>
+            <element signature="e#956#993#0" expanded="false" />
+            <element signature="e#3624#3659#0" expanded="false" />
+            <element signature="e#7149#7186#0" expanded="false" />
+            <element signature="e#7961#11362#0" expanded="false" />
           </folding>
         </state>
       </provider>

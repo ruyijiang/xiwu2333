@@ -46,12 +46,12 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             'funcType':"WriteCovers"
         }
     }).then(function (httpCont){
-        /*
          if(httpCont.data.statuscode == 1){//用户已激活对应功能的邀请码
             $scope.chooseType.open = true;
          }else{//用户未激活邀请码
             $scope.chooseType.open = false;
-         }*/
+             $scope.pageData.aType = "normal";
+         }
     });
 
 
@@ -61,7 +61,6 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     var ueditor = null;
     $scope.showTab = function (TabShow_Index){
         $scope.TabShow = TabShow_Index;
-
         if(TabShow_Index == 2){
             ueditor = UE.getEditor('ueditor-main'); //启用UEditor
         }
@@ -136,30 +135,39 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
      * 根据url进行判断是否是修改文章
      */
     if(InitArticleAid!=="" && InitArticleAid!==undefined && InitArticleAid!==true){
-        $scope.TabShow = 2;
-        $timeout(function (){
-            var ueditor = UE.getEditor('ueditor-main'); //启用UEditor
-        },1);
-        //URL参数带aid，且不为非法值
+        //URL参数含有aid，表示是在修改文章
+        $scope.showTab(2);
+        $scope.chooseType.open = false;
+
+        if(InitArticleAid.indexOf("CVR") >= 0){
+            //是cover article
+            $scope.pageData.aType = "cover";
+        }else{
+            //是normal article
+            $scope.pageData.aType = "normal";
+        }
+
         $http({
             method: 'GET',
             url: 'library/xwBE/php/blogpage_export.php',
-            params:{'aid':InitArticleAid}
+            params:{
+                'aid':InitArticleAid
+            }
         }).then(function (httpCont){
-
             $scope.NeedModifiedTitle = htmldecode(httpCont.data.title);
             $scope.NeedModifiedContent = htmldecode(httpCont.data.content);//-------------------------------------------------//-
 
-            ueditor.addListener("ready", function () {// editor准备好之后才可以使用
+            $timeout(function (){
                 ueditor.setContent($scope.NeedModifiedContent);
-            });
+                console.log($scope.pageData.title);
+                $rootScope.NowPageTitle = $scope.pageData.title;
+            },150)
 
         })
     }
 
-
     /**
-     * 如果采用AJAX方式提交表单，则 m ng-submit属性上添加此函数
+     * 如果采用AJAX方式提交表单，则 ng-submit属性上添加此函数
      * @returns {boolean}
      */
     $scope.articlesubmit = function () {
