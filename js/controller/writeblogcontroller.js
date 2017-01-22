@@ -56,13 +56,39 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
 
 
     /**
-     * 根据步数显示对应区域
+     * 根据步数显示对应区域，并且根据内容检测必填或合法性，并且显示对应提示
      */
     var ueditor = null;
+    $scope.TabAvailability = undefined;
     $scope.showTab = function (TabShow_Index){
         $scope.TabShow = TabShow_Index;
         if(TabShow_Index == 2){
             ueditor = UE.getEditor('ueditor-main'); //启用UEditor
+            //检测标题、副标题、摘要是否填写
+            if($scope.pageData.aType == "cover"){
+                if((!$scope.pageData.title && $scope.pageData.title !== 0) || (!$scope.pageData.subtitle && $scope.pageData.subtitle !== 0) || (!$scope.pageData.abstract && $scope.pageData.abstract !== 0)){
+                    $scope.TabAvailability = 0;
+                    return false;
+                }else{
+                    $scope.TabAvailability = 1;
+                    return true;
+                }
+            }else{
+                if((!$scope.pageData.title && $scope.pageData.title !== 0) || (!$scope.pageData.abstract && $scope.pageData.abstract !== 0)){
+                    $scope.TabAvailability = 0;
+                    return false;
+                }else{
+                    $scope.TabAvailability = 1;
+                    return true;
+                }
+            }
+        }else if(TabShow_Index == 3){
+            //检测标题、副标题、摘要是否填写
+            console.log(Article_Content);
+            var Article_Content = ueditor.getContent();
+            if(Article_Content && $scope.TabAvailability){
+                $scope.TabAvailability = 2;
+            }
         }
 
     };

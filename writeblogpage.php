@@ -51,7 +51,7 @@ include("library/xwFE/FEM.php");
 
     <div class="row boat" style="margin:0;padding-top:0">
         <div class="writeblog_title clearfix bg-info">
-            <div class="col-lg-offset-1 col-sm-offset-1 col-lg-2 col-sm-2 text-center" ng-class="{true: 'blog-success', false: 'blog-wanted'}[TabShow==1]">
+            <div class="col-lg-offset-1 col-sm-offset-1 col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':TabAvailability == 0,'blog-success':TabAvailability == 1 || TabAvailability == 2,'blog-wanted':TabAvailability==undefined}">
                 <div class="title_toppart">
                     <i class="iconfont icon-biaoti"></i>
                 </div>
@@ -59,12 +59,12 @@ include("library/xwFE/FEM.php");
                     <span>拟定文章标题</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-wanted">
+            <div class="col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':TabAvailability == 0,'blog-success':TabAvailability == 1 || TabAvailability == 2,'blog-wanted':TabAvailability==undefined}">
                 <div class="mid_toppart">
-                    <i class="iconfont icon-circle" style="display:block;margin-top:10px"></i>
+                    <i class="iconfont" style="display:block;margin-top:10px" ng-class="{'icon-wrong':TabAvailability == 0,'icon-right':TabAvailability == 1 || TabAvailability == 2,'icon-circle':TabAvailability==undefined}"></i>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-wanted" ng-class="{true: 'blog-success', false: 'blog-wanted'}[TabShow==2]">
+            <div class="col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':TabAvailability == 1,'blog-success':TabAvailability == 2,'blog-wanted':TabAvailability==undefined || TabAvailability==0}">
                 <div class="title_toppart">
                     <i class="iconfont icon-zhengwen"></i>
                 </div>
@@ -72,12 +72,12 @@ include("library/xwFE/FEM.php");
                     <span>撰写文章正文</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-wanted">
+            <div class="col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':TabAvailability == 1,'blog-success':TabAvailability == 2,'blog-wanted':TabAvailability==undefined || TabAvailability==0}">
                 <div class="mid_toppart">
-                    <i class="iconfont icon-circle" style="display:block;margin-top:10px"></i>
+                    <i class="iconfont" style="display:block;margin-top:10px" ng-class="{'icon-wrong':TabAvailability == 1,'icon-right':TabAvailability == 2,'icon-circle':TabAvailability==undefined || TabAvailability==0}"></i>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center blog-wanted" ng-class="{true: 'blog-success', false: 'blog-wanted'}[TabShow==3]">
+            <div class="col-lg-2 col-sm-2 text-center blog-wanted">
                 <div class="title_toppart">
                     <i class="iconfont icon-wb_pic"></i>
                 </div>
