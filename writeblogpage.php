@@ -64,7 +64,7 @@ include("library/xwFE/FEM.php");
                     <i class="iconfont" style="display:block;margin-top:10px" ng-class="{'icon-wrong':TabAvailability == 0,'icon-right':TabAvailability == 1 || TabAvailability == 2,'icon-circle':TabAvailability==undefined}"></i>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':TabAvailability == 1,'blog-success':TabAvailability == 2,'blog-wanted':TabAvailability==undefined || TabAvailability==0}">
+            <div class="col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':Tab2_Availability == 0,'blog-success':Tab2_Availability == 1,'blog-wanted':Tab2_Availability==undefined}">
                 <div class="title_toppart">
                     <i class="iconfont icon-zhengwen"></i>
                 </div>
@@ -72,9 +72,9 @@ include("library/xwFE/FEM.php");
                     <span>撰写文章正文</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':TabAvailability == 1,'blog-success':TabAvailability == 2,'blog-wanted':TabAvailability==undefined || TabAvailability==0}">
+            <div class="col-lg-2 col-sm-2 text-center" ng-class="{'blog-wrong':Tab2_Availability == 0,'blog-success':Tab2_Availability == 1,'blog-wanted':Tab2_Availability==undefined}">
                 <div class="mid_toppart">
-                    <i class="iconfont" style="display:block;margin-top:10px" ng-class="{'icon-wrong':TabAvailability == 1,'icon-right':TabAvailability == 2,'icon-circle':TabAvailability==undefined || TabAvailability==0}"></i>
+                    <i class="iconfont" style="display:block;margin-top:10px" ng-class="{'icon-wrong':Tab2_Availability == 0,'icon-right':Tab2_Availability == 1,'icon-circle':Tab2_Availability==undefined}"></i>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-2 text-center blog-wanted">
@@ -204,7 +204,7 @@ include("library/xwFE/FEM.php");
                     <a ng-disabled="submitbtnAvail" ng-click="uploadImg()" id="submit_btn" class="btn btn-md btn-primary submit_btn" style="padding-left:25px;padding-right:25px">
                         <span class="glyphicon glyphicon-cloud-upload"></span>{{uploadbtn_content}}
                     </a>
-                    <button ng-disabled="!submitbtnAvail" type="submit" id="submit_btn" class="btn btn-md btn-primary submit_btn"  style="padding-left:35px;padding-right:45px">
+                    <button ng-disabled="!submitbtnAvail_btn && !submitbtnAvail" type="submit" id="submit_btn" class="btn btn-md btn-primary submit_btn"  style="padding-left:35px;padding-right:45px">
                         <span class="glyphicon glyphicon-send"></span>发表
                     </button>
                 </div>

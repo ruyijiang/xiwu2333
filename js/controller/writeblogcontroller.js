@@ -11,7 +11,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
     //预设内容
     var InitArticleAid = $location.search()["aid"];//需要初始加入的文章的aid，在用户需要修改文章时需要
     $scope.TabShow = 1;
-    $scope.submitbtnAvail = false;
+    $scope.submitbtnAvail = true;
     $scope.uploadbtn_content = "确认，上传";
     $scope.chooseImgBtn = "选择背景图片";
     $scope.cover_id = 0;
@@ -84,10 +84,11 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             }
         }else if(TabShow_Index == 3){
             //检测标题、副标题、摘要是否填写
-            console.log(Article_Content);
             var Article_Content = ueditor.getContent();
-            if(Article_Content && $scope.TabAvailability){
-                $scope.TabAvailability = 2;
+            if(Article_Content){
+                $scope.Tab2_Availability = 1;
+            }else{
+                $scope.Tab2_Availability = 0;
             }
         }
 
@@ -99,6 +100,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
      */
     $scope.selectImg = function (){
         $("#uploadbtn").click();
+        $scope.submitbtnAvail_btn = false;
         $scope.submitbtnAvail = false;
         $scope.uploadbtn_content = "确认，上传";
         $scope.chooseImgBtn = "重新选择背景图片";
@@ -109,51 +111,58 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
      * 开始上传图片
      */
     $scope.uploadImg = function (){
-        $scope.tnow = Math.round(new Date().getTime()/1000);
-        $scope.uploadbtn_content = "上传中...";
 
-        $("#imgname").val($scope.tnow);//之所以用jq指定值，而不是使用angular的{{}}或ng-model，是因为提交表单的时候，提交的是字面值，而ng的值
-        $("#arttype").val($scope.pageData.aType);
-        //在表单提交的时候，并没有赋予该控件
-        $("#uploadbtn_submit").click();
-        $(".index-mask").fadeIn("fast");
-        
-        var timer_times = 0;
-        var timer_CheckImgExsit = $interval(function (){
-            $http({
-                method: 'GET',
-                url: 'library/xwBE/Interface/checkStatus/isCoverImgExist.php',
-                params:{
-                    'imgname':$scope.tnow,
-                    'imgCate':$scope.pageData.aType
-                }
-            }).then(function (httpCont){
+        if($scope.Tab2_Availability == 0 || $scope.TabAvailability == 0){
+            alert ("请先完成前两步，再上传图片");
+        }else{
+            $scope.tnow = Math.round(new Date().getTime()/1000);
+            $scope.uploadbtn_content = "上传中...";
 
-                if(httpCont.data.statuscode !== '0'){
-                    //已经成功上传
-                    $interval.cancel(timer_CheckImgExsit);
-                    alert ("上传成功");
-                    $(".index-mask").fadeOut("fast");
-                    $scope.submitbtnAvail = true;
-                    $scope.uploadbtn_content = "上传成功";
-                    $scope.Tempcover_img = httpCont.data.statuscode;
+            $("#imgname").val($scope.tnow);//之所以用jq指定值，而不是使用angular的{{}}或ng-model，是因为提交表单的时候，提交的是字面值，而ng的值
+            $("#arttype").val($scope.pageData.aType);
+            //在表单提交的时候，并没有赋予该控件
+            $("#uploadbtn_submit").click();
+            $(".index-mask").fadeIn("fast");
 
-                }else{
+            var timer_times = 0;
+            var timer_CheckImgExsit = $interval(function (){
+                $http({
+                    method: 'GET',
+                    url: 'library/xwBE/Interface/checkStatus/isCoverImgExist.php',
+                    params:{
+                        'imgname':$scope.tnow,
+                        'imgCate':$scope.pageData.aType
+                    }
+                }).then(function (httpCont){
 
-                    if(timer_times >= 15){//25s没有检测到，即认为上传失败了
+                    if(httpCont.data.statuscode !== '0'){
+                        //已经成功上传
                         $interval.cancel(timer_CheckImgExsit);
-                        alert ("上传失败");
+                        alert ("上传成功");
                         $(".index-mask").fadeOut("fast");
-                        $scope.uploadbtn_content = "上传失败";
+                        $scope.submitbtnAvail_btn = true;
+                        $scope.submitbtnAvail = true;
+                        $scope.uploadbtn_content = "上传成功";
+                        $scope.Tempcover_img = httpCont.data.statuscode;
+
+                    }else{
+
+                        if(timer_times >= 15){//25s没有检测到，即认为上传失败了
+                            $interval.cancel(timer_CheckImgExsit);
+                            alert ("上传失败");
+                            $(".index-mask").fadeOut("fast");
+                            $scope.uploadbtn_content = "上传失败";
+                        }
+
+                        timer_times++;
+
                     }
 
-                    timer_times++;
+                })
 
-                }
+            },1000);
+        }
 
-            })
-
-        },1000);
     };
 
 
