@@ -11,7 +11,7 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
         $http({
             method: 'GET',
             url: '../../library/xwBE/Interface/getTopicInfo/getTopicInfo.php',
-            params:{'content': $stateParams.TopicUrl }
+            params:{'content': $stateParams.TopicUrl}
         }).success(function (httpCont){
 
             if(httpCont.statuscode == 0){
@@ -125,11 +125,17 @@ app.controller('topicController',function ($scope,$rootScope,$http,$location,$ti
                     "to_id":to_id,
                     "content":content
                 }
-            }).success(function (data){
-
-
             }).error(function (){
                 alert ("不明原因导致的提交失败，请联系管理员");
+            }).then(function (data){
+                var data = eval("(" + data + ")");
+                if(data.statuscode == 1){
+                    alert ("评论成功");
+                    window.location.reload();
+                }else{
+                    alert (data.message);
+                }
+
             })
         }
 
