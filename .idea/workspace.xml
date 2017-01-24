@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/topicController.js" afterPath="$PROJECT_DIR$/js/controller/topicController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/community.php" afterPath="$PROJECT_DIR$/community.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/Community/getHotTopics.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/Community/getHotTopics.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +35,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="community.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/community.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="128" column="89" selection-start-line="128" selection-start-column="89" selection-end-line="128" selection-end-column="89" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="communityController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/communityController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="32" column="59" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getHotTopics.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getHotTopics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="44" column="163" selection-start-line="44" selection-start-column="150" selection-end-line="44" selection-end-column="163" />
+              <folding>
+                <marker date="1485271505512" expanded="true" signature="302:403" placeholder="SELECT topic... topics" />
+                <marker date="1485271505512" expanded="true" signature="816:885" placeholder="SELECT comme... comments" />
+                <marker date="1485271505512" expanded="true" signature="1003:1072" placeholder="SELECT ballo... ballots" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="topic.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,28 +84,9 @@
       <file leaf-file-name="topicController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="133" column="45" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
+            <state relative-caret-position="397">
+              <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setComment.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setComment/setComment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="99" column="62" selection-start-line="99" selection-start-column="62" selection-end-line="99" selection-end-column="62" />
-              <folding>
-                <marker date="1482836954125" expanded="true" signature="1080:1163" placeholder="SELECT comme... comments" />
-                <marker date="1482836954125" expanded="true" signature="1598:1680" placeholder="SELECT regti... comments" />
-                <marker date="1482836954125" expanded="true" signature="2604:2744" placeholder="INSERT INTO comments... " />
-                <marker date="1482836954125" expanded="true" signature="3577:3717" placeholder="INSERT INTO comments... " />
-                <marker date="1482836954125" expanded="true" signature="4415:4498" placeholder="SELECT comme... comments" />
-                <marker date="1482836954125" expanded="true" signature="4933:5015" placeholder="SELECT regti... comments" />
-                <marker date="1482836954125" expanded="true" signature="5939:6079" placeholder="INSERT INTO comments... " />
-                <marker date="1482836954125" expanded="true" signature="6912:7052" placeholder="INSERT INTO comments... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/Community/getHotTopics.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/info_settingpage.php" />
         <option value="$PROJECT_DIR$/css/all.css" />
@@ -141,7 +157,6 @@
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getTime/getDate.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getEnvironment/getDate/getDate.php" />
         <option value="$PROJECT_DIR$/library/xwBE/all.php" />
-        <option value="$PROJECT_DIR$/community.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getComments/getComments.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getFurtherCovers/getFutherCovers.php" />
         <option value="$PROJECT_DIR$/userlistpage.php" />
@@ -155,6 +170,8 @@
         <option value="$PROJECT_DIR$/writeblogpage.php" />
         <option value="$PROJECT_DIR$/js/controller/writeblogcontroller.js" />
         <option value="$PROJECT_DIR$/js/controller/topicController.js" />
+        <option value="$PROJECT_DIR$/library/xwBE/Interface/Community/getHotTopics.php" />
+        <option value="$PROJECT_DIR$/community.php" />
       </list>
     </option>
   </component>
@@ -296,6 +313,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Interface" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xwBE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interface" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Community" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -1070,7 +1113,7 @@
       <workItem from="1485133811600" duration="4903000" />
       <workItem from="1485184186584" duration="727000" />
       <workItem from="1485254631839" duration="650000" />
-      <workItem from="1485267135227" duration="2950000" />
+      <workItem from="1485267135227" duration="3823000" />
     </task>
     <task id="LOCAL-00103" summary="添加了tagsinput控件，并且修订了样式。">
       <created>1473660669608</created>
@@ -1419,7 +1462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2722046000" />
+    <option name="totallyTimeSpent" value="2722919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -1516,13 +1559,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/xwBE/connectDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/php/uploadCoverImg_action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1697,13 +1733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getCovers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/writeTopicController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1753,20 +1782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/community.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="118" selection-start-line="12" selection-start-column="118" selection-end-line="12" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/communityController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1796,39 +1811,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setTopic/topic_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2510">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1482836954128" expanded="true" signature="781:849" placeholder="SELECT topic... topics" />
-            <marker date="1482836954128" expanded="true" signature="2174:2334" placeholder="INSERT INTO `ballots`... " />
-            <marker date="1482836954128" expanded="true" signature="2820:2963" placeholder="INSERT INTO `comments`... " />
-            <marker date="1482836954128" expanded="true" signature="3503:3580" placeholder="UPDATE `topi... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/info_SettingController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="257" column="41" selection-start-line="257" selection-start-column="41" selection-end-line="258" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="133" column="45" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1857,6 +1843,76 @@
             <marker date="1482836954125" expanded="true" signature="4933:5015" placeholder="SELECT regti... comments" />
             <marker date="1482836954125" expanded="true" signature="5939:6079" placeholder="INSERT INTO comments... " />
             <marker date="1482836954125" expanded="true" signature="6912:7052" placeholder="INSERT INTO comments... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getCovers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="65" column="210" selection-start-line="65" selection-start-column="210" selection-end-line="65" selection-end-column="210" />
+          <folding>
+            <marker date="1482921458220" expanded="true" signature="405:522" placeholder="SELECT * FRO... covers" />
+            <marker date="1482921458220" expanded="true" signature="1573:1643" placeholder="SELECT * FRO... covers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setTopic/topic_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1482836954128" expanded="true" signature="781:849" placeholder="SELECT topic... topics" />
+            <marker date="1482836954128" expanded="true" signature="2174:2334" placeholder="INSERT INTO `ballots`... " />
+            <marker date="1482836954128" expanded="true" signature="2820:2963" placeholder="INSERT INTO `comments`... " />
+            <marker date="1482836954128" expanded="true" signature="3503:3580" placeholder="UPDATE `topi... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/topicController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getHotTopics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="44" column="163" selection-start-line="44" selection-start-column="150" selection-end-line="44" selection-end-column="163" />
+          <folding>
+            <marker date="1485271505512" expanded="true" signature="302:403" placeholder="SELECT topic... topics" />
+            <marker date="1485271505512" expanded="true" signature="816:885" placeholder="SELECT comme... comments" />
+            <marker date="1485271505512" expanded="true" signature="1003:1072" placeholder="SELECT ballo... ballots" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/communityController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="32" column="59" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="128" column="89" selection-start-line="128" selection-start-column="89" selection-end-line="128" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

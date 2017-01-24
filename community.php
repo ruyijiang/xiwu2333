@@ -126,7 +126,7 @@ include("library/xwFE/FEM.php");
 
                     <ul class="list-group">
                         <li class="list-group-item" ng-class="{active:xHT.remark=='hotest'}" ng-repeat="xHT in pageData_HotTopics">
-                            <span class="badge" style="margin-top:3%">{{xHT.readtimes}}</span>
+                            <span class="badge" style="margin-top:3%">{{xHT.participation}}</span>
                                 <h4 class="list-group-item-heading">
                                     <i class="iconfont icon-hot" style="color:#df4239;font-size:18px;font-weight:100;display:inline" ng-if="xHT.remark == 'hotest'"></i>
                                     <a ng-href="/#/topic/{{xHT.customed_url}}">{{xHT.title}}</a>

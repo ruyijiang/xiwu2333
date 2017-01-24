@@ -32,7 +32,17 @@ if($timing){
             $result_topic_desc = $row["topic_desc"];
             $result_par_times = $row["par_times"];
 
-            $dataArr = array('topic_id'=>$result_topic_id,'title'=>$result_title,'subtitle'=>$result_topic_desc,'customed_url'=>$result_customed_url,'readtimes'=>$result_par_times);
+            $sql2 = "SELECT comment_id FROM `comments` WHERE topic_id = '$result_topic_id' ";
+            $qry2 = $db->query($sql2);
+            $row_all2 = (int)mysqli_num_rows($qry2);
+
+            $sql3 = "SELECT ballot_id FROM `ballots` WHERE to_topicid = '$result_topic_id' ";
+            $qry3 = $db->query($sql3);
+            $row_all3 = (int)mysqli_num_rows($qry3);
+
+            $participationTimes = $row_all2 + $row_all3;
+
+            $dataArr = array('topic_id'=>$result_topic_id,'title'=>$result_title,'subtitle'=>$result_topic_desc,'customed_url'=>$result_customed_url,'participation'=>$participationTimes);
             foreach ( $dataArr as $key => $value ) {
                 $dataArr[$key] = urlencode ($value);
             }
