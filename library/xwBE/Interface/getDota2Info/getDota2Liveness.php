@@ -53,7 +53,6 @@ switch (date("w")){
         $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-97 days')),date('d', strtotime('-97 days')));
         break;
 }
-
 $EchoResult = array();//此程序最终要等待json格式化输出的数组
 $finaltime = 0;
 do{
@@ -67,9 +66,7 @@ do{
     $ISOTime = date('m/d',$finaltime);
     $EchoResult[$ISOTime] = 0;
 
-
 }while($finaltime < $todayStart - 86400);
-
 
     $sql = "SELECT id,start_time FROM `info_dota2`.`d2i_matchhistory` WHERE d2id = '$dota2_uid' AND start_time >= '$daysBeforeToday_Unix' AND start_time < '$finaltime' ";
     $qry = $db->query($sql);

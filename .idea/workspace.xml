@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/php/liveness_export.php" afterPath="$PROJECT_DIR$/library/xwBE/php/liveness_export.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +35,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1440">
-              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="192">
+              <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+              <folding>
+                <element signature="e#6#84#0#PHP" expanded="false" />
+                <marker date="1485333185880" expanded="true" signature="2452:2607" ph="SELECT id,st... d2i_matchhistory" />
+                <marker date="1485333185880" expanded="true" signature="4094:4173" ph="SELECT id FR... d2i_matchhistory" />
+                <marker date="1485333185880" expanded="true" signature="4326:4484" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liveness_export.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="liveness_export.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE/php/liveness_export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -85,7 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/info_settingpage.php" />
         <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/css/colorPicker/color-picker.min.css" />
         <option value="$PROJECT_DIR$/js/vendor/color-picker.min.js" />
@@ -136,13 +140,15 @@
         <option value="$PROJECT_DIR$/library/xwBE/Interface/Community/getHotTopics.php" />
         <option value="$PROJECT_DIR$/community.php" />
         <option value="$PROJECT_DIR$/library/xwBE/php/liveness_export.php" />
+        <option value="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -151,8 +157,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -195,18 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -307,6 +301,18 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
       </pane>
     </panes>
   </component>
@@ -1078,6 +1084,7 @@
       <workItem from="1485184186584" duration="727000" />
       <workItem from="1485254631839" duration="650000" />
       <workItem from="1485267135227" duration="4656000" />
+      <workItem from="1485306438542" duration="12798000" />
     </task>
     <task id="LOCAL-00103" summary="添加了tagsinput控件，并且修订了样式。">
       <created>1473660669608</created>
@@ -1426,14 +1433,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2723752000" />
+    <option name="totallyTimeSpent" value="2736550000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19062027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1523,13 +1530,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/controller/blogpagecontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -1765,7 +1765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="257" column="41" selection-start-line="257" selection-start-column="41" selection-end-line="258" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1773,10 +1772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <marker date="1482836953995" expanded="true" signature="1270:1308" placeholder="SELECT * FRO... users" />
-            <marker date="1482836953995" expanded="true" signature="9381:9433" placeholder="SELECT REGIO... region" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1784,16 +1779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="99" column="62" selection-start-line="99" selection-start-column="62" selection-end-line="99" selection-end-column="62" />
-          <folding>
-            <marker date="1482836954125" expanded="true" signature="1080:1163" placeholder="SELECT comme... comments" />
-            <marker date="1482836954125" expanded="true" signature="1598:1680" placeholder="SELECT regti... comments" />
-            <marker date="1482836954125" expanded="true" signature="2604:2744" placeholder="INSERT INTO comments... " />
-            <marker date="1482836954125" expanded="true" signature="3577:3717" placeholder="INSERT INTO comments... " />
-            <marker date="1482836954125" expanded="true" signature="4415:4498" placeholder="SELECT comme... comments" />
-            <marker date="1482836954125" expanded="true" signature="4933:5015" placeholder="SELECT regti... comments" />
-            <marker date="1482836954125" expanded="true" signature="5939:6079" placeholder="INSERT INTO comments... " />
-            <marker date="1482836954125" expanded="true" signature="6912:7052" placeholder="INSERT INTO comments... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1801,10 +1786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="65" column="210" selection-start-line="65" selection-start-column="210" selection-end-line="65" selection-end-column="210" />
-          <folding>
-            <marker date="1482921458220" expanded="true" signature="405:522" placeholder="SELECT * FRO... covers" />
-            <marker date="1482921458220" expanded="true" signature="1573:1643" placeholder="SELECT * FRO... covers" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1812,12 +1793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1482836954128" expanded="true" signature="781:849" placeholder="SELECT topic... topics" />
-            <marker date="1482836954128" expanded="true" signature="2174:2334" placeholder="INSERT INTO `ballots`... " />
-            <marker date="1482836954128" expanded="true" signature="2820:2963" placeholder="INSERT INTO `comments`... " />
-            <marker date="1482836954128" expanded="true" signature="3503:3580" placeholder="UPDATE `topi... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1825,7 +1800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1833,11 +1807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="44" column="163" selection-start-line="44" selection-start-column="150" selection-end-line="44" selection-end-column="163" />
-          <folding>
-            <marker date="1485271505512" expanded="true" signature="302:403" placeholder="SELECT topic... topics" />
-            <marker date="1485271505512" expanded="true" signature="816:885" placeholder="SELECT comme... comments" />
-            <marker date="1485271505512" expanded="true" signature="1003:1072" placeholder="SELECT ballo... ballots" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1845,7 +1814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="32" column="59" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1853,9 +1821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="128" column="89" selection-start-line="128" selection-start-column="89" selection-end-line="128" selection-end-column="89" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1863,23 +1828,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
+    <entry file="file://$PROJECT_DIR$/library/xwBE/all.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        <state relative-caret-position="360">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/php/liveness_export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="false" />
+            <marker date="1485333185880" expanded="true" signature="2452:2607" ph="SELECT id,st... d2i_matchhistory" />
+            <marker date="1485333185880" expanded="true" signature="4094:4173" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1485333185880" expanded="true" signature="4326:4484" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+          </folding>
         </state>
       </provider>
     </entry>
