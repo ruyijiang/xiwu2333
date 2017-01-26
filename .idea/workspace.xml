@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="116" column="63" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -65,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="268">
@@ -110,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/css/colorPicker/color-picker.min.css" />
         <option value="$PROJECT_DIR$/js/vendor/color-picker.min.js" />
         <option value="$PROJECT_DIR$/js/run.js" />
@@ -161,6 +160,7 @@
         <option value="$PROJECT_DIR$/community.php" />
         <option value="$PROJECT_DIR$/library/xwBE/php/liveness_export.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" />
+        <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
       </list>
     </option>
   </component>
@@ -1105,14 +1105,7 @@
       <workItem from="1485254631839" duration="650000" />
       <workItem from="1485267135227" duration="4656000" />
       <workItem from="1485306438542" duration="12869000" />
-      <workItem from="1485391249351" duration="7943000" />
-    </task>
-    <task id="LOCAL-00104" summary="完成了&quot;关键词添加&quot;控件指令的封装、和指令的业务逻辑限制，以及&quot;复制到剪切板&quot;功能。">
-      <created>1473747006133</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1473747006136</updated>
+      <workItem from="1485391249351" duration="8434000" />
     </task>
     <task id="LOCAL-00105" summary="修改了Ueditor编辑器的默认字体。">
       <created>1473752217396</created>
@@ -1450,11 +1443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485335342181</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="修改了一下Dota2Liveness算法">
+      <created>1485400727980</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1485400727982</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2744564000" />
+    <option name="totallyTimeSpent" value="2745055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1839,6 +1839,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="false" />
+            <marker date="1485398448767" expanded="true" signature="2651:2806" ph="SELECT id,st... d2i_matchhistory" />
+            <marker date="1485398448767" expanded="true" signature="4293:4372" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1485398448767" expanded="true" signature="4525:4683" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/php/liveness_export.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1857,22 +1870,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="116" column="63" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="63" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1485398448767" expanded="true" signature="2651:2806" ph="SELECT id,st... d2i_matchhistory" />
-            <marker date="1485398448767" expanded="true" signature="4293:4372" ph="SELECT id FR... d2i_matchhistory" />
-            <marker date="1485398448767" expanded="true" signature="4525:4683" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
-          </folding>
         </state>
       </provider>
     </entry>

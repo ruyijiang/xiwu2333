@@ -359,7 +359,6 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
             DateLivenessArr.push($scope.LivenessDataArr[x].liveness_rate);
         }
 
-
         var myChart = echarts.init(document.getElementById('liveness-chart-body'));
         myChart.setOption({
             tooltip: {
@@ -425,6 +424,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
         data = data.map(function (item) {
             return [item[1], item[0], item[2] || '-'];
         });
+
         myChart2.setOption({
             tooltip: {
                 position: 'top'
