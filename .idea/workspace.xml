@@ -35,17 +35,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
+      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-              <folding>
-                <element signature="e#6#84#0#PHP" expanded="false" />
-                <marker date="1485333185880" expanded="true" signature="2452:2607" ph="SELECT id,st... d2i_matchhistory" />
-                <marker date="1485333185880" expanded="true" signature="4094:4173" ph="SELECT id FR... d2i_matchhistory" />
-                <marker date="1485333185880" expanded="true" signature="4326:4484" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,6 +61,21 @@
             <state relative-caret-position="221">
               <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+              <folding>
+                <element signature="e#6#84#0#PHP" expanded="false" />
+                <marker date="1485398448767" expanded="true" signature="2651:2806" ph="SELECT id,st... d2i_matchhistory" />
+                <marker date="1485398448767" expanded="true" signature="4293:4372" ph="SELECT id FR... d2i_matchhistory" />
+                <marker date="1485398448767" expanded="true" signature="4525:4683" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,6 +321,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -1084,14 +1104,8 @@
       <workItem from="1485184186584" duration="727000" />
       <workItem from="1485254631839" duration="650000" />
       <workItem from="1485267135227" duration="4656000" />
-      <workItem from="1485306438542" duration="12798000" />
-    </task>
-    <task id="LOCAL-00103" summary="添加了tagsinput控件，并且修订了样式。">
-      <created>1473660669608</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1473660669628</updated>
+      <workItem from="1485306438542" duration="12869000" />
+      <workItem from="1485391249351" duration="7943000" />
     </task>
     <task id="LOCAL-00104" summary="完成了&quot;关键词添加&quot;控件指令的封装、和指令的业务逻辑限制，以及&quot;复制到剪切板&quot;功能。">
       <created>1473747006133</created>
@@ -1429,18 +1443,25 @@
       <option name="project" value="LOCAL" />
       <updated>1485076053869</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="...">
+      <created>1485335342165</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1485335342181</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2736550000" />
+    <option name="totallyTimeSpent" value="2744564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19062027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19364598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1496,7 +1517,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="i dont  know what happened" />
     <MESSAGE value="add  some" />
     <MESSAGE value="重新设计了writeblog页面" />
     <MESSAGE value="。。。" />
@@ -1510,7 +1530,6 @@
     <MESSAGE value="支持blog页面头部背景图片" />
     <MESSAGE value="fixed interface" />
     <MESSAGE value="remove version code of library ,and rewrite README for xiwu project." />
-    <MESSAGE value="..." />
     <MESSAGE value="fixed a bug" />
     <MESSAGE value="添加了模态窗口和确认按钮的事件" />
     <MESSAGE value="添加了一个接口（未写入内容），基本上敲定了封面文章的刊发逻辑。" />
@@ -1521,7 +1540,9 @@
     <MESSAGE value="加入了getFurtherCovers接口对应的逻辑" />
     <MESSAGE value="修改了readme" />
     <MESSAGE value="加入动态提示用户输入状态的提示。不过还没有完全搞定。" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入动态提示用户输入状态的提示。不过还没有完全搞定。" />
+    <MESSAGE value="..." />
+    <MESSAGE value="修改了一下Dota2Liveness算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了一下Dota2Liveness算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1530,20 +1551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/algorithm/RandAid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/使用前必读.txt" />
     <entry file="file://$PROJECT_DIR$/library/xwBE/socket.php" />
     <entry file="file://$PROJECT_DIR$/library/xwBE/index.php">
@@ -1744,7 +1751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1752,12 +1758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="117" column="40" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
-          <folding>
-            <element signature="e#955#992#0" expanded="false" />
-            <element signature="e#5214#5249#0" expanded="false" />
-            <element signature="e#8739#8776#0" expanded="false" />
-            <element signature="e#9551#12952#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1847,15 +1847,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/personpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+        <state relative-caret-position="268">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1485333185880" expanded="true" signature="2452:2607" ph="SELECT id,st... d2i_matchhistory" />
-            <marker date="1485333185880" expanded="true" signature="4094:4173" ph="SELECT id FR... d2i_matchhistory" />
-            <marker date="1485333185880" expanded="true" signature="4326:4484" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+            <marker date="1485398448767" expanded="true" signature="2651:2806" ph="SELECT id,st... d2i_matchhistory" />
+            <marker date="1485398448767" expanded="true" signature="4293:4372" ph="SELECT id FR... d2i_matchhistory" />
+            <marker date="1485398448767" expanded="true" signature="4525:4683" ph="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
           </folding>
         </state>
       </provider>

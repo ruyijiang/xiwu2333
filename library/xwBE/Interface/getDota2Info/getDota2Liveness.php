@@ -30,32 +30,33 @@ switch (date("w")){
         break;
     case "1":
         $daysBeforeToday = date('m/d', strtotime('-92 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-92 days')),date('d', strtotime('-92 days')));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-92 days')),date('d', strtotime('-92 days')),date('y', strtotime('-97 days')));
         break;
     case "2":
         $daysBeforeToday = date('m/d', strtotime('-93 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-93 days')),date('d', strtotime('-93 days')));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-93 days')),date('d', strtotime('-93 days')),date('y', strtotime('-97 days')));
         break;
     case "3":
         $daysBeforeToday = date('m/d', strtotime('-94 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-94 days')),date('d', strtotime('-94 days')));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-94 days')),date('d', strtotime('-94 days')),date('y', strtotime('-97 days')));
         break;
     case "4":
         $daysBeforeToday = date('m/d', strtotime('-95 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-95 days')),date('d', strtotime('-95 days')));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-95 days')),date('d', strtotime('-95 days')),date('y', strtotime('-97 days')));
         break;
     case "5":
         $daysBeforeToday = date('m/d', strtotime('-96 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-96 days')),date('d', strtotime('-96 days')));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-96 days')),date('d', strtotime('-96 days')),date('y', strtotime('-97 days')));
         break;
     case "6":
         $daysBeforeToday = date('m/d', strtotime('-97 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-97 days')),date('d', strtotime('-97 days')));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-97 days')),date('d', strtotime('-97 days')),date('y', strtotime('-97 days')));
         break;
 }
 $EchoResult = array();//此程序最终要等待json格式化输出的数组
 $finaltime = 0;
 do{
+
 
     if($finaltime == 0){
         $finaltime = $daysBeforeToday_Unix + 86400;
