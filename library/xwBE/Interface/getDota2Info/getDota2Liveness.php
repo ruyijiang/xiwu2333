@@ -26,7 +26,7 @@ $daysBeforeToday_Unix = 0;
 switch (date("w")){
     case "0":
         $daysBeforeToday = date('m/d', strtotime('-98 days'));
-        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-98 days')),date('d', strtotime('-98 days')));
+        $daysBeforeToday_Unix = mktime(0,0,0,date('m', strtotime('-98 days')),date('d', strtotime('-98 days')),date('y', strtotime('-97 days')));
         break;
     case "1":
         $daysBeforeToday = date('m/d', strtotime('-92 days'));
@@ -66,7 +66,6 @@ do{
 
     $ISOTime = date('m/d',$finaltime);
     $EchoResult[$ISOTime] = 0;
-
 }while($finaltime < $todayStart - 86400);
 
     $sql = "SELECT id,start_time FROM `info_dota2`.`d2i_matchhistory` WHERE d2id = '$dota2_uid' AND start_time >= '$daysBeforeToday_Unix' AND start_time < '$finaltime' ";

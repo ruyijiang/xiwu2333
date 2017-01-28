@@ -427,7 +427,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
 
         myChart2.setOption({
             tooltip: {
-                position: 'top'
+                show:false
             },
             grid: {
                 height: '90%',
@@ -458,7 +458,7 @@ app.controller('homepagecontroller',function ($scope,$rootScope,$location,$timeo
                 bottom: '-99%'
             },
             series: [{
-                name: '当日数据之和',
+                name: '1234',
                 type: 'heatmap',
                 data: data,
                 label: {
