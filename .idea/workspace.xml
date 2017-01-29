@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5b582ea2-d8d0-4713-bb4f-7bf13953706a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller/personpageController.js" afterPath="$PROJECT_DIR$/js/controller/personpageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/IP/127.0.0.1.txt" afterPath="$PROJECT_DIR$/data/user_traces/IP/127.0.0.1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" afterPath="$PROJECT_DIR$/data/user_traces/RegisteredUser/20253012.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/Interface/getRandom/getRandomUser.php" afterPath="$PROJECT_DIR$/library/xwBE/Interface/getRandom/getRandomUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/xwBE/UserAllDetails_Export.php" afterPath="$PROJECT_DIR$/library/xwBE/UserAllDetails_Export.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,46 +38,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="personpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/personpage.php">
+      <file leaf-file-name="mainpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="316">
+              <caret line="45" column="51" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personpageController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+      <file leaf-file-name="maincontroller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/maincontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="429" column="26" selection-start-line="429" selection-start-column="26" selection-end-line="429" selection-end-column="26" />
+            <state relative-caret-position="493">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liveness_export.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/xwBE/php/liveness_export.php">
+      <file leaf-file-name="UserAllDetails_Export.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/UserAllDetails_Export.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getDota2Liveness.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+            <state relative-caret-position="220">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
               <folding>
-                <element signature="e#6#84#0#PHP" expanded="false" />
-                <marker date="1485621312664" expanded="true" signature="2683:2838" placeholder="SELECT id,st... d2i_matchhistory" />
-                <marker date="1485621312664" expanded="true" signature="4325:4404" placeholder="SELECT id FR... d2i_matchhistory" />
-                <marker date="1485621312664" expanded="true" signature="4557:4715" placeholder="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+                <element signature="e#518#581#0#PHP" expanded="false" />
+                <element signature="e#1861#1890#0#PHP" expanded="false" />
+                <marker date="1485659510098" expanded="true" signature="386:431" placeholder="SELECT * FRO... users" />
+                <marker date="1485659510098" expanded="true" signature="876:946" placeholder="SELECT conte... callingcard" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getRandomUser.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getRandom/getRandomUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+              <folding>
+                <marker date="1485659718733" expanded="true" signature="571:705" placeholder="SELECT * FRO... users" />
+                <marker date="1485659718733" expanded="true" signature="751:885" placeholder="SELECT * FRO... users" />
+                <marker date="1485659718733" expanded="true" signature="961:1048" placeholder="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getCovers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getCovers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <marker date="1482921458220" expanded="true" signature="405:522" placeholder="SELECT * FRO... covers" />
+                <marker date="1482921458220" expanded="true" signature="1573:1643" placeholder="SELECT * FRO... covers" />
               </folding>
             </state>
           </provider>
@@ -111,8 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/colorPicker/color-picker.min.css" />
-        <option value="$PROJECT_DIR$/js/vendor/color-picker.min.js" />
         <option value="$PROJECT_DIR$/js/run.js" />
         <option value="$PROJECT_DIR$/personpage.php" />
         <option value="$PROJECT_DIR$/library/xwBE-0.0.1/Interface/setInvitationCode/setInvitationCode.php" />
@@ -162,6 +179,8 @@
         <option value="$PROJECT_DIR$/library/xwBE/php/liveness_export.php" />
         <option value="$PROJECT_DIR$/library/xwBE/Interface/getDota2Info/getDota2Liveness.php" />
         <option value="$PROJECT_DIR$/js/controller/personpageController.js" />
+        <option value="$PROJECT_DIR$/library/xwBE/UserAllDetails_Export.php" />
+        <option value="$PROJECT_DIR$/library/xwBE/Interface/getRandom/getRandomUser.php" />
       </list>
     </option>
   </component>
@@ -291,32 +310,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Interface" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xwBE" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Interface" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Community" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -1106,7 +1099,8 @@
       <workItem from="1485267135227" duration="4656000" />
       <workItem from="1485306438542" duration="12869000" />
       <workItem from="1485391249351" duration="8434000" />
-      <workItem from="1485615613343" duration="3074000" />
+      <workItem from="1485615613343" duration="3679000" />
+      <workItem from="1485658942899" duration="798000" />
     </task>
     <task id="LOCAL-00105" summary="修改了Ueditor编辑器的默认字体。">
       <created>1473752217396</created>
@@ -1455,7 +1449,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2748129000" />
+    <option name="totallyTimeSpent" value="2749532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -1552,22 +1546,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/xwBE/使用前必读.txt" />
-    <entry file="file://$PROJECT_DIR$/library/xwBE/socket.php" />
-    <entry file="file://$PROJECT_DIR$/library/xwBE/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getLatestArticle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -1783,13 +1761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getCovers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="65" column="210" selection-start-line="65" selection-start-column="210" selection-end-line="65" selection-end-column="210" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/setTopic/topic_action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1848,18 +1819,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/xwBE/php/liveness_export.php">
+    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="10296">
+          <caret line="429" column="26" selection-start-line="429" selection-start-column="26" selection-end-line="429" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/personpageController.js">
+    <entry file="file://$PROJECT_DIR$/library/xwBE/php/liveness_export.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="429" column="26" selection-start-line="429" selection-start-column="26" selection-end-line="429" selection-end-column="26" />
+        <state relative-caret-position="336">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1873,6 +1844,58 @@
             <marker date="1485621312664" expanded="true" signature="2683:2838" placeholder="SELECT id,st... d2i_matchhistory" />
             <marker date="1485621312664" expanded="true" signature="4325:4404" placeholder="SELECT id FR... d2i_matchhistory" />
             <marker date="1485621312664" expanded="true" signature="4557:4715" placeholder="INSERT INTO `info_dota2`.`d2i_matchhistory`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="45" column="51" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/maincontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/Community/getCovers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1482921458220" expanded="true" signature="405:522" placeholder="SELECT * FRO... covers" />
+            <marker date="1482921458220" expanded="true" signature="1573:1643" placeholder="SELECT * FRO... covers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/UserAllDetails_Export.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#518#581#0#PHP" expanded="false" />
+            <element signature="e#1861#1890#0#PHP" expanded="false" />
+            <marker date="1485659510098" expanded="true" signature="386:431" placeholder="SELECT * FRO... users" />
+            <marker date="1485659510098" expanded="true" signature="876:946" placeholder="SELECT conte... callingcard" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/xwBE/Interface/getRandom/getRandomUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <marker date="1485659718733" expanded="true" signature="571:705" placeholder="SELECT * FRO... users" />
+            <marker date="1485659718733" expanded="true" signature="751:885" placeholder="SELECT * FRO... users" />
+            <marker date="1485659718733" expanded="true" signature="961:1048" placeholder="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>

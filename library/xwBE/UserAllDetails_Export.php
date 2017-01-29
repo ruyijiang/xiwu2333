@@ -13,14 +13,11 @@ require("all.php");
     $status = $reminder = "";
     @$RequestUid = $_GET["uid"];
 
-    $SessionStatus = false;
     if(!isset($RequestUid) || empty($RequestUid)){//请求的是自己
         if(!empty($_SESSION["uid"])){
-            $SessionStatus = true;
             $RequestUid = $_SESSION["uid"];
-        }else $SessionStatus = false;
+        }
     }//否则请求的是别人
-
 
     $sql = "SELECT * FROM users WHERE uid = '$RequestUid' ";
     $qry = $db->query($sql);
@@ -74,6 +71,10 @@ require("all.php");
 
     }else{
 
+        $a = new interfaceResponse();
+        $status = 0;
+        $reminder = "没有找到对应uid";
+        echo $a->normalrespond($status,$reminder);
         //------------------------------------------------------------------------------------------------------------->出口1，查询失败
     }
 
