@@ -179,7 +179,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/404",
             templateUrl: "404.html"
         });
-        $urlRouterProvider.otherwise('404');
+        $urlRouterProvider.otherwise('/');
         //remove #
         //$locationProvider.html5Mode(true);
 });
