@@ -17,12 +17,13 @@ app.directive("invitationCode",function(){
 
                     $timeout(function (){
                         $.ajax({
-                            url:'../../library/xwBE-0.0.1/php/invitationCode_action.php',
-                            type:'POST',
+                            url:'../../library/xwBE/php/invitationCode_action.php',
+                            type:'GET',
                             data:{'iccode':$scope.iccode},
                             async:false,
                             success: function (data){
                                 if(welcomejsonstring(data)){
+                                    alert("激活成功");
                                     window.location.reload();
                                 }else{
                                     $scope.disableModalBtn = false;
@@ -35,7 +36,7 @@ app.directive("invitationCode",function(){
                                 alert ("未知错误导致的激活失败，请联系管理员");
                             }
                         });
-                    },1200);//End of $timeout
+                    },500);//End of $timeout
 
                 };//End of SendIccode function
 

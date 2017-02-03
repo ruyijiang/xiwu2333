@@ -13,7 +13,8 @@ require("../algorithm/InvitationCode.php");
     $status = $reminder = "";
 
     @$uid = $_SESSION["uid"];
-    $iccode = $_POST["iccode"];
+    @$iccode = $_GET["iccode"];
+    $tnow = date('Y-m-d H:i:s');
 
     $a = new interfaceResponse();
 
@@ -24,15 +25,23 @@ require("../algorithm/InvitationCode.php");
         //------------------------------------------------------------------------------------------------------------->出口1：邀请码为空
     }else{
         if(preg_match("/^[0-9A-Z]{8}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{6}$/",$iccode)){
-            $sql = "SELECT icid FROM invitationcode WHERE iccode = '$iccode' AND used = '0' ";
+            $sql = "SELECT icid FROM `invitationcode` WHERE iccode = '$iccode' AND isActivated = '0' ";
             $qry = $db->query($sql);
             @$row = $qry->fetch_assoc();
-            @$result = $row["icid"];
-            if(!empty($result)){
+            @$result_icid = $row["icid"];
+            if(!empty($result_icid)){
                 //激活码正确，执行后续操作
-                $status = 1;
-                $reminder = "激活成功";
-                echo $a->normalrespond($status,$reminder);
+                $sql2 = "UPDATE `invitationcode` SET activated_uid = '$uid',isActivated = '1',activationTime = '$tnow' WHERE icid = '$result_icid' ";
+                $qry2 = $db->query($sql2);
+                if($qry2){
+                    $status = 1;
+                    $reminder = "激活成功";
+                    echo $a->normalrespond($status,$reminder);
+                }else{
+                    $status = 0;
+                    $reminder = "激活成功,但是激活码的数据更新失败";
+                    echo $a->normalrespond($status,$reminder);
+                }
                 //--------------------------------------------------------------------------------------------------------->出口2：邀请码可以使用
             }else{
                 $status = 0;
