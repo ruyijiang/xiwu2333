@@ -117,22 +117,14 @@ include("library/xwFE/FEM.php");
                                 </div>
                             </div>
                         </div>
-
                         <div>
                             <input type="submit" class="btn btn-primary" style="width:100%" value="确认发表">
                         </div>
-
                         <hr>
                     </form>
                 </div>
 
             </div><!--End of leftpart-->
-
-
-
-
-
-
 
             <div class="main-rightpart col-lg-4 col-md-4">
             </div><!--End of rightpart-->

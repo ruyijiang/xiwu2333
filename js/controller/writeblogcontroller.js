@@ -46,7 +46,7 @@ app.controller('writeblogcontroller',function ($scope, $rootScope, $location, $t
             'funcType':"WriteCovers"
         }
     }).then(function (httpCont){
-         if(httpCont.data.statuscode == 1){//用户已激活对应功能的邀请码
+         if(httpCont.data.statuscode !== 0){//用户已激活对应功能的邀请码
             $scope.chooseType.open = true;
          }else{//用户未激活邀请码
             $scope.chooseType.open = false;
