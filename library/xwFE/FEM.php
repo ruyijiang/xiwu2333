@@ -43,7 +43,7 @@ if($openteam_status == 1){
 }
 
 //********footer***********//页脚
-$footer = '<footer><div class="clearfix"><div style="color:#999"><small>&copy; 2016 milo |</small><small>&nbsp;<span class="glyphicon glyphicon-envelope"></span> 意见反馈：<a href="mailto:#">1444828173@qq.com</a> |&nbsp;<span class="glyphicon glyphicon-book"></span> alpha - 0.5</small><small class="pull-right">若使用本网站提供的服务，则视为接受本网站<a ng-href="/#/blog?aid=ART_3570838131">《喜屋服务协议》</a>中各项和<a ng-href="/#/blog?aid=ART_7641425586">《诚信文明公约》</a>。</small></div></div></footer>';
+$footer = '<footer><div class="clearfix"><div style="color:#999"><small>&copy; 2016 milo |</small><small>&nbsp;<span class="glyphicon glyphicon-envelope"></span> 意见反馈：<a href="mailto:#">1444828173@qq.com</a> |&nbsp;<span class="glyphicon glyphicon-book"></span> alpha - 0.5</small><small class="pull-right">若使用本网站提供的服务，则视为接受本网站<a ng-href="/#/blog?aid=ART_3570838131">《喜屋网服务协议》</a>中各项和<a ng-href="/#/blog?aid=ART_2343461185">《诚信文明倡议》</a>。</small></div></div></footer>';
 
 
 /**main页面的欢迎巨幕**/
