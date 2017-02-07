@@ -35,7 +35,7 @@
         //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的从新定义
         , toolbars: [[
             'fullscreen', 'undo', 'redo', '|',
-            'bold', 'italic', 'underline', 'strikethrough', 'blockquote', '|', 'insertorderedlist', 'insertunorderedlist','horizontal', 'spechars', '|',
+            'fontsize','bold', 'italic', 'underline', 'strikethrough', 'blockquote', '|', 'insertorderedlist', 'insertunorderedlist','horizontal', 'spechars', '|',
             'justifyleft', 'justifycenter', '|',
             'link', 'simpleupload', 'insertvideo', '|',
             'inserttable','mergecells', 'insertparagraphbeforetable', 'insertrow', 'deleterow','deletecol', 'insertcol', '|', 'searchreplace', //'drafts'
