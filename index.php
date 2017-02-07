@@ -10,15 +10,16 @@ include("library/xwFE/FEM.php");
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="喜屋,dota2,开黑,坑爹,大神,排位,天梯,电子竞技" />
 	<meta name="robots" content="all" />
-	<meta name="author" content="milo" />
+	<meta name="author" content="milo,马子航" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="HandheldFriendly" content="true">
 	<meta name="full-screen" content="yes">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta http-equiv="Expires" content="0">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-control" content="no-cache">
 	<meta http-equiv="Cache" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="description" content="{{ NowPageDescription }}">
 	<title>{{NowPageTitle}}</title>
 
 	<!-- Bootstrap Css -->
