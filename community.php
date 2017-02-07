@@ -4,7 +4,7 @@ require("library/xwBE/all.php");
 include("library/xwFE/FEM.php");
 ?>
 <style>body{background-color:#dadada}.carousel{height:451px;}.carousel-caption{z-index:10}.carousel .item{height:451px;background-color:#333}.carousel-inner>.item>img{position:absolute;top:0;left:15%;width:70%;height:451px;border-bottom:solid 1px black}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:10px;margin-left:10px}@media (min-width:768px){.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}
-        ul.list-group li.list-group-item.active a{color:white}.featurette:hover{background-color:#e1e1e1}
+        ul.list-group li.list-group-item.active a{color:white}
 </style>
 <div ng-controller="communityController">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -43,20 +43,18 @@ include("library/xwFE/FEM.php");
                 <!-- 热门推荐 -->
                 <div class="hotarticles">
                     <h4 style="margin-top:20px;" class="text-left"><span class="glyphicon glyphicon-fire"></span>热门推荐</h4><hr>
-                    <a ng-repeat="xHA in pageData_HotArticles" ng-href="/#/blog?aid={{xHA.aid}}" target="_blank">
-                        <div class="row featurette" style="cursor: pointer;padding:10px;margin-bottom:8px;">
-                            <div class="col-md-5" ng-if="$even">
-                                <img class="featurette-image img-responsive center-block" ng-src="{{xHA.article_img}}" alt="Generic placeholder image">
-                            </div>
-                            <div class="col-md-7">
-                                <h3 class="featurette-heading"> {{xHA.title}} <span class="text-muted">{{xHA.subtitle}}</span></h3>
-                                <p class="lead">{{xHA.abstract}}</p>
-                            </div>
-                            <div class="col-md-5" ng-if="$odd">
-                                <img class="featurette-image img-responsive center-block" ng-src="{{xHA.article_img}}" alt="Generic placeholder image">
-                            </div>
+                    <div ng-repeat="xHA in pageData_HotArticles" class="row featurette" style="padding:10px;margin-bottom:8px;">
+                        <div class="col-md-5" ng-if="$even">
+                            <img class="featurette-image img-responsive center-block col-md-12" width="100%" ng-src="{{xHA.article_img}}" height="100%" alt="{{xHA.title + '\'simg'}}">
                         </div>
-                    </a>
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading"> <a ng-href="/#/blog?aid={{xHA.aid}}" target="_blank">{{xHA.title}}</a> <span class="text-muted" style="margin-left:5px">{{xHA.subtitle}}</span></h3>
+                            <p class="lead" style="font-size:16px">{{xHA.abstract}}</p>
+                        </div>
+                        <div class="col-md-5" ng-if="$odd">
+                            <img class="featurette-image img-responsive center-block col-md-12" width="100%" ng-src="{{xHA.article_img}}" alt="{{xHA.title + '\'s img'}}">
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 最新文章 -->

@@ -33,7 +33,7 @@ if($timing){
             $result_article_img = $row["article_img"];
 
             //文章作者数据，需再去user表读取
-            $result_author_uid = $row["uid"];
+            @$result_author_uid = $row["uid"];
             $sql1 = "SELECT name,avatar FROM `users` WHERE uid = '$result_author_uid'";
             $qry1 = $db->query($sql1);
             $row1 = $qry1->fetch_assoc();

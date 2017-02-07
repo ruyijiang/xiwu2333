@@ -53,8 +53,23 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
     }).error(function (reason){
         deferred.reject(reason);
     }).then(function (httpCont){
-
         $scope.pageData_HotArticles = httpCont.data;
+    });
+
+
+    /**
+     * 索取LatestArticles内容
+     */
+    $http({
+        method: 'GET',
+        url: 'library/xwBE/Interface/Community/getLatestArticle.php',
+        params:{'timing':timing}
+    }).success(function (data){
+        deferred.resolve(data);
+    }).error(function (reason){
+        deferred.reject(reason);
+    }).then(function (httpCont){
+        $scope.pageData_LatestArticles = httpCont.data;
     });
 
 
@@ -70,9 +85,7 @@ app.controller('communityController',function ($scope, $rootScope, $http, $q){
     }).error(function (reason){
         deferred.reject(reason);
     }).then(function (httpCont){
-
         $scope.pageData_HotPersons = httpCont.data;
-
     });
 
 
